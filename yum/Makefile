@@ -1,6 +1,6 @@
 #==============================================================#
 # File      :   Makefile
-# Desc      :   pgsty/pkg repo shortcuts
+# Desc      :   yum repo shortcuts
 # Ctime     :   2024-07-28
 # Mtime     :   2024-07-28
 # Path      :   Makefile
@@ -8,19 +8,29 @@
 # License   :   AGPLv3
 #==============================================================#
 
-CLOUD_PATH = cf:/pkg
-DEVEL_PATH = sv:/data/pkg
+CLOUD_PATH = cf:/pkg/yum
+DEVEL_PATH = sv:/data/pkg/yum
 
 ###############################################################
 #                       1. Publishing                         #
 ###############################################################
-all:
-	@echo "pgsty package repo"
-cf-yum:
-	rclone sync -P --transfers=8  repo/rpm/ cf:/repo/yum/
-cf-apt:
-	rclone sync -P --transfers=8  repo/deb/ cf:/repo/apt/
+init:
+	mkdir -p infra infra/x86_64 infra/aarch64
+	mkdir -p pgsql pgsql/el7.x86_64 pgsql/el8.x86_64 pgsql/el9.x86_64
 
+build:
+	./build	infra/x86_64
+	./build	infra/aarch64
+	./build	pgsql/el7.x86_64
+	./build	pgsql/el8.x86_64
+	./build	pgsql/el9.x86_64
+
+builds:
+	./build	infra/x86_64     sign
+	./build	infra/aarch64    sign
+	./build	pgsql/el7.x86_64 sign
+	./build	pgsql/el8.x86_64 sign
+	./build	pgsql/el9.x86_64 sign
 
 ###############################################################
 #                        2. Syncing                           #
@@ -38,4 +48,4 @@ pulld:
 ###############################################################
 #                         Inventory                           #
 ###############################################################
-.PHONY: all cf-yum cf-apt push pushd pull pulld
+.PHONY: init build builds push pushd pull pulld
