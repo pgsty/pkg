@@ -15,11 +15,11 @@ DEVEL_PATH = sv:/data/pkg
 #                       1. Publishing                         #
 ###############################################################
 all:
-	@echo "pgsty package repo"
+	@echo "pgsty repo"
 cf-yum:
-	rclone sync -P --transfers=8  repo/rpm/ cf:/repo/yum/
+	cd yum && make upload
 cf-apt:
-	rclone sync -P --transfers=8  repo/deb/ cf:/repo/apt/
+	cd apt && make upload
 cf-key:
 	rclone copy key cf:/pkg/
 
@@ -40,4 +40,4 @@ pulld:
 ###############################################################
 #                         Inventory                           #
 ###############################################################
-.PHONY: all cf-yum cf-apt push pushd pull pulld
+.PHONY: all cf-yum cf-apt cf-key push pushd pull pulld
