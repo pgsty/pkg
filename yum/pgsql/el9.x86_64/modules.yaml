@@ -29,6 +29,7 @@ data:
       - libarrow-s3
       - libduckdb
       - parquet_s3_fdw_16
+      - pg_filedump
       - pg_lakehouse_15
       - pg_lakehouse_16
       - pg_search_12
@@ -46,6 +47,7 @@ data:
     - libarrow-s3
     - libduckdb
     - parquet_s3_fdw_16
+    - pg_filedump
     - pg_lakehouse_15
     - pg_lakehouse_16
     - pg_search_12
@@ -65,6 +67,8 @@ data:
       libduckdb:
         rationale: Present in the repository
       parquet_s3_fdw_16:
+        rationale: Present in the repository
+      pg_filedump:
         rationale: Present in the repository
       pg_lakehouse_15:
         rationale: Present in the repository
@@ -91,6 +95,7 @@ data:
     - libarrow-s3-0:17.0.0-1PIGSTY.el9.x86_64
     - libduckdb-0:1.0.0-1PIGSTY.el9.x86_64
     - parquet_s3_fdw_16-0:1.1.0-1PIGSTY.el9.x86_64
+    - pg_filedump-0:16.0-1PIGSTY.el9.x86_64
     - pg_lakehouse_15-0:0.8.6-1PIGSTY.el9.x86_64
     - pg_lakehouse_16-0:0.8.6-1PIGSTY.el9.x86_64
     - pg_search_12-0:0.8.6-1PIGSTY.el9.x86_64

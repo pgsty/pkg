@@ -5,9 +5,9 @@ This repo contains supplementary packages for the official [PGDG](https://downlo
 
 --------
 
-## Content
+## Content (x86_64)
 
-### el7.x86_64
+### el7
 
 - redis 7.2.5
 - **haproxy** 2.9.9
@@ -16,7 +16,7 @@ This repo contains supplementary packages for the official [PGDG](https://downlo
 - scws 1.2.3
 - PostgreSQL 15 Extra Extensions
 
-### el8.x86_64
+### el8
 
 - redis 7.2.5
 - pg_search 0.8.6
@@ -26,7 +26,7 @@ This repo contains supplementary packages for the official [PGDG](https://downlo
 - scws 1.2.3
 - PostgreSQL 16 Extra Extensions
 
-### el9.x86_64
+### el9
 
 - redis 7.2.5
 - scws 1.2.3
@@ -36,5 +36,3 @@ This repo contains supplementary packages for the official [PGDG](https://downlo
 - libduckdb 1.0.0
 - **pgxnclient** 1.3.2 (MISSING in PGDG)
 - PostgreSQL 16 Extra Extensions
-
-
