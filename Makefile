@@ -20,6 +20,8 @@ cf-yum:
 	rclone sync -P --transfers=8  repo/rpm/ cf:/repo/yum/
 cf-apt:
 	rclone sync -P --transfers=8  repo/deb/ cf:/repo/apt/
+cf-key:
+	rclone copy key cf:/pkg/
 
 
 ###############################################################

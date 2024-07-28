@@ -49,7 +49,7 @@ pulld:
 ###############################################################
 #                       3. Publishing                         #
 ###############################################################
-publish: publish-pgsql publish-infra
+upload: publish-pgsql publish-infra
 publish-infra:
 	rclone sync -P --transfers=8 ./infra/ $(CLOUD_PATH)/infra/
 publish-pgsql:
