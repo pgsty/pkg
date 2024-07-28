@@ -1,0 +1,318 @@
+Package: haproxy
+Version: 3.0.2-1ppa1~jammy
+Architecture: amd64
+Maintainer: Debian HAProxy Maintainers <team+haproxy@tracker.debian.org>
+Installed-Size: 5007
+Pre-Depends: dpkg (>= 1.17.14), init-system-helpers (>= 1.54~)
+Depends: libc6 (>= 2.34), libcrypt1 (>= 1:4.1.0), libjemalloc2 (>= 2.1.1), liblua5.3-0, libopentracing-c-wrapper0 (>= 1.1.0), libpcre2-8-0 (>= 10.22), libssl3 (>= 3.0.0~~alpha1), adduser, lsb-base (>= 3.0-6)
+Suggests: vim-haproxy, haproxy-doc
+Homepage: http://www.haproxy.org/
+Priority: optional
+Section: net
+Filename: pool/main/h/haproxy/haproxy_3.0.2-1ppa1~jammy_amd64.deb
+Size: 2250628
+SHA256: e06ed4fb6009593c31b8a2d22d64fd124323013d82d5859fe5e9def9645f2f41
+SHA1: 152ea0d6bd997853930cf87e0f7457e9e990702f
+MD5sum: c5bb17edbf897deb47080da950c0553e
+Description: fast and reliable load balancing reverse proxy
+ HAProxy is a TCP/HTTP reverse proxy which is particularly suited for high
+ availability environments. It features connection persistence through HTTP
+ cookies, load balancing, header addition, modification, deletion both ways. It
+ has request blocking capabilities and provides interface to display server
+ status.
+
+Package: libarrow-s3
+Version: 18.0.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 23511
+Depends: libc6 (>= 2.34), libcurl4 (>= 7.18.0), libgcc-s1 (>= 3.4), libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12), zlib1g (>= 1:1.2.0)
+Provides: libarrow-s3
+Homepage: https://github.com/apache/arrow
+Priority: optional
+Section: database
+Filename: pool/main/liba/libarrow-s3/libarrow-s3_18.0.0-1PIGSTY~jammy_amd64.deb
+Size: 5884218
+SHA256: 874cbeaac41894e23c291983dbf2dfb6de6bcd4ce917ea02a5d3b5bdc0de1d0c
+SHA1: 66ae86e825838591d9076c3f0cd4bd8ff9e15770
+MD5sum: 0eb7b13b37352cd77524a718c338a5ab
+Description: ependency libs for parquet s3 fdw
+  Apache Arrow is a development platform for in-memory analytics.
+  It contains a set of technologies that enable big data systems to process and move data fast.
+  This package contains dependency libs for parquet_s3_fdw, It also has aws cpp core & s3 sdk so lib inside.
+
+Package: libduckdb
+Version: 1.0.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 44411
+Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.4), libstdc++6 (>= 4.8)
+Provides: libduckdb
+Homepage: https://github.com/duckdb/duckdb/
+Priority: optional
+Section: database
+Filename: pool/main/libd/libduckdb/libduckdb_1.0.0-1PIGSTY~jammy_amd64.deb
+Size: 11988120
+SHA256: e7c87104b1c15330ab623315c1efcfb1ff10f5876e35403e24fbef052ccb3c80
+SHA1: 4187e065be84fd3e3c92dde6531792af91ef0e05
+MD5sum: 81346f7c1a997a67b26afc649dfbeaa4
+Description: In-process SQL OLAP Database Management System
+  DuckDB is a high-performance analytical database system.
+  It is designed to be fast, reliable, portable, and easy to use.
+  DuckDB provides a rich SQL dialect, with support far beyond basic SQL.
+  DuckDB supports arbitrary and nested correlated subqueries, window functions,
+  collations, complex types (arrays, structs), and more.
+
+Package: pgcopydb
+Version: 0.16-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 1700
+Depends: libc6 (>= 2.34), libgc1 (>= 1:7.2d), libpq5 (>= 14~~)
+Provides: pgcopydb
+Homepage: https://github.com/dimitri/pgcopydb
+Priority: optional
+Section: database
+Filename: pool/main/p/pgcopydb/pgcopydb_0.16-1PIGSTY~jammy_amd64.deb
+Size: 695822
+SHA256: c645e54985b1ef2cadf2b05ad618fa70eb6a41a36ed3e26bb86d28fa4d9c69e2
+SHA1: 02106ee67a118bece5081b002290df71496020c8
+MD5sum: 0a14460be9957b74ca97c9429469fdac
+Description: Copy a Postgres database to a target Postgres server (pg_dump | pg_restore on steroids)
+  pgcopydb is a tool that automates running pg_dump | pg_restore between two running Postgres servers.
+  To make a copy of a database to another server as quickly as possible,
+  one would like to use the parallel options of pg_dump and still be able to stream the data to as many pg_restore jobs.
+
+Package: postgresql-12-pg-search
+Source: pg-search
+Version: 0.8.6-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 54189
+Depends: postgresql-12, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1)
+Provides: postgresql-pg-search
+Homepage: https://github.com/paradedb/paradedb/tree/dev/pg_search
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-search/postgresql-12-pg-search_0.8.6-1PIGSTY~jammy_amd64.deb
+Size: 46027244
+SHA256: 21f50aad1e4b3f41a92aca4e0cc44851046e899949c317b731cbe6126adf2922
+SHA1: c3b13e1a2a57c1790f1a765dc4d3af6cdbf7c942
+MD5sum: 940aa25899a90ac9f282e3b0199fa63a
+Description: Full text search over SQL tables using the BM25 algorithm
+  pg_search is a PostgreSQL extension that enables full text search over SQL tables using the BM25 algorithm,
+  the state-of-the-art ranking function for full text search.
+  It is built on top of Tantivy, the Rust-based alternative to Apache Lucene, using pgrx.
+
+Package: postgresql-13-pg-search
+Source: pg-search
+Version: 0.8.6-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 54193
+Depends: postgresql-13, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1)
+Provides: postgresql-pg-search
+Homepage: https://github.com/paradedb/paradedb/tree/dev/pg_search
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-search/postgresql-13-pg-search_0.8.6-1PIGSTY~jammy_amd64.deb
+Size: 46026678
+SHA256: c917fa78a5a227866a98a84b183f9fb51dcb2b6baa567c8609486a722d6649b4
+SHA1: 2b7e7ce409c1011885806aae37c116cbd8be6c46
+MD5sum: a9d5f48449a27d9003a827e02e32462a
+Description: Full text search over SQL tables using the BM25 algorithm
+  pg_search is a PostgreSQL extension that enables full text search over SQL tables using the BM25 algorithm,
+  the state-of-the-art ranking function for full text search.
+  It is built on top of Tantivy, the Rust-based alternative to Apache Lucene, using pgrx.
+
+Package: postgresql-14-pg-search
+Source: pg-search
+Version: 0.8.6-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 54173
+Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1)
+Provides: postgresql-pg-search
+Homepage: https://github.com/paradedb/paradedb/tree/dev/pg_search
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-search/postgresql-14-pg-search_0.8.6-1PIGSTY~jammy_amd64.deb
+Size: 46023206
+SHA256: b1cf46887a05ed5138e15c80dd7d0f5f21d944986e79034d20d29e37dd877fef
+SHA1: 27e2bfc5870a1885b1fba8e9de73af68196b7935
+MD5sum: d17151e343795a7f4b4124f9d52b38d1
+Description: Full text search over SQL tables using the BM25 algorithm
+  pg_search is a PostgreSQL extension that enables full text search over SQL tables using the BM25 algorithm,
+  the state-of-the-art ranking function for full text search.
+  It is built on top of Tantivy, the Rust-based alternative to Apache Lucene, using pgrx.
+
+Package: postgresql-15-pg-lakehouse
+Source: pg-lakehouse
+Version: 0.8.6-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 35350
+Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
+Provides: postgresql-pg-lakehouse
+Homepage: https://github.com/paradedb/paradedb/tree/dev/pg_lakehouse
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-lakehouse/postgresql-15-pg-lakehouse_0.8.6-1PIGSTY~jammy_amd64.deb
+Size: 9047720
+SHA256: ddac2536256d462d8f56084bfe45c4011ac382eb17a35b7961ed4360f5a1bccb
+SHA1: f410e340907d741b59e42cb0d075fdd684561e56
+MD5sum: 5bac655ccb629e352fbd7c47d4538eb2
+Description: Query engine over object stores like S3 and table formats like Delta Lake
+  pg_lakehouse is an extension that transforms Postgres into an analytical query engine over object stores like S3 and table formats like Delta Lake.
+  Queries are pushed down to Apache DataFusion, which delivers excellent analytical performance. Combinations of the following object stores, table formats, and file formats are supported.
+
+Package: postgresql-15-pg-search
+Source: pg-search
+Version: 0.8.6-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 54173
+Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1)
+Provides: postgresql-pg-search
+Homepage: https://github.com/paradedb/paradedb/tree/dev/pg_search
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-search/postgresql-15-pg-search_0.8.6-1PIGSTY~jammy_amd64.deb
+Size: 46029872
+SHA256: b8db798ee0643437e5ba1c80cf75d875dcf3db1e86f597a0064c6e478b9240d4
+SHA1: 742a97350fa23cab367cd924cbb238a56c988237
+MD5sum: 324534c7c1b62d1f7903cb2031e4f936
+Description: Full text search over SQL tables using the BM25 algorithm
+  pg_search is a PostgreSQL extension that enables full text search over SQL tables using the BM25 algorithm,
+  the state-of-the-art ranking function for full text search.
+  It is built on top of Tantivy, the Rust-based alternative to Apache Lucene, using pgrx.
+
+Package: postgresql-16-pg-lakehouse
+Source: pg-lakehouse
+Version: 0.8.6-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 35350
+Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
+Provides: postgresql-pg-lakehouse
+Homepage: https://github.com/paradedb/paradedb/tree/dev/pg_lakehouse
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-lakehouse/postgresql-16-pg-lakehouse_0.8.6-1PIGSTY~jammy_amd64.deb
+Size: 9048142
+SHA256: f55a0eb649924f423a8176e9a38ddde50579665ee0d86133fd6010f9a27be73b
+SHA1: 0f80ad60145782555e2fb93f204ed17455db9d24
+MD5sum: 5dc7144f989ffdb7c88ce2f59fd9004f
+Description: Query engine over object stores like S3 and table formats like Delta Lake
+  pg_lakehouse is an extension that transforms Postgres into an analytical query engine over object stores like S3 and table formats like Delta Lake.
+  Queries are pushed down to Apache DataFusion, which delivers excellent analytical performance. Combinations of the following object stores, table formats, and file formats are supported.
+
+Package: postgresql-16-pg-search
+Source: pg-search
+Version: 0.8.6-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 54173
+Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1)
+Provides: postgresql-pg-search
+Homepage: https://github.com/paradedb/paradedb/tree/dev/pg_search
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-search/postgresql-16-pg-search_0.8.6-1PIGSTY~jammy_amd64.deb
+Size: 46032510
+SHA256: a6b737ee309bc98e0d67fb28250102baed14a170ade52b8436350f5292ee4205
+SHA1: 17be14e7de42a16aff0250ceb830b5e7bd65fec7
+MD5sum: b2ce0b48548091451b5069edad1ade63
+Description: Full text search over SQL tables using the BM25 algorithm
+  pg_search is a PostgreSQL extension that enables full text search over SQL tables using the BM25 algorithm,
+  the state-of-the-art ranking function for full text search.
+  It is built on top of Tantivy, the Rust-based alternative to Apache Lucene, using pgrx.
+
+Package: redis
+Version: 6:7.2.5-1rl1~jammy1
+Architecture: all
+Maintainer: Redis Core Team <redis@redis.io>
+Installed-Size: 44
+Depends: redis-server (<< 6:7.2.5-1rl1~jammy1.1~), redis-server (>= 6:7.2.5-1rl1~jammy1)
+Homepage: https://redis.io/
+Priority: optional
+Section: database
+Filename: pool/main/r/redis/redis_7.2.5-1rl1~jammy1_all.deb
+Size: 33864
+SHA256: a2ae26aa9f53031523c24222909052bf752a7c72d76522cec264cd7383f0d8ac
+SHA1: ec273c72db4d1f5ffae8ab00c3a43fbe8db5f1d3
+MD5sum: 4656d49ca780d781ce3d407910eaa437
+Description: Persistent key-value database with network interface (metapackage)
+ Redis is a key-value database in a similar vein to memcache but the dataset
+ is non-volatile. Redis additionally provides native support for atomically
+ manipulating and querying data structures such as lists and sets.
+ .
+ The dataset is stored entirely in memory and periodically flushed to disk.
+ .
+ This package depends on the redis-server package.
+
+Package: redis-server
+Source: redis
+Version: 6:7.2.5-1rl1~jammy1
+Architecture: amd64
+Maintainer: Redis Core Team <redis@redis.io>
+Installed-Size: 188
+Depends: lsb-base (>= 3.2-14), redis-tools (= 6:7.2.5-1rl1~jammy1)
+Homepage: https://redis.io/
+Priority: optional
+Section: database
+Filename: pool/main/r/redis/redis-server_7.2.5-1rl1~jammy1_amd64.deb
+Size: 82270
+SHA256: 9e251c245039a4e6589cb8d4e9817c2201b9b38f0c0b75d54317b110c5cb5bc0
+SHA1: 81c85c3b0a74b27948798cbf4df6edd5b7c95a7f
+MD5sum: d8dff70fdfc1cab8d9eef14c3f7d7e79
+Description: Persistent key-value database with network interface
+ Redis is a key-value database in a similar vein to memcache but the dataset
+ is non-volatile. Redis additionally provides native support for atomically
+ manipulating and querying data structures such as lists and sets.
+ .
+ The dataset is stored entirely in memory and periodically flushed to disk.
+
+Package: redis-tools
+Source: redis
+Version: 6:7.2.5-1rl1~jammy1
+Architecture: amd64
+Maintainer: Redis Core Team <redis@redis.io>
+Installed-Size: 9329
+Depends: adduser, libc6 (>= 2.34), libssl3 (>= 3.0.0~~alpha1), libsystemd0
+Suggests: ruby-redis
+Breaks: redis-server (<< 2:2.6.16-1)
+Replaces: redis-server (<< 2:2.6.16-1)
+Homepage: https://redis.io/
+Priority: optional
+Section: database
+Filename: pool/main/r/redis/redis-tools_7.2.5-1rl1~jammy1_amd64.deb
+Size: 1609958
+SHA256: ae7d65c18b71669d1dd28a0e81fcbf1f788f18d645c0255b5711eb518de2574c
+SHA1: f0f6e1771b468959a0363f18465f8c51b4953ed2
+MD5sum: 6d11f183003530f61241e827c463b4f4
+Description: Persistent key-value database with network interface (client)
+ Redis is a key-value database in a similar vein to memcache but the dataset
+ is non-volatile. Redis additionally provides native support for atomically
+ manipulating and querying data structures such as lists and sets.
+ .
+ This package contains the command line client and other tools.
+
+Package: scws
+Version: 1.2.3-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 150
+Depends: libc6 (>= 2.34)
+Provides: scws
+Homepage: https://github.com/supabase/scws
+Priority: optional
+Section: database
+Filename: pool/main/s/scws/scws_1.2.3-1PIGSTY~jammy_amd64.deb
+Size: 44558
+SHA256: ac3188523b87fda1a10b980e51de3d9cd416abf435bb21318fd3bad4a2fd03ad
+SHA1: cd76432724b215cfa94e288d0f7ae841b475e36c
+MD5sum: ac505c68de7fa7167fd3aceeab088362
+Description: Simple Chinese Word Segmentation
+  SCWS (Simple Chinese Word Segmentation) is a high performance Chinese word segmentation utility.
+

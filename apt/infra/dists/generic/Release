@@ -1,0 +1,28 @@
+Origin: Pigsty
+Label: Pigsty INFRA
+Codename: generic
+Date: Sun, 28 Jul 2024 07:51:29 UTC
+Architectures: amd64 arm64
+Components: main
+Description: pigsty apt repository for infra components
+MD5Sum:
+ 1c8aa12d5dc5d2405d62ff7588dd9dab 15297 main/binary-amd64/Packages
+ 03d678b8ea535d209c436d9b844aa6c6 5169 main/binary-amd64/Packages.gz
+ 2b6e1163aff5a5a2ab6ab1108ce22b40 127 main/binary-amd64/Release
+ 7f156dd518ce2f375e54fe9d2d8a32f3 14812 main/binary-arm64/Packages
+ 6777e32cc3cb00e9d022a136c8b3e5ef 5003 main/binary-arm64/Packages.gz
+ bb506a20b5922391afdc9fc2bbe3ae95 127 main/binary-arm64/Release
+SHA1:
+ a0ad8409273ffccd7d3aa3b667f7db56d22248cb 15297 main/binary-amd64/Packages
+ ab32c89f33611d86b11b8d5322c3b7c3bba8c084 5169 main/binary-amd64/Packages.gz
+ fdf51b995a1cd98a0d8bd600e8ba384735be1d6b 127 main/binary-amd64/Release
+ 3247af014bb39f94a14cb43e7c4b3301127639cb 14812 main/binary-arm64/Packages
+ 83a51ca73979d0f0c471a91a9835389fcd37007e 5003 main/binary-arm64/Packages.gz
+ 0d1572919fe3f99604581926d7e2ec7f6e59593f 127 main/binary-arm64/Release
+SHA256:
+ feda09c3332d95aae46693473674cdf525b70ea2013a0d8ef9dd64d7ffc69deb 15297 main/binary-amd64/Packages
+ ec4d222dbcb3eb1f57c861c569ced4257aa52875ff797b5c4454ecd5e34fe9ef 5169 main/binary-amd64/Packages.gz
+ f7458da741f18a1c31b46c9a07c3b165de7115ea04e260c3c0b5db65a290bc9c 127 main/binary-amd64/Release
+ d716196338f2d108d70efa8d9752e9d4a45e1677e07377c478f21d4d1239bc92 14812 main/binary-arm64/Packages
+ 7823ae73e086680474d4d6f29c09eb15f1520b586bc3b6e620fdd98b7a2afdea 5003 main/binary-arm64/Packages.gz
+ 74f4019fb93d41a306f490a52655c9adc9a5d7fb68dfdf56c2d8e55e0a97aed1 127 main/binary-arm64/Release

@@ -1,0 +1,23 @@
+Package: redis
+Version: 6:7.2.5-1rl1~bookworm1
+Architecture: all
+Maintainer: Redis Core Team <redis@redis.io>
+Installed-Size: 31
+Depends: redis-server (<< 6:7.2.5-1rl1~bookworm1.1~), redis-server (>= 6:7.2.5-1rl1~bookworm1)
+Homepage: https://redis.io/
+Priority: optional
+Section: database
+Filename: pool/main/r/redis/redis_7.2.5-1rl1~bookworm1_all.deb
+Size: 20028
+SHA256: 68512de45729fa80153df92dcaa75bff124ec355af43452b2ba477dae60dbb67
+SHA1: d66ca147314bc155854ea9751be0ceaab7ee99bc
+MD5sum: 956b34bad24bb6ca37b1051b1fc3ba63
+Description: Persistent key-value database with network interface (metapackage)
+ Redis is a key-value database in a similar vein to memcache but the dataset
+ is non-volatile. Redis additionally provides native support for atomically
+ manipulating and querying data structures such as lists and sets.
+ .
+ The dataset is stored entirely in memory and periodically flushed to disk.
+ .
+ This package depends on the redis-server package.
+

@@ -1,0 +1,173 @@
+Package: haproxy
+Version: 3.0.2-1~bpo12+1
+Architecture: amd64
+Maintainer: Debian HAProxy Maintainers <team+haproxy@tracker.debian.org>
+Installed-Size: 5407
+Pre-Depends: dpkg (>= 1.17.14), init-system-helpers (>= 1.54~)
+Depends: libc6 (>= 2.34), libcrypt1 (>= 1:4.1.0), libjemalloc2 (>= 2.1.1), liblua5.3-0, libopentracing-c-wrapper0 (>= 1.1.0), libpcre2-8-0 (>= 10.22), libssl3 (>= 3.0.0), adduser, lsb-base (>= 3.0-6)
+Suggests: vim-haproxy, haproxy-doc
+Homepage: http://www.haproxy.org/
+Priority: optional
+Section: net
+Filename: pool/main/h/haproxy/haproxy_3.0.2-1~bpo12+1_amd64.deb
+Size: 2550796
+SHA256: 201c00f8c22d5e626e1d937f9c57f8f25f4e63e827d750fbc8631d7c575e743f
+SHA1: ff9aeda59753e9b923319b33f072367773771fb1
+MD5sum: 0dbbd7267343f8e310d74f0ab3b01b24
+Description: fast and reliable load balancing reverse proxy
+ HAProxy is a TCP/HTTP reverse proxy which is particularly suited for high
+ availability environments. It features connection persistence through HTTP
+ cookies, load balancing, header addition, modification, deletion both ways. It
+ has request blocking capabilities and provides interface to display server
+ status.
+
+Package: libarrow-s3
+Version: 18.0.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 22483
+Depends: libc6 (>= 2.34), libcurl4 (>= 7.18.0), libgcc-s1 (>= 3.4), libssl3 (>= 3.0.0), libstdc++6 (>= 12), zlib1g (>= 1:1.2.0)
+Provides: libarrow-s3
+Homepage: https://github.com/apache/arrow
+Priority: optional
+Section: database
+Filename: pool/main/liba/libarrow-s3/libarrow-s3_18.0.0-1PIGSTY~bookworm_amd64.deb
+Size: 5233876
+SHA256: fddd321ee5796f6dcf7cc28d41fc96fec08d0c0348b0ac910b78f47863990851
+SHA1: 2048fb1df358ec1da260218e859e9a6a9ab7610c
+MD5sum: 56c8c97ebf295f8776c54871c2c0e961
+Description: ependency libs for parquet s3 fdw
+  Apache Arrow is a development platform for in-memory analytics.
+  It contains a set of technologies that enable big data systems to process and move data fast.
+  This package contains dependency libs for parquet_s3_fdw, It also has aws cpp core & s3 sdk so lib inside.
+
+Package: libduckdb
+Version: 1.0.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 44411
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.4), libstdc++6 (>= 4.8)
+Provides: libduckdb
+Homepage: https://github.com/duckdb/duckdb/
+Priority: optional
+Section: database
+Filename: pool/main/libd/libduckdb/libduckdb_1.0.0-1PIGSTY~bookworm_amd64.deb
+Size: 10695244
+SHA256: 43988a73ee07722eedc23a71500814ebffd9aea18e84897129f66aed8ce9ac0a
+SHA1: a86acf5eb5f964e71912e8e3ca14fad943ed0765
+MD5sum: bd0a9a7bde5d52bbfe16b9433fee3366
+Description: In-process SQL OLAP Database Management System
+  DuckDB is a high-performance analytical database system.
+  It is designed to be fast, reliable, portable, and easy to use.
+  DuckDB provides a rich SQL dialect, with support far beyond basic SQL.
+  DuckDB supports arbitrary and nested correlated subqueries, window functions,
+  collations, complex types (arrays, structs), and more.
+
+Package: pgcopydb
+Version: 0.16-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 1816
+Depends: libc6 (>= 2.34), libgc1 (>= 1:7.2d), libpq5 (>= 14~~)
+Provides: pgcopydb
+Homepage: https://github.com/dimitri/pgcopydb
+Priority: optional
+Section: database
+Filename: pool/main/p/pgcopydb/pgcopydb_0.16-1PIGSTY~bookworm_amd64.deb
+Size: 693192
+SHA256: 0d33e174995dde0fff0e011175458de7d71f403277436a103e0bb847f2a78771
+SHA1: 0a5f93589d5a458b370491115c5939cef1274f21
+MD5sum: fe66b71781b646b2052e4e12232d27c5
+Description: Copy a Postgres database to a target Postgres server (pg_dump | pg_restore on steroids)
+  pgcopydb is a tool that automates running pg_dump | pg_restore between two running Postgres servers.
+  To make a copy of a database to another server as quickly as possible,
+  one would like to use the parallel options of pg_dump and still be able to stream the data to as many pg_restore jobs.
+
+Package: redis
+Version: 6:7.2.5-1rl1~bookworm1
+Architecture: all
+Maintainer: Redis Core Team <redis@redis.io>
+Installed-Size: 31
+Depends: redis-server (<< 6:7.2.5-1rl1~bookworm1.1~), redis-server (>= 6:7.2.5-1rl1~bookworm1)
+Homepage: https://redis.io/
+Priority: optional
+Section: database
+Filename: pool/main/r/redis/redis_7.2.5-1rl1~bookworm1_all.deb
+Size: 20028
+SHA256: 68512de45729fa80153df92dcaa75bff124ec355af43452b2ba477dae60dbb67
+SHA1: d66ca147314bc155854ea9751be0ceaab7ee99bc
+MD5sum: 956b34bad24bb6ca37b1051b1fc3ba63
+Description: Persistent key-value database with network interface (metapackage)
+ Redis is a key-value database in a similar vein to memcache but the dataset
+ is non-volatile. Redis additionally provides native support for atomically
+ manipulating and querying data structures such as lists and sets.
+ .
+ The dataset is stored entirely in memory and periodically flushed to disk.
+ .
+ This package depends on the redis-server package.
+
+Package: redis-server
+Source: redis
+Version: 6:7.2.5-1rl1~bookworm1
+Architecture: amd64
+Maintainer: Redis Core Team <redis@redis.io>
+Installed-Size: 175
+Depends: lsb-base (>= 3.2-14), redis-tools (= 6:7.2.5-1rl1~bookworm1)
+Homepage: https://redis.io/
+Priority: optional
+Section: database
+Filename: pool/main/r/redis/redis-server_7.2.5-1rl1~bookworm1_amd64.deb
+Size: 67184
+SHA256: 92eee26911e5762b219fa8fc5bfd3a1865903b6fcfa83b7fa5fa6e294940f0ec
+SHA1: 40e64c88d1d483128630e1219b94a32f4bde99d2
+MD5sum: 55f0527124c1c6855d1cc8aeabbd16d3
+Description: Persistent key-value database with network interface
+ Redis is a key-value database in a similar vein to memcache but the dataset
+ is non-volatile. Redis additionally provides native support for atomically
+ manipulating and querying data structures such as lists and sets.
+ .
+ The dataset is stored entirely in memory and periodically flushed to disk.
+
+Package: redis-tools
+Source: redis
+Version: 6:7.2.5-1rl1~bookworm1
+Architecture: amd64
+Maintainer: Redis Core Team <redis@redis.io>
+Installed-Size: 9277
+Depends: adduser, libc6 (>= 2.34), libssl3 (>= 3.0.0), libsystemd0
+Suggests: ruby-redis
+Breaks: redis-server (<< 2:2.6.16-1)
+Replaces: redis-server (<< 2:2.6.16-1)
+Homepage: https://redis.io/
+Priority: optional
+Section: database
+Filename: pool/main/r/redis/redis-tools_7.2.5-1rl1~bookworm1_amd64.deb
+Size: 1411408
+SHA256: b5688c824499e480f690b3de38cedc1c1b95fd78577e24b6d072a48e08ae2937
+SHA1: 529cb5560cebd8bb14cb32cc6881c9308900d87d
+MD5sum: 14866a388cd07b0ede9480c03a132a75
+Description: Persistent key-value database with network interface (client)
+ Redis is a key-value database in a similar vein to memcache but the dataset
+ is non-volatile. Redis additionally provides native support for atomically
+ manipulating and querying data structures such as lists and sets.
+ .
+ This package contains the command line client and other tools.
+
+Package: scws
+Version: 1.2.3-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 150
+Depends: libc6 (>= 2.34)
+Provides: scws
+Homepage: https://github.com/supabase/scws
+Priority: optional
+Section: database
+Filename: pool/main/s/scws/scws_1.2.3-1PIGSTY~bookworm_amd64.deb
+Size: 45600
+SHA256: dd14a9bed997b0ec3e6153cca1d01da544d8cc5541e0a29fc3533c702dae1ff7
+SHA1: 40251a37d63d6d934910c40ef58e247d7b727a23
+MD5sum: 4d17fd32cbcd968675e9b4323efcc98a
+Description: Simple Chinese Word Segmentation
+  SCWS (Simple Chinese Word Segmentation) is a high performance Chinese word segmentation utility.
+

@@ -1,0 +1,431 @@
+Package: alertmanager
+Version: 0.27.0
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 63999
+Homepage: https://github.com/prometheus/alertmanager
+Priority: optional
+Section: 
+Filename: pool/main/a/alertmanager/alertmanager_0.27.0_arm64.deb
+Size: 29265318
+SHA256: 5a37d948e86591d174cb8e5c59f0df108b8caf4afe505dd938c87917512df9f1
+SHA1: 3ec062d0bde90fb5ae0fd800fb212d514c3cace6
+MD5sum: efd0741f21e38349778e15eae0fdf6d2
+Description: Prometheus Alertmanager
+
+Package: blackbox-exporter
+Version: 0.25.0
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 20410
+Homepage: https://github.com/prometheus/blackbox_exporter
+Priority: optional
+Section: 
+Filename: pool/main/b/blackbox-exporter/blackbox-exporter_0.25.0_arm64.deb
+Size: 10684372
+SHA256: b17e91c943c28cb30c8e1800ef562dcafce536da4b4dcc7612ae5b7308873bf0
+SHA1: 0944f19a81b28270d1fcdff32285cd6fe86ff652
+MD5sum: 5a2c833521342c8e100d394f5e1e5693
+Description: Prometheus Blackbox prober exporter,  allows blackbox probing of endpoints over HTTP, HTTPS, DNS, TCP, ICMP and gRPC.
+
+Package: duckdb
+Version: 1.0.0-1
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 42423
+Homepage: https://github.com/duckdb/duckdb
+Priority: optional
+Section: 
+Filename: pool/main/d/duckdb/duckdb_1.0.0-1_arm64.deb
+Size: 15331716
+SHA256: ecd35be2b790e3ef230048bda64cf845173dc4b2140a29d8e671de272eb8b1d7
+SHA1: 61334f2fbc93232d24d453a2f552879659be1966
+MD5sum: 4b163728872b45e9018247d3971a62c2
+Description: In-process SQL OLAP Database Management System
+
+Package: etcd
+Version: 3.5.15-1
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 52224
+Homepage: https://github.com/etcd-io/etcd
+Priority: optional
+Section: 
+Filename: pool/main/e/etcd/etcd_3.5.15-1_arm64.deb
+Size: 18844814
+SHA256: 2f512ca1871b7d075f6e76ed2213bea15c8d3f1b3cd01361f68e3daa458c9c02
+SHA1: f9e4676cd78d46a20e2c45a96fd252af177f625c
+MD5sum: 9198c3edbaddce4beb3ecdcb366d82f5
+Description: Distributed reliable key-value store for the most critical data of a distributed system
+
+Package: ferretdb
+Version: 1.23.0
+Architecture: arm64
+Maintainer: packages@ferretdb.io
+Installed-Size: 41633
+Suggests: postgresql
+Homepage: https://www.ferretdb.com/
+Priority: optional
+Section: database
+Filename: pool/main/f/ferretdb/ferretdb_1.23.0_arm64.deb
+Size: 20380608
+SHA256: 0c188748bcca2b17ffb978adba97690f7312abb61a6e130c18d01405b52f695a
+SHA1: f65a845442a69d56901a65fab0cbebe27cc80a58
+MD5sum: 31ea8802bc372506ef9fcb9e161b83ff
+Description: A truly Open Source MongoDB alternative
+
+Package: grafana
+Version: 11.1.3
+License: AGPLv3
+Vendor: "Grafana Labs"
+Architecture: arm64
+Maintainer: contact@grafana.com
+Installed-Size: 423901
+Depends: adduser, libfontconfig1, musl
+Homepage: https://grafana.com
+Priority: optional
+Section: default
+Filename: pool/main/g/grafana/grafana_11.1.3_arm64.deb
+Size: 113038978
+SHA256: 84ca2429a485bb27c0faa76176fdf7c3b6d8ecff7d3df71cdd13ff7383b6b635
+SHA1: 9058f0c6cd36a87bf3a8d3c30c2c77da957c0553
+MD5sum: 1c18609f98da5bfeeb7af4e155ee1609
+Description: Grafana
+
+Package: kafka-exporter
+Version: 1.7.0
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 17925
+Homepage: https://github.com/danielqsj/kafka_exporter
+Priority: optional
+Section: 
+Filename: pool/main/k/kafka-exporter/kafka-exporter_1.7.0_arm64.deb
+Size: 8979460
+SHA256: 2ad32bb6dd4d3d8ef4cef4e6e831f0c72c50fabe15a560f1bf0ba7975d7c1249
+SHA1: 36610cf4b7d5250d38aa3e018d98ef15dacbe415
+MD5sum: 2d4aad30e1c295ca2932dfa05c62210b
+Description: Prometheus Exporter for Kafka
+
+Package: keepalived-exporter
+Version: 1.3.2
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 9856
+Homepage: https://github.com/gen2brain/keepalived_exporter
+Priority: optional
+Section: 
+Filename: pool/main/k/keepalived-exporter/keepalived-exporter_1.3.2_arm64.deb
+Size: 3793978
+SHA256: a5909efdedb4dc8e6eb650915606b7d00e6d2b01ca0e44d2556b555e142c5bd8
+SHA1: 3cd53d69675005291f27c245757995bd1c39d40f
+MD5sum: 2643cf6b321b4b6dd344058127bd4f42
+Description: Prometheus exporter for keepalived metrics
+
+Package: logcli
+Version: 3.1.0-1
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 60992
+Homepage: https://github.com/prometheus/prometheus
+Priority: optional
+Section: 
+Filename: pool/main/l/logcli/logcli_3.1.0-1_arm64.deb
+Size: 17593556
+SHA256: 832ef278c07a101f35208c8a6b2c1de7d6699a47c4cec82d3b09288f9affcbeb
+SHA1: 57165ecc80ad90bccdaf9a903d00238eaa22bef0
+MD5sum: 8e62dccec75b4ec43ecde8f7afbe0735
+Description: Loki Logging Service CLI
+
+Package: loki
+Version: 3.1.0-1
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 71938
+Homepage: https://github.com/prometheus/prometheus
+Priority: optional
+Section: 
+Filename: pool/main/l/loki/loki_3.1.0-1_arm64.deb
+Size: 21405560
+SHA256: 9d83b06a1619fd7852081fe90bbb1c9d59cfee46da23326e3e8dd9b31a3af2ef
+SHA1: 157f6a287048d3f66f667c0b20c175c1d1628ead
+MD5sum: 436255ba7668580e676e52246164e331
+Description: Loki Logging Service
+
+Package: mcli
+Version: 20240726130844.0.0
+Architecture: arm64
+Maintainer: MinIO Development <dev@minio.io>
+Installed-Size: 25088
+Homepage: https://min.io
+Priority: optional
+Section: 
+Filename: pool/main/m/mcli/mcli_20240726130844.0.0_arm64.deb
+Size: 9142136
+SHA256: f7b6be0c4e67b204a426a1f36efa6fd35c3d20c18a48a11959478cbdaa89ac6a
+SHA1: 6b41afbc3d6f26b0639821ca76f2f9468bd5df08
+MD5sum: 49154729d8ea168016095782b76c619b
+Description: MinIO Client for cloud storage and filesystems
+
+Package: minio
+Version: 20240726204821.0.0
+Architecture: arm64
+Maintainer: MinIO Development <dev@minio.io>
+Installed-Size: 96897
+Homepage: https://min.io
+Priority: optional
+Section: 
+Filename: pool/main/m/minio/minio_20240726204821.0.0_arm64.deb
+Size: 35047958
+SHA256: da7c957723a261512fbabf8786a547844c429486b28fb48b5d7fe3329428b2ce
+SHA1: 3aaaab086d85bae97b967777efdc0776701b40b6
+MD5sum: e097ceb893f868bc74ff9c8511e7ef47
+Description: MinIO is a High Performance Object Storage released under AGPLv3.
+ It is API compatible with Amazon S3 cloud storage service. Use MinIO to build
+ high performance infrastructure for machine learning, analytics and application
+ data workloads.
+
+Package: mongodb-exporter
+Version: 0.40.0
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 13952
+Homepage: https://github.com/prometheus/mongodb_exporter
+Priority: optional
+Section: 
+Filename: pool/main/m/mongodb-exporter/mongodb-exporter_0.40.0_arm64.deb
+Size: 5255114
+SHA256: d95afdb47ae5e24ceebda2046fe10890bc6dde96ebd185a07c12c9be1893f3cc
+SHA1: 5e4dce7aad6ad0f6a243eb2822d3af5a8acd1e3c
+MD5sum: 9572f5eb3946cd6c7f85c4e0909e970d
+Description: A Prometheus exporter for MongoDB including sharding, replication and storage engines
+
+Package: mysqld-exporter
+Version: 0.15.1
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 14849
+Homepage: https://github.com/prometheus/mysqld_exporter
+Priority: optional
+Section: 
+Filename: pool/main/m/mysqld-exporter/mysqld-exporter_0.15.1_arm64.deb
+Size: 7832116
+SHA256: 4fbe685db609d14426a599f323d225d8d1402169623f52411ff87995fd8e30f8
+SHA1: e140d447dcaea8c1fc1eb5ca525016c134820e80
+MD5sum: e2221ca5ae19339440d46cbaaaae1406
+Description: Prometheus exporter for MySQL server metrics.
+
+Package: nginx-exporter
+Version: 1.2.0
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 11648
+Homepage: https://github.com/nginxinc/nginx-prometheus-exporter
+Priority: optional
+Section: 
+Filename: pool/main/n/nginx-exporter/nginx-exporter_1.2.0_arm64.deb
+Size: 4037964
+SHA256: ae823a3d45d880366df6d7826b02ed843ddbfda398129bf74440ddc954380c7e
+SHA1: b26e6965a658b9704dde6c845bc49a7711d2b3c2
+MD5sum: 8a824cefd073895923434e1968f19c91
+Description: NGINX Prometheus Exporter for NGINX and NGINX Plus.
+
+Package: node-exporter
+Version: 1.8.2
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 19213
+Homepage: https://github.com/prometheus/node_exporter
+Priority: optional
+Section: 
+Filename: pool/main/n/node-exporter/node-exporter_1.8.2_arm64.deb
+Size: 10086942
+SHA256: cdee9483ce7426129571c3cf570b3f33f89ae9500123d4eee441ec91471bdbe2
+SHA1: 47f539e115710bfd25e7e4098376a3471b5d67ee
+MD5sum: ca7a877fcb2f5c9d165aed3d1f06422f
+Description: Prometheus exporter for machine metrics
+
+Package: pg-exporter
+Version: 0.7.0
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 15727
+Homepage: https://github.com/Vonng/pg_exporter
+Priority: optional
+Section: 
+Filename: pool/main/p/pg-exporter/pg-exporter_0.7.0_arm64.deb
+Size: 8256840
+SHA256: 5ed78da3cce7fa5ad0e8de883a4d834040da752255f559dc7290eccbb012b668
+SHA1: 240c3c88a3d61811deff28137177a54b84a575b2
+MD5sum: 1ec89ca50f91d05e4af421d4d5a61644
+Description: Prometheus exporter for PostgreSQL / Pgbouncer server metrics.
+ Supported version: Postgres9.4 - 17+ & Pgbouncer 1.8 - 1.22+
+ Part of Project Pigsty -- Battery Included PostgreSQL Distribution
+ with ultimate observability support: https://pigsty.cc
+
+Package: pg-timetable
+Version: 5.9.0
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 10624
+Homepage: https://github.com/cybertec-postgresql/pg_timetable
+Priority: optional
+Section: 
+Filename: pool/main/p/pg-timetable/pg-timetable_5.9.0_arm64.deb
+Size: 3848344
+SHA256: 22ce023e83a0fc2b214a8352222371b5c2953759640490a3574896ed6e6f88b1
+SHA1: 322a2453069d55d7f951332309bc4f3b1348c698
+MD5sum: 405976b26e256cc2e6c927b036284e4d
+Description: pg_timetable: Advanced scheduling for PostgreSQL
+
+Package: pgbackrest-exporter
+Version: 0.17.0
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 10098
+Homepage: https://github.com/woblerr/pgbackrest_exporter
+Priority: optional
+Section: 
+Filename: pool/main/p/pgbackrest-exporter/pgbackrest-exporter_0.17.0_arm64.deb
+Size: 4094008
+SHA256: 0d504c173ac011f8284d07cc1854c424baff60c5799d1c3ba9d67e2b144cca8f
+SHA1: 40b84374ac4be56d8de567f776013f6db667672d
+MD5sum: a2fc586ba686bd075db7a0531db2c455
+Description: Prometheus exporter for pgBackRest.
+
+Package: prometheus2
+Version: 2.53.1-1
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 255635
+Homepage: https://github.com/prometheus/prometheus
+Priority: optional
+Section: 
+Filename: pool/main/p/prometheus2/prometheus2_2.53.1-1_arm64.deb
+Size: 99428596
+SHA256: 13d81788049a3b6926f3a3bf03966229543c662c076d348ffc9361860bcd213b
+SHA1: 822127da45062481b0c542bf0b6efd7ce0bd3efe
+MD5sum: c6d42c8bea57264e4d4359360f9b24bd
+Description: The Prometheus monitoring system and time series database.
+
+Package: promtail
+Version: 3.0.0-1
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 92011
+Homepage: https://github.com/prometheus/prometheus
+Priority: optional
+Section: 
+Filename: pool/main/p/promtail/promtail_3.0.0-1_arm64.deb
+Size: 26294848
+SHA256: abeb5ada4738c8cba43bbdd49cbc7c3ee09f0a367d340203e259b4543cddd7a9
+SHA1: f06a809990d9d29947c50e30d61542cd2f333353
+MD5sum: f465dd8bd5c1b54dc3b3724121f4e069
+Description: Promtail Logging Agent
+
+Package: pushgateway
+Version: 1.9.0
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 17782
+Homepage: https://github.com/prometheus/pushgateway
+Priority: optional
+Section: 
+Filename: pool/main/p/pushgateway/pushgateway_1.9.0_arm64.deb
+Size: 10091214
+SHA256: f795e16725c951b728226793848944de96c17f94ca3f7dae7c3a323168b27686
+SHA1: 451b60f69a87817bdc7a92d7dc0bb890a36b3dca
+MD5sum: 060d2d86c73dfbba210284de9deab635
+Description: Prometheus pushgateway
+
+Package: redis-exporter
+Version: 1.62.0
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 7808
+Homepage: https://github.com/Vonng/redis_exporter
+Priority: optional
+Section: 
+Filename: pool/main/r/redis-exporter/redis-exporter_1.62.0_arm64.deb
+Size: 3073976
+SHA256: 46af85241117fce43e81271221fe36f856af25dd322c21012b1c813ae3b2604f
+SHA1: 4c09204732b4a356cfe6b94a9479fc8b2b39a29a
+MD5sum: ac79e20c6c5d503c1652c6e93773b38b
+Description: Prometheus Exporter for Redis Metrics. Supports Redis 2.x, 3.x, 4.x, 5.x, 6.x, and 7.x
+
+Package: victoria-logs
+Version: 0.28.0
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 15069
+Homepage: https://github.com/VictoriaMetrics/VictoriaMetrics
+Priority: optional
+Section: 
+Filename: pool/main/v/victoria-logs/victoria-logs_0.28.0_arm64.deb
+Size: 8316622
+SHA256: 6a39efeb24b224785f5fba8237903b3c0b9a2ff68a7cc7f2effaf03f59f414ce
+SHA1: 6587173802367d1ae24055d5d057b4877e4ab71c
+MD5sum: 5f6033a552922d7b804b7140444c0f9b
+Description: VictoriaLogs is open source user-friendly database for logs from VictoriaMetrics.
+
+Package: victoria-metrics
+Version: 1.102.0
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 20290
+Homepage: https://github.com/VictoriaMetrics/VictoriaMetrics
+Priority: optional
+Section: 
+Filename: pool/main/v/victoria-metrics/victoria-metrics_1.102.0_arm64.deb
+Size: 10824878
+SHA256: b6fb748488ecc1fce7ad23cced0175dade96918b856a15097188f022fc1648a6
+SHA1: 194266050524d732127128cf56d1c8a767b78dd2
+MD5sum: 0e7a5e21e399cde4ce8cbdbcd3dd4e43
+Description: fast, cost-effective monitoring solution and time series database
+
+Package: victoria-metrics-cluster
+Version: 1.102.0
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 75710
+Homepage: https://github.com/VictoriaMetrics/VictoriaMetrics
+Priority: optional
+Section: 
+Filename: pool/main/v/victoria-metrics-cluster/victoria-metrics-cluster_1.102.0_arm64.deb
+Size: 39094420
+SHA256: ed0dce724ca4bc4227c913a0b265611a7b815af9886704c744faa58f6ab726ab
+SHA1: 0e92e8a4af690945ba1820b886c029fa7e54f755
+MD5sum: eee9481d63a516895bde913adfeed2f5
+Description: fast, cost-effective monitoring solution and time series database, cluster version
+
+Package: victoria-metrics-utils
+Version: 1.102.0
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 108643
+Homepage: https://github.com/VictoriaMetrics/VictoriaMetrics
+Priority: optional
+Section: 
+Filename: pool/main/v/victoria-metrics-utils/victoria-metrics-utils_1.102.0_arm64.deb
+Size: 52406770
+SHA256: 9e415ae87fb3b7741b79b3e1df1b01163cb4d9d395ce9002ff6e6b80dc718228
+SHA1: 6bf0caf5bad4a1973cdb69830ab85596621b1a42
+MD5sum: 9d7d104179223b9d168cf2918fd653c7
+Description: fast, cost-effective monitoring solution and time series database, agent,alert,auth,backup,ctl
+
+Package: vip-manager
+Version: 2.6.0
+Architecture: arm64
+Maintainer: Julian Markwort <julian.markwort@cybertec.at>
+Installed-Size: 15043
+Provides: vip-manager
+Homepage: https://github.com/cybertec-postgresql/vip-manager/
+Priority: optional
+Section: default
+Filename: pool/main/v/vip-manager/vip-manager_2.6.0_arm64.deb
+Size: 5504484
+SHA256: 7f7bc6c99ed526e9ff7483a4b64dc01be77b9b9919d37e8590d0ed81e252fe2f
+SHA1: 99d30f284cd12cfdabfd0715550c1f18818aa4fd
+MD5sum: 29ad4469c237b134bd7abc45f1148ba0
+Description: Manages a virtual IP based on state kept in etcd/consul
+
