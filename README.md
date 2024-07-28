@@ -1,19 +1,19 @@
 # PGSTY PKG -- RPM / DEB for PGSTY & PostgreSQL
 
-The supplementary [apt](apt/) and [yum](yum/) software repositories for PostgreSQL ecosystem. 
+The supplementary [apt](apt/) and [yum](yum/) software repo for PostgreSQL ecosystem used by [Pigsty](https://pigsty.io)
 
 Supported Operating System Distributions & Major Versions:
 
-- el8 x86_64: RockyLinux 8.9, and other compatible distros
-- el9 x86_64: RockyLinux 9.3, and other compatible distros
-- d12 x86_64: Debian 12 bookworm, and other compatible distros
-- u22 x86_64: Ubuntu 22.04.3 jammy, and other compatible distros
+- `el9.x86_64`: ⭐️ RockyLinux 9.3, and other compatible distros
+- `d12.x86_64`: ⭐️ Debian 12 bookworm, and other compatible distros
+- `u22.x86_64`: ⭐️ Ubuntu 22.04.3 jammy, and other compatible distros
+- `el8.x86_64`: ⭐️ RockyLinux 8.9, and other compatible distros
 
 Legacy support:
 
-- el7 x86_64: CentOS 7.9, and other compatible distros
-- d11 x86_64: Debian 11 bullseye, and other compatible distros
-- u20 x86_64: Ubuntu 20.04 focal, and other compatible distros
+- `el7.x86_64`: CentOS 7.9, and other compatible distros
+- `d11.x86_64`: Debian 11 bullseye, and other compatible distros
+- `u20.x86_64`: Ubuntu 20.04 focal, and other compatible distros
 
 
 --------
@@ -25,7 +25,7 @@ Legacy support:
 - [grafana](https://github.com/grafana/grafana/) : 11.1.3
 - [loki](https://github.com/grafana/loki) : 3.1.0
 - [promtail](https://github.com/grafana/loki) : 3.0.0 (buggy 3.1.0)
-- [prometheus](https://github.com/prometheus/prometheus) : TODO: 2.53.1
+- [prometheus](https://github.com/prometheus/prometheus) : 2.53.1
 - [pushgateway](https://github.com/prometheus/pushgateway) : 1.9.0
 - [alertmanager](https://github.com/prometheus/alertmanager) : 0.27.0
 - [blackbox_exporter](https://github.com/prometheus/blackbox_exporter) : 0.25.0
@@ -120,3 +120,11 @@ deb [signed-by=/etc/apt/keyrings/pgsty.gpg] https://pkg.pgsty.pro/apt/pgsql ${di
 EOF
 sudo apt update
 ```
+
+--------
+
+## License
+
+Maintainer: Ruohang Feng / [@Vonng](https://vonng.com/en/) ([rh@vonng.com](mailto:rh@vonng.com))
+
+[Apache 2.0 License](LICENSE)
