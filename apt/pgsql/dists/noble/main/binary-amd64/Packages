@@ -1,0 +1,23 @@
+Package: haproxy
+Version: 3.0.2-1ppa1~noble
+Architecture: amd64
+Maintainer: Debian HAProxy Maintainers <team+haproxy@tracker.debian.org>
+Installed-Size: 4875
+Pre-Depends: dpkg (>= 1.17.14), init-system-helpers (>= 1.54~)
+Depends: libc6 (>= 2.38), libcrypt1 (>= 1:4.1.0), libjemalloc2 (>= 2.1.1), liblua5.3-0, libopentracing-c-wrapper0t64 (>= 1.1.0), libpcre2-8-0 (>= 10.22), libssl3t64 (>= 3.0.0), adduser, lsb-base (>= 3.0-6)
+Suggests: vim-haproxy, haproxy-doc
+Homepage: http://www.haproxy.org/
+Priority: optional
+Section: net
+Filename: pool/main/h/haproxy/haproxy_3.0.2-1ppa1~noble_amd64.deb
+Size: 2202744
+SHA256: f517c0104912973b1e74b25a45188cdc2188f48e5de629ba40b5d066fee7e4b7
+SHA1: 4b7db58b4945be96d81d057a54c6aa102f5a0a4e
+MD5sum: d01edf15d36707125aa1d65a893d29d8
+Description: fast and reliable load balancing reverse proxy
+ HAProxy is a TCP/HTTP reverse proxy which is particularly suited for high
+ availability environments. It features connection persistence through HTTP
+ cookies, load balancing, header addition, modification, deletion both ways. It
+ has request blocking capabilities and provides interface to display server
+ status.
+

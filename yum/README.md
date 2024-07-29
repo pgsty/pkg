@@ -1,6 +1,6 @@
 # PGSTY YUM Repository
 
-This repo contains supplementary packages for the official [PGDG](https://download.postgresql.org/pub/repos/yum/) repo.
+This repo contains supplementary packages for the official [PGDG YUM](https://download.postgresql.org/pub/repos/yum/) repo.
 
 
 --------

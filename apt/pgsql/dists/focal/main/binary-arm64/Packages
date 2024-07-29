@@ -1,0 +1,23 @@
+Package: redis
+Version: 6:7.2.5-1rl1~focal1
+Architecture: all
+Maintainer: Redis Core Team <redis@redis.io>
+Installed-Size: 44
+Depends: redis-server (<< 6:7.2.5-1rl1~focal1.1~), redis-server (>= 6:7.2.5-1rl1~focal1)
+Homepage: https://redis.io/
+Priority: optional
+Section: database
+Filename: pool/main/r/redis/redis_7.2.5-1rl1~focal1_all.deb
+Size: 34092
+SHA256: 1e9f4305056cb13a6fd7c253ac4d86ac8819c5fd53b9658583c441739745276e
+SHA1: 0740979637b6b048322f353d637c6d4a2d2b53bb
+MD5sum: 1258e714df9247efd5da4f8dfaf6486e
+Description: Persistent key-value database with network interface (metapackage)
+ Redis is a key-value database in a similar vein to memcache but the dataset
+ is non-volatile. Redis additionally provides native support for atomically
+ manipulating and querying data structures such as lists and sets.
+ .
+ The dataset is stored entirely in memory and periodically flushed to disk.
+ .
+ This package depends on the redis-server package.
+

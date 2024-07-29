@@ -1,0 +1,93 @@
+Package: haproxy
+Version: 2.9.9-1ppa1~focal
+Architecture: amd64
+Maintainer: Debian HAProxy Maintainers <team+haproxy@tracker.debian.org>
+Installed-Size: 4852
+Pre-Depends: dpkg (>= 1.17.14), init-system-helpers (>= 1.54~)
+Depends: libc6 (>= 2.17), libcrypt1 (>= 1:4.1.0), libjemalloc2 (>= 2.1.1), liblua5.3-0, libpcre2-8-0 (>= 10.22), libssl1.1 (>= 1.1.1), libsystemd0, adduser, lsb-base (>= 3.0-6)
+Suggests: vim-haproxy, haproxy-doc
+Homepage: http://www.haproxy.org/
+Priority: optional
+Section: net
+Filename: pool/main/h/haproxy/haproxy_2.9.9-1ppa1~focal_amd64.deb
+Size: 2063908
+SHA256: fb3266d9303e9b23ef8291016ff5283d6254e7ca58035ca4634b587be7f3789c
+SHA1: 3f4fd2363e63c2b72ecd5107d49f03b35df9060d
+MD5sum: e5471bb00ecc57e2249b0d28a9e17d74
+Description: fast and reliable load balancing reverse proxy
+ HAProxy is a TCP/HTTP reverse proxy which is particularly suited for high
+ availability environments. It features connection persistence through HTTP
+ cookies, load balancing, header addition, modification, deletion both ways. It
+ has request blocking capabilities and provides interface to display server
+ status.
+
+Package: redis
+Version: 6:7.2.5-1rl1~focal1
+Architecture: all
+Maintainer: Redis Core Team <redis@redis.io>
+Installed-Size: 44
+Depends: redis-server (<< 6:7.2.5-1rl1~focal1.1~), redis-server (>= 6:7.2.5-1rl1~focal1)
+Homepage: https://redis.io/
+Priority: optional
+Section: database
+Filename: pool/main/r/redis/redis_7.2.5-1rl1~focal1_all.deb
+Size: 34092
+SHA256: 1e9f4305056cb13a6fd7c253ac4d86ac8819c5fd53b9658583c441739745276e
+SHA1: 0740979637b6b048322f353d637c6d4a2d2b53bb
+MD5sum: 1258e714df9247efd5da4f8dfaf6486e
+Description: Persistent key-value database with network interface (metapackage)
+ Redis is a key-value database in a similar vein to memcache but the dataset
+ is non-volatile. Redis additionally provides native support for atomically
+ manipulating and querying data structures such as lists and sets.
+ .
+ The dataset is stored entirely in memory and periodically flushed to disk.
+ .
+ This package depends on the redis-server package.
+
+Package: redis-server
+Source: redis
+Version: 6:7.2.5-1rl1~focal1
+Architecture: amd64
+Maintainer: Redis Core Team <redis@redis.io>
+Installed-Size: 188
+Depends: lsb-base (>= 3.2-14), redis-tools (= 6:7.2.5-1rl1~focal1)
+Homepage: https://redis.io/
+Priority: optional
+Section: database
+Filename: pool/main/r/redis/redis-server_7.2.5-1rl1~focal1_amd64.deb
+Size: 81140
+SHA256: 70ad909e1d6d6c2bb2c6f8631973207b85309a636a22cb412f794ad65854426d
+SHA1: 5d928f1d634b406909459c7f58ae2a9e322a27f2
+MD5sum: bee838428a9de60268ab70a9f7af91d3
+Description: Persistent key-value database with network interface
+ Redis is a key-value database in a similar vein to memcache but the dataset
+ is non-volatile. Redis additionally provides native support for atomically
+ manipulating and querying data structures such as lists and sets.
+ .
+ The dataset is stored entirely in memory and periodically flushed to disk.
+
+Package: redis-tools
+Source: redis
+Version: 6:7.2.5-1rl1~focal1
+Architecture: amd64
+Maintainer: Redis Core Team <redis@redis.io>
+Installed-Size: 8834
+Depends: adduser, libc6 (>= 2.29), libssl1.1 (>= 1.1.1), libsystemd0
+Suggests: ruby-redis
+Breaks: redis-server (<< 2:2.6.16-1)
+Replaces: redis-server (<< 2:2.6.16-1)
+Homepage: https://redis.io/
+Priority: optional
+Section: database
+Filename: pool/main/r/redis/redis-tools_7.2.5-1rl1~focal1_amd64.deb
+Size: 1321864
+SHA256: 238823fd8a40772d833c2e27a24d2c6fb1f9e1e9a78f8a4025dc33e6fb28da3f
+SHA1: bd93e2d150b272ba34a04548b1e7c62d82f01802
+MD5sum: bca50d8e1e678dad77e5a01e2b56ed0b
+Description: Persistent key-value database with network interface (client)
+ Redis is a key-value database in a similar vein to memcache but the dataset
+ is non-volatile. Redis additionally provides native support for atomically
+ manipulating and querying data structures such as lists and sets.
+ .
+ This package contains the command line client and other tools.
+

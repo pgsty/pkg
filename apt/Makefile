@@ -17,12 +17,16 @@ DEVEL_PATH = sv:/data/pkg/apt
 init:
 	mkdir -p infra infra/{conf,db,dists,pool}
 	mkdir -p pgsql pgsql/{conf,db,dists,pool}
+	mkdir -p pgsty pgsty/{conf,db,dists,pool}
 
 clean:
 	rm -rf stash/*
 
 add-infra:
 	reprepro -b infra includedeb generic stash/*.deb
+ls-infra:
+	reprepro -b infra list generic
+
 add-focal:
 	reprepro -b pgsql includedeb focal stash/*.deb
 add-jammy:
@@ -34,8 +38,6 @@ add-bookworm:
 add-bullseye:
 	reprepro -b pgsql includedeb bullseye stash/*.deb
 
-ls-infra:
-	reprepro -b infra list generic
 ls-focal:
 	reprepro -b pgsql list focal
 ls-jammy:
@@ -49,6 +51,19 @@ ls-bullseye:
 
 # how to remove (e.g.)
 # reprepro -b pgsql remove bookworm haproxy
+
+pgsql-include:
+	reprepro -b pgsql includedeb bookworm stash/bookworm.amd64/postgresql-16*.deb
+	reprepro -b pgsql includedeb jammy    stash/jammy.amd64/postgresql-16*.deb
+pgsty-add-jammy:
+	reprepro -b pgsty includedeb jammy stash/jammy.amd64/*.deb
+pgsty-add-bookworm:
+	reprepro -b pgsty includedeb bookworm stash/bookworm.amd64/*.deb
+pgsty-ls-jammy:
+	reprepro -b pgsty list jammy
+pgsty-ls-bookworm:
+	reprepro -b pgsty list bookworm
+
 
 ###############################################################
 #                        2. Syncing                           #
