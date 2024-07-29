@@ -26,51 +26,269 @@ data:
   profiles:
     everything:
       rpms:
+      - apache-age_16
+      - apache-age_16-llvmjit
+      - asn1oid_16
+      - asn1oid_16-llvmjit
+      - duckdb_fdw_16
+      - duckdb_fdw_16-llvmjit
+      - first_last_agg_16
+      - first_last_agg_16-llvmjit
+      - hunspell_cs_cz_16
+      - hunspell_de_de_16
+      - hunspell_en_us_16
+      - hunspell_fr_16
+      - hunspell_ne_np_16
+      - hunspell_nl_nl_16
+      - hunspell_nn_no_16
+      - hunspell_pt_pt_16
+      - hunspell_ru_ru_16
+      - hunspell_ru_ru_aot_16
+      - hydra_16
+      - hydra_16-llvmjit
+      - icu_ext_16
+      - icu_ext_16-llvmjit
+      - imgsmlr_16
+      - imgsmlr_16-llvmjit
       - libarrow-s3
       - libduckdb
+      - md5hash_16
+      - md5hash_16-llvmjit
+      - mimeo_16
+      - numeral_16
+      - numeral_16-llvmjit
       - parquet_s3_fdw_16-llvmjit
+      - permuteseq_16
+      - permuteseq_16-llvmjit
       - pg_filedump
-      - pg_lakehouse_15
+      - pg_graphql_16
+      - pg_hashids_16
+      - pg_hashids_16-llvmjit
+      - pg_idkit_16
+      - pg_jsonschema_16
       - pg_lakehouse_16
+      - pg_later_16
+      - pg_proctab_16
+      - pg_proctab_16-llvmjit
+      - pg_rational_16
+      - pg_rational_16-llvmjit
+      - pg_roaringbitmap_16
+      - pg_roaringbitmap_16-llvmjit
+      - pg_rrule_16
+      - pg_rrule_16-llvmjit
       - pg_search_12
       - pg_search_13
       - pg_search_14
-      - pg_search_15
       - pg_search_16
+      - pg_similarity_16
+      - pg_similarity_16-llvmjit
+      - pg_snakeoil_16
+      - pg_snakeoil_16-llvmjit
+      - pg_sqlog_16
+      - pg_tde_16
+      - pg_tde_16-llvmjit
+      - pg_tiktoken_16
+      - pg_vectorize_16
+      - pgdd_16
+      - pgextwlist_16
+      - pgextwlist_16-llvmjit
+      - pgfaceting_16
+      - pgjwt_16
+      - pgml_16
+      - pgmq_16
+      - pgpcre_16
+      - pgpcre_16-llvmjit
+      - pgsmcrypto_16
+      - pgsphere_16
+      - pgsphere_16-llvmjit
+      - pgvectorscale_16
+      - postgres_shacrypt_16
+      - postgres_shacrypt_16-llvmjit
+      - preprepare_16
+      - preprepare_16-llvmjit
+      - q3c_16
+      - q3c_16-llvmjit
       - redis
       - redis-devel
       - redis-doc
       - scws
+      - supautils_16
+      - supautils_16-llvmjit
+      - tablelog_16
+      - toastinfo_16
+      - toastinfo_16-llvmjit
+      - vault_16
+      - wrappers_16
+      - zhparser_16
+      - zhparser_16-llvmjit
   api:
     rpms:
+    - apache-age_16
+    - apache-age_16-llvmjit
+    - asn1oid_16
+    - asn1oid_16-llvmjit
+    - duckdb_fdw_16
+    - duckdb_fdw_16-llvmjit
+    - first_last_agg_16
+    - first_last_agg_16-llvmjit
+    - hunspell_cs_cz_16
+    - hunspell_de_de_16
+    - hunspell_en_us_16
+    - hunspell_fr_16
+    - hunspell_ne_np_16
+    - hunspell_nl_nl_16
+    - hunspell_nn_no_16
+    - hunspell_pt_pt_16
+    - hunspell_ru_ru_16
+    - hunspell_ru_ru_aot_16
+    - hydra_16
+    - hydra_16-llvmjit
+    - icu_ext_16
+    - icu_ext_16-llvmjit
+    - imgsmlr_16
+    - imgsmlr_16-llvmjit
     - libarrow-s3
     - libduckdb
+    - md5hash_16
+    - md5hash_16-llvmjit
+    - mimeo_16
+    - numeral_16
+    - numeral_16-llvmjit
     - parquet_s3_fdw_16-llvmjit
+    - permuteseq_16
+    - permuteseq_16-llvmjit
     - pg_filedump
-    - pg_lakehouse_15
+    - pg_graphql_16
+    - pg_hashids_16
+    - pg_hashids_16-llvmjit
+    - pg_idkit_16
+    - pg_jsonschema_16
     - pg_lakehouse_16
+    - pg_later_16
+    - pg_proctab_16
+    - pg_proctab_16-llvmjit
+    - pg_rational_16
+    - pg_rational_16-llvmjit
+    - pg_roaringbitmap_16
+    - pg_roaringbitmap_16-llvmjit
+    - pg_rrule_16
+    - pg_rrule_16-llvmjit
     - pg_search_12
     - pg_search_13
     - pg_search_14
-    - pg_search_15
     - pg_search_16
+    - pg_similarity_16
+    - pg_similarity_16-llvmjit
+    - pg_snakeoil_16
+    - pg_snakeoil_16-llvmjit
+    - pg_sqlog_16
+    - pg_tde_16
+    - pg_tde_16-llvmjit
+    - pg_tiktoken_16
+    - pg_vectorize_16
+    - pgdd_16
+    - pgextwlist_16
+    - pgextwlist_16-llvmjit
+    - pgfaceting_16
+    - pgjwt_16
+    - pgml_16
+    - pgmq_16
+    - pgpcre_16
+    - pgpcre_16-llvmjit
+    - pgsmcrypto_16
+    - pgsphere_16
+    - pgsphere_16-llvmjit
+    - pgvectorscale_16
+    - postgres_shacrypt_16
+    - postgres_shacrypt_16-llvmjit
+    - preprepare_16
+    - preprepare_16-llvmjit
+    - q3c_16
+    - q3c_16-llvmjit
     - redis
     - redis-devel
     - redis-doc
     - scws
+    - supautils_16
+    - supautils_16-llvmjit
+    - tablelog_16
+    - toastinfo_16
+    - toastinfo_16-llvmjit
+    - vault_16
+    - wrappers_16
+    - zhparser_16
+    - zhparser_16-llvmjit
   components:
     rpms:
+      apache-age_16:
+        rationale: Present in the repository
+      asn1oid_16:
+        rationale: Present in the repository
+      duckdb_fdw_16:
+        rationale: Present in the repository
+      first_last_agg_16:
+        rationale: Present in the repository
+      hunspell_cs_cz_16:
+        rationale: Present in the repository
+      hunspell_de_de_16:
+        rationale: Present in the repository
+      hunspell_en_us_16:
+        rationale: Present in the repository
+      hunspell_fr_16:
+        rationale: Present in the repository
+      hunspell_ne_np_16:
+        rationale: Present in the repository
+      hunspell_nl_nl_16:
+        rationale: Present in the repository
+      hunspell_nn_no_16:
+        rationale: Present in the repository
+      hunspell_pt_pt_16:
+        rationale: Present in the repository
+      hunspell_ru_ru_16:
+        rationale: Present in the repository
+      hunspell_ru_ru_aot_16:
+        rationale: Present in the repository
+      hydra_16:
+        rationale: Present in the repository
+      icu_ext_16:
+        rationale: Present in the repository
+      imgsmlr_16:
+        rationale: Present in the repository
       libarrow-s3:
         rationale: Present in the repository
       libduckdb:
         rationale: Present in the repository
+      md5hash_16:
+        rationale: Present in the repository
+      mimeo_16:
+        rationale: Present in the repository
+      numeral_16:
+        rationale: Present in the repository
       parquet_s3_fdw_16:
+        rationale: Present in the repository
+      permuteseq_16:
         rationale: Present in the repository
       pg_filedump:
         rationale: Present in the repository
-      pg_lakehouse_15:
+      pg_graphql_16:
+        rationale: Present in the repository
+      pg_hashids_16:
+        rationale: Present in the repository
+      pg_idkit_16:
+        rationale: Present in the repository
+      pg_jsonschema_16:
         rationale: Present in the repository
       pg_lakehouse_16:
+        rationale: Present in the repository
+      pg_later_16:
+        rationale: Present in the repository
+      pg_proctab_16:
+        rationale: Present in the repository
+      pg_rational_16:
+        rationale: Present in the repository
+      pg_roaringbitmap_16:
+        rationale: Present in the repository
+      pg_rrule_16:
         rationale: Present in the repository
       pg_search_12:
         rationale: Present in the repository
@@ -78,29 +296,157 @@ data:
         rationale: Present in the repository
       pg_search_14:
         rationale: Present in the repository
-      pg_search_15:
-        rationale: Present in the repository
       pg_search_16:
+        rationale: Present in the repository
+      pg_similarity_16:
+        rationale: Present in the repository
+      pg_snakeoil_16:
+        rationale: Present in the repository
+      pg_sqlog_16:
+        rationale: Present in the repository
+      pg_tde_16:
+        rationale: Present in the repository
+      pg_tiktoken_16:
+        rationale: Present in the repository
+      pg_vectorize_16:
+        rationale: Present in the repository
+      pgdd_16:
+        rationale: Present in the repository
+      pgextwlist_16:
+        rationale: Present in the repository
+      pgfaceting_16:
+        rationale: Present in the repository
+      pgjwt_16:
+        rationale: Present in the repository
+      pgml_16:
+        rationale: Present in the repository
+      pgmq_16:
+        rationale: Present in the repository
+      pgpcre_16:
+        rationale: Present in the repository
+      pgsmcrypto_16:
+        rationale: Present in the repository
+      pgsphere_16:
+        rationale: Present in the repository
+      pgvectorscale_16:
+        rationale: Present in the repository
+      postgres_shacrypt_16:
+        rationale: Present in the repository
+      preprepare_16:
+        rationale: Present in the repository
+      q3c_16:
         rationale: Present in the repository
       redis:
         rationale: Present in the repository
       scws:
         rationale: Present in the repository
+      supautils_16:
+        rationale: Present in the repository
+      tablelog_16:
+        rationale: Present in the repository
+      toastinfo_16:
+        rationale: Present in the repository
+      vault_16:
+        rationale: Present in the repository
+      wrappers_16:
+        rationale: Present in the repository
+      zhparser_16:
+        rationale: Present in the repository
   artifacts:
     rpms:
+    - apache-age_16-0:1.5.0-1PIGSTY.el8.x86_64
+    - apache-age_16-llvmjit-0:1.5.0-1PIGSTY.el8.x86_64
+    - asn1oid_16-0:1.5-1PIGSTY.el8.x86_64
+    - asn1oid_16-llvmjit-0:1.5-1PIGSTY.el8.x86_64
+    - duckdb_fdw_16-0:1.0.0-1PIGSTY.el8.x86_64
+    - duckdb_fdw_16-llvmjit-0:1.0.0-1PIGSTY.el8.x86_64
+    - first_last_agg_16-0:0.1.4-1PIGSTY.el8.x86_64
+    - first_last_agg_16-llvmjit-0:0.1.4-1PIGSTY.el8.x86_64
+    - hunspell_cs_cz_16-0:1.0-1PIGSTY.el8.x86_64
+    - hunspell_de_de_16-0:1.0-1PIGSTY.el8.x86_64
+    - hunspell_en_us_16-0:1.0-1PIGSTY.el8.x86_64
+    - hunspell_fr_16-0:1.0-1PIGSTY.el8.x86_64
+    - hunspell_ne_np_16-0:1.0-1PIGSTY.el8.x86_64
+    - hunspell_nl_nl_16-0:1.0-1PIGSTY.el8.x86_64
+    - hunspell_nn_no_16-0:1.0-1PIGSTY.el8.x86_64
+    - hunspell_pt_pt_16-0:1.0-1PIGSTY.el8.x86_64
+    - hunspell_ru_ru_16-0:1.0-1PIGSTY.el8.x86_64
+    - hunspell_ru_ru_aot_16-0:1.0-1PIGSTY.el8.x86_64
+    - hydra_16-0:1.1.2-1PIGSTY.el8.x86_64
+    - hydra_16-llvmjit-0:1.1.2-1PIGSTY.el8.x86_64
+    - icu_ext_16-0:1.8.0-1PIGSTY.el8.x86_64
+    - icu_ext_16-llvmjit-0:1.8.0-1PIGSTY.el8.x86_64
+    - imgsmlr_16-0:1.0-2PIGSTY.el8.x86_64
+    - imgsmlr_16-llvmjit-0:1.0-2PIGSTY.el8.x86_64
     - libarrow-s3-0:17.0.0-1PIGSTY.el8.x86_64
     - libduckdb-0:1.0.0-1PIGSTY.el8.x86_64
+    - md5hash_16-0:1.0.1-1PIGSTY.el8.x86_64
+    - md5hash_16-llvmjit-0:1.0.1-1PIGSTY.el8.x86_64
+    - mimeo_16-0:1.5.1-1PIGSTY.el8.x86_64
+    - numeral_16-0:1.3-1PIGSTY.el8.x86_64
+    - numeral_16-llvmjit-0:1.3-1PIGSTY.el8.x86_64
     - parquet_s3_fdw_16-llvmjit-0:1.1.0-1PIGSTY.el8.x86_64
-    - pg_filedump-0:16.0-1PIGSTY.el8.x86_64
-    - pg_lakehouse_15-0:0.8.6-1PIGSTY.el8.x86_64
+    - permuteseq_16-0:1.2.2-1PIGSTY.el8.x86_64
+    - permuteseq_16-llvmjit-0:1.2.2-1PIGSTY.el8.x86_64
+    - pg_filedump-0:17.0-1PIGSTY.el8.x86_64
+    - pg_graphql_16-0:1.5.7-1PIGSTY.el8.x86_64
+    - pg_hashids_16-0:1.3-1PIGSTY.el8.x86_64
+    - pg_hashids_16-llvmjit-0:1.3-1PIGSTY.el8.x86_64
+    - pg_idkit_16-0:0.2.3-1PIGSTY.el8.x86_64
+    - pg_jsonschema_16-0:0.3.1-1PIGSTY.el8.x86_64
     - pg_lakehouse_16-0:0.8.6-1PIGSTY.el8.x86_64
+    - pg_later_16-0:0.1.1-1PIGSTY.el8.x86_64
+    - pg_proctab_16-0:0.0.10-1PIGSTY.el8.x86_64
+    - pg_proctab_16-llvmjit-0:0.0.10-1PIGSTY.el8.x86_64
+    - pg_rational_16-0:0.0.2-1PIGSTY.el8.x86_64
+    - pg_rational_16-llvmjit-0:0.0.2-1PIGSTY.el8.x86_64
+    - pg_roaringbitmap_16-0:0.5.4-1PIGSTY.el8.x86_64
+    - pg_roaringbitmap_16-llvmjit-0:0.5.4-1PIGSTY.el8.x86_64
+    - pg_rrule_16-0:0.2.0-1PIGSTY.el8.x86_64
+    - pg_rrule_16-llvmjit-0:0.2.0-1PIGSTY.el8.x86_64
     - pg_search_12-0:0.8.6-1PIGSTY.el8.x86_64
     - pg_search_13-0:0.8.6-1PIGSTY.el8.x86_64
     - pg_search_14-0:0.8.6-1PIGSTY.el8.x86_64
-    - pg_search_15-0:0.8.6-1PIGSTY.el8.x86_64
     - pg_search_16-0:0.8.6-1PIGSTY.el8.x86_64
-    - redis-0:7.2.5-1.el9.remi.x86_64
-    - redis-devel-0:7.2.5-1.el9.remi.x86_64
-    - redis-doc-0:7.2.5-1.el9.remi.noarch
-    - scws-0:1.2.3-1PIGSTY.el9.x86_64
+    - pg_similarity_16-0:1.0-2PIGSTY.el8.x86_64
+    - pg_similarity_16-llvmjit-0:1.0-2PIGSTY.el8.x86_64
+    - pg_snakeoil_16-0:1.3-1PIGSTY.el8.x86_64
+    - pg_snakeoil_16-llvmjit-0:1.3-1PIGSTY.el8.x86_64
+    - pg_sqlog_16-0:1.6-1PIGSTY.el8.x86_64
+    - pg_tde_16-0:1.0.0-1PIGSTY.el8.x86_64
+    - pg_tde_16-llvmjit-0:1.0.0-1PIGSTY.el8.x86_64
+    - pg_tiktoken_16-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_vectorize_16-0:0.17.0-1PIGSTY.el8.x86_64
+    - pgdd_16-0:0.5.2-1PIGSTY.el8.x86_64
+    - pgextwlist_16-0:1.17-1PIGSTY.el8.x86_64
+    - pgextwlist_16-llvmjit-0:1.17-1PIGSTY.el8.x86_64
+    - pgfaceting_16-0:0.2.0-1PIGSTY.el8.x86_64
+    - pgjwt_16-0:0.2.0-1PIGSTY.el8.x86_64
+    - pgml_16-0:2.9.3-1PIGSTY.el8.x86_64
+    - pgmq_16-0:1.2.1-1PIGSTY.el8.x86_64
+    - pgpcre_16-0:1-1PIGSTY.el8.x86_64
+    - pgpcre_16-llvmjit-0:1-1PIGSTY.el8.x86_64
+    - pgsmcrypto_16-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgsphere_16-0:1.5.1-1PIGSTY.el8.x86_64
+    - pgsphere_16-llvmjit-0:1.5.1-1PIGSTY.el8.x86_64
+    - pgvectorscale_16-0:0.2.0-1PIGSTY.el8.x86_64
+    - postgres_shacrypt_16-0:1.1-1PIGSTY.el8.x86_64
+    - postgres_shacrypt_16-llvmjit-0:1.1-1PIGSTY.el8.x86_64
+    - preprepare_16-0:0.9-1PIGSTY.el8.x86_64
+    - preprepare_16-llvmjit-0:0.9-1PIGSTY.el8.x86_64
+    - q3c_16-0:2.0.1-1PIGSTY.el8.x86_64
+    - q3c_16-llvmjit-0:2.0.1-1PIGSTY.el8.x86_64
+    - redis-0:7.2.5-1.el8.remi.x86_64
+    - redis-devel-0:7.2.5-1.el8.remi.x86_64
+    - redis-doc-0:7.2.5-1.el8.remi.noarch
+    - scws-0:1.2.3-1PIGSTY.el8.x86_64
+    - supautils_16-0:2.2.1-1PIGSTY.el8.x86_64
+    - supautils_16-llvmjit-0:2.2.1-1PIGSTY.el8.x86_64
+    - tablelog_16-0:0.1-1PIGSTY.el8.x86_64
+    - toastinfo_16-0:1.4-1PIGSTY.el8.x86_64
+    - toastinfo_16-llvmjit-0:1.4-1PIGSTY.el8.x86_64
+    - vault_16-0:0.2.9-1PIGSTY.el8.x86_64
+    - wrappers_16-0:0.4.1-1PIGSTY.el8.x86_64
+    - zhparser_16-0:2.2-1PIGSTY.el8.x86_64
+    - zhparser_16-llvmjit-0:2.2-1PIGSTY.el8.x86_64
 ...

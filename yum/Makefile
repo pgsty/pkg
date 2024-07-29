@@ -24,14 +24,43 @@ build:
 	./build	pgsql/el7.x86_64
 	./build	pgsql/el8.x86_64
 	./build	pgsql/el9.x86_64
-
+	./build	pgsty/el7.x86_64
+	./build	pgsty/el8.x86_64
+	./build	pgsty/el9.x86_64
 builds:
 	./build	infra/x86_64      sign
 	./build	infra/aarch64     sign
 	./build	pgsql/el7.x86_64  sign
 	./build	pgsql/el8.x86_64  sign
 	./build	pgsql/el9.x86_64  sign
+	./build	pgsty/el7.x86_64  sign
+	./build	pgsty/el8.x86_64  sign
+	./build	pgsty/el9.x86_64  sign
 
+adjust:
+	mv -f pgsty/el7.x86_64/scws*.rpm         pgsql/el7.x86_64/ || true
+	mv -f pgsty/el7.x86_64/pg_filedump*.rpm  pgsql/el7.x86_64/ || true
+	mv -f pgsty/el8.x86_64/scws*.rpm         pgsql/el8.x86_64/ || true
+	mv -f pgsty/el8.x86_64/libduckdb*.rpm    pgsql/el8.x86_64/ || true
+	mv -f pgsty/el8.x86_64/pg_filedump*.rpm  pgsql/el8.x86_64/ || true
+	mv -f pgsty/el8.x86_64/pg_search*.rpm    pgsql/el8.x86_64/ || true
+	mv -f pgsty/el8.x86_64/pg_lakehouse*.rpm pgsql/el8.x86_64/ || true
+	mv -f pgsty/el9.x86_64/scws*.rpm         pgsql/el9.x86_64/ || true
+	mv -f pgsty/el9.x86_64/libduckdb*.rpm    pgsql/el9.x86_64/ || true
+	mv -f pgsty/el9.x86_64/pg_filedump*.rpm  pgsql/el9.x86_64/ || true
+	mv -f pgsty/el9.x86_64/pg_search*.rpm    pgsql/el9.x86_64/ || true
+	mv -f pgsty/el9.x86_64/pg_lakehouse*.rpm pgsql/el9.x86_64/ || true
+	cp -f pgsty/el7.x86_64/*_15-*.rpm pgsql/el7.x86_64/ || true
+	cp -f pgsty/el8.x86_64/*_16-*.rpm pgsql/el8.x86_64/ || true
+	cp -f pgsty/el9.x86_64/*_16-*.rpm pgsql/el9.x86_64/ || true
+
+# building alias
+bb: pushd rb pulld
+bbs: pushd rbs pulld
+rb:
+	ssh sv 'cd /data/pkg/yum && make build'
+rbs:
+	ssh sv 'cd /data/pkg/yum && make builds'
 
 ###############################################################
 #                        2. Syncing                           #
