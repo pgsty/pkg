@@ -34,6 +34,7 @@ data:
       - duckdb_fdw_16-llvmjit
       - first_last_agg_16
       - first_last_agg_16-llvmjit
+      - geoip_16
       - hunspell_cs_cz_16
       - hunspell_de_de_16
       - hunspell_en_us_16
@@ -55,6 +56,7 @@ data:
       - md5hash_16
       - md5hash_16-llvmjit
       - mimeo_16
+      - mysqlcompat_16
       - numeral_16
       - numeral_16-llvmjit
       - parquet_s3_fdw_16-llvmjit
@@ -102,8 +104,15 @@ data:
       - pgsphere_16
       - pgsphere_16-llvmjit
       - pgvectorscale_16
+      - plproxy_16
+      - plproxy_16-llvmjit
+      - plprql_16
+      - plv8_16
+      - plv8_16-llvmjit
       - postgres_shacrypt_16
       - postgres_shacrypt_16-llvmjit
+      - postgresql-unit_16
+      - postgresql-unit_16-llvmjit
       - preprepare_16
       - preprepare_16-llvmjit
       - q3c_16
@@ -131,6 +140,7 @@ data:
     - duckdb_fdw_16-llvmjit
     - first_last_agg_16
     - first_last_agg_16-llvmjit
+    - geoip_16
     - hunspell_cs_cz_16
     - hunspell_de_de_16
     - hunspell_en_us_16
@@ -152,6 +162,7 @@ data:
     - md5hash_16
     - md5hash_16-llvmjit
     - mimeo_16
+    - mysqlcompat_16
     - numeral_16
     - numeral_16-llvmjit
     - parquet_s3_fdw_16-llvmjit
@@ -199,8 +210,15 @@ data:
     - pgsphere_16
     - pgsphere_16-llvmjit
     - pgvectorscale_16
+    - plproxy_16
+    - plproxy_16-llvmjit
+    - plprql_16
+    - plv8_16
+    - plv8_16-llvmjit
     - postgres_shacrypt_16
     - postgres_shacrypt_16-llvmjit
+    - postgresql-unit_16
+    - postgresql-unit_16-llvmjit
     - preprepare_16
     - preprepare_16-llvmjit
     - q3c_16
@@ -227,6 +245,8 @@ data:
       duckdb_fdw_16:
         rationale: Present in the repository
       first_last_agg_16:
+        rationale: Present in the repository
+      geoip_16:
         rationale: Present in the repository
       hunspell_cs_cz_16:
         rationale: Present in the repository
@@ -261,6 +281,8 @@ data:
       md5hash_16:
         rationale: Present in the repository
       mimeo_16:
+        rationale: Present in the repository
+      mysqlcompat_16:
         rationale: Present in the repository
       numeral_16:
         rationale: Present in the repository
@@ -330,7 +352,15 @@ data:
         rationale: Present in the repository
       pgvectorscale_16:
         rationale: Present in the repository
+      plproxy_16:
+        rationale: Present in the repository
+      plprql_16:
+        rationale: Present in the repository
+      plv8_16:
+        rationale: Present in the repository
       postgres_shacrypt_16:
+        rationale: Present in the repository
+      postgresql-unit_16:
         rationale: Present in the repository
       preprepare_16:
         rationale: Present in the repository
@@ -362,6 +392,7 @@ data:
     - duckdb_fdw_16-llvmjit-0:1.0.0-1PIGSTY.el8.x86_64
     - first_last_agg_16-0:0.1.4-1PIGSTY.el8.x86_64
     - first_last_agg_16-llvmjit-0:0.1.4-1PIGSTY.el8.x86_64
+    - geoip_16-0:0.3.0-1PIGSTY.el8.x86_64
     - hunspell_cs_cz_16-0:1.0-1PIGSTY.el8.x86_64
     - hunspell_de_de_16-0:1.0-1PIGSTY.el8.x86_64
     - hunspell_en_us_16-0:1.0-1PIGSTY.el8.x86_64
@@ -383,6 +414,7 @@ data:
     - md5hash_16-0:1.0.1-1PIGSTY.el8.x86_64
     - md5hash_16-llvmjit-0:1.0.1-1PIGSTY.el8.x86_64
     - mimeo_16-0:1.5.1-1PIGSTY.el8.x86_64
+    - mysqlcompat_16-0:0.0.7-1PIGSTY.el8.x86_64
     - numeral_16-0:1.3-1PIGSTY.el8.x86_64
     - numeral_16-llvmjit-0:1.3-1PIGSTY.el8.x86_64
     - parquet_s3_fdw_16-llvmjit-0:1.1.0-1PIGSTY.el8.x86_64
@@ -430,8 +462,15 @@ data:
     - pgsphere_16-0:1.5.1-1PIGSTY.el8.x86_64
     - pgsphere_16-llvmjit-0:1.5.1-1PIGSTY.el8.x86_64
     - pgvectorscale_16-0:0.2.0-1PIGSTY.el8.x86_64
+    - plproxy_16-0:2.11.0-1PIGSTY.el8.x86_64
+    - plproxy_16-llvmjit-0:2.11.0-1PIGSTY.el8.x86_64
+    - plprql_16-0:0.1.0-1PIGSTY.el8.x86_64
+    - plv8_16-0:3.2.2-1PIGSTY.el8.x86_64
+    - plv8_16-llvmjit-0:3.2.2-1PIGSTY.el8.x86_64
     - postgres_shacrypt_16-0:1.1-1PIGSTY.el8.x86_64
     - postgres_shacrypt_16-llvmjit-0:1.1-1PIGSTY.el8.x86_64
+    - postgresql-unit_16-0:7.7-1PIGSTY.el8.x86_64
+    - postgresql-unit_16-llvmjit-0:7.7-1PIGSTY.el8.x86_64
     - preprepare_16-0:0.9-1PIGSTY.el8.x86_64
     - preprepare_16-llvmjit-0:0.9-1PIGSTY.el8.x86_64
     - q3c_16-0:2.0.1-1PIGSTY.el8.x86_64
