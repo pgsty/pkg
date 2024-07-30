@@ -412,6 +412,25 @@ Description: A custom data type for storing MD5 hashes (instead of the native TE
   This extension provides a simple data type storing 128-bit values (e.g. MD5 hashes) in a bit more efficient way - in a fixed-length columns and inline.
   The extension defines the 'md5hash' type itself, casts, operators and an operator class for btree indexes. It's fairly straightforward and simple to add more operators or classes.
 
+Package: postgresql-12-mysqlcompat
+Source: mysqlcompat
+Version: 0.0.7-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 77
+Depends: postgresql-12
+Provides: postgresql-mysqlcompat
+Homepage: https://github.com/2ndQuadrant/mysqlcompat
+Priority: optional
+Section: database
+Filename: pool/main/m/mysqlcompat/postgresql-12-mysqlcompat_0.0.7-1PIGSTY~jammy_amd64.deb
+Size: 13104
+SHA256: 77dfe9b96d94059b77e84a13fcfff02f0b9d0b4b870b04767098419ec511b153
+SHA1: 48a73a2add17baa6e8418c851196ed166f46cf2a
+MD5sum: bbaeee818c1fb9e9ef8a886f5fc63c9e
+Description: MySQL compatibility functions for PostgreSQL 12
+  A reimplemenation of as many MySQL functions as possible in PostgreSQL, as an aid to porting
+
 Package: postgresql-12-passwordcheck-cracklib
 Source: passwordcheck-cracklib
 Version: 3.1.0-1PIGSTY~jammy
@@ -1017,17 +1036,17 @@ Source: pgsql-tweaks
 Version: 0.10.4-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 94
+Installed-Size: 74
 Depends: postgresql-12
 Provides: postgresql-pgsql-tweaks
 Homepage: https://gitlab.com/sjstoelting/pgsql-tweaks/
 Priority: optional
 Section: database
 Filename: pool/main/p/pgsql-tweaks/postgresql-12-pgsql-tweaks_0.10.4-1PIGSTY~jammy_amd64.deb
-Size: 19864
-SHA256: b45e1614d63eec7f3486343a0ac3ae47d3f254dba11755f3332c90b5a6c8d9d1
-SHA1: 39217f0fb5b5f64ac8fbd95d0766636e1d4399be
-MD5sum: dff0d0b5236c776a33521cd24625926c
+Size: 10568
+SHA256: 27adb54863c5108f56696a0f657c3b2e2ea4c7e7d722c3428016ac85711a03e0
+SHA1: 657e0673533847fc5c5d2f9f8985a8036e084d48
+MD5sum: 1696bf1f0814f0c5bd237aefd308a929
 Description: Contains PostgreSQL functions which I regularly needed.
   The functions and views published in this repository are some of those, which I regularly need in my daily job.
   As these procedures are sort of essential, at least to me, I install them in the public schema. That way they are available for everyone without having to know a schema name.
@@ -1037,17 +1056,17 @@ Source: pgtt
 Version: 4.0-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 164
+Installed-Size: 148
 Depends: postgresql-12, postgresql-12-jit-llvm (>= 15), libc6 (>= 2.4)
 Provides: postgresql-pgtt
 Homepage: https://github.com/darold/pgtt
 Priority: optional
 Section: database
 Filename: pool/main/p/pgtt/postgresql-12-pgtt_4.0-1PIGSTY~jammy_amd64.deb
-Size: 63366
-SHA256: a4bc11aae982fc5dbf8e72f8315f377ccb873328b3f133092fb9ce587b9b4737
-SHA1: d14905be1edb037213cfdafe5e6f99e5878bc50f
-MD5sum: 747da666c1fec68eac60a7dbf9248fa8
+Size: 56880
+SHA256: ef00acf1375d7339100a4d94db3b3d03214eee46099ff84e9f6ca59de6b487bd
+SHA1: 7b3a80989dcd97770730104b9f1ef2b76bb02abf
+MD5sum: f923fa4763db210ec7672e3cdcbf7d4a
 Description: Create, manage and use Oracle-style Global Temporary Tables and the others RDBMS in PostgreSQL 12
   pgtt is a PostgreSQL extension to create, manage and use Oracle-style Global Temporary Tables and the others RDBMS.
   The objective of this extension it to provide the Global Temporary Table feature to PostgreSQL waiting for an in core implementation.
@@ -1203,17 +1222,17 @@ Source: temporal-tables
 Version: 1.2.2-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 96
+Installed-Size: 82
 Depends: postgresql-12, postgresql-12-jit-llvm (>= 15), libc6 (>= 2.14)
 Provides: postgresql-temporal-tables
 Homepage: https://github.com/arkhipov/temporal_tables
 Priority: optional
 Section: database
 Filename: pool/main/t/temporal-tables/postgresql-12-temporal-tables_1.2.2-1PIGSTY~jammy_amd64.deb
-Size: 35840
-SHA256: 8f95524ec4f7860524022a96587d32a9074b9ab5eefe1f7331b928452c8d4f93
-SHA1: 112a2cc0f2f319f955e92872bf4766255515c0f1
-MD5sum: 7dbb230fb885dc668d692989d09586ce
+Size: 29616
+SHA256: d69247df24a307fc1e275d2fc66be4b30779da655cafc5038e2fab5f276250f5
+SHA1: 101c53d373fd058ff630ce9cec2e140c17dbfa47
+MD5sum: 2f8efce1d1375cc47da8b3e1c923a539
 Description: Temporal Tables PostgreSQL Extension
   A temporal table is a table that records the period of time when a row is valid.
   There are two types of periods: the application period (also known as valid-time or business-time) and the system period (also known as transaction-time).
@@ -1695,6 +1714,25 @@ MD5sum: a701e4b4ba034eabb0d95f8f62f41f5a
 Description: A custom data type for storing MD5 hashes (instead of the native TEXT varlena type).
   This extension provides a simple data type storing 128-bit values (e.g. MD5 hashes) in a bit more efficient way - in a fixed-length columns and inline.
   The extension defines the 'md5hash' type itself, casts, operators and an operator class for btree indexes. It's fairly straightforward and simple to add more operators or classes.
+
+Package: postgresql-13-mysqlcompat
+Source: mysqlcompat
+Version: 0.0.7-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 77
+Depends: postgresql-13
+Provides: postgresql-mysqlcompat
+Homepage: https://github.com/2ndQuadrant/mysqlcompat
+Priority: optional
+Section: database
+Filename: pool/main/m/mysqlcompat/postgresql-13-mysqlcompat_0.0.7-1PIGSTY~jammy_amd64.deb
+Size: 13112
+SHA256: c45a8944d8751cd07681eda0d3a943994e9905c6cf0a468604628e610688188a
+SHA1: 7acd859dc5f2de8f640852bd45deeab23765e30c
+MD5sum: ff718e9095a2b084c25f3657f0257bae
+Description: MySQL compatibility functions for PostgreSQL 13
+  A reimplemenation of as many MySQL functions as possible in PostgreSQL, as an aid to porting
 
 Package: postgresql-13-passwordcheck-cracklib
 Source: passwordcheck-cracklib
@@ -2362,17 +2400,17 @@ Source: pgsql-tweaks
 Version: 0.10.4-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 94
+Installed-Size: 74
 Depends: postgresql-13
 Provides: postgresql-pgsql-tweaks
 Homepage: https://gitlab.com/sjstoelting/pgsql-tweaks/
 Priority: optional
 Section: database
 Filename: pool/main/p/pgsql-tweaks/postgresql-13-pgsql-tweaks_0.10.4-1PIGSTY~jammy_amd64.deb
-Size: 19864
-SHA256: 932aa32142c632daf2e093bb42caac2685f64bec56f35cc1468543a445b7aa92
-SHA1: a45ac9b2696f6c43dc5c995f09100ede06062747
-MD5sum: 583fa77c25eb848e9ea6f833801b0bcf
+Size: 10568
+SHA256: f891dfa362a4f4b12c1328f76a54f7511e71cbb07476947bd4026fb78ad2189a
+SHA1: 67eddce665b272389e0f3f810f3432c0f7a41c06
+MD5sum: 18e339c71ea775c28460a4aba0361ca7
 Description: Contains PostgreSQL functions which I regularly needed.
   The functions and views published in this repository are some of those, which I regularly need in my daily job.
   As these procedures are sort of essential, at least to me, I install them in the public schema. That way they are available for everyone without having to know a schema name.
@@ -2382,17 +2420,17 @@ Source: pgtt
 Version: 4.0-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 170
+Installed-Size: 154
 Depends: postgresql-13, postgresql-13-jit-llvm (>= 15), libc6 (>= 2.4)
 Provides: postgresql-pgtt
 Homepage: https://github.com/darold/pgtt
 Priority: optional
 Section: database
 Filename: pool/main/p/pgtt/postgresql-13-pgtt_4.0-1PIGSTY~jammy_amd64.deb
-Size: 65382
-SHA256: a06f12ba28e4b8a303121c41499d9a4f130be256fb4a3eb709032ab8a246fbaa
-SHA1: 7422ebf07ff56b082341002ab3378cb205b2ac52
-MD5sum: 8845d5f66f46755e322ed5d905cf09ad
+Size: 58886
+SHA256: 24c45bffb1d8d761d30323191009833431df0f0bcd81886fd2b0cf1a9de5cd17
+SHA1: eb9c338bd850379be0cfd361e4d033003e621d01
+MD5sum: c98d847706b9b215f5ad08fab924d7f4
 Description: Create, manage and use Oracle-style Global Temporary Tables and the others RDBMS in PostgreSQL 13
   pgtt is a PostgreSQL extension to create, manage and use Oracle-style Global Temporary Tables and the others RDBMS.
   The objective of this extension it to provide the Global Temporary Table feature to PostgreSQL waiting for an in core implementation.
@@ -2569,17 +2607,17 @@ Source: temporal-tables
 Version: 1.2.2-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 96
+Installed-Size: 82
 Depends: postgresql-13, postgresql-13-jit-llvm (>= 15), libc6 (>= 2.14)
 Provides: postgresql-temporal-tables
 Homepage: https://github.com/arkhipov/temporal_tables
 Priority: optional
 Section: database
 Filename: pool/main/t/temporal-tables/postgresql-13-temporal-tables_1.2.2-1PIGSTY~jammy_amd64.deb
-Size: 35876
-SHA256: 9fd1c9dbc64a93edd24ea1294d6fd81985c31e29f2fdcf811f7424611737e874
-SHA1: fdac76e0601c1b854dacca7edfb1200b1e7fa031
-MD5sum: 55d8d4cf50f3704563c5ac1a8f662cf5
+Size: 29646
+SHA256: 6b2151a17f78b7b693abea61dadbb03b637a8ac35efc9c56750d7d67b18ab8bb
+SHA1: b4b8d10343e0c01d4ca92a5f3f55f6f9691c85f3
+MD5sum: 163d4c11cccb362128c00bad470376ad
 Description: Temporal Tables PostgreSQL Extension
   A temporal table is a table that records the period of time when a row is valid.
   There are two types of periods: the application period (also known as valid-time or business-time) and the system period (also known as transaction-time).
@@ -3080,6 +3118,25 @@ MD5sum: be1351305bce336fed5f6e75caf07523
 Description: A custom data type for storing MD5 hashes (instead of the native TEXT varlena type).
   This extension provides a simple data type storing 128-bit values (e.g. MD5 hashes) in a bit more efficient way - in a fixed-length columns and inline.
   The extension defines the 'md5hash' type itself, casts, operators and an operator class for btree indexes. It's fairly straightforward and simple to add more operators or classes.
+
+Package: postgresql-14-mysqlcompat
+Source: mysqlcompat
+Version: 0.0.7-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 77
+Depends: postgresql-14
+Provides: postgresql-mysqlcompat
+Homepage: https://github.com/2ndQuadrant/mysqlcompat
+Priority: optional
+Section: database
+Filename: pool/main/m/mysqlcompat/postgresql-14-mysqlcompat_0.0.7-1PIGSTY~jammy_amd64.deb
+Size: 13108
+SHA256: ba4067bcde3c1e9a11ab9085ab404f7ba1bdf233b553c9e1c8514799a292a60b
+SHA1: b462186ac237c44b3fb80110ce5f3b787975b3ea
+MD5sum: 243b3fd4ba7e58250455954df3ce9efa
+Description: MySQL compatibility functions for PostgreSQL 14
+  A reimplemenation of as many MySQL functions as possible in PostgreSQL, as an aid to porting
 
 Package: postgresql-14-passwordcheck-cracklib
 Source: passwordcheck-cracklib
@@ -3827,17 +3884,17 @@ Source: pgsql-tweaks
 Version: 0.10.4-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 94
+Installed-Size: 74
 Depends: postgresql-14
 Provides: postgresql-pgsql-tweaks
 Homepage: https://gitlab.com/sjstoelting/pgsql-tweaks/
 Priority: optional
 Section: database
 Filename: pool/main/p/pgsql-tweaks/postgresql-14-pgsql-tweaks_0.10.4-1PIGSTY~jammy_amd64.deb
-Size: 19860
-SHA256: 233f5089b6c82a12251a19adb579ce0f2308f9cd2b0967d10770309a7cfd98ce
-SHA1: ee5de5b5419a831af87a89c2c6450ef538dcf137
-MD5sum: 26a7a2773877866ff6c5304f070787a6
+Size: 10566
+SHA256: 226f97913a3633464858f9c8d2058a8f3077ee29650e45d8582640c629eca099
+SHA1: 78b3c746d597ea551f7ebbecff28e2a3209dc19d
+MD5sum: a74a7be24e8c591ce743d2f4c7d8a0bf
 Description: Contains PostgreSQL functions which I regularly needed.
   The functions and views published in this repository are some of those, which I regularly need in my daily job.
   As these procedures are sort of essential, at least to me, I install them in the public schema. That way they are available for everyone without having to know a schema name.
@@ -3847,17 +3904,17 @@ Source: pgtt
 Version: 4.0-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 175
+Installed-Size: 159
 Depends: postgresql-14, postgresql-14-jit-llvm (>= 15), libc6 (>= 2.4)
 Provides: postgresql-pgtt
 Homepage: https://github.com/darold/pgtt
 Priority: optional
 Section: database
 Filename: pool/main/p/pgtt/postgresql-14-pgtt_4.0-1PIGSTY~jammy_amd64.deb
-Size: 65680
-SHA256: 2acb0f8e240854e9886aaaeb12de026d810eb18628765adeba1064fafff18dbb
-SHA1: bcfab06ab9fa927ba9446fba16b6a94e5538a834
-MD5sum: d3c195d0617adafa64853cc1bb1b3e4f
+Size: 59206
+SHA256: 882ce619a8502cc9e0d9e4c96cbdba3ad223bf7572ca5dfdfd0f1de7db4020e7
+SHA1: b12622f05890ca147d8f41af97bd4ed9a82c0282
+MD5sum: 2680ab613042c0f38cca80a7a5c9916e
 Description: Create, manage and use Oracle-style Global Temporary Tables and the others RDBMS in PostgreSQL 14
   pgtt is a PostgreSQL extension to create, manage and use Oracle-style Global Temporary Tables and the others RDBMS.
   The objective of this extension it to provide the Global Temporary Table feature to PostgreSQL waiting for an in core implementation.
@@ -4034,17 +4091,17 @@ Source: temporal-tables
 Version: 1.2.2-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 92
+Installed-Size: 78
 Depends: postgresql-14, postgresql-14-jit-llvm (>= 15), libc6 (>= 2.14)
 Provides: postgresql-temporal-tables
 Homepage: https://github.com/arkhipov/temporal_tables
 Priority: optional
 Section: database
 Filename: pool/main/t/temporal-tables/postgresql-14-temporal-tables_1.2.2-1PIGSTY~jammy_amd64.deb
-Size: 35886
-SHA256: d74056254e19562777b777824ab56b5118eb55c4bc4dbabc39b5972df9ba5d2f
-SHA1: 7da800a37053fce0f5295ff09421a74127134d87
-MD5sum: b00e8d58167986ccc8c56585398b55a6
+Size: 29670
+SHA256: 658db0dd769ef7983179e1fad6f66a74e81ee539cf3ba4b9e13ca190baa396e4
+SHA1: 78d2039bd76c1fa99feeafde725378b351bfd5ef
+MD5sum: 970307b7df78af9a87a0b17c59326ffc
 Description: Temporal Tables PostgreSQL Extension
   A temporal table is a table that records the period of time when a row is valid.
   There are two types of periods: the application period (also known as valid-time or business-time) and the system period (also known as transaction-time).
@@ -4566,6 +4623,25 @@ MD5sum: 818298c7ee51ae74c5e89cd235fffa75
 Description: A custom data type for storing MD5 hashes (instead of the native TEXT varlena type).
   This extension provides a simple data type storing 128-bit values (e.g. MD5 hashes) in a bit more efficient way - in a fixed-length columns and inline.
   The extension defines the 'md5hash' type itself, casts, operators and an operator class for btree indexes. It's fairly straightforward and simple to add more operators or classes.
+
+Package: postgresql-15-mysqlcompat
+Source: mysqlcompat
+Version: 0.0.7-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 77
+Depends: postgresql-15
+Provides: postgresql-mysqlcompat
+Homepage: https://github.com/2ndQuadrant/mysqlcompat
+Priority: optional
+Section: database
+Filename: pool/main/m/mysqlcompat/postgresql-15-mysqlcompat_0.0.7-1PIGSTY~jammy_amd64.deb
+Size: 13118
+SHA256: 9ea84df918903caed0f36c1c0af7bebf80ac4558e3087d0a5521f26d265fe1af
+SHA1: b358c81e67242e2288499b67c5cb164b7778173b
+MD5sum: 657d297c4e55fec7425b54774be5e11d
+Description: MySQL compatibility functions for PostgreSQL 15
+  A reimplemenation of as many MySQL functions as possible in PostgreSQL, as an aid to porting
 
 Package: postgresql-15-passwordcheck-cracklib
 Source: passwordcheck-cracklib
@@ -5313,17 +5389,17 @@ Source: pgsql-tweaks
 Version: 0.10.4-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 94
+Installed-Size: 74
 Depends: postgresql-15
 Provides: postgresql-pgsql-tweaks
 Homepage: https://gitlab.com/sjstoelting/pgsql-tweaks/
 Priority: optional
 Section: database
 Filename: pool/main/p/pgsql-tweaks/postgresql-15-pgsql-tweaks_0.10.4-1PIGSTY~jammy_amd64.deb
-Size: 19864
-SHA256: 626c9d50c61e4839b0fa8b391c755f3d33035a249d95f42d3dda82f00f7538c7
-SHA1: 98f73609b3eb595b6fc907e54d471369c05eb28e
-MD5sum: 5a17ef1a2876400b149c1a5b4b59c159
+Size: 10566
+SHA256: 9c47581bbe68070f7afed2495ac73e91ecbe82d62015f785fa111fa09c77b272
+SHA1: 7fdd6ae9e81f1db5a7a2fa4b0120e6476862b861
+MD5sum: c56cb4fb7be3947aacfa46d4397a90e7
 Description: Contains PostgreSQL functions which I regularly needed.
   The functions and views published in this repository are some of those, which I regularly need in my daily job.
   As these procedures are sort of essential, at least to me, I install them in the public schema. That way they are available for everyone without having to know a schema name.
@@ -5333,17 +5409,17 @@ Source: pgtt
 Version: 4.0-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 175
+Installed-Size: 159
 Depends: postgresql-15, postgresql-15-jit-llvm (>= 15), libc6 (>= 2.4)
 Provides: postgresql-pgtt
 Homepage: https://github.com/darold/pgtt
 Priority: optional
 Section: database
 Filename: pool/main/p/pgtt/postgresql-15-pgtt_4.0-1PIGSTY~jammy_amd64.deb
-Size: 65710
-SHA256: 013e88b525493d2593ffb48bd9651d5d247b2df5b23bce5af38ec4deccac7623
-SHA1: e80902d4bf2c530b183596a653b12799e7bf51d2
-MD5sum: 8889e7010386e8b980ccf2b2858b1904
+Size: 59258
+SHA256: c8bedd1fa15a066925358c0d813d56660cd7253c3b63f67be3cc5db659fb1290
+SHA1: 88220e74f998f0f64b2078fb9919a492e28a34d0
+MD5sum: 82c7723070176e12a009cbfa349c89c9
 Description: Create, manage and use Oracle-style Global Temporary Tables and the others RDBMS in PostgreSQL 15
   pgtt is a PostgreSQL extension to create, manage and use Oracle-style Global Temporary Tables and the others RDBMS.
   The objective of this extension it to provide the Global Temporary Table feature to PostgreSQL waiting for an in core implementation.
@@ -5538,17 +5614,17 @@ Source: temporal-tables
 Version: 1.2.2-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 99
+Installed-Size: 85
 Depends: postgresql-15, postgresql-15-jit-llvm (>= 15), libc6 (>= 2.14)
 Provides: postgresql-temporal-tables
 Homepage: https://github.com/arkhipov/temporal_tables
 Priority: optional
 Section: database
 Filename: pool/main/t/temporal-tables/postgresql-15-temporal-tables_1.2.2-1PIGSTY~jammy_amd64.deb
-Size: 37990
-SHA256: 9103a963dfe87fa99b872155d3ecbcca07b0e5c4013bd1ba6cb39b2c48a295b7
-SHA1: 44f8719d9aca18e18f5289384ad3b73b8280bfeb
-MD5sum: 04644a2c1f39b4be8aa7355f6ec6ce80
+Size: 31772
+SHA256: 14d98d0d49a47d4689b00d5237333011f91fe9051df632f4b833d32fa47f89d5
+SHA1: 2e2ed76ba9ab84e526821d164290a40d5f5d890c
+MD5sum: 78f0ce78eee7bf49ed58bb164e1c10bc
 Description: Temporal Tables PostgreSQL Extension
   A temporal table is a table that records the period of time when a row is valid.
   There are two types of periods: the application period (also known as valid-time or business-time) and the system period (also known as transaction-time).
@@ -6070,6 +6146,25 @@ MD5sum: bbde2bafe2013310925aed54202925ea
 Description: A custom data type for storing MD5 hashes (instead of the native TEXT varlena type).
   This extension provides a simple data type storing 128-bit values (e.g. MD5 hashes) in a bit more efficient way - in a fixed-length columns and inline.
   The extension defines the 'md5hash' type itself, casts, operators and an operator class for btree indexes. It's fairly straightforward and simple to add more operators or classes.
+
+Package: postgresql-16-mysqlcompat
+Source: mysqlcompat
+Version: 0.0.7-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 77
+Depends: postgresql-16
+Provides: postgresql-mysqlcompat
+Homepage: https://github.com/2ndQuadrant/mysqlcompat
+Priority: optional
+Section: database
+Filename: pool/main/m/mysqlcompat/postgresql-16-mysqlcompat_0.0.7-1PIGSTY~jammy_amd64.deb
+Size: 13118
+SHA256: c2ba8a720707ad717074b76af64b905f5a2711780555be407dde13834079dd1b
+SHA1: 139f60fd9d9cb1c56bc61b2ffdb07514b144edd6
+MD5sum: 768ffd9c4b57141b5bd159771ca94b97
+Description: MySQL compatibility functions for PostgreSQL 16
+  A reimplemenation of as many MySQL functions as possible in PostgreSQL, as an aid to porting
 
 Package: postgresql-16-passwordcheck-cracklib
 Source: passwordcheck-cracklib
@@ -6856,17 +6951,17 @@ Source: pgsql-tweaks
 Version: 0.10.4-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 94
+Installed-Size: 74
 Depends: postgresql-16
 Provides: postgresql-pgsql-tweaks
 Homepage: https://gitlab.com/sjstoelting/pgsql-tweaks/
 Priority: optional
 Section: database
 Filename: pool/main/p/pgsql-tweaks/postgresql-16-pgsql-tweaks_0.10.4-1PIGSTY~jammy_amd64.deb
-Size: 19866
-SHA256: bd6c5a5067ec478879d6f478f9f8b440bd66902681e10376a0a2cc50e458005d
-SHA1: e67a0e43a942f5e332795fb7f8aef357a2927849
-MD5sum: 62c7e163bb5e7e38fb278726b85ccea6
+Size: 10568
+SHA256: 06b1f237f8d8310deb469f137411def4e1b352f468613df28a629cd54da61746
+SHA1: b9cd887418e084f72bd8d52572f9d15996616c86
+MD5sum: 5454da150b69d4d0bac75ccb64f67bfd
 Description: Contains PostgreSQL functions which I regularly needed.
   The functions and views published in this repository are some of those, which I regularly need in my daily job.
   As these procedures are sort of essential, at least to me, I install them in the public schema. That way they are available for everyone without having to know a schema name.
@@ -6876,17 +6971,17 @@ Source: pgtt
 Version: 4.0-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 167
+Installed-Size: 151
 Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.4)
 Provides: postgresql-pgtt
 Homepage: https://github.com/darold/pgtt
 Priority: optional
 Section: database
 Filename: pool/main/p/pgtt/postgresql-16-pgtt_4.0-1PIGSTY~jammy_amd64.deb
-Size: 64572
-SHA256: 0291e09e3647bf7bb9e15736d7d482f4b13ae96130a6b675e09795b74dbf345f
-SHA1: 4095806551c2456b37d5f2d62c873b58c8bcbcdc
-MD5sum: f90e578b41adf21f01599d2742339cc2
+Size: 58110
+SHA256: c6d20605bb4c5cd9685ea653827136aec177b1ef616d826210de19835f88ca1c
+SHA1: ee63a8f6a216248fa2ef181cbc15d9ba2a05e716
+MD5sum: c47b6fd8256095ba483832bd6360784c
 Description: Create, manage and use Oracle-style Global Temporary Tables and the others RDBMS in PostgreSQL 16
   pgtt is a PostgreSQL extension to create, manage and use Oracle-style Global Temporary Tables and the others RDBMS.
   The objective of this extension it to provide the Global Temporary Table feature to PostgreSQL waiting for an in core implementation.
@@ -7081,17 +7176,17 @@ Source: temporal-tables
 Version: 1.2.2-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 95
+Installed-Size: 81
 Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.14)
 Provides: postgresql-temporal-tables
 Homepage: https://github.com/arkhipov/temporal_tables
 Priority: optional
 Section: database
 Filename: pool/main/t/temporal-tables/postgresql-16-temporal-tables_1.2.2-1PIGSTY~jammy_amd64.deb
-Size: 37962
-SHA256: f3b11c43fffd9bf157d2368c9e162601d1123b3fda6f87bd110d6a767b998582
-SHA1: 1538e9e428f95219c6dc5160f26d0777d9b50502
-MD5sum: ff6a052692ca77ad7d8028aee5f4832c
+Size: 31718
+SHA256: 8bd99760e58bd8a055b7d9ccc6afc4f6cb34bbd67d51bd04c119eec488282371
+SHA1: 80f49551ccba61c05997d5c7d1debbaf61e75531
+MD5sum: 38b38d73447d1c9bae5e15e8dd5720e7
 Description: Temporal Tables PostgreSQL Extension
   A temporal table is a table that records the period of time when a row is valid.
   There are two types of periods: the application period (also known as valid-time or business-time) and the system period (also known as transaction-time).

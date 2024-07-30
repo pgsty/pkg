@@ -622,6 +622,25 @@ Description: A custom data type for storing MD5 hashes (instead of the native TE
   This extension provides a simple data type storing 128-bit values (e.g. MD5 hashes) in a bit more efficient way - in a fixed-length columns and inline.
   The extension defines the 'md5hash' type itself, casts, operators and an operator class for btree indexes. It's fairly straightforward and simple to add more operators or classes.
 
+Package: postgresql-16-mysqlcompat
+Source: mysqlcompat
+Version: 0.0.7-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 77
+Depends: postgresql-16
+Provides: postgresql-mysqlcompat
+Homepage: https://github.com/2ndQuadrant/mysqlcompat
+Priority: optional
+Section: database
+Filename: pool/main/m/mysqlcompat/postgresql-16-mysqlcompat_0.0.7-1PIGSTY~bookworm_amd64.deb
+Size: 12520
+SHA256: 1a6bf950f68f315f216d5d0007f200986132ec05edd2b092fe7e0cd96d67f291
+SHA1: b80790abfb31d349c24837085555dcf9201fd429
+MD5sum: 942b606607a144c03faed3c6d109ebfa
+Description: MySQL compatibility functions for PostgreSQL 16
+  A reimplemenation of as many MySQL functions as possible in PostgreSQL, as an aid to porting
+
 Package: postgresql-16-passwordcheck-cracklib
 Source: passwordcheck-cracklib
 Version: 3.1.0-1PIGSTY~bookworm
@@ -1448,17 +1467,17 @@ Source: pgsql-tweaks
 Version: 0.10.4-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 94
+Installed-Size: 74
 Depends: postgresql-16
 Provides: postgresql-pgsql-tweaks
 Homepage: https://gitlab.com/sjstoelting/pgsql-tweaks/
 Priority: optional
 Section: database
 Filename: pool/main/p/pgsql-tweaks/postgresql-16-pgsql-tweaks_0.10.4-1PIGSTY~bookworm_amd64.deb
-Size: 19360
-SHA256: 1c39bc7d0cd2d6a2e0e51ca1f0ce0edb1ef56fd834f6f01f801b936e01f58aeb
-SHA1: f139d4b3985dec8a0dc31e45eb9fa63068774697
-MD5sum: c2cb19b97598de78ebe587f11ebb9449
+Size: 10452
+SHA256: 1ca8cf8eb82ef373b0490a80c8c08129f848347cdf3c1656ca42c5f1161651b5
+SHA1: 80327e83b37886fd09bdba967bb6169acef24add
+MD5sum: 40c8336d356853240f7a3b30149a7591
 Description: Contains PostgreSQL functions which I regularly needed.
   The functions and views published in this repository are some of those, which I regularly need in my daily job.
   As these procedures are sort of essential, at least to me, I install them in the public schema. That way they are available for everyone without having to know a schema name.
@@ -1468,17 +1487,17 @@ Source: pgtt
 Version: 4.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 171
+Installed-Size: 155
 Depends: postgresql-16, postgresql-16-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-pgtt
 Homepage: https://github.com/darold/pgtt
 Priority: optional
 Section: database
 Filename: pool/main/p/pgtt/postgresql-16-pgtt_4.0-1PIGSTY~bookworm_amd64.deb
-Size: 65516
-SHA256: cc3c285ff15f98b7387cf285053a1e14bc0d3c78f94d5d4c6da0e1ae6c1d4c1a
-SHA1: e057eee1beb73f134eb058ae79dd592a6fff7829
-MD5sum: 8458513e0df991d08954047aad528476
+Size: 59064
+SHA256: 334c2771164a3a615607f3509c5896a4e7288dd563598fa4b47aac37a1fd5fe5
+SHA1: 6fccfe1b948eb4d79de80d8a4c82808a53317d78
+MD5sum: d634a31654f5ccd3878ff98c65a3c62e
 Description: Create, manage and use Oracle-style Global Temporary Tables and the others RDBMS in PostgreSQL 16
   pgtt is a PostgreSQL extension to create, manage and use Oracle-style Global Temporary Tables and the others RDBMS.
   The objective of this extension it to provide the Global Temporary Table feature to PostgreSQL waiting for an in core implementation.
@@ -1673,17 +1692,17 @@ Source: temporal-tables
 Version: 1.2.2-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 92
+Installed-Size: 78
 Depends: postgresql-16, postgresql-16-jit-llvm (>= 16), libc6 (>= 2.14)
 Provides: postgresql-temporal-tables
 Homepage: https://github.com/arkhipov/temporal_tables
 Priority: optional
 Section: database
 Filename: pool/main/t/temporal-tables/postgresql-16-temporal-tables_1.2.2-1PIGSTY~bookworm_amd64.deb
-Size: 36436
-SHA256: f4131c6d9cd03c4d78a76124e4bad8b7cc3cef3497a736e237be7a7e3f1ae24d
-SHA1: 7ee61703e9990d1521a69faef414c05253e84970
-MD5sum: 35be11a71353ad3c05311371200567b6
+Size: 30400
+SHA256: af748d9d3735ee4f3bb2a5c62b7bfc81bef7577caf6f59b84d86c1b21e881602
+SHA1: 1a276a994fc69f522a64a3c37579de1190aa6232
+MD5sum: 988ea5fb45c2ef0f8909323fb3f44317
 Description: Temporal Tables PostgreSQL Extension
   A temporal table is a table that records the period of time when a row is valid.
   There are two types of periods: the application period (also known as valid-time or business-time) and the system period (also known as transaction-time).
