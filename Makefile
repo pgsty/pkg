@@ -8,20 +8,34 @@
 # License   :   AGPLv3
 #==============================================================#
 
-CLOUD_PATH = cf:/pkg
+CLOUD_PATH = cf:/repo
 DEVEL_PATH = sv:/data/pkg
-
-###############################################################
-#                       1. Publishing                         #
-###############################################################
 all:
 	@echo "pgsty repo"
+
+###############################################################
+#                 Publishing to Cloudflare                    #
+###############################################################
+
 cf-yum:
 	cd yum && make upload
 cf-apt:
 	cd apt && make upload
 cf-key:
 	rclone copy key cf:/pkg/
+cf-etc:
+	rclone sync -P --transfers=8 ./etc/ $(CLOUD_PATH)/etc/
+
+
+###############################################################
+#                     Publishing to COS                       #
+###############################################################
+cos-key:
+	coscmd -b repo-1304744452 upload -s -f -y --delete key key
+cos-etc:
+	coscmd -b repo-1304744452 upload --recursive -s -f -y --delete etc etc
+cos-src:
+	coscmd -b repo-1304744452 upload --recursive -s -f -y --delete src src
 
 
 ###############################################################

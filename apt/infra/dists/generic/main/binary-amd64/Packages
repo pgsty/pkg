@@ -61,17 +61,16 @@ Description: Distributed reliable key-value store for the most critical data of 
 Package: ferretdb
 Version: 1.23.0
 Architecture: amd64
-Maintainer: packages@ferretdb.io
+Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 43037
-Suggests: postgresql
-Homepage: https://www.ferretdb.com/
+Homepage: https://github.com/FerretDB/FerretDB
 Priority: optional
-Section: database
+Section: 
 Filename: pool/main/f/ferretdb/ferretdb_1.23.0_amd64.deb
-Size: 21637096
-SHA256: 2d4f939109d00d096892788972d70dd3ee7c1e084e1bc8912b65102788370944
-SHA1: 855a7a2bbc54cdd103252d0245f088e4e35dc7ce
-MD5sum: d7499ac994f6dd3e3dbfffef9015f1fa
+Size: 21637078
+SHA256: f3bc1226660a69fe891177423fcf301453bfe0df3c4434875205791839cae83b
+SHA1: ede1a4c07d8dafe93141eb8f4520f8e30bf750ca
+MD5sum: fe849fd57c2e236f89f096394d408edf
 Description: A truly Open Source MongoDB alternative
 
 Package: grafana

@@ -8,7 +8,7 @@
 # License   :   AGPLv3
 #==============================================================#
 
-CLOUD_PATH = cf:/pkg/yum
+CLOUD_PATH = cf:/repo/yum
 DEVEL_PATH = sv:/data/pkg/yum
 
 ###############################################################
@@ -90,6 +90,11 @@ publish-pgsql-el8:
 publish-pgsql-el9:
 	rclone sync -P --transfers=8 ./pgsql/el9.x86_64/ $(CLOUD_PATH)/pgsql/el9.x86_64/
 
+upload-cdn: publish-pgsql-cdn publish-infra-cdn
+publish-infra-cdn:
+	coscmd -b repo-1304744452 upload --recursive -s -f -y --delete infra yum/infra
+publish-pgsql-cdn:
+	coscmd -b repo-1304744452 upload --recursive -s -f -y --delete pgsql yum/pgsql
 
 ###############################################################
 #                         Inventory                           #

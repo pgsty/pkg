@@ -8,7 +8,7 @@
 # License   :   AGPLv3
 #==============================================================#
 
-CLOUD_PATH = cf:/pkg/apt
+CLOUD_PATH = cf:/repo/apt
 DEVEL_PATH = sv:/data/pkg/apt
 
 ###############################################################
@@ -51,6 +51,7 @@ ls-bullseye:
 
 # how to remove (e.g.)
 # reprepro -b pgsql remove bookworm haproxy
+# reprepro -b infra remove generic ferretdb
 
 pgsql-include:
 	reprepro -b pgsql includedeb bookworm stash/bookworm.amd64/postgresql-16*.deb
@@ -85,6 +86,13 @@ publish-infra:
 	rclone sync -P --transfers=8 ./infra/ $(CLOUD_PATH)/infra/
 publish-pgsql:
 	rclone sync -P --transfers=8 ./pgsql/ $(CLOUD_PATH)/pgsql/
+
+upload-cdn: publish-pgsql-cdn publish-infra-cdn
+publish-infra-cdn:
+	coscmd -b repo-1304744452 upload --recursive -s -f -y --delete infra apt/infra
+publish-pgsql-cdn:
+	coscmd -b repo-1304744452 upload --recursive -s -f -y --delete pgsql apt/pgsql
+
 
 ###############################################################
 #                         Inventory                           #
