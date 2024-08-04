@@ -87,28 +87,28 @@ We may drop legacy support for the following distros in the future due to EOL:
 For EL 7/8/9, add the following gpg key & repo file to your yum/dnf config:
 
 ```bash
-# install pgsty gpg key to your keyring to verify the packages
-curl -fsSL https://pkg.pgsty.pro/key | sudo tee /etc/pki/rpm-gpg/RPM-GPG-KEY-pgsty >/dev/null
+# install pigsty gpg key to your keyring to verify the packages
+curl -fsSL https://repo.pigsty.io/key | sudo tee /etc/pki/rpm-gpg/RPM-GPG-KEY-pigsty >/dev/null
 
-sudo tee /etc/yum.repos.d/pgsty-pkg.repo > /dev/null <<-'EOF'
-[pgsty-infra]
-name=PGSTY Infra for $basearch
-baseurl=https://pkg.pgsty.pro/yum/infra/$basearch
+sudo tee /etc/yum.repos.d/pigsty-io.repo > /dev/null <<-'EOF'
+[pigsty-infra]
+name=Pigsty Infra for $basearch
+baseurl=https://repo.pigsty.io/yum/infra/$basearch
 skip_if_unavailable = 1
 enabled = 1
 priority = 1
 gpgcheck = 1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-pgsty
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-pigsty
 module_hotfixes=1
 
-[pgsty-pgsql]
-name=PGSTY PGSQL For el$releasever.$basearch
-baseurl=https://pkg.pgsty.pro/yum/pgsql/el$releasever.$basearch
+[pigsty-pgsql]
+name=Pigsty PGSQL For el$releasever.$basearch
+baseurl=https://repo.pigsty.io/yum/pgsql/el$releasever.$basearch
 skip_if_unavailable = 1
 enabled = 1
 priority = 1
 gpgcheck = 1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-pgsty
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-pigsty
 module_hotfixes=1
 EOF
 sudo yum makecache;
@@ -120,15 +120,15 @@ sudo yum makecache;
 For Debian / Ubuntu, add the following gpg key & repo file & gpg key to your apt config
 
 ```bash
-# install pgsty gpg key to your keyring to verify the packages
-curl -fsSL https://pkg.pgsty.pro/key | sudo gpg --dearmor -o /etc/apt/keyrings/pgsty.gpg
+# install pigsty gpg key to your keyring to verify the packages
+curl -fsSL https://repo.pigsty.io/key | sudo gpg --dearmor -o /etc/apt/keyrings/pigsty.gpg
 
 #distro_codename=jammy, focal, bullseye, bookworm
 distro_codename=$(lsb_release -cs)
 
-sudo tee /etc/apt/sources.list.d/pgsty-pkg.list > /dev/null <<EOF
-deb [signed-by=/etc/apt/keyrings/pgsty.gpg] https://pkg.pgsty.pro/apt/infra generic main 
-deb [signed-by=/etc/apt/keyrings/pgsty.gpg] https://pkg.pgsty.pro/apt/pgsql ${distro_codename} main
+sudo tee /etc/apt/sources.list.d/pigsty-io.list > /dev/null <<EOF
+deb [signed-by=/etc/apt/keyrings/pigsty.gpg] https://repo.pigsty.io/apt/infra generic main 
+deb [signed-by=/etc/apt/keyrings/pigsty.gpg] https://repo.pigsty.io/apt/pgsql ${distro_codename} main
 EOF
 sudo apt update
 ```

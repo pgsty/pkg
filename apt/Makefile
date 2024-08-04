@@ -8,7 +8,8 @@
 # License   :   AGPLv3
 #==============================================================#
 
-CLOUD_PATH = cf:/repo/apt
+CF_PATH = cf:/repo/apt
+COS_PATH = cos://repo-1304744452/yum
 DEVEL_PATH = sv:/data/pkg/apt
 
 ###############################################################
@@ -83,16 +84,15 @@ pulld:
 ###############################################################
 upload: publish-pgsql publish-infra
 publish-infra:
-	rclone sync -P --transfers=8 ./infra/ $(CLOUD_PATH)/infra/
+	rclone sync -P --transfers=8 ./infra/ $(CF_PATH)/infra/
 publish-pgsql:
-	rclone sync -P --transfers=8 ./pgsql/ $(CLOUD_PATH)/pgsql/
+	rclone sync -P --transfers=8 ./pgsql/ $(CF_PATH)/pgsql/
 
 upload-cdn: publish-pgsql-cdn publish-infra-cdn
 publish-infra-cdn:
 	coscmd -b repo-1304744452 upload --recursive -s -f -y --delete infra apt/infra
 publish-pgsql-cdn:
 	coscmd -b repo-1304744452 upload --recursive -s -f -y --delete pgsql apt/pgsql
-
 
 ###############################################################
 #                         Inventory                           #

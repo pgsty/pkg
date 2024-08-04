@@ -8,34 +8,36 @@
 # License   :   AGPLv3
 #==============================================================#
 
-CLOUD_PATH = cf:/repo
+CF_PATH = cf:/repo
+COS_PATH = cos://repo-1304744452
 DEVEL_PATH = sv:/data/pkg
+
 all:
 	@echo "pgsty repo"
 
 ###############################################################
 #                 Publishing to Cloudflare                    #
 ###############################################################
-
 cf-yum:
 	cd yum && make upload
 cf-apt:
 	cd apt && make upload
 cf-key:
-	rclone copy key cf:/pkg/
+	rclone copyto key $(CF_PATH)/key
 cf-etc:
-	rclone sync -P --transfers=8 ./etc/ $(CLOUD_PATH)/etc/
-
+	rclone sync -P --transfers=8 ./etc/ $(CF_PATH)/etc/
+cf-src:
+	rclone sync -P --transfers=8 ./src/ $(CF_PATH)/src/
 
 ###############################################################
 #                     Publishing to COS                       #
 ###############################################################
 cos-key:
-	coscmd -b repo-1304744452 upload -s -f -y --delete key key
+	rclone copyto key $(COS_PATH)/key
 cos-etc:
-	coscmd -b repo-1304744452 upload --recursive -s -f -y --delete etc etc
+	rclone sync -P --transfers=8 ./etc/ $(COS_PATH)/etc/
 cos-src:
-	coscmd -b repo-1304744452 upload --recursive -s -f -y --delete src src
+	rclone sync -P --transfers=8 ./src/ $(COS_PATH)/src/
 
 
 ###############################################################
