@@ -79,28 +79,27 @@ pulld:
 ###############################################################
 #                       3. Publishing                         #
 ###############################################################
-upload: publish-pgsql publish-infra
-publish-infra:
+upload: cf-upload cos-upload
+cf-upload: cf-infra cf-pgsql
+cf-infra:
 	rclone sync -P --transfers=8 ./infra/ $(CF_PATH)/infra/
-publish-pgsql:
+cf-pgsql:
 	rclone sync -P --transfers=8 ./pgsql/ $(CF_PATH)/pgsql/
-publish-pgsql-el7:
-	rclone sync -P --transfers=8 ./pgsql/el7.x86_64/ $(CF_PATH)/pgsql/el7.x86_64/
-publish-pgsql-el8:
-	rclone sync -P --transfers=8 ./pgsql/el8.x86_64/ $(CF_PATH)/pgsql/el8.x86_64/
-publish-pgsql-el9:
-	rclone sync -P --transfers=8 ./pgsql/el9.x86_64/ $(CF_PATH)/pgsql/el9.x86_64/
-publish-repo:
+
+cos-upload: cos-infra cos-pgsql
+cos-infra:
+	rclone sync -P --transfers=8 ./infra/ $(COS_PATH)/infra/
+cos-pgsql:
+	rclone sync -P --transfers=8 ./pgsql/ $(COS_PATH)/pgsql/
+
+upload-repo:
 	rclone copyto repo.io $(CF_PATH)/repo
 	rclone copyto repo.cc $(COS_PATH)/repo
-
-upload-cdn: publish-pgsql-cdn publish-infra-cdn
-publish-infra-cdn:
-	coscmd -b repo-1304744452 upload --recursive -s -f -y --delete infra yum/infra
-publish-pgsql-cdn:
-	coscmd -b repo-1304744452 upload --recursive -s -f -y --delete pgsql yum/pgsql
 
 ###############################################################
 #                         Inventory                           #
 ###############################################################
-.PHONY: init build builds push pushd pull pulld
+.PHONY: init build builds push pushd pull pulld \
+	upload cf-upload cos-upload upload-repo \
+    cf-infra cf-pgsql cos-infra cos-cdn \
+    rb rbs bb bbs

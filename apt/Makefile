@@ -82,20 +82,24 @@ pulld:
 ###############################################################
 #                       3. Publishing                         #
 ###############################################################
-upload: publish-pgsql publish-infra
-publish-infra:
+upload: cf-upload cos-upload
+
+cf-upload: cf-infra cf-pgsql
+cf-infra:
 	rclone sync -P --transfers=8 ./infra/ $(CF_PATH)/infra/
-publish-pgsql:
+cf-pgsql:
 	rclone sync -P --transfers=8 ./pgsql/ $(CF_PATH)/pgsql/
 
-upload-cdn: publish-pgsql-cdn publish-infra-cdn
-publish-infra-cdn:
-	coscmd -b repo-1304744452 upload --recursive -s -f -y --delete infra apt/infra
-publish-pgsql-cdn:
-	coscmd -b repo-1304744452 upload --recursive -s -f -y --delete pgsql apt/pgsql
+cos-upload: cos-infra cos-pgsql
+cos-infra:
+	rclone sync -P --transfers=8 ./infra/ $(COS_PATH)/infra/
+cos-pgsql:
+	rclone sync -P --transfers=8 ./pgsql/ $(COS_PATH)/pgsql/
 
 ###############################################################
 #                         Inventory                           #
 ###############################################################
 .PHONY: init add-infra add-focal add-jammy add-noble add-bookworm add-bullseye \
-	push pushd pull pulld
+	push pushd pull pulld \
+	upload cf-upload cos-upload \
+	cf-infra cf-pgsql cos-infra cos-pgsql
