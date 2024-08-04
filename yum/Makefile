@@ -8,7 +8,8 @@
 # License   :   AGPLv3
 #==============================================================#
 
-CLOUD_PATH = cf:/repo/yum
+CF_PATH = cf:/repo/yum
+COS_PATH = cos://repo-1304744452/yum
 DEVEL_PATH = sv:/data/pkg/yum
 
 ###############################################################
@@ -80,15 +81,18 @@ pulld:
 ###############################################################
 upload: publish-pgsql publish-infra
 publish-infra:
-	rclone sync -P --transfers=8 ./infra/ $(CLOUD_PATH)/infra/
+	rclone sync -P --transfers=8 ./infra/ $(CF_PATH)/infra/
 publish-pgsql:
-	rclone sync -P --transfers=8 ./pgsql/ $(CLOUD_PATH)/pgsql/
+	rclone sync -P --transfers=8 ./pgsql/ $(CF_PATH)/pgsql/
 publish-pgsql-el7:
-	rclone sync -P --transfers=8 ./pgsql/el7.x86_64/ $(CLOUD_PATH)/pgsql/el7.x86_64/
+	rclone sync -P --transfers=8 ./pgsql/el7.x86_64/ $(CF_PATH)/pgsql/el7.x86_64/
 publish-pgsql-el8:
-	rclone sync -P --transfers=8 ./pgsql/el8.x86_64/ $(CLOUD_PATH)/pgsql/el8.x86_64/
+	rclone sync -P --transfers=8 ./pgsql/el8.x86_64/ $(CF_PATH)/pgsql/el8.x86_64/
 publish-pgsql-el9:
-	rclone sync -P --transfers=8 ./pgsql/el9.x86_64/ $(CLOUD_PATH)/pgsql/el9.x86_64/
+	rclone sync -P --transfers=8 ./pgsql/el9.x86_64/ $(CF_PATH)/pgsql/el9.x86_64/
+publish-repo:
+	rclone copyto repo.io $(CF_PATH)/repo
+	rclone copyto repo.cc $(COS_PATH)/repo
 
 upload-cdn: publish-pgsql-cdn publish-infra-cdn
 publish-infra-cdn:
