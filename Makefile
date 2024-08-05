@@ -2,7 +2,7 @@
 # File      :   Makefile
 # Desc      :   pgsty/pkg repo shortcuts
 # Ctime     :   2024-07-28
-# Mtime     :   2024-07-28
+# Mtime     :   2024-08-05
 # Path      :   Makefile
 # Author    :   Ruohang Feng (rh@vonng.com)
 # License   :   AGPLv3
@@ -16,29 +16,30 @@ all:
 	@echo "pgsty repo"
 
 ###############################################################
-#                 Publishing to Cloudflare                    #
+#                         Publishing                          #
 ###############################################################
-cf-yum:
+uy: upload-yum
+upload-yum:
 	cd yum && make upload
-cf-apt:
+ua: upload-apt
+upload-apt:
 	cd apt && make upload
-cf-key:
+uk: upload-key
+upload-key:
 	rclone copyto key $(CF_PATH)/key
-cf-etc:
-	rclone sync -P --transfers=8 ./etc/ $(CF_PATH)/etc/
-cf-src:
-	rclone sync -P --transfers=8 ./src/ $(CF_PATH)/src/
-
-###############################################################
-#                     Publishing to COS                       #
-###############################################################
-cos-key:
 	rclone copyto key $(COS_PATH)/key
-cos-etc:
+ug: upload-get
+upload-get:
+	rclone copyto get.io $(CF_PATH)/get
+	rclone copyto get.cc $(COS_PATH)/get
+ue: upload-etc
+upload-etc:
+	rclone sync -P --transfers=8 ./etc/ $(CF_PATH)/etc/
 	rclone sync -P --transfers=8 ./etc/ $(COS_PATH)/etc/
-cos-src:
+us: upload-src
+upload-src:
+	rclone sync -P --transfers=8 ./src/ $(CF_PATH)/src/
 	rclone sync -P --transfers=8 ./src/ $(COS_PATH)/src/
-
 
 ###############################################################
 #                        2. Syncing                           #
@@ -56,4 +57,5 @@ pulld:
 ###############################################################
 #                         Inventory                           #
 ###############################################################
-.PHONY: all cf-yum cf-apt cf-key push pushd pull pulld
+.PHONY: all uy ua uk ug ue us push pushd pull pulld \
+	upload-yum upload-apt upload-key upload-get upload-etc upload-src

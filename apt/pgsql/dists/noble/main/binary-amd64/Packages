@@ -21,3 +21,28 @@ Description: fast and reliable load balancing reverse proxy
  has request blocking capabilities and provides interface to display server
  status.
 
+Package: polardb-for-postgresql
+Maintainer: mrdrivingduck <mrdrivingduck@gmail.com>
+Depends: libicu66 | libicu70 | libicu74, libkrb5-3, libldap-2.4-2 | libldap-2.5-0 | libldap2
+Homepage: https://github.com/ApsaraDB/PolarDB-for-PostgreSQL
+Priority: optional
+Section: database
+Filename: pool/main/p/polardb-for-postgresql/polardb-for-postgresql_11.9.20.0-20240504193520_amd64.deb
+Size: 89398994
+SHA256: f5705c3b5970f0ae1e384d7d848bf109ed3868e92d80d5671b932239ff24afc0
+SHA1: e31344150eeca3312622d0d23ee4ec8019bfc5e6
+MD5sum: 9561ebdc18b992c5d57ae7159caf7275
+Description: PolarDB is an advanced Object-Relational database management system
+ (DBMS) that supports almost all SQL constructs (including
+ transactions, subselects and user-defined types and functions). The
+ PolarDB package includes the client programs and libraries that
+ you'll need to access a PolarDB DBMS server.  These PolarDB
+ client programs are programs that directly manipulate the internal
+ structure of PolarDB databases on a PolarDB server. These client
+ programs can be located on the same machine with the PolarDB
+ server, or may be on a remote machine which accesses a PolarDB
+ server over a network connection. This package contains the command-line
+ utilities for managing PolarDB databases on a PolarDB server.
+Version: 11.9.20.0-20240504193520
+Architecture: amd64
+

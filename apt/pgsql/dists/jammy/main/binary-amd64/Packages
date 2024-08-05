@@ -83,6 +83,31 @@ Description: Copy a Postgres database to a target Postgres server (pg_dump | pg_
   To make a copy of a database to another server as quickly as possible,
   one would like to use the parallel options of pg_dump and still be able to stream the data to as many pg_restore jobs.
 
+Package: polardb-for-postgresql
+Maintainer: mrdrivingduck <mrdrivingduck@gmail.com>
+Depends: libicu66 | libicu70 | libicu74, libkrb5-3, libldap-2.4-2 | libldap-2.5-0 | libldap2
+Homepage: https://github.com/ApsaraDB/PolarDB-for-PostgreSQL
+Priority: optional
+Section: database
+Filename: pool/main/p/polardb-for-postgresql/polardb-for-postgresql_11.9.20.0-20240504193515_amd64.deb
+Size: 88783446
+SHA256: 2ef85f8d7b281e8622589ccff65f093d944ddbce4a26e0b034ef343a18b3d957
+SHA1: a8f85ed90ae585dd7e7a9989a448efe0d3ecb5b9
+MD5sum: 02bb2d6adbc3d3748e3b3c97e58de3fc
+Description: PolarDB is an advanced Object-Relational database management system
+ (DBMS) that supports almost all SQL constructs (including
+ transactions, subselects and user-defined types and functions). The
+ PolarDB package includes the client programs and libraries that
+ you'll need to access a PolarDB DBMS server.  These PolarDB
+ client programs are programs that directly manipulate the internal
+ structure of PolarDB databases on a PolarDB server. These client
+ programs can be located on the same machine with the PolarDB
+ server, or may be on a remote machine which accesses a PolarDB
+ server over a network connection. This package contains the command-line
+ utilities for managing PolarDB databases on a PolarDB server.
+Version: 11.9.20.0-20240504193515
+Architecture: amd64
+
 Package: postgresql-12-pg-search
 Source: pg-search
 Version: 0.8.6-1PIGSTY~jammy

@@ -1,4 +1,27 @@
-# PGSTY PKG -- RPM / DEB for PGSTY & PostgreSQL
+# Pigsty Package Repo
+
+
+--------
+
+## Pigsty
+
+You can install pigsty source from this repo, via:
+
+```bash
+# install the latest pigsty version
+curl -fsSL https://repo.pigsty.io/get | bash
+
+# install a specific version
+curl -fsSL https://repo.pigsty.io/get | bash -s v2.7.0
+
+# install from china CDN mirror 
+curl -fsSL https://repo.pigsty.cc/get | bash
+```
+
+
+--------
+
+## Software Repo
 
 The supplementary [apt](apt/) and [yum](yum/) software repo for PostgreSQL ecosystem used by [Pigsty](https://pigsty.io)
 

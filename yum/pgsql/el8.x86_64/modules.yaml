@@ -26,6 +26,7 @@ data:
   profiles:
     everything:
       rpms:
+      - PolarDB
       - apache-age_16
       - apache-age_16-llvmjit
       - asn1oid_16
@@ -132,6 +133,7 @@ data:
       - zhparser_16-llvmjit
   api:
     rpms:
+    - PolarDB
     - apache-age_16
     - apache-age_16-llvmjit
     - asn1oid_16
@@ -238,6 +240,8 @@ data:
     - zhparser_16-llvmjit
   components:
     rpms:
+      PolarDB:
+        rationale: Present in the repository
       apache-age_16:
         rationale: Present in the repository
       asn1oid_16:
@@ -384,6 +388,7 @@ data:
         rationale: Present in the repository
   artifacts:
     rpms:
+    - PolarDB-0:11.9.20.0-20240504113511.el8.x86_64
     - apache-age_16-0:1.5.0-1PIGSTY.el8.x86_64
     - apache-age_16-llvmjit-0:1.5.0-1PIGSTY.el8.x86_64
     - asn1oid_16-0:1.5-1PIGSTY.el8.x86_64
