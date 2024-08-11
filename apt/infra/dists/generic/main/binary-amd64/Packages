@@ -91,6 +91,21 @@ SHA1: 7a1870fd6b469932c7fb6e3fe75e1210b4e46eb6
 MD5sum: a3619b422d5d4e77a60c2755987c68e5
 Description: Grafana
 
+Package: kafka
+Version: 3.8.0
+Architecture: all
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 122840
+Homepage: https://kafka.apache.org/
+Priority: optional
+Section: 
+Filename: pool/main/k/kafka/kafka_3.8.0_all.deb
+Size: 120791680
+SHA256: 87d87619a20a4cf71289467b3cb695d638d7537af5c8cf33ad9d063b1e2397a9
+SHA1: c1bc3207c70348718d47cc9824804160fdd5757d
+MD5sum: d448edac6bf30449c4fb05035f49e05b
+Description: An open-source distributed event streaming platform
+
 Package: kafka-exporter
 Version: 1.7.0
 Architecture: amd64
