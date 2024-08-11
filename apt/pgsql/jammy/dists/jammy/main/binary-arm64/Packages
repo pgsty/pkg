@@ -1,0 +1,46 @@
+Package: haproxy
+Version: 3.0.2-1ppa1~jammy
+Architecture: arm64
+Maintainer: Debian HAProxy Maintainers <team+haproxy@tracker.debian.org>
+Installed-Size: 4859
+Pre-Depends: dpkg (>= 1.17.14), init-system-helpers (>= 1.54~)
+Depends: libc6 (>= 2.34), libcrypt1 (>= 1:4.1.0), libjemalloc2 (>= 2.1.1), liblua5.3-0, libopentracing-c-wrapper0 (>= 1.1.0), libpcre2-8-0 (>= 10.22), libssl3 (>= 3.0.0~~alpha1), adduser, lsb-base (>= 3.0-6)
+Suggests: vim-haproxy, haproxy-doc
+Homepage: http://www.haproxy.org/
+Priority: optional
+Section: net
+Filename: pool/main/h/haproxy/haproxy_3.0.2-1ppa1~jammy_arm64.deb
+Size: 2245488
+SHA256: 8b1a13463c314dced50a4b152f9677b25380f55f7d85e258203f46b161851b5c
+SHA1: e0806c0ddc6ab6b250afa958e51a7962f44245b9
+MD5sum: b02b8a49b265ae295b7901cd4455bd99
+Description: fast and reliable load balancing reverse proxy
+ HAProxy is a TCP/HTTP reverse proxy which is particularly suited for high
+ availability environments. It features connection persistence through HTTP
+ cookies, load balancing, header addition, modification, deletion both ways. It
+ has request blocking capabilities and provides interface to display server
+ status.
+
+Package: redis
+Version: 6:7.2.5-1rl1~jammy1
+Architecture: all
+Maintainer: Redis Core Team <redis@redis.io>
+Installed-Size: 44
+Depends: redis-server (<< 6:7.2.5-1rl1~jammy1.1~), redis-server (>= 6:7.2.5-1rl1~jammy1)
+Homepage: https://redis.io/
+Priority: optional
+Section: database
+Filename: pool/main/r/redis/redis_7.2.5-1rl1~jammy1_all.deb
+Size: 33864
+SHA256: a2ae26aa9f53031523c24222909052bf752a7c72d76522cec264cd7383f0d8ac
+SHA1: ec273c72db4d1f5ffae8ab00c3a43fbe8db5f1d3
+MD5sum: 4656d49ca780d781ce3d407910eaa437
+Description: Persistent key-value database with network interface (metapackage)
+ Redis is a key-value database in a similar vein to memcache but the dataset
+ is non-volatile. Redis additionally provides native support for atomically
+ manipulating and querying data structures such as lists and sets.
+ .
+ The dataset is stored entirely in memory and periodically flushed to disk.
+ .
+ This package depends on the redis-server package.
+

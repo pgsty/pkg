@@ -1,0 +1,84 @@
+Package: postgresql-14-pg-lakehouse
+Version: 0.9.0
+Architecture: arm64
+Depends: postgresql-14
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-14-pg-lakehouse/postgresql-14-pg-lakehouse_0.9.0_arm64.deb
+Size: 7951708
+SHA256: 7e073e7e1831843a71cfdd184a22594eb9f280d178388adc24d509326cacf65c
+SHA1: 43a433bb54d6f12b0f712524ac3837c4c0347f65
+MD5sum: ccdb840fb912b4b84f1acb2a3193c445
+Description: An analytical query engine for Postgres
+
+Package: postgresql-14-pg-search
+Version: 0.9.0
+Architecture: arm64
+Depends: postgresql-14
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.9.0_arm64.deb
+Size: 45811332
+SHA256: ce11700a7ebeaa35395b055ce4ab056fb3756db512f244c9c6b7c3987b9fbb79
+SHA1: 6b03ad05b255bc4fdc0455fa13b7caae4af4e474
+MD5sum: 95e7653cc3bdd776a764650f0b2dff0a
+Description: Full-text search for PostgreSQL using BM25
+
+Package: postgresql-15-pg-lakehouse
+Version: 0.9.0
+Architecture: arm64
+Depends: postgresql-15
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-15-pg-lakehouse/postgresql-15-pg-lakehouse_0.9.0_arm64.deb
+Size: 7955640
+SHA256: 4e1be8c56ba87165bf9937aaf8bff92f4dceb35c75433850238f03fef311bc72
+SHA1: 49011e06c9924c4c52f9abcc3eb1b603f49d3391
+MD5sum: b5964824cf7842f1789d1924d1166314
+Description: An analytical query engine for Postgres
+
+Package: postgresql-15-pg-search
+Version: 0.9.0
+Architecture: arm64
+Depends: postgresql-15
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.9.0_arm64.deb
+Size: 45808344
+SHA256: 847190ead8c7b98d51277a2b520471ad5ddbd7e25703cb5ec6c6a34a2a668bcf
+SHA1: af4359ebe52e984b4a5d98975d11e35307078c48
+MD5sum: 0a7f2dacd8fbbffede1af39fa52287ce
+Description: Full-text search for PostgreSQL using BM25
+
+Package: postgresql-16-pg-lakehouse
+Version: 0.9.0
+Architecture: arm64
+Depends: postgresql-16
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-16-pg-lakehouse/postgresql-16-pg-lakehouse_0.9.0_arm64.deb
+Size: 7970744
+SHA256: d71b03ce59742e8f1b8817d0b262009f36c8e580298f661ac80a8111b6486f7b
+SHA1: 3a7ad42de32b19870a68a7c6e458239262e524d2
+MD5sum: 53866691d7fa15df3c334613cdd32556
+Description: An analytical query engine for Postgres
+
+Package: postgresql-16-pg-search
+Version: 0.9.0
+Architecture: arm64
+Depends: postgresql-16
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.9.0_arm64.deb
+Size: 45811888
+SHA256: 0a1504b54eed503c22912d161b69728902577f57420906d312bcc0640935e78b
+SHA1: b09d5efa43ad9d6f7d3fd99ad1e4d19ef9bdf307
+MD5sum: 2cb87cc9b0e2928c055ca12a236cf4b2
+Description: Full-text search for PostgreSQL using BM25
+

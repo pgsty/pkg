@@ -1,0 +1,130 @@
+Package: haproxy
+Version: 3.0.2-1ppa1~jammy
+Architecture: arm64
+Maintainer: Debian HAProxy Maintainers <team+haproxy@tracker.debian.org>
+Installed-Size: 4859
+Pre-Depends: dpkg (>= 1.17.14), init-system-helpers (>= 1.54~)
+Depends: libc6 (>= 2.34), libcrypt1 (>= 1:4.1.0), libjemalloc2 (>= 2.1.1), liblua5.3-0, libopentracing-c-wrapper0 (>= 1.1.0), libpcre2-8-0 (>= 10.22), libssl3 (>= 3.0.0~~alpha1), adduser, lsb-base (>= 3.0-6)
+Suggests: vim-haproxy, haproxy-doc
+Homepage: http://www.haproxy.org/
+Priority: optional
+Section: net
+Filename: pool/main/h/haproxy/haproxy_3.0.2-1ppa1~jammy_arm64.deb
+Size: 2245488
+SHA256: 8b1a13463c314dced50a4b152f9677b25380f55f7d85e258203f46b161851b5c
+SHA1: e0806c0ddc6ab6b250afa958e51a7962f44245b9
+MD5sum: b02b8a49b265ae295b7901cd4455bd99
+Description: fast and reliable load balancing reverse proxy
+ HAProxy is a TCP/HTTP reverse proxy which is particularly suited for high
+ availability environments. It features connection persistence through HTTP
+ cookies, load balancing, header addition, modification, deletion both ways. It
+ has request blocking capabilities and provides interface to display server
+ status.
+
+Package: postgresql-14-pg-lakehouse
+Version: 0.9.0
+Architecture: arm64
+Depends: postgresql-14
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-14-pg-lakehouse/postgresql-14-pg-lakehouse_0.9.0_arm64.deb
+Size: 7813320
+SHA256: 1d752b68bbd4a362ad46fdc6e6ab116bdf6e5906d8285e93f42ac79d810fbb9f
+SHA1: bfe2fbeffbef3f6525a7000750c1babc5c973178
+MD5sum: 39c544360c236c3906270fe804eee1df
+Description: An analytical query engine for Postgres
+
+Package: postgresql-14-pg-search
+Version: 0.9.0
+Architecture: arm64
+Depends: postgresql-14
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.9.0_arm64.deb
+Size: 45791908
+SHA256: 6913467d5fe29c11c29ed58257b97f8a3951e64dbd716093f215e29f28b0c0da
+SHA1: 1f48da7e9592d962fefbe5b06e69086622c44551
+MD5sum: cfe8e8ec0e09b981c936025fe988e46d
+Description: Full-text search for PostgreSQL using BM25
+
+Package: postgresql-15-pg-lakehouse
+Version: 0.9.0
+Architecture: arm64
+Depends: postgresql-15
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-15-pg-lakehouse/postgresql-15-pg-lakehouse_0.9.0_arm64.deb
+Size: 7801472
+SHA256: b26118be82466c5671dfac476e88ae27f90a508a6e14a2231db56375c2009269
+SHA1: bc144baa0b86441b2a796f8e321a015b225315e6
+MD5sum: d4072422a5cb8a2055b3990bca02ac8a
+Description: An analytical query engine for Postgres
+
+Package: postgresql-15-pg-search
+Version: 0.9.0
+Architecture: arm64
+Depends: postgresql-15
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.9.0_arm64.deb
+Size: 45788524
+SHA256: 0a5c53b386777ddeab7e4fd9ef20b8dcaf471092964a2b07fcb764d359f31d36
+SHA1: 859eed454419e33420d19960887c78d3b08ec4da
+MD5sum: fbda78c8ce0c1e8096c1bb3052e1608c
+Description: Full-text search for PostgreSQL using BM25
+
+Package: postgresql-16-pg-lakehouse
+Version: 0.9.0
+Architecture: arm64
+Depends: postgresql-16
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-16-pg-lakehouse/postgresql-16-pg-lakehouse_0.9.0_arm64.deb
+Size: 7817740
+SHA256: 2c5ceb839831bcd62f1641791f3eb3ae8ef2dd72b8f8224b3b60082ff16aacf5
+SHA1: 75d9410d51c6f72135260c71acf881e5e924be9c
+MD5sum: 2a9310c4c773fe3a2236ad33a0b8ec63
+Description: An analytical query engine for Postgres
+
+Package: postgresql-16-pg-search
+Version: 0.9.0
+Architecture: arm64
+Depends: postgresql-16
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.9.0_arm64.deb
+Size: 45795580
+SHA256: 8e803d969c21d40fb7c8824216934efb3389dfe90a1725a52d492c4b30767737
+SHA1: 46a4e773718593864f5c853cdc02b5dd6a9ac2fb
+MD5sum: 5c051e532126d29c4bf5f184cb276a66
+Description: Full-text search for PostgreSQL using BM25
+
+Package: redis
+Version: 6:7.2.5-1rl1~jammy1
+Architecture: all
+Maintainer: Redis Core Team <redis@redis.io>
+Installed-Size: 44
+Depends: redis-server (<< 6:7.2.5-1rl1~jammy1.1~), redis-server (>= 6:7.2.5-1rl1~jammy1)
+Homepage: https://redis.io/
+Priority: optional
+Section: database
+Filename: pool/main/r/redis/redis_7.2.5-1rl1~jammy1_all.deb
+Size: 33864
+SHA256: a2ae26aa9f53031523c24222909052bf752a7c72d76522cec264cd7383f0d8ac
+SHA1: ec273c72db4d1f5ffae8ab00c3a43fbe8db5f1d3
+MD5sum: 4656d49ca780d781ce3d407910eaa437
+Description: Persistent key-value database with network interface (metapackage)
+ Redis is a key-value database in a similar vein to memcache but the dataset
+ is non-volatile. Redis additionally provides native support for atomically
+ manipulating and querying data structures such as lists and sets.
+ .
+ The dataset is stored entirely in memory and periodically flushed to disk.
+ .
+ This package depends on the redis-server package.
+

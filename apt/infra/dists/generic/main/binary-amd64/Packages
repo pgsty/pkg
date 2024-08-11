@@ -152,33 +152,33 @@ MD5sum: 5468c6f1fd1d96ad44b21189c030fd03
 Description: Loki Logging Service
 
 Package: mcli
-Version: 20240726130844.0.0
+Version: 20240731155833.0.0
 Architecture: amd64
 Maintainer: MinIO Development <dev@minio.io>
-Installed-Size: 26300
+Installed-Size: 26296
 Homepage: https://min.io
 Priority: optional
 Section: 
-Filename: pool/main/m/mcli/mcli_20240726130844.0.0_amd64.deb
-Size: 9920514
-SHA256: bea3ec46cdb571bcd5b883ea1bdd82fbd8611a5c46529cc3eda588dacd95eaa8
-SHA1: 7ab18ac34afed848fe7c979283075e3141946f67
-MD5sum: c02922b280c03dbce1a1c0ecfef41d4b
+Filename: pool/main/m/mcli/mcli_20240731155833.0.0_amd64.deb
+Size: 9921058
+SHA256: 22553ad04e616bbb211ac283aa8b8349af9ef9c2fffdaa9a63a3c9ca3efcaac4
+SHA1: 7922e537e7900e617a5033a3c8a0aca0f5656e45
+MD5sum: 4b281de1a8cc74ee833ae2dc9b57538f
 Description: MinIO Client for cloud storage and filesystems
 
 Package: minio
-Version: 20240726204821.0.0
+Version: 20240803043323.0.0
 Architecture: amd64
 Maintainer: MinIO Development <dev@minio.io>
-Installed-Size: 100957
+Installed-Size: 100757
 Homepage: https://min.io
 Priority: optional
 Section: 
-Filename: pool/main/m/minio/minio_20240726204821.0.0_amd64.deb
-Size: 37038570
-SHA256: 07a2c399cc25451fcf059f683c57412190c76858b0509bd81aead955d3a95682
-SHA1: 79db25fcdb73b0809dc8fdd6430f14739dcaf8c5
-MD5sum: 0065f046e63fb7ce8583b8bde591358a
+Filename: pool/main/m/minio/minio_20240803043323.0.0_amd64.deb
+Size: 37002178
+SHA256: f1d5812f9f4d1066b540d214bfbb1509baaff1207c89e6ec675d513317acb8d2
+SHA1: dba2da26764a668c8f2258310d9a7ee14f1c55a9
+MD5sum: 937a43589570b274f0a0d2d838b03417
 Description: MinIO is a High Performance Object Storage released under AGPLv3.
  It is API compatible with Amazon S3 cloud storage service. Use MinIO to build
  high performance infrastructure for machine learning, analytics and application
@@ -366,6 +366,25 @@ SHA256: 9c16649a59baf2e92238cd65f3a57851f9af525bd5f5e492df32ef4ec2b6d7d9
 SHA1: a79438321607050a493a69eab60bb679c780c695
 MD5sum: 1a54d0eeec7ba5f827c49fe9d09367e0
 Description: Cloud OS distribution with Kubernetes as kernel
+
+Package: vector
+Version: 0.40.0-1
+Architecture: amd64
+Homepage: https://vector.dev
+Standards-Version: 3.9.4
+Maintainer: Vector Contributors <vector@datadoghq.com>
+Installed-Size: 124360
+Depends: libc6 (>= 2.15)
+Recommends: datadog-signing-keys (>= 1:1.3.1)
+Priority: optional
+Section: admin
+Filename: pool/main/v/vector/vector_0.40.0-1_amd64.deb
+Size: 30607032
+SHA256: c0c66ebab28b402675ef8119d9f25474a282e9aa69e4a5536f7e3fcc0965ba1d
+SHA1: 3b3ce3a701bfd539d56e8d3bd61573aa791314b4
+MD5sum: 601405185584c143217734b296ead7d4
+Description: A lightweight and ultra-fast tool for building observability pipelines
+ .
 
 Package: victoria-logs
 Version: 0.28.0

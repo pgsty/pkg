@@ -152,33 +152,33 @@ MD5sum: 436255ba7668580e676e52246164e331
 Description: Loki Logging Service
 
 Package: mcli
-Version: 20240726130844.0.0
+Version: 20240731155833.0.0
 Architecture: arm64
 Maintainer: MinIO Development <dev@minio.io>
 Installed-Size: 25088
 Homepage: https://min.io
 Priority: optional
 Section: 
-Filename: pool/main/m/mcli/mcli_20240726130844.0.0_arm64.deb
-Size: 9142136
-SHA256: f7b6be0c4e67b204a426a1f36efa6fd35c3d20c18a48a11959478cbdaa89ac6a
-SHA1: 6b41afbc3d6f26b0639821ca76f2f9468bd5df08
-MD5sum: 49154729d8ea168016095782b76c619b
+Filename: pool/main/m/mcli/mcli_20240731155833.0.0_arm64.deb
+Size: 9140170
+SHA256: b136737e2eeb76f412924cc5fca625f760819f5f98c904821db9e6c55136208b
+SHA1: 4c9c592bd45cd65515f5512eb1273768f76d312d
+MD5sum: 8c7c72b83e1ccd5222492f7e468736dc
 Description: MinIO Client for cloud storage and filesystems
 
 Package: minio
-Version: 20240726204821.0.0
+Version: 20240803043323.0.0
 Architecture: arm64
 Maintainer: MinIO Development <dev@minio.io>
-Installed-Size: 96897
+Installed-Size: 96641
 Homepage: https://min.io
 Priority: optional
 Section: 
-Filename: pool/main/m/minio/minio_20240726204821.0.0_arm64.deb
-Size: 35047958
-SHA256: da7c957723a261512fbabf8786a547844c429486b28fb48b5d7fe3329428b2ce
-SHA1: 3aaaab086d85bae97b967777efdc0776701b40b6
-MD5sum: e097ceb893f868bc74ff9c8511e7ef47
+Filename: pool/main/m/minio/minio_20240803043323.0.0_arm64.deb
+Size: 35017212
+SHA256: bcc0cde9c6fda06ba2c30fe5cd0f20bb823de37cc150c7564f7b70bc915de9fe
+SHA1: 6053f852f3aa8ad8a41a50272eafbd8c0680a63e
+MD5sum: 0386297464b783e3fb8e1c928932067b
 Description: MinIO is a High Performance Object Storage released under AGPLv3.
  It is API compatible with Amazon S3 cloud storage service. Use MinIO to build
  high performance infrastructure for machine learning, analytics and application
@@ -351,6 +351,25 @@ SHA256: 46af85241117fce43e81271221fe36f856af25dd322c21012b1c813ae3b2604f
 SHA1: 4c09204732b4a356cfe6b94a9479fc8b2b39a29a
 MD5sum: ac79e20c6c5d503c1652c6e93773b38b
 Description: Prometheus Exporter for Redis Metrics. Supports Redis 2.x, 3.x, 4.x, 5.x, 6.x, and 7.x
+
+Package: vector
+Version: 0.40.0-1
+Architecture: arm64
+Homepage: https://vector.dev
+Standards-Version: 3.9.4
+Maintainer: Vector Contributors <vector@datadoghq.com>
+Installed-Size: 117786
+Depends: libc6 (>= 2.18)
+Recommends: datadog-signing-keys (>= 1:1.3.1)
+Priority: optional
+Section: admin
+Filename: pool/main/v/vector/vector_0.40.0-1_arm64.deb
+Size: 27894894
+SHA256: 84b11c06ab3c23cec7b914a43677ea97852a0e28badb151e983fa57f4c994d4a
+SHA1: e5c37f031069f4b8d6096b7df9ce8c81afae0183
+MD5sum: 57583912b40bd37ea97449da6cb5172e
+Description: A lightweight and ultra-fast tool for building observability pipelines
+ .
 
 Package: victoria-logs
 Version: 0.28.0

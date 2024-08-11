@@ -1,0 +1,28 @@
+Origin: Pigsty
+Label: Pigsty PGSQL
+Codename: bookworm
+Date: Sun, 11 Aug 2024 22:28:33 UTC
+Architectures: amd64 arm64
+Components: main
+Description: pigsty apt repository for debian 12
+MD5Sum:
+ 06d88489151cf15a8a6fdddff468995f 571273 main/binary-amd64/Packages
+ d5cbb14ff016c05acf33cb38aef6d91a 161971 main/binary-amd64/Packages.gz
+ 05ff0d27e80014f75d65fcd4773761b8 120 main/binary-amd64/Release
+ 2f42b20a336022709640f26b98586e60 5056 main/binary-arm64/Packages
+ 196ed55b70c64dc344e8e384dbe1e949 1967 main/binary-arm64/Packages.gz
+ 4ba97c199ff1bf556636dca2fa102fd7 120 main/binary-arm64/Release
+SHA1:
+ e3d1bb49253308e4bdfc06a4d72b52df3a96df76 571273 main/binary-amd64/Packages
+ 6abc7536a2c6b3801144e4e97db2d33358eee06b 161971 main/binary-amd64/Packages.gz
+ 38c45f87567a9074e476a2920aa5d594f00e4ffd 120 main/binary-amd64/Release
+ 325e158b4279f62d5404eb773d8399d4f05f9d4d 5056 main/binary-arm64/Packages
+ 4142d20a7144a86cccfc4be525ac9751f53947c6 1967 main/binary-arm64/Packages.gz
+ 789a0d87520489e371f388175d30fa52a8643a58 120 main/binary-arm64/Release
+SHA256:
+ 3d673228713aef0be8aa0f7a1d624b0aa4c5581477dded1be8a6ead73d47b600 571273 main/binary-amd64/Packages
+ 044c413c704af49baf389bb463c36ef8c198e88022a858e0f94f8a54963c9366 161971 main/binary-amd64/Packages.gz
+ 5f2931fd66418a72660c45f9de6b7117635244edb08681bdac30d79de4b74b83 120 main/binary-amd64/Release
+ ac021488d765fda1f025a160028ffb61a3d8f7f1b32c2635ca46ca339cea8bf1 5056 main/binary-arm64/Packages
+ 7693b1836ec6af4e50cb296585545b885c742bbce76a99dab2a1e2b8295a07aa 1967 main/binary-arm64/Packages.gz
+ ec0250476e050c9b46c69624a17f67fb20f9545cb54d7a83977a6fbfa5a5b3fc 120 main/binary-arm64/Release

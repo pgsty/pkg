@@ -1,0 +1,76 @@
+Package: haproxy
+Version: 3.0.2-1ppa1~noble
+Architecture: amd64
+Maintainer: Debian HAProxy Maintainers <team+haproxy@tracker.debian.org>
+Installed-Size: 4875
+Pre-Depends: dpkg (>= 1.17.14), init-system-helpers (>= 1.54~)
+Depends: libc6 (>= 2.38), libcrypt1 (>= 1:4.1.0), libjemalloc2 (>= 2.1.1), liblua5.3-0, libopentracing-c-wrapper0t64 (>= 1.1.0), libpcre2-8-0 (>= 10.22), libssl3t64 (>= 3.0.0), adduser, lsb-base (>= 3.0-6)
+Suggests: vim-haproxy, haproxy-doc
+Homepage: http://www.haproxy.org/
+Priority: optional
+Section: net
+Filename: pool/main/h/haproxy/haproxy_3.0.2-1ppa1~noble_amd64.deb
+Size: 2202744
+SHA256: f517c0104912973b1e74b25a45188cdc2188f48e5de629ba40b5d066fee7e4b7
+SHA1: 4b7db58b4945be96d81d057a54c6aa102f5a0a4e
+MD5sum: d01edf15d36707125aa1d65a893d29d8
+Description: fast and reliable load balancing reverse proxy
+ HAProxy is a TCP/HTTP reverse proxy which is particularly suited for high
+ availability environments. It features connection persistence through HTTP
+ cookies, load balancing, header addition, modification, deletion both ways. It
+ has request blocking capabilities and provides interface to display server
+ status.
+
+Package: polardb-for-postgresql
+Maintainer: mrdrivingduck <mrdrivingduck@gmail.com>
+Depends: libicu66 | libicu70 | libicu74, libkrb5-3, libldap-2.4-2 | libldap-2.5-0 | libldap2
+Homepage: https://github.com/ApsaraDB/PolarDB-for-PostgreSQL
+Priority: optional
+Section: database
+Filename: pool/main/p/polardb-for-postgresql/polardb-for-postgresql_2.0.11.20.0-e6b64246_amd64.deb
+Size: 89314258
+SHA256: 8b1e991121753d24f6b8c9bd1685198ba47e63365c842a774c24bbf89dcc6c38
+SHA1: da8d18e457cd54656348aa3bc413f4dde45d0d3c
+MD5sum: 410bf774357994803f726746cb45f7f8
+Description: PolarDB is an advanced Object-Relational database management system
+ (DBMS) that supports almost all SQL constructs (including
+ transactions, subselects and user-defined types and functions). The
+ PolarDB package includes the client programs and libraries that
+ you'll need to access a PolarDB DBMS server.  These PolarDB
+ client programs are programs that directly manipulate the internal
+ structure of PolarDB databases on a PolarDB server. These client
+ programs can be located on the same machine with the PolarDB
+ server, or may be on a remote machine which accesses a PolarDB
+ server over a network connection. This package contains the command-line
+ utilities for managing PolarDB databases on a PolarDB server.
+Version: 2.0.11.20.0-e6b64246
+Architecture: amd64
+
+Package: postgresql-16-pg-lakehouse
+Version: 0.9.0
+Architecture: amd64
+Depends: postgresql-16
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-16-pg-lakehouse/postgresql-16-pg-lakehouse_0.9.0_amd64.deb
+Size: 9214688
+SHA256: ca8df4f25939d5638c0d89076bdfdc47d415fa50bf1e6c729cf804514f81b234
+SHA1: f2cc0542d72480948c47e46bf4f232ce5662d604
+MD5sum: 4b8ac8e85bfb54258a2227ebab3e58dc
+Description: An analytical query engine for Postgres
+
+Package: postgresql-16-pg-search
+Version: 0.9.0
+Architecture: amd64
+Depends: postgresql-16
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.9.0_amd64.deb
+Size: 46067868
+SHA256: 356889f329688240cd85ba3f10e8ef44a379b4a21c9b15dc1d9461e211fe1201
+SHA1: da7104352514f709b5269e2d811e5a960588a8cf
+MD5sum: 4e1182e6827e80247e625b69f3e212c0
+Description: Full-text search for PostgreSQL using BM25
+

@@ -24,31 +24,45 @@ clean:
 	rm -rf stash/*
 
 add-infra:
-	reprepro -b infra includedeb generic stash/*.deb
+	reprepro -b infra includedeb generic infra/stash/*.deb
 ls-infra:
 	reprepro -b infra list generic
 
+add-all: add-focal add-jammy add-noble add-bookworm add-bullseye
 add-focal:
-	reprepro -b pgsql includedeb focal stash/*.deb
+	reprepro -b pgsql/focal includedeb focal pgsql/focal/stash/*.deb
 add-jammy:
-	reprepro -b pgsql includedeb jammy stash/*.deb
+	reprepro -b pgsql/jammy includedeb jammy pgsql/jammy/stash/*.deb
 add-noble:
-	reprepro -b pgsql includedeb noble stash/*.deb
+	reprepro -b pgsql/noble includedeb noble pgsql/noble/stash/*.deb
 add-bookworm:
-	reprepro -b pgsql includedeb bookworm stash/*.deb
+	reprepro -b pgsql/bookworm includedeb bookworm pgsql/bookworm/stash/*.deb
 add-bullseye:
-	reprepro -b pgsql includedeb bullseye stash/*.deb
+	reprepro -b pgsql/bullseye includedeb bullseye pgsql/bullseye/stash/*.deb
+purge:
+	rm -rf infra/stash/*.deb
+	rm -rf pgsql/focal/stash/*.deb
+	rm -rf pgsql/jammy/stash/*.deb
+	rm -rf pgsql/noble/stash/*.deb
+	rm -rf pgsql/bookworm/stash/*.deb
+	rm -rf pgsql/bullseye/stash/*.deb
+	rm -rf pgsty/focal/stash/*.deb
+	rm -rf pgsty/jammy/stash/*.deb
+	rm -rf pgsty/noble/stash/*.deb
+	rm -rf pgsty/bookworm/stash/*.deb
+	rm -rf pgsty/bullseye/stash/*.deb
+
 
 ls-focal:
-	reprepro -b pgsql list focal
+	reprepro -b pgsql/focal list focal
 ls-jammy:
-	reprepro -b pgsql list jammy
+	reprepro -b pgsql/jammy list jammy
 ls-noble:
-	reprepro -b pgsql list noble
+	reprepro -b pgsql/noble list noble
 ls-bookworm:
-	reprepro -b pgsql list bookworm
+	reprepro -b pgsql/bookworm list bookworm
 ls-bullseye:
-	reprepro -b pgsql list bullseye
+	reprepro -b pgsql/bullseye list bullseye
 
 # how to remove (e.g.)
 # reprepro -b pgsql remove bookworm haproxy
@@ -57,10 +71,20 @@ ls-bullseye:
 pgsql-include:
 	reprepro -b pgsql includedeb bookworm stash/bookworm.amd64/postgresql-16*.deb
 	reprepro -b pgsql includedeb jammy    stash/jammy.amd64/postgresql-16*.deb
-pgsty-add-jammy:
-	reprepro -b pgsty includedeb jammy stash/jammy.amd64/*.deb
-pgsty-add-bookworm:
-	reprepro -b pgsty includedeb bookworm stash/bookworm.amd64/*.deb
+
+
+sty-all: sty-focal sty-jammy sty-noble sty-bookworm sty-bullseye
+sty-focal:
+	reprepro -b pgsty/focal includedeb focal pgsty/focal/stash/*.deb
+sty-jammy:
+	reprepro -b pgsty/jammy includedeb jammy pgsty/jammy/stash/*.deb
+sty-noble:
+	reprepro -b pgsty/noble includedeb noble pgsty/noble/stash/*.deb
+sty-bookworm:
+	reprepro -b pgsty/bookworm includedeb bookworm pgsty/bookworm/stash/*.deb
+sty-bullseye:
+	reprepro -b pgsty/bullseye includedeb bullseye pgsty/bullseye/stash/*.deb
+
 pgsty-ls-jammy:
 	reprepro -b pgsty list jammy
 pgsty-ls-bookworm:
