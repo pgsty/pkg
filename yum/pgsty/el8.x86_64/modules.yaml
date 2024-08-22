@@ -375,6 +375,7 @@ data:
       - kafka_fdw_16-debuginfo
       - kafka_fdw_16-debugsource
       - kafka_fdw_16-llvmjit
+      - libarrow-s3
       - libduckdb
       - log_fdw_14
       - log_fdw_14-debuginfo
@@ -475,6 +476,8 @@ data:
       - pagevis_14
       - pagevis_15
       - pagevis_16
+      - parquet_s3_fdw_16
+      - parquet_s3_fdw_16-llvmjit
       - permuteseq_12
       - permuteseq_12-llvmjit
       - permuteseq_13
@@ -630,6 +633,8 @@ data:
       - pg_currency_16-debuginfo
       - pg_currency_16-debugsource
       - pg_currency_16-llvmjit
+      - pg_duckdb_16
+      - pg_duckdb_16-llvmjit
       - pg_ecdsa_12
       - pg_ecdsa_12-debuginfo
       - pg_ecdsa_12-debugsource
@@ -1045,6 +1050,7 @@ data:
       - pg_tde_16-debuginfo
       - pg_tde_16-debugsource
       - pg_tde_16-llvmjit
+      - pg_tier_16
       - pg_tiktoken_12
       - pg_tiktoken_13
       - pg_tiktoken_14
@@ -1864,6 +1870,7 @@ data:
     - kafka_fdw_16-debuginfo
     - kafka_fdw_16-debugsource
     - kafka_fdw_16-llvmjit
+    - libarrow-s3
     - libduckdb
     - log_fdw_14
     - log_fdw_14-debuginfo
@@ -1964,6 +1971,8 @@ data:
     - pagevis_14
     - pagevis_15
     - pagevis_16
+    - parquet_s3_fdw_16
+    - parquet_s3_fdw_16-llvmjit
     - permuteseq_12
     - permuteseq_12-llvmjit
     - permuteseq_13
@@ -2119,6 +2128,8 @@ data:
     - pg_currency_16-debuginfo
     - pg_currency_16-debugsource
     - pg_currency_16-llvmjit
+    - pg_duckdb_16
+    - pg_duckdb_16-llvmjit
     - pg_ecdsa_12
     - pg_ecdsa_12-debuginfo
     - pg_ecdsa_12-debugsource
@@ -2534,6 +2545,7 @@ data:
     - pg_tde_16-debuginfo
     - pg_tde_16-debugsource
     - pg_tde_16-llvmjit
+    - pg_tier_16
     - pg_tiktoken_12
     - pg_tiktoken_13
     - pg_tiktoken_14
@@ -3274,6 +3286,8 @@ data:
         rationale: Present in the repository
       kafka_fdw_16:
         rationale: Present in the repository
+      libarrow-s3:
+        rationale: Present in the repository
       libduckdb:
         rationale: Present in the repository
       log_fdw_14:
@@ -3341,6 +3355,8 @@ data:
       pagevis_15:
         rationale: Present in the repository
       pagevis_16:
+        rationale: Present in the repository
+      parquet_s3_fdw_16:
         rationale: Present in the repository
       permuteseq_12:
         rationale: Present in the repository
@@ -3431,6 +3447,8 @@ data:
       pg_currency_15:
         rationale: Present in the repository
       pg_currency_16:
+        rationale: Present in the repository
+      pg_duckdb_16:
         rationale: Present in the repository
       pg_ecdsa_12:
         rationale: Present in the repository
@@ -3701,6 +3719,8 @@ data:
       pg_sqlog_16:
         rationale: Present in the repository
       pg_tde_16:
+        rationale: Present in the repository
+      pg_tier_16:
         rationale: Present in the repository
       pg_tiktoken_12:
         rationale: Present in the repository
@@ -4387,6 +4407,7 @@ data:
     - kafka_fdw_16-debuginfo-0:0.0.3-1PIGSTY.el8.x86_64
     - kafka_fdw_16-debugsource-0:0.0.3-1PIGSTY.el8.x86_64
     - kafka_fdw_16-llvmjit-0:0.0.3-1PIGSTY.el8.x86_64
+    - libarrow-s3-0:17.0.0-1PIGSTY.el8.x86_64
     - libduckdb-0:1.0.0-1PIGSTY.el8.x86_64
     - log_fdw_14-0:1.4-1PIGSTY.el8.x86_64
     - log_fdw_14-debuginfo-0:1.4-1PIGSTY.el8.x86_64
@@ -4487,6 +4508,8 @@ data:
     - pagevis_14-0:0.1-1PIGSTY.el8.x86_64
     - pagevis_15-0:0.1-1PIGSTY.el8.x86_64
     - pagevis_16-0:0.1-1PIGSTY.el8.x86_64
+    - parquet_s3_fdw_16-0:1.1.0-1PIGSTY.el8.x86_64
+    - parquet_s3_fdw_16-llvmjit-0:1.1.0-1PIGSTY.el8.x86_64
     - permuteseq_12-0:1.2.2-1PIGSTY.el8.x86_64
     - permuteseq_12-llvmjit-0:1.2.2-1PIGSTY.el8.x86_64
     - permuteseq_13-0:1.2.2-1PIGSTY.el8.x86_64
@@ -4642,6 +4665,8 @@ data:
     - pg_currency_16-debuginfo-0:0.0.3-1PIGSTY.el8.x86_64
     - pg_currency_16-debugsource-0:0.0.3-1PIGSTY.el8.x86_64
     - pg_currency_16-llvmjit-0:0.0.3-1PIGSTY.el8.x86_64
+    - pg_duckdb_16-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_duckdb_16-llvmjit-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_ecdsa_12-0:1.0-1PIGSTY.el8.x86_64
     - pg_ecdsa_12-debuginfo-0:1.0-1PIGSTY.el8.x86_64
     - pg_ecdsa_12-debugsource-0:1.0-1PIGSTY.el8.x86_64
@@ -5057,6 +5082,7 @@ data:
     - pg_tde_16-debuginfo-0:1.0.0-1PIGSTY.el8.x86_64
     - pg_tde_16-debugsource-0:1.0.0-1PIGSTY.el8.x86_64
     - pg_tde_16-llvmjit-0:1.0.0-1PIGSTY.el8.x86_64
+    - pg_tier_16-0:0.0.3-1PIGSTY.el8.x86_64
     - pg_tiktoken_12-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_tiktoken_13-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_tiktoken_14-0:0.0.1-1PIGSTY.el8.x86_64

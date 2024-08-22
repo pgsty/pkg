@@ -82,6 +82,7 @@ data:
       - numeral_16
       - numeral_16-llvmjit
       - pagevis_16
+      - parquet_s3_fdw_16
       - parquet_s3_fdw_16-llvmjit
       - permuteseq_16
       - permuteseq_16-llvmjit
@@ -100,6 +101,8 @@ data:
       - pg_crash_16-llvmjit
       - pg_currency_16
       - pg_currency_16-llvmjit
+      - pg_duckdb_16
+      - pg_duckdb_16-llvmjit
       - pg_ecdsa_16
       - pg_ecdsa_16-llvmjit
       - pg_envvar_16
@@ -148,6 +151,7 @@ data:
       - pg_sqlog_16
       - pg_tde_16
       - pg_tde_16-llvmjit
+      - pg_tier_16
       - pg_tiktoken_16
       - pg_timeit_16
       - pg_timeit_16-llvmjit
@@ -262,6 +266,7 @@ data:
     - numeral_16
     - numeral_16-llvmjit
     - pagevis_16
+    - parquet_s3_fdw_16
     - parquet_s3_fdw_16-llvmjit
     - permuteseq_16
     - permuteseq_16-llvmjit
@@ -280,6 +285,8 @@ data:
     - pg_crash_16-llvmjit
     - pg_currency_16
     - pg_currency_16-llvmjit
+    - pg_duckdb_16
+    - pg_duckdb_16-llvmjit
     - pg_ecdsa_16
     - pg_ecdsa_16-llvmjit
     - pg_envvar_16
@@ -328,6 +335,7 @@ data:
     - pg_sqlog_16
     - pg_tde_16
     - pg_tde_16-llvmjit
+    - pg_tier_16
     - pg_tiktoken_16
     - pg_timeit_16
     - pg_timeit_16-llvmjit
@@ -482,6 +490,8 @@ data:
         rationale: Present in the repository
       pg_currency_16:
         rationale: Present in the repository
+      pg_duckdb_16:
+        rationale: Present in the repository
       pg_ecdsa_16:
         rationale: Present in the repository
       pg_envvar_16:
@@ -543,6 +553,8 @@ data:
       pg_sqlog_16:
         rationale: Present in the repository
       pg_tde_16:
+        rationale: Present in the repository
+      pg_tier_16:
         rationale: Present in the repository
       pg_tiktoken_16:
         rationale: Present in the repository
@@ -672,6 +684,7 @@ data:
     - numeral_16-0:1.3-1PIGSTY.el8.x86_64
     - numeral_16-llvmjit-0:1.3-1PIGSTY.el8.x86_64
     - pagevis_16-0:0.1-1PIGSTY.el8.x86_64
+    - parquet_s3_fdw_16-0:1.1.0-1PIGSTY.el8.x86_64
     - parquet_s3_fdw_16-llvmjit-0:1.1.0-1PIGSTY.el8.x86_64
     - permuteseq_16-0:1.2.2-1PIGSTY.el8.x86_64
     - permuteseq_16-llvmjit-0:1.2.2-1PIGSTY.el8.x86_64
@@ -690,6 +703,8 @@ data:
     - pg_crash_16-llvmjit-0:1.0-1PIGSTY.el8.x86_64
     - pg_currency_16-0:0.0.3-1PIGSTY.el8.x86_64
     - pg_currency_16-llvmjit-0:0.0.3-1PIGSTY.el8.x86_64
+    - pg_duckdb_16-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_duckdb_16-llvmjit-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_ecdsa_16-0:1.0-1PIGSTY.el8.x86_64
     - pg_ecdsa_16-llvmjit-0:1.0-1PIGSTY.el8.x86_64
     - pg_envvar_16-0:1.0.0-1PIGSTY.el8.x86_64
@@ -738,6 +753,7 @@ data:
     - pg_sqlog_16-0:1.6-1PIGSTY.el8.x86_64
     - pg_tde_16-0:1.0.0-1PIGSTY.el8.x86_64
     - pg_tde_16-llvmjit-0:1.0.0-1PIGSTY.el8.x86_64
+    - pg_tier_16-0:0.0.3-1PIGSTY.el8.x86_64
     - pg_tiktoken_16-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_timeit_16-0:1.0-1PIGSTY.el8.x86_64
     - pg_timeit_16-llvmjit-0:1.0-1PIGSTY.el8.x86_64
