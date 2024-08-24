@@ -7,10 +7,10 @@ Homepage: https://github.com/prometheus/alertmanager
 Priority: optional
 Section: 
 Filename: pool/main/a/alertmanager/alertmanager_0.27.0_arm64.deb
-Size: 29265318
-SHA256: 5a37d948e86591d174cb8e5c59f0df108b8caf4afe505dd938c87917512df9f1
-SHA1: 3ec062d0bde90fb5ae0fd800fb212d514c3cace6
-MD5sum: efd0741f21e38349778e15eae0fdf6d2
+Size: 29265336
+SHA256: 68046981c91f335c4fc7825efac38f598f7c4bb63a123757f8057d58a3aa2b31
+SHA1: 4e03c8510034b09d5dd0f026175cb2e1cb03bbe8
+MD5sum: c2b7fb48be8743ec0084454effdf80f2
 Description: Prometheus Alertmanager
 
 Package: blackbox-exporter
@@ -23,9 +23,9 @@ Priority: optional
 Section: 
 Filename: pool/main/b/blackbox-exporter/blackbox-exporter_0.25.0_arm64.deb
 Size: 10684372
-SHA256: b17e91c943c28cb30c8e1800ef562dcafce536da4b4dcc7612ae5b7308873bf0
-SHA1: 0944f19a81b28270d1fcdff32285cd6fe86ff652
-MD5sum: 5a2c833521342c8e100d394f5e1e5693
+SHA256: ef09dc3895865f2811180e50975612ed52cad2db51bfa27e073c66a3ce1b607a
+SHA1: 0a237627ec40447a517c3d46dbc396ca4b3868d7
+MD5sum: aa5f529634680895f8cd437148e06ebf
 Description: Prometheus Blackbox prober exporter,  allows blackbox probing of endpoints over HTTP, HTTPS, DNS, TCP, ICMP and gRPC.
 
 Package: duckdb
@@ -37,58 +37,58 @@ Homepage: https://github.com/duckdb/duckdb
 Priority: optional
 Section: 
 Filename: pool/main/d/duckdb/duckdb_1.0.0-1_arm64.deb
-Size: 15331716
-SHA256: ecd35be2b790e3ef230048bda64cf845173dc4b2140a29d8e671de272eb8b1d7
-SHA1: 61334f2fbc93232d24d453a2f552879659be1966
-MD5sum: 4b163728872b45e9018247d3971a62c2
+Size: 15331714
+SHA256: e9293797c40a68fcb782d9be63310604c10b16699e8023cfcdfe4b14ab8a97a5
+SHA1: 39648958deffeb488de6a56416ef3d83ce175827
+MD5sum: de4122968076db3b078896caf32efc66
 Description: In-process SQL OLAP Database Management System
 
 Package: etcd
-Version: 3.5.15-1
+Version: 3.5.15
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 52224
 Homepage: https://github.com/etcd-io/etcd
 Priority: optional
 Section: 
-Filename: pool/main/e/etcd/etcd_3.5.15-1_arm64.deb
-Size: 18844814
-SHA256: 2f512ca1871b7d075f6e76ed2213bea15c8d3f1b3cd01361f68e3daa458c9c02
-SHA1: f9e4676cd78d46a20e2c45a96fd252af177f625c
-MD5sum: 9198c3edbaddce4beb3ecdcb366d82f5
+Filename: pool/main/e/etcd/etcd_3.5.15_arm64.deb
+Size: 18844800
+SHA256: acd372c475279ac62072535cd48ba86d089300a29bdba9dc5369fea27828d2fa
+SHA1: 977e75ddce0027c6581cdde95d786bf00efbc042
+MD5sum: 25de4b056206fa67b8ba22d44adb54eb
 Description: Distributed reliable key-value store for the most critical data of a distributed system
 
 Package: ferretdb
-Version: 1.23.0
+Version: 1.23.1
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 41633
+Installed-Size: 41561
 Homepage: https://github.com/FerretDB/FerretDB
 Priority: optional
 Section: 
-Filename: pool/main/f/ferretdb/ferretdb_1.23.0_arm64.deb
-Size: 20380126
-SHA256: 955b34f35ac1bbf829ae90ec314072061f65e26db295b41ed5b6c0582128d4f5
-SHA1: a0699a7a86a173eaa5f169fa3b879e0d03c85ba2
-MD5sum: c1e0b971a2581ec4772ec2123b235ce8
+Filename: pool/main/f/ferretdb/ferretdb_1.23.1_arm64.deb
+Size: 20371028
+SHA256: 275c39f8d87721acaac3c02f5b29436c4a23c948d95bb0ba884dd89b5b7782da
+SHA1: 351101196ffc0c70c6c8e0d8c3d8388b5c4fea16
+MD5sum: ef7458cd872ba1b64a50a4dd1c977423
 Description: A truly Open Source MongoDB alternative
 
 Package: grafana
-Version: 11.1.3
+Version: 11.1.4
 License: AGPLv3
 Vendor: "Grafana Labs"
 Architecture: arm64
 Maintainer: contact@grafana.com
-Installed-Size: 423901
+Installed-Size: 423904
 Depends: adduser, libfontconfig1, musl
 Homepage: https://grafana.com
 Priority: optional
 Section: default
-Filename: pool/main/g/grafana/grafana_11.1.3_arm64.deb
-Size: 113038978
-SHA256: 84ca2429a485bb27c0faa76176fdf7c3b6d8ecff7d3df71cdd13ff7383b6b635
-SHA1: 9058f0c6cd36a87bf3a8d3c30c2c77da957c0553
-MD5sum: 1c18609f98da5bfeeb7af4e155ee1609
+Filename: pool/main/g/grafana/grafana_11.1.4_arm64.deb
+Size: 113076630
+SHA256: 0b92f49add880a8259b1b47e10963c7a92287cdf1b873d287184792b711c21c2
+SHA1: 968a401ea57b4dd2bdbe37677f62a0b189069f39
+MD5sum: 224e87c2ea264bf3567d287433e0b083
 Description: Grafana
 
 Package: kafka
@@ -100,100 +100,100 @@ Homepage: https://kafka.apache.org/
 Priority: optional
 Section: 
 Filename: pool/main/k/kafka/kafka_3.8.0_all.deb
-Size: 120791680
-SHA256: 87d87619a20a4cf71289467b3cb695d638d7537af5c8cf33ad9d063b1e2397a9
-SHA1: c1bc3207c70348718d47cc9824804160fdd5757d
-MD5sum: d448edac6bf30449c4fb05035f49e05b
+Size: 120791668
+SHA256: 9318271c181ee26bb345ad6f476deb13bb11ab28f488f2ac2ca876bd27e1ddc0
+SHA1: e39c2d6b6bec9237b50e82e38be43d3c20b10cf7
+MD5sum: 56b7e577fe7e62ec18220701481bbb66
 Description: An open-source distributed event streaming platform
 
 Package: kafka-exporter
-Version: 1.7.0
+Version: 1.8.0
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 17925
+Installed-Size: 19193
 Homepage: https://github.com/danielqsj/kafka_exporter
 Priority: optional
 Section: 
-Filename: pool/main/k/kafka-exporter/kafka-exporter_1.7.0_arm64.deb
-Size: 8979460
-SHA256: 2ad32bb6dd4d3d8ef4cef4e6e831f0c72c50fabe15a560f1bf0ba7975d7c1249
-SHA1: 36610cf4b7d5250d38aa3e018d98ef15dacbe415
-MD5sum: 2d4aad30e1c295ca2932dfa05c62210b
+Filename: pool/main/k/kafka-exporter/kafka-exporter_1.8.0_arm64.deb
+Size: 10013542
+SHA256: f71a0d5ddcea21551754252e7cee49e8d91f8fc8ee2173d482dd2a6fb44c4e6c
+SHA1: f4faa7ffbf3e6914c6a89c316a748d40c95d3e7e
+MD5sum: 340b6f62483c6f668c2cac13d13277e3
 Description: Prometheus Exporter for Kafka
 
 Package: keepalived-exporter
-Version: 1.3.2
+Version: 1.3.3
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 9856
-Homepage: https://github.com/gen2brain/keepalived_exporter
+Installed-Size: 8576
+Homepage: https://github.com/mehdy/keepalived-exporter
 Priority: optional
 Section: 
-Filename: pool/main/k/keepalived-exporter/keepalived-exporter_1.3.2_arm64.deb
-Size: 3793978
-SHA256: a5909efdedb4dc8e6eb650915606b7d00e6d2b01ca0e44d2556b555e142c5bd8
-SHA1: 3cd53d69675005291f27c245757995bd1c39d40f
-MD5sum: 2643cf6b321b4b6dd344058127bd4f42
+Filename: pool/main/k/keepalived-exporter/keepalived-exporter_1.3.3_arm64.deb
+Size: 3416016
+SHA256: 14a543564e646ac3ea4a14c49b460119ff7736007f88d85a4ebbaef54a4d5c06
+SHA1: 1aec3a3d289b98bdb5f71b3cf8b26dff5ae989b2
+MD5sum: eee22efc425f4b93029bc5810ffc4b24
 Description: Prometheus exporter for keepalived metrics
 
 Package: logcli
-Version: 3.1.0-1
+Version: 3.1.1
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 60992
-Homepage: https://github.com/prometheus/prometheus
+Installed-Size: 61888
+Homepage: https://github.com/grafana/loki
 Priority: optional
 Section: 
-Filename: pool/main/l/logcli/logcli_3.1.0-1_arm64.deb
-Size: 17593556
-SHA256: 832ef278c07a101f35208c8a6b2c1de7d6699a47c4cec82d3b09288f9affcbeb
-SHA1: 57165ecc80ad90bccdaf9a903d00238eaa22bef0
-MD5sum: 8e62dccec75b4ec43ecde8f7afbe0735
+Filename: pool/main/l/logcli/logcli_3.1.1_arm64.deb
+Size: 17904508
+SHA256: 331324abca02b4dbca473c9d9c950d30d957ecbae14cd054e4db6e089a520bba
+SHA1: 95505247a0937e6cdb2f839d87b820d024372eb1
+MD5sum: 6b66dd1e6adcc96b3b5c6ab88ce92a15
 Description: Loki Logging Service CLI
 
 Package: loki
-Version: 3.1.0-1
+Version: 3.1.1
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 71938
-Homepage: https://github.com/prometheus/prometheus
+Installed-Size: 72834
+Homepage: https://github.com/grafana/loki
 Priority: optional
 Section: 
-Filename: pool/main/l/loki/loki_3.1.0-1_arm64.deb
-Size: 21405560
-SHA256: 9d83b06a1619fd7852081fe90bbb1c9d59cfee46da23326e3e8dd9b31a3af2ef
-SHA1: 157f6a287048d3f66f667c0b20c175c1d1628ead
-MD5sum: 436255ba7668580e676e52246164e331
+Filename: pool/main/l/loki/loki_3.1.1_arm64.deb
+Size: 21725776
+SHA256: 4f9d6fc9ce9e9485063d27e71df644bbc9ad7e80f6644674937059e03b7e60e5
+SHA1: 9dc7d8670ab4c3dc02071cd79ae2bdc81e3da75b
+MD5sum: 7a446a24a5898698e69828fa14a7c8ba
 Description: Loki Logging Service
 
 Package: mcli
-Version: 20240731155833.0.0
+Version: 20240817113350.0.0
 Architecture: arm64
 Maintainer: MinIO Development <dev@minio.io>
-Installed-Size: 25088
+Installed-Size: 25344
 Homepage: https://min.io
 Priority: optional
 Section: 
-Filename: pool/main/m/mcli/mcli_20240731155833.0.0_arm64.deb
-Size: 9140170
-SHA256: b136737e2eeb76f412924cc5fca625f760819f5f98c904821db9e6c55136208b
-SHA1: 4c9c592bd45cd65515f5512eb1273768f76d312d
-MD5sum: 8c7c72b83e1ccd5222492f7e468736dc
+Filename: pool/main/m/mcli/mcli_20240817113350.0.0_arm64.deb
+Size: 9229126
+SHA256: 6b4277369830add63d571c9b02d0d55b079a3a5b32859ba75506fedd2a4f0596
+SHA1: c1fc00ac4e04fb5c48d40a2ed1bde75519dc13aa
+MD5sum: b3472f7bce9fbce0bca17c7c13d68e33
 Description: MinIO Client for cloud storage and filesystems
 
 Package: minio
-Version: 20240803043323.0.0
+Version: 20240817012454.0.0
 Architecture: arm64
 Maintainer: MinIO Development <dev@minio.io>
-Installed-Size: 96641
+Installed-Size: 97089
 Homepage: https://min.io
 Priority: optional
 Section: 
-Filename: pool/main/m/minio/minio_20240803043323.0.0_arm64.deb
-Size: 35017212
-SHA256: bcc0cde9c6fda06ba2c30fe5cd0f20bb823de37cc150c7564f7b70bc915de9fe
-SHA1: 6053f852f3aa8ad8a41a50272eafbd8c0680a63e
-MD5sum: 0386297464b783e3fb8e1c928932067b
+Filename: pool/main/m/minio/minio_20240817012454.0.0_arm64.deb
+Size: 35272784
+SHA256: b3a2f5d0f6e1dea36c62365439a3ba313b761974d6bf3709f59c497edc9068a5
+SHA1: 66ea46814d09d851a33d9ea92a9793d87e90a63c
+MD5sum: 1a2372c77cbf60cf6da7e784140b5616
 Description: MinIO is a High Performance Object Storage released under AGPLv3.
  It is API compatible with Amazon S3 cloud storage service. Use MinIO to build
  high performance infrastructure for machine learning, analytics and application
@@ -208,10 +208,10 @@ Homepage: https://github.com/prometheus/mongodb_exporter
 Priority: optional
 Section: 
 Filename: pool/main/m/mongodb-exporter/mongodb-exporter_0.40.0_arm64.deb
-Size: 5255114
-SHA256: d95afdb47ae5e24ceebda2046fe10890bc6dde96ebd185a07c12c9be1893f3cc
-SHA1: 5e4dce7aad6ad0f6a243eb2822d3af5a8acd1e3c
-MD5sum: 9572f5eb3946cd6c7f85c4e0909e970d
+Size: 5255118
+SHA256: fe694079dca4bb7954d1b86c4b5edc89e615c34c7b6c46619ca32560bec8223b
+SHA1: b0451fbc004e1c6a472690acdbf3a7dd3a10744a
+MD5sum: cf4f0ac3b16d987e2eb5c96d3280a282
 Description: A Prometheus exporter for MongoDB including sharding, replication and storage engines
 
 Package: mysqld-exporter
@@ -223,25 +223,25 @@ Homepage: https://github.com/prometheus/mysqld_exporter
 Priority: optional
 Section: 
 Filename: pool/main/m/mysqld-exporter/mysqld-exporter_0.15.1_arm64.deb
-Size: 7832116
-SHA256: 4fbe685db609d14426a599f323d225d8d1402169623f52411ff87995fd8e30f8
-SHA1: e140d447dcaea8c1fc1eb5ca525016c134820e80
-MD5sum: e2221ca5ae19339440d46cbaaaae1406
+Size: 7832120
+SHA256: e6a0ed934587a6717d3651f13a3d84bc6683392fa27a73b4f358cd5a7095b268
+SHA1: 82258711dc7e1525716360ea3bb91a510b79d752
+MD5sum: 6e3e3db997afa690cf4ca823b338be54
 Description: Prometheus exporter for MySQL server metrics.
 
 Package: nginx-exporter
-Version: 1.2.0
+Version: 1.3.0
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 11648
 Homepage: https://github.com/nginxinc/nginx-prometheus-exporter
 Priority: optional
 Section: 
-Filename: pool/main/n/nginx-exporter/nginx-exporter_1.2.0_arm64.deb
-Size: 4037964
-SHA256: ae823a3d45d880366df6d7826b02ed843ddbfda398129bf74440ddc954380c7e
-SHA1: b26e6965a658b9704dde6c845bc49a7711d2b3c2
-MD5sum: 8a824cefd073895923434e1968f19c91
+Filename: pool/main/n/nginx-exporter/nginx-exporter_1.3.0_arm64.deb
+Size: 4039838
+SHA256: 511872085844ef324f06c34ad12f3eae7bd9e4cd883ed497437188ae6e401b0e
+SHA1: f3863e79db2635f495a5e137d836cc74f6301c51
+MD5sum: 222a28ceceac85323b5e26fbc9b6f4d6
 Description: NGINX Prometheus Exporter for NGINX and NGINX Plus.
 
 Package: node-exporter
@@ -253,10 +253,10 @@ Homepage: https://github.com/prometheus/node_exporter
 Priority: optional
 Section: 
 Filename: pool/main/n/node-exporter/node-exporter_1.8.2_arm64.deb
-Size: 10086942
-SHA256: cdee9483ce7426129571c3cf570b3f33f89ae9500123d4eee441ec91471bdbe2
-SHA1: 47f539e115710bfd25e7e4098376a3471b5d67ee
-MD5sum: ca7a877fcb2f5c9d165aed3d1f06422f
+Size: 10086934
+SHA256: 08694d1e4a71cde64dd4b770ccab198aa8719d8f6e642de4845d2e37e2266215
+SHA1: 1bf93462a3dba5f6bbdc83bd87f0a6473baf9a74
+MD5sum: cc1c615a29c1166d536f81df809c36d6
 Description: Prometheus exporter for machine metrics
 
 Package: pg-exporter
@@ -268,12 +268,12 @@ Homepage: https://github.com/Vonng/pg_exporter
 Priority: optional
 Section: 
 Filename: pool/main/p/pg-exporter/pg-exporter_0.7.0_arm64.deb
-Size: 8256840
-SHA256: 5ed78da3cce7fa5ad0e8de883a4d834040da752255f559dc7290eccbb012b668
-SHA1: 240c3c88a3d61811deff28137177a54b84a575b2
-MD5sum: 1ec89ca50f91d05e4af421d4d5a61644
+Size: 8256900
+SHA256: 81a2c7f3ce2f7e40a7b02ed68d677eaf81c04b4002858550a2a944169b787ddf
+SHA1: 4c6781ab732d27d51907175af613a12cc93670c6
+MD5sum: 5359ed0cd4b967dcb7f1f4bf294379ab
 Description: Prometheus exporter for PostgreSQL / Pgbouncer server metrics.
- Supported version: Postgres9.4 - 17+ & Pgbouncer 1.8 - 1.22+
+ Supported version: Postgres9.4 - 17+ & Pgbouncer 1.8 - 1.23+
  Part of Project Pigsty -- Battery Included PostgreSQL Distribution
  with ultimate observability support: https://pigsty.cc
 
@@ -286,55 +286,55 @@ Homepage: https://github.com/cybertec-postgresql/pg_timetable
 Priority: optional
 Section: 
 Filename: pool/main/p/pg-timetable/pg-timetable_5.9.0_arm64.deb
-Size: 3848344
-SHA256: 22ce023e83a0fc2b214a8352222371b5c2953759640490a3574896ed6e6f88b1
-SHA1: 322a2453069d55d7f951332309bc4f3b1348c698
-MD5sum: 405976b26e256cc2e6c927b036284e4d
-Description: pg_timetable: Advanced scheduling for PostgreSQL
+Size: 3848340
+SHA256: 21ef165157d475e1bf3a4f32ca07995abb62ba971d36b9138b60fc1d3cde0524
+SHA1: f38437c779ab1f208466914d0342c4176057b035
+MD5sum: 2d826b265825b891f331cfb510cb22ab
+Description: Advanced scheduling for PostgreSQL
 
 Package: pgbackrest-exporter
-Version: 0.17.0
+Version: 0.18.0
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 10098
+Installed-Size: 9538
 Homepage: https://github.com/woblerr/pgbackrest_exporter
 Priority: optional
 Section: 
-Filename: pool/main/p/pgbackrest-exporter/pgbackrest-exporter_0.17.0_arm64.deb
-Size: 4094008
-SHA256: 0d504c173ac011f8284d07cc1854c424baff60c5799d1c3ba9d67e2b144cca8f
-SHA1: 40b84374ac4be56d8de567f776013f6db667672d
-MD5sum: a2fc586ba686bd075db7a0531db2c455
-Description: Prometheus exporter for pgBackRest.
+Filename: pool/main/p/pgbackrest-exporter/pgbackrest-exporter_0.18.0_arm64.deb
+Size: 3723622
+SHA256: dcf282e43a2ad09de52e5e619036e05338c9b8df938809c69d76810ac0f45f5b
+SHA1: b20b6f33865fd0f8ecb155ee3762d0aeca4a2d66
+MD5sum: 0468bd806ba39369fefa3a239eaf9472
+Description: Prometheus exporter for pgBackRest
 
 Package: prometheus2
-Version: 2.53.1-1
+Version: 2.54.0-1
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 255635
+Installed-Size: 259721
 Homepage: https://github.com/prometheus/prometheus
 Priority: optional
 Section: 
-Filename: pool/main/p/prometheus2/prometheus2_2.53.1-1_arm64.deb
-Size: 99428596
-SHA256: 13d81788049a3b6926f3a3bf03966229543c662c076d348ffc9361860bcd213b
-SHA1: 822127da45062481b0c542bf0b6efd7ce0bd3efe
-MD5sum: c6d42c8bea57264e4d4359360f9b24bd
+Filename: pool/main/p/prometheus2/prometheus2_2.54.0-1_arm64.deb
+Size: 100848604
+SHA256: d6f2043ccaa113bf1e2a1d4ed4683a63a380d3a4e8abb4def41eb36b8950c5df
+SHA1: 45a6459192c13871ea718878f62b4b2d776cabcc
+MD5sum: 689d62387904594e4cf27a288d49b1d1
 Description: The Prometheus monitoring system and time series database.
 
 Package: promtail
-Version: 3.0.0-1
+Version: 3.1.1
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 92011
-Homepage: https://github.com/prometheus/prometheus
+Installed-Size: 94643
+Homepage: https://github.com/grafana/loki
 Priority: optional
 Section: 
-Filename: pool/main/p/promtail/promtail_3.0.0-1_arm64.deb
-Size: 26294848
-SHA256: abeb5ada4738c8cba43bbdd49cbc7c3ee09f0a367d340203e259b4543cddd7a9
-SHA1: f06a809990d9d29947c50e30d61542cd2f333353
-MD5sum: f465dd8bd5c1b54dc3b3724121f4e069
+Filename: pool/main/p/promtail/promtail_3.1.1_arm64.deb
+Size: 26731304
+SHA256: a3088e5c326906ebc0c916f2daad95bf893657f98e613d94cd9f6287e1c605e0
+SHA1: 3598efd641b514878be1c30b3812920a797960af
+MD5sum: 84aa5c3dabbbb3c1d2c7dbfc77740ffe
 Description: Promtail Logging Agent
 
 Package: pushgateway
@@ -346,10 +346,10 @@ Homepage: https://github.com/prometheus/pushgateway
 Priority: optional
 Section: 
 Filename: pool/main/p/pushgateway/pushgateway_1.9.0_arm64.deb
-Size: 10091214
-SHA256: f795e16725c951b728226793848944de96c17f94ca3f7dae7c3a323168b27686
-SHA1: 451b60f69a87817bdc7a92d7dc0bb890a36b3dca
-MD5sum: 060d2d86c73dfbba210284de9deab635
+Size: 10091212
+SHA256: 070415c280fb37b104738d1e71d0615c8fd5502698c38cf0603164561f756d25
+SHA1: 39cfbc7952268f520224abaed29a1b69628433fc
+MD5sum: 3786de76fb6f9242976c53be5b7a9359
 Description: Prometheus pushgateway
 
 Package: redis-exporter
@@ -357,15 +357,60 @@ Version: 1.62.0
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 7808
-Homepage: https://github.com/Vonng/redis_exporter
+Homepage: https://github.com/oliver006/redis_exporter
 Priority: optional
 Section: 
 Filename: pool/main/r/redis-exporter/redis-exporter_1.62.0_arm64.deb
-Size: 3073976
-SHA256: 46af85241117fce43e81271221fe36f856af25dd322c21012b1c813ae3b2604f
-SHA1: 4c09204732b4a356cfe6b94a9479fc8b2b39a29a
-MD5sum: ac79e20c6c5d503c1652c6e93773b38b
+Size: 3073978
+SHA256: 5443e48493017ca50d439fcdaf56444a299e63e196de5765c86a111d44a07402
+SHA1: 7dbd4f1c9667c5f13c077783cf47e14b2dae8633
+MD5sum: e6ae7e2b4f51aa59d1aa22ad7d49719e
 Description: Prometheus Exporter for Redis Metrics. Supports Redis 2.x, 3.x, 4.x, 5.x, 6.x, and 7.x
+
+Package: sealos
+Version: 5.0.0
+Architecture: arm64
+Maintainer: fanux (https://github.com/fanux)
+Installed-Size: 88896
+Homepage: https://github.com/labring/sealos
+Priority: optional
+Section: 
+Filename: pool/main/s/sealos/sealos_5.0.0_arm64.deb
+Size: 28100166
+SHA256: 3a2d7d54dc84e866925b5e33d6ea8e6412d7ec0d87cae2b2e42860627a8d3c63
+SHA1: c04e8af36d8fedd89189e6bde59289dff6044798
+MD5sum: 4f0424ac1fab84cb3ff39f71a7869184
+Description: Cloud OS distribution with Kubernetes as kernel
+
+Package: sqlcmd
+Version: 1.8.0-1
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 19712
+Homepage: https://github.com/microsoft/go-sqlcmd
+Priority: optional
+Section: 
+Filename: pool/main/s/sqlcmd/sqlcmd_1.8.0-1_arm64.deb
+Size: 7207458
+SHA256: e26fdcda2ecfbb7321b30705e5c651de597dd8d3c8e9835d4923d47b23d71d8a
+SHA1: ecb586d50028a149e6f76dd96f30184daae02bca
+MD5sum: 28ee08a2b27b4d261ecc0e4dcdf3b786
+Description: The new sqlcmd, CLI for SQL Server and Azure SQL (winget install sqlcmd / sqlcmd create mssql / sqlcmd open ads)
+
+Package: tigerbeetle
+Version: 0.15.6-1
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 8753
+Homepage: https://github.com/tigerbeetle/tigerbeetle
+Priority: optional
+Section: 
+Filename: pool/main/t/tigerbeetle/tigerbeetle_0.15.6-1_arm64.deb
+Size: 3266500
+SHA256: bc67aa1001267fb1f572f0d4fb165d9f9e68768f383bed58aa7e546095855fbf
+SHA1: 20571d9bec16835f7862cf25d2f3223952e33431
+MD5sum: 359b963ab034c4fcfaee7f4d68e15ee9
+Description: The financial transactions database designed for mission critical safety and performance
 
 Package: vector
 Version: 0.40.0-1
@@ -396,54 +441,54 @@ Priority: optional
 Section: 
 Filename: pool/main/v/victoria-logs/victoria-logs_0.28.0_arm64.deb
 Size: 8316622
-SHA256: 6a39efeb24b224785f5fba8237903b3c0b9a2ff68a7cc7f2effaf03f59f414ce
-SHA1: 6587173802367d1ae24055d5d057b4877e4ab71c
-MD5sum: 5f6033a552922d7b804b7140444c0f9b
+SHA256: c172a1c0eeb884a8f4e730c2edfc42677b9246bf4e7b4863bbfe71b8b5e748dc
+SHA1: e693ad9b59c932f9bcac033f90220977da5253d8
+MD5sum: ac6c26b10211ca25f1dce931d2fa38e0
 Description: VictoriaLogs is open source user-friendly database for logs from VictoriaMetrics.
 
 Package: victoria-metrics
-Version: 1.102.0
+Version: 1.102.1
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 20290
+Installed-Size: 20298
 Homepage: https://github.com/VictoriaMetrics/VictoriaMetrics
 Priority: optional
 Section: 
-Filename: pool/main/v/victoria-metrics/victoria-metrics_1.102.0_arm64.deb
-Size: 10824878
-SHA256: b6fb748488ecc1fce7ad23cced0175dade96918b856a15097188f022fc1648a6
-SHA1: 194266050524d732127128cf56d1c8a767b78dd2
-MD5sum: 0e7a5e21e399cde4ce8cbdbcd3dd4e43
+Filename: pool/main/v/victoria-metrics/victoria-metrics_1.102.1_arm64.deb
+Size: 10826282
+SHA256: 62144cfc7c87cd745ebaf084a2f78447d6d54d3f82e1ce5922c0a6a2e6667d00
+SHA1: 3b910ed25c8bde314de4d71061af019c8db00f6c
+MD5sum: 99f0cb2988a1d9c28c9c99c27df90c7a
 Description: fast, cost-effective monitoring solution and time series database
 
 Package: victoria-metrics-cluster
-Version: 1.102.0
+Version: 1.102.1
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 75710
+Installed-Size: 75727
 Homepage: https://github.com/VictoriaMetrics/VictoriaMetrics
 Priority: optional
 Section: 
-Filename: pool/main/v/victoria-metrics-cluster/victoria-metrics-cluster_1.102.0_arm64.deb
-Size: 39094420
-SHA256: ed0dce724ca4bc4227c913a0b265611a7b815af9886704c744faa58f6ab726ab
-SHA1: 0e92e8a4af690945ba1820b886c029fa7e54f755
-MD5sum: eee9481d63a516895bde913adfeed2f5
+Filename: pool/main/v/victoria-metrics-cluster/victoria-metrics-cluster_1.102.1_arm64.deb
+Size: 39108428
+SHA256: 9aae6e44f5e8b443c5ae631875dcea324f63f54c4058cce74494186fbbcf9b19
+SHA1: 57e5c12a946c9072e904d49ac86666b9d73ae568
+MD5sum: 28c79cb9be67d5d427467ecdf9968a5c
 Description: fast, cost-effective monitoring solution and time series database, cluster version
 
 Package: victoria-metrics-utils
-Version: 1.102.0
+Version: 1.102.1
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 108643
+Installed-Size: 108691
 Homepage: https://github.com/VictoriaMetrics/VictoriaMetrics
 Priority: optional
 Section: 
-Filename: pool/main/v/victoria-metrics-utils/victoria-metrics-utils_1.102.0_arm64.deb
-Size: 52406770
-SHA256: 9e415ae87fb3b7741b79b3e1df1b01163cb4d9d395ce9002ff6e6b80dc718228
-SHA1: 6bf0caf5bad4a1973cdb69830ab85596621b1a42
-MD5sum: 9d7d104179223b9d168cf2918fd653c7
+Filename: pool/main/v/victoria-metrics-utils/victoria-metrics-utils_1.102.1_arm64.deb
+Size: 52422242
+SHA256: 3af24672300cfd103b1f87aa617729ef1d0be242fbfc95ea3c3441556f5bc555
+SHA1: 1582deeeb584926df3c35113f0f97c15acea31f1
+MD5sum: 56e5d83e8ccbeffdbec6c60cf462aeb8
 Description: fast, cost-effective monitoring solution and time series database, agent,alert,auth,backup,ctl
 
 Package: vip-manager
