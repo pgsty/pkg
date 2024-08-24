@@ -81,6 +81,7 @@ data:
       - noset_16-llvmjit
       - numeral_16
       - numeral_16-llvmjit
+      - open-source-greenplum-db-7
       - pagevis_16
       - parquet_s3_fdw_16
       - parquet_s3_fdw_16-llvmjit
@@ -261,6 +262,7 @@ data:
     - noset_16-llvmjit
     - numeral_16
     - numeral_16-llvmjit
+    - open-source-greenplum-db-7
     - pagevis_16
     - parquet_s3_fdw_16
     - parquet_s3_fdw_16-llvmjit
@@ -459,6 +461,8 @@ data:
       noset_16:
         rationale: Present in the repository
       numeral_16:
+        rationale: Present in the repository
+      open-source-greenplum-db-7:
         rationale: Present in the repository
       pagevis_16:
         rationale: Present in the repository
@@ -667,6 +671,7 @@ data:
     - noset_16-llvmjit-0:0.3.0-1PIGSTY.el8.x86_64
     - numeral_16-0:1.3-1PIGSTY.el8.x86_64
     - numeral_16-llvmjit-0:1.3-1PIGSTY.el8.x86_64
+    - open-source-greenplum-db-7-0:7.0.0-1.el8.x86_64
     - pagevis_16-0:0.1-1PIGSTY.el8.x86_64
     - parquet_s3_fdw_16-0:1.1.0-1PIGSTY.el8.x86_64
     - parquet_s3_fdw_16-llvmjit-0:1.1.0-1PIGSTY.el8.x86_64
