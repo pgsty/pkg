@@ -36,8 +36,7 @@ add-jammy:
 add-noble:
 	reprepro -b pgsql/noble includedeb noble pgsql/noble/stash/*.deb
 add-bookworm:
-	reprepro -b pgsql/bookworm includedeb bookworm pgsql/bookworm/stash/*.deb-bullseye:
-	reprepro -b pgsql/bullseye includedeb bullseye pgsql/bullseye/stash/*.deb
+	reprepro -b pgsql/bookworm includedeb bookworm pgsql/bookworm/stash/*.deb
 purge:
 	rm -rf infra/stash/*.deb
 	rm -rf pgsql/focal/stash/*.deb

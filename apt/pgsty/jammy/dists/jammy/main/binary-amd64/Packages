@@ -1638,27 +1638,6 @@ MD5sum: 572c4dfa5ff96beed97d91823c067c21
 Description: Redis Publish from PostgreSQL
   This PostgreSQL extension allows you to connect to Redis and publish messages on a Redis channel from PostgreSQL.
 
-Package: postgresql-12-pg-search
-Source: pg-search
-Version: 0.8.6-1PIGSTY~jammy
-Architecture: amd64
-Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 54189
-Depends: postgresql-12, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1)
-Provides: postgresql-pg-search
-Homepage: https://github.com/paradedb/paradedb/tree/dev/pg_search
-Priority: optional
-Section: database
-Filename: pool/main/p/pg-search/postgresql-12-pg-search_0.8.6-1PIGSTY~jammy_amd64.deb
-Size: 46027244
-SHA256: 21f50aad1e4b3f41a92aca4e0cc44851046e899949c317b731cbe6126adf2922
-SHA1: c3b13e1a2a57c1790f1a765dc4d3af6cdbf7c942
-MD5sum: 940aa25899a90ac9f282e3b0199fa63a
-Description: Full text search over SQL tables using the BM25 algorithm
-  pg_search is a PostgreSQL extension that enables full text search over SQL tables using the BM25 algorithm,
-  the state-of-the-art ranking function for full text search.
-  It is built on top of Tantivy, the Rust-based alternative to Apache Lucene, using pgrx.
-
 Package: postgresql-12-pg-sqlog
 Source: pg-sqlog
 Version: 3.1.9-1PIGSTY~jammy
@@ -4044,27 +4023,6 @@ MD5sum: 16ee4446cb903d527f1859faf8834bc9
 Description: A postgres extension to avoid accidental mistakes
   pg_savior is a PostgreSQL extension designed to prevent accidental data loss
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
-
-Package: postgresql-13-pg-search
-Source: pg-search
-Version: 0.8.6-1PIGSTY~jammy
-Architecture: amd64
-Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 54193
-Depends: postgresql-13, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1)
-Provides: postgresql-pg-search
-Homepage: https://github.com/paradedb/paradedb/tree/dev/pg_search
-Priority: optional
-Section: database
-Filename: pool/main/p/pg-search/postgresql-13-pg-search_0.8.6-1PIGSTY~jammy_amd64.deb
-Size: 46026678
-SHA256: c917fa78a5a227866a98a84b183f9fb51dcb2b6baa567c8609486a722d6649b4
-SHA1: 2b7e7ce409c1011885806aae37c116cbd8be6c46
-MD5sum: a9d5f48449a27d9003a827e02e32462a
-Description: Full text search over SQL tables using the BM25 algorithm
-  pg_search is a PostgreSQL extension that enables full text search over SQL tables using the BM25 algorithm,
-  the state-of-the-art ranking function for full text search.
-  It is built on top of Tantivy, the Rust-based alternative to Apache Lucene, using pgrx.
 
 Package: postgresql-13-pg-sqlog
 Source: pg-sqlog
@@ -6568,17 +6526,17 @@ Description: A postgres extension to avoid accidental mistakes
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
 Package: postgresql-14-pg-search
-Version: 0.9.0
+Version: 0.9.1
 Architecture: amd64
 Depends: postgresql-14
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.9.0_amd64.deb
-Size: 46050940
-SHA256: e2c736603ac162a11a39dffa3655e5a791e961745de615f862811626dc06b33a
-SHA1: 1001c8a48eb3fca8b2d9aa4c6a7423c4820d10c2
-MD5sum: c57d17ecfb9be94e2194bb8bbc2349b4
+Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.9.1_amd64.deb
+Size: 46106488
+SHA256: 36fc5b70db671d8b1c88ff667171585d6703e2e473a8e55b0a014ebcaee84409
+SHA1: 29b07dee9741fd414495015cca7127af8e307dc7
+MD5sum: 060c86423fc5c75c6d10d332527c3f46
 Description: Full-text search for PostgreSQL using BM25
 
 Package: postgresql-14-pg-sqlog
@@ -9144,17 +9102,17 @@ Description: A postgres extension to avoid accidental mistakes
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
 Package: postgresql-15-pg-search
-Version: 0.9.0
+Version: 0.9.1
 Architecture: amd64
 Depends: postgresql-15
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.9.0_amd64.deb
-Size: 46052944
-SHA256: 03fedae21dd3fb8f0b23c66851850aac1f89b2d47f4ba19582686ef7b496349f
-SHA1: 3dae2bfd69814be09802b232cdf0dfafe8e3c759
-MD5sum: c1cdff6fb524cadd6a9cfc0b8a686b39
+Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.9.1_amd64.deb
+Size: 46103532
+SHA256: c351d6720382c7a2852e73daaa833c449ae6974b4e881062e39be89bcebd33d4
+SHA1: 36a556e94701a89a1b1d8a70d4d7f582d09ce0d4
+MD5sum: a55ddab5d134f60628ce633b08356268
 Description: Full-text search for PostgreSQL using BM25
 
 Package: postgresql-15-pg-sqlog
@@ -11634,17 +11592,17 @@ Description: A postgres extension to avoid accidental mistakes
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
 Package: postgresql-16-pg-search
-Version: 0.9.0
+Version: 0.9.1
 Architecture: amd64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.9.0_amd64.deb
-Size: 46050668
-SHA256: 43bfae259d1924a0d8070a7d739c2fb8166ae5c1631ad5040a0b743a8525f64d
-SHA1: 70cd1c5d2df53b018b370a4d3b1b6aa21370cc47
-MD5sum: 2e754da91dd67692cbc530ee469ca638
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.9.1_amd64.deb
+Size: 46108264
+SHA256: 99f42458398acfd3b2a0750789b47e15d3fd01a3c091fd3dc51693449e2f2df2
+SHA1: bc6d763b49cc691f67ca662f0ec07a64cad30b89
+MD5sum: 2a7a2021f018cbf46c1224a63ce4ec51
 Description: Full-text search for PostgreSQL using BM25
 
 Package: postgresql-16-pg-sqlog

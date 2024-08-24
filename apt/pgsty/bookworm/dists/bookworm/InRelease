@@ -4,44 +4,44 @@ Hash: SHA256
 Origin: Pigsty
 Label: Pigsty PGSQL
 Codename: bookworm
-Date: Sun, 11 Aug 2024 22:28:33 UTC
+Date: Sat, 24 Aug 2024 03:56:10 UTC
 Architectures: amd64 arm64
 Components: main
 Description: pigsty apt repository for debian 12
 MD5Sum:
- 06d88489151cf15a8a6fdddff468995f 571273 main/binary-amd64/Packages
- d5cbb14ff016c05acf33cb38aef6d91a 161971 main/binary-amd64/Packages.gz
+ fbd62f756b7fa72da01d56936861ad8c 569317 main/binary-amd64/Packages
+ 8028e32773dbc8ba8d940fb8300d4030 161427 main/binary-amd64/Packages.gz
  05ff0d27e80014f75d65fcd4773761b8 120 main/binary-amd64/Release
- 2f42b20a336022709640f26b98586e60 5056 main/binary-arm64/Packages
- 196ed55b70c64dc344e8e384dbe1e949 1967 main/binary-arm64/Packages.gz
+ e1b88dcb3d3c02899d1856bd0f0e007b 5056 main/binary-arm64/Packages
+ 69c49eaddb25a947fb9f8fa90d08d8f4 1979 main/binary-arm64/Packages.gz
  4ba97c199ff1bf556636dca2fa102fd7 120 main/binary-arm64/Release
 SHA1:
- e3d1bb49253308e4bdfc06a4d72b52df3a96df76 571273 main/binary-amd64/Packages
- 6abc7536a2c6b3801144e4e97db2d33358eee06b 161971 main/binary-amd64/Packages.gz
+ 3575377063aa4559f71d58bece39a984570ef627 569317 main/binary-amd64/Packages
+ 199a07f27a89d4152b1f6684a33180f08ee572b7 161427 main/binary-amd64/Packages.gz
  38c45f87567a9074e476a2920aa5d594f00e4ffd 120 main/binary-amd64/Release
- 325e158b4279f62d5404eb773d8399d4f05f9d4d 5056 main/binary-arm64/Packages
- 4142d20a7144a86cccfc4be525ac9751f53947c6 1967 main/binary-arm64/Packages.gz
+ ad41653ee35dd4dacd74a258cc3778cd44f45369 5056 main/binary-arm64/Packages
+ 1eb14a4a3f66071b887def22ec304f64d013a882 1979 main/binary-arm64/Packages.gz
  789a0d87520489e371f388175d30fa52a8643a58 120 main/binary-arm64/Release
 SHA256:
- 3d673228713aef0be8aa0f7a1d624b0aa4c5581477dded1be8a6ead73d47b600 571273 main/binary-amd64/Packages
- 044c413c704af49baf389bb463c36ef8c198e88022a858e0f94f8a54963c9366 161971 main/binary-amd64/Packages.gz
+ 8fc12f2e07935b0faa193e87a73bb4e42d79306662d2a704e5c0f7f2ae5f116e 569317 main/binary-amd64/Packages
+ ad9971441d6069c5b14c18b78c944b61d37edcf3c631377a43ed568a88a06c8d 161427 main/binary-amd64/Packages.gz
  5f2931fd66418a72660c45f9de6b7117635244edb08681bdac30d79de4b74b83 120 main/binary-amd64/Release
- ac021488d765fda1f025a160028ffb61a3d8f7f1b32c2635ca46ca339cea8bf1 5056 main/binary-arm64/Packages
- 7693b1836ec6af4e50cb296585545b885c742bbce76a99dab2a1e2b8295a07aa 1967 main/binary-arm64/Packages.gz
+ 8b26a4cbbeae5c379d21c79acc4fe05554356f795aae42dda229cdc442675c78 5056 main/binary-arm64/Packages
+ 85282a6cbe0f473d0cb77b8d4c99f27de42e95f15e6688b7de5c3a68ab337d42 1979 main/binary-arm64/Packages.gz
  ec0250476e050c9b46c69624a17f67fb20f9545cb54d7a83977a6fbfa5a5b3fc 120 main/binary-arm64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEElZKnvHpoLnMzN24J55Ndjbm9iyAFAma5OxIACgkQ55Ndjbm9
-iyAtDA/+N/t0PczCcyvQxA6jrfMLlONifaCuCdvQKXbw4Xa0/Wb3Nu8sMscVnBaI
-tUYLogoMElbIHam2Xjtks9yOqGqwhy3iYLJpNI5Ci2J4IOZq23pA2Bz+zl6ocFs/
-8BkuDLRzO11On37bcxNou8jsQ9rnOketLq9pWRUGkk2yRsTNffzGf4XOZZSPivne
-9uU++olTOGKvS8cAoUdwaI/QP9E4+ai2hQa3aV7HqdcCi78SHNkvAxBhc6Hk/nMT
-QdkqI+ezkQ0fA5azx6nWLRznfT2y9mUN+Lrbi97upjgq0868zFnrzE+pXFeQzzIm
-o0ZT4E9nRn3hkdldzkxAQKFUfwg7TOZy/F0RYciRfvnnWLospmd4VpPNZG6WiJko
-c2rXWec/g0Wz6DHjZsFWyKariesLc5L24JytR63MkOYUR+/REhkS9OM2Yo8vDkV/
-bKtwJ4CP241N8decnUwOKbpBsyyGyc/CXqtcSPt2uLk/op2s8gaSdnF1cgCOdsVE
-iJ+8+ny1Pcp8pLvrnxCEk3DqPdPevXJmGO8KARHZke+hXMQTXVvR4YPFj6TfWo53
-ErP6ddBKjUT6pvXrrNjpqx/zPi2FNKb2oQURe5RnhO0Wwt+gyl+BC3mItBW8qcfm
-F7sabm9smL/Q9dyZoIuEwcinxXghrYntICNLEBSJecZO+qFMs14=
-=9D5P
+iQIzBAEBCAAdFiEElZKnvHpoLnMzN24J55Ndjbm9iyAFAmbJWdoACgkQ55Ndjbm9
+iyCSShAAgQvBLPcA/xdgub6TJnVqjA0KlPP19gwLATAV2J9BwVznPzSmroyL8JTG
+qhnrQ3RHBTeZtBCrCzBHZIY2B85A6QVKoBsUMCBtT+9wr4blubBFu6fMxN6c3BeD
+5WG5NgxqTby66o8S4JKPEDaDsBhLZWSHyl7GgyGDDn/fXEd5tNphvo6NQiUX/i3+
+rg9oiM5CYtYUahzUIEawi9fwNHTSoi6c2h7vx7hMnco9tDyk1acTqEGGnqWzkXaJ
+O4QPnoxrDQ5g9PUcMmQue44XgOJ+sl89vijnPqgu3gXnPOJir2AHgXJoRNnYXtuL
+w9egonWd54VHcEg0dCS8BvCrAX41qaCwgp/AxQxILsNO9Ypg6n17n084hJjHZ5Vo
+jSkYmIeTK5JGzHGYH/jNbp07u3CBfE3yBRaIjiiG362NAWhxD5YjQ6eRlhbRC7Ml
+0ke/V6MAVF9zYP7BgV2CH/uiWshcE6mMuOZZdGgY59K3b52apl30UIqzbFB31Ye7
+V/luFmFcAhXTHXFDsxMQ/7fMMO7QJ6Waygcqj2ELOJEc3ywMJjTV+lY05EbxrwSP
+J29JaYvhXhebjKVZi+Zp3jlAzhw83VNqRLsL1iS2dVBJEuVqj7nOazjdd0RUa7Su
+LLtjD6z0RyGwVh/15//jbwjxAgscrfa7gRbSLezMTPQHzWWnD30=
+=zlCE
 -----END PGP SIGNATURE-----

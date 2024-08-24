@@ -61,16 +61,16 @@ MD5sum: 4b8ac8e85bfb54258a2227ebab3e58dc
 Description: An analytical query engine for Postgres
 
 Package: postgresql-16-pg-search
-Version: 0.9.0
+Version: 0.9.1
 Architecture: amd64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.9.0_amd64.deb
-Size: 46067868
-SHA256: 356889f329688240cd85ba3f10e8ef44a379b4a21c9b15dc1d9461e211fe1201
-SHA1: da7104352514f709b5269e2d811e5a960588a8cf
-MD5sum: 4e1182e6827e80247e625b69f3e212c0
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.9.1_amd64.deb
+Size: 46119340
+SHA256: 6ecba3ab2eeaaae26f33e2377b41861695176df501c829c0c5c59785562432cb
+SHA1: dbaf8f48fa36fe202a4785ecbd87dc7ff8fc2142
+MD5sum: 205b8edfca64bec6f9173bd9e9c78ad5
 Description: Full-text search for PostgreSQL using BM25
 

@@ -1648,17 +1648,17 @@ Description: A postgres extension to avoid accidental mistakes
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
 Package: postgresql-16-pg-search
-Version: 0.9.0
+Version: 0.9.1
 Architecture: amd64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.9.0_amd64.deb
-Size: 46062668
-SHA256: 60d0857f23f8cdd4a645cc09690de877c1df5145d28c33544bf8cfbbc52bcbe0
-SHA1: 06c01d84e3ca6229b8b464b578b601396852f71f
-MD5sum: c028b82a835bc79d17decc65688037dc
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.9.1_amd64.deb
+Size: 46117976
+SHA256: 17d7a704c8548a1cab243a39c95d38f04aaa40499b934e3c2c42aedb069a857f
+SHA1: ff11899dc0e35d836df5384eb96e31c73c87363b
+MD5sum: ad41810d7f8758fdc68c05be76a61819
 Description: Full-text search for PostgreSQL using BM25
 
 Package: postgresql-16-pg-sqlog
