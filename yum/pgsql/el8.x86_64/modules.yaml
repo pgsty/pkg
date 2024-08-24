@@ -122,8 +122,6 @@ data:
       - pg_html5_email_address_16
       - pg_idkit_16
       - pg_jsonschema_16
-      - pg_lakehouse_14
-      - pg_lakehouse_15
       - pg_lakehouse_16
       - pg_later_16
       - pg_math_16
@@ -141,8 +139,6 @@ data:
       - pg_roaringbitmap_16-llvmjit
       - pg_savior_16
       - pg_savior_16-llvmjit
-      - pg_search_14
-      - pg_search_15
       - pg_search_16
       - pg_similarity_16
       - pg_similarity_16-llvmjit
@@ -306,8 +302,6 @@ data:
     - pg_html5_email_address_16
     - pg_idkit_16
     - pg_jsonschema_16
-    - pg_lakehouse_14
-    - pg_lakehouse_15
     - pg_lakehouse_16
     - pg_later_16
     - pg_math_16
@@ -325,8 +319,6 @@ data:
     - pg_roaringbitmap_16-llvmjit
     - pg_savior_16
     - pg_savior_16-llvmjit
-    - pg_search_14
-    - pg_search_15
     - pg_search_16
     - pg_similarity_16
     - pg_similarity_16-llvmjit
@@ -516,10 +508,6 @@ data:
         rationale: Present in the repository
       pg_jsonschema_16:
         rationale: Present in the repository
-      pg_lakehouse_14:
-        rationale: Present in the repository
-      pg_lakehouse_15:
-        rationale: Present in the repository
       pg_lakehouse_16:
         rationale: Present in the repository
       pg_later_16:
@@ -539,10 +527,6 @@ data:
       pg_roaringbitmap_16:
         rationale: Present in the repository
       pg_savior_16:
-        rationale: Present in the repository
-      pg_search_14:
-        rationale: Present in the repository
-      pg_search_15:
         rationale: Present in the repository
       pg_search_16:
         rationale: Present in the repository
@@ -724,8 +708,6 @@ data:
     - pg_html5_email_address_16-0:1.2.3-1PIGSTY.el8.x86_64
     - pg_idkit_16-0:0.2.3-1PIGSTY.el8.x86_64
     - pg_jsonschema_16-0:0.3.1-1PIGSTY.el8.x86_64
-    - pg_lakehouse_14-0:0.9.0-1.el8.x86_64
-    - pg_lakehouse_15-0:0.9.0-1.el8.x86_64
     - pg_lakehouse_16-0:0.9.0-1.el8.x86_64
     - pg_later_16-0:0.1.1-1PIGSTY.el8.x86_64
     - pg_math_16-0:1.0-1PIGSTY.el8.x86_64
@@ -743,9 +725,7 @@ data:
     - pg_roaringbitmap_16-llvmjit-0:0.5.4-1PIGSTY.el8.x86_64
     - pg_savior_16-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_savior_16-llvmjit-0:0.0.1-1PIGSTY.el8.x86_64
-    - pg_search_14-0:0.9.0-1.el8.x86_64
-    - pg_search_15-0:0.9.0-1.el8.x86_64
-    - pg_search_16-0:0.9.0-1.el8.x86_64
+    - pg_search_16-0:0.9.1-1.el8.x86_64
     - pg_similarity_16-0:1.0-2PIGSTY.el8.x86_64
     - pg_similarity_16-llvmjit-0:1.0-2PIGSTY.el8.x86_64
     - pg_snakeoil_16-0:1.3-1PIGSTY.el8.x86_64
