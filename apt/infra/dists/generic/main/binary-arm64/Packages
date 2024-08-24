@@ -323,18 +323,18 @@ MD5sum: 689d62387904594e4cf27a288d49b1d1
 Description: The Prometheus monitoring system and time series database.
 
 Package: promtail
-Version: 3.1.1
+Version: 3.0.0
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 94643
+Installed-Size: 92011
 Homepage: https://github.com/grafana/loki
 Priority: optional
 Section: 
-Filename: pool/main/p/promtail/promtail_3.1.1_arm64.deb
-Size: 26731304
-SHA256: a3088e5c326906ebc0c916f2daad95bf893657f98e613d94cd9f6287e1c605e0
-SHA1: 3598efd641b514878be1c30b3812920a797960af
-MD5sum: 84aa5c3dabbbb3c1d2c7dbfc77740ffe
+Filename: pool/main/p/promtail/promtail_3.0.0_arm64.deb
+Size: 26294838
+SHA256: 6d906a088a310eae57f02a74e371c0279e6af791d511d866f0fa02e7f5f7f4c0
+SHA1: 13bb148aaa46a2e321046cdbdc7b22b9794f041a
+MD5sum: 72a077e9e5712ee7b04f29b1958faa65
 Description: Promtail Logging Agent
 
 Package: pushgateway
