@@ -36,6 +36,7 @@ data:
       - aws_s3_16
       - chkpass_16
       - chkpass_16-llvmjit
+      - cloudberrydb
       - cryptint_16
       - cryptint_16-llvmjit
       - decoder_raw_16
@@ -216,6 +217,7 @@ data:
     - aws_s3_16
     - chkpass_16
     - chkpass_16-llvmjit
+    - cloudberrydb
     - cryptint_16
     - cryptint_16-llvmjit
     - decoder_raw_16
@@ -397,6 +399,8 @@ data:
       aws_s3_16:
         rationale: Present in the repository
       chkpass_16:
+        rationale: Present in the repository
+      cloudberrydb:
         rationale: Present in the repository
       cryptint_16:
         rationale: Present in the repository
@@ -622,6 +626,7 @@ data:
     - aws_s3_16-0:0.0.1-1PIGSTY.el9.x86_64
     - chkpass_16-0:1.0-1PIGSTY.el9.x86_64
     - chkpass_16-llvmjit-0:1.0-1PIGSTY.el9.x86_64
+    - cloudberrydb-0:1.5.4-1.rl9.x86_64
     - cryptint_16-0:1.0.0-1PIGSTY.el9.x86_64
     - cryptint_16-llvmjit-0:1.0.0-1PIGSTY.el9.x86_64
     - decoder_raw_16-0:1.0-1PIGSTY.el9.x86_64
