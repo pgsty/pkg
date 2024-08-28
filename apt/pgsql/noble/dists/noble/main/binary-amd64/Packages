@@ -46,6 +46,20 @@ Description: PolarDB is an advanced Object-Relational database management system
 Version: 2.0.11.20.0-e6b64246
 Architecture: amd64
 
+Package: postgresql-16-pg-analytics
+Version: 0.1.1
+Architecture: amd64
+Depends: postgresql-16
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-16-pg-analytics/postgresql-16-pg-analytics_0.1.1_amd64.deb
+Size: 9327284
+SHA256: 948e7534201981d8c244495ccd83102585df32e4ab15e25771d11ad57e224630
+SHA1: 0290be08037d7a8d95abe545c55a2853622fe8c5
+MD5sum: 0f5bdeecbb201a41efa157fb60dba641
+Description: DuckDB-powered analytics for Postgres
+
 Package: postgresql-16-pg-lakehouse
 Version: 0.9.0
 Architecture: amd64
@@ -61,16 +75,16 @@ MD5sum: 4b8ac8e85bfb54258a2227ebab3e58dc
 Description: An analytical query engine for Postgres
 
 Package: postgresql-16-pg-search
-Version: 0.9.1
+Version: 0.9.2
 Architecture: amd64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.9.1_amd64.deb
-Size: 46119340
-SHA256: 6ecba3ab2eeaaae26f33e2377b41861695176df501c829c0c5c59785562432cb
-SHA1: dbaf8f48fa36fe202a4785ecbd87dc7ff8fc2142
-MD5sum: 205b8edfca64bec6f9173bd9e9c78ad5
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.9.2_amd64.deb
+Size: 46246452
+SHA256: 65e85fad870e4320cffd704c110ea1da91faf42c8eefb5b438d6273358256fc4
+SHA1: dc768cda5dfc9fae2435df9a8f4adc87751e622e
+MD5sum: ac7f76f835a082dfb1dbc8f5e02c0800
 Description: Full-text search for PostgreSQL using BM25
 

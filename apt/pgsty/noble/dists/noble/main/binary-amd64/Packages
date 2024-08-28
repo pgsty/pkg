@@ -46,6 +46,20 @@ Description: PolarDB is an advanced Object-Relational database management system
 Version: 2.0.11.20.0-e6b64246
 Architecture: amd64
 
+Package: postgresql-14-pg-analytics
+Version: 0.1.1
+Architecture: amd64
+Depends: postgresql-14
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-14-pg-analytics/postgresql-14-pg-analytics_0.1.1_amd64.deb
+Size: 9327232
+SHA256: 722d580269c6df7f1010ffc16c4d53a865989d4c73f4c5db33d0d9d71b6190b2
+SHA1: c5d81b637c6e9bc8d4aac3a55a19f568eabff1e0
+MD5sum: 2e9c47c3b5e2fa580378af9dcaa050df
+Description: DuckDB-powered analytics for Postgres
+
 Package: postgresql-14-pg-lakehouse
 Version: 0.9.0
 Architecture: amd64
@@ -61,18 +75,32 @@ MD5sum: 0d849ef090e33c36108fda80cbef5c87
 Description: An analytical query engine for Postgres
 
 Package: postgresql-14-pg-search
-Version: 0.9.1
+Version: 0.9.2
 Architecture: amd64
 Depends: postgresql-14
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.9.1_amd64.deb
-Size: 46117308
-SHA256: f364f963cffc0a724dec11c234eb9db084e7776e100452a6e2555eb57756e37b
-SHA1: 6ab5154bd9f04baca4c92f954374f7ce30bcfe50
-MD5sum: d60ca0fe213c9a186b27fc82b5239b42
+Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.9.2_amd64.deb
+Size: 46243120
+SHA256: f0aa3685218b598cb91cf9973ffd320e176baeab043ec29eb4afdeb36eb2e581
+SHA1: 744303421f203c3027ec5db238d90b4a12c2a5bc
+MD5sum: cb0784ffc6ccaa6fab8e2b5c85a2c68d
 Description: Full-text search for PostgreSQL using BM25
+
+Package: postgresql-15-pg-analytics
+Version: 0.1.1
+Architecture: amd64
+Depends: postgresql-15
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-15-pg-analytics/postgresql-15-pg-analytics_0.1.1_amd64.deb
+Size: 9323172
+SHA256: ccaec778e7b09ee24bc1a6b4b344b05cafc076b1077571950ab441c6db62f7a4
+SHA1: 5b8e59a3db9fc0e650f98a6a91ade2955df3a069
+MD5sum: b71473000d4865833b53d6f7be9ad093
+Description: DuckDB-powered analytics for Postgres
 
 Package: postgresql-15-pg-lakehouse
 Version: 0.9.0
@@ -89,18 +117,32 @@ MD5sum: 1af76a25b3963af2a2ee3ddcc3c9155a
 Description: An analytical query engine for Postgres
 
 Package: postgresql-15-pg-search
-Version: 0.9.1
+Version: 0.9.2
 Architecture: amd64
 Depends: postgresql-15
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.9.1_amd64.deb
-Size: 46117404
-SHA256: 92843a8254240ae01dc871f8057dc69b6d65cbf37c69f5bff7259b6ffe84c56a
-SHA1: 63b9f1da7f3c8122497d4314e8205f54dcd3f3f2
-MD5sum: 5dcf35234067b066762531645039e844
+Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.9.2_amd64.deb
+Size: 46242944
+SHA256: 5d9bcc4dc150471fffcf0049daf648dba0e6704b10da4087c6c5e0f35ad6c06e
+SHA1: b6dd8d0e5c0c581a7e7b1dd6aa65807e6caaad1c
+MD5sum: 5b9a005ff3ac11d6cb4a62717bf0e1fd
 Description: Full-text search for PostgreSQL using BM25
+
+Package: postgresql-16-pg-analytics
+Version: 0.1.1
+Architecture: amd64
+Depends: postgresql-16
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-16-pg-analytics/postgresql-16-pg-analytics_0.1.1_amd64.deb
+Size: 9327284
+SHA256: 948e7534201981d8c244495ccd83102585df32e4ab15e25771d11ad57e224630
+SHA1: 0290be08037d7a8d95abe545c55a2853622fe8c5
+MD5sum: 0f5bdeecbb201a41efa157fb60dba641
+Description: DuckDB-powered analytics for Postgres
 
 Package: postgresql-16-pg-lakehouse
 Version: 0.9.0
@@ -117,16 +159,16 @@ MD5sum: 4b8ac8e85bfb54258a2227ebab3e58dc
 Description: An analytical query engine for Postgres
 
 Package: postgresql-16-pg-search
-Version: 0.9.1
+Version: 0.9.2
 Architecture: amd64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.9.1_amd64.deb
-Size: 46119340
-SHA256: 6ecba3ab2eeaaae26f33e2377b41861695176df501c829c0c5c59785562432cb
-SHA1: dbaf8f48fa36fe202a4785ecbd87dc7ff8fc2142
-MD5sum: 205b8edfca64bec6f9173bd9e9c78ad5
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.9.2_amd64.deb
+Size: 46246452
+SHA256: 65e85fad870e4320cffd704c110ea1da91faf42c8eefb5b438d6273358256fc4
+SHA1: dc768cda5dfc9fae2435df9a8f4adc87751e622e
+MD5sum: ac7f76f835a082dfb1dbc8f5e02c0800
 Description: Full-text search for PostgreSQL using BM25
 

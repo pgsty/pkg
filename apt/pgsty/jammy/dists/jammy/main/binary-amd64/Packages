@@ -5702,6 +5702,20 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 14
   The general idea is to encrypt sequence positions with a Feistel cipher and cycle-walking.
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
+Package: postgresql-14-pg-analytics
+Version: 0.1.1
+Architecture: amd64
+Depends: postgresql-14
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-14-pg-analytics/postgresql-14-pg-analytics_0.1.1_amd64.deb
+Size: 9139784
+SHA256: e4566e4d098215143eda6fbd6933ba1ecb08717274e18aa88146e9e880ec5f91
+SHA1: 36fc95b1d269ef4d6d490755ad782ec120248bf1
+MD5sum: 057f7e13c0b38b591c28bd03e4a8fa56
+Description: DuckDB-powered analytics for Postgres
+
 Package: postgresql-14-pg-arraymath
 Source: pg-arraymath
 Version: 1.1-1PIGSTY~jammy
@@ -6526,17 +6540,17 @@ Description: A postgres extension to avoid accidental mistakes
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
 Package: postgresql-14-pg-search
-Version: 0.9.1
+Version: 0.9.2
 Architecture: amd64
 Depends: postgresql-14
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.9.1_amd64.deb
-Size: 46106488
-SHA256: 36fc5b70db671d8b1c88ff667171585d6703e2e473a8e55b0a014ebcaee84409
-SHA1: 29b07dee9741fd414495015cca7127af8e307dc7
-MD5sum: 060c86423fc5c75c6d10d332527c3f46
+Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.9.2_amd64.deb
+Size: 46230960
+SHA256: 9c386f342df49c612810f8d8f3f0c0a2ef74d9a071fc9706b3144467ef80e769
+SHA1: 6dce2be594d5cd2fa1b93ec558338fac77d10edc
+MD5sum: a14726e4e17c0636c0edda9a53efb0dd
 Description: Full-text search for PostgreSQL using BM25
 
 Package: postgresql-14-pg-sqlog
@@ -8278,6 +8292,20 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 15
   The general idea is to encrypt sequence positions with a Feistel cipher and cycle-walking.
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
+Package: postgresql-15-pg-analytics
+Version: 0.1.1
+Architecture: amd64
+Depends: postgresql-15
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-15-pg-analytics/postgresql-15-pg-analytics_0.1.1_amd64.deb
+Size: 9107832
+SHA256: b5c8c86240714d09b760698dd87dcfcc8539ee7952a8452d5707c5c1d384d3c0
+SHA1: 1d13db84318f7379f2f1247fa3ff1f45c0708069
+MD5sum: 0036197ef52ebfba15b8a6e07aba6bf1
+Description: DuckDB-powered analytics for Postgres
+
 Package: postgresql-15-pg-arraymath
 Source: pg-arraymath
 Version: 1.1-1PIGSTY~jammy
@@ -9102,17 +9130,17 @@ Description: A postgres extension to avoid accidental mistakes
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
 Package: postgresql-15-pg-search
-Version: 0.9.1
+Version: 0.9.2
 Architecture: amd64
 Depends: postgresql-15
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.9.1_amd64.deb
-Size: 46103532
-SHA256: c351d6720382c7a2852e73daaa833c449ae6974b4e881062e39be89bcebd33d4
-SHA1: 36a556e94701a89a1b1d8a70d4d7f582d09ce0d4
-MD5sum: a55ddab5d134f60628ce633b08356268
+Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.9.2_amd64.deb
+Size: 46232664
+SHA256: 451124a31b48cc6bbf26f8d0c63c68e1f04157a6be9eaa5e2757a027129c66c1
+SHA1: 5e319ed29b0ee5f00393feca8f41f06d26aa9c2c
+MD5sum: 0cc2e718c1f380fa36d3daafad6ce5a0
 Description: Full-text search for PostgreSQL using BM25
 
 Package: postgresql-15-pg-sqlog
@@ -10808,6 +10836,20 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 16
   The general idea is to encrypt sequence positions with a Feistel cipher and cycle-walking.
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
+Package: postgresql-16-pg-analytics
+Version: 0.1.1
+Architecture: amd64
+Depends: postgresql-16
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-16-pg-analytics/postgresql-16-pg-analytics_0.1.1_amd64.deb
+Size: 9122172
+SHA256: c4358f93e0f449a13a55bb0eac8b4b2e3dfaf956b6e970557141c19889db1ed1
+SHA1: d31c3efbedba50649549deefd5ac35278cf154ec
+MD5sum: 85142d0a7d128e3b697255e88ec0929d
+Description: DuckDB-powered analytics for Postgres
+
 Package: postgresql-16-pg-arraymath
 Source: pg-arraymath
 Version: 1.1-1PIGSTY~jammy
@@ -11592,17 +11634,17 @@ Description: A postgres extension to avoid accidental mistakes
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
 Package: postgresql-16-pg-search
-Version: 0.9.1
+Version: 0.9.2
 Architecture: amd64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.9.1_amd64.deb
-Size: 46108264
-SHA256: 99f42458398acfd3b2a0750789b47e15d3fd01a3c091fd3dc51693449e2f2df2
-SHA1: bc6d763b49cc691f67ca662f0ec07a64cad30b89
-MD5sum: 2a7a2021f018cbf46c1224a63ce4ec51
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.9.2_amd64.deb
+Size: 46233936
+SHA256: 210e5a3b217cbddf3a3e6eb9cf0bc42691a0990a89c50c0d6f6e60516b2303ee
+SHA1: 4d179775e1aee8dcb1d8883cdde66d829cb581b0
+MD5sum: c8a29cfd23c5344b5e11ae7894ceb0f7
 Description: Full-text search for PostgreSQL using BM25
 
 Package: postgresql-16-pg-sqlog
