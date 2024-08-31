@@ -11,7 +11,7 @@
 CF_PATH = cf:/repo
 COS_PATH = cos://repo-1304744452
 DEVEL_PATH = sv:/data/pkg
-VERSION=v3.0.0-b3
+VERSION=v3.0.1
 
 all:
 	@echo "pgsty repo"
@@ -45,6 +45,9 @@ us: upload-src
 upload-src:
 	rclone sync -P --transfers=8 ./src/ $(CF_PATH)/src/
 	rclone sync -P --transfers=8 ./src/ $(COS_PATH)/src/
+	@echo "https://repo.pigsty.cc/src/pigsty-$(VERSION).tgz" @ "https://console.cloud.tencent.com/cdn/refresh?tab=url"
+	@echo "https://repo.pigsty.io/src/pigsty-$(VERSION).tgz" @ "https://dash.cloudflare.com/72cdbd1b54f7add44ecbd3d986399481/pigsty.io/caching/configuration"
+
 
 ul: upload-latest
 upload-latest:
