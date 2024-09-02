@@ -3,6 +3,7 @@ pkg.iml
 .DS_Store
 tmp/
 
+
 # yum rpm
 yum/infra/x86_64/*.rpm
 yum/infra/aarch64/*.rpm
@@ -77,7 +78,6 @@ apt/pgsty/focal/db/
 apt/pgsty/jammy/db/
 apt/pgsty/noble/db/
 
-src/
 img/
 etc/
 pro/

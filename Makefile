@@ -43,6 +43,7 @@ upload-etc:
 
 us: upload-src
 upload-src:
+	cd src md5sum *.tgz > checksums
 	rclone sync -P --transfers=8 ./src/ $(CF_PATH)/src/
 	rclone sync -P --transfers=8 ./src/ $(COS_PATH)/src/
 	@echo "https://repo.pigsty.cc/src/pigsty-$(VERSION).tgz" @ "https://console.cloud.tencent.com/cdn/refresh?tab=url"
