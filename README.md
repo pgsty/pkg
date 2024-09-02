@@ -1,5 +1,14 @@
 # Pigsty Package Repo
 
+The supplementary [apt](apt/) and [yum](yum/) software repo for PostgreSQL ecosystem used by [Pigsty](https://pigsty.io)
+
+Related Projects:
+
+- [`infra_pkg`](https://github.com/pgsty/infra-pkg): Building observability stack & modules from tarball
+- [`pgsql-rpm`](https://github.com/pgsty/pgsql-rpm): Building PostgreSQL RPM packages from source code
+- [`pgsql-deb`](https://github.com/pgsty/pgsql-deb): Building PostgreSQL DEB packages from source code
+
+
 
 --------
 
@@ -12,7 +21,7 @@ You can install pigsty source from this repo, via:
 curl -fsSL https://repo.pigsty.io/get | bash
 
 # install a specific version
-curl -fsSL https://repo.pigsty.io/get | bash -s v2.7.0
+curl -fsSL https://repo.pigsty.io/get | bash -s v3.0.1
 
 # install from china CDN mirror 
 curl -fsSL https://repo.pigsty.cc/get | bash
@@ -21,15 +30,91 @@ curl -fsSL https://repo.pigsty.cc/get | bash
 
 --------
 
-## Software Repo
+## YUM Repo
 
-The supplementary [apt](apt/) and [yum](yum/) software repo for PostgreSQL ecosystem used by [Pigsty](https://pigsty.io)
+Pigsty currently offers a supplementary PG extension repository for EL systems, providing **121** additional RPM plugins in addition to the official PGDG YUM repository (135).
 
-Related Projects:
+- Pigsty YUM Repository: https://repo.pigsty.io/yum/
+- PGDG YUM Repository: https://download.postgresql.org/pub/repos/yum/
 
-- [`infra_pkg`](https://github.com/pgsty/infra-pkg): Building observability stack & modules from tarball
-- [`pgsql-rpm`](https://github.com/pgsty/pgsql-rpm): Building PostgreSQL RPM packages from source code
-- [`pgsql-deb`](https://github.com/pgsty/pgsql-deb): Building PostgreSQL DEB packages from source code
+The Pigsty YUM repository only includes extensions **not present in the PGDG YUM repository**.
+Once an extension is added to the PGDG YUM repository, Pigsty YUM repository will either remove it or align with the PGDG repository.
+
+For EL 7/8/9 and compatible systems, use the following commands to add the GPG public key and the upstream repository file of the Pigsty repository:
+
+```bash
+curl -fsSL https://repo.pigsty.io/key      | sudo tee /etc/pki/rpm-gpg/RPM-GPG-KEY-pigsty >/dev/null  # add gpg key
+curl -fsSL https://repo.pigsty.io/yum/repo | sudo tee /etc/yum.repos.d/pigsty.repo        >/dev/null  # add repo file
+```
+
+All RPMs are signed with the GPG key fingerprint `9592A7BC7A682E7333376E09E7935D8DB9BD8B20` (`B9BD8B20`).
+
+<details><summary>Write Repo File Manually</summary><br>
+
+```bash
+sudo tee /etc/yum.repos.d/pigsty-io.repo > /dev/null <<-'EOF'
+[pigsty-infra]
+name=Pigsty Infra for $basearch
+baseurl=https://repo.pigsty.io/yum/infra/$basearch
+skip_if_unavailable = 1
+enabled = 1
+priority = 1
+gpgcheck = 1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-pigsty
+module_hotfixes=1
+
+[pigsty-pgsql]
+name=Pigsty PGSQL For el$releasever.$basearch
+baseurl=https://repo.pigsty.io/yum/pgsql/el$releasever.$basearch
+skip_if_unavailable = 1
+enabled = 1
+priority = 1
+gpgcheck = 1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-pigsty
+module_hotfixes=1
+EOF
+sudo yum makecache;
+```
+
+</details>
+
+
+
+
+--------
+
+## APT Repo
+
+Pigsty currently offers a supplementary PG extension repository for Debian/Ubuntu systems, providing **133** additional DEB packages in addition to the official PGDG APT repository (109).
+
+- Pigsty APT Repository: https://repo.pigsty.io/apt/
+- PGDG APT Repository: http://apt.postgresql.org/pub/repos/apt/
+
+The Pigsty APT repository only includes extensions **not present in the PGDG APT repository**.
+Once an extension is added to the PGDG APT repository, Pigsty APT repository will either remove it or align with the PGDG repository.
+
+For Debian/Ubuntu and compatible systems, use the following commands to sequentially add the GPG public key and the upstream repository file of the Pigsty repository:
+
+```bash
+# add GPG key to keyring
+curl -fsSL https://repo.pigsty.io/key | sudo gpg --dearmor -o /etc/apt/keyrings/pigsty.gpg
+
+# get debian codename, distro_codename=jammy, focal, bullseye, bookworm
+distro_codename=$(lsb_release -cs)
+sudo tee /etc/apt/sources.list.d/pigsty-io.list > /dev/null <<EOF
+deb [signed-by=/etc/apt/keyrings/pigsty.gpg] https://repo.pigsty.io/apt/infra generic main 
+deb [signed-by=/etc/apt/keyrings/pigsty.gpg] https://repo.pigsty.io/apt/pgsql/${distro_codename} ${distro_codename} main
+EOF
+
+# refresh APT repo cache
+sudo apt update
+```
+
+All DEBs are signed with the GPG key fingerprint `9592A7BC7A682E7333376E09E7935D8DB9BD8B20` (`B9BD8B20`).
+
+
+
+
 
 
 --------
@@ -107,58 +192,6 @@ We may drop legacy support for the following distros in the future due to EOL:
 - `d11.x86_64`: Debian 11 bullseye, and other compatible distros
 - `u20.x86_64`: Ubuntu 20.04 focal, and other compatible distros
 
---------
-
-## How to use?
-
-For EL 7/8/9, add the following gpg key & repo file to your yum/dnf config:
-
-```bash
-# install pigsty gpg key to your keyring to verify the packages
-curl -fsSL https://repo.pigsty.io/key | sudo tee /etc/pki/rpm-gpg/RPM-GPG-KEY-pigsty >/dev/null
-
-sudo tee /etc/yum.repos.d/pigsty-io.repo > /dev/null <<-'EOF'
-[pigsty-infra]
-name=Pigsty Infra for $basearch
-baseurl=https://repo.pigsty.io/yum/infra/$basearch
-skip_if_unavailable = 1
-enabled = 1
-priority = 1
-gpgcheck = 1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-pigsty
-module_hotfixes=1
-
-[pigsty-pgsql]
-name=Pigsty PGSQL For el$releasever.$basearch
-baseurl=https://repo.pigsty.io/yum/pgsql/el$releasever.$basearch
-skip_if_unavailable = 1
-enabled = 1
-priority = 1
-gpgcheck = 1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-pigsty
-module_hotfixes=1
-EOF
-sudo yum makecache;
-```
-
-> Note: PostgreSQL 16 is not officially supported on el7 (EOL)
-
-
-For Debian / Ubuntu, add the following gpg key & repo file & gpg key to your apt config
-
-```bash
-# install pigsty gpg key to your keyring to verify the packages
-curl -fsSL https://repo.pigsty.io/key | sudo gpg --dearmor -o /etc/apt/keyrings/pigsty.gpg
-
-#distro_codename=jammy, focal, bullseye, bookworm
-distro_codename=$(lsb_release -cs)
-
-sudo tee /etc/apt/sources.list.d/pigsty-io.list > /dev/null <<EOF
-deb [signed-by=/etc/apt/keyrings/pigsty.gpg] https://repo.pigsty.io/apt/infra generic main 
-deb [signed-by=/etc/apt/keyrings/pigsty.gpg] https://repo.pigsty.io/apt/pgsql ${distro_codename} main
-EOF
-sudo apt update
-```
 
 --------
 
