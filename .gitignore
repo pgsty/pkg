@@ -48,6 +48,7 @@ yum/pgsty/el9.aarch64/debug/repodata/
 yum/ivory
 yum/polar
 yum/mssql
+yum/gpsql
 
 apt/stash
 apt/infra/stash/
@@ -62,6 +63,9 @@ apt/pgsty/bullseye/stash/
 apt/pgsty/focal/stash/
 apt/pgsty/jammy/stash/
 apt/pgsty/noble/stash/
+apt/mssql/focal/stash/
+apt/mssql/jammy/stash/
+apt/mssql/noble/stash/
 
 apt/polar/bookworm/stash/
 apt/polar/bullseye/stash/

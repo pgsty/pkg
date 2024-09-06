@@ -2,7 +2,7 @@
 # File      :   Makefile
 # Desc      :   yum repo shortcuts
 # Ctime     :   2024-07-28
-# Mtime     :   2024-07-28
+# Mtime     :   2024-09-06
 # Path      :   Makefile
 # Author    :   Ruohang Feng (rh@vonng.com)
 # License   :   AGPLv3
@@ -36,6 +36,15 @@ build:
 	./build	polar/el7.x86_64
 	./build	polar/el8.x86_64
 	./build	polar/el9.x86_64
+	./build	mssql/el7.x86_64
+	./build	mssql/el8.x86_64
+	./build	mssql/el9.x86_64
+	./build	ivory/el7.x86_64
+	./build	ivory/el8.x86_64
+	./build	ivory/el9.x86_64
+	./build	gpsql/el7.x86_64
+	./build	gpsql/el8.x86_64
+	./build	gpsql/el9.x86_64
 
 builds:
 	./build	infra/x86_64       sign
@@ -51,6 +60,15 @@ builds:
 	./build	polar/el7.x86_64   sign
 	./build	polar/el8.x86_64   sign
 	./build	polar/el9.x86_64   sign
+	./build	mssql/el7.x86_64   sign
+	./build	mssql/el8.x86_64   sign
+	./build	mssql/el9.x86_64   sign
+	./build	ivory/el7.x86_64   sign
+	./build	ivory/el8.x86_64   sign
+	./build	ivory/el9.x86_64   sign
+	./build	gpsql/el7.x86_64   sign
+	./build	gpsql/el8.x86_64   sign
+	./build	gpsql/el9.x86_64   sign
 
 adjust:
 	cp -f pgsty/el7.x86_64/scws*.rpm         pgsql/el7.x86_64/ || true
