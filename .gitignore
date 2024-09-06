@@ -1,8 +1,10 @@
+NOTE.md
+
 .idea
 pkg.iml
 .DS_Store
 tmp/
-
+.gitignore
 
 # yum rpm
 yum/infra/x86_64/*.rpm
@@ -14,6 +16,10 @@ yum/pgsql/el9.x86_64/*.rpm
 yum/pgsty/el7.x86_64/*.rpm
 yum/pgsty/el8.x86_64/*.rpm
 yum/pgsty/el9.x86_64/*.rpm
+yum/mssql/el7.x86_64/*.rpm
+yum/mssql/el8.x86_64/*.rpm
+yum/mssql/el9.x86_64/*.rpm
+
 yum/pgsty/el7.aarch64/*.rpm
 yum/pgsty/el8.aarch64/*.rpm
 yum/pgsty/el9.aarch64/*.rpm
@@ -23,6 +29,7 @@ yum/pgsty/el9.x86_64/debug/*.rpm
 yum/pgsty/el7.aarch64/debug/*.rpm
 yum/pgsty/el8.aarch64/debug/*.rpm
 yum/pgsty/el9.aarch64/debug/*.rpm
+
 
 yum/infra/x86_64/repodata/
 yum/infra/aarch64/repodata/
@@ -38,6 +45,9 @@ yum/pgsty/el9.x86_64/debug/repodata/
 yum/pgsty/el7.aarch64/debug/repodata/
 yum/pgsty/el8.aarch64/debug/repodata/
 yum/pgsty/el9.aarch64/debug/repodata/
+yum/ivory
+yum/polar
+yum/mssql
 
 apt/stash
 apt/infra/stash/
@@ -53,13 +63,19 @@ apt/pgsty/focal/stash/
 apt/pgsty/jammy/stash/
 apt/pgsty/noble/stash/
 
+apt/polar/bookworm/stash/
+apt/polar/bullseye/stash/
+apt/polar/focal/stash/
+apt/polar/jammy/stash/
+apt/polar/noble/stash/
+
 pool/
 apt/infra/pool/
-aptpgsql/bookworm/pool/
-aptpgsql/bullseye/pool/
-aptpgsql/focal/pool/
-aptpgsql/jammy/pool/
-aptpgsql/noble/pool/
+apt/pgsql/bookworm/pool/
+apt/pgsql/bullseye/pool/
+apt/pgsql/focal/pool/
+apt/pgsql/jammy/pool/
+apt/pgsql/noble/pool/
 apt/pgsty/bookworm/pool/
 apt/pgsty/bullseye/pool/
 apt/pgsty/focal/pool/
@@ -67,16 +83,20 @@ apt/pgsty/jammy/pool/
 apt/pgsty/noble/pool/
 
 apt/infra/db/
-aptpgsql/bookworm/db/
-aptpgsql/bullseye/db/
-aptpgsql/focal/db/
-aptpgsql/jammy/db/
-aptpgsql/noble/db/
+apt/pgsql/bookworm/db/
+apt/pgsql/bullseye/db/
+apt/pgsql/focal/db/
+apt/pgsql/jammy/db/
+apt/pgsql/noble/db/
 apt/pgsty/bookworm/db/
 apt/pgsty/bullseye/db/
 apt/pgsty/focal/db/
 apt/pgsty/jammy/db/
 apt/pgsty/noble/db/
+apt/polar/focal/db/
+apt/polar/jammy/db/
+apt/polar/noble/db/
+
 
 img/
 etc/

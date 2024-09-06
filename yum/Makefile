@@ -18,6 +18,9 @@ DEVEL_PATH = sv:/data/pkg/yum
 init:
 	mkdir -p infra infra/x86_64 infra/aarch64
 	mkdir -p pgsql pgsql/el7.x86_64 pgsql/el8.x86_64 pgsql/el9.x86_64
+	mkdir -p polar polar/el7.x86_64 polar/el8.x86_64 polar/el9.x86_64
+	mkdir -p ivory ivory/el7.x86_64 ivory/el8.x86_64 ivory/el9.x86_64
+	mkdir -p mssql mssql/el7.x86_64 mssql/el8.x86_64 mssql/el9.x86_64
 
 build:
 	./build	infra/x86_64
@@ -30,6 +33,9 @@ build:
 	./build	pgsty/el9.x86_64
 	./build	pgsty/el8.aarch64
 	./build	pgsty/el9.aarch64
+	./build	polar/el7.x86_64
+	./build	polar/el8.x86_64
+	./build	polar/el9.x86_64
 
 builds:
 	./build	infra/x86_64       sign
@@ -42,6 +48,9 @@ builds:
 	./build	pgsty/el9.x86_64   sign
 	./build	pgsty/el8.aarch64  sign
 	./build	pgsty/el9.aarch64  sign
+	./build	polar/el7.x86_64   sign
+	./build	polar/el8.x86_64   sign
+	./build	polar/el9.x86_64   sign
 
 adjust:
 	cp -f pgsty/el7.x86_64/scws*.rpm         pgsql/el7.x86_64/ || true

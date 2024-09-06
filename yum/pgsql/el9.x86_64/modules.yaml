@@ -26,7 +26,6 @@ data:
   profiles:
     everything:
       rpms:
-      - PolarDB
       - aggs_for_arrays_16
       - aggs_for_arrays_16-llvmjit
       - apache-age_16
@@ -208,7 +207,6 @@ data:
       - zhparser_16-llvmjit
   api:
     rpms:
-    - PolarDB
     - aggs_for_arrays_16
     - aggs_for_arrays_16-llvmjit
     - apache-age_16
@@ -390,8 +388,6 @@ data:
     - zhparser_16-llvmjit
   components:
     rpms:
-      PolarDB:
-        rationale: Present in the repository
       aggs_for_arrays_16:
         rationale: Present in the repository
       apache-age_16:
@@ -620,7 +616,6 @@ data:
         rationale: Present in the repository
   artifacts:
     rpms:
-    - PolarDB-0:11.9.20.0-20240504113514.el9.x86_64
     - aggs_for_arrays_16-0:1.3.2-1PIGSTY.el9.x86_64
     - aggs_for_arrays_16-llvmjit-0:1.3.2-1PIGSTY.el9.x86_64
     - apache-age_16-0:1.5.0-1PIGSTY.el9.x86_64
