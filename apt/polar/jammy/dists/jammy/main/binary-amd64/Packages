@@ -1,0 +1,25 @@
+Package: polardb-for-postgresql
+Maintainer: mrdrivingduck <mrdrivingduck@gmail.com>
+Depends: libicu66 | libicu70 | libicu74, libkrb5-3, libldap-2.4-2 | libldap-2.5-0 | libldap2
+Homepage: https://github.com/ApsaraDB/PolarDB-for-PostgreSQL
+Priority: optional
+Section: database
+Filename: pool/main/p/polardb-for-postgresql/polardb-for-postgresql_15.8.2.0-f3737b0b_amd64.deb
+Size: 96172606
+SHA256: 8c07091d472353f94ad281e54ade14867adac9bdce09ea741a48f4dbccd31087
+SHA1: 998e11c227a35bdeeda415331ce8fe1999b529ed
+MD5sum: e821fb1e295b03df672f08e0ea472a20
+Description: PolarDB is an advanced Object-Relational database management system
+ (DBMS) that supports almost all SQL constructs (including
+ transactions, subselects and user-defined types and functions). The
+ PolarDB package includes the client programs and libraries that
+ you'll need to access a PolarDB DBMS server.  These PolarDB
+ client programs are programs that directly manipulate the internal
+ structure of PolarDB databases on a PolarDB server. These client
+ programs can be located on the same machine with the PolarDB
+ server, or may be on a remote machine which accesses a PolarDB
+ server over a network connection. This package contains the command-line
+ utilities for managing PolarDB databases on a PolarDB server.
+Version: 15.8.2.0-f3737b0b
+Architecture: amd64
+

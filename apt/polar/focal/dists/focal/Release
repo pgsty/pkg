@@ -1,0 +1,28 @@
+Origin: Pigsty
+Label: Pigsty PolarDB
+Codename: focal
+Date: Fri, 06 Sep 2024 01:15:44 UTC
+Architectures: amd64 arm64
+Components: main
+Description: pigsty PolarDB apt repository for ubuntu 20.04 focal
+MD5Sum:
+ 753ad17e35b7475e675269d118c86d16 1327 main/binary-amd64/Packages
+ bdfa81d1694e1109dbd8ed39bf5f12a8 755 main/binary-amd64/Packages.gz
+ c85f7825470b4802c8eb267ea0b020d5 139 main/binary-amd64/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 main/binary-arm64/Packages
+ 16db6212ae61a24b1a9921bdd7c58c1f 20 main/binary-arm64/Packages.gz
+ 5af3f45fcca466ac1fd3a6eca690803d 139 main/binary-arm64/Release
+SHA1:
+ ec67673d001746c1ce45b5e98f2a118d355f0ac9 1327 main/binary-amd64/Packages
+ 09533616944206b580e85cf7e7c1bd74c3c9f369 755 main/binary-amd64/Packages.gz
+ 926fcc2d82d57c74e10a7ee2d416155c9c7bc35e 139 main/binary-amd64/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-arm64/Packages
+ b9693a53bcffe40b2cc2c37045561f848baaa22a 20 main/binary-arm64/Packages.gz
+ 013494d0eb868caea54f6f608c2ec8ad00b18e2a 139 main/binary-arm64/Release
+SHA256:
+ 8fcc80394c3a88a7cd0bac437ffd0a8f3e786c15ae26d420e5766c917c6b2f1a 1327 main/binary-amd64/Packages
+ 1c9ad214e8cef7e08c2b471eb1d48701a5de589f0e5dab08b1375b8ba11b8cd1 755 main/binary-amd64/Packages.gz
+ e230fa1addf1a593b9567291326b9e83e0b44c3087662348e630de18f68acd69 139 main/binary-amd64/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-arm64/Packages
+ abfbb86f9f5ddfbd9fc1a72c43ab384702ce8bae86b60f3324748485e235e61e 20 main/binary-arm64/Packages.gz
+ 764e4b2109dd54be49f4de4b49c7260d42547a947495c4dc3f241874f0135877 139 main/binary-arm64/Release
