@@ -23,24 +23,19 @@ clean:
 
 add-all: add-focal add-jammy add-noble
 add-focal:
-	reprepro -b focal includedeb focal stash/*ubuntu20.04*.deb
+	reprepro -b focal includedeb focal focal/stash/*.deb
 add-jammy:
-	reprepro -b jammy includedeb jammy stash/*ubuntu22.04*.deb
+	reprepro -b jammy includedeb jammy jammy/stash/*.deb
 add-noble:
-	reprepro -b noble includedeb noble stash/*ubuntu24.04*.deb
+	reprepro -b noble includedeb noble noble/stash/*.deb
 purge:
 	rm -rf infra/stash/*.deb
 	rm -rf pgsql/focal/stash/*.deb
 	rm -rf pgsql/jammy/stash/*.deb
 	rm -rf pgsql/noble/stash/*.deb
-	rm -rf pgsql/bookworm/stash/*.deb
-	rm -rf pgsql/bullseye/stash/*.deb
 	rm -rf pgsty/focal/stash/*.deb
 	rm -rf pgsty/jammy/stash/*.deb
 	rm -rf pgsty/noble/stash/*.deb
-	rm -rf pgsty/bookworm/stash/*.deb
-	rm -rf pgsty/bullseye/stash/*.deb
-
 
 ls-focal:
 	reprepro -b focal list focal

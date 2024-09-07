@@ -1,0 +1,755 @@
+Package: babelfishpg-common
+Source: wiltondb
+Version: 3.3-11-15-1~focal
+Architecture: amd64
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 1255
+Depends: postgresql-15 (>= 1:15.4+wiltondb3.3), postgresql-15 (<< 1:15.5), libc6 (>= 2.14)
+Homepage: https://wiltondb.com/
+Priority: optional
+Section: database
+Filename: pool/main/w/wiltondb/babelfishpg-common_3.3-11-15-1~focal_amd64.deb
+Size: 256816
+SHA256: f8ae374627f16b2631289b8d3b02d7dcf211341ee87de159a4821edcbbc9cbe0
+SHA1: 8ede0b23f178c15b5101bdfe04084bd86248abd1
+MD5sum: 0be3bc6a125f347e9b21720db35a3a95
+Description: Supports NUMERIC, VARBINARY and other datatypes.
+ .
+ This package contains the babelfishpg_common PostgreSQL extension.
+
+Package: babelfishpg-money
+Source: wiltondb
+Version: 3.3-11-15-1~focal
+Architecture: amd64
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 140
+Depends: postgresql-15 (>= 1:15.4+wiltondb3.3), postgresql-15 (<< 1:15.5), libc6 (>= 2.4)
+Homepage: https://wiltondb.com/
+Priority: optional
+Section: database
+Filename: pool/main/w/wiltondb/babelfishpg-money_3.3-11-15-1~focal_amd64.deb
+Size: 21572
+SHA256: 59aea48c18b933097e51043b3deb4475737cfa81ff5b06324a5e55642cf22c5b
+SHA1: 57ebed5bbed7bb451a6dfb6140ece3a802818c93
+MD5sum: 33b8cf7bce150f1054be72e0bc56a0ca
+Description: This is a variation of the opensource fixeddecimal extension.
+ FixedDecimal is a fixed precision decimal type which provides a subset of
+ the features of PostgreSQL's builtin NUMERIC type, but with vastly increased
+ performance. Fixeddecimal is targeted to cases where performance and disk
+ space are a critical.
+ .
+ This package contains the babelfishpg_money PostgreSQL extension.
+
+Package: babelfishpg-tds
+Source: wiltondb
+Version: 3.3-11-15-1~focal
+Architecture: amd64
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 374
+Depends: postgresql-15 (>= 1:15.4+wiltondb3.3), postgresql-15 (<< 1:15.5), libc6 (>= 2.14)
+Homepage: https://wiltondb.com/
+Priority: optional
+Section: database
+Filename: pool/main/w/wiltondb/babelfishpg-tds_3.3-11-15-1~focal_amd64.deb
+Size: 123396
+SHA256: 8c8fe75973dde26166709c6ce9898dadfbc48cc233ca9fe25a76c6f8e682b2b9
+SHA1: 08266a1041db6da9f48a6ce64f17b3a403c58fb4
+MD5sum: 3ee0bb4e9dd55b052bd9b1878e80bc11
+Description: Supports Tabular Data Stream (TDS) protocol.
+ .
+ This package contains the babelfishpg_tds PostgreSQL extension.
+
+Package: babelfishpg-tsql
+Source: wiltondb
+Version: 3.3-11-15-1~focal
+Architecture: amd64
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 12958
+Depends: postgresql-15 (>= 1:15.4+wiltondb3.3), postgresql-15 (<< 1:15.5), babelfishpg-common (= 3.3-11-15-1~focal), libantlr4-runtime4.9.3 (>= 1:4.9.3+wiltondb), libc6 (>= 2.17), libgcc-s1 (>= 3.0), libssl1.1 (>= 1.1.0), libsybdb5 (>= 0.63)
+Homepage: https://wiltondb.com/
+Priority: optional
+Section: database
+Filename: pool/main/w/wiltondb/babelfishpg-tsql_3.3-11-15-1~focal_amd64.deb
+Size: 1578444
+SHA256: 37c36654d87e748c7b438b06fd7b35952adfc97ee4e0c708c2687dd4f0ff5491
+SHA1: ef60654e3aba96cfc0e005b560934ddc8d482deb
+MD5sum: 2d9cddf545df848f6861d22689e98d77
+Description: Supports Transact-SQL (T-SQL) language.
+ .
+ This package contains the babelfishpg_tsql PostgreSQL extension.
+
+Package: libantlr4-runtime-dev
+Source: antlr4-cpp-runtime
+Version: 1:4.9.3+wiltondb-1~focal
+Architecture: amd64
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 3710
+Depends: libantlr4-runtime4.9.3 (= 1:4.9.3+wiltondb-1~focal)
+Multi-Arch: same
+Homepage: https://www.antlr.org
+Priority: optional
+Section: libdevel
+Filename: pool/main/a/antlr4-cpp-runtime/libantlr4-runtime-dev_4.9.3+wiltondb-1~focal_amd64.deb
+Size: 489840
+SHA256: 7c3689447d7e39eb67b1661f2440d00990e3e420e5ab7b3a671df629491208e8
+SHA1: 664316cbb21012f6d3fd29aff3cb9df35f8afc7f
+MD5sum: 05ac316d43862f1629d440fbf5170325
+Description: ANTLR Parser Generator - C++ runtime support (development files)
+ ANTLR (ANother Tool for Language Recognition) is a powerful parser generator
+ for reading, processing, executing, or translating structured text or binary
+ files. It's widely used to build languages, tools, and frameworks. From a
+ grammar, ANTLR generates a parser that can build and walk parse trees.
+ .
+ This package contains the development files of C++ runtime support for ANTLR.
+
+Package: libantlr4-runtime4.9.3
+Source: antlr4-cpp-runtime
+Version: 1:4.9.3+wiltondb-1~focal
+Architecture: amd64
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 1149
+Depends: libc6 (>= 2.14), libgcc-s1 (>= 3.4), libstdc++6 (>= 7)
+Multi-Arch: same
+Homepage: https://www.antlr.org
+Priority: optional
+Section: libs
+Filename: pool/main/a/antlr4-cpp-runtime/libantlr4-runtime4.9.3_4.9.3+wiltondb-1~focal_amd64.deb
+Size: 312676
+SHA256: 6f2c1a27e417f19f6fcef224442b1e6164d9375c9a881951d46c8a4a294fd3a4
+SHA1: f068b5617cdf78c2b56a5687a00103e21a6060fb
+MD5sum: 60b88b52a405b8202a88d14b5eb20f72
+Description: ANTLR Parser Generator - C++ runtime support (shared library)
+ ANTLR (ANother Tool for Language Recognition) is a powerful parser generator
+ for reading, processing, executing, or translating structured text or binary
+ files. It's widely used to build languages, tools, and frameworks. From a
+ grammar, ANTLR generates a parser that can build and walk parse trees.
+ .
+ This package contains the shared library of C++ runtime support for ANTLR.
+
+Package: libecpg-compat3
+Source: postgresql-15
+Version: 1:15.4+wiltondb3.3-11-2~focal
+Architecture: amd64
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 68
+Depends: libc6 (>= 2.14), libecpg6 (>= 9.0~), libpgtypes3
+Multi-Arch: same
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: libs
+Filename: pool/main/p/postgresql-15/libecpg-compat3_15.4+wiltondb3.3-11-2~focal_amd64.deb
+Size: 20792
+SHA256: 22450e68936424b04ad973167b2eda834488019c10e724db398d80cd970223fb
+SHA1: ecccf428658d0bd1194593bd2d5c8be7022b0fbb
+MD5sum: 574fe308edc8c364703ad350c880611b
+Description: older version of run-time library for ECPG programs
+ The libecpg_compat shared library is used by programs built with ecpg.
+ (Embedded PostgreSQL for C).
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: libecpg-dev
+Source: postgresql-15
+Version: 1:15.4+wiltondb3.3-11-2~focal
+Architecture: amd64
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 1655
+Depends: libecpg-compat3 (= 1:15.4+wiltondb3.3-11-2~focal), libecpg6 (= 1:15.4+wiltondb3.3-11-2~focal), libpgtypes3 (= 1:15.4+wiltondb3.3-11-2~focal), libpq-dev, libc6 (>= 2.14)
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/p/postgresql-15/libecpg-dev_15.4+wiltondb3.3-11-2~focal_amd64.deb
+Size: 295600
+SHA256: 7ee2ac7acfbf668c6a5c22835f04f964cf77a96ddb5210b256b106360dbfa486
+SHA1: 11033b21a99e673fd68e78e3c719c6ae0733cc59
+MD5sum: f97d01c1396f13e5339d7795190e334f
+Description: development files for ECPG (Embedded PostgreSQL for C)
+ This package contains the necessary files to build ECPG (Embedded
+ PostgreSQL for C) programs.  It includes the development libraries
+ and the preprocessor program ecpg.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+ .
+ Install this package if you want to write C programs with SQL statements
+ embedded in them (rather than run by an external process).
+
+Package: libecpg6
+Source: postgresql-15
+Version: 1:15.4+wiltondb3.3-11-2~focal
+Architecture: amd64
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 237
+Depends: libc6 (>= 2.14), libpgtypes3, libpq5 (>= 9.0~)
+Multi-Arch: same
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: libs
+Filename: pool/main/p/postgresql-15/libecpg6_15.4+wiltondb3.3-11-2~focal_amd64.deb
+Size: 59128
+SHA256: 2d528a45f02740c0424862996c9948925c4bed215493bbe6b643d552db585e33
+SHA1: 5dd8cb278031545e4aef0094fb3085e85550168d
+MD5sum: 4f8bb54451655755f24d73789873c17c
+Description: run-time library for ECPG programs
+ The libecpg shared library is used by programs built with ECPG
+ (Embedded PostgreSQL for C).
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: libpgtypes3
+Source: postgresql-15
+Version: 1:15.4+wiltondb3.3-11-2~focal
+Architecture: amd64
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 117
+Depends: libc6 (>= 2.14)
+Multi-Arch: same
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: libs
+Filename: pool/main/p/postgresql-15/libpgtypes3_15.4+wiltondb3.3-11-2~focal_amd64.deb
+Size: 42984
+SHA256: f84ef659d10250c576843f32b24039408d7252822dfb21216577a633c905f071
+SHA1: dbb00d15d419c3669b91eb4a7fd292757e124773
+MD5sum: 9d374ffb81d8aab1c00f4604821ab05a
+Description: shared library libpgtypes for PostgreSQL 15
+ The libpgtypes shared library is used by programs built with ecpg.
+ (Embedded PostgreSQL for C).
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: libpq-dev
+Source: postgresql-15
+Version: 1:15.4+wiltondb3.3-11-2~focal
+Architecture: amd64
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 573
+Depends: libpq5 (= 1:15.4+wiltondb3.3-11-2~focal), libssl-dev
+Suggests: postgresql-doc-15
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/p/postgresql-15/libpq-dev_15.4+wiltondb3.3-11-2~focal_amd64.deb
+Size: 141372
+SHA256: 78f73cbbfd4bb705973a63988021d2a24f6a523252b290fe17699802b5b8754d
+SHA1: 0e44fc18e7ccd9d0f07a1f80ce5d8fd63a7c9abf
+MD5sum: 1f8c7a6e32206235510b2208c1c3d2a4
+Description: header files for libpq5 (PostgreSQL library)
+ Header files and static library for compiling C programs to link
+ with the libpq library in order to communicate with a PostgreSQL
+ database backend.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: libpq5
+Source: postgresql-15
+Version: 1:15.4+wiltondb3.3-11-2~focal
+Architecture: amd64
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 854
+Depends: libc6 (>= 2.25), libgssapi-krb5-2 (>= 1.17), libldap-2.4-2 (>= 2.4.7), libssl1.1 (>= 1.1.1)
+Multi-Arch: same
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: libs
+Filename: pool/main/p/postgresql-15/libpq5_15.4+wiltondb3.3-11-2~focal_amd64.deb
+Size: 184440
+SHA256: 29f3446d2399a5cac3b31c7b8b5b366d0d40b85ee6d7cfd58d11276067278475
+SHA1: 0c7dbabd28c2ffd1c8f5de73db48748b243cc9e1
+MD5sum: 75ac408698a3755d5fe32e8fa16705c2
+Description: PostgreSQL C client library
+ libpq is a C library that enables user programs to communicate with
+ the PostgreSQL database server.  The server can be on another machine
+ and accessed through TCP/IP.  This version of libpq is compatible
+ with servers from PostgreSQL 8.2 or later.
+ .
+ This package contains the run-time library, needed by packages using
+ libpq.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql
+Source: postgresql-common (1:248+wiltondb3.3-5~focal)
+Version: 1:248+wiltondb3.3-5~focal
+Architecture: all
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 71
+Depends: postgresql-15
+Suggests: postgresql-doc
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-common/postgresql_248+wiltondb3.3-5~focal_all.deb
+Size: 67856
+SHA256: 5ad6e4167271ce2fdecf53bbb2b3a0e7c6ffb16453e62708bdf5fd7e95f67e0f
+SHA1: 980beb2301e02612eb30562b352e4769fed223a6
+MD5sum: b3d66d362620353c23427fa757b281cf
+Description: object-relational SQL database (supported version)
+ This metapackage always depends on the currently supported PostgreSQL
+ database server version.
+ .
+ PostgreSQL is a fully featured object-relational database management
+ system.  It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects.  Some of the features are:
+ ACID transactions, foreign keys, views, sequences, subqueries,
+ triggers, user-defined types and functions, outer joins, multiversion
+ concurrency control.  Graphical user interfaces and bindings for many
+ programming languages are available as well.
+
+Package: postgresql-15
+Version: 1:15.4+wiltondb3.3-11-2~focal
+Architecture: amd64
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 27959
+Depends: locales | locales-all, postgresql-client-15 (= 1:15.4+wiltondb3.3-11-2~focal), postgresql-common (>= 1:248+wiltondb3.3-5~), postgresql-common (<< 1:248+wiltondb3.3-6), ssl-cert, tzdata, debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.29), libgssapi-krb5-2 (>= 1.14+dfsg), libicu66 (>= 66.1-1~), libldap-2.4-2 (>= 2.4.7), liblz4-1 (>= 0.0~r130), libpam0g (>= 0.99.7.1), libpq5 (>= 14~beta2), libselinux1 (>= 2.1.12), libssl1.1 (>= 1.1.1), libsystemd0, libuuid1 (>= 2.16), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.1.4)
+Recommends: sysstat
+Breaks: dbconfig-common (<< 2.0.22~)
+Provides: postgresql-contrib-15
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-15/postgresql-15_15.4+wiltondb3.3-11-2~focal_amd64.deb
+Size: 5884444
+SHA256: 4b68f483fa06664607f82a1789d8a605637176d7d7ab2f2e28d3bdc8f9a2cdad
+SHA1: 01a9d107afa5f94b6fd24b452c72f37949ae817d
+MD5sum: 836d6f5450daa41c8b1209650e8d5b19
+Description: The World's Most Advanced Open Source Relational Database
+ PostgreSQL, also known as Postgres, is a free and open-source relational
+ database management system (RDBMS) emphasizing extensibility and SQL
+ compliance. It features transactions with Atomicity, Consistency, Isolation,
+ Durability (ACID) properties, automatically updatable views, materialized
+ views, triggers, foreign keys, and stored procedures. It is designed to handle
+ a range of workloads, from single machines to data warehouses or Web services
+ with many concurrent users.
+ .
+ This package provides the database server for PostgreSQL 15.
+Postgresql-Catversion: 202209061
+
+Package: postgresql-all
+Source: postgresql-common
+Version: 1:248+wiltondb3.3-5~focal
+Architecture: all
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 71
+Depends: libecpg-dev, libpq-dev, postgresql-common (= 1:248+wiltondb3.3-5~focal), postgresql-server-dev-all, postgresql-contrib-15, postgresql-plperl-15, postgresql-plpython3-15, postgresql-pltcl-15
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-common/postgresql-all_248+wiltondb3.3-5~focal_all.deb
+Size: 67956
+SHA256: f184f33a8fda3294d415f2d47fa73984f0e437de60179880983f180dec892102
+SHA1: 88d646f622df7240481fd880513e7886c66f6a60
+MD5sum: 9e0c18903d83004cf70af27955173e6b
+Description: metapackage depending on all PostgreSQL server packages
+ This metapackage depends on all PostgreSQL server packages, in all
+ supported versions (excluding documentation and debug symbols). It
+ exists to facilitate depending on the server packages in test
+ environments.
+ .
+ PostgreSQL is a fully featured object-relational database management
+ system.  It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects.  Some of the features are:
+ ACID transactions, foreign keys, views, sequences, subqueries,
+ triggers, user-defined types and functions, outer joins, multiversion
+ concurrency control.  Graphical user interfaces and bindings for many
+ programming languages are available as well.
+
+Package: postgresql-client
+Source: postgresql-common (1:248+wiltondb3.3-5~focal)
+Version: 1:248+wiltondb3.3-5~focal
+Architecture: all
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 71
+Depends: postgresql-client-15
+Multi-Arch: foreign
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-common/postgresql-client_248+wiltondb3.3-5~focal_all.deb
+Size: 67872
+SHA256: 8a41d68faba547469ab6ee2e0cfb0ddf7fbebd25144e00835a19bf5e5399d249
+SHA1: 6c646ed2163038af82f43eef720bdbff4245aade
+MD5sum: 246406f4ac3f6bc58c19d58be4b44e25
+Description: front-end programs for PostgreSQL (supported version)
+ This metapackage always depends on the currently supported database
+ client package for PostgreSQL.
+ .
+ PostgreSQL is a fully featured object-relational database management
+ system.  It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects.  Some of the features are:
+ ACID transactions, foreign keys, views, sequences, subqueries,
+ triggers, user-defined types and functions, outer joins, multiversion
+ concurrency control.  Graphical user interfaces and bindings for many
+ programming languages are available as well.
+
+Package: postgresql-client-15
+Source: postgresql-15
+Version: 1:15.4+wiltondb3.3-11-2~focal
+Architecture: amd64
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 7974
+Depends: libpq5 (= 1:15.4+wiltondb3.3-11-2~focal), postgresql-client-common (>= 1:248+wiltondb3.3-5~), postgresql-client-common (<< 1:248+wiltondb3.3-6), sensible-utils, libc6 (>= 2.25), liblz4-1 (>= 0.0~r127), libreadline8 (>= 6.0), libssl1.1 (>= 1.1.0), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.1.4)
+Suggests: postgresql-15, postgresql-doc-15
+Provides: postgresql-client
+Multi-Arch: foreign
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-15/postgresql-client-15_15.4+wiltondb3.3-11-2~focal_amd64.deb
+Size: 1688980
+SHA256: 65bcd42325529fda5b62dfbb4a948d0ffdf4f50bc8af9ae971ac128ecac08b25
+SHA1: 051b2fdbd2cb5f2449f65293a7e9117322452fae
+MD5sum: 03c896818fa43055237a380969ccadee
+Description: front-end programs for PostgreSQL 15
+ This package contains client and administrative programs for
+ PostgreSQL: these are the interactive terminal client psql and
+ programs for creating and removing users and databases.
+ .
+ This is the client package for PostgreSQL 15. If you install
+ PostgreSQL 15 on a standalone machine, you need the server package
+ postgresql-15, too. On a network, you can install this package on
+ many client machines, while the server package may be installed on
+ only one machine.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-client-common
+Source: postgresql-common
+Version: 1:248+wiltondb3.3-5~focal
+Architecture: all
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 185
+Depends: netbase, perl:any
+Multi-Arch: foreign
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-common/postgresql-client-common_248+wiltondb3.3-5~focal_all.deb
+Size: 92840
+SHA256: 9172af81af4f9f273dff7e03742a19888c2a7ab5201c67049df8997e6b3afbfc
+SHA1: d06351db1dbf2ba2fa9fdaaf908f1393186f92db
+MD5sum: 29a6e753bf3e2510333adfd5afff4ecd
+Description: manager for multiple PostgreSQL client versions
+ The postgresql-client-common package provides a structure under which
+ multiple versions of PostgreSQL client programs may be installed at
+ the same time. It provides a wrapper which selects the right version
+ for the particular cluster you want to access (with a command line
+ option, an environment variable, /etc/postgresql-common/user_clusters,
+ or ~/.postgresqlrc).
+ .
+ PostgreSQL is a fully featured object-relational database management
+ system. It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects. Its features include ACID
+ transactions, foreign keys, views, sequences, subqueries, triggers,
+ outer joins, multiversion concurrency control, and user-defined types
+ and functions.
+
+Package: postgresql-common
+Version: 1:248+wiltondb3.3-5~focal
+Architecture: all
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 712
+Pre-Depends: init-system-helpers (>= 1.54~)
+Depends: adduser, debconf (>= 0.5.00) | debconf-2.0, libjson-perl, lsb-base (>= 3.0-3), postgresql-client-common (= 1:248+wiltondb3.3-5~focal), ssl-cert (>= 1.0.11), ucf, perl:any
+Recommends: e2fsprogs, logrotate
+Conflicts: pgdg-keyring
+Breaks: postgresql-9.1 (<< 9.1.1-3~), postgresql-server-dev-all (<< 204)
+Replaces: pgdg-keyring, postgresql-server-dev-all (<< 204)
+Multi-Arch: foreign
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-common/postgresql-common_248+wiltondb3.3-5~focal_all.deb
+Size: 236848
+SHA256: 0dd7b88f1714d51f6ad009e6802ced7cbaa6fde961a0d3b43737dad712c5cea1
+SHA1: 842c07c4f2536a082341d42518d95673fea1427a
+MD5sum: a7963b01be189186b80c4f0f34bed6fc
+Description: PostgreSQL database-cluster manager
+ The postgresql-common package provides a structure under which
+ multiple versions of PostgreSQL may be installed and/or multiple
+ clusters maintained at one time.
+ .
+ The commands provided are pg_conftool, pg_createcluster, pg_ctlcluster,
+ pg_dropcluster, pg_lsclusters, pg_renamecluster, pg_upgradecluster,
+ pg_virtualenv.
+ .
+ PostgreSQL is a fully featured object-relational database management
+ system. It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects. Its features include ACID
+ transactions, foreign keys, views, sequences, subqueries, triggers,
+ outer joins, multiversion concurrency control, and user-defined types
+ and functions.
+
+Package: postgresql-contrib
+Source: postgresql-common (1:248+wiltondb3.3-5~focal)
+Version: 1:248+wiltondb3.3-5~focal
+Architecture: all
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 71
+Depends: postgresql-contrib-15
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-common/postgresql-contrib_248+wiltondb3.3-5~focal_all.deb
+Size: 67864
+SHA256: e780e08b235d6ae5e24e163c0fe0a28d5650591cbc4830c0ae5ab01722ac7731
+SHA1: 1f93b7a1e9e12aaf1b90ba003274f2deb8c806cc
+MD5sum: ca1175a9653968d98b6aef76df5f80c8
+Description: additional facilities for PostgreSQL (supported version)
+ This metapackage always depends on the currently supported PostgreSQL
+ database contrib package.
+ .
+ PostgreSQL is a fully featured object-relational database management
+ system.  It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects.  Some of the features are:
+ ACID transactions, foreign keys, views, sequences, subqueries,
+ triggers, user-defined types and functions, outer joins, multiversion
+ concurrency control.  Graphical user interfaces and bindings for many
+ programming languages are available as well.
+
+Package: postgresql-doc
+Source: postgresql-common (1:248+wiltondb3.3-5~focal)
+Version: 1:248+wiltondb3.3-5~focal
+Architecture: all
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 71
+Depends: postgresql-doc-15
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Filename: pool/main/p/postgresql-common/postgresql-doc_248+wiltondb3.3-5~focal_all.deb
+Size: 67860
+SHA256: 4cc5f5d36d4895fa12c2a45fa362b2f8606932c195e61e869ca26169fc1822c6
+SHA1: f7db9423e801243e174815181ac6bcf6d2849757
+MD5sum: 2356a28a395275b39876e860b534d6ed
+Description: documentation for the PostgreSQL database management system
+ This metapackage always depends on the currently supported PostgreSQL
+ database documentation package.
+ .
+ PostgreSQL is a fully featured object-relational database management
+ system.  It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects.  Some of the features are:
+ ACID transactions, foreign keys, views, sequences, subqueries,
+ triggers, user-defined types and functions, outer joins, multiversion
+ concurrency control.  Graphical user interfaces and bindings for many
+ programming languages are available as well.
+
+Package: postgresql-doc-15
+Source: postgresql-15
+Version: 1:15.4+wiltondb3.3-11-2~focal
+Architecture: all
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 15962
+Breaks: postgresql-common (<< 158~)
+Multi-Arch: foreign
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: doc
+Filename: pool/main/p/postgresql-15/postgresql-doc-15_15.4+wiltondb3.3-11-2~focal_all.deb
+Size: 2020280
+SHA256: 66a46bb21f71e8f72f25c2e73f15fff463db97bb73b738c0332c780a2c1fe845
+SHA1: c9bd8f728d1434ea4be7c01f180805df468b0df0
+MD5sum: 593803d8063f355cf044572a54f2204b
+Description: documentation for the PostgreSQL database management system
+ This package contains all README files, user manual, and examples for
+ PostgreSQL 15. The manual is in HTML format.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-plperl-15
+Source: postgresql-15
+Version: 1:15.4+wiltondb3.3-11-2~focal
+Architecture: amd64
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 350
+Depends: perl, postgresql-15 (= 1:15.4+wiltondb3.3-11-2~focal), libc6 (>= 2.4), libperl5.30 (>= 5.30.0)
+Provides: postgresql-plperl
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-15/postgresql-plperl-15_15.4+wiltondb3.3-11-2~focal_amd64.deb
+Size: 67856
+SHA256: 33775bf82bd1fdb25dc72e196be57a06bcb2496fc0661474298fde99a824b4d7
+SHA1: 472920c6c1809788db31dd5f386deea41a156900
+MD5sum: 8e477e89a13ea3ab81d54ecfa5b676f2
+Description: PL/Perl procedural language for PostgreSQL 15
+ PL/Perl enables an SQL developer to write procedural language functions
+ for PostgreSQL 15 in Perl.  You need this package if you have any
+ PostgreSQL 15 functions that use the languages plperl or plperlu.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-plpython3-15
+Source: postgresql-15
+Version: 1:15.4+wiltondb3.3-11-2~focal
+Architecture: amd64
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 485
+Depends: postgresql-15 (= 1:15.4+wiltondb3.3-11-2~focal), libc6 (>= 2.14), libpython3.8 (>= 3.8.2)
+Provides: postgresql-plpython3
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-15/postgresql-plpython3-15_15.4+wiltondb3.3-11-2~focal_amd64.deb
+Size: 90072
+SHA256: c68114865f94f90ec906ab47d2d34066ed01f2f5e913fae91b99f9fbd6391b1c
+SHA1: 45f7c00c7acc30915bbae864bf778fbdfb2cc913
+MD5sum: d70eeda98d7392e671b14f6f2d2a9e07
+Description: PL/Python 3 procedural language for PostgreSQL 15
+ PL/Python 3 enables an SQL developer to write procedural language functions
+ for PostgreSQL 15 in Python 3.  You need this package if you have any
+ PostgreSQL 15 functions that use the languages plpython3 or plpython3u.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-pltcl-15
+Source: postgresql-15
+Version: 1:15.4+wiltondb3.3-11-2~focal
+Architecture: amd64
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 199
+Depends: postgresql-15 (= 1:15.4+wiltondb3.3-11-2~focal), libc6 (>= 2.4), libtcl8.6 (>= 8.6.0)
+Provides: postgresql-pltcl
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-15/postgresql-pltcl-15_15.4+wiltondb3.3-11-2~focal_amd64.deb
+Size: 39768
+SHA256: 91c686ecdc4144c0e6f3fc07b118e224e5d9db7f28b1bdd0c4141afb706edee8
+SHA1: cd7e54e7887b384faecb19bfd8fe01996ba338d4
+MD5sum: 9e34c42a8ca7a42c9216f9c57a8642fd
+Description: PL/Tcl procedural language for PostgreSQL 15
+ PL/Tcl enables an SQL developer to write procedural language functions
+ for PostgreSQL 15 in Tcl.  You need this package if you have any
+ PostgreSQL 15 functions that use the languages pltcl or pltclu.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-server-dev-15
+Source: postgresql-15
+Version: 1:15.4+wiltondb3.3-11-2~focal
+Architecture: amd64
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 6827
+Depends: libpq-dev (= 1:15.4+wiltondb3.3-11-2~focal), postgresql-client-15 (= 1:15.4+wiltondb3.3-11-2~focal), postgresql-common (>= 1:248+wiltondb3.3-5~), postgresql-common (<< 1:248+wiltondb3.3-6)
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/p/postgresql-15/postgresql-server-dev-15_15.4+wiltondb3.3-11-2~focal_amd64.deb
+Size: 1142620
+SHA256: 86317d6eadcf2b633739cfa07fe450c64a05ba96d388d2cb60440b42acd64ed4
+SHA1: e7726585d335d35328bb2c87e3579fe8b27fb4e2
+MD5sum: 13bc58bfa791f3ca70df6a6fb9d2d111
+Description: development files for PostgreSQL 15 server-side programming
+ Header files for compiling SSI code to link into PostgreSQL's backend; for
+ example, for C functions to be called from SQL.
+ .
+ This package also contains the Makefiles necessary for building add-on
+ modules of PostgreSQL, which would otherwise have to be built in the
+ PostgreSQL source-code tree.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-server-dev-all
+Source: postgresql-common
+Version: 1:248+wiltondb3.3-5~focal
+Architecture: amd64
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 115
+Depends: make:any, postgresql-common (= 1:248+wiltondb3.3-5~focal), postgresql-server-dev-15
+Multi-Arch: same
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-common/postgresql-server-dev-all_248+wiltondb3.3-5~focal_amd64.deb
+Size: 78140
+SHA256: 5dfff9e946403ee320528c49a66dd7129a4ce1afccd9df91e01bb4a41c5ceed6
+SHA1: ae6b73f4ad1fdd1164cd5c7cdccb7cf7cf3af7f8
+MD5sum: 12f45256b30d6b8b1d5e9dfaae72ca26
+Description: extension build tool for multiple PostgreSQL versions
+ The postgresql-server-dev-all package provides the pg_buildext script for
+ simplifying packaging of a PostgreSQL extension supporting multiple major
+ versions of the product, and dh_make_pgxs which builds a template debian/
+ source package directory based on pg_buildext.
+ .
+ PostgreSQL is a fully featured object-relational database management
+ system. It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects. Its features include ACID
+ transactions, foreign keys, views, sequences, subqueries, triggers,
+ outer joins, multiversion concurrency control, and user-defined types
+ and functions.
+
+Package: wiltondb
+Version: 3.3-11-15-1~focal
+Architecture: all
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 25
+Depends: postgresql-15 (>= 1:15.4+wiltondb3.3), postgresql-15 (<< 1:15.5), babelfishpg-money (= 3.3-11-15-1~focal), babelfishpg-common (= 3.3-11-15-1~focal), babelfishpg-tds (= 3.3-11-15-1~focal), babelfishpg-tsql (= 3.3-11-15-1~focal), wiltondb-pg-hint-plan (= 3.3-11-15-1~focal), wiltondb-tds-fdw (= 3.3-11-15-1~focal), wiltondb-system-stats (= 3.3-11-15-1~focal), openssl
+Homepage: https://wiltondb.com/
+Priority: optional
+Section: database
+Filename: pool/main/w/wiltondb/wiltondb_3.3-11-15-1~focal_all.deb
+Size: 6768
+SHA256: edd6b1b56ed4e508486d52b60a9ebc3b0d4f836abf5d427cf96cd441e5b66aff
+SHA1: 4107b6bbbbec03a8e1138d09c879cf4474c04458
+MD5sum: 0d969f94bb45ea8ccd4d53b643d3c86b
+Description: Uses a set of Babelfish extensions to provide the
+ capability for PostgreSQL to understand queries from applications written
+ for Microsoft SQL Server. WiltonDB understands the SQL Server wire-protocol
+ and T-SQL, the Microsoft SQL Server query language.
+ .
+ This package contains the Babelfish PostgreSQL extensions.
+
+Package: wiltondb-pg-hint-plan
+Source: wiltondb
+Version: 3.3-11-15-1~focal
+Architecture: amd64
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 122
+Depends: postgresql-15 (>= 1:15.4+wiltondb3.3), postgresql-15 (<< 1:15.5), libc6 (>= 2.14)
+Homepage: https://wiltondb.com/
+Priority: optional
+Section: database
+Filename: pool/main/w/wiltondb/wiltondb-pg-hint-plan_3.3-11-15-1~focal_amd64.deb
+Size: 34236
+SHA256: d1f91e53e6585f7d72f9a6dc63c1f61035eb640ed10bbd556fa32f95b06b9ebd
+SHA1: 2bbdb1dabaf69854d64c06c22f73980d56f18edf
+MD5sum: 912a563c9232193dee12d3c6c6a0cde6
+Description: Makes it possible to tweak execution plans
+ using so-called "hints" in SQL comments.
+ .
+ This package contains the pg_hint_plan PostgreSQL extension.
+
+Package: wiltondb-system-stats
+Source: wiltondb
+Version: 3.3-11-15-1~focal
+Architecture: amd64
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 83
+Depends: postgresql-15 (>= 1:15.4+wiltondb3.3), postgresql-15 (<< 1:15.5), libc6 (>= 2.7)
+Homepage: https://wiltondb.com/
+Priority: optional
+Section: database
+Filename: pool/main/w/wiltondb/wiltondb-system-stats_3.3-11-15-1~focal_amd64.deb
+Size: 19984
+SHA256: e39f475825be2d53e732a25fd83bfdffddf24fedf47d6d5a22d974dfea5e30e3
+SHA1: d9eb79ae5ee636ffb59d5c7e9700dbe3a40672b2
+MD5sum: 98d07498689cad72f545c923ee7d481d
+Description: PostgreSQL extension that provides functions to access system
+ level statistics that can be used for monitoring.
+ .
+ This package contains the system_stats PostgreSQL extension.
+
+Package: wiltondb-tds-fdw
+Source: wiltondb
+Version: 3.3-11-15-1~focal
+Architecture: amd64
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Installed-Size: 116
+Depends: postgresql-15 (>= 1:15.4+wiltondb3.3), postgresql-15 (<< 1:15.5), libc6 (>= 2.14), libsybdb5 (>= 0.91)
+Homepage: https://wiltondb.com/
+Priority: optional
+Section: database
+Filename: pool/main/w/wiltondb/wiltondb-tds-fdw_3.3-11-15-1~focal_amd64.deb
+Size: 35244
+SHA256: 9ef22169dd68ea3c7adcd0ad0bd9813819d872ed3abbb46dc73abb09867cd870
+SHA1: 8273adee34eb4b0b794830804e2489a82636a7c0
+MD5sum: c2d889cec799215008d475508ed45cc5
+Description: PostgreSQL foreign data wrapper that can connect to databases
+ that use the Tabular Data Stream (TDS) protocol, such as Sybase databases
+ and Microsoft SQL server.
+ .
+ This package contains the tds_fdw PostgreSQL extension.
+
