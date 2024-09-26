@@ -5678,17 +5678,17 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 14
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
 Package: postgresql-14-pg-analytics
-Version: 0.1.1
+Version: 0.1.4
 Architecture: amd64
 Depends: postgresql-14
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-14-pg-analytics/postgresql-14-pg-analytics_0.1.1_amd64.deb
-Size: 9139784
-SHA256: e4566e4d098215143eda6fbd6933ba1ecb08717274e18aa88146e9e880ec5f91
-SHA1: 36fc95b1d269ef4d6d490755ad782ec120248bf1
-MD5sum: 057f7e13c0b38b591c28bd03e4a8fa56
+Filename: pool/main/p/postgresql-14-pg-analytics/postgresql-14-pg-analytics_0.1.4_amd64.deb
+Size: 9149328
+SHA256: 46a14d34c2d547e75a8f02e87211c2245ad954e5b4e4648b58b3b1334a0cbad1
+SHA1: 812648d43cfd054c8872ca7c869ba573c6a403e6
+MD5sum: 180c34db9e5a87a6830b14a82cac5479
 Description: DuckDB-powered analytics for Postgres
 
 Package: postgresql-14-pg-arraymath
@@ -6515,17 +6515,17 @@ Description: A postgres extension to avoid accidental mistakes
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
 Package: postgresql-14-pg-search
-Version: 0.9.2
+Version: 0.10.2
 Architecture: amd64
 Depends: postgresql-14
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.9.2_amd64.deb
-Size: 46230960
-SHA256: 9c386f342df49c612810f8d8f3f0c0a2ef74d9a071fc9706b3144467ef80e769
-SHA1: 6dce2be594d5cd2fa1b93ec558338fac77d10edc
-MD5sum: a14726e4e17c0636c0edda9a53efb0dd
+Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.10.2_amd64.deb
+Size: 46366296
+SHA256: ce3d8c9715c8712845b46ab36027b013fed771563d1b4d8491511b25e7347a35
+SHA1: 4d92b1df303d2640207e6a74d6869f62deace42e
+MD5sum: 06d40529fc4f9d8321de4770e0b9591b
 Description: Full-text search for PostgreSQL using BM25
 
 Package: postgresql-14-pg-sqlog
@@ -8268,17 +8268,17 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 15
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
 Package: postgresql-15-pg-analytics
-Version: 0.1.1
+Version: 0.1.4
 Architecture: amd64
 Depends: postgresql-15
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-15-pg-analytics/postgresql-15-pg-analytics_0.1.1_amd64.deb
-Size: 9107832
-SHA256: b5c8c86240714d09b760698dd87dcfcc8539ee7952a8452d5707c5c1d384d3c0
-SHA1: 1d13db84318f7379f2f1247fa3ff1f45c0708069
-MD5sum: 0036197ef52ebfba15b8a6e07aba6bf1
+Filename: pool/main/p/postgresql-15-pg-analytics/postgresql-15-pg-analytics_0.1.4_amd64.deb
+Size: 9134624
+SHA256: 124e1390230d49d99d5f72281acc717da21093c6410bcc63bafffbce64e595e5
+SHA1: 1b13e89ff48013201bc92f8b22271addddf1d076
+MD5sum: 3e97bd20441577d45653c4a6ade83004
 Description: DuckDB-powered analytics for Postgres
 
 Package: postgresql-15-pg-arraymath
@@ -9105,17 +9105,17 @@ Description: A postgres extension to avoid accidental mistakes
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
 Package: postgresql-15-pg-search
-Version: 0.9.2
+Version: 0.10.2
 Architecture: amd64
 Depends: postgresql-15
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.9.2_amd64.deb
-Size: 46232664
-SHA256: 451124a31b48cc6bbf26f8d0c63c68e1f04157a6be9eaa5e2757a027129c66c1
-SHA1: 5e319ed29b0ee5f00393feca8f41f06d26aa9c2c
-MD5sum: 0cc2e718c1f380fa36d3daafad6ce5a0
+Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.10.2_amd64.deb
+Size: 46368416
+SHA256: 564ad1ff0b1d57c8d20dd8dcd61707eb887f8d0cd940c340bddfd62380b5c35e
+SHA1: 63f20353f20275f341095de4eeb4280f4dfa255e
+MD5sum: b51623b90b3e837b47f329740594bf2f
 Description: Full-text search for PostgreSQL using BM25
 
 Package: postgresql-15-pg-sqlog
@@ -10812,17 +10812,17 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 16
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
 Package: postgresql-16-pg-analytics
-Version: 0.1.1
+Version: 0.1.4
 Architecture: amd64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-analytics/postgresql-16-pg-analytics_0.1.1_amd64.deb
-Size: 9122172
-SHA256: c4358f93e0f449a13a55bb0eac8b4b2e3dfaf956b6e970557141c19889db1ed1
-SHA1: d31c3efbedba50649549deefd5ac35278cf154ec
-MD5sum: 85142d0a7d128e3b697255e88ec0929d
+Filename: pool/main/p/postgresql-16-pg-analytics/postgresql-16-pg-analytics_0.1.4_amd64.deb
+Size: 9140656
+SHA256: efb306e0ab45c1c1264218dab07defa99ae090793f07cbfad215cd9721822657
+SHA1: d940033ad3049cdf6edc7ebfb6cdb046568f2f69
+MD5sum: f02388e07d802ce2e2e7a78ade310ac2
 Description: DuckDB-powered analytics for Postgres
 
 Package: postgresql-16-pg-arraymath
@@ -11609,17 +11609,17 @@ Description: A postgres extension to avoid accidental mistakes
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
 Package: postgresql-16-pg-search
-Version: 0.9.2
+Version: 0.10.2
 Architecture: amd64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.9.2_amd64.deb
-Size: 46233936
-SHA256: 210e5a3b217cbddf3a3e6eb9cf0bc42691a0990a89c50c0d6f6e60516b2303ee
-SHA1: 4d179775e1aee8dcb1d8883cdde66d829cb581b0
-MD5sum: c8a29cfd23c5344b5e11ae7894ceb0f7
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.10.2_amd64.deb
+Size: 46366656
+SHA256: dce841724ec58a0533149ecd350c178ef4e9227e5cc870d554cccd703d9b2b10
+SHA1: 89b8faee4f9d90a8e0052abd0cd873e7154bc44b
+MD5sum: 8eb395271bb6c4ddb6bcf3a2556bab76
 Description: Full-text search for PostgreSQL using BM25
 
 Package: postgresql-16-pg-sqlog

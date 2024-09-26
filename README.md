@@ -155,10 +155,9 @@ Prepacked RPM & DEB binary packages for the following software.
 - [mcli](https://github.com/minio/mc): 20240817113350
 - [sealos](https://github.com/labring/sealos): 5.0.0
 - [ferretdb](https://github.com/FerretDB/FerretDB): 1.23.1
-- [paradedb](https://github.com/paradedb/paradedb): 0.9.1
+- [paradedb](https://github.com/paradedb/paradedb): pg_search 0.10.2, pg_analytics 0.1.4
 - [tigerbeetle](https://github.com/tigerbeetle/tigerbeetle): 0.15.6
 - [cloudberrydb](https://github.com/cloudberrydb/cloudberrydb): 1.5.4
-- [polardb pg](https://github.com/ApsaraDB/PolarDB-for-PostgreSQL): 11.9.20.0-20240504113514
 
 **PostgreSQL Tools**:
 

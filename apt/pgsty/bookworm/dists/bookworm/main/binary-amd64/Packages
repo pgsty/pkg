@@ -5690,17 +5690,17 @@ Description: debug symbols for postgresql-14-permuteseq
 Build-Ids: 2ae169e58d9da32c218467b1048af137076345b0
 
 Package: postgresql-14-pg-analytics
-Version: 0.1.1
+Version: 0.1.4
 Architecture: amd64
 Depends: postgresql-14
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-14-pg-analytics/postgresql-14-pg-analytics_0.1.1_amd64.deb
-Size: 9051252
-SHA256: b6e88e123061761d9e3ed8e29af31e6f8d23ce4bfac0bab8b521bf3e044ce61d
-SHA1: bc00309def77c76a992bd2c79f71b5d519cb93bf
-MD5sum: 5170a89d912f6be2e278ae0c0830bea1
+Filename: pool/main/p/postgresql-14-pg-analytics/postgresql-14-pg-analytics_0.1.4_amd64.deb
+Size: 9091788
+SHA256: 94c586c604cae9c3e997e44c1e851c0f07f292df8790a5739d75f3f48106522b
+SHA1: 48b98e228ed6274ccb6ae612652c5f0a3d36b95d
+MD5sum: 80a013048fbba000e754c957587157ea
 Description: DuckDB-powered analytics for Postgres
 
 Package: postgresql-14-pg-arraymath
@@ -6527,17 +6527,17 @@ Description: A postgres extension to avoid accidental mistakes
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
 Package: postgresql-14-pg-search
-Version: 0.9.2
+Version: 0.10.2
 Architecture: amd64
 Depends: postgresql-14
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.9.2_amd64.deb
-Size: 46240540
-SHA256: ee19223d1f34f86260fad292d4ec6581177f91b7ce196e90da0c94060fd99f8c
-SHA1: d316b831c3bb63768464541e778f8e23c4796af6
-MD5sum: 594468abfa484018680e851aab95ee5e
+Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.10.2_amd64.deb
+Size: 46384168
+SHA256: 92176c322ea78887c5c3ee6a6c03aaa77dfb715f0321585907acaff71ef004f0
+SHA1: fc508c78273c379a96d4a4891b977075ccf16fec
+MD5sum: 61b14fc04c3d1fbe81b23167a902dc37
 Description: Full-text search for PostgreSQL using BM25
 
 Package: postgresql-14-pg-sqlog
@@ -8298,17 +8298,17 @@ Description: debug symbols for postgresql-15-permuteseq
 Build-Ids: ba66897e2e9cc6c529bf51f43c605f8f18662a3b
 
 Package: postgresql-15-pg-analytics
-Version: 0.1.1
+Version: 0.1.4
 Architecture: amd64
 Depends: postgresql-15
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-15-pg-analytics/postgresql-15-pg-analytics_0.1.1_amd64.deb
-Size: 9048400
-SHA256: 2606a9258768a85e1730152800516806cf4687ee00903af5ce0501d4343e3f6e
-SHA1: 08de1c3a932a3b32bcd7aec8208be84a33bbbe66
-MD5sum: 373c53ae871138316728aa327a41b13d
+Filename: pool/main/p/postgresql-15-pg-analytics/postgresql-15-pg-analytics_0.1.4_amd64.deb
+Size: 9110520
+SHA256: 4d0b130da846a38c46b447472cdb7698e43a2269a0a45f6178738c2e0a2f6900
+SHA1: 0b797ee70c908f0aaa2a1f49d01821ef2018c87f
+MD5sum: 2ab134f57c56b24e91b3087f4e33e199
 Description: DuckDB-powered analytics for Postgres
 
 Package: postgresql-15-pg-arraymath
@@ -9135,17 +9135,17 @@ Description: A postgres extension to avoid accidental mistakes
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
 Package: postgresql-15-pg-search
-Version: 0.9.2
+Version: 0.10.2
 Architecture: amd64
 Depends: postgresql-15
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.9.2_amd64.deb
-Size: 46241036
-SHA256: 0f469d8ae87021881f3add5566a4d4016b02da41d4393a0d45c28d9d8a400268
-SHA1: f3924c065e896ecf0d5554bae61b27582402833a
-MD5sum: 8dc753f099b27f9c9b8872eea1e74e84
+Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.10.2_amd64.deb
+Size: 46384204
+SHA256: 515cdca43b62bc2b0fbb80fcccfed51a92a2e8e6abc79118aaa60c7641a4dab2
+SHA1: f4826188058b06631aec9eb7097f5162c5ab7b15
+MD5sum: 9aab03a454294e17bed8025d7e4b265d
 Description: Full-text search for PostgreSQL using BM25
 
 Package: postgresql-15-pg-sqlog
@@ -10842,17 +10842,17 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 16
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
 Package: postgresql-16-pg-analytics
-Version: 0.1.1
+Version: 0.1.4
 Architecture: amd64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-analytics/postgresql-16-pg-analytics_0.1.1_amd64.deb
-Size: 9044308
-SHA256: 05f259e81c0aa7a68d81977f81161760f91d8fcde13f9568efea35805a10e12d
-SHA1: 1c2e9a9864446db7c8d5839b724757ab34117c65
-MD5sum: 5a3634270bad97c56c9361602e2c59ae
+Filename: pool/main/p/postgresql-16-pg-analytics/postgresql-16-pg-analytics_0.1.4_amd64.deb
+Size: 9098856
+SHA256: cf0ef6985a35fab007e59c570cd138f9ad3566cab359dc2828fcff70f31f6455
+SHA1: 8a9f4dd875355b05d2a7066b07abebde8bf3bcaf
+MD5sum: 0cc97427dca4ebda4b6e0ebe12eac1db
 Description: DuckDB-powered analytics for Postgres
 
 Package: postgresql-16-pg-arraymath
@@ -11619,17 +11619,17 @@ Description: A postgres extension to avoid accidental mistakes
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
 Package: postgresql-16-pg-search
-Version: 0.9.2
+Version: 0.10.2
 Architecture: amd64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.9.2_amd64.deb
-Size: 46237008
-SHA256: 8aa6678c573d8e989d35785a365c15f30417073899bb3d6e400b3b1950383e15
-SHA1: 76481a239d787eb2098ccdf5b4b43932321b2183
-MD5sum: a5db1a7e78037f491c67def4ee9c1198
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.10.2_amd64.deb
+Size: 46388548
+SHA256: 664168a7a843f8cd5e426a06ccf5b2ccdb44d7acd3776d201a044afeb6a524b9
+SHA1: 1e2e12957278a20d2eb4166cf52acfb011bc99c2
+MD5sum: 11de6fc6a92c43f0f36d9bec9eb1ca76
 Description: Full-text search for PostgreSQL using BM25
 
 Package: postgresql-16-pg-sqlog
