@@ -29,18 +29,18 @@ MD5sum: 404e918f012790415d29c89dd030234a
 Description: Prometheus Blackbox prober exporter,  allows blackbox probing of endpoints over HTTP, HTTPS, DNS, TCP, ICMP and gRPC.
 
 Package: duckdb
-Version: 1.0.0-1
+Version: 1.1.0-1
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 44504
+Installed-Size: 48324
 Homepage: https://github.com/duckdb/duckdb
 Priority: optional
 Section: 
-Filename: pool/main/d/duckdb/duckdb_1.0.0-1_amd64.deb
-Size: 15704608
-SHA256: 202db8585ee5a5c9269a73ac98aa9bbe32709c96de6bd50990cda7fa1011f21b
-SHA1: 36026bf713bb3e2a80b805e5efd37fe45b696fb5
-MD5sum: a9ffbc450270b0292d191b7ef3af224e
+Filename: pool/main/d/duckdb/duckdb_1.1.0-1_amd64.deb
+Size: 17186900
+SHA256: fa4fd25b8fc9d13fbab8d20ced21139e9821663a7eab6cdb94caea1d95c5939a
+SHA1: 3f964421e0a070ffd12b66da80e20a4296825831
+MD5sum: e6ea3c97b68121fcde85ae9a670e235f
 Description: In-process SQL OLAP Database Management System
 
 Package: etcd

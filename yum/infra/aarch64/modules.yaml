@@ -167,9 +167,11 @@ data:
     - alertmanager-0:0.27.0-1.aarch64
     - blackbox_exporter-0:0.25.0-1.aarch64
     - duckdb-0:1.0.0-1.aarch64
+    - duckdb-0:1.1.0-1.aarch64
     - etcd-0:3.5.15-1.aarch64
     - ferretdb-0:1.23.1-1.aarch64
     - grafana-0:11.1.4-1.aarch64
+    - grafana-0:11.2.0-1.aarch64
     - kafka-0:3.8.0-1.noarch
     - kafka_exporter-0:1.8.0-1.aarch64
     - keepalived_exporter-0:1.3.3-1.aarch64
