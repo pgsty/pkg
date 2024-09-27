@@ -11,7 +11,7 @@
 CF_PATH = cf:/repo
 COS_PATH = cos://repo-1304744452
 DEVEL_PATH = sv:/data/pkg
-VERSION=v3.0.1
+VERSION=v3.0.3
 
 all:
 	@echo "pgsty repo"
@@ -43,7 +43,7 @@ upload-etc:
 
 us: upload-src
 upload-src:
-	cd src md5sum *.tgz > checksums
+	cd src && md5sum *.tgz > checksums
 	rclone sync -P --transfers=8 ./src/ $(CF_PATH)/src/
 	rclone sync -P --transfers=8 ./src/ $(COS_PATH)/src/
 	@echo "https://repo.pigsty.cc/src/pigsty-$(VERSION).tgz" @ "https://console.cloud.tencent.com/cdn/refresh?tab=url"
