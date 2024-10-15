@@ -120,6 +120,62 @@ Description: Copy a Postgres database to a target Postgres server (pg_dump | pg_
   To make a copy of a database to another server as quickly as possible,
   one would like to use the parallel options of pg_dump and still be able to stream the data to as many pg_restore jobs.
 
+Package: postgresql-14-pg-analytics
+Version: 0.2.0
+Architecture: amd64
+Depends: postgresql-14
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-14-pg-analytics/postgresql-14-pg-analytics_0.2.0_amd64.deb
+Size: 9852324
+SHA256: 9ebb56b86b06a506398e3ced4d378c5318cbc4bd6439ed6a780c0ec6e8e971ce
+SHA1: a2bba0c0167044cc41c285fb0ad4052cd52f0d51
+MD5sum: 7e3eeac9a1402d859d53e2eac0c88d6a
+Description: DuckDB-powered analytics for Postgres
+
+Package: postgresql-14-pg-search
+Version: 0.10.3
+Architecture: amd64
+Depends: postgresql-14
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.10.3_amd64.deb
+Size: 46380436
+SHA256: 560b484a02ba542d2a241a714c8e412c611066287f8c3a698b59b5884a3fb57f
+SHA1: a46766e5577771d3965c6b1eaf02451783a33559
+MD5sum: e2d1576a763c12b1c9b54cc725d356c8
+Description: Full-text search for PostgreSQL using BM25
+
+Package: postgresql-15-pg-analytics
+Version: 0.2.0
+Architecture: amd64
+Depends: postgresql-15
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-15-pg-analytics/postgresql-15-pg-analytics_0.2.0_amd64.deb
+Size: 9807948
+SHA256: 702b24df3260e877a6f536c4bdb139464ec9d45fe73bbe2dcd7bd8982cb96584
+SHA1: ef45a88d455af8aeaf53610eb0b5d1bb7b0c8469
+MD5sum: b28d085531cfc7e3f38473e0cda1c747
+Description: DuckDB-powered analytics for Postgres
+
+Package: postgresql-15-pg-search
+Version: 0.10.3
+Architecture: amd64
+Depends: postgresql-15
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.10.3_amd64.deb
+Size: 46384520
+SHA256: 4011924dd6189a408a974687880674dc33682c517e27a763e4a8a3b4443417ba
+SHA1: 39b0b790d7dd35c927360a04fd506bb9c94239b6
+MD5sum: 641fd464bf8b742d7be12dec6e12c32c
+Description: Full-text search for PostgreSQL using BM25
+
 Package: postgresql-16-aggs-for-arrays
 Source: aggs-for-arrays
 Version: 1.3.2-1PIGSTY~jammy
@@ -885,17 +941,17 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 16
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
 Package: postgresql-16-pg-analytics
-Version: 0.1.4
+Version: 0.2.0
 Architecture: amd64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-analytics/postgresql-16-pg-analytics_0.1.4_amd64.deb
-Size: 9140656
-SHA256: efb306e0ab45c1c1264218dab07defa99ae090793f07cbfad215cd9721822657
-SHA1: d940033ad3049cdf6edc7ebfb6cdb046568f2f69
-MD5sum: f02388e07d802ce2e2e7a78ade310ac2
+Filename: pool/main/p/postgresql-16-pg-analytics/postgresql-16-pg-analytics_0.2.0_amd64.deb
+Size: 9847892
+SHA256: d31ce13209673ad5920a7524daf1db8a5980171607c3a20f2ba37dc78f9b187d
+SHA1: 4eb1ac18d61ea594fc52314f139718f4983515ed
+MD5sum: ccfd9ccb6e21648fec4ccecfab7ff58b
 Description: DuckDB-powered analytics for Postgres
 
 Package: postgresql-16-pg-arraymath
@@ -1682,17 +1738,17 @@ Description: A postgres extension to avoid accidental mistakes
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
 Package: postgresql-16-pg-search
-Version: 0.10.2
+Version: 0.10.3
 Architecture: amd64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.10.2_amd64.deb
-Size: 46366656
-SHA256: dce841724ec58a0533149ecd350c178ef4e9227e5cc870d554cccd703d9b2b10
-SHA1: 89b8faee4f9d90a8e0052abd0cd873e7154bc44b
-MD5sum: 8eb395271bb6c4ddb6bcf3a2556bab76
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.10.3_amd64.deb
+Size: 46383680
+SHA256: 96dd4905816024a4fbc9edc1208735ef01c9960e81d0d5b07e9d17945cf7428e
+SHA1: 599611277ed092e0e81ef9bf4bc7d21b1594f860
+MD5sum: c8dcd4130ac330f9b23d98140c69997e
 Description: Full-text search for PostgreSQL using BM25
 
 Package: postgresql-16-pg-sqlog
@@ -2538,6 +2594,34 @@ MD5sum: 3ec668329147c24cbb69d05e51d6f340
 Description: Open-source full-text search of Chinese language
   zhparser is a PostgreSQL extension for full-text search of Chinese language (Mandarin Chinese).
   It implements a Chinese language parser base on the Simple Chinese Word Segmentation(SCWS).
+
+Package: postgresql-17-pg-analytics
+Version: 0.2.0
+Architecture: amd64
+Depends: postgresql-17
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-17-pg-analytics/postgresql-17-pg-analytics_0.2.0_amd64.deb
+Size: 9818624
+SHA256: 9aee216c723492297eb78ca5d1f4b7a84581118bfb9ebe279f83b83c266b102f
+SHA1: e0e14e3c712d930aeeb4ec70152494188182b5ec
+MD5sum: dd35bd701a14c480f476380438dc857a
+Description: DuckDB-powered analytics for Postgres
+
+Package: postgresql-17-pg-search
+Version: 0.10.3
+Architecture: amd64
+Depends: postgresql-17
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.10.3_amd64.deb
+Size: 46380504
+SHA256: bd8c1f105d63e586b4c1a03f3931380534a0c126c52b039297095daeeca0ab47
+SHA1: a9b617f21692ecb928ed8449c66da30882f6e264
+MD5sum: 5d78fa6a6667aba427c66a8fe43c8364
+Description: Full-text search for PostgreSQL using BM25
 
 Package: redis
 Version: 6:7.2.5-1rl1~jammy1

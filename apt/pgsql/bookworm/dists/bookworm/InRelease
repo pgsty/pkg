@@ -4,44 +4,44 @@ Hash: SHA256
 Origin: Pigsty
 Label: Pigsty PGSQL
 Codename: bookworm
-Date: Thu, 26 Sep 2024 08:04:31 UTC
+Date: Mon, 14 Oct 2024 14:14:53 UTC
 Architectures: amd64 arm64
 Components: main
 Description: pigsty apt repository for debian 12
 MD5Sum:
- 0a2140f2efb3db8122f35162114eae67 118608 main/binary-amd64/Packages
- 8a696ed476ce55ac579be2a123325cd9 34389 main/binary-amd64/Packages.gz
+ f2b9e7599ec0f70663ddfb727264c545 121569 main/binary-amd64/Packages
+ a75fce9c04dd100cb92477afd29671e0 35258 main/binary-amd64/Packages.gz
  05ff0d27e80014f75d65fcd4773761b8 120 main/binary-amd64/Release
- a3a4ea6d28deea23e989706da16e0110 2095 main/binary-arm64/Packages
- 6072ce0e4dc6ada344339f98f09b738f 1145 main/binary-arm64/Packages.gz
+ 4d74a56699597df62d84b6811000f02d 6043 main/binary-arm64/Packages
+ 88030f593522c9e3e0e2b91d629cbfda 2197 main/binary-arm64/Packages.gz
  4ba97c199ff1bf556636dca2fa102fd7 120 main/binary-arm64/Release
 SHA1:
- a084d98c59391466d57cc22801efb238713ee6a4 118608 main/binary-amd64/Packages
- f5381efb0c06735492f23aa1453da73309563fea 34389 main/binary-amd64/Packages.gz
+ 14ebdd2e1b989fbcb31d36a0107687d27d4297f1 121569 main/binary-amd64/Packages
+ caeea48e1f6b71aa98d79fbafb1b1d0f2f25f662 35258 main/binary-amd64/Packages.gz
  38c45f87567a9074e476a2920aa5d594f00e4ffd 120 main/binary-amd64/Release
- 8e95916ff87e87de40a750c9176a39f7e1cc81df 2095 main/binary-arm64/Packages
- 0c4c69f23a2ae2f60402badc67e6aa02801b383f 1145 main/binary-arm64/Packages.gz
+ 52b3c3c901aba81061c2bdf2a213b710dbd1a2b4 6043 main/binary-arm64/Packages
+ e41dc1c72a99f2836a07922e27ec4bedeea526ff 2197 main/binary-arm64/Packages.gz
  789a0d87520489e371f388175d30fa52a8643a58 120 main/binary-arm64/Release
 SHA256:
- 5420d7e4119744bea78647067e7b32c3a065eb2e0c02ba798bd9dd27a91adcf4 118608 main/binary-amd64/Packages
- 01fa75c7ead039dc40ce9c3b81870880c3ca7dc86d18bea9e51d60fd398b8d12 34389 main/binary-amd64/Packages.gz
+ d1da5acfbac075387dfad93a7203e61714098b3dd59a2ccf51a8cecb7dfd48b0 121569 main/binary-amd64/Packages
+ b7149705a541a79b8e412a58759b4377661d1396a28ef4235283f0a1d82fcf51 35258 main/binary-amd64/Packages.gz
  5f2931fd66418a72660c45f9de6b7117635244edb08681bdac30d79de4b74b83 120 main/binary-amd64/Release
- f4fb9c376e6d8c04e574332c084aedb0bc1eb89304536920d3a5990315c11cec 2095 main/binary-arm64/Packages
- 94043060cec4b2bcc7f20e148a9493b82d63fd2e6b22d2f70b19737ff791dfd0 1145 main/binary-arm64/Packages.gz
+ d33437b4e6ac518db7e75fd7745455e68222eb9ff054decf5b31905be0e26055 6043 main/binary-arm64/Packages
+ 469b8a007e79d7a6251b1b4ec96111908f569785830abf2ec9a9d24145997626 2197 main/binary-arm64/Packages.gz
  ec0250476e050c9b46c69624a17f67fb20f9545cb54d7a83977a6fbfa5a5b3fc 120 main/binary-arm64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEElZKnvHpoLnMzN24J55Ndjbm9iyAFAmb1FZAACgkQ55Ndjbm9
-iyA3dA/+MSTjZG097nbYGvDhKkK9MK6rvYtziLEoEOeF97R0hqsvMxcYZiFZP9fS
-/VS3WyrhcWa5OGNiB+Q+eulTVY4BrQk1LbYGwlggs9eo0/GgjA5v71CFCo47A3dH
-AUIPUS6HTlHdx9PjAIWWuUhYkGkjlHe7tZPCH+AgBgtoxLGEKw/PViOWGVBDOPuX
-LxOvI3HXK9yf1ba/yzd5f1msf9HoXw2dytndTFSQc5D7EwKWz5tUtDSniyUFRTXF
-J9+DGp4mE2M5K88kx/2b+InnNGi57Rop1wEdb3qDvyxhW8v4/3KU/9Ixbq8nTw+x
-/+zUUGZOhQm+LGkV1ZpU7wtRi4Ol7++5p4FiRsmh0Jv2YUuutpuOJF27DaAQCNpS
-rRAP8mlszeSHDkbkl1/0ZbXjNB9/IpeiPwLVBW1sfmHspp/ifyrKOGPbOKfpiPHI
-J3s30z3k6mlelqL0JPVeKYhXQYR+KDps61aS8GsYSgPf+sip7lcHv3GQNNcL2MZi
-THtOQyEGA+aiRLv8Eq6aNsgAP5kG+EC//4VN72tELUrxf4zGebaDMiToDlF/lVjw
-B1TkpHYTTrpQkNQX38psV9KVr+dVR5/X6DT2RfXWSCZOt9ibdrDmqIxYzNLEKhLw
-iC60rix2Y3aV9t7yTzMA8qBW5XAoYX8X4lisw8Q1dCLkfyYgvNY=
-=Sf2O
+iQIzBAEBCAAdFiEElZKnvHpoLnMzN24J55Ndjbm9iyAFAmcNJ10ACgkQ55Ndjbm9
+iyBu4Q//THs808vPy2d6zp1r+nCH7XvHEIs81/buMco3IY8HsIxO7pQaZGXH2Ab+
+u8YIElVbKPMA1RBlWvlVgJkWQbtXZxG+hElK5nJ9OlnSylQyyCGCky9jn3EqZY8u
+rfA20T42CnfOohoFRe+df2evCMGI5uN+ESMl48b1GLjqH524xmjkqFWsuzYaI4Xk
+1zFydcsrynaHM+44dd2m7+WWOnEJmzhuaYiQ870Mn5C8pLTmuczy3EQE+wk55J7W
+ifntJEYRf9gDfmJyZT0i9PjV8b82FFq82u9oaJ47DfzAmZmgOJKUPJiWEs229DHG
+UpG1MosAirhYufvn5DoMRMS2ucpMkA3pfpyvq2UcAdE0bya7FrvZvBZ1VG6BxP4F
+5+i+RgsfFuKWwO81nupJ6w2dlOjC+/XlQSEquA1VW43kboJornAU9pkjmci0Zaqr
+pEdfwnsOrOpzZqwTIpvf9cEbaB3whA/i/RjW6UT7+OhBleOJHVozfdJNPwUNbhWG
+rbz8u6j7PVs5341lhlfbAjW25k6v+ViRvElBqY8B+yv0MSmGyKgDCO5c3/62Y7mI
+RNSQQdMKYBmLyk6veparBMFuZPIQoObI3TFDt9avupFgOykbBPUTgXaoum9C8Ulj
+3p9+odyXbDAvM/ECv29x9YsfojFd4IZYAGh/lRINqUAW4UzH20c=
+=AU6t
 -----END PGP SIGNATURE-----
