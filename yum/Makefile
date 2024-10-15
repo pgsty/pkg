@@ -2,7 +2,7 @@
 # File      :   Makefile
 # Desc      :   yum repo shortcuts
 # Ctime     :   2024-07-28
-# Mtime     :   2024-09-06
+# Mtime     :   2024-10-15
 # Path      :   Makefile
 # Author    :   Ruohang Feng (rh@vonng.com)
 # License   :   AGPLv3
@@ -28,11 +28,8 @@ build:
 	./build	pgsql/el7.x86_64
 	./build	pgsql/el8.x86_64
 	./build	pgsql/el9.x86_64
-	./build	pgsty/el7.x86_64
-	./build	pgsty/el8.x86_64
-	./build	pgsty/el9.x86_64
-	./build	pgsty/el8.aarch64
-	./build	pgsty/el9.aarch64
+	./build	pgsql/el8.aarch64
+	./build	pgsql/el9.aarch64
 	./build	polar/el7.x86_64
 	./build	polar/el8.x86_64
 	./build	polar/el9.x86_64
@@ -52,11 +49,8 @@ builds:
 	./build	pgsql/el7.x86_64   sign
 	./build	pgsql/el8.x86_64   sign
 	./build	pgsql/el9.x86_64   sign
-	./build	pgsty/el7.x86_64   sign
-	./build	pgsty/el8.x86_64   sign
-	./build	pgsty/el9.x86_64   sign
-	./build	pgsty/el8.aarch64  sign
-	./build	pgsty/el9.aarch64  sign
+	./build	pgsql/el8.aarch64  sign
+	./build	pgsql/el9.aarch64  sign
 	./build	polar/el7.x86_64   sign
 	./build	polar/el8.x86_64   sign
 	./build	polar/el9.x86_64   sign
@@ -70,22 +64,6 @@ builds:
 	./build	gpsql/el8.x86_64   sign
 	./build	gpsql/el9.x86_64   sign
 
-adjust:
-	cp -f pgsty/el7.x86_64/scws*.rpm         pgsql/el7.x86_64/ || true
-	cp -f pgsty/el7.x86_64/pg_filedump*.rpm  pgsql/el7.x86_64/ || true
-	cp -f pgsty/el8.x86_64/scws*.rpm         pgsql/el8.x86_64/ || true
-	cp -f pgsty/el8.x86_64/libduckdb*.rpm    pgsql/el8.x86_64/ || true
-	cp -f pgsty/el8.x86_64/pg_filedump*.rpm  pgsql/el8.x86_64/ || true
-	cp -f pgsty/el8.x86_64/pg_search*.rpm    pgsql/el8.x86_64/ || true
-	cp -f pgsty/el8.x86_64/pg_lakehouse*.rpm pgsql/el8.x86_64/ || true
-	cp -f pgsty/el9.x86_64/scws*.rpm         pgsql/el9.x86_64/ || true
-	cp -f pgsty/el9.x86_64/libduckdb*.rpm    pgsql/el9.x86_64/ || true
-	cp -f pgsty/el9.x86_64/pg_filedump*.rpm  pgsql/el9.x86_64/ || true
-	#mv -f pgsty/el9.x86_64/pg_search*.rpm    pgsql/el9.x86_64/ || true
-	#mv -f pgsty/el9.x86_64/pg_lakehouse*.rpm pgsql/el9.x86_64/ || true
-	cp -f pgsty/el7.x86_64/*_15-*.rpm pgsql/el7.x86_64/ || true
-	cp -f pgsty/el8.x86_64/*_16-*.rpm pgsql/el8.x86_64/ || true
-	cp -f pgsty/el9.x86_64/*_16-*.rpm pgsql/el9.x86_64/ || true
 
 # building alias
 bb: pushd rb pulld

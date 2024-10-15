@@ -29,23 +29,27 @@ data:
       - pg_analytics_14
       - pg_analytics_15
       - pg_analytics_16
+      - pg_analytics_17
       - pg_lakehouse_14
       - pg_lakehouse_15
       - pg_lakehouse_16
       - pg_search_14
       - pg_search_15
       - pg_search_16
+      - pg_search_17
   api:
     rpms:
     - pg_analytics_14
     - pg_analytics_15
     - pg_analytics_16
+    - pg_analytics_17
     - pg_lakehouse_14
     - pg_lakehouse_15
     - pg_lakehouse_16
     - pg_search_14
     - pg_search_15
     - pg_search_16
+    - pg_search_17
   components:
     rpms:
       pg_analytics_14:
@@ -53,6 +57,8 @@ data:
       pg_analytics_15:
         rationale: Present in the repository
       pg_analytics_16:
+        rationale: Present in the repository
+      pg_analytics_17:
         rationale: Present in the repository
       pg_lakehouse_14:
         rationale: Present in the repository
@@ -66,15 +72,19 @@ data:
         rationale: Present in the repository
       pg_search_16:
         rationale: Present in the repository
+      pg_search_17:
+        rationale: Present in the repository
   artifacts:
     rpms:
-    - pg_analytics_14-0:0.1.4-1.el9.aarch64
-    - pg_analytics_15-0:0.1.4-1.el9.aarch64
-    - pg_analytics_16-0:0.1.4-1.el9.aarch64
+    - pg_analytics_14-0:0.2.0-1.el9.aarch64
+    - pg_analytics_15-0:0.2.0-1.el9.aarch64
+    - pg_analytics_16-0:0.2.0-1.el9.aarch64
+    - pg_analytics_17-0:0.2.0-1.el9.aarch64
     - pg_lakehouse_14-0:0.9.0-1.el9.aarch64
     - pg_lakehouse_15-0:0.9.0-1.el9.aarch64
     - pg_lakehouse_16-0:0.9.0-1.el9.aarch64
-    - pg_search_14-0:0.10.2-1.el9.aarch64
-    - pg_search_15-0:0.10.2-1.el9.aarch64
-    - pg_search_16-0:0.10.2-1.el9.aarch64
+    - pg_search_14-0:0.10.3-1.el9.aarch64
+    - pg_search_15-0:0.10.3-1.el9.aarch64
+    - pg_search_16-0:0.10.3-1.el9.aarch64
+    - pg_search_17-0:0.10.3-1.el9.aarch64
 ...

@@ -116,6 +116,14 @@ data:
       - decoder_raw_16-llvmjit
       - decoder_raw_17
       - decoder_raw_17-llvmjit
+      - duckdb_fdw_12
+      - duckdb_fdw_12-llvmjit
+      - duckdb_fdw_13
+      - duckdb_fdw_13-llvmjit
+      - duckdb_fdw_14
+      - duckdb_fdw_14-llvmjit
+      - duckdb_fdw_15
+      - duckdb_fdw_15-llvmjit
       - duckdb_fdw_16
       - duckdb_fdw_16-llvmjit
       - firebird_fdw_12
@@ -216,6 +224,12 @@ data:
       - hunspell_ru_ru_aot_15
       - hunspell_ru_ru_aot_16
       - hunspell_ru_ru_aot_17
+      - hydra_13
+      - hydra_13-llvmjit
+      - hydra_14
+      - hydra_14-llvmjit
+      - hydra_15
+      - hydra_15-llvmjit
       - hydra_16
       - hydra_16-llvmjit
       - icu_ext_12
@@ -761,6 +775,10 @@ data:
       - pgcozy_15
       - pgcozy_16
       - pgcozy_17
+      - pgdd_12
+      - pgdd_13
+      - pgdd_14
+      - pgdd_15
       - pgdd_16
       - pgextwlist_12
       - pgextwlist_12-llvmjit
@@ -786,6 +804,8 @@ data:
       - pgjwt_15
       - pgjwt_16
       - pgjwt_17
+      - pgml_14
+      - pgml_15
       - pgml_16
       - pgmq_12
       - pgmq_13
@@ -1002,8 +1022,18 @@ data:
       - toastinfo_16-llvmjit
       - toastinfo_17
       - toastinfo_17-llvmjit
+      - url_encode_12
+      - url_encode_12-llvmjit
+      - url_encode_13
+      - url_encode_13-llvmjit
+      - url_encode_14
+      - url_encode_14-llvmjit
+      - url_encode_15
+      - url_encode_15-llvmjit
       - url_encode_16
       - url_encode_16-llvmjit
+      - url_encode_17
+      - url_encode_17-llvmjit
       - vault_12
       - vault_13
       - vault_14
@@ -1117,6 +1147,14 @@ data:
     - decoder_raw_16-llvmjit
     - decoder_raw_17
     - decoder_raw_17-llvmjit
+    - duckdb_fdw_12
+    - duckdb_fdw_12-llvmjit
+    - duckdb_fdw_13
+    - duckdb_fdw_13-llvmjit
+    - duckdb_fdw_14
+    - duckdb_fdw_14-llvmjit
+    - duckdb_fdw_15
+    - duckdb_fdw_15-llvmjit
     - duckdb_fdw_16
     - duckdb_fdw_16-llvmjit
     - firebird_fdw_12
@@ -1217,6 +1255,12 @@ data:
     - hunspell_ru_ru_aot_15
     - hunspell_ru_ru_aot_16
     - hunspell_ru_ru_aot_17
+    - hydra_13
+    - hydra_13-llvmjit
+    - hydra_14
+    - hydra_14-llvmjit
+    - hydra_15
+    - hydra_15-llvmjit
     - hydra_16
     - hydra_16-llvmjit
     - icu_ext_12
@@ -1762,6 +1806,10 @@ data:
     - pgcozy_15
     - pgcozy_16
     - pgcozy_17
+    - pgdd_12
+    - pgdd_13
+    - pgdd_14
+    - pgdd_15
     - pgdd_16
     - pgextwlist_12
     - pgextwlist_12-llvmjit
@@ -1787,6 +1835,8 @@ data:
     - pgjwt_15
     - pgjwt_16
     - pgjwt_17
+    - pgml_14
+    - pgml_15
     - pgml_16
     - pgmq_12
     - pgmq_13
@@ -2003,8 +2053,18 @@ data:
     - toastinfo_16-llvmjit
     - toastinfo_17
     - toastinfo_17-llvmjit
+    - url_encode_12
+    - url_encode_12-llvmjit
+    - url_encode_13
+    - url_encode_13-llvmjit
+    - url_encode_14
+    - url_encode_14-llvmjit
+    - url_encode_15
+    - url_encode_15-llvmjit
     - url_encode_16
     - url_encode_16-llvmjit
+    - url_encode_17
+    - url_encode_17-llvmjit
     - vault_12
     - vault_13
     - vault_14
@@ -2123,6 +2183,14 @@ data:
       decoder_raw_16:
         rationale: Present in the repository
       decoder_raw_17:
+        rationale: Present in the repository
+      duckdb_fdw_12:
+        rationale: Present in the repository
+      duckdb_fdw_13:
+        rationale: Present in the repository
+      duckdb_fdw_14:
+        rationale: Present in the repository
+      duckdb_fdw_15:
         rationale: Present in the repository
       duckdb_fdw_16:
         rationale: Present in the repository
@@ -2285,6 +2353,12 @@ data:
       hunspell_ru_ru_aot_16:
         rationale: Present in the repository
       hunspell_ru_ru_aot_17:
+        rationale: Present in the repository
+      hydra_13:
+        rationale: Present in the repository
+      hydra_14:
+        rationale: Present in the repository
+      hydra_15:
         rationale: Present in the repository
       hydra_16:
         rationale: Present in the repository
@@ -2924,6 +2998,14 @@ data:
         rationale: Present in the repository
       pgcozy_17:
         rationale: Present in the repository
+      pgdd_12:
+        rationale: Present in the repository
+      pgdd_13:
+        rationale: Present in the repository
+      pgdd_14:
+        rationale: Present in the repository
+      pgdd_15:
+        rationale: Present in the repository
       pgdd_16:
         rationale: Present in the repository
       pgextwlist_12:
@@ -2961,6 +3043,10 @@ data:
       pgjwt_16:
         rationale: Present in the repository
       pgjwt_17:
+        rationale: Present in the repository
+      pgml_14:
+        rationale: Present in the repository
+      pgml_15:
         rationale: Present in the repository
       pgml_16:
         rationale: Present in the repository
@@ -3206,7 +3292,17 @@ data:
         rationale: Present in the repository
       toastinfo_17:
         rationale: Present in the repository
+      url_encode_12:
+        rationale: Present in the repository
+      url_encode_13:
+        rationale: Present in the repository
+      url_encode_14:
+        rationale: Present in the repository
+      url_encode_15:
+        rationale: Present in the repository
       url_encode_16:
+        rationale: Present in the repository
+      url_encode_17:
         rationale: Present in the repository
       vault_12:
         rationale: Present in the repository
@@ -3330,6 +3426,14 @@ data:
     - decoder_raw_16-llvmjit-0:1.0-1PIGSTY.el9.x86_64
     - decoder_raw_17-0:1.0-1PIGSTY.el9.x86_64
     - decoder_raw_17-llvmjit-0:1.0-1PIGSTY.el9.x86_64
+    - duckdb_fdw_12-0:1.0.0-1PIGSTY.el9.x86_64
+    - duckdb_fdw_12-llvmjit-0:1.0.0-1PIGSTY.el9.x86_64
+    - duckdb_fdw_13-0:1.0.0-1PIGSTY.el9.x86_64
+    - duckdb_fdw_13-llvmjit-0:1.0.0-1PIGSTY.el9.x86_64
+    - duckdb_fdw_14-0:1.0.0-1PIGSTY.el9.x86_64
+    - duckdb_fdw_14-llvmjit-0:1.0.0-1PIGSTY.el9.x86_64
+    - duckdb_fdw_15-0:1.0.0-1PIGSTY.el9.x86_64
+    - duckdb_fdw_15-llvmjit-0:1.0.0-1PIGSTY.el9.x86_64
     - duckdb_fdw_16-0:1.0.0-1PIGSTY.el9.x86_64
     - duckdb_fdw_16-llvmjit-0:1.0.0-1PIGSTY.el9.x86_64
     - firebird_fdw_12-0:1.4.0-1PIGSTY.el9.x86_64
@@ -3430,6 +3534,12 @@ data:
     - hunspell_ru_ru_aot_15-0:1.0-1PIGSTY.el9.x86_64
     - hunspell_ru_ru_aot_16-0:1.0-1PIGSTY.el9.x86_64
     - hunspell_ru_ru_aot_17-0:1.0-1PIGSTY.el9.x86_64
+    - hydra_13-0:1.1.2-1PIGSTY.el9.x86_64
+    - hydra_13-llvmjit-0:1.1.2-1PIGSTY.el9.x86_64
+    - hydra_14-0:1.1.2-1PIGSTY.el9.x86_64
+    - hydra_14-llvmjit-0:1.1.2-1PIGSTY.el9.x86_64
+    - hydra_15-0:1.1.2-1PIGSTY.el9.x86_64
+    - hydra_15-llvmjit-0:1.1.2-1PIGSTY.el9.x86_64
     - hydra_16-0:1.1.2-1PIGSTY.el9.x86_64
     - hydra_16-llvmjit-0:1.1.2-1PIGSTY.el9.x86_64
     - icu_ext_12-0:1.9.0-1PIGSTY.el9.x86_64
@@ -3653,9 +3763,7 @@ data:
     - pg_currency_16-llvmjit-0:0.0.3-1PIGSTY.el9.x86_64
     - pg_currency_17-0:0.0.3-1PIGSTY.el9.x86_64
     - pg_currency_17-llvmjit-0:0.0.3-1PIGSTY.el9.x86_64
-    - pg_duckdb_16-0:0.0.1-1PIGSTY.el9.x86_64
     - pg_duckdb_16-0:0.0.1-ba60ba7.el9.x86_64
-    - pg_duckdb_16-llvmjit-0:0.0.1-1PIGSTY.el9.x86_64
     - pg_duckdb_16-llvmjit-0:0.0.1-ba60ba7.el9.x86_64
     - pg_duckdb_17-0:0.0.1-ba60ba7.el9.x86_64
     - pg_duckdb_17-llvmjit-0:0.0.1-ba60ba7.el9.x86_64
@@ -3985,6 +4093,10 @@ data:
     - pgcozy_15-0:1.0-1PIGSTY.el9.x86_64
     - pgcozy_16-0:1.0-1PIGSTY.el9.x86_64
     - pgcozy_17-0:1.0-1PIGSTY.el9.x86_64
+    - pgdd_12-0:0.5.2-1PIGSTY.el9.x86_64
+    - pgdd_13-0:0.5.2-1PIGSTY.el9.x86_64
+    - pgdd_14-0:0.5.2-1PIGSTY.el9.x86_64
+    - pgdd_15-0:0.5.2-1PIGSTY.el9.x86_64
     - pgdd_16-0:0.5.2-1PIGSTY.el9.x86_64
     - pgextwlist_12-0:1.17-1PIGSTY.el9.x86_64
     - pgextwlist_12-llvmjit-0:1.17-1PIGSTY.el9.x86_64
@@ -4010,6 +4122,8 @@ data:
     - pgjwt_15-0:0.2.0-1PIGSTY.el9.x86_64
     - pgjwt_16-0:0.2.0-1PIGSTY.el9.x86_64
     - pgjwt_17-0:0.2.0-1PIGSTY.el9.x86_64
+    - pgml_14-0:2.9.3-1PIGSTY.el9.x86_64
+    - pgml_15-0:2.9.3-1PIGSTY.el9.x86_64
     - pgml_16-0:2.9.3-1PIGSTY.el9.x86_64
     - pgmq_12-0:1.4.4-1PIGSTY.el9.x86_64
     - pgmq_13-0:1.4.4-1PIGSTY.el9.x86_64
@@ -4235,8 +4349,18 @@ data:
     - toastinfo_16-llvmjit-0:1.4-1PIGSTY.el9.x86_64
     - toastinfo_17-0:1.4-1PIGSTY.el9.x86_64
     - toastinfo_17-llvmjit-0:1.4-1PIGSTY.el9.x86_64
+    - url_encode_12-0:1.2.5-1PIGSTY.el9.x86_64
+    - url_encode_12-llvmjit-0:1.2.5-1PIGSTY.el9.x86_64
+    - url_encode_13-0:1.2.5-1PIGSTY.el9.x86_64
+    - url_encode_13-llvmjit-0:1.2.5-1PIGSTY.el9.x86_64
+    - url_encode_14-0:1.2.5-1PIGSTY.el9.x86_64
+    - url_encode_14-llvmjit-0:1.2.5-1PIGSTY.el9.x86_64
+    - url_encode_15-0:1.2.5-1PIGSTY.el9.x86_64
+    - url_encode_15-llvmjit-0:1.2.5-1PIGSTY.el9.x86_64
     - url_encode_16-0:1.2.5-1PIGSTY.el9.x86_64
     - url_encode_16-llvmjit-0:1.2.5-1PIGSTY.el9.x86_64
+    - url_encode_17-0:1.2.5-1PIGSTY.el9.x86_64
+    - url_encode_17-llvmjit-0:1.2.5-1PIGSTY.el9.x86_64
     - vault_12-0:0.2.9-1PIGSTY.el9.x86_64
     - vault_13-0:0.2.9-1PIGSTY.el9.x86_64
     - vault_14-0:0.2.9-1PIGSTY.el9.x86_64
@@ -4245,7 +4369,6 @@ data:
     - vault_17-0:0.2.9-1PIGSTY.el9.x86_64
     - wrappers_14-0:0.4.2-1PIGSTY.el9.x86_64
     - wrappers_15-0:0.4.2-1PIGSTY.el9.x86_64
-    - wrappers_16-0:0.4.1-1PIGSTY.el9.x86_64
     - wrappers_16-0:0.4.2-1PIGSTY.el9.x86_64
     - zhparser_12-0:2.2-1PIGSTY.el9.x86_64
     - zhparser_12-llvmjit-0:2.2-1PIGSTY.el9.x86_64

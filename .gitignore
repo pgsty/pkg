@@ -9,26 +9,18 @@ tmp/
 # yum rpm
 yum/infra/x86_64/*.rpm
 yum/infra/aarch64/*.rpm
-
 yum/pgsql/el7.x86_64/*.rpm
 yum/pgsql/el8.x86_64/*.rpm
 yum/pgsql/el9.x86_64/*.rpm
-yum/pgsty/el7.x86_64/*.rpm
-yum/pgsty/el8.x86_64/*.rpm
-yum/pgsty/el9.x86_64/*.rpm
 yum/mssql/el7.x86_64/*.rpm
 yum/mssql/el8.x86_64/*.rpm
 yum/mssql/el9.x86_64/*.rpm
-
-yum/pgsty/el7.aarch64/*.rpm
-yum/pgsty/el8.aarch64/*.rpm
-yum/pgsty/el9.aarch64/*.rpm
-yum/pgsty/el7.x86_64/debug/*.rpm
-yum/pgsty/el8.x86_64/debug/*.rpm
-yum/pgsty/el9.x86_64/debug/*.rpm
-yum/pgsty/el7.aarch64/debug/*.rpm
-yum/pgsty/el8.aarch64/debug/*.rpm
-yum/pgsty/el9.aarch64/debug/*.rpm
+yum/pgsql/el7.aarch64/*.rpm
+yum/pgsql/el8.aarch64/*.rpm
+yum/pgsql/el9.aarch64/*.rpm
+yum/pgsql/el7.aarch64/debug/*.rpm
+yum/pgsql/el8.aarch64/debug/*.rpm
+yum/pgsql/el9.aarch64/debug/*.rpm
 
 
 yum/infra/x86_64/repodata/
