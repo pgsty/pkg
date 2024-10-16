@@ -21,74 +21,88 @@ Description: fast and reliable load balancing reverse proxy
  has request blocking capabilities and provides interface to display server
  status.
 
+Package: postgresql-13-pg-analytics
+Version: 0.2.1
+Architecture: amd64
+Depends: postgresql-13
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-13-pg-analytics/postgresql-13-pg-analytics_0.2.1_amd64.deb
+Size: 10054956
+SHA256: 74e7b58fdddfe9c7b78fc4e343a5dc02e03b816ede1d2d3dfb17ec4236eb16e2
+SHA1: 44a56e802fb0cd9aa62562203d8568e956883901
+MD5sum: f86a58166565533edf88a5fd533fa8cd
+Description: DuckDB-powered analytics for Postgres
+
 Package: postgresql-14-pg-analytics
-Version: 0.2.0
+Version: 0.2.1
 Architecture: amd64
 Depends: postgresql-14
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-14-pg-analytics/postgresql-14-pg-analytics_0.2.0_amd64.deb
-Size: 10050932
-SHA256: e6bbef6fda9100f208e691ac87687399f0e544dd5fa1092139b5849d77578839
-SHA1: 2a6ac9e4c691af2889b5927c24a2d8b18755f751
-MD5sum: d3af3352b2d589fb607da0fec369a96b
+Filename: pool/main/p/postgresql-14-pg-analytics/postgresql-14-pg-analytics_0.2.1_amd64.deb
+Size: 10038372
+SHA256: 78bfae518b0dc096858c4657603b8bd55684d7e6f3b6681dc6d20134a979323c
+SHA1: b0bf59f638f1cfa09322927a1386b049aeaa1ec6
+MD5sum: 174c4ddc9a5f0d907144684d5ae4e7c3
 Description: DuckDB-powered analytics for Postgres
 
 Package: postgresql-14-pg-search
-Version: 0.10.3
+Version: 0.11.0
 Architecture: amd64
 Depends: postgresql-14
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.10.3_amd64.deb
-Size: 46396896
-SHA256: dec100cb261e9afcc2674cecc63e6e3badef089a9b96e8158c77f792cbc66eaa
-SHA1: 6e341f73f1e16157a2388246b43e33e03028da97
-MD5sum: f27c7c61c845f82b582f94aa610dec42
+Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.11.0_amd64.deb
+Size: 45781884
+SHA256: cf1b4c8b98d8b22321aa261924da227fe01b14e3369ff9e2d9866fbfce847d51
+SHA1: a0c7ed63afe72d0ceb74bd2af7a2ce393c60418f
+MD5sum: 345a23335e98e52915bced7d248102ec
 Description: Full-text search for PostgreSQL using BM25
 
 Package: postgresql-15-pg-analytics
-Version: 0.2.0
+Version: 0.2.1
 Architecture: amd64
 Depends: postgresql-15
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-15-pg-analytics/postgresql-15-pg-analytics_0.2.0_amd64.deb
-Size: 10029916
-SHA256: 06afbe8aeb5687ab713d507bb1141b0b2d6a3488737a1b9c30ab31932e139247
-SHA1: 1d315f744b244b7d6569da54e9617e15c141a45b
-MD5sum: ad398ae08154275ca6fff1bfc8c878ec
+Filename: pool/main/p/postgresql-15-pg-analytics/postgresql-15-pg-analytics_0.2.1_amd64.deb
+Size: 10038836
+SHA256: 481422e679abc3e423aee6e2217fe15dd335e754bb0519c6e668ab7dbec739f8
+SHA1: 439e5d7025aeea047f6ebde37e666c2305dada75
+MD5sum: 6da174aa00cf2c19afa4cddd95ba9462
 Description: DuckDB-powered analytics for Postgres
 
 Package: postgresql-15-pg-search
-Version: 0.10.3
+Version: 0.11.0
 Architecture: amd64
 Depends: postgresql-15
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.10.3_amd64.deb
-Size: 46395928
-SHA256: daf14255324391a7f0b93f448f0e0516db63bd212916bd9dbb9ea70c9f520a56
-SHA1: f56429f057cb44214cf08bb1c5b0543987af1377
-MD5sum: a1efbf5d1788d28b1139d09f976e36cc
+Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.11.0_amd64.deb
+Size: 45782268
+SHA256: e5f1d5b7ed0296f3d356f4ecb6293737e5aa52a1a6ee68dd86e3dd09df70627f
+SHA1: 131c6b640781b3ed53ec26fc2c8c0566c6d14315
+MD5sum: b9748a8e426a037cb6890b56e0bc1b67
 Description: Full-text search for PostgreSQL using BM25
 
 Package: postgresql-16-pg-analytics
-Version: 0.2.0
+Version: 0.2.1
 Architecture: amd64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-analytics/postgresql-16-pg-analytics_0.2.0_amd64.deb
-Size: 10021196
-SHA256: 758f5807cb3b29f2ff1045495aff856284bb2f7543ed386def35d58fdd447126
-SHA1: f81e98a1e57700a1e114f5c054bc66ae3bccb78a
-MD5sum: d47daab6f38cda68cb0472e09c2f682f
+Filename: pool/main/p/postgresql-16-pg-analytics/postgresql-16-pg-analytics_0.2.1_amd64.deb
+Size: 10039900
+SHA256: da1f0e8f71f54fd035aa798b16394c4e3cad8f1a3ef150a8d100f67c5211df13
+SHA1: 0cd124dc9ea3284c84de8abd05e6612bc8b4b4f1
+MD5sum: ae476842110fe6908bd22762186809e8
 Description: DuckDB-powered analytics for Postgres
 
 Package: postgresql-16-pg-lakehouse
@@ -106,44 +120,44 @@ MD5sum: 4b8ac8e85bfb54258a2227ebab3e58dc
 Description: An analytical query engine for Postgres
 
 Package: postgresql-16-pg-search
-Version: 0.10.3
+Version: 0.11.0
 Architecture: amd64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.10.3_amd64.deb
-Size: 46396456
-SHA256: 74d4840a7411f756f430938aec0bee4a83d7f9693a2b9ddc4bb2e494529c9bda
-SHA1: 49373a9bf922fc4961adde3fb308fa8cb80f0d3f
-MD5sum: b25ae3967f301bd7328d8489a68834e2
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.11.0_amd64.deb
+Size: 45782256
+SHA256: 76472e4b7cd8f1381faf9c85faeb06d2bfc11b7566b889ca14a2372a864496ec
+SHA1: f42c98f32488c8e505b608c397e855e3b202af88
+MD5sum: d5d9e13416474dc7e00f79c6a2c618d5
 Description: Full-text search for PostgreSQL using BM25
 
 Package: postgresql-17-pg-analytics
-Version: 0.2.0
+Version: 0.2.1
 Architecture: amd64
 Depends: postgresql-17
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-17-pg-analytics/postgresql-17-pg-analytics_0.2.0_amd64.deb
-Size: 10009488
-SHA256: 98a7ce20f4038abc78e634f1e257ff157b98ea2694854f6c00509a890fef3dad
-SHA1: 227a43c7d5c6b93dbe5257f870e037bc2ebc1f20
-MD5sum: def8106103274cce7233f7b5a618c620
+Filename: pool/main/p/postgresql-17-pg-analytics/postgresql-17-pg-analytics_0.2.1_amd64.deb
+Size: 10041896
+SHA256: 3e2a36b272495b0c6a11bfdc11113c023a7b145e2973be317c69da58bedf1369
+SHA1: ea4077e440a8462f5edc2dab4bdf7cced1520348
+MD5sum: c821615de191a30ff789f9946fda4774
 Description: DuckDB-powered analytics for Postgres
 
 Package: postgresql-17-pg-search
-Version: 0.10.3
+Version: 0.11.0
 Architecture: amd64
 Depends: postgresql-17
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.10.3_amd64.deb
-Size: 46395012
-SHA256: a621087154dbd7c833589f4e171123ebf667fc136a7fe63e2d17eae7ac4ee5be
-SHA1: 697b3739187361d4ae9f508ad41b7e0afee9b969
-MD5sum: d41b5c6d6c26168099b9fa1e762562b3
+Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.11.0_amd64.deb
+Size: 45781964
+SHA256: 04152231b1feeb227592f07f5ef7d6ab67e249986b723a276af36b43360e9402
+SHA1: 3e647e8e3ec040eedd819366fe51651d9b49c67a
+MD5sum: 4c056730c4947ef149bb758cf23ae114
 Description: Full-text search for PostgreSQL using BM25
 
