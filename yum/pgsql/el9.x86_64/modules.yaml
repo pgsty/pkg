@@ -863,6 +863,8 @@ data:
       - pgsphere_16-llvmjit
       - pgsphere_17
       - pgsphere_17-llvmjit
+      - pgvectorscale_13
+      - pgvectorscale_14
       - pgvectorscale_15
       - pgvectorscale_16
       - pgvectorscale_17
@@ -1043,6 +1045,7 @@ data:
       - wrappers_14
       - wrappers_15
       - wrappers_16
+      - wrappers_17
       - zhparser_12
       - zhparser_12-llvmjit
       - zhparser_13
@@ -1894,6 +1897,8 @@ data:
     - pgsphere_16-llvmjit
     - pgsphere_17
     - pgsphere_17-llvmjit
+    - pgvectorscale_13
+    - pgvectorscale_14
     - pgvectorscale_15
     - pgvectorscale_16
     - pgvectorscale_17
@@ -2074,6 +2079,7 @@ data:
     - wrappers_14
     - wrappers_15
     - wrappers_16
+    - wrappers_17
     - zhparser_12
     - zhparser_12-llvmjit
     - zhparser_13
@@ -3118,6 +3124,10 @@ data:
         rationale: Present in the repository
       pgsphere_17:
         rationale: Present in the repository
+      pgvectorscale_13:
+        rationale: Present in the repository
+      pgvectorscale_14:
+        rationale: Present in the repository
       pgvectorscale_15:
         rationale: Present in the repository
       pgvectorscale_16:
@@ -3321,6 +3331,8 @@ data:
       wrappers_15:
         rationale: Present in the repository
       wrappers_16:
+        rationale: Present in the repository
+      wrappers_17:
         rationale: Present in the repository
       zhparser_12:
         rationale: Present in the repository
@@ -4184,8 +4196,9 @@ data:
     - pgsphere_16-llvmjit-0:1.5.1-1PIGSTY.el9.x86_64
     - pgsphere_17-0:1.5.1-1PIGSTY.el9.x86_64
     - pgsphere_17-llvmjit-0:1.5.1-1PIGSTY.el9.x86_64
+    - pgvectorscale_13-0:0.4.0-1PIGSTY.el9.x86_64
+    - pgvectorscale_14-0:0.4.0-1PIGSTY.el9.x86_64
     - pgvectorscale_15-0:0.4.0-1PIGSTY.el9.x86_64
-    - pgvectorscale_16-0:0.2.0-1PIGSTY.el9.x86_64
     - pgvectorscale_16-0:0.4.0-1PIGSTY.el9.x86_64
     - pgvectorscale_17-0:0.4.0-1PIGSTY.el9.x86_64
     - pgxnclient-0:1.3.2-1.el9.x86_64
@@ -4307,18 +4320,16 @@ data:
     - smlar_14-llvmjit-0:1.0-1PIGSTY.el9.x86_64
     - smlar_15-0:1.0-1PIGSTY.el9.x86_64
     - smlar_15-llvmjit-0:1.0-1PIGSTY.el9.x86_64
-    - supautils_13-0:2.4.0-1PIGSTY.el9.x86_64
-    - supautils_13-llvmjit-0:2.4.0-1PIGSTY.el9.x86_64
-    - supautils_14-0:2.4.0-1PIGSTY.el9.x86_64
-    - supautils_14-llvmjit-0:2.4.0-1PIGSTY.el9.x86_64
-    - supautils_15-0:2.4.0-1PIGSTY.el9.x86_64
-    - supautils_15-llvmjit-0:2.4.0-1PIGSTY.el9.x86_64
-    - supautils_16-0:2.2.1-1PIGSTY.el9.x86_64
-    - supautils_16-0:2.4.0-1PIGSTY.el9.x86_64
-    - supautils_16-llvmjit-0:2.2.1-1PIGSTY.el9.x86_64
-    - supautils_16-llvmjit-0:2.4.0-1PIGSTY.el9.x86_64
-    - supautils_17-0:2.4.0-1PIGSTY.el9.x86_64
-    - supautils_17-llvmjit-0:2.4.0-1PIGSTY.el9.x86_64
+    - supautils_13-0:2.5.0-1PIGSTY.el9.x86_64
+    - supautils_13-llvmjit-0:2.5.0-1PIGSTY.el9.x86_64
+    - supautils_14-0:2.5.0-1PIGSTY.el9.x86_64
+    - supautils_14-llvmjit-0:2.5.0-1PIGSTY.el9.x86_64
+    - supautils_15-0:2.5.0-1PIGSTY.el9.x86_64
+    - supautils_15-llvmjit-0:2.5.0-1PIGSTY.el9.x86_64
+    - supautils_16-0:2.5.0-1PIGSTY.el9.x86_64
+    - supautils_16-llvmjit-0:2.5.0-1PIGSTY.el9.x86_64
+    - supautils_17-0:2.5.0-1PIGSTY.el9.x86_64
+    - supautils_17-llvmjit-0:2.5.0-1PIGSTY.el9.x86_64
     - table_log_12-0:0.6.1-1PIGSTY.el9.x86_64
     - table_log_12-llvmjit-0:0.6.1-1PIGSTY.el9.x86_64
     - table_log_13-0:0.6.1-1PIGSTY.el9.x86_64
@@ -4367,9 +4378,10 @@ data:
     - vault_15-0:0.2.9-1PIGSTY.el9.x86_64
     - vault_16-0:0.2.9-1PIGSTY.el9.x86_64
     - vault_17-0:0.2.9-1PIGSTY.el9.x86_64
-    - wrappers_14-0:0.4.2-1PIGSTY.el9.x86_64
-    - wrappers_15-0:0.4.2-1PIGSTY.el9.x86_64
-    - wrappers_16-0:0.4.2-1PIGSTY.el9.x86_64
+    - wrappers_14-0:0.4.3-1PIGSTY.el9.x86_64
+    - wrappers_15-0:0.4.3-1PIGSTY.el9.x86_64
+    - wrappers_16-0:0.4.3-1PIGSTY.el9.x86_64
+    - wrappers_17-0:0.4.3-1PIGSTY.el9.x86_64
     - zhparser_12-0:2.2-1PIGSTY.el9.x86_64
     - zhparser_12-llvmjit-0:2.2-1PIGSTY.el9.x86_64
     - zhparser_13-0:2.2-1PIGSTY.el9.x86_64
