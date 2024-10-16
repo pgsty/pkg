@@ -357,6 +357,7 @@ data:
       - permuteseq_16-llvmjit
       - permuteseq_17
       - permuteseq_17-llvmjit
+      - pg_analytics_13
       - pg_analytics_14
       - pg_analytics_15
       - pg_analytics_16
@@ -1391,6 +1392,7 @@ data:
     - permuteseq_16-llvmjit
     - permuteseq_17
     - permuteseq_17-llvmjit
+    - pg_analytics_13
     - pg_analytics_14
     - pg_analytics_15
     - pg_analytics_16
@@ -2513,6 +2515,8 @@ data:
       permuteseq_16:
         rationale: Present in the repository
       permuteseq_17:
+        rationale: Present in the repository
+      pg_analytics_13:
         rationale: Present in the repository
       pg_analytics_14:
         rationale: Present in the repository
@@ -3681,10 +3685,11 @@ data:
     - permuteseq_16-llvmjit-0:1.2.2-1PIGSTY.el9.x86_64
     - permuteseq_17-0:1.2.2-1PIGSTY.el9.x86_64
     - permuteseq_17-llvmjit-0:1.2.2-1PIGSTY.el9.x86_64
-    - pg_analytics_14-0:0.2.0-1.el9.x86_64
-    - pg_analytics_15-0:0.2.0-1.el9.x86_64
-    - pg_analytics_16-0:0.2.0-1.el9.x86_64
-    - pg_analytics_17-0:0.2.0-1.el9.x86_64
+    - pg_analytics_13-0:0.2.1-1.el9.x86_64
+    - pg_analytics_14-0:0.2.1-1.el9.x86_64
+    - pg_analytics_15-0:0.2.1-1.el9.x86_64
+    - pg_analytics_16-0:0.2.1-1.el9.x86_64
+    - pg_analytics_17-0:0.2.1-1.el9.x86_64
     - pg_arraymath_12-0:1.1-1PIGSTY.el9.x86_64
     - pg_arraymath_12-llvmjit-0:1.1-1PIGSTY.el9.x86_64
     - pg_arraymath_13-0:1.1-1PIGSTY.el9.x86_64
@@ -4014,10 +4019,10 @@ data:
     - pg_savior_15-llvmjit-0:0.0.1-1PIGSTY.el9.x86_64
     - pg_savior_16-0:0.0.1-1PIGSTY.el9.x86_64
     - pg_savior_16-llvmjit-0:0.0.1-1PIGSTY.el9.x86_64
-    - pg_search_14-0:0.10.3-1.el9.x86_64
-    - pg_search_15-0:0.10.3-1.el9.x86_64
-    - pg_search_16-0:0.10.3-1.el9.x86_64
-    - pg_search_17-0:0.10.3-1.el9.x86_64
+    - pg_search_14-0:0.11.0-1.el9.x86_64
+    - pg_search_15-0:0.11.0-1.el9.x86_64
+    - pg_search_16-0:0.11.0-1.el9.x86_64
+    - pg_search_17-0:0.11.0-1.el9.x86_64
     - pg_similarity_12-0:1.0-2PIGSTY.el9.x86_64
     - pg_similarity_12-llvmjit-0:1.0-2PIGSTY.el9.x86_64
     - pg_similarity_13-0:1.0-2PIGSTY.el9.x86_64
