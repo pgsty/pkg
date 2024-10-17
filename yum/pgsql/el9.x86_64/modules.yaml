@@ -452,6 +452,8 @@ data:
       - pg_currency_16-llvmjit
       - pg_currency_17
       - pg_currency_17-llvmjit
+      - pg_duckdb_15
+      - pg_duckdb_15-llvmjit
       - pg_duckdb_16
       - pg_duckdb_16-llvmjit
       - pg_duckdb_17
@@ -979,6 +981,8 @@ data:
       - session_variable_15-llvmjit
       - session_variable_16
       - session_variable_16-llvmjit
+      - session_variable_17
+      - session_variable_17-llvmjit
       - smlar_13
       - smlar_13-llvmjit
       - smlar_14
@@ -1487,6 +1491,8 @@ data:
     - pg_currency_16-llvmjit
     - pg_currency_17
     - pg_currency_17-llvmjit
+    - pg_duckdb_15
+    - pg_duckdb_15-llvmjit
     - pg_duckdb_16
     - pg_duckdb_16-llvmjit
     - pg_duckdb_17
@@ -2014,6 +2020,8 @@ data:
     - session_variable_15-llvmjit
     - session_variable_16
     - session_variable_16-llvmjit
+    - session_variable_17
+    - session_variable_17-llvmjit
     - smlar_13
     - smlar_13-llvmjit
     - smlar_14
@@ -2621,6 +2629,8 @@ data:
       pg_currency_16:
         rationale: Present in the repository
       pg_currency_17:
+        rationale: Present in the repository
+      pg_duckdb_15:
         rationale: Present in the repository
       pg_duckdb_16:
         rationale: Present in the repository
@@ -3254,6 +3264,8 @@ data:
         rationale: Present in the repository
       session_variable_16:
         rationale: Present in the repository
+      session_variable_17:
+        rationale: Present in the repository
       smlar_13:
         rationale: Present in the repository
       smlar_14:
@@ -3780,10 +3792,16 @@ data:
     - pg_currency_16-llvmjit-0:0.0.3-1PIGSTY.el9.x86_64
     - pg_currency_17-0:0.0.3-1PIGSTY.el9.x86_64
     - pg_currency_17-llvmjit-0:0.0.3-1PIGSTY.el9.x86_64
+    - pg_duckdb_15-0:0.0.1-d663d8a.el9.x86_64
+    - pg_duckdb_15-llvmjit-0:0.0.1-d663d8a.el9.x86_64
     - pg_duckdb_16-0:0.0.1-ba60ba7.el9.x86_64
+    - pg_duckdb_16-0:0.0.1-d663d8a.el9.x86_64
     - pg_duckdb_16-llvmjit-0:0.0.1-ba60ba7.el9.x86_64
+    - pg_duckdb_16-llvmjit-0:0.0.1-d663d8a.el9.x86_64
     - pg_duckdb_17-0:0.0.1-ba60ba7.el9.x86_64
+    - pg_duckdb_17-0:0.0.1-d663d8a.el9.x86_64
     - pg_duckdb_17-llvmjit-0:0.0.1-ba60ba7.el9.x86_64
+    - pg_duckdb_17-llvmjit-0:0.0.1-d663d8a.el9.x86_64
     - pg_ecdsa_12-0:1.0-1PIGSTY.el9.x86_64
     - pg_ecdsa_12-llvmjit-0:1.0-1PIGSTY.el9.x86_64
     - pg_ecdsa_13-0:1.0-1PIGSTY.el9.x86_64
@@ -3905,12 +3923,18 @@ data:
     - pg_idkit_16-0:0.2.4-1PIGSTY.el9.x86_64
     - pg_idkit_17-0:0.2.4-1PIGSTY.el9.x86_64
     - pg_jsonschema_12-0:0.3.2-1PIGSTY.el9.x86_64
+    - pg_jsonschema_12-0:0.3.3-1PIGSTY.el9.x86_64
     - pg_jsonschema_13-0:0.3.2-1PIGSTY.el9.x86_64
+    - pg_jsonschema_13-0:0.3.3-1PIGSTY.el9.x86_64
     - pg_jsonschema_14-0:0.3.2-1PIGSTY.el9.x86_64
+    - pg_jsonschema_14-0:0.3.3-1PIGSTY.el9.x86_64
     - pg_jsonschema_15-0:0.3.2-1PIGSTY.el9.x86_64
+    - pg_jsonschema_15-0:0.3.3-1PIGSTY.el9.x86_64
     - pg_jsonschema_16-0:0.3.1-1PIGSTY.el9.x86_64
     - pg_jsonschema_16-0:0.3.2-1PIGSTY.el9.x86_64
+    - pg_jsonschema_16-0:0.3.3-1PIGSTY.el9.x86_64
     - pg_jsonschema_17-0:0.3.2-1PIGSTY.el9.x86_64
+    - pg_jsonschema_17-0:0.3.3-1PIGSTY.el9.x86_64
     - pg_lakehouse_16-0:0.9.0-1.el9.x86_64
     - pg_later_16-0:0.1.1-1PIGSTY.el9.x86_64
     - pg_math_12-0:1.0-1PIGSTY.el9.x86_64
@@ -4309,16 +4333,18 @@ data:
     - sequential_uuids_16-llvmjit-0:1.0.2-1PIGSTY.el9.x86_64
     - sequential_uuids_17-0:1.0.2-1PIGSTY.el9.x86_64
     - sequential_uuids_17-llvmjit-0:1.0.2-1PIGSTY.el9.x86_64
-    - session_variable_12-0:3.3-1PIGSTY.el9.x86_64
-    - session_variable_12-llvmjit-0:3.3-1PIGSTY.el9.x86_64
-    - session_variable_13-0:3.3-1PIGSTY.el9.x86_64
-    - session_variable_13-llvmjit-0:3.3-1PIGSTY.el9.x86_64
-    - session_variable_14-0:3.3-1PIGSTY.el9.x86_64
-    - session_variable_14-llvmjit-0:3.3-1PIGSTY.el9.x86_64
-    - session_variable_15-0:3.3-1PIGSTY.el9.x86_64
-    - session_variable_15-llvmjit-0:3.3-1PIGSTY.el9.x86_64
-    - session_variable_16-0:3.3-1PIGSTY.el9.x86_64
-    - session_variable_16-llvmjit-0:3.3-1PIGSTY.el9.x86_64
+    - session_variable_12-0:3.4-1PIGSTY.el9.x86_64
+    - session_variable_12-llvmjit-0:3.4-1PIGSTY.el9.x86_64
+    - session_variable_13-0:3.4-1PIGSTY.el9.x86_64
+    - session_variable_13-llvmjit-0:3.4-1PIGSTY.el9.x86_64
+    - session_variable_14-0:3.4-1PIGSTY.el9.x86_64
+    - session_variable_14-llvmjit-0:3.4-1PIGSTY.el9.x86_64
+    - session_variable_15-0:3.4-1PIGSTY.el9.x86_64
+    - session_variable_15-llvmjit-0:3.4-1PIGSTY.el9.x86_64
+    - session_variable_16-0:3.4-1PIGSTY.el9.x86_64
+    - session_variable_16-llvmjit-0:3.4-1PIGSTY.el9.x86_64
+    - session_variable_17-0:3.4-1PIGSTY.el9.x86_64
+    - session_variable_17-llvmjit-0:3.4-1PIGSTY.el9.x86_64
     - smlar_13-0:1.0-1PIGSTY.el9.x86_64
     - smlar_13-llvmjit-0:1.0-1PIGSTY.el9.x86_64
     - smlar_14-0:1.0-1PIGSTY.el9.x86_64
