@@ -1397,17 +1397,17 @@ Source: pg-jsonschema
 Version: 0.3.2-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 3248
+Installed-Size: 3220
 Depends: postgresql-12, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Provides: postgresql-pg-jsonschema
 Homepage: https://github.com/supabase/pg_jsonschema
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-jsonschema/postgresql-12-pg-jsonschema_0.3.2-1PIGSTY~jammy_amd64.deb
-Size: 1083956
-SHA256: 7f9e5cc924cf66183c2803856ff0b23b06cca397bafb0b73073bf183878dd18d
-SHA1: f0c207e71a73bdfa43198f1b48cbe73d5b3b2f6d
-MD5sum: 1f88cd3696e91c07d4c75622456ef006
+Size: 1081952
+SHA256: 0802b09baa019272c0d124eb0b3f0765cf25c003b58884286307df0840a56e35
+SHA1: b110bab1c6181d8ea7f0cd2507405d7dd258d59e
+MD5sum: fdb0192f593936f036bdac8672924e29
 Description: PostgreSQL extension providing JSON Schema validation
   pg_jsonschema is a PostgreSQL extension adding support for JSON schema validation on json and jsonb data types.
 
@@ -2227,20 +2227,20 @@ Description: generator of sequential UUIDs
 
 Package: postgresql-12-session-variable
 Source: session-variable
-Version: 3.3-1PIGSTY~jammy
+Version: 3.4-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 261
+Installed-Size: 275
 Depends: postgresql-12, postgresql-12-jit-llvm (>= 15), libc6 (>= 2.14)
 Provides: postgresql-session-variable
 Homepage: https://github.com/splendiddata/session_variable
 Priority: optional
 Section: database
-Filename: pool/main/s/session-variable/postgresql-12-session-variable_3.3-1PIGSTY~jammy_amd64.deb
-Size: 72738
-SHA256: 01133f095450db237cf9581a3438f39e1bfe11f1d1ba03b7bef180a5321943e2
-SHA1: 7862398f929bb46e13b021c40ce909abf1973b3e
-MD5sum: 4f8f8ecc5ef54a7f8ca0ebfcf234b3d0
+Filename: pool/main/s/session-variable/postgresql-12-session-variable_3.4-1PIGSTY~jammy_amd64.deb
+Size: 72896
+SHA256: 8d624e62558236b424a83c19b8f6f9583c6264d27c234ff28b0c0d247e6aa54d
+SHA1: 03573283a314bd134d13ae68803025018f28d9bd
+MD5sum: 4520d9a6c183b48af8d5d6294ae181c2
 Description: The session_variable Postgres database extension provides a way to create and maintain session scoped variables and constants, more or less like Oracle's global variables.
   The session_variable Postgres database extension provides a way to create and maintain session scoped variables and constants. This extension can be part of a solution to mimic Oracle's global constants and variables.
 
@@ -3780,17 +3780,17 @@ Source: pg-jsonschema
 Version: 0.3.2-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 3248
+Installed-Size: 3220
 Depends: postgresql-13, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Provides: postgresql-pg-jsonschema
 Homepage: https://github.com/supabase/pg_jsonschema
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-jsonschema/postgresql-13-pg-jsonschema_0.3.2-1PIGSTY~jammy_amd64.deb
-Size: 1085290
-SHA256: a408b9a241316e40d483c09843a91cd4122d7ef4af35694ecd05db18cb3255e3
-SHA1: 4df0c35ef78bf955a198d4b87af967b07aea6f1e
-MD5sum: bc8a3d1622cd950c0aa80d19f660198c
+Size: 1079278
+SHA256: 7dbd15f74b6e21f9be030f32e5d6b291ea2d02de7de3edbbf3c0c6292de6f059
+SHA1: 030158c0b51fe3089739125f92a3c1f5a003ea38
+MD5sum: 82a96a50eb147158440cd213e0ea43af
 Description: PostgreSQL extension providing JSON Schema validation
   pg_jsonschema is a PostgreSQL extension adding support for JSON schema validation on json and jsonb data types.
 
@@ -4650,20 +4650,20 @@ Description: generator of sequential UUIDs
 
 Package: postgresql-13-session-variable
 Source: session-variable
-Version: 3.3-1PIGSTY~jammy
+Version: 3.4-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 263
+Installed-Size: 277
 Depends: postgresql-13, postgresql-13-jit-llvm (>= 15), libc6 (>= 2.14)
 Provides: postgresql-session-variable
 Homepage: https://github.com/splendiddata/session_variable
 Priority: optional
 Section: database
-Filename: pool/main/s/session-variable/postgresql-13-session-variable_3.3-1PIGSTY~jammy_amd64.deb
-Size: 71896
-SHA256: 5958fb46a47c0ca8961f2a748d33f94c8ef2ede3d35cd6b4f406206ba4a524da
-SHA1: 610748b083f0ab05aadd06ed7ac32f7c8ea5f910
-MD5sum: 8929a6549782eb54f70335675a4c594a
+Filename: pool/main/s/session-variable/postgresql-13-session-variable_3.4-1PIGSTY~jammy_amd64.deb
+Size: 72054
+SHA256: c3d2e77fb57ae6d2b37db4213d81d0a092a84c89ddca5ceffa023c0bd8c0771e
+SHA1: 71704b69603d0f30dafa87cf21c0ec6e28f4a332
+MD5sum: d4a2657caa9ee87eb558140140c62a90
 Description: The session_variable Postgres database extension provides a way to create and maintain session scoped variables and constants, more or less like Oracle's global variables.
   The session_variable Postgres database extension provides a way to create and maintain session scoped variables and constants. This extension can be part of a solution to mimic Oracle's global constants and variables.
 
@@ -6143,17 +6143,17 @@ Source: pg-graphql
 Version: 1.5.9-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 1985
+Installed-Size: 1977
 Depends: postgresql-14
 Provides: postgresql-pg-graphql
 Homepage: https://github.com/supabase/pg_graphql
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-graphql/postgresql-14-pg-graphql_1.5.9-1PIGSTY~jammy_amd64.deb
-Size: 732410
-SHA256: 1f50c29f808e88f0187e106b2e3c84fee2859fe62db25151f1b9d742bec865d7
-SHA1: ab4a2bef93dce1a95333a47a9274f0d566370c36
-MD5sum: c75b78615b5f8689458e60dd7bf2094d
+Size: 729702
+SHA256: 16f66a9b6acf99fc0bff74aa35d90f383212eeca70c753a91b11207a03e530f3
+SHA1: 2cbcf4697882eefaf00849bc62ff43a017623d1d
+MD5sum: 560db8bb2d489819565d3de55b410d69
 Description: reflects a GraphQL schema from the existing PostgresSQL 14 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via GraphQL with no additional servers, processes, or libraries.
@@ -6284,17 +6284,17 @@ Source: pg-jsonschema
 Version: 0.3.2-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 3248
+Installed-Size: 3220
 Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Provides: postgresql-pg-jsonschema
 Homepage: https://github.com/supabase/pg_jsonschema
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-jsonschema/postgresql-14-pg-jsonschema_0.3.2-1PIGSTY~jammy_amd64.deb
-Size: 1085826
-SHA256: 3f1fa0e2095ab005444ab7d713875719847ed98e5fcb31866d6b2ba1597ce204
-SHA1: f12ae45cbafbf018d17b9f5b780eff64cd90dc66
-MD5sum: 9e845ac83e7d0e3cf31d6a9b61f9f03d
+Size: 1079402
+SHA256: 91165e7d0a13f3880699c85d131d84ca956b1f3471dba03d1423ced4c11442c8
+SHA1: 881057e996b1455655f1aedde5516d9184198c53
+MD5sum: fd7dfb0e7bf17829b470495674d1cba6
 Description: PostgreSQL extension providing JSON Schema validation
   pg_jsonschema is a PostgreSQL extension adding support for JSON schema validation on json and jsonb data types.
 
@@ -7228,20 +7228,20 @@ Description: generator of sequential UUIDs
 
 Package: postgresql-14-session-variable
 Source: session-variable
-Version: 3.3-1PIGSTY~jammy
+Version: 3.4-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 264
+Installed-Size: 278
 Depends: postgresql-14, postgresql-14-jit-llvm (>= 15), libc6 (>= 2.14)
 Provides: postgresql-session-variable
 Homepage: https://github.com/splendiddata/session_variable
 Priority: optional
 Section: database
-Filename: pool/main/s/session-variable/postgresql-14-session-variable_3.3-1PIGSTY~jammy_amd64.deb
-Size: 72198
-SHA256: 8193257af46ff1db08f4f2443ab06e3a1677742668cc74b33ae9baee457facf3
-SHA1: b1edd9546928d26288ea3eff97e05cc8a30491d4
-MD5sum: 871080084d2e8ffc09ad4b265ccd7d1f
+Filename: pool/main/s/session-variable/postgresql-14-session-variable_3.4-1PIGSTY~jammy_amd64.deb
+Size: 72344
+SHA256: d30a839d75afd06b0aaa117266444af384c810c5508c466d25a56f872a66e0c1
+SHA1: a9cc6120c8fd98add88804c3b0cfe6d2713cc4ed
+MD5sum: 508ff34ca0cca7070669b4ef6f977d6f
 Description: The session_variable Postgres database extension provides a way to create and maintain session scoped variables and constants, more or less like Oracle's global variables.
   The session_variable Postgres database extension provides a way to create and maintain session scoped variables and constants. This extension can be part of a solution to mimic Oracle's global constants and variables.
 
@@ -7472,16 +7472,16 @@ Source: wrappers
 Version: 0.4.3-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 701
+Installed-Size: 364
 Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Homepage: https://github.com/supabase/wrappers
 Priority: optional
 Section: database
 Filename: pool/main/w/wrappers/postgresql-14-wrappers_0.4.3-1PIGSTY~jammy_amd64.deb
-Size: 153750
-SHA256: 307a370808d563ea20dff7816bf81c443e13fc1759b5e4df47fced52fc5efc66
-SHA1: 68de003c6e4ff545f881a3c337dc09a00f749676
-MD5sum: 439c5fc51d34cda5c01a0003361a5358
+Size: 153974
+SHA256: a0c10d708915d683f16c66020051aee9d8dba934d3ce91f40e6cb1a243fc4d3e
+SHA1: 9f57fdda421d8f25a7041baed60c16c2044d78f3
+MD5sum: 0e6a4d55fa41fe3f8992338d8795a625
 Description: Postgres Foreign Data Wrappers by Supabase
   Wrappers is a development framework for Postgres Foreign Data Wrappers (FDW), written in Rust.
   Its goal is to make Postgres FDW development easier while keeping Rust language's modern capabilities,
@@ -8555,6 +8555,27 @@ MD5sum: 56693aa0b9c8384d219d48305ffd0971
 Description: 1 Byte Currency ISO type for PostgreSQL
   A 1-byte ISO 4217 Currency Code data-type for PostgreSQL.
 
+Package: postgresql-15-pg-duckdb
+Source: pg-duckdb
+Version: 0.0.1-d663d8a
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 26576
+Depends: postgresql-15, postgresql-15-jit-llvm (>= 15), libc6 (>= 2.34), libgcc-s1 (>= 3.4), liblz4-1 (>= 0.0~r113), libpq5, libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
+Provides: postgresql-pg-duckdb
+Homepage: https://github.com/duckdb/pg_duckdb
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-duckdb/postgresql-15-pg-duckdb_0.0.1-d663d8a_amd64.deb
+Size: 7871748
+SHA256: 8a233f088bd28ae81b74394621542cdd662af333c8d08eb741a771088f70b16e
+SHA1: 2ac71c4d71a351a33484e90c0a803902b806d228
+MD5sum: 5d03f3673a3b612b165ba13c07376b67
+Description: DuckDB-powered Postgres for high performance apps & analytics.
+  pg_duckdb is a Postgres extension that embeds DuckDB's columnar-vectorized analytics engine and features into Postgres.
+  We recommend using pg_duckdb to build high performance analytics and data-intensive applications.
+  pg_duckdb was developed in collaboration with our partners, Hydra and MotherDuck.
+
 Package: postgresql-15-pg-ecdsa
 Source: pg-ecdsa
 Version: 1.0-1PIGSTY~jammy
@@ -8742,17 +8763,17 @@ Source: pg-graphql
 Version: 1.5.9-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 1985
+Installed-Size: 1977
 Depends: postgresql-15
 Provides: postgresql-pg-graphql
 Homepage: https://github.com/supabase/pg_graphql
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-graphql/postgresql-15-pg-graphql_1.5.9-1PIGSTY~jammy_amd64.deb
-Size: 732066
-SHA256: d8b770cdc24e39ee4ddcf7ac58fc81b259f387a80269e30a8f2c1143a6469a74
-SHA1: af15560f0e17ef59cece5089a59a27c2055b1668
-MD5sum: f8f070aca1654738ee5ae7453179e1c3
+Size: 730092
+SHA256: b0cdaf9218a6ba9e1112445b9840643b4917ac590ab35ff51713ff46f28b7f8a
+SHA1: 16c59d1b9565ff748c23cd9df115b80d290cfcfd
+MD5sum: 1667a63ebb310ef8961d02972306aaac
 Description: reflects a GraphQL schema from the existing PostgresSQL 15 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via GraphQL with no additional servers, processes, or libraries.
@@ -8883,17 +8904,17 @@ Source: pg-jsonschema
 Version: 0.3.2-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 3248
+Installed-Size: 3220
 Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Provides: postgresql-pg-jsonschema
 Homepage: https://github.com/supabase/pg_jsonschema
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-jsonschema/postgresql-15-pg-jsonschema_0.3.2-1PIGSTY~jammy_amd64.deb
-Size: 1085370
-SHA256: 3ddf0ec54d163ba59fd427c569ffdbb929a5da4bb8b59b6521124fe11a706afc
-SHA1: 289653b6b628d92d87be3333cfaf3ad3a3c2baaf
-MD5sum: 600c5382e8869f2f228db0bf84b979e1
+Size: 1079146
+SHA256: 71b9ce31e8c53acad3ca9767ca750f782b481d7ff2b6682b58ec098633a70287
+SHA1: edb67f0a29d0f4636c31c41cc3f9aacc0894e1cf
+MD5sum: 05db90ddfb1be0273c91f1103dcdd689
 Description: PostgreSQL extension providing JSON Schema validation
   pg_jsonschema is a PostgreSQL extension adding support for JSON schema validation on json and jsonb data types.
 
@@ -9845,20 +9866,20 @@ Description: generator of sequential UUIDs
 
 Package: postgresql-15-session-variable
 Source: session-variable
-Version: 3.3-1PIGSTY~jammy
+Version: 3.4-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 265
+Installed-Size: 279
 Depends: postgresql-15, postgresql-15-jit-llvm (>= 15), libc6 (>= 2.14)
 Provides: postgresql-session-variable
 Homepage: https://github.com/splendiddata/session_variable
 Priority: optional
 Section: database
-Filename: pool/main/s/session-variable/postgresql-15-session-variable_3.3-1PIGSTY~jammy_amd64.deb
-Size: 73472
-SHA256: 949b5518d57a0f786efc5c991c4f3f7954b50faf39b439b30e1783514b31e964
-SHA1: 59716ec5891598b67eb890af503ed143a6628a9d
-MD5sum: 45df219e5105bac6c74531f9d5fdfbe7
+Filename: pool/main/s/session-variable/postgresql-15-session-variable_3.4-1PIGSTY~jammy_amd64.deb
+Size: 73630
+SHA256: 67b9cbba1d3b6572b1a57440e48404b56042e77ff0b2e9279ef231ff601ff7a8
+SHA1: ebb2220a863de221481aae7f52e28f4fb781cc26
+MD5sum: 203665ac8b64e49cdf56b0262c6b7f37
 Description: The session_variable Postgres database extension provides a way to create and maintain session scoped variables and constants, more or less like Oracle's global variables.
   The session_variable Postgres database extension provides a way to create and maintain session scoped variables and constants. This extension can be part of a solution to mimic Oracle's global constants and variables.
 
@@ -10089,16 +10110,16 @@ Source: wrappers
 Version: 0.4.3-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 701
+Installed-Size: 364
 Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Homepage: https://github.com/supabase/wrappers
 Priority: optional
 Section: database
 Filename: pool/main/w/wrappers/postgresql-15-wrappers_0.4.3-1PIGSTY~jammy_amd64.deb
-Size: 153742
-SHA256: 7574d4d1f6f5ec90fef1574ae08b58484535553b3efd34795669f5cc383a56a7
-SHA1: e1afb6707e39291baac75f578fd16b6c9a80aba9
-MD5sum: 8817dd831a822df74f9065e64d0f5251
+Size: 153900
+SHA256: 6e4895060a8b7c851baade182d4d5324d22748975980b4da67626beb04998eee
+SHA1: b610553840a97d9b72197503e7956e7f66d18e78
+MD5sum: babf60673f98f37fa1e9aa9f90e89a9a
 Description: Postgres Foreign Data Wrappers by Supabase
   Wrappers is a development framework for Postgres Foreign Data Wrappers (FDW), written in Rust.
   Its goal is to make Postgres FDW development easier while keeping Rust language's modern capabilities,
@@ -11153,20 +11174,20 @@ Description: 1 Byte Currency ISO type for PostgreSQL
 
 Package: postgresql-16-pg-duckdb
 Source: pg-duckdb
-Version: 0.0.1-ba60ba7
+Version: 0.0.1-d663d8a
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 28920
-Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.34), libgcc-s1 (>= 3.4), liblz4-1 (>= 0.0~r113), libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
+Installed-Size: 26576
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.34), libgcc-s1 (>= 3.4), liblz4-1 (>= 0.0~r113), libpq5, libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
 Provides: postgresql-pg-duckdb
 Homepage: https://github.com/duckdb/pg_duckdb
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-duckdb/postgresql-16-pg-duckdb_0.0.1-ba60ba7_amd64.deb
-Size: 8646722
-SHA256: db4b87eda35f4232c54b204ac266e21cb8443f1d41cfe3f2d4a7dce15ab79436
-SHA1: 703c857326d3742004b71c4074fd79091795810c
-MD5sum: 5be34d71330b3f4caf26ef2161014ea7
+Filename: pool/main/p/pg-duckdb/postgresql-16-pg-duckdb_0.0.1-d663d8a_amd64.deb
+Size: 7871738
+SHA256: 5e9d89396011f050618276a5d664f507ef083a26d960f1157b390728d8b8e2bc
+SHA1: 951c4f7c1114f4f195cf8026c1710877c7f9b3bb
+MD5sum: 67d674d81fe87d52b4eb578880e0fddc
 Description: DuckDB-powered Postgres for high performance apps & analytics.
   pg_duckdb is a Postgres extension that embeds DuckDB's columnar-vectorized analytics engine and features into Postgres.
   We recommend using pg_duckdb to build high performance analytics and data-intensive applications.
@@ -11335,17 +11356,17 @@ Source: pg-graphql
 Version: 1.5.9-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 1985
+Installed-Size: 1977
 Depends: postgresql-16
 Provides: postgresql-pg-graphql
 Homepage: https://github.com/supabase/pg_graphql
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-graphql/postgresql-16-pg-graphql_1.5.9-1PIGSTY~jammy_amd64.deb
-Size: 732386
-SHA256: 1fcad665781c18e8e6edb59ce0b8f2de9b171ee895476a03b5bba0515ff7263e
-SHA1: 074fe5b640436ce855c28ca23e8ef256c2df3abf
-MD5sum: 4f737cf65e6983d4f5677785811b03ad
+Size: 729636
+SHA256: 6358688f276f6997117b804187fc7239448cb2810ddf3690b3260fa65c2ae068
+SHA1: 30acfea6e7609e1e7c381e341795021ffb3d4711
+MD5sum: 9092177480d15fda7d42b872bb1bd759
 Description: reflects a GraphQL schema from the existing PostgresSQL 16 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via GraphQL with no additional servers, processes, or libraries.
@@ -11476,17 +11497,17 @@ Source: pg-jsonschema
 Version: 0.3.2-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 3248
+Installed-Size: 3220
 Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Provides: postgresql-pg-jsonschema
 Homepage: https://github.com/supabase/pg_jsonschema
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-jsonschema/postgresql-16-pg-jsonschema_0.3.2-1PIGSTY~jammy_amd64.deb
-Size: 1085248
-SHA256: 731324e53d44d45805f829b9bd9bb57aad9d0a0855e6344506e1ea50ab509077
-SHA1: 290b423dac72184ee410c633d3ecd10c33a56089
-MD5sum: bd4693a6d4d46da5a0048d26d3b6cd7b
+Size: 1079074
+SHA256: 8f27c61a47981336aa56b9c4664e67e8fa29dabadbe18398ac5cfff336ceb00a
+SHA1: b2fbb5769fc888c2f57ae84c3ecbd2c4e608e29f
+MD5sum: 4d32f4a668537f3a78fb22762f8117d3
 Description: PostgreSQL extension providing JSON Schema validation
   pg_jsonschema is a PostgreSQL extension adding support for JSON schema validation on json and jsonb data types.
 
@@ -12468,20 +12489,20 @@ Description: generator of sequential UUIDs
 
 Package: postgresql-16-session-variable
 Source: session-variable
-Version: 3.3-1PIGSTY~jammy
+Version: 3.4-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 265
+Installed-Size: 279
 Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.14)
 Provides: postgresql-session-variable
 Homepage: https://github.com/splendiddata/session_variable
 Priority: optional
 Section: database
-Filename: pool/main/s/session-variable/postgresql-16-session-variable_3.3-1PIGSTY~jammy_amd64.deb
-Size: 73368
-SHA256: 31f906c0009353161db27907a4533b8d57a78d9f162a0c4de6842e5a49a38ac4
-SHA1: ceb890b025ea46faa36fb6510ade131a701e4558
-MD5sum: 93206e6506afbc80f17523e27dbf7a1b
+Filename: pool/main/s/session-variable/postgresql-16-session-variable_3.4-1PIGSTY~jammy_amd64.deb
+Size: 73530
+SHA256: 747d1e904cdaac6f1deb2f323b65f65fe844b1880ba3e56c6463cff3bad2da60
+SHA1: ccfaa4e0bdad31b378c8381f37fe1e1a59efffec
+MD5sum: 710e67c38383ed1d8dc93f85e0efdc4d
 Description: The session_variable Postgres database extension provides a way to create and maintain session scoped variables and constants, more or less like Oracle's global variables.
   The session_variable Postgres database extension provides a way to create and maintain session scoped variables and constants. This extension can be part of a solution to mimic Oracle's global constants and variables.
 
@@ -12693,16 +12714,16 @@ Source: wrappers
 Version: 0.4.3-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 701
+Installed-Size: 364
 Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Homepage: https://github.com/supabase/wrappers
 Priority: optional
 Section: database
 Filename: pool/main/w/wrappers/postgresql-16-wrappers_0.4.3-1PIGSTY~jammy_amd64.deb
-Size: 153726
-SHA256: 944da64b196675fbb6111ab0ba727e7c66ae1f47f7511f7c544ef79dc624a210
-SHA1: cd103bb19ad4ef8514f61bb2e5d23cc859a33871
-MD5sum: f65bf05312da0300599f92093f109125
+Size: 153916
+SHA256: 80b3496adfc4a24c290c441d736176689338af2ccdcf6d6f717a1910ef7f3e31
+SHA1: 6bfeb5f4f9e5d00bf70d67546a26d6a5954c6936
+MD5sum: 0886b104c9d1ad4b582504fc1132530b
 Description: Postgres Foreign Data Wrappers by Supabase
   Wrappers is a development framework for Postgres Foreign Data Wrappers (FDW), written in Rust.
   Its goal is to make Postgres FDW development easier while keeping Rust language's modern capabilities,
@@ -13616,20 +13637,20 @@ Description: 1 Byte Currency ISO type for PostgreSQL
 
 Package: postgresql-17-pg-duckdb
 Source: pg-duckdb
-Version: 0.0.1-ba60ba7
+Version: 0.0.1-d663d8a
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 28920
-Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libc6 (>= 2.34), libgcc-s1 (>= 3.4), liblz4-1 (>= 0.0~r113), libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
+Installed-Size: 26609
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libc6 (>= 2.34), libgcc-s1 (>= 3.4), liblz4-1 (>= 0.0~r113), libpq5, libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
 Provides: postgresql-pg-duckdb
 Homepage: https://github.com/duckdb/pg_duckdb
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-duckdb/postgresql-17-pg-duckdb_0.0.1-ba60ba7_amd64.deb
-Size: 8646668
-SHA256: e1993575b6122dc225b8c00fa747bf15c02c957d9fd29c99595fa99c631428a3
-SHA1: f1b0b6dcb3cc10bb2003af3ad5de81ab85bd7b74
-MD5sum: 19c4335aacfaf7a70703b664c0b66eb7
+Filename: pool/main/p/pg-duckdb/postgresql-17-pg-duckdb_0.0.1-d663d8a_amd64.deb
+Size: 7892462
+SHA256: deef28d30338c1b9c79a1193647528bbcdd5ba60cc0b3ab256c4a4942184eaea
+SHA1: f5830ac42f4c8c20c8f52c33c5e340e906d7def2
+MD5sum: 2a9510f78a3ef4436ca89711ec724483
 Description: DuckDB-powered Postgres for high performance apps & analytics.
   pg_duckdb is a Postgres extension that embeds DuckDB's columnar-vectorized analytics engine and features into Postgres.
   We recommend using pg_duckdb to build high performance analytics and data-intensive applications.
@@ -13785,10 +13806,10 @@ Homepage: https://github.com/supabase/pg_graphql
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-graphql/postgresql-17-pg-graphql_1.5.9-1PIGSTY~jammy_amd64.deb
-Size: 4978
-SHA256: aa7d361bd6a22e9eb63671d5dfec7adc911f28d51785798d4ddb5885eef27772
-SHA1: 3004a0b18f4f91e9f7ee5819d6d907cdb9ab0ce2
-MD5sum: d9439a8a2736a251114060469b082f79
+Size: 4962
+SHA256: c5781bcf39384eee3195615e6ba3413d9921ceb4c1757a58238843904db4881e
+SHA1: 070359e61c4c3679a04d0ac78bf0e65fbf38aec3
+MD5sum: 2e297775298ab4325d1d31795d865208
 Description: reflects a GraphQL schema from the existing PostgresSQL 17 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via GraphQL with no additional servers, processes, or libraries.
@@ -13905,10 +13926,10 @@ Homepage: https://github.com/supabase/pg_jsonschema
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-jsonschema/postgresql-17-pg-jsonschema_0.3.2-1PIGSTY~jammy_amd64.deb
-Size: 4876
-SHA256: 2b26599a7896decd82067b88a9ded6c0cf357577599f6b66ada6dcf18c97a871
-SHA1: fd41140cb94ec78dd2a2a88210181ab1eaffc466
-MD5sum: a2dd7003eef5ea8dc9754524ed447307
+Size: 4864
+SHA256: 268534d3ca48f102cf1077a7b05c191d77aeb707947c9b078ff381e259b970a2
+SHA1: 64470f38ee377a398a13408e33549f4aa37a7fa8
+MD5sum: 051fdd3c8d52ad59bd3544c8f9d1944a
 Description: PostgreSQL extension providing JSON Schema validation
   pg_jsonschema is a PostgreSQL extension adding support for JSON schema validation on json and jsonb data types.
 
@@ -14652,6 +14673,25 @@ Description: generator of sequential UUIDs
   This PostgreSQL extension implements two UUID generators with sequential patterns, which helps to reduce random I/O patterns associated with regular entirely-random UUID.
   Regular random UUIDs are distributed uniformly over the whole range of possible values. This results in poor locality when inserting data into indexes - all index leaf pages are equally likely to be hit, forcing the whole index into memory. With small indexes that's fine, but once the index size exceeds shared buffers (or RAM), the cache hit ratio quickly deteriorates.
 
+Package: postgresql-17-session-variable
+Source: session-variable
+Version: 3.4-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 280
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libc6 (>= 2.14)
+Provides: postgresql-session-variable
+Homepage: https://github.com/splendiddata/session_variable
+Priority: optional
+Section: database
+Filename: pool/main/s/session-variable/postgresql-17-session-variable_3.4-1PIGSTY~jammy_amd64.deb
+Size: 73948
+SHA256: 0eba15b881e459b182258e868358a96371cf29e1988e45fab5cfa6e0c87f1cf7
+SHA1: ca7e7a06cd8790c974fd199a9779151e980a9501
+MD5sum: 1f42cbb9e87cebdba89b0879ebdd03be
+Description: The session_variable Postgres database extension provides a way to create and maintain session scoped variables and constants, more or less like Oracle's global variables.
+  The session_variable Postgres database extension provides a way to create and maintain session scoped variables and constants. This extension can be part of a solution to mimic Oracle's global constants and variables.
+
 Package: postgresql-17-shacrypt
 Source: postgres-shacrypt
 Version: 1.1-1PIGSTY~jammy
@@ -14785,10 +14825,10 @@ Homepage: https://github.com/supabase/wrappers
 Priority: optional
 Section: database
 Filename: pool/main/w/wrappers/postgresql-17-wrappers_0.4.3-1PIGSTY~jammy_amd64.deb
-Size: 5248
-SHA256: 554e60a59298db5ca13cd5d4ad524eaaa844f90e68d4008d514c85066e899560
-SHA1: 362a12202df424bad505c913df98a8397c55aa56
-MD5sum: 04d040e3e3c19e17e9608b50261f0834
+Size: 5236
+SHA256: 7e189b7e873b1b579a3f9a91353ccecb288f4dac5ac26468288779eca9475ff5
+SHA1: 20eddf86a14f41ed5851996db5873bd468a8d10e
+MD5sum: bd1b06d63485165c3529e0bccb2cf771
 Description: Postgres Foreign Data Wrappers by Supabase
   Wrappers is a development framework for Postgres Foreign Data Wrappers (FDW), written in Rust.
   Its goal is to make Postgres FDW development easier while keeping Rust language's modern capabilities,
