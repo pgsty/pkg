@@ -2,7 +2,7 @@
 # File      :   Makefile
 # Desc      :   apt repo shortcuts
 # Ctime     :   2024-07-28
-# Mtime     :   2024-07-28
+# Mtime     :   2024-10-20
 # Path      :   Makefile
 # Author    :   Ruohang Feng (rh@vonng.com)
 # License   :   AGPLv3
@@ -18,7 +18,6 @@ DEVEL_PATH = sv:/data/pkg/apt
 init:
 	mkdir -p infra infra/{conf,db,dists,pool}
 	mkdir -p pgsql pgsql/{conf,db,dists,pool}
-	mkdir -p pgsty pgsty/{conf,db,dists,pool}
 
 clean:
 	rm -rf stash/*
@@ -44,12 +43,6 @@ purge:
 	rm -rf pgsql/noble/stash/*.deb
 	rm -rf pgsql/bookworm/stash/*.deb
 	rm -rf pgsql/bullseye/stash/*.deb
-	rm -rf pgsty/focal/stash/*.deb
-	rm -rf pgsty/jammy/stash/*.deb
-	rm -rf pgsty/noble/stash/*.deb
-	rm -rf pgsty/bookworm/stash/*.deb
-	rm -rf pgsty/bullseye/stash/*.deb
-
 
 ls-focal:
 	reprepro -b pgsql/focal list focal
@@ -69,24 +62,6 @@ ls-bullseye:
 pgsql-include:
 	reprepro -b pgsql includedeb bookworm stash/bookworm.amd64/postgresql-16*.deb
 	reprepro -b pgsql includedeb jammy    stash/jammy.amd64/postgresql-16*.deb
-
-
-sty-all: sty-focal sty-jammy sty-noble sty-bookworm sty-bullseye
-sty-focal:
-	reprepro -b pgsty/focal includedeb focal pgsty/focal/stash/*.deb
-sty-jammy:
-	reprepro -b pgsty/jammy includedeb jammy pgsty/jammy/stash/*.deb
-sty-noble:
-	reprepro -b pgsty/noble includedeb noble pgsty/noble/stash/*.deb
-sty-bookworm:
-	reprepro -b pgsty/bookworm includedeb bookworm pgsty/bookworm/stash/*.deb
-sty-bullseye:
-	reprepro -b pgsty/bullseye includedeb bullseye pgsty/bullseye/stash/*.deb
-
-pgsty-ls-jammy:
-	reprepro -b pgsty list jammy
-pgsty-ls-bookworm:
-	reprepro -b pgsty list bookworm
 
 
 ###############################################################

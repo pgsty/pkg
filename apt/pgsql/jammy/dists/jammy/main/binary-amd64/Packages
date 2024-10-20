@@ -1007,6 +1007,26 @@ Description: pg_background is an extension for Postgres 12
   Some modification has been done, by me, to keep it in sync with latest version of Postgres version >=9.5.
   Extra error handling and command results has been added.
 
+Package: postgresql-12-pg-base58
+Source: pg-base58
+Version: 0.0.1-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 433
+Depends: postgresql-12, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-base58
+Homepage: https://github.com/Fell-x27/pg_base58
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-base58/postgresql-12-pg-base58_0.0.1-1PIGSTY~jammy_amd64.deb
+Size: 178536
+SHA256: 7f4c2741b0cfd10b5480fdf058fc09aaff57384a13b9404cbfc8b3b760d6378e
+SHA1: e3f3faf1228050a2a20851e24624e06576833644
+MD5sum: a0dcc2b2d02439e2cd4706c68a0b823e
+Description: Base58 Encoder/Decoder Extension for PostgreSQL
+  SELECT base58_encode('hello'::bytea);
+  SELECT base58_decode('Cn8eVZg');
+
 Package: postgresql-12-pg-bigm
 Source: pg-bigm
 Version: 1.2-1PIGSTY~jammy
@@ -1026,6 +1046,27 @@ MD5sum: fca3ae8153a350bb3b51d722e287c9c1
 Description: The pg_bigm module provides full text search capability in PostgreSQL. This module allows a user to create 2-gram (bigram) index for faster full text search.
   The pg_bigm module provides full text search capability in PostgreSQL. This module allows a user to create 2-gram (bigram) index for faster full text search.
   pg_bigm is released under the PostgreSQL License, a liberal Open Source license, similar to the BSD or MIT licenses.
+
+Package: postgresql-12-pg-cardano
+Source: pg-cardano
+Version: 1.0.2-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 802
+Depends: postgresql-12, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-cardano
+Homepage: https://github.com/Fell-x27/pg_cardano
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-cardano/postgresql-12-pg-cardano_1.0.2-1PIGSTY~jammy_amd64.deb
+Size: 354558
+SHA256: 985d3d9706016717b9f3fd9044d4396710a4cb1cbc3d3698dbcec4d4d382dc20
+SHA1: b0e61d36e913db2aab678edc543a3e09f4981e9b
+MD5sum: 6ea227e4ec6900c63c48bb49bc27ca3c
+Description: A PostgreSQL extension providing a suite of Cardano-related tools, including cryptographic functions, address encoding/decoding, and blockchain data processing.
+  This extension is an attempt to create a Swiss Army knife for simplifying the work with binary data in Cardano db-sync, as well as automating some processes.
+  It is written in Rust, which ensures high security and excellent performance.
+  The extension is designed to handle unforeseen errors gracefully, without causing any disruptions in the database's operation. All errors are safely propagated as PostgreSQL-level error messages.
 
 Package: postgresql-12-pg-cheat-funcs
 Source: pg-cheat-funcs
@@ -1169,6 +1210,25 @@ MD5sum: d4a8e273a171602b41d7b2873c6a3b8e
 Description: Postgers extension to fetch the value of an environment variable
   This library contains a single PostgreSQL extension, envvar, which provides a function, get_env(TEXT),
    that returns the value of an environment variable set on the database server
+
+Package: postgresql-12-pg-explain-ui
+Source: pg-explain-ui
+Version: 0.0.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 2665
+Depends: postgresql-12, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1)
+Provides: postgresql-pg-explain-ui
+Homepage: https://github.com/davidgomes/pg-explain-ui
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-explain-ui/postgresql-12-pg-explain-ui_0.0.0-1PIGSTY~jammy_amd64.deb
+Size: 937540
+SHA256: 616e2ef08ef3595999fccc34b40f1713823a16f40ed89a528345ed7f80743b0e
+SHA1: 8e3ef691f47a4cfa7c7443bd74d82e6bd4988017
+MD5sum: 8123e4d8c1e5e9ad88bc0cc6c539088b
+Description: A Postgres extension that allows you to easily jump into a visual plan UI for any SQL query
+  This is a simple Postgres extension that allows you to easily jump into a visual plan UI for any SQL query.
 
 Package: postgresql-12-pg-extra-time
 Source: pg-extra-time
@@ -1542,6 +1602,45 @@ MD5sum: 22f604b89d78ae3ca38e2b73c225092a
 Description: A simple set of views to see ALL permissions in a PostgreSQL database
   This extension allows you to review object permissions on a PostgreSQL database.
 
+Package: postgresql-12-pg-plan-filter
+Source: pg-plan-filter
+Version: 0.0.1-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 41
+Depends: postgresql-12, postgresql-12-jit-llvm (>= 15)
+Provides: postgresql-pg-plan-filter
+Homepage: https://github.com/pgexperts/pg_plan_filter
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-plan-filter/postgresql-12-pg-plan-filter_0.0.1-1PIGSTY~jammy_amd64.deb
+Size: 10650
+SHA256: 765d1f9a490df5bf796a71a0396746cdcdc1a5b5ccacab0a55a97a38888fe7c3
+SHA1: fc7ef7bdbbc8fcd02136bd54b4463428ca9ab7c3
+MD5sum: 970cd93f83c94afce117f1548cac772d
+Description: filter statements by their execution plans.
+  This loadable module will test statements against specific configured criteria before execution, raising an error if the criteria are violated.
+  This allows administrators to prevent execution of certain queries on production databases.
+
+Package: postgresql-12-pg-polyline
+Source: pg-polyline
+Version: 0.0.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 489
+Depends: postgresql-12, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-polyline
+Homepage: https://github.com/yihong0618/pg_polyline
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-polyline/postgresql-12-pg-polyline_0.0.0-1PIGSTY~jammy_amd64.deb
+Size: 199634
+SHA256: 9eacd6f78bd9ed56db65280619129250944910139ce9e90e9359d1aed749ca4f
+SHA1: e4d5a8dc86a87a4777c337ebdf58f313cf84a527
+MD5sum: afef900a0febfc1454763ba9e993a7a3
+Description: Fast Google Encoded Polyline encoding & decoding for postgres
+  Fast Google Encoded Polyline encoding & decoding for postgres Extension
+
 Package: postgresql-12-pg-profile
 Source: pg-profile
 Version: 4.7-1PIGSTY~jammy
@@ -1617,6 +1716,26 @@ SHA1: 88bd7a79346d226b9755b3f67341e40fa8ac7758
 MD5sum: 572c4dfa5ff96beed97d91823c067c21
 Description: Redis Publish from PostgreSQL
   This PostgreSQL extension allows you to connect to Redis and publish messages on a Redis channel from PostgreSQL.
+
+Package: postgresql-12-pg-relusage
+Source: pg-relusage
+Version: 0.0.1-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 49
+Depends: postgresql-12, postgresql-12-jit-llvm (>= 15)
+Provides: postgresql-pg-relusage
+Homepage: https://github.com/adept/pg_relusage
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-relusage/postgresql-12-pg-relusage_0.0.1-1PIGSTY~jammy_amd64.deb
+Size: 14716
+SHA256: c0201c9bb0a96a33f7ad72e2a49dda3a08715075ed8ff6206ba2ff88daccc4e5
+SHA1: 6663d93170753c84fa5e359f1361f965514afd57
+MD5sum: 6bbea08480c5a721b11e7c53154901d4
+Description: discover and log the relations used in your statements
+  pg_relusage is a PostgreSQL extension which allows one to discover and log
+  the relations used in SQL statements. Supported PostgreSQL versions: 9.5 to 17
 
 Package: postgresql-12-pg-sqlog
 Source: pg-sqlog
@@ -1700,6 +1819,30 @@ Description: Store execution plans like pg_stat_statements does for queries.
   The pg_store_plans module provides a means for tracking execution plan statistics of all SQL statements executed by a server.
   The module must be loaded by adding pg_store_plans to shared_preload_libraries in postgresql.conf, because it requires additional shared memory. This means that a server restart is required to add or remove the module. pg_store_plans requires the GUC variable compute_query_id to be "on" or "auto". If it is set to "no", pg_store_plans is silently disabled.
 
+Package: postgresql-12-pg-summarize
+Source: pg-summarize
+Version: 0.0.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 2563
+Depends: postgresql-12, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1)
+Provides: postgresql-pg-summarize
+Homepage: https://github.com/HexaCluster/pg_summarize
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-summarize/postgresql-12-pg-summarize_0.0.0-1PIGSTY~jammy_amd64.deb
+Size: 916630
+SHA256: 56cfef365b5642e5eff387d02b6dae9c0d624edb8aa3fb6842ccbf201ed1b211
+SHA1: 4a9a544ceabbe751c79ded858f588d19480560fe
+MD5sum: 2ca1d712bc102764cead8689088198dd
+Description: Text Summarization using LLMs. Built using pgrx
+  PostgreSQL is a powerful and versatile database management system.
+  One of its strengths lies in its extensibility.
+  In this blog, we will explore how to extend PostgreSQL using Rust,
+  specifically focusing on creating a custom extension called pg_summarize
+  that integrates with the OpenAI API. This extension will include a basic "Hello, pg_summarize!"
+  function and another function to summarize text using OpenAI's models.
+
 Package: postgresql-12-pg-tiktoken
 Source: pg-tiktoken
 Version: 0.0.1-1PIGSTY~jammy
@@ -1778,6 +1921,25 @@ Description: Trusted Language Extensions for PostgreSQL
   extend and deploy new PostgreSQL functionality with lower administrative and technical overhead.
   Developers can use Trusted Language Extensions for PostgreSQL to create and install extensions on restricted filesystems
   and work with PostgreSQL internals through a SQL API.
+
+Package: postgresql-12-pg-uint128
+Source: pg-uint128
+Version: 1.0.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 1249
+Depends: postgresql-12, postgresql-12-jit-llvm (>= 15)
+Provides: postgresql-pg-uint128
+Homepage: https://github.com/pg-uint/pg-uint128
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-uint128/postgresql-12-pg-uint128_1.0.0-1PIGSTY~jammy_amd64.deb
+Size: 252942
+SHA256: 35554c6f0787922f2a19c8f7cbd1e00318f5ad2cc81e4b563f58af0f5b578644
+SHA1: 1f74cadbea9cfb98bc907b07884f0a200b0a316c
+MD5sum: ce52ba56cfb3d98d2145aa23b2bf80a1
+Description: adds native support for unsigned integers and 128-bit signed/unsigned integer types.
+  A PostgreSQL extension that adds native support for unsigned integers and 128-bit signed/unsigned integer types.
 
 Package: postgresql-12-pg-uri
 Source: pg-uri
@@ -3349,6 +3511,26 @@ Description: pg_background is an extension for Postgres 13
   Some modification has been done, by me, to keep it in sync with latest version of Postgres version >=9.5.
   Extra error handling and command results has been added.
 
+Package: postgresql-13-pg-base58
+Source: pg-base58
+Version: 0.0.1-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 429
+Depends: postgresql-13, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-base58
+Homepage: https://github.com/Fell-x27/pg_base58
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-base58/postgresql-13-pg-base58_0.0.1-1PIGSTY~jammy_amd64.deb
+Size: 178356
+SHA256: 787e7a4e28791f492e7c4c0cf5cfbb20488654b537bf54b53c5b42b51245fad6
+SHA1: e232f445285a8d87c655c52004f81b06243049b8
+MD5sum: c8a7a2c87f98045276aead5b7de694f9
+Description: Base58 Encoder/Decoder Extension for PostgreSQL
+  SELECT base58_encode('hello'::bytea);
+  SELECT base58_decode('Cn8eVZg');
+
 Package: postgresql-13-pg-bigm
 Source: pg-bigm
 Version: 1.2-1PIGSTY~jammy
@@ -3389,6 +3571,27 @@ Description: High speed data loading utility for PostgreSQL
   pg_bulkload is a high speed data loading tool for PostgreSQL.
   pg_bulkload is designed to load huge amount of data to a database. You can load data to table bypassing PostgreSQL shared buffers.
   pg_bulkload also has some ETL features; input data validation and data transformation. to as many pg_restore jobs.
+
+Package: postgresql-13-pg-cardano
+Source: pg-cardano
+Version: 1.0.2-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 802
+Depends: postgresql-13, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-cardano
+Homepage: https://github.com/Fell-x27/pg_cardano
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-cardano/postgresql-13-pg-cardano_1.0.2-1PIGSTY~jammy_amd64.deb
+Size: 354148
+SHA256: 031650b2514038402baa8f8d34641e7de9748dd7ee049d893363af2072256016
+SHA1: 9b165ab6396c2fc6794688682ab282b769818c17
+MD5sum: fbcee9cdc24218fa7a89d2bfe27e179f
+Description: A PostgreSQL extension providing a suite of Cardano-related tools, including cryptographic functions, address encoding/decoding, and blockchain data processing.
+  This extension is an attempt to create a Swiss Army knife for simplifying the work with binary data in Cardano db-sync, as well as automating some processes.
+  It is written in Rust, which ensures high security and excellent performance.
+  The extension is designed to handle unforeseen errors gracefully, without causing any disruptions in the database's operation. All errors are safely propagated as PostgreSQL-level error messages.
 
 Package: postgresql-13-pg-cheat-funcs
 Source: pg-cheat-funcs
@@ -3532,6 +3735,25 @@ MD5sum: 627df18381ca3fcbb2fd424cc38b1503
 Description: Postgers extension to fetch the value of an environment variable
   This library contains a single PostgreSQL extension, envvar, which provides a function, get_env(TEXT),
    that returns the value of an environment variable set on the database server
+
+Package: postgresql-13-pg-explain-ui
+Source: pg-explain-ui
+Version: 0.0.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 2665
+Depends: postgresql-13, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1)
+Provides: postgresql-pg-explain-ui
+Homepage: https://github.com/davidgomes/pg-explain-ui
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-explain-ui/postgresql-13-pg-explain-ui_0.0.0-1PIGSTY~jammy_amd64.deb
+Size: 937726
+SHA256: ab5c07f47b04539a205e4d315a9d4f643bb6cc989d39f1095af3fc7ecbb52a99
+SHA1: 9095acf335793929cb7ec163f5e255b8520dda0d
+MD5sum: 04e96dda64322be8aba27bb0ee1f374c
+Description: A Postgres extension that allows you to easily jump into a visual plan UI for any SQL query
+  This is a simple Postgres extension that allows you to easily jump into a visual plan UI for any SQL query.
 
 Package: postgresql-13-pg-extra-time
 Source: pg-extra-time
@@ -3945,6 +4167,45 @@ MD5sum: b91d88c736a4f83380becb2e285ad939
 Description: A simple set of views to see ALL permissions in a PostgreSQL database
   This extension allows you to review object permissions on a PostgreSQL database.
 
+Package: postgresql-13-pg-plan-filter
+Source: pg-plan-filter
+Version: 0.0.1-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 41
+Depends: postgresql-13, postgresql-13-jit-llvm (>= 15)
+Provides: postgresql-pg-plan-filter
+Homepage: https://github.com/pgexperts/pg_plan_filter
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-plan-filter/postgresql-13-pg-plan-filter_0.0.1-1PIGSTY~jammy_amd64.deb
+Size: 10654
+SHA256: 9222f9c1d396c7da9e7ea9078340f557b0f7b437e52c2e45cff466529b42bb85
+SHA1: 02df7001700db14031f3cc8dd465cb96a8e6852a
+MD5sum: 1c6721d47ebed071e6b51d0d0197488e
+Description: filter statements by their execution plans.
+  This loadable module will test statements against specific configured criteria before execution, raising an error if the criteria are violated.
+  This allows administrators to prevent execution of certain queries on production databases.
+
+Package: postgresql-13-pg-polyline
+Source: pg-polyline
+Version: 0.0.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 489
+Depends: postgresql-13, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-polyline
+Homepage: https://github.com/yihong0618/pg_polyline
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-polyline/postgresql-13-pg-polyline_0.0.0-1PIGSTY~jammy_amd64.deb
+Size: 199544
+SHA256: 262becebd9a28e784a7eff4e683605b80228242ea1ebe6918d88b9fee4682733
+SHA1: 097fe64f8f654cf35c2481d08fe76224c7b3b2cb
+MD5sum: 7f5b9ee8dae5f8409d74950cc917be80
+Description: Fast Google Encoded Polyline encoding & decoding for postgres
+  Fast Google Encoded Polyline encoding & decoding for postgres Extension
+
 Package: postgresql-13-pg-profile
 Source: pg-profile
 Version: 4.7-1PIGSTY~jammy
@@ -4020,6 +4281,26 @@ SHA1: 276d946d3db611df75eac207adc3abec4ca85734
 MD5sum: 43942809e36329172310df11a56d5c69
 Description: Redis Publish from PostgreSQL
   This PostgreSQL extension allows you to connect to Redis and publish messages on a Redis channel from PostgreSQL.
+
+Package: postgresql-13-pg-relusage
+Source: pg-relusage
+Version: 0.0.1-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 49
+Depends: postgresql-13, postgresql-13-jit-llvm (>= 15)
+Provides: postgresql-pg-relusage
+Homepage: https://github.com/adept/pg_relusage
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-relusage/postgresql-13-pg-relusage_0.0.1-1PIGSTY~jammy_amd64.deb
+Size: 14544
+SHA256: 86e97c939a67e7e3963f6ad248c6227f00ddc7b80c7cc3731d2dd132a2503d43
+SHA1: 3610f516fc428618d5049b126089b9f89d3b5b27
+MD5sum: a48b0ddfce7aba40867e55196e40c8bd
+Description: discover and log the relations used in your statements
+  pg_relusage is a PostgreSQL extension which allows one to discover and log
+  the relations used in SQL statements. Supported PostgreSQL versions: 9.5 to 17
 
 Package: postgresql-13-pg-savior
 Source: pg-savior
@@ -4123,6 +4404,30 @@ Description: Store execution plans like pg_stat_statements does for queries.
   The pg_store_plans module provides a means for tracking execution plan statistics of all SQL statements executed by a server.
   The module must be loaded by adding pg_store_plans to shared_preload_libraries in postgresql.conf, because it requires additional shared memory. This means that a server restart is required to add or remove the module. pg_store_plans requires the GUC variable compute_query_id to be "on" or "auto". If it is set to "no", pg_store_plans is silently disabled.
 
+Package: postgresql-13-pg-summarize
+Source: pg-summarize
+Version: 0.0.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 2563
+Depends: postgresql-13, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1)
+Provides: postgresql-pg-summarize
+Homepage: https://github.com/HexaCluster/pg_summarize
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-summarize/postgresql-13-pg-summarize_0.0.0-1PIGSTY~jammy_amd64.deb
+Size: 917020
+SHA256: bb34a100dcce6f1e70c2fbf299d33d22ec10a4184e7842d04f4064c32474e202
+SHA1: 0c644d47d5745ea913bd1b7007bc4f80d69af560
+MD5sum: 0edf7bd5880d1ac0c47a0984c22f30fa
+Description: Text Summarization using LLMs. Built using pgrx
+  PostgreSQL is a powerful and versatile database management system.
+  One of its strengths lies in its extensibility.
+  In this blog, we will explore how to extend PostgreSQL using Rust,
+  specifically focusing on creating a custom extension called pg_summarize
+  that integrates with the OpenAI API. This extension will include a basic "Hello, pg_summarize!"
+  function and another function to summarize text using OpenAI's models.
+
 Package: postgresql-13-pg-tiktoken
 Source: pg-tiktoken
 Version: 0.0.1-1PIGSTY~jammy
@@ -4201,6 +4506,25 @@ Description: Trusted Language Extensions for PostgreSQL
   extend and deploy new PostgreSQL functionality with lower administrative and technical overhead.
   Developers can use Trusted Language Extensions for PostgreSQL to create and install extensions on restricted filesystems
   and work with PostgreSQL internals through a SQL API.
+
+Package: postgresql-13-pg-uint128
+Source: pg-uint128
+Version: 1.0.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 1245
+Depends: postgresql-13, postgresql-13-jit-llvm (>= 15)
+Provides: postgresql-pg-uint128
+Homepage: https://github.com/pg-uint/pg-uint128
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-uint128/postgresql-13-pg-uint128_1.0.0-1PIGSTY~jammy_amd64.deb
+Size: 251108
+SHA256: 9972979b8140334ead39ae31aa8ef07b5f71fefae0057c46ad6a5c43bf2d71ef
+SHA1: 4ed5c6d54d9a9e35f1634e9d587929bb12804601
+MD5sum: 6d844381ee2e37a68a616988901cee2b
+Description: adds native support for unsigned integers and 128-bit signed/unsigned integer types.
+  A PostgreSQL extension that adds native support for unsigned integers and 128-bit signed/unsigned integer types.
 
 Package: postgresql-13-pg-uri
 Source: pg-uri
@@ -5833,6 +6157,26 @@ Description: pg_background is an extension for Postgres 14
   Some modification has been done, by me, to keep it in sync with latest version of Postgres version >=9.5.
   Extra error handling and command results has been added.
 
+Package: postgresql-14-pg-base58
+Source: pg-base58
+Version: 0.0.1-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 429
+Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-base58
+Homepage: https://github.com/Fell-x27/pg_base58
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-base58/postgresql-14-pg-base58_0.0.1-1PIGSTY~jammy_amd64.deb
+Size: 178392
+SHA256: 4f57405288a9439732425d3c6ed5b8a650838e4d88235eec5d8a8dfd37ff7242
+SHA1: 7867efe7ddaa1e7fb55c9c117eda3f37bd8d4317
+MD5sum: abd39c50ffc521cc49ad9eed6ef1dd16
+Description: Base58 Encoder/Decoder Extension for PostgreSQL
+  SELECT base58_encode('hello'::bytea);
+  SELECT base58_decode('Cn8eVZg');
+
 Package: postgresql-14-pg-bigm
 Source: pg-bigm
 Version: 1.2-1PIGSTY~jammy
@@ -5873,6 +6217,27 @@ Description: High speed data loading utility for PostgreSQL
   pg_bulkload is a high speed data loading tool for PostgreSQL.
   pg_bulkload is designed to load huge amount of data to a database. You can load data to table bypassing PostgreSQL shared buffers.
   pg_bulkload also has some ETL features; input data validation and data transformation. to as many pg_restore jobs.
+
+Package: postgresql-14-pg-cardano
+Source: pg-cardano
+Version: 1.0.2-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 802
+Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-cardano
+Homepage: https://github.com/Fell-x27/pg_cardano
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-cardano/postgresql-14-pg-cardano_1.0.2-1PIGSTY~jammy_amd64.deb
+Size: 354312
+SHA256: 3b641ebcb4f55a0f037cabdd03d7aebc4cbf4954c324bfb76c9e3f6cbce1a1a8
+SHA1: 756bf9fa0dbfb2b2961066871051f2dbc4fe4366
+MD5sum: e7fd3003981571940674d943a10df93a
+Description: A PostgreSQL extension providing a suite of Cardano-related tools, including cryptographic functions, address encoding/decoding, and blockchain data processing.
+  This extension is an attempt to create a Swiss Army knife for simplifying the work with binary data in Cardano db-sync, as well as automating some processes.
+  It is written in Rust, which ensures high security and excellent performance.
+  The extension is designed to handle unforeseen errors gracefully, without causing any disruptions in the database's operation. All errors are safely propagated as PostgreSQL-level error messages.
 
 Package: postgresql-14-pg-cheat-funcs
 Source: pg-cheat-funcs
@@ -6017,6 +6382,25 @@ Description: Postgers extension to fetch the value of an environment variable
   This library contains a single PostgreSQL extension, envvar, which provides a function, get_env(TEXT),
    that returns the value of an environment variable set on the database server
 
+Package: postgresql-14-pg-explain-ui
+Source: pg-explain-ui
+Version: 0.0.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 2665
+Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1)
+Provides: postgresql-pg-explain-ui
+Homepage: https://github.com/davidgomes/pg-explain-ui
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-explain-ui/postgresql-14-pg-explain-ui_0.0.0-1PIGSTY~jammy_amd64.deb
+Size: 937388
+SHA256: 6cdb47b90458d050862aee1ed897364c3b52d3c2226ba223832d47b800a89985
+SHA1: 560ce0921d19b0a34afcda4c42df7771227ce0df
+MD5sum: 8e36f49638d1d5c2f1ee0aef6edadcfe
+Description: A Postgres extension that allows you to easily jump into a visual plan UI for any SQL query
+  This is a simple Postgres extension that allows you to easily jump into a visual plan UI for any SQL query.
+
 Package: postgresql-14-pg-extra-time
 Source: pg-extra-time
 Version: 1.1.3-1PIGSTY~jammy
@@ -6150,10 +6534,10 @@ Homepage: https://github.com/supabase/pg_graphql
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-graphql/postgresql-14-pg-graphql_1.5.9-1PIGSTY~jammy_amd64.deb
-Size: 729702
-SHA256: 16f66a9b6acf99fc0bff74aa35d90f383212eeca70c753a91b11207a03e530f3
-SHA1: 2cbcf4697882eefaf00849bc62ff43a017623d1d
-MD5sum: 560db8bb2d489819565d3de55b410d69
+Size: 731806
+SHA256: 3facffe811faf5913aecc3dc7baa9af7faced34891b63ea060f72dfb7aa284da
+SHA1: 1233a131c0a825198a77aad6fb200658a3f888f0
+MD5sum: 4c260772e06083558f78e149007f0679
 Description: reflects a GraphQL schema from the existing PostgresSQL 14 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via GraphQL with no additional servers, processes, or libraries.
@@ -6449,6 +6833,45 @@ MD5sum: 56d489755ad879fec9d20e8c9cfd1e5b
 Description: A simple set of views to see ALL permissions in a PostgreSQL database
   This extension allows you to review object permissions on a PostgreSQL database.
 
+Package: postgresql-14-pg-plan-filter
+Source: pg-plan-filter
+Version: 0.0.1-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 41
+Depends: postgresql-14, postgresql-14-jit-llvm (>= 15)
+Provides: postgresql-pg-plan-filter
+Homepage: https://github.com/pgexperts/pg_plan_filter
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-plan-filter/postgresql-14-pg-plan-filter_0.0.1-1PIGSTY~jammy_amd64.deb
+Size: 10830
+SHA256: bcde8d3793c2d7d3735e802acf16b201dd60c8ee27b911354fb63b5f4c51bff4
+SHA1: 7d13c7a985bdfed0d268d8bd44100d875af86bef
+MD5sum: fa3709ef34c9995b6b7e7bbfa23376b7
+Description: filter statements by their execution plans.
+  This loadable module will test statements against specific configured criteria before execution, raising an error if the criteria are violated.
+  This allows administrators to prevent execution of certain queries on production databases.
+
+Package: postgresql-14-pg-polyline
+Source: pg-polyline
+Version: 0.0.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 489
+Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-polyline
+Homepage: https://github.com/yihong0618/pg_polyline
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-polyline/postgresql-14-pg-polyline_0.0.0-1PIGSTY~jammy_amd64.deb
+Size: 199650
+SHA256: cb874ced52f290b145e77123a324076461a70eec34ececc977e6b5295824550b
+SHA1: a6684dad89bf55f1de37b563e3a6b60e3f55dac0
+MD5sum: 56c565b68e21fac54bc8f2384941943e
+Description: Fast Google Encoded Polyline encoding & decoding for postgres
+  Fast Google Encoded Polyline encoding & decoding for postgres Extension
+
 Package: postgresql-14-pg-profile
 Source: pg-profile
 Version: 4.7-1PIGSTY~jammy
@@ -6524,6 +6947,26 @@ SHA1: 688c16f92331c486cf7c270ede633919cb2f95b5
 MD5sum: c635d55644b584c798dc21a62f61d718
 Description: Redis Publish from PostgreSQL
   This PostgreSQL extension allows you to connect to Redis and publish messages on a Redis channel from PostgreSQL.
+
+Package: postgresql-14-pg-relusage
+Source: pg-relusage
+Version: 0.0.1-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 49
+Depends: postgresql-14, postgresql-14-jit-llvm (>= 15)
+Provides: postgresql-pg-relusage
+Homepage: https://github.com/adept/pg_relusage
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-relusage/postgresql-14-pg-relusage_0.0.1-1PIGSTY~jammy_amd64.deb
+Size: 14874
+SHA256: e1d23e67aeaeaf45e7c3f8d907c45c3cab9344be727b1801f2aa9504f3b00de8
+SHA1: a2c9b35455ce635a5c8e16f3ea1d915e0c132b5c
+MD5sum: 6b39e1491b3a342f0259553d6b3d05dd
+Description: discover and log the relations used in your statements
+  pg_relusage is a PostgreSQL extension which allows one to discover and log
+  the relations used in SQL statements. Supported PostgreSQL versions: 9.5 to 17
 
 Package: postgresql-14-pg-safeupdate
 Source: pg-safeupdate
@@ -6661,6 +7104,30 @@ Description: Store execution plans like pg_stat_statements does for queries.
   The pg_store_plans module provides a means for tracking execution plan statistics of all SQL statements executed by a server.
   The module must be loaded by adding pg_store_plans to shared_preload_libraries in postgresql.conf, because it requires additional shared memory. This means that a server restart is required to add or remove the module. pg_store_plans requires the GUC variable compute_query_id to be "on" or "auto". If it is set to "no", pg_store_plans is silently disabled.
 
+Package: postgresql-14-pg-summarize
+Source: pg-summarize
+Version: 0.0.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 2563
+Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1)
+Provides: postgresql-pg-summarize
+Homepage: https://github.com/HexaCluster/pg_summarize
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-summarize/postgresql-14-pg-summarize_0.0.0-1PIGSTY~jammy_amd64.deb
+Size: 916994
+SHA256: 31690297bb1d56280302793c05cf27ba121dd3d493db9fbd33910dde7aa2ae53
+SHA1: 73447cbd804ddc4c983850ddfb52244c42598a8e
+MD5sum: fd355cf04c8d96d38c219cf72f4a9517
+Description: Text Summarization using LLMs. Built using pgrx
+  PostgreSQL is a powerful and versatile database management system.
+  One of its strengths lies in its extensibility.
+  In this blog, we will explore how to extend PostgreSQL using Rust,
+  specifically focusing on creating a custom extension called pg_summarize
+  that integrates with the OpenAI API. This extension will include a basic "Hello, pg_summarize!"
+  function and another function to summarize text using OpenAI's models.
+
 Package: postgresql-14-pg-tiktoken
 Source: pg-tiktoken
 Version: 0.0.1-1PIGSTY~jammy
@@ -6739,6 +7206,25 @@ Description: Trusted Language Extensions for PostgreSQL
   extend and deploy new PostgreSQL functionality with lower administrative and technical overhead.
   Developers can use Trusted Language Extensions for PostgreSQL to create and install extensions on restricted filesystems
   and work with PostgreSQL internals through a SQL API.
+
+Package: postgresql-14-pg-uint128
+Source: pg-uint128
+Version: 1.0.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 1252
+Depends: postgresql-14, postgresql-14-jit-llvm (>= 15)
+Provides: postgresql-pg-uint128
+Homepage: https://github.com/pg-uint/pg-uint128
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-uint128/postgresql-14-pg-uint128_1.0.0-1PIGSTY~jammy_amd64.deb
+Size: 251372
+SHA256: 98c5131ab0cc43ef162f9b004f0c3501f1dee435f069c3182a51e738a4e0ac81
+SHA1: 185d932af137ef39555b8a39101d2d60a2e0e593
+MD5sum: 4e13e021b51ae1f342be6ed4470ea7b2
+Description: adds native support for unsigned integers and 128-bit signed/unsigned integer types.
+  A PostgreSQL extension that adds native support for unsigned integers and 128-bit signed/unsigned integer types.
 
 Package: postgresql-14-pg-uri
 Source: pg-uri
@@ -8432,6 +8918,26 @@ Description: pg_background is an extension for Postgres 15
   Some modification has been done, by me, to keep it in sync with latest version of Postgres version >=9.5.
   Extra error handling and command results has been added.
 
+Package: postgresql-15-pg-base58
+Source: pg-base58
+Version: 0.0.1-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 429
+Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-base58
+Homepage: https://github.com/Fell-x27/pg_base58
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-base58/postgresql-15-pg-base58_0.0.1-1PIGSTY~jammy_amd64.deb
+Size: 178342
+SHA256: c4369a2b7e3be5d4e2f7433935b781f4a5b5c68546e40c3c3aa5bdd00ed70ff4
+SHA1: b08faf0c1875dffd039796ef9d56c43191137b4d
+MD5sum: c5709df6469a2d8fb6e62b8a0550b8d3
+Description: Base58 Encoder/Decoder Extension for PostgreSQL
+  SELECT base58_encode('hello'::bytea);
+  SELECT base58_decode('Cn8eVZg');
+
 Package: postgresql-15-pg-bigm
 Source: pg-bigm
 Version: 1.2-1PIGSTY~jammy
@@ -8472,6 +8978,27 @@ Description: High speed data loading utility for PostgreSQL
   pg_bulkload is a high speed data loading tool for PostgreSQL.
   pg_bulkload is designed to load huge amount of data to a database. You can load data to table bypassing PostgreSQL shared buffers.
   pg_bulkload also has some ETL features; input data validation and data transformation. to as many pg_restore jobs.
+
+Package: postgresql-15-pg-cardano
+Source: pg-cardano
+Version: 1.0.2-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 806
+Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-cardano
+Homepage: https://github.com/Fell-x27/pg_cardano
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-cardano/postgresql-15-pg-cardano_1.0.2-1PIGSTY~jammy_amd64.deb
+Size: 354214
+SHA256: b42f695cc0792468d7b2849d0f81d29df052f7d59e6a7a12038c899052e5bada
+SHA1: 199fc6313f69e05fa81932b1c0e69fa91ffa3eb1
+MD5sum: 23e061c96dbfa8bcf872ffe6740cf965
+Description: A PostgreSQL extension providing a suite of Cardano-related tools, including cryptographic functions, address encoding/decoding, and blockchain data processing.
+  This extension is an attempt to create a Swiss Army knife for simplifying the work with binary data in Cardano db-sync, as well as automating some processes.
+  It is written in Rust, which ensures high security and excellent performance.
+  The extension is designed to handle unforeseen errors gracefully, without causing any disruptions in the database's operation. All errors are safely propagated as PostgreSQL-level error messages.
 
 Package: postgresql-15-pg-cheat-funcs
 Source: pg-cheat-funcs
@@ -8557,20 +9084,20 @@ Description: 1 Byte Currency ISO type for PostgreSQL
 
 Package: postgresql-15-pg-duckdb
 Source: pg-duckdb
-Version: 0.0.1-d663d8a
+Version: 0.0.1-f34ae06
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 26576
+Installed-Size: 34558
 Depends: postgresql-15, postgresql-15-jit-llvm (>= 15), libc6 (>= 2.34), libgcc-s1 (>= 3.4), liblz4-1 (>= 0.0~r113), libpq5, libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
 Provides: postgresql-pg-duckdb
 Homepage: https://github.com/duckdb/pg_duckdb
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-duckdb/postgresql-15-pg-duckdb_0.0.1-d663d8a_amd64.deb
-Size: 7871748
-SHA256: 8a233f088bd28ae81b74394621542cdd662af333c8d08eb741a771088f70b16e
-SHA1: 2ac71c4d71a351a33484e90c0a803902b806d228
-MD5sum: 5d03f3673a3b612b165ba13c07376b67
+Filename: pool/main/p/pg-duckdb/postgresql-15-pg-duckdb_0.0.1-f34ae06_amd64.deb
+Size: 9781390
+SHA256: bd648baab1700a10981b1f198284e8d21cc82e4d2b3d40b9f0e2f28b30146a1b
+SHA1: 2a4f0d87335b8fd55dcbea00fec6108c86393a93
+MD5sum: d921edacb3fc89777bad9db11e0d31c4
 Description: DuckDB-powered Postgres for high performance apps & analytics.
   pg_duckdb is a Postgres extension that embeds DuckDB's columnar-vectorized analytics engine and features into Postgres.
   We recommend using pg_duckdb to build high performance analytics and data-intensive applications.
@@ -8636,6 +9163,25 @@ MD5sum: c98d668a58f7a5c8ae9cc33e846505d6
 Description: Postgers extension to fetch the value of an environment variable
   This library contains a single PostgreSQL extension, envvar, which provides a function, get_env(TEXT),
    that returns the value of an environment variable set on the database server
+
+Package: postgresql-15-pg-explain-ui
+Source: pg-explain-ui
+Version: 0.0.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 2665
+Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1)
+Provides: postgresql-pg-explain-ui
+Homepage: https://github.com/davidgomes/pg-explain-ui
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-explain-ui/postgresql-15-pg-explain-ui_0.0.0-1PIGSTY~jammy_amd64.deb
+Size: 937850
+SHA256: b3a9dfff6172173957531cdde371bf92f6ae0a7fc28cc7bb5ca75635fadb3aad
+SHA1: 9f4c7e635ef245edf1b19fb7145f8d15cf56a398
+MD5sum: da3a4a84df131581bda448d87d935719
+Description: A Postgres extension that allows you to easily jump into a visual plan UI for any SQL query
+  This is a simple Postgres extension that allows you to easily jump into a visual plan UI for any SQL query.
 
 Package: postgresql-15-pg-extra-time
 Source: pg-extra-time
@@ -8770,10 +9316,10 @@ Homepage: https://github.com/supabase/pg_graphql
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-graphql/postgresql-15-pg-graphql_1.5.9-1PIGSTY~jammy_amd64.deb
-Size: 730092
-SHA256: b0cdaf9218a6ba9e1112445b9840643b4917ac590ab35ff51713ff46f28b7f8a
-SHA1: 16c59d1b9565ff748c23cd9df115b80d290cfcfd
-MD5sum: 1667a63ebb310ef8961d02972306aaac
+Size: 731692
+SHA256: 3ea1dcfc459fdebca8d18f3996addb15f28c5d5d04e2e1be7d5ba5f03bb143f9
+SHA1: a24e886ff7929a910ab377ac7fe6e0c7827eddd6
+MD5sum: f02515bf94ddeb82b5ca5f634b26bfda
 Description: reflects a GraphQL schema from the existing PostgresSQL 15 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via GraphQL with no additional servers, processes, or libraries.
@@ -9069,6 +9615,45 @@ MD5sum: 835a0ea7c62a4f4c77187b12d76de08f
 Description: A simple set of views to see ALL permissions in a PostgreSQL database
   This extension allows you to review object permissions on a PostgreSQL database.
 
+Package: postgresql-15-pg-plan-filter
+Source: pg-plan-filter
+Version: 0.0.1-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 41
+Depends: postgresql-15, postgresql-15-jit-llvm (>= 15)
+Provides: postgresql-pg-plan-filter
+Homepage: https://github.com/pgexperts/pg_plan_filter
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-plan-filter/postgresql-15-pg-plan-filter_0.0.1-1PIGSTY~jammy_amd64.deb
+Size: 10838
+SHA256: 082bd7d379a267a89315a2571f80563cea19476e45368d7951d4c6831e588b85
+SHA1: 146c80e8ac2757628e0af3ea2f1fec00665c8dbf
+MD5sum: ae55bc6f98e25c786345713768917d43
+Description: filter statements by their execution plans.
+  This loadable module will test statements against specific configured criteria before execution, raising an error if the criteria are violated.
+  This allows administrators to prevent execution of certain queries on production databases.
+
+Package: postgresql-15-pg-polyline
+Source: pg-polyline
+Version: 0.0.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 489
+Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-polyline
+Homepage: https://github.com/yihong0618/pg_polyline
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-polyline/postgresql-15-pg-polyline_0.0.0-1PIGSTY~jammy_amd64.deb
+Size: 199532
+SHA256: 4fe72fdb3a64f574e8e324f1ea3d7407e3e5027fe228568c1725c89c41c51c0c
+SHA1: d5afc93d2752b586e95e11d64feeb29bd3cadd6e
+MD5sum: 9fd6b5c0ea30bab5395da39ca09d1901
+Description: Fast Google Encoded Polyline encoding & decoding for postgres
+  Fast Google Encoded Polyline encoding & decoding for postgres Extension
+
 Package: postgresql-15-pg-profile
 Source: pg-profile
 Version: 4.7-1PIGSTY~jammy
@@ -9144,6 +9729,26 @@ SHA1: e0b6e8865377cad1d366105827714fd54464e16a
 MD5sum: 6fafd85c3474b2e0cff53df21179c367
 Description: Redis Publish from PostgreSQL
   This PostgreSQL extension allows you to connect to Redis and publish messages on a Redis channel from PostgreSQL.
+
+Package: postgresql-15-pg-relusage
+Source: pg-relusage
+Version: 0.0.1-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 49
+Depends: postgresql-15, postgresql-15-jit-llvm (>= 15)
+Provides: postgresql-pg-relusage
+Homepage: https://github.com/adept/pg_relusage
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-relusage/postgresql-15-pg-relusage_0.0.1-1PIGSTY~jammy_amd64.deb
+Size: 14900
+SHA256: 0d5f2d1b19f38f88cc5e1f077c6f17c9fdb141216753b337303bc093c44bd25f
+SHA1: 1da48d6ee2d1a32fd5f3ba2440394fae505e0a5a
+MD5sum: dce7507df4795b6fe1d5714992d94528
+Description: discover and log the relations used in your statements
+  pg_relusage is a PostgreSQL extension which allows one to discover and log
+  the relations used in SQL statements. Supported PostgreSQL versions: 9.5 to 17
 
 Package: postgresql-15-pg-safeupdate
 Source: pg-safeupdate
@@ -9281,6 +9886,30 @@ Description: Store execution plans like pg_stat_statements does for queries.
   The pg_store_plans module provides a means for tracking execution plan statistics of all SQL statements executed by a server.
   The module must be loaded by adding pg_store_plans to shared_preload_libraries in postgresql.conf, because it requires additional shared memory. This means that a server restart is required to add or remove the module. pg_store_plans requires the GUC variable compute_query_id to be "on" or "auto". If it is set to "no", pg_store_plans is silently disabled.
 
+Package: postgresql-15-pg-summarize
+Source: pg-summarize
+Version: 0.0.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 2563
+Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1)
+Provides: postgresql-pg-summarize
+Homepage: https://github.com/HexaCluster/pg_summarize
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-summarize/postgresql-15-pg-summarize_0.0.0-1PIGSTY~jammy_amd64.deb
+Size: 916810
+SHA256: ae8d5060774ba8c60636cf79d87e7a0972a7e4f95b7cbc78495cfd6997deaf58
+SHA1: 2cf2580d5336822d266d67847cbf3cc7457effc0
+MD5sum: f70734d16f61f1fdced1bc65a837e2ea
+Description: Text Summarization using LLMs. Built using pgrx
+  PostgreSQL is a powerful and versatile database management system.
+  One of its strengths lies in its extensibility.
+  In this blog, we will explore how to extend PostgreSQL using Rust,
+  specifically focusing on creating a custom extension called pg_summarize
+  that integrates with the OpenAI API. This extension will include a basic "Hello, pg_summarize!"
+  function and another function to summarize text using OpenAI's models.
+
 Package: postgresql-15-pg-tiktoken
 Source: pg-tiktoken
 Version: 0.0.1-1PIGSTY~jammy
@@ -9359,6 +9988,25 @@ Description: Trusted Language Extensions for PostgreSQL
   extend and deploy new PostgreSQL functionality with lower administrative and technical overhead.
   Developers can use Trusted Language Extensions for PostgreSQL to create and install extensions on restricted filesystems
   and work with PostgreSQL internals through a SQL API.
+
+Package: postgresql-15-pg-uint128
+Source: pg-uint128
+Version: 1.0.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 1252
+Depends: postgresql-15, postgresql-15-jit-llvm (>= 15)
+Provides: postgresql-pg-uint128
+Homepage: https://github.com/pg-uint/pg-uint128
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-uint128/postgresql-15-pg-uint128_1.0.0-1PIGSTY~jammy_amd64.deb
+Size: 251352
+SHA256: 73670bfe62aca32489d4c6fda5f357738a5cc37ed701f88509d21dc548186acd
+SHA1: 39ded7b1dbf2368e40d73c75ec277680a01fb0b2
+MD5sum: 39f7480ed1f5aa56caa3514f97c79f91
+Description: adds native support for unsigned integers and 128-bit signed/unsigned integer types.
+  A PostgreSQL extension that adds native support for unsigned integers and 128-bit signed/unsigned integer types.
 
 Package: postgresql-15-pg-uri
 Source: pg-uri
@@ -11049,6 +11697,26 @@ Description: pg_background is an extension for Postgres 16
   Some modification has been done, by me, to keep it in sync with latest version of Postgres version >=9.5.
   Extra error handling and command results has been added.
 
+Package: postgresql-16-pg-base58
+Source: pg-base58
+Version: 0.0.1-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 429
+Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-base58
+Homepage: https://github.com/Fell-x27/pg_base58
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-base58/postgresql-16-pg-base58_0.0.1-1PIGSTY~jammy_amd64.deb
+Size: 178406
+SHA256: 1d7d483ccd4b1cc12839632f71f01bc6b2560859fc62cc5eec0737a3d6579f04
+SHA1: cbac2ff1dc5bcef94f2e915747ff27f72b25294f
+MD5sum: 672380b164a0fc626f85e257e3cac62f
+Description: Base58 Encoder/Decoder Extension for PostgreSQL
+  SELECT base58_encode('hello'::bytea);
+  SELECT base58_decode('Cn8eVZg');
+
 Package: postgresql-16-pg-bigm
 Source: pg-bigm
 Version: 1.2-1PIGSTY~jammy
@@ -11089,6 +11757,27 @@ Description: High speed data loading utility for PostgreSQL
   pg_bulkload is a high speed data loading tool for PostgreSQL.
   pg_bulkload is designed to load huge amount of data to a database. You can load data to table bypassing PostgreSQL shared buffers.
   pg_bulkload also has some ETL features; input data validation and data transformation. to as many pg_restore jobs.
+
+Package: postgresql-16-pg-cardano
+Source: pg-cardano
+Version: 1.0.2-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 806
+Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-cardano
+Homepage: https://github.com/Fell-x27/pg_cardano
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-cardano/postgresql-16-pg-cardano_1.0.2-1PIGSTY~jammy_amd64.deb
+Size: 354304
+SHA256: 4fe0c495c27c82093a3476a5cc5bc9a75ce1c25020712cdbc7226e38c7f8ff63
+SHA1: a02b7a4d03dce5ae2a0bf6a57245c0b3dcd882ff
+MD5sum: aee9772441bb2b92786fa6bbcbfdf917
+Description: A PostgreSQL extension providing a suite of Cardano-related tools, including cryptographic functions, address encoding/decoding, and blockchain data processing.
+  This extension is an attempt to create a Swiss Army knife for simplifying the work with binary data in Cardano db-sync, as well as automating some processes.
+  It is written in Rust, which ensures high security and excellent performance.
+  The extension is designed to handle unforeseen errors gracefully, without causing any disruptions in the database's operation. All errors are safely propagated as PostgreSQL-level error messages.
 
 Package: postgresql-16-pg-cheat-funcs
 Source: pg-cheat-funcs
@@ -11174,20 +11863,20 @@ Description: 1 Byte Currency ISO type for PostgreSQL
 
 Package: postgresql-16-pg-duckdb
 Source: pg-duckdb
-Version: 0.0.1-d663d8a
+Version: 0.0.1-f34ae06
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 26576
+Installed-Size: 34491
 Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.34), libgcc-s1 (>= 3.4), liblz4-1 (>= 0.0~r113), libpq5, libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
 Provides: postgresql-pg-duckdb
 Homepage: https://github.com/duckdb/pg_duckdb
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-duckdb/postgresql-16-pg-duckdb_0.0.1-d663d8a_amd64.deb
-Size: 7871738
-SHA256: 5e9d89396011f050618276a5d664f507ef083a26d960f1157b390728d8b8e2bc
-SHA1: 951c4f7c1114f4f195cf8026c1710877c7f9b3bb
-MD5sum: 67d674d81fe87d52b4eb578880e0fddc
+Filename: pool/main/p/pg-duckdb/postgresql-16-pg-duckdb_0.0.1-f34ae06_amd64.deb
+Size: 9760618
+SHA256: bc366b32392f2acf7c33eee30bcee1b072e6860df94bdae4cae79aecb280718c
+SHA1: 7d3c468246e847ab52a595583d4a7be32cd0b245
+MD5sum: f77415dd946e56a1d0c7b8eb0fda5e02
 Description: DuckDB-powered Postgres for high performance apps & analytics.
   pg_duckdb is a Postgres extension that embeds DuckDB's columnar-vectorized analytics engine and features into Postgres.
   We recommend using pg_duckdb to build high performance analytics and data-intensive applications.
@@ -11253,6 +11942,25 @@ MD5sum: 94c77d1232263cb49db53565604ddb12
 Description: Postgers extension to fetch the value of an environment variable
   This library contains a single PostgreSQL extension, envvar, which provides a function, get_env(TEXT),
    that returns the value of an environment variable set on the database server
+
+Package: postgresql-16-pg-explain-ui
+Source: pg-explain-ui
+Version: 0.0.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 2665
+Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1)
+Provides: postgresql-pg-explain-ui
+Homepage: https://github.com/davidgomes/pg-explain-ui
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-explain-ui/postgresql-16-pg-explain-ui_0.0.0-1PIGSTY~jammy_amd64.deb
+Size: 937442
+SHA256: b745e855ab915c6170e269a6f2601a9e72594c2936300d2b0311cc8e1931a971
+SHA1: b83e0471c773c445ffaeefd7142ae4ae6e74f959
+MD5sum: 148f1637051e161b5d6f635000b6e4d4
+Description: A Postgres extension that allows you to easily jump into a visual plan UI for any SQL query
+  This is a simple Postgres extension that allows you to easily jump into a visual plan UI for any SQL query.
 
 Package: postgresql-16-pg-extra-time
 Source: pg-extra-time
@@ -11363,10 +12071,10 @@ Homepage: https://github.com/supabase/pg_graphql
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-graphql/postgresql-16-pg-graphql_1.5.9-1PIGSTY~jammy_amd64.deb
-Size: 729636
-SHA256: 6358688f276f6997117b804187fc7239448cb2810ddf3690b3260fa65c2ae068
-SHA1: 30acfea6e7609e1e7c381e341795021ffb3d4711
-MD5sum: 9092177480d15fda7d42b872bb1bd759
+Size: 732012
+SHA256: cdf07e1c8e1b73aafe5269a7ec421675415b7a24eede9165ce8776f9db986c06
+SHA1: 0087cc2555dd84457ec1b4fee26cd43de5a9c67a
+MD5sum: 86ecb13e40259245aa6501bbf4162648
 Description: reflects a GraphQL schema from the existing PostgresSQL 16 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via GraphQL with no additional servers, processes, or libraries.
@@ -11657,6 +12365,27 @@ Description: Manipulate orphaned files in PostgreSQL 16
   pg_move_back_orphaned(): to move back the orphaned files from the "orphaned_backup" directory to their orginal location (if still orphaned).
   pg_remove_moved_orphaned(): to remove the orphaned files located in the "orphaned_backup" directory.
 
+Package: postgresql-16-pg-parquet
+Source: pg-parquet
+Version: 0.1.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 18492
+Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-parquet
+Homepage: https://github.com/CrunchyData/pg_parquet
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-parquet/postgresql-16-pg-parquet_0.1.0-1PIGSTY~jammy_amd64.deb
+Size: 5440100
+SHA256: e424a5079de4fce45f6862715cb75ee49e692c436a2b5bf654ace32ee54b21c5
+SHA1: c683aabad708fa6a19bb4b6c41b7ee19995dfe15
+MD5sum: 4c86eedb22f6469ab2f3775bfc621b41
+Description: Copy to/from Parquet in S3 from within PostgreSQL
+  pg_parquet is a PostgreSQL extension that allows you to read and write Parquet files,
+  which are located in S3 or file system, from PostgreSQL via COPY TO/FROM commands.
+  It depends on Apache Arrow project to read and write Parquet files and pgrx project to extend PostgreSQL's COPY command.
+
 Package: postgresql-16-pg-permissions
 Source: pg-permissions
 Version: 1.3-1PIGSTY~jammy
@@ -11675,6 +12404,45 @@ SHA1: 6f62c11c884bb4f45156ea4246973d2c5f3c3648
 MD5sum: a5525a9738f7ed83a80d317a1ffa3cd8
 Description: A simple set of views to see ALL permissions in a PostgreSQL database
   This extension allows you to review object permissions on a PostgreSQL database.
+
+Package: postgresql-16-pg-plan-filter
+Source: pg-plan-filter
+Version: 0.0.1-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 41
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 15)
+Provides: postgresql-pg-plan-filter
+Homepage: https://github.com/pgexperts/pg_plan_filter
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-plan-filter/postgresql-16-pg-plan-filter_0.0.1-1PIGSTY~jammy_amd64.deb
+Size: 10838
+SHA256: 4a73388fde2814d8db6251fa18114d72c4a0b59edce4268b74dca36f41f7dd10
+SHA1: 382af948a1f45668417f3e3d31fd8c7f2070a8d7
+MD5sum: e6e64dba1df6a703b2855c43d2fab48c
+Description: filter statements by their execution plans.
+  This loadable module will test statements against specific configured criteria before execution, raising an error if the criteria are violated.
+  This allows administrators to prevent execution of certain queries on production databases.
+
+Package: postgresql-16-pg-polyline
+Source: pg-polyline
+Version: 0.0.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 489
+Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-polyline
+Homepage: https://github.com/yihong0618/pg_polyline
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-polyline/postgresql-16-pg-polyline_0.0.0-1PIGSTY~jammy_amd64.deb
+Size: 199394
+SHA256: 65fea9201ad3f3abbdbe6a998300838657ab4e567944ed450cbfb59955b1e3c3
+SHA1: 261d9aa293d44d0858fc6cf338502d9af153bbff
+MD5sum: c091e2d9600ad01aa32362777ce9cf71
+Description: Fast Google Encoded Polyline encoding & decoding for postgres
+  Fast Google Encoded Polyline encoding & decoding for postgres Extension
 
 Package: postgresql-16-pg-proctab
 Source: pg-proctab
@@ -11770,6 +12538,26 @@ SHA1: a035d1b66bbf1c2b167cffeb9226d7c9b03aeedf
 MD5sum: c6987b70ac7c756258013bbca49437a8
 Description: Redis Publish from PostgreSQL
   This PostgreSQL extension allows you to connect to Redis and publish messages on a Redis channel from PostgreSQL.
+
+Package: postgresql-16-pg-relusage
+Source: pg-relusage
+Version: 0.0.1-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 49
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 15)
+Provides: postgresql-pg-relusage
+Homepage: https://github.com/adept/pg_relusage
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-relusage/postgresql-16-pg-relusage_0.0.1-1PIGSTY~jammy_amd64.deb
+Size: 14886
+SHA256: 9e5790d2d5e1629831fdcd30591823ba43b51c33e44cf407686df5d9ec84ce0d
+SHA1: 1deaa23579a2eaa5c0f5f93867f899a2745b3ff9
+MD5sum: b53198bcf07df491497a5460b7fdd370
+Description: discover and log the relations used in your statements
+  pg_relusage is a PostgreSQL extension which allows one to discover and log
+  the relations used in SQL statements. Supported PostgreSQL versions: 9.5 to 17
 
 Package: postgresql-16-pg-safeupdate
 Source: pg-safeupdate
@@ -11907,6 +12695,30 @@ Description: Store execution plans like pg_stat_statements does for queries.
   The pg_store_plans module provides a means for tracking execution plan statistics of all SQL statements executed by a server.
   The module must be loaded by adding pg_store_plans to shared_preload_libraries in postgresql.conf, because it requires additional shared memory. This means that a server restart is required to add or remove the module. pg_store_plans requires the GUC variable compute_query_id to be "on" or "auto". If it is set to "no", pg_store_plans is silently disabled.
 
+Package: postgresql-16-pg-summarize
+Source: pg-summarize
+Version: 0.0.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 2563
+Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1)
+Provides: postgresql-pg-summarize
+Homepage: https://github.com/HexaCluster/pg_summarize
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-summarize/postgresql-16-pg-summarize_0.0.0-1PIGSTY~jammy_amd64.deb
+Size: 917000
+SHA256: 38131060adfea551af76e8097d6c41e35c82055e48ae22f99df2968e5652aceb
+SHA1: 2d8b74572c25080dde1be33771be7b266f5d9853
+MD5sum: dfdb18fddad28f0780303b0730607275
+Description: Text Summarization using LLMs. Built using pgrx
+  PostgreSQL is a powerful and versatile database management system.
+  One of its strengths lies in its extensibility.
+  In this blog, we will explore how to extend PostgreSQL using Rust,
+  specifically focusing on creating a custom extension called pg_summarize
+  that integrates with the OpenAI API. This extension will include a basic "Hello, pg_summarize!"
+  function and another function to summarize text using OpenAI's models.
+
 Package: postgresql-16-pg-tde
 Source: pg-tde
 Version: 1.0.0-1bPIGSTY~jammy
@@ -12024,6 +12836,25 @@ Description: Trusted Language Extensions for PostgreSQL
   extend and deploy new PostgreSQL functionality with lower administrative and technical overhead.
   Developers can use Trusted Language Extensions for PostgreSQL to create and install extensions on restricted filesystems
   and work with PostgreSQL internals through a SQL API.
+
+Package: postgresql-16-pg-uint128
+Source: pg-uint128
+Version: 1.0.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 1249
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 15)
+Provides: postgresql-pg-uint128
+Homepage: https://github.com/pg-uint/pg-uint128
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-uint128/postgresql-16-pg-uint128_1.0.0-1PIGSTY~jammy_amd64.deb
+Size: 250500
+SHA256: 542d1ed40706ae9e775c22398e6242de14cd5b223b8454d2f885d66283bee5f0
+SHA1: 31761c15a774d358e76c49dd23bff1735a9f1cba
+MD5sum: ac3af3a379cbef23a130686fc0b87726
+Description: adds native support for unsigned integers and 128-bit signed/unsigned integer types.
+  A PostgreSQL extension that adds native support for unsigned integers and 128-bit signed/unsigned integer types.
 
 Package: postgresql-16-pg-uri
 Source: pg-uri
@@ -13533,6 +14364,26 @@ Description: PostgreSQL extension to store authentication attempts
   This extension eases monitoring of login attempts to your database. Postgres writes each login attempt to a log file,
   but it is hard to identify through that information alone if your database is under malicious activity.
 
+Package: postgresql-17-pg-base58
+Source: pg-base58
+Version: 0.0.1-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 429
+Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-base58
+Homepage: https://github.com/Fell-x27/pg_base58
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-base58/postgresql-17-pg-base58_0.0.1-1PIGSTY~jammy_amd64.deb
+Size: 178364
+SHA256: 3e69f27e77bf0b1046bbd63f0b6276cf0dab60f1fe410e1a6cf2e24e3759ab05
+SHA1: 46a895331df80f990b72c4817cdbadf1085e2f78
+MD5sum: f1645ec02daec2e624b356354f4c7422
+Description: Base58 Encoder/Decoder Extension for PostgreSQL
+  SELECT base58_encode('hello'::bytea);
+  SELECT base58_decode('Cn8eVZg');
+
 Package: postgresql-17-pg-bigm
 Source: pg-bigm
 Version: 1.2-1PIGSTY~jammy
@@ -13552,6 +14403,27 @@ MD5sum: 464fe7f14e2f4adda844b5cbc9ca8bab
 Description: The pg_bigm module provides full text search capability in PostgreSQL. This module allows a user to create 2-gram (bigram) index for faster full text search.
   The pg_bigm module provides full text search capability in PostgreSQL. This module allows a user to create 2-gram (bigram) index for faster full text search.
   pg_bigm is released under the PostgreSQL License, a liberal Open Source license, similar to the BSD or MIT licenses.
+
+Package: postgresql-17-pg-cardano
+Source: pg-cardano
+Version: 1.0.2-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 806
+Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-cardano
+Homepage: https://github.com/Fell-x27/pg_cardano
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-cardano/postgresql-17-pg-cardano_1.0.2-1PIGSTY~jammy_amd64.deb
+Size: 354284
+SHA256: 7475d47eb5793f0c0a2fb0a2ed8b0d53c145ed0a7975c9ac2c5bcdedc06d7b4f
+SHA1: 4eca6d097da43a1ac6e97ae0ec131cc16ba4905c
+MD5sum: 2813da5cfaa0a60c632006b689c66160
+Description: A PostgreSQL extension providing a suite of Cardano-related tools, including cryptographic functions, address encoding/decoding, and blockchain data processing.
+  This extension is an attempt to create a Swiss Army knife for simplifying the work with binary data in Cardano db-sync, as well as automating some processes.
+  It is written in Rust, which ensures high security and excellent performance.
+  The extension is designed to handle unforeseen errors gracefully, without causing any disruptions in the database's operation. All errors are safely propagated as PostgreSQL-level error messages.
 
 Package: postgresql-17-pg-cheat-funcs
 Source: pg-cheat-funcs
@@ -13637,20 +14509,20 @@ Description: 1 Byte Currency ISO type for PostgreSQL
 
 Package: postgresql-17-pg-duckdb
 Source: pg-duckdb
-Version: 0.0.1-d663d8a
+Version: 0.0.1-f34ae06
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 26609
+Installed-Size: 34524
 Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libc6 (>= 2.34), libgcc-s1 (>= 3.4), liblz4-1 (>= 0.0~r113), libpq5, libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
 Provides: postgresql-pg-duckdb
 Homepage: https://github.com/duckdb/pg_duckdb
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-duckdb/postgresql-17-pg-duckdb_0.0.1-d663d8a_amd64.deb
-Size: 7892462
-SHA256: deef28d30338c1b9c79a1193647528bbcdd5ba60cc0b3ab256c4a4942184eaea
-SHA1: f5830ac42f4c8c20c8f52c33c5e340e906d7def2
-MD5sum: 2a9510f78a3ef4436ca89711ec724483
+Filename: pool/main/p/pg-duckdb/postgresql-17-pg-duckdb_0.0.1-f34ae06_amd64.deb
+Size: 9778126
+SHA256: 760c0c96d7cf1eae3277fdb2a5300ef6fc5ee47984a137127cbf2f3042e8cfbd
+SHA1: a2286a13b917c72ef63d9999909fe20258b53666
+MD5sum: c427d606ecfc86385bafeb353d595cd9
 Description: DuckDB-powered Postgres for high performance apps & analytics.
   pg_duckdb is a Postgres extension that embeds DuckDB's columnar-vectorized analytics engine and features into Postgres.
   We recommend using pg_duckdb to build high performance analytics and data-intensive applications.
@@ -13696,6 +14568,25 @@ MD5sum: 07e4d0cd0b20bc188a7a9132ea7fd659
 Description: Postgers extension to fetch the value of an environment variable
   This library contains a single PostgreSQL extension, envvar, which provides a function, get_env(TEXT),
    that returns the value of an environment variable set on the database server
+
+Package: postgresql-17-pg-explain-ui
+Source: pg-explain-ui
+Version: 0.0.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 2665
+Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1)
+Provides: postgresql-pg-explain-ui
+Homepage: https://github.com/davidgomes/pg-explain-ui
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-explain-ui/postgresql-17-pg-explain-ui_0.0.0-1PIGSTY~jammy_amd64.deb
+Size: 939566
+SHA256: a19bd4d68bb360d2c08815d962e0bebeded6ddb50317e5a4526b7c60eb1402b8
+SHA1: 5edeb023f2d177fe88f28520b5aec75928f01d5e
+MD5sum: 3c62f9e499113ccdb0ea68e4e6a84aa4
+Description: A Postgres extension that allows you to easily jump into a visual plan UI for any SQL query
+  This is a simple Postgres extension that allows you to easily jump into a visual plan UI for any SQL query.
 
 Package: postgresql-17-pg-extra-time
 Source: pg-extra-time
@@ -14045,6 +14936,27 @@ Description: Manipulate orphaned files in PostgreSQL 17
   pg_move_back_orphaned(): to move back the orphaned files from the "orphaned_backup" directory to their orginal location (if still orphaned).
   pg_remove_moved_orphaned(): to remove the orphaned files located in the "orphaned_backup" directory.
 
+Package: postgresql-17-pg-parquet
+Source: pg-parquet
+Version: 0.1.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 18492
+Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-parquet
+Homepage: https://github.com/CrunchyData/pg_parquet
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-parquet/postgresql-17-pg-parquet_0.1.0-1PIGSTY~jammy_amd64.deb
+Size: 5439556
+SHA256: 44fb56de1edb1df3520ceab554e96f037aa4c0254c2c4f9c885e2560f3c19582
+SHA1: eb80dea4fc4c273582f475e88136820080d039cf
+MD5sum: c3ad3b3a2aac893f04c253ace1cd4356
+Description: Copy to/from Parquet in S3 from within PostgreSQL
+  pg_parquet is a PostgreSQL extension that allows you to read and write Parquet files,
+  which are located in S3 or file system, from PostgreSQL via COPY TO/FROM commands.
+  It depends on Apache Arrow project to read and write Parquet files and pgrx project to extend PostgreSQL's COPY command.
+
 Package: postgresql-17-pg-permissions
 Source: pg-permissions
 Version: 1.3-1PIGSTY~jammy
@@ -14063,6 +14975,45 @@ SHA1: b6ad8f87b4b6eda2a527474d884edfbb76177d5a
 MD5sum: ceab1f0bb8a3dc7896d3604b816e9d14
 Description: A simple set of views to see ALL permissions in a PostgreSQL database
   This extension allows you to review object permissions on a PostgreSQL database.
+
+Package: postgresql-17-pg-plan-filter
+Source: pg-plan-filter
+Version: 0.0.1-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 41
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 15)
+Provides: postgresql-pg-plan-filter
+Homepage: https://github.com/pgexperts/pg_plan_filter
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-plan-filter/postgresql-17-pg-plan-filter_0.0.1-1PIGSTY~jammy_amd64.deb
+Size: 10836
+SHA256: 0f03d5eabe3b24bf57ca31040cc69178ab2eb79ed1657d3c74cb8b5e55645439
+SHA1: 60d97d065faea0e560262e641b224f534afc732c
+MD5sum: 9bd3b083b466690bf30321d3117b8026
+Description: filter statements by their execution plans.
+  This loadable module will test statements against specific configured criteria before execution, raising an error if the criteria are violated.
+  This allows administrators to prevent execution of certain queries on production databases.
+
+Package: postgresql-17-pg-polyline
+Source: pg-polyline
+Version: 0.0.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 489
+Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-polyline
+Homepage: https://github.com/yihong0618/pg_polyline
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-polyline/postgresql-17-pg-polyline_0.0.0-1PIGSTY~jammy_amd64.deb
+Size: 199552
+SHA256: 6a86025321861a67c461711ae1e4832f351b2e4fc50105b028c63ed9f4629bff
+SHA1: 60e31b8905e9dc163212b2d00d79476ba0ac42e3
+MD5sum: 468bd5e9384bbfcbd4dd860ea6bdc027
+Description: Fast Google Encoded Polyline encoding & decoding for postgres
+  Fast Google Encoded Polyline encoding & decoding for postgres Extension
 
 Package: postgresql-17-pg-profile
 Source: pg-profile
@@ -14139,6 +15090,26 @@ SHA1: 1a28a28b998a323b2992b3cdb203aa86f95b8a5d
 MD5sum: da455b4fe0e1f36b6ec1f6bd64907b82
 Description: Redis Publish from PostgreSQL
   This PostgreSQL extension allows you to connect to Redis and publish messages on a Redis channel from PostgreSQL.
+
+Package: postgresql-17-pg-relusage
+Source: pg-relusage
+Version: 0.0.1-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 49
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 15)
+Provides: postgresql-pg-relusage
+Homepage: https://github.com/adept/pg_relusage
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-relusage/postgresql-17-pg-relusage_0.0.1-1PIGSTY~jammy_amd64.deb
+Size: 14944
+SHA256: 87a2a0ddd226e8d6319b51e788250e6b065de46aed639798681ddbca6acdca92
+SHA1: 9d46116f5a0e3c52b509f8d371df9cee2d6ac63f
+MD5sum: 57adfdf3eb805168ab8fa7a008ea64e8
+Description: discover and log the relations used in your statements
+  pg_relusage is a PostgreSQL extension which allows one to discover and log
+  the relations used in SQL statements. Supported PostgreSQL versions: 9.5 to 17
 
 Package: postgresql-17-pg-safeupdate
 Source: pg-safeupdate
@@ -14234,6 +15205,30 @@ Description: Query Performance Monitoring Tool for PostgreSQL
   The pg_stat_monitor is a Query Performance Monitoring tool for PostgreSQL.
   It attempts to provide a more holistic picture by providing much-needed query performance insights in a single view.
 
+Package: postgresql-17-pg-summarize
+Source: pg-summarize
+Version: 0.0.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 2563
+Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1)
+Provides: postgresql-pg-summarize
+Homepage: https://github.com/HexaCluster/pg_summarize
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-summarize/postgresql-17-pg-summarize_0.0.0-1PIGSTY~jammy_amd64.deb
+Size: 916932
+SHA256: 4ff7f9cd6149de16ca25d2d58f5d584b1debc9238d49ee4092770e0a8b43b7bd
+SHA1: d908ec18472faeea87ad01c4156cf6521d21f2b2
+MD5sum: 6525f1ec48471610914c9dc3b5d75cb8
+Description: Text Summarization using LLMs. Built using pgrx
+  PostgreSQL is a powerful and versatile database management system.
+  One of its strengths lies in its extensibility.
+  In this blog, we will explore how to extend PostgreSQL using Rust,
+  specifically focusing on creating a custom extension called pg_summarize
+  that integrates with the OpenAI API. This extension will include a basic "Hello, pg_summarize!"
+  function and another function to summarize text using OpenAI's models.
+
 Package: postgresql-17-pg-tiktoken
 Source: pg-tiktoken
 Version: 0.0.1-1PIGSTY~jammy
@@ -14312,6 +15307,25 @@ Description: Trusted Language Extensions for PostgreSQL
   extend and deploy new PostgreSQL functionality with lower administrative and technical overhead.
   Developers can use Trusted Language Extensions for PostgreSQL to create and install extensions on restricted filesystems
   and work with PostgreSQL internals through a SQL API.
+
+Package: postgresql-17-pg-uint128
+Source: pg-uint128
+Version: 1.0.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 1250
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 15)
+Provides: postgresql-pg-uint128
+Homepage: https://github.com/pg-uint/pg-uint128
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-uint128/postgresql-17-pg-uint128_1.0.0-1PIGSTY~jammy_amd64.deb
+Size: 250656
+SHA256: 0b3b42819531edc21fb61816ad7fdba9b81c97a04a42bf7b19663f533a78b68f
+SHA1: 791ac753d860c1c59cc9526f1e0ba58f383ca091
+MD5sum: f5d553950509dcef473e0c9bcb6854c8
+Description: adds native support for unsigned integers and 128-bit signed/unsigned integer types.
+  A PostgreSQL extension that adds native support for unsigned integers and 128-bit signed/unsigned integer types.
 
 Package: postgresql-17-pg-uri
 Source: pg-uri
