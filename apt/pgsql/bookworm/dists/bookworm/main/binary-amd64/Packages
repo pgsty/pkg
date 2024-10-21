@@ -1619,6 +1619,25 @@ Description: filter statements by their execution plans.
   This loadable module will test statements against specific configured criteria before execution, raising an error if the criteria are violated.
   This allows administrators to prevent execution of certain queries on production databases.
 
+Package: postgresql-12-pg-polyline
+Source: pg-polyline
+Version: 0.0.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 489
+Depends: postgresql-12, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-polyline
+Homepage: https://github.com/yihong0618/pg_polyline
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-polyline/postgresql-12-pg-polyline_0.0.0-1PIGSTY~bookworm_amd64.deb
+Size: 183524
+SHA256: 04d0d130dc19bf3bdaed68765f8927da43d8ee0e6c3c49efa2a1cb45883caca2
+SHA1: 240d70c711adea9fd437e3bc040ccc3d827e583b
+MD5sum: 4230921906db1aa0ec491cd7699f7416
+Description: Fast Google Encoded Polyline encoding & decoding for postgres
+  Fast Google Encoded Polyline encoding & decoding for postgres Extension
+
 Package: postgresql-12-pg-profile
 Source: pg-profile
 Version: 4.7-1PIGSTY~bookworm
@@ -4162,6 +4181,25 @@ Description: filter statements by their execution plans.
   This loadable module will test statements against specific configured criteria before execution, raising an error if the criteria are violated.
   This allows administrators to prevent execution of certain queries on production databases.
 
+Package: postgresql-13-pg-polyline
+Source: pg-polyline
+Version: 0.0.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 489
+Depends: postgresql-13, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-polyline
+Homepage: https://github.com/yihong0618/pg_polyline
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-polyline/postgresql-13-pg-polyline_0.0.0-1PIGSTY~bookworm_amd64.deb
+Size: 183452
+SHA256: 39e9b23687aba2eddecaf71d828861ec094ddd7200a66cf9250f025c5bcd0785
+SHA1: 40877c73b6f88067499370a748c5b352b564298e
+MD5sum: 241190dbef8a1c4be4962bad73d371ad
+Description: Fast Google Encoded Polyline encoding & decoding for postgres
+  Fast Google Encoded Polyline encoding & decoding for postgres Extension
+
 Package: postgresql-13-pg-profile
 Source: pg-profile
 Version: 4.7-1PIGSTY~bookworm
@@ -6496,6 +6534,26 @@ Description: Geohashing library for HAWQ, Greenplum DB, PostgreSQL
   Based on this C language geohashing library: https://github.com/lyokato/libgeohash.git
   Install (everthing shown here was run on the Pivotal HD single node VM, CentOS release 6.5): NOTE: the user running the make install requires write permission into the installation directory of the target database.
 
+Package: postgresql-14-pg-graphql
+Source: pg-graphql
+Version: 1.5.9-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 1979
+Depends: postgresql-14
+Provides: postgresql-pg-graphql
+Homepage: https://github.com/supabase/pg_graphql
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-graphql/postgresql-14-pg-graphql_1.5.9-1PIGSTY~bookworm_amd64.deb
+Size: 668916
+SHA256: 87a4d42067a488cd9365d6816355512ebe976007391fd45b86436711b2d381d1
+SHA1: 8b8eefe31a45bab21bf31b1513af8adfb3c7865f
+MD5sum: 46a2c77220c2c601b2754c9764e0af4d
+Description: reflects a GraphQL schema from the existing PostgresSQL 14 schema
+  The extension keeps schema translation and query resolution neatly contained on your database server.
+  This enables any programming language that can connect to PostgreSQL to query the database via GraphQL with no additional servers, processes, or libraries.
+
 Package: postgresql-14-pg-hashids
 Source: pg-hashids
 Version: 1.3-1PIGSTY~bookworm
@@ -6806,6 +6864,25 @@ MD5sum: e48db6421c976227ef0a5764f9e1125c
 Description: filter statements by their execution plans.
   This loadable module will test statements against specific configured criteria before execution, raising an error if the criteria are violated.
   This allows administrators to prevent execution of certain queries on production databases.
+
+Package: postgresql-14-pg-polyline
+Source: pg-polyline
+Version: 0.0.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 489
+Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-polyline
+Homepage: https://github.com/yihong0618/pg_polyline
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-polyline/postgresql-14-pg-polyline_0.0.0-1PIGSTY~bookworm_amd64.deb
+Size: 183344
+SHA256: 793dd4e7829a0ae4b9776d2d43645103403348426c751a6a313c1bd8b41f8a74
+SHA1: c4abbd26c0b60d8e2cc2393f94f32022a4349a41
+MD5sum: 1d2ca01b4f0df16e66ea31ef6abae1fb
+Description: Fast Google Encoded Polyline encoding & decoding for postgres
+  Fast Google Encoded Polyline encoding & decoding for postgres Extension
 
 Package: postgresql-14-pg-profile
 Source: pg-profile
@@ -9257,6 +9334,26 @@ Description: Geohashing library for HAWQ, Greenplum DB, PostgreSQL
   Based on this C language geohashing library: https://github.com/lyokato/libgeohash.git
   Install (everthing shown here was run on the Pivotal HD single node VM, CentOS release 6.5): NOTE: the user running the make install requires write permission into the installation directory of the target database.
 
+Package: postgresql-15-pg-graphql
+Source: pg-graphql
+Version: 1.5.9-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 1979
+Depends: postgresql-15
+Provides: postgresql-pg-graphql
+Homepage: https://github.com/supabase/pg_graphql
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-graphql/postgresql-15-pg-graphql_1.5.9-1PIGSTY~bookworm_amd64.deb
+Size: 669040
+SHA256: 5be5646d5a34d84a0c34c9a2741091ffcfbcc88986cb8cfdb47ae58de4415bc5
+SHA1: 0a47f08e949aef8db4d60ee60f820f9c90b90804
+MD5sum: fc6817cd568099802857c1a7eb687c8a
+Description: reflects a GraphQL schema from the existing PostgresSQL 15 schema
+  The extension keeps schema translation and query resolution neatly contained on your database server.
+  This enables any programming language that can connect to PostgreSQL to query the database via GraphQL with no additional servers, processes, or libraries.
+
 Package: postgresql-15-pg-hashids
 Source: pg-hashids
 Version: 1.3-1PIGSTY~bookworm
@@ -9567,6 +9664,25 @@ MD5sum: e73e2a1df574f5b7352f57f0cab68f71
 Description: filter statements by their execution plans.
   This loadable module will test statements against specific configured criteria before execution, raising an error if the criteria are violated.
   This allows administrators to prevent execution of certain queries on production databases.
+
+Package: postgresql-15-pg-polyline
+Source: pg-polyline
+Version: 0.0.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 489
+Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-polyline
+Homepage: https://github.com/yihong0618/pg_polyline
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-polyline/postgresql-15-pg-polyline_0.0.0-1PIGSTY~bookworm_amd64.deb
+Size: 183424
+SHA256: 15b80823974f79b7e07892bfffc08f08530002fb695f95ff5ececbe1253dee0f
+SHA1: fe4f8489cd0b63c4e7962a8b1ba604905fb8f573
+MD5sum: 3f0b820be506591e68b8b4bec8fdc8fd
+Description: Fast Google Encoded Polyline encoding & decoding for postgres
+  Fast Google Encoded Polyline encoding & decoding for postgres Extension
 
 Package: postgresql-15-pg-profile
 Source: pg-profile
@@ -11953,6 +12069,26 @@ Description: PostgreSQL extension to partition tables following a foreign key
   pg_fkpart is a PostgreSQL extension to partition tables following a foreign key of a table.
   It is initially based of pg_part from Satoshi Nagayasu snaga@uptime.jp.
 
+Package: postgresql-16-pg-graphql
+Source: pg-graphql
+Version: 1.5.9-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 1979
+Depends: postgresql-16
+Provides: postgresql-pg-graphql
+Homepage: https://github.com/supabase/pg_graphql
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-graphql/postgresql-16-pg-graphql_1.5.9-1PIGSTY~bookworm_amd64.deb
+Size: 668928
+SHA256: 943936c9fe178bb3ee301ec75f2f6327bc5cab91c5f86f8489402e416e766d7a
+SHA1: d7dae3e3eeb4ce728b7f1b127f893a0dc6b9a8a5
+MD5sum: c6b5fe569d0866c039d63a4f9bb3e1b0
+Description: reflects a GraphQL schema from the existing PostgresSQL 16 schema
+  The extension keeps schema translation and query resolution neatly contained on your database server.
+  This enables any programming language that can connect to PostgreSQL to query the database via GraphQL with no additional servers, processes, or libraries.
+
 Package: postgresql-16-pg-hashids
 Source: pg-hashids
 Version: 1.3-1PIGSTY~bookworm
@@ -12277,6 +12413,25 @@ MD5sum: 48c32c225bc4341d16a7d64e1ccaf840
 Description: filter statements by their execution plans.
   This loadable module will test statements against specific configured criteria before execution, raising an error if the criteria are violated.
   This allows administrators to prevent execution of certain queries on production databases.
+
+Package: postgresql-16-pg-polyline
+Source: pg-polyline
+Version: 0.0.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 489
+Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-polyline
+Homepage: https://github.com/yihong0618/pg_polyline
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-polyline/postgresql-16-pg-polyline_0.0.0-1PIGSTY~bookworm_amd64.deb
+Size: 183500
+SHA256: 028702e41bcc4b0969ac5ce655796c9dfce3156676af699000602a9526eff083
+SHA1: 33705873c7d5c77ba504e8fce5acd97e40399055
+MD5sum: e642562e9e2ff50631a1a28dfd88b159
+Description: Fast Google Encoded Polyline encoding & decoding for postgres
+  Fast Google Encoded Polyline encoding & decoding for postgres Extension
 
 Package: postgresql-16-pg-proctab
 Source: pg-proctab
@@ -14338,6 +14493,26 @@ Description: PostgreSQL extension to partition tables following a foreign key
   pg_fkpart is a PostgreSQL extension to partition tables following a foreign key of a table.
   It is initially based of pg_part from Satoshi Nagayasu snaga@uptime.jp.
 
+Package: postgresql-17-pg-graphql
+Source: pg-graphql
+Version: 1.5.9-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 20
+Depends: postgresql-17
+Provides: postgresql-pg-graphql
+Homepage: https://github.com/supabase/pg_graphql
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-graphql/postgresql-17-pg-graphql_1.5.9-1PIGSTY~bookworm_amd64.deb
+Size: 6548
+SHA256: 43bef093e0ffc9623b00d7b523f66aad9344453c1e4096d121e10de3a16ff61f
+SHA1: 482eab6d6f28ddc56aa8755b815fbfca9e1f303d
+MD5sum: 98cbc52c526d71ed408d84a9e78d04ae
+Description: reflects a GraphQL schema from the existing PostgresSQL 17 schema
+  The extension keeps schema translation and query resolution neatly contained on your database server.
+  This enables any programming language that can connect to PostgreSQL to query the database via GraphQL with no additional servers, processes, or libraries.
+
 Package: postgresql-17-pg-hashids
 Source: pg-hashids
 Version: 1.3-1PIGSTY~bookworm
@@ -14607,6 +14782,25 @@ MD5sum: 362f3fec3692de38d2fc5b5e6a61fc5c
 Description: filter statements by their execution plans.
   This loadable module will test statements against specific configured criteria before execution, raising an error if the criteria are violated.
   This allows administrators to prevent execution of certain queries on production databases.
+
+Package: postgresql-17-pg-polyline
+Source: pg-polyline
+Version: 0.0.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 489
+Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-polyline
+Homepage: https://github.com/yihong0618/pg_polyline
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-polyline/postgresql-17-pg-polyline_0.0.0-1PIGSTY~bookworm_amd64.deb
+Size: 183336
+SHA256: bad31c78c4452092fc378c76bd1a67b993281e72e3fe5cc8d0b01746f311effc
+SHA1: 41d916ad116194ef19f97738bd1500d8192bec27
+MD5sum: c45214a661640ec0acedcc88b985608a
+Description: Fast Google Encoded Polyline encoding & decoding for postgres
+  Fast Google Encoded Polyline encoding & decoding for postgres Extension
 
 Package: postgresql-17-pg-profile
 Source: pg-profile
