@@ -2,6 +2,8 @@
 
 The supplementary [apt](apt/) and [yum](yum/) software repo for PostgreSQL ecosystem used by [Pigsty](https://pigsty.io)
 
+Contains 150+ PG extensions for PostgreSQL 12 - 17 in addition to the official PGDG apt/yum repo.
+
 Related Projects:
 
 - [`infra_pkg`](https://github.com/pgsty/infra-pkg): Building observability stack & modules from tarball
@@ -21,10 +23,7 @@ You can install pigsty source from this repo, via:
 curl -fsSL https://repo.pigsty.io/get | bash
 
 # install a specific version
-curl -fsSL https://repo.pigsty.io/get | bash -s v3.0.1
-
-# install from china CDN mirror 
-curl -fsSL https://repo.pigsty.cc/get | bash
+curl -fsSL https://repo.pigsty.io/get | bash -s v3.0.3
 ```
 
 
