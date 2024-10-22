@@ -13797,6 +13797,28 @@ Description: Output plugin for logical replication
   on the logical changes it finds. Those queries can be consumed as they
   are by any remote source.
 
+Package: postgresql-17-floatvec
+Source: floatvec
+Version: 1.0.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 77
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.4)
+Provides: postgresql-floatvec
+Homepage: https://github.com/pjungwir/floatvec
+Priority: optional
+Section: database
+Filename: pool/main/f/floatvec/postgresql-17-floatvec_1.0.1-1PIGSTY~bookworm_amd64.deb
+Size: 23728
+SHA256: d9006976031040af1fb8ea7f191535ad36ceb411a258edaf5bb45658dc2a7df0
+SHA1: dcebc3fa4a05643950cf28b92bc6b9e6355649c9
+MD5sum: 042383e7bd120fe9230b9170e151653a
+Description: Postgres functions for arithmetic on numeric arrays
+  This Postgres extension provides basic arithmetic functions for operating on arrays (treated as vectors).
+  It supports addition, subtraction, multiplication, division, and raising to a power. Everything (so far) is element-by-element,
+  so no dot products or other matrix stuff.
+  Every function lets you pass either two arrays of the same length, or an array and a scalar, or a scalar and an array.
+
 Package: postgresql-17-geoip
 Source: geoip
 Version: 0.3.0-1PIGSTY~bookworm
@@ -14174,6 +14196,25 @@ Description: A custom data type for storing MD5 hashes (instead of the native TE
   This extension provides a simple data type storing 128-bit values (e.g. MD5 hashes) in a bit more efficient way - in a fixed-length columns and inline.
   The extension defines the 'md5hash' type itself, casts, operators and an operator class for btree indexes. It's fairly straightforward and simple to add more operators or classes.
 
+Package: postgresql-17-noset
+Source: noset
+Version: 0.3.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 89
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.4)
+Provides: postgresql-noset
+Homepage: https://gitlab.com/ongresinc/extensions/noset
+Priority: optional
+Section: database
+Filename: pool/main/n/noset/postgresql-17-noset_0.3.0-1PIGSTY~bookworm_amd64.deb
+Size: 31992
+SHA256: 0d0c6fb98bc59d9411bf95ac7fe73a62e57aff560de3b1f4e09485e345b4dbe3
+SHA1: 1464ecfff5eb55cdd9a3a578bcf0d41b08888b43
+MD5sum: 1a54d000b607c1836518690502edb4c2
+Description: Noset is a PostgreSQL Extension that allows blocking specific users to change a set of user-context variables.
+  noset is a loadable module via shared_preload_libraries,  to avoid SET/RESET command for change a parameter in session. It is possible to filter one or a group a parameters to block.
+
 Package: postgresql-17-pagevis
 Source: pagevis
 Version: 0.1-1PIGSTY~bookworm
@@ -14271,6 +14312,26 @@ Description: Access Control Lists (pg-arraymath) PostgreSQL Extension
   You need this extension if you want to restrict access to rows in tables based on an authenticated user.
   Access Control List (pg-arraymath) has become the de-facto standard for implementing a security model in modern applications.
   Complex scenarios can be handled by using pg-arraymaths without having a complex permission model at the application level.
+
+Package: postgresql-17-pg-auditor
+Source: pg-auditor
+Version: 0.2-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 52
+Depends: postgresql-17
+Provides: postgresql-pg-auditor
+Homepage: https://github.com/aws/postgresql-logfdw
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-auditor/postgresql-17-pg-auditor_0.2-1PIGSTY~bookworm_amd64.deb
+Size: 8272
+SHA256: d704571a52126e173c4deaf741c0b678aa785c43d29a68b0b456d44faef0b35f
+SHA1: b53eebee658621d7774e3b77945f3c518d91f843
+MD5sum: f170a800110ae2442c6bc587d7de3b5a
+Description: PostgreSQL extension to log each DML statement and flashback transactions
+  PostgreSQL auditing extension that records each data modification statement of specific tables,
+  and allows partial or complete flashback of transactions.
 
 Package: postgresql-17-pg-auth-mon
 Source: pg-auth-mon
@@ -14437,6 +14498,25 @@ Description: Periodically or randomly crash your database
   pg_crash is an extension to PostgreSQL, which allows you to periodically or randomly crash your database
   infrastructure by sending kill (or other) signals to your DB processes and make them fail. It is ideal for HA and failover testing.
 
+Package: postgresql-17-pg-currency
+Source: pg-currency
+Version: 0.0.3-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 80
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.4)
+Provides: postgresql-pg-currency
+Homepage: https://github.com/adjust/pg-currency
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-currency/postgresql-17-pg-currency_0.0.3-1PIGSTY~bookworm_amd64.deb
+Size: 21608
+SHA256: 9b50b75ca61ace935606c4e259656135158c89510a3961fa511ec2c1977a380d
+SHA1: 04cf33aa43e2ec7e03c4128992ea40c4f2b3892b
+MD5sum: d6cf12d025014191b8d5e22fc3e89b92
+Description: 1 Byte Currency ISO type for PostgreSQL
+  A 1-byte ISO 4217 Currency Code data-type for PostgreSQL.
+
 Package: postgresql-17-pg-duckdb
 Source: pg-duckdb
 Version: 0.0.1-f34ae06
@@ -14517,6 +14597,25 @@ SHA1: 8c03ef75e923fcd6e3cfc177e41f4b047dbd3621
 MD5sum: e2555ce9106028271ec3c51511205ec3
 Description: A Postgres extension that allows you to easily jump into a visual plan UI for any SQL query
   This is a simple Postgres extension that allows you to easily jump into a visual plan UI for any SQL query.
+
+Package: postgresql-17-pg-extra-time
+Source: pg-extra-time
+Version: 1.1.3-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 220
+Depends: postgresql-17
+Provides: postgresql-pg-extra-time
+Homepage: https://github.com/bigsmoke/pg_extra_time
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-extra-time/postgresql-17-pg-extra-time_1.1.3-1PIGSTY~bookworm_amd64.deb
+Size: 14112
+SHA256: 8c2e26f40c8ce4a41f6687143fdef87c06ea4089e3aca01222a04a4845d396f7
+SHA1: ff4cf368382e6817649b6723beff8fd87fbade9c
+MD5sum: 2f60aecce8382be979951172ece7464f
+Description: Extra time functions for PostgreSQL 17
+  Some date time functions and operators that, in the opinion of the extension author, ought to be part of the PostgreSQL standard distribution.
 
 Package: postgresql-17-pg-failover-slots
 Source: pg-failover-slots
@@ -15394,6 +15493,26 @@ Description: Modern cryptography for PostgreSQL using libsodium.
   pgsodium is an encryption library extension for PostgreSQL using the libsodium library for high level cryptographic algorithms.
   pgsodium can be used a straight interface to libsodium, but it can also use a powerful feature called Server Key Management where pgsodium loads an external secret key into memory that is never accessible to SQL. This inaccessible root key can then be used to derive sub-keys and keypairs by key id. This id (type bigint) can then be stored instead of the derived key.
   Another advanced feature of pgsodium is Transparent Column Encryption which can automatically encrypt and decrypt one or more columns of data in a table.
+
+Package: postgresql-17-pgsql-tweaks
+Source: pgsql-tweaks
+Version: 0.10.4-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 74
+Depends: postgresql-17
+Provides: postgresql-pgsql-tweaks
+Homepage: https://gitlab.com/sjstoelting/pgsql-tweaks/
+Priority: optional
+Section: database
+Filename: pool/main/p/pgsql-tweaks/postgresql-17-pgsql-tweaks_0.10.4-1PIGSTY~bookworm_amd64.deb
+Size: 10452
+SHA256: 7fbd30a2f9572fef3f4f1111368e36f5b6e47a60bb52885ee668bbb3205a126f
+SHA1: f0c3cc58e1f95aa76f6a34629e2767032dabf547
+MD5sum: 042f9696c2d0fd285197206f9ada3074
+Description: Contains PostgreSQL functions which I regularly needed.
+  The functions and views published in this repository are some of those, which I regularly need in my daily job.
+  As these procedures are sort of essential, at least to me, I install them in the public schema. That way they are available for everyone without having to know a schema name.
 
 Package: postgresql-17-pguint
 Source: pguint
