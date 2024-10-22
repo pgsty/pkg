@@ -185,30 +185,6 @@ Description: Postgres C extension with aggregate functions for array inputs
   like min, max, avg, and var_samp that operate on arrays instead of scalars.
   It treats each array as a "vector" and handles each element independently.
 
-Package: postgresql-12-anonymizer
-Source: postgresql-anonymizer
-Version: 1.3.2-1PIGSTY~jammy
-Architecture: amd64
-Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 660
-Depends: postgresql-12, postgresql-12-jit-llvm (>= 15), libc6 (>= 2.4), postgresql-contrib-12
-Provides: postgresql-anonymizer
-Homepage: https://github.com/fboulnois/pg_permissions
-Priority: optional
-Section: database
-Filename: pool/main/p/postgresql-anonymizer/postgresql-12-anonymizer_1.3.2-1PIGSTY~jammy_amd64.deb
-Size: 238046
-SHA256: cc0cbcb98456308b11964a414699e48da4b0bb6b9e2fe8a42fa68551bedb22ae
-SHA1: 7030f03e2ce7cfabe22bd63ca51ce6d2eac580d0
-MD5sum: b64cf19ddb68756555d79583a040c995
-Description: PostgreSQL extension to anonymize data
-  postgresql_anonymizer is an extension to mask or replace personally
-  identifiable information (PII) or commercially sensitive data from
-  a PostgreSQL database.
-  The project relies on a declarative approach of anonymization. This means
-  we're using the PostgreSQL Data Definition Language (DDL) in order to specify
-  the anonymization strategy inside the table definition itself.
-
 Package: postgresql-12-aws-s3
 Source: aws-s3
 Version: 0.0.1-1PIGSTY~jammy
@@ -427,26 +403,6 @@ Description: Postgres functions for arithmetic on numeric arrays
   It supports addition, subtraction, multiplication, division, and raising to a power. Everything (so far) is element-by-element,
   so no dot products or other matrix stuff.
   Every function lets you pass either two arrays of the same length, or an array and a scalar, or a scalar and an array.
-
-Package: postgresql-12-geoip
-Source: geoip
-Version: 0.3.0-1PIGSTY~jammy
-Architecture: amd64
-Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 34
-Depends: postgresql-12, postgresql-12-ip4r
-Provides: postgresql-geoip
-Homepage: https://github.com/tvondra/geoip
-Priority: optional
-Section: database
-Filename: pool/main/g/geoip/postgresql-12-geoip_0.3.0-1PIGSTY~jammy_amd64.deb
-Size: 6548
-SHA256: 3c19fc8544aab64cd994777cca0c84258dd72bb74aad533589ee4bc4ee352b01
-SHA1: dd9de38f2042e6075dd894ab10a57673121b18c3
-MD5sum: 0aecc6f96c79ef0ed2f814064353f48c
-Description: an extension for GeoIP geolocation for PostgreSQL 12
-  This extension provides IP-based geolocation, i.e. you provide an IPv4 address and the extension looks for info about country, city, GPS etc.
-  To operate, the extension needs data mapping IP addresses to the other info, but these data are not part of the extension. A good free dataset is GeoLite from MaxMind (available at www.maxmind.com).
 
 Package: postgresql-12-gzip
 Source: pgsql-gzip
@@ -2654,30 +2610,6 @@ Description: Postgres C extension with aggregate functions for array inputs
   like min, max, avg, and var_samp that operate on arrays instead of scalars.
   It treats each array as a "vector" and handles each element independently.
 
-Package: postgresql-13-anonymizer
-Source: postgresql-anonymizer
-Version: 1.3.2-1PIGSTY~jammy
-Architecture: amd64
-Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 660
-Depends: postgresql-13, postgresql-13-jit-llvm (>= 15), libc6 (>= 2.4), postgresql-contrib-13
-Provides: postgresql-anonymizer
-Homepage: https://github.com/fboulnois/pg_permissions
-Priority: optional
-Section: database
-Filename: pool/main/p/postgresql-anonymizer/postgresql-13-anonymizer_1.3.2-1PIGSTY~jammy_amd64.deb
-Size: 238100
-SHA256: 40b1f6c758da5723bfd3ca844610f270f36b93d0eab50abb778c3b33c7554028
-SHA1: a40b62686358be08f6bd5e7df6df00d1308153c3
-MD5sum: 442310f09e30ec2012d7e1e531ee628f
-Description: PostgreSQL extension to anonymize data
-  postgresql_anonymizer is an extension to mask or replace personally
-  identifiable information (PII) or commercially sensitive data from
-  a PostgreSQL database.
-  The project relies on a declarative approach of anonymization. This means
-  we're using the PostgreSQL Data Definition Language (DDL) in order to specify
-  the anonymization strategy inside the table definition itself.
-
 Package: postgresql-13-aws-s3
 Source: aws-s3
 Version: 0.0.1-1PIGSTY~jammy
@@ -2896,26 +2828,6 @@ Description: Postgres functions for arithmetic on numeric arrays
   It supports addition, subtraction, multiplication, division, and raising to a power. Everything (so far) is element-by-element,
   so no dot products or other matrix stuff.
   Every function lets you pass either two arrays of the same length, or an array and a scalar, or a scalar and an array.
-
-Package: postgresql-13-geoip
-Source: geoip
-Version: 0.3.0-1PIGSTY~jammy
-Architecture: amd64
-Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 34
-Depends: postgresql-13, postgresql-13-ip4r
-Provides: postgresql-geoip
-Homepage: https://github.com/tvondra/geoip
-Priority: optional
-Section: database
-Filename: pool/main/g/geoip/postgresql-13-geoip_0.3.0-1PIGSTY~jammy_amd64.deb
-Size: 6546
-SHA256: 21fb25ecba71601e8d4ec99c112338fab6454f20a2da4a283926a49150ba6f38
-SHA1: 948523dafe5402da69d3121838a53948b8c9e9d1
-MD5sum: f3b1bce9cb113d1060d5baefadfbeac3
-Description: an extension for GeoIP geolocation for PostgreSQL 13
-  This extension provides IP-based geolocation, i.e. you provide an IPv4 address and the extension looks for info about country, city, GPS etc.
-  To operate, the extension needs data mapping IP addresses to the other info, but these data are not part of the extension. A good free dataset is GeoLite from MaxMind (available at www.maxmind.com).
 
 Package: postgresql-13-gzip
 Source: pgsql-gzip
@@ -5298,30 +5210,6 @@ Description: Postgres C extension with aggregate functions for array inputs
   like min, max, avg, and var_samp that operate on arrays instead of scalars.
   It treats each array as a "vector" and handles each element independently.
 
-Package: postgresql-14-anonymizer
-Source: postgresql-anonymizer
-Version: 1.3.2-1PIGSTY~jammy
-Architecture: amd64
-Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 660
-Depends: postgresql-14, postgresql-14-jit-llvm (>= 15), libc6 (>= 2.4), postgresql-contrib-14
-Provides: postgresql-anonymizer
-Homepage: https://github.com/fboulnois/pg_permissions
-Priority: optional
-Section: database
-Filename: pool/main/p/postgresql-anonymizer/postgresql-14-anonymizer_1.3.2-1PIGSTY~jammy_amd64.deb
-Size: 238622
-SHA256: 72edaeb0c0efbbef496f7680936069000bc1e0244c257ada7d78c7b03c19d1c5
-SHA1: ee5686d27212323df1c1dee1d081ab5421593afd
-MD5sum: 8ed7e2d4863f7653bed347bfc3464771
-Description: PostgreSQL extension to anonymize data
-  postgresql_anonymizer is an extension to mask or replace personally
-  identifiable information (PII) or commercially sensitive data from
-  a PostgreSQL database.
-  The project relies on a declarative approach of anonymization. This means
-  we're using the PostgreSQL Data Definition Language (DDL) in order to specify
-  the anonymization strategy inside the table definition itself.
-
 Package: postgresql-14-aws-s3
 Source: aws-s3
 Version: 0.0.1-1PIGSTY~jammy
@@ -5540,26 +5428,6 @@ Description: Postgres functions for arithmetic on numeric arrays
   It supports addition, subtraction, multiplication, division, and raising to a power. Everything (so far) is element-by-element,
   so no dot products or other matrix stuff.
   Every function lets you pass either two arrays of the same length, or an array and a scalar, or a scalar and an array.
-
-Package: postgresql-14-geoip
-Source: geoip
-Version: 0.3.0-1PIGSTY~jammy
-Architecture: amd64
-Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 34
-Depends: postgresql-14, postgresql-14-ip4r
-Provides: postgresql-geoip
-Homepage: https://github.com/tvondra/geoip
-Priority: optional
-Section: database
-Filename: pool/main/g/geoip/postgresql-14-geoip_0.3.0-1PIGSTY~jammy_amd64.deb
-Size: 6548
-SHA256: c1ca94c1424caae3fd78b68c38182bb2c49c1ce04f48cea9ab835d1e0dccb019
-SHA1: 6b400a0d020f4c5425c1e977c2f5e2aa407af2b9
-MD5sum: ebba1c5899ee33a920d78e64ca4e5f27
-Description: an extension for GeoIP geolocation for PostgreSQL 14
-  This extension provides IP-based geolocation, i.e. you provide an IPv4 address and the extension looks for info about country, city, GPS etc.
-  To operate, the extension needs data mapping IP addresses to the other info, but these data are not part of the extension. A good free dataset is GeoLite from MaxMind (available at www.maxmind.com).
 
 Package: postgresql-14-gzip
 Source: pgsql-gzip
@@ -8059,30 +7927,6 @@ Description: Postgres C extension with aggregate functions for array inputs
   like min, max, avg, and var_samp that operate on arrays instead of scalars.
   It treats each array as a "vector" and handles each element independently.
 
-Package: postgresql-15-anonymizer
-Source: postgresql-anonymizer
-Version: 1.3.2-1PIGSTY~jammy
-Architecture: amd64
-Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 660
-Depends: postgresql-15, postgresql-15-jit-llvm (>= 15), libc6 (>= 2.4), postgresql-contrib-15
-Provides: postgresql-anonymizer
-Homepage: https://github.com/fboulnois/pg_permissions
-Priority: optional
-Section: database
-Filename: pool/main/p/postgresql-anonymizer/postgresql-15-anonymizer_1.3.2-1PIGSTY~jammy_amd64.deb
-Size: 238668
-SHA256: 1a5469900810681404de5bcff487b6c0fbaea62823545b0835895f187355a8e3
-SHA1: eacacb723551b25eef7b55aefb52d0a060466986
-MD5sum: e4032298059dd37fe521330fa88563e6
-Description: PostgreSQL extension to anonymize data
-  postgresql_anonymizer is an extension to mask or replace personally
-  identifiable information (PII) or commercially sensitive data from
-  a PostgreSQL database.
-  The project relies on a declarative approach of anonymization. This means
-  we're using the PostgreSQL Data Definition Language (DDL) in order to specify
-  the anonymization strategy inside the table definition itself.
-
 Package: postgresql-15-aws-s3
 Source: aws-s3
 Version: 0.0.1-1PIGSTY~jammy
@@ -8301,26 +8145,6 @@ Description: Postgres functions for arithmetic on numeric arrays
   It supports addition, subtraction, multiplication, division, and raising to a power. Everything (so far) is element-by-element,
   so no dot products or other matrix stuff.
   Every function lets you pass either two arrays of the same length, or an array and a scalar, or a scalar and an array.
-
-Package: postgresql-15-geoip
-Source: geoip
-Version: 0.3.0-1PIGSTY~jammy
-Architecture: amd64
-Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 34
-Depends: postgresql-15, postgresql-15-ip4r
-Provides: postgresql-geoip
-Homepage: https://github.com/tvondra/geoip
-Priority: optional
-Section: database
-Filename: pool/main/g/geoip/postgresql-15-geoip_0.3.0-1PIGSTY~jammy_amd64.deb
-Size: 6548
-SHA256: c5bf7e8f0113ea0b132ca195129a1cb374251c63656cd551cfcc9048ea4fef2f
-SHA1: abc866e87785fec931a6d34805199d5656d0c6db
-MD5sum: 33598713d98199b18b6bd820a96e30ce
-Description: an extension for GeoIP geolocation for PostgreSQL 15
-  This extension provides IP-based geolocation, i.e. you provide an IPv4 address and the extension looks for info about country, city, GPS etc.
-  To operate, the extension needs data mapping IP addresses to the other info, but these data are not part of the extension. A good free dataset is GeoLite from MaxMind (available at www.maxmind.com).
 
 Package: postgresql-15-gzip
 Source: pgsql-gzip
@@ -10838,30 +10662,6 @@ Description: Postgres C extension with aggregate functions for array inputs
   like min, max, avg, and var_samp that operate on arrays instead of scalars.
   It treats each array as a "vector" and handles each element independently.
 
-Package: postgresql-16-anonymizer
-Source: postgresql-anonymizer
-Version: 1.3.2-1PIGSTY~jammy
-Architecture: amd64
-Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 660
-Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.4), postgresql-contrib-16
-Provides: postgresql-anonymizer
-Homepage: https://github.com/fboulnois/pg_permissions
-Priority: optional
-Section: database
-Filename: pool/main/p/postgresql-anonymizer/postgresql-16-anonymizer_1.3.2-1PIGSTY~jammy_amd64.deb
-Size: 238664
-SHA256: 185123d4c503e9e71b7f746abbb53ec730bb6269440b85764d2bc435f90b9079
-SHA1: 3b00092e0dc0fa1ec3ffa72ff8c9846066b1489b
-MD5sum: f7bad3a3f0b73feb814f8697a0f3b1ae
-Description: PostgreSQL extension to anonymize data
-  postgresql_anonymizer is an extension to mask or replace personally
-  identifiable information (PII) or commercially sensitive data from
-  a PostgreSQL database.
-  The project relies on a declarative approach of anonymization. This means
-  we're using the PostgreSQL Data Definition Language (DDL) in order to specify
-  the anonymization strategy inside the table definition itself.
-
 Package: postgresql-16-aws-s3
 Source: aws-s3
 Version: 0.0.1-1PIGSTY~jammy
@@ -11080,26 +10880,6 @@ Description: Postgres functions for arithmetic on numeric arrays
   It supports addition, subtraction, multiplication, division, and raising to a power. Everything (so far) is element-by-element,
   so no dot products or other matrix stuff.
   Every function lets you pass either two arrays of the same length, or an array and a scalar, or a scalar and an array.
-
-Package: postgresql-16-geoip
-Source: geoip
-Version: 0.3.0-1PIGSTY~jammy
-Architecture: amd64
-Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 34
-Depends: postgresql-16, postgresql-16-ip4r
-Provides: postgresql-geoip
-Homepage: https://github.com/tvondra/geoip
-Priority: optional
-Section: database
-Filename: pool/main/g/geoip/postgresql-16-geoip_0.3.0-1PIGSTY~jammy_amd64.deb
-Size: 6546
-SHA256: cad82a6be1ac153e55315b54defb2b4a2c08872ad4ec61ede3b01bbb851b1ad2
-SHA1: 4fed2deb6844dd3868c66d8bdc901150eba764e5
-MD5sum: fbe56ea3f690271a1a30d317339b3c5b
-Description: an extension for GeoIP geolocation for PostgreSQL 16
-  This extension provides IP-based geolocation, i.e. you provide an IPv4 address and the extension looks for info about country, city, GPS etc.
-  To operate, the extension needs data mapping IP addresses to the other info, but these data are not part of the extension. A good free dataset is GeoLite from MaxMind (available at www.maxmind.com).
 
 Package: postgresql-16-gzip
 Source: pgsql-gzip
@@ -13625,30 +13405,6 @@ Description: Postgres C extension with aggregate functions for array inputs
   like min, max, avg, and var_samp that operate on arrays instead of scalars.
   It treats each array as a "vector" and handles each element independently.
 
-Package: postgresql-17-anonymizer
-Source: postgresql-anonymizer
-Version: 1.3.2-1PIGSTY~jammy
-Architecture: amd64
-Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 660
-Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libc6 (>= 2.4), postgresql-contrib-17
-Provides: postgresql-anonymizer
-Homepage: https://github.com/fboulnois/pg_permissions
-Priority: optional
-Section: database
-Filename: pool/main/p/postgresql-anonymizer/postgresql-17-anonymizer_1.3.2-1PIGSTY~jammy_amd64.deb
-Size: 238746
-SHA256: 6777fcda0a541e85661c51046bf908b4b33d5bfd1e0595f1423aed994aeb9df6
-SHA1: 5af5627e613dcde1f94faa90567db575b9d1e8c1
-MD5sum: c4ff959a4d3decc531180537d63f41d6
-Description: PostgreSQL extension to anonymize data
-  postgresql_anonymizer is an extension to mask or replace personally
-  identifiable information (PII) or commercially sensitive data from
-  a PostgreSQL database.
-  The project relies on a declarative approach of anonymization. This means
-  we're using the PostgreSQL Data Definition Language (DDL) in order to specify
-  the anonymization strategy inside the table definition itself.
-
 Package: postgresql-17-aws-s3
 Source: aws-s3
 Version: 0.0.1-1PIGSTY~jammy
@@ -13829,26 +13585,6 @@ Description: Postgres functions for arithmetic on numeric arrays
   It supports addition, subtraction, multiplication, division, and raising to a power. Everything (so far) is element-by-element,
   so no dot products or other matrix stuff.
   Every function lets you pass either two arrays of the same length, or an array and a scalar, or a scalar and an array.
-
-Package: postgresql-17-geoip
-Source: geoip
-Version: 0.3.0-1PIGSTY~jammy
-Architecture: amd64
-Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 34
-Depends: postgresql-17, postgresql-17-ip4r
-Provides: postgresql-geoip
-Homepage: https://github.com/tvondra/geoip
-Priority: optional
-Section: database
-Filename: pool/main/g/geoip/postgresql-17-geoip_0.3.0-1PIGSTY~jammy_amd64.deb
-Size: 6540
-SHA256: 9c952aab76f2a096ec4ea4a9b43eeac16e99c8dc0d5c213fe71d83357cca0763
-SHA1: bfdbbeba19943472ff222e2bdc512fcd340485af
-MD5sum: 660afb4d8333b3c7fc39f4c891d4896a
-Description: an extension for GeoIP geolocation for PostgreSQL 17
-  This extension provides IP-based geolocation, i.e. you provide an IPv4 address and the extension looks for info about country, city, GPS etc.
-  To operate, the extension needs data mapping IP addresses to the other info, but these data are not part of the extension. A good free dataset is GeoLite from MaxMind (available at www.maxmind.com).
 
 Package: postgresql-17-gzip
 Source: pgsql-gzip

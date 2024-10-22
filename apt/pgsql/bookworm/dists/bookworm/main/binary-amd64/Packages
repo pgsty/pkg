@@ -197,10 +197,10 @@ Homepage: https://github.com/fboulnois/pg_permissions
 Priority: optional
 Section: database
 Filename: pool/main/p/postgresql-anonymizer/postgresql-12-anonymizer_1.3.2-1PIGSTY~bookworm_amd64.deb
-Size: 223360
-SHA256: 8b9c541febf283b54fe0bd6c1c0f3c0c9fdbfeb3357d040b24ae489e4c1c17cb
-SHA1: 714435092a2cf5244f581ac9eebddb5c5d609814
-MD5sum: 6e1820eb3abda2d06a2e69b9ff4f975e
+Size: 223416
+SHA256: 236d98e5f383522779a8f5e0e4953f57dc3f07d6c7439abdf957b9f4f975d8f7
+SHA1: 1b059e55dcc31ff05f12edbd95ca6ba698e9d87d
+MD5sum: c2fd8c7915177cd84c3ce8849dd8f441
 Description: PostgreSQL extension to anonymize data
   postgresql_anonymizer is an extension to mask or replace personally
   identifiable information (PII) or commercially sensitive data from
@@ -434,16 +434,16 @@ Version: 0.3.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 34
-Depends: postgresql-12
+Depends: postgresql-12, postgresql-12-ip4r
 Provides: postgresql-geoip
 Homepage: https://github.com/tvondra/geoip
 Priority: optional
 Section: database
 Filename: pool/main/g/geoip/postgresql-12-geoip_0.3.0-1PIGSTY~bookworm_amd64.deb
 Size: 6440
-SHA256: 03a9d1146f1082232353371316815ddc3dd4f85a42c5da0a5a4c30f381c5aa21
-SHA1: 02da5d3906faa7a7be0f21b34e7d6d96f6d0ce4c
-MD5sum: ab99cfd6129a7888cd6dd7d1cf962b32
+SHA256: a62b8afb4ffebd6746ef1d4309a7ca55763be8f104e7fa8d98b1d2075ceadb6a
+SHA1: 4e51f5984dfdedcf72e348b5ae224d353913ec9a
+MD5sum: a9cc392d0ca6a77ba64031a0a39a1678
 Description: an extension for GeoIP geolocation for PostgreSQL 12
   This extension provides IP-based geolocation, i.e. you provide an IPv4 address and the extension looks for info about country, city, GPS etc.
   To operate, the extension needs data mapping IP addresses to the other info, but these data are not part of the extension. A good free dataset is GeoLite from MaxMind (available at www.maxmind.com).
@@ -2663,10 +2663,10 @@ Homepage: https://github.com/fboulnois/pg_permissions
 Priority: optional
 Section: database
 Filename: pool/main/p/postgresql-anonymizer/postgresql-13-anonymizer_1.3.2-1PIGSTY~bookworm_amd64.deb
-Size: 223752
-SHA256: d333b1e69af22f6229605a1f60baf4833aa10725ae357655827e6caec5e2a620
-SHA1: c2dcc20747f628a53f8537d674260734307dc8f7
-MD5sum: eeb3a365a88abe0a6109f831b340f16a
+Size: 223448
+SHA256: 36e70f8327f55648d85f614fa31aae821d559f2eeb6a75aee4bfa9cd24751485
+SHA1: 01de071d01b6f3925485c571aec6a14a1a865d68
+MD5sum: 6dbaf4de66f092f2ba02e3ae37fad432
 Description: PostgreSQL extension to anonymize data
   postgresql_anonymizer is an extension to mask or replace personally
   identifiable information (PII) or commercially sensitive data from
@@ -2900,16 +2900,16 @@ Version: 0.3.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 34
-Depends: postgresql-13
+Depends: postgresql-13, postgresql-13-ip4r
 Provides: postgresql-geoip
 Homepage: https://github.com/tvondra/geoip
 Priority: optional
 Section: database
 Filename: pool/main/g/geoip/postgresql-13-geoip_0.3.0-1PIGSTY~bookworm_amd64.deb
 Size: 6448
-SHA256: 90a28b1b0c5c1c0873a56d8131ef0a645e3dea87a7da479101cf962e4a7e8349
-SHA1: 0be9084c9918b10cb9ae28eb9c7d26df55fab7c2
-MD5sum: 1d466932f197c4131419e7092dcb997d
+SHA256: c599f713761f805ffe4f5a86617fcd6894600d709e02aac05b36dbbe9896bad0
+SHA1: 8b7879f0299a382f99ff9cc90cec2440ee0393f0
+MD5sum: fd6cefea6c154f92610dfd37b1f8f2f3
 Description: an extension for GeoIP geolocation for PostgreSQL 13
   This extension provides IP-based geolocation, i.e. you provide an IPv4 address and the extension looks for info about country, city, GPS etc.
   To operate, the extension needs data mapping IP addresses to the other info, but these data are not part of the extension. A good free dataset is GeoLite from MaxMind (available at www.maxmind.com).
@@ -5304,10 +5304,10 @@ Homepage: https://github.com/fboulnois/pg_permissions
 Priority: optional
 Section: database
 Filename: pool/main/p/postgresql-anonymizer/postgresql-14-anonymizer_1.3.2-1PIGSTY~bookworm_amd64.deb
-Size: 223776
-SHA256: 79d98e2efb591b784579c6c6abcf783e3d030f0abd45d8413dbb3a2fdf20e68b
-SHA1: d3f408db3350360e1265fead47acb4e2c54f25b3
-MD5sum: d5a806acd43a9bbf7acadd5b59139927
+Size: 223936
+SHA256: 39b36f1ab86142ac444fad81d5648123e82a2bd3f1f8550246a025d7d4f5a896
+SHA1: 17c2580e95fe4f843698a83f7726a0f685521bd3
+MD5sum: 5791113afa7b690f63e0efd6a32f392f
 Description: PostgreSQL extension to anonymize data
   postgresql_anonymizer is an extension to mask or replace personally
   identifiable information (PII) or commercially sensitive data from
@@ -5541,16 +5541,16 @@ Version: 0.3.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 34
-Depends: postgresql-14
+Depends: postgresql-14, postgresql-14-ip4r
 Provides: postgresql-geoip
 Homepage: https://github.com/tvondra/geoip
 Priority: optional
 Section: database
 Filename: pool/main/g/geoip/postgresql-14-geoip_0.3.0-1PIGSTY~bookworm_amd64.deb
 Size: 6444
-SHA256: 1ae3472e7bb6df42be95f70d249c24000c3f9aab98930b97783820d4a7d5becf
-SHA1: 67de93bd4757d30d6a4a68ea409261d46deedaed
-MD5sum: c2e8563f390dca8233dd1cd91734da18
+SHA256: b8d205e123967b39f8cbe36d2a392f225bd81a990347f4a6f04f2533b6a0b9a6
+SHA1: b4054c7f91f5f6937ed03864dcd6de3cfb298dfc
+MD5sum: 856a30d8d3267ece95e83f353028bf9e
 Description: an extension for GeoIP geolocation for PostgreSQL 14
   This extension provides IP-based geolocation, i.e. you provide an IPv4 address and the extension looks for info about country, city, GPS etc.
   To operate, the extension needs data mapping IP addresses to the other info, but these data are not part of the extension. A good free dataset is GeoLite from MaxMind (available at www.maxmind.com).
@@ -8083,10 +8083,10 @@ Homepage: https://github.com/fboulnois/pg_permissions
 Priority: optional
 Section: database
 Filename: pool/main/p/postgresql-anonymizer/postgresql-15-anonymizer_1.3.2-1PIGSTY~bookworm_amd64.deb
-Size: 223360
-SHA256: 5aacf378f48181e4209a9dfeb22d1489b79c01157aa868da930aa4318a334ece
-SHA1: acedbfebe871dc51aa07158d7f9f9cd12da5f723
-MD5sum: 748e42304893ff0c83dd3b6b616e8de1
+Size: 223812
+SHA256: fcc613f76f91555672a906e5ac5910cf4feec412677c6fbee1a04c540fe59728
+SHA1: 67ad4c2085b729f3210acd73bfb9396906d815eb
+MD5sum: 7d3ff53abb237fa9de03c3af1ba2ed00
 Description: PostgreSQL extension to anonymize data
   postgresql_anonymizer is an extension to mask or replace personally
   identifiable information (PII) or commercially sensitive data from
@@ -8320,16 +8320,16 @@ Version: 0.3.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 34
-Depends: postgresql-15
+Depends: postgresql-15, postgresql-15-ip4r
 Provides: postgresql-geoip
 Homepage: https://github.com/tvondra/geoip
 Priority: optional
 Section: database
 Filename: pool/main/g/geoip/postgresql-15-geoip_0.3.0-1PIGSTY~bookworm_amd64.deb
 Size: 6444
-SHA256: 75a82c6d0008513d7ebb9991137d9149ba517d3ab125b85a460dd77a289b6408
-SHA1: ceda862711bf3040e619f92e3c064a657682fd7c
-MD5sum: 85d279d336f8f66df0e1d407ca2278a3
+SHA256: 2698a6ac3dbbb0974095fb5c68235b99d9c2cd37a137839c8f2d5241181414a6
+SHA1: a4798902e8cc7285cace2839fb1e6b43bbb22e15
+MD5sum: 7fd023a08866d3ff3735d73f248ac6fa
 Description: an extension for GeoIP geolocation for PostgreSQL 15
   This extension provides IP-based geolocation, i.e. you provide an IPv4 address and the extension looks for info about country, city, GPS etc.
   To operate, the extension needs data mapping IP addresses to the other info, but these data are not part of the extension. A good free dataset is GeoLite from MaxMind (available at www.maxmind.com).
@@ -10880,10 +10880,10 @@ Homepage: https://github.com/fboulnois/pg_permissions
 Priority: optional
 Section: database
 Filename: pool/main/p/postgresql-anonymizer/postgresql-16-anonymizer_1.3.2-1PIGSTY~bookworm_amd64.deb
-Size: 223560
-SHA256: 26eb37d1dc83fa9c8de3eb479e2da42d4b920d69a27ac639ff3dffba4280f18d
-SHA1: 9de87d0ba3a0fe8432431a82596981455f6239a8
-MD5sum: fcc95c8c27cf5c0acbfa06fedc8bc172
+Size: 223812
+SHA256: d7342654387c8fc977d8f4d8a44c8876af3b215afba7edc2b8aefd109c4525c0
+SHA1: 34815831d63211b576e048b815af45d90fa6e7d8
+MD5sum: 5bc398ad6b6b33320fd2a7105fff5e14
 Description: PostgreSQL extension to anonymize data
   postgresql_anonymizer is an extension to mask or replace personally
   identifiable information (PII) or commercially sensitive data from
@@ -11117,16 +11117,16 @@ Version: 0.3.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 34
-Depends: postgresql-16
+Depends: postgresql-16, postgresql-16-ip4r
 Provides: postgresql-geoip
 Homepage: https://github.com/tvondra/geoip
 Priority: optional
 Section: database
 Filename: pool/main/g/geoip/postgresql-16-geoip_0.3.0-1PIGSTY~bookworm_amd64.deb
 Size: 6444
-SHA256: afb90c963e8aa491b767dac831157ba8d51321bcf6413c21b9cd6e63b97288b1
-SHA1: 185c31f1afa1028f94114e4623d9d97ebdc88052
-MD5sum: 2151ced747ef0fb0099eb2924fbebb40
+SHA256: 7dd2aec8232c80721dd337d5cb71b8575b25c39c4fc38db86231ac7a4be53d9e
+SHA1: 320db1fb8134497977b972dbb7a905fc83f69344
+MD5sum: 0b94267f42263f815c4b5c2642b2cf88
 Description: an extension for GeoIP geolocation for PostgreSQL 16
   This extension provides IP-based geolocation, i.e. you provide an IPv4 address and the extension looks for info about country, city, GPS etc.
   To operate, the extension needs data mapping IP addresses to the other info, but these data are not part of the extension. A good free dataset is GeoLite from MaxMind (available at www.maxmind.com).
@@ -13614,6 +13614,30 @@ Description: Postgres C extension with aggregate functions for array inputs
   like min, max, avg, and var_samp that operate on arrays instead of scalars.
   It treats each array as a "vector" and handles each element independently.
 
+Package: postgresql-17-anonymizer
+Source: postgresql-anonymizer
+Version: 1.3.2-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 663
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.4), postgresql-contrib-17
+Provides: postgresql-anonymizer
+Homepage: https://github.com/fboulnois/pg_permissions
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-anonymizer/postgresql-17-anonymizer_1.3.2-1PIGSTY~bookworm_amd64.deb
+Size: 223500
+SHA256: c4c114a60eff1f9c11508c4f4aa2080eecb6733f1e23d17a405f711a4bc88214
+SHA1: 50ff137cdaef83e902a397f4220de4d1785b490b
+MD5sum: be94850a83bc0efd7580f0ad9f339a4b
+Description: PostgreSQL extension to anonymize data
+  postgresql_anonymizer is an extension to mask or replace personally
+  identifiable information (PII) or commercially sensitive data from
+  a PostgreSQL database.
+  The project relies on a declarative approach of anonymization. This means
+  we're using the PostgreSQL Data Definition Language (DDL) in order to specify
+  the anonymization strategy inside the table definition itself.
+
 Package: postgresql-17-aws-s3
 Source: aws-s3
 Version: 0.0.1-1PIGSTY~bookworm
@@ -13673,6 +13697,65 @@ MD5sum: 46c584ea8f83f4626b1bbdb1cf6d2e78
 Description: base62 extension for postgres
   Base62 extension for PostgreSQL. The extension provides data types to encode and decode values using base62 encoding scheme.
 
+Package: postgresql-17-chkpass
+Source: chkpass
+Version: 1.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 45
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.4), libcrypt1 (>= 1:4.1.0)
+Provides: postgresql-chkpass
+Homepage: https://github.com/lacanoid/chkpass
+Priority: optional
+Section: database
+Filename: pool/main/c/chkpass/postgresql-17-chkpass_1.0-1PIGSTY~bookworm_amd64.deb
+Size: 11004
+SHA256: 8d48d467430c10f2a84f6ea160f7625daa5d9a30f3d4a51a03cb50745d698d0a
+SHA1: ae47af50d453812ccc19fd5482b20209eccf81a0
+MD5sum: adff1ef35d3847f6127e113f1cffc5be
+Description: Foreign-Data Wrapper facility to enable reading log files via SQL
+  PostgreSQL versions lower than 11 come bundled with chkpass extension for storing encrypted passwords.
+  This was removed from Postgres 11 and later. This is a stand alone version for use with those.
+  See documentaion for chkpass: https://www.postgresql.org/docs/10/chkpass.html
+
+Package: postgresql-17-count-distinct
+Source: count-distinct
+Version: 3.0.2-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 108
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.14)
+Provides: postgresql-count-distinct
+Homepage: https://github.com/tvondra/count_distinct
+Priority: optional
+Section: database
+Filename: pool/main/c/count-distinct/postgresql-17-count-distinct_3.0.2-1PIGSTY~bookworm_amd64.deb
+Size: 36356
+SHA256: 8ced72cca3844a24495724157354aac1d94c57c4a14cac6959631099a903888a
+SHA1: 922412010bd95a144b44e740c1edba43fc772144
+MD5sum: 45ce8ae25d7c2c31c2346ce7c7e0c018
+Description: An extension with alternative to COUNT(DISTINCT ...) aggregate in PostgreSQL.
+  This extension provides an alternative to COUNT(DISTINCT ...) which for large amounts of data often ends in sorting and poor performance.
+
+Package: postgresql-17-cryptint
+Source: cryptint
+Version: 1.0.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 54
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.4)
+Provides: postgresql-cryptint
+Homepage: https://github.com/dverite/cryptint
+Priority: optional
+Section: database
+Filename: pool/main/c/cryptint/postgresql-17-cryptint_1.0.0-1PIGSTY~bookworm_amd64.deb
+Size: 13764
+SHA256: 44524a3f86e6789170f881099855630bb9a3be5a5dc5e272fbf648818b9f3599
+SHA1: dc6b5f8423de72320fb135f161d5bd7dc3f9aee0
+MD5sum: 6d2557628cb8908dad3e687aae9c5a2a
+Description: PostgreSQL extension implementing Skip32 and XTEA encryption for int and bigint types
+  cryptint is a PostgreSQL extension providing SKIP32 encryption for 32-bit integers, and XTEA encryption for 64-bit integers.
+
 Package: postgresql-17-ddlx
 Source: ddlx
 Version: 0.28-1PIGSTY~bookworm
@@ -13713,6 +13796,26 @@ Description: Output plugin for logical replication
   This output plugin for logical replication generates raw queries based
   on the logical changes it finds. Those queries can be consumed as they
   are by any remote source.
+
+Package: postgresql-17-geoip
+Source: geoip
+Version: 0.3.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 34
+Depends: postgresql-17, postgresql-17-ip4r
+Provides: postgresql-geoip
+Homepage: https://github.com/tvondra/geoip
+Priority: optional
+Section: database
+Filename: pool/main/g/geoip/postgresql-17-geoip_0.3.0-1PIGSTY~bookworm_amd64.deb
+Size: 6444
+SHA256: 2a5aad9a67b19718aa101b18f46eac638781ba53013e27e36281a264311808cc
+SHA1: 854215d066cb26d2ea8a4efb080dac5f01c7a759
+MD5sum: e6dc4478485665072950eeba9d449d73
+Description: an extension for GeoIP geolocation for PostgreSQL 17
+  This extension provides IP-based geolocation, i.e. you provide an IPv4 address and the extension looks for info about country, city, GPS etc.
+  To operate, the extension needs data mapping IP addresses to the other info, but these data are not part of the extension. A good free dataset is GeoLite from MaxMind (available at www.maxmind.com).
 
 Package: postgresql-17-gzip
 Source: pgsql-gzip
@@ -15155,6 +15258,26 @@ MD5sum: e6ef9eb49f6671d73384ba065ffea66f
 Description: shared buffer snapshot and prewarm extension
   pgcozy is an extension who adds the capability to keep snapshots of the buffer cache and later can prewarm according to these snapshots.
   Snapshots are saved in jsonb format under a schema and a table and they can be reviewed , backed up or transferred Also see my blog for some examples and tips:
+
+Package: postgresql-17-pgcryptokey
+Source: pgcryptokey
+Version: 0.85-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 57
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.2.5)
+Provides: postgresql-pgcryptokey
+Homepage: https://momjian.us/download/pgcryptokey/
+Priority: optional
+Section: database
+Filename: pool/main/p/pgcryptokey/postgresql-17-pgcryptokey_0.85-1PIGSTY~bookworm_amd64.deb
+Size: 11836
+SHA256: 126c41575e7ff68ffec84075caff9076c13ae1ca650c83756a2e205b5816f369
+SHA1: aabebe1af423ce34cc865ccb21bbbfd146e5892e
+MD5sum: 5148a2434befac9ffa0afa11660e8e8f
+Description: Cryptographic key management extension for PostgreSQL 17
+  pgcryptokey allows the creation, selection, rotation, and deletion of cryptographic data keys.
+  Each cryptographic data key is encrypted/decrypted with (i.e., wrapped inside) an access password. Accessing a cryptographic data key requires the proper access password, as illustrated below:
 
 Package: postgresql-17-pgjwt
 Source: pgjwt

@@ -633,6 +633,8 @@ data:
       - pg_mon_14-llvmjit
       - pg_mon_15
       - pg_mon_15-llvmjit
+      - pg_net_17
+      - pg_net_17-llvmjit
       - pg_orphaned_12
       - pg_orphaned_12-llvmjit
       - pg_orphaned_13
@@ -915,6 +917,8 @@ data:
       - pgsmcrypto_15
       - pgsmcrypto_16
       - pgsmcrypto_17
+      - pgsodium_17
+      - pgsodium_17-llvmjit
       - pgsphere_12
       - pgsphere_12-llvmjit
       - pgsphere_13
@@ -1731,6 +1735,8 @@ data:
     - pg_mon_14-llvmjit
     - pg_mon_15
     - pg_mon_15-llvmjit
+    - pg_net_17
+    - pg_net_17-llvmjit
     - pg_orphaned_12
     - pg_orphaned_12-llvmjit
     - pg_orphaned_13
@@ -2013,6 +2019,8 @@ data:
     - pgsmcrypto_15
     - pgsmcrypto_16
     - pgsmcrypto_17
+    - pgsodium_17
+    - pgsodium_17-llvmjit
     - pgsphere_12
     - pgsphere_12-llvmjit
     - pgsphere_13
@@ -2984,6 +2992,8 @@ data:
         rationale: Present in the repository
       pg_mon_15:
         rationale: Present in the repository
+      pg_net_17:
+        rationale: Present in the repository
       pg_orphaned_12:
         rationale: Present in the repository
       pg_orphaned_13:
@@ -3341,6 +3351,8 @@ data:
       pgsmcrypto_16:
         rationale: Present in the repository
       pgsmcrypto_17:
+        rationale: Present in the repository
+      pgsodium_17:
         rationale: Present in the repository
       pgsphere_12:
         rationale: Present in the repository
@@ -4207,6 +4219,8 @@ data:
     - pg_mon_14-llvmjit-0:1.0-1PIGSTY.el8.x86_64
     - pg_mon_15-0:1.0-1PIGSTY.el8.x86_64
     - pg_mon_15-llvmjit-0:1.0-1PIGSTY.el8.x86_64
+    - pg_net_17-0:0.9.2-1PIGSTY.el8.x86_64
+    - pg_net_17-llvmjit-0:0.9.2-1PIGSTY.el8.x86_64
     - pg_orphaned_12-0:1.0-1PIGSTY.el8.x86_64
     - pg_orphaned_12-llvmjit-0:1.0-1PIGSTY.el8.x86_64
     - pg_orphaned_13-0:1.0-1PIGSTY.el8.x86_64
@@ -4492,6 +4506,8 @@ data:
     - pgsmcrypto_15-0:0.1.0-1PIGSTY.el8.x86_64
     - pgsmcrypto_16-0:0.1.0-1PIGSTY.el8.x86_64
     - pgsmcrypto_17-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgsodium_17-0:3.1.9-1PIGSTY.el8.x86_64
+    - pgsodium_17-llvmjit-0:3.1.9-1PIGSTY.el8.x86_64
     - pgsphere_12-0:1.5.1-1PIGSTY.el8.x86_64
     - pgsphere_12-llvmjit-0:1.5.1-1PIGSTY.el8.x86_64
     - pgsphere_13-0:1.5.1-1PIGSTY.el8.x86_64
