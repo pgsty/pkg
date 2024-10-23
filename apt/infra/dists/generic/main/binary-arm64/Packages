@@ -77,21 +77,21 @@ MD5sum: 8d111fe4d58192aaedf121b1f868bfdf
 Description: A truly Open Source MongoDB alternative
 
 Package: grafana
-Version: 11.2.2-01
+Version: 11.3.0
 License: AGPLv3
 Vendor: "Grafana Labs"
 Architecture: arm64
 Maintainer: contact@grafana.com
-Installed-Size: 434606
+Installed-Size: 457514
 Depends: adduser, musl
 Homepage: https://grafana.com
 Priority: optional
 Section: default
-Filename: pool/main/g/grafana/grafana_11.2.2-01_arm64.deb
-Size: 115990896
-SHA256: f5ee4476b53bf1630a1b6fb19bcfc80e323ded96df33426e84e2154d2b62dae0
-SHA1: fc5937b62a1bccf8d599c6e6ef2c28cbae81ca3a
-MD5sum: 58f902b9ccd9e34bac11a93324ebd579
+Filename: pool/main/g/grafana/grafana_11.3.0_arm64.deb
+Size: 122290550
+SHA256: 7522e15a22987821458f8415499e98501c5d8704ccc5d9aac496edae7730ec7b
+SHA1: 0348b2fd019de2fbe1017188e8d4fd5d8eaf77ba
+MD5sum: d696aa46953502b4b53f021f9f22aabc
 Description: Grafana
 
 Package: kafka
