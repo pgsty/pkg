@@ -1332,17 +1332,17 @@ Source: pg-geohash
 Version: 1.0-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 66
+Installed-Size: 54
 Depends: postgresql-12, postgresql-12-jit-llvm (>= 15), libc6 (>= 2.14)
 Provides: postgresql-pg-geohash
 Homepage: https://github.com/jistok/pg_geohash
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-geohash/postgresql-12-pg-geohash_1.0-1PIGSTY~jammy_amd64.deb
-Size: 18990
-SHA256: 06554a63430c963f7052d10eb5fdfb4c5205024d143f90de706e203fc1545387
-SHA1: fe150c60111dd4472a87e9818d8256447f4bfc79
-MD5sum: 03d57898460e0e205f7ab230fbe75309
+Size: 16988
+SHA256: c8bf947d8f768585dbbe89069cb05c5be6f479521a7ab11000e5bbe0355f965b
+SHA1: d594d82c4a93654521d1946f47e3636ed66b883a
+MD5sum: f170282ba2b79e7e704a528983acbcd0
 Description: Geohashing library for HAWQ, Greenplum DB, PostgreSQL
   Geohashing functionality for HAWQ, Greenplum DB, PostgreSQL
   Motivated by the need to compute aggregates based on geographic location
@@ -3897,17 +3897,17 @@ Source: pg-geohash
 Version: 1.0-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 66
+Installed-Size: 54
 Depends: postgresql-13, postgresql-13-jit-llvm (>= 15), libc6 (>= 2.14)
 Provides: postgresql-pg-geohash
 Homepage: https://github.com/jistok/pg_geohash
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-geohash/postgresql-13-pg-geohash_1.0-1PIGSTY~jammy_amd64.deb
-Size: 18990
-SHA256: 0d6d7e4f84ede96c2b8ebb994c3279e5fe1d424a40ce65dc81cdc73958dadb74
-SHA1: 9ca963ff60b329043d163f93975c1a66106cf1a6
-MD5sum: 24185a2e00969628485a6dc56121f115
+Size: 16994
+SHA256: 89e2f84af23dbd14224892fa49f14640af58f801f7f1f4247eece597985d7de9
+SHA1: 0493f5435fb0c2eb7886a3d0595c9b6ce2283555
+MD5sum: e79ff8f0731c644676775c27530ee7cd
 Description: Geohashing library for HAWQ, Greenplum DB, PostgreSQL
   Geohashing functionality for HAWQ, Greenplum DB, PostgreSQL
   Motivated by the need to compute aggregates based on geographic location
@@ -6583,17 +6583,17 @@ Source: pg-geohash
 Version: 1.0-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 66
+Installed-Size: 54
 Depends: postgresql-14, postgresql-14-jit-llvm (>= 15), libc6 (>= 2.14)
 Provides: postgresql-pg-geohash
 Homepage: https://github.com/jistok/pg_geohash
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-geohash/postgresql-14-pg-geohash_1.0-1PIGSTY~jammy_amd64.deb
-Size: 18994
-SHA256: a82d61f0f9c68aae4447de8467da99fc0715c8e8ebe9a4770a1170eed9827636
-SHA1: 2c662d341f8700639e997963a68fb27e6294b227
-MD5sum: 45da6a81d885fa1dd465f75fa72247e1
+Size: 16996
+SHA256: f7c901eac945ef77b469ff80ea3cead481c7655de5a8515d90d0b4e29ae072fc
+SHA1: 669376e9f903e7f296efa90d833d2f62725bba47
+MD5sum: 6223c8a2a8acd52b8c6f2115dcfb5dc1
 Description: Geohashing library for HAWQ, Greenplum DB, PostgreSQL
   Geohashing functionality for HAWQ, Greenplum DB, PostgreSQL
   Motivated by the need to compute aggregates based on geographic location
@@ -9405,17 +9405,17 @@ Source: pg-geohash
 Version: 1.0-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 66
+Installed-Size: 54
 Depends: postgresql-15, postgresql-15-jit-llvm (>= 15), libc6 (>= 2.14)
 Provides: postgresql-pg-geohash
 Homepage: https://github.com/jistok/pg_geohash
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-geohash/postgresql-15-pg-geohash_1.0-1PIGSTY~jammy_amd64.deb
-Size: 18990
-SHA256: 3e7f50dfa9c6bbcef842aad8f64cb7569f0b62c31c5e949ae675ece2f755b6af
-SHA1: 6c0c01de4f24e38a20ebe020add49a398ab3d588
-MD5sum: d837fb9606f90ae8445ed6675b3813a8
+Size: 16990
+SHA256: f4248b7664b58df8e6f54f485667353bf589074543f1875e7365f951730d9cdc
+SHA1: 620cc299c2e5c2f64d489d2eeb7dc4de00e9df10
+MD5sum: 361925b6499fa9270228e945790cd3b9
 Description: Geohashing library for HAWQ, Greenplum DB, PostgreSQL
   Geohashing functionality for HAWQ, Greenplum DB, PostgreSQL
   Motivated by the need to compute aggregates based on geographic location
@@ -12245,17 +12245,17 @@ Source: pg-geohash
 Version: 1.0-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 66
+Installed-Size: 54
 Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.14)
 Provides: postgresql-pg-geohash
 Homepage: https://github.com/jistok/pg_geohash
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-geohash/postgresql-16-pg-geohash_1.0-1PIGSTY~jammy_amd64.deb
-Size: 18990
-SHA256: 71da9d20dada7662edbb03e1e5f13f0d838d84fda7f74f8ca3ffe7310f5a946e
-SHA1: 867314ae06992d134e0c5d54b6b49eef10194587
-MD5sum: 3bf2ffd3963f221c6ff4943f374d41c0
+Size: 16998
+SHA256: 242972ee36d3ed2902c340f49272359363ebda5a01425905fce0cdf7aef2dabc
+SHA1: 402d0a0eb90fcdde1696ee2f7fb0283f44254ad7
+MD5sum: 6caa5a114ef13d1aab9f2fe172377478
 Description: Geohashing library for HAWQ, Greenplum DB, PostgreSQL
   Geohashing functionality for HAWQ, Greenplum DB, PostgreSQL
   Motivated by the need to compute aggregates based on geographic location
@@ -15037,17 +15037,17 @@ Source: pg-geohash
 Version: 1.0-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 66
+Installed-Size: 54
 Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libc6 (>= 2.14)
 Provides: postgresql-pg-geohash
 Homepage: https://github.com/jistok/pg_geohash
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-geohash/postgresql-17-pg-geohash_1.0-1PIGSTY~jammy_amd64.deb
-Size: 18984
-SHA256: a73af3ad86dab7a323ecec68aa98e907ff2fcea042604d1e69218baebed829ac
-SHA1: 448bea2e0346597609ba1547af9483a67e45d2b7
-MD5sum: e1cffa708fb9c19424686e32a606b630
+Size: 16982
+SHA256: 2791283e5701d52711619544c94ac18b76408c51122380c81af7f42abe6a3a9b
+SHA1: cbe24ce50abd58d9eccb16aca24ca565b648e979
+MD5sum: 59bd03e29e86369b49da48eccaaba4c5
 Description: Geohashing library for HAWQ, Greenplum DB, PostgreSQL
   Geohashing functionality for HAWQ, Greenplum DB, PostgreSQL
   Motivated by the need to compute aggregates based on geographic location
