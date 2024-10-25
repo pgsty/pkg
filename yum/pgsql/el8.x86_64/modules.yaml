@@ -34,6 +34,10 @@ data:
       - acl_14-llvmjit
       - acl_15
       - acl_15-llvmjit
+      - acl_16
+      - acl_16-llvmjit
+      - acl_17
+      - acl_17-llvmjit
       - aggs_for_arrays_12
       - aggs_for_arrays_12-llvmjit
       - aggs_for_arrays_13
@@ -105,6 +109,7 @@ data:
       - cryptint_16-llvmjit
       - cryptint_17
       - cryptint_17-llvmjit
+      - ddlx_17
       - decoder_raw_12
       - decoder_raw_12-llvmjit
       - decoder_raw_13
@@ -358,6 +363,12 @@ data:
       - permuteseq_16-llvmjit
       - permuteseq_17
       - permuteseq_17-llvmjit
+      - pg4ml_12
+      - pg4ml_13
+      - pg4ml_14
+      - pg4ml_15
+      - pg4ml_16
+      - pg4ml_17
       - pg_analytics_13
       - pg_analytics_14
       - pg_analytics_15
@@ -491,6 +502,10 @@ data:
       - pg_emailaddr_14-llvmjit
       - pg_emailaddr_15
       - pg_emailaddr_15-llvmjit
+      - pg_emailaddr_16
+      - pg_emailaddr_16-llvmjit
+      - pg_emailaddr_17
+      - pg_emailaddr_17-llvmjit
       - pg_envvar_12
       - pg_envvar_12-llvmjit
       - pg_envvar_13
@@ -554,6 +569,10 @@ data:
       - pg_geohash_14-llvmjit
       - pg_geohash_15
       - pg_geohash_15-llvmjit
+      - pg_geohash_16
+      - pg_geohash_16-llvmjit
+      - pg_geohash_17
+      - pg_geohash_17-llvmjit
       - pg_graphql_14
       - pg_graphql_15
       - pg_graphql_16
@@ -747,6 +766,8 @@ data:
       - pg_savior_15-llvmjit
       - pg_savior_16
       - pg_savior_16-llvmjit
+      - pg_savior_17
+      - pg_savior_17-llvmjit
       - pg_search_14
       - pg_search_15
       - pg_search_16
@@ -814,6 +835,18 @@ data:
       - pg_timeseries_15
       - pg_timeseries_16
       - pg_timeseries_17
+      - pg_uint128_12
+      - pg_uint128_12-llvmjit
+      - pg_uint128_13
+      - pg_uint128_13-llvmjit
+      - pg_uint128_14
+      - pg_uint128_14-llvmjit
+      - pg_uint128_15
+      - pg_uint128_15-llvmjit
+      - pg_uint128_16
+      - pg_uint128_16-llvmjit
+      - pg_uint128_17
+      - pg_uint128_17-llvmjit
       - pg_uri_12
       - pg_uri_12-llvmjit
       - pg_uri_13
@@ -835,6 +868,10 @@ data:
       - pg_zstd_14-llvmjit
       - pg_zstd_15
       - pg_zstd_15-llvmjit
+      - pg_zstd_16
+      - pg_zstd_16-llvmjit
+      - pg_zstd_17
+      - pg_zstd_17-llvmjit
       - pgcozy_12
       - pgcozy_13
       - pgcozy_14
@@ -911,6 +948,10 @@ data:
       - pgqr_14-llvmjit
       - pgqr_15
       - pgqr_15-llvmjit
+      - pgqr_16
+      - pgqr_16-llvmjit
+      - pgqr_17
+      - pgqr_17-llvmjit
       - pgsmcrypto_12
       - pgsmcrypto_13
       - pgsmcrypto_14
@@ -970,6 +1011,8 @@ data:
       - postgres_shacrypt_17-llvmjit
       - postgresql-unit_16
       - postgresql-unit_16-llvmjit
+      - postgresql_anonymizer_17
+      - postgresql_anonymizer_17-llvmjit
       - preprepare_12
       - preprepare_12-llvmjit
       - preprepare_13
@@ -1052,6 +1095,10 @@ data:
       - smlar_14-llvmjit
       - smlar_15
       - smlar_15-llvmjit
+      - smlar_16
+      - smlar_16-llvmjit
+      - smlar_17
+      - smlar_17-llvmjit
       - supautils_13
       - supautils_13-llvmjit
       - supautils_14
@@ -1136,6 +1183,10 @@ data:
     - acl_14-llvmjit
     - acl_15
     - acl_15-llvmjit
+    - acl_16
+    - acl_16-llvmjit
+    - acl_17
+    - acl_17-llvmjit
     - aggs_for_arrays_12
     - aggs_for_arrays_12-llvmjit
     - aggs_for_arrays_13
@@ -1207,6 +1258,7 @@ data:
     - cryptint_16-llvmjit
     - cryptint_17
     - cryptint_17-llvmjit
+    - ddlx_17
     - decoder_raw_12
     - decoder_raw_12-llvmjit
     - decoder_raw_13
@@ -1460,6 +1512,12 @@ data:
     - permuteseq_16-llvmjit
     - permuteseq_17
     - permuteseq_17-llvmjit
+    - pg4ml_12
+    - pg4ml_13
+    - pg4ml_14
+    - pg4ml_15
+    - pg4ml_16
+    - pg4ml_17
     - pg_analytics_13
     - pg_analytics_14
     - pg_analytics_15
@@ -1593,6 +1651,10 @@ data:
     - pg_emailaddr_14-llvmjit
     - pg_emailaddr_15
     - pg_emailaddr_15-llvmjit
+    - pg_emailaddr_16
+    - pg_emailaddr_16-llvmjit
+    - pg_emailaddr_17
+    - pg_emailaddr_17-llvmjit
     - pg_envvar_12
     - pg_envvar_12-llvmjit
     - pg_envvar_13
@@ -1656,6 +1718,10 @@ data:
     - pg_geohash_14-llvmjit
     - pg_geohash_15
     - pg_geohash_15-llvmjit
+    - pg_geohash_16
+    - pg_geohash_16-llvmjit
+    - pg_geohash_17
+    - pg_geohash_17-llvmjit
     - pg_graphql_14
     - pg_graphql_15
     - pg_graphql_16
@@ -1849,6 +1915,8 @@ data:
     - pg_savior_15-llvmjit
     - pg_savior_16
     - pg_savior_16-llvmjit
+    - pg_savior_17
+    - pg_savior_17-llvmjit
     - pg_search_14
     - pg_search_15
     - pg_search_16
@@ -1916,6 +1984,18 @@ data:
     - pg_timeseries_15
     - pg_timeseries_16
     - pg_timeseries_17
+    - pg_uint128_12
+    - pg_uint128_12-llvmjit
+    - pg_uint128_13
+    - pg_uint128_13-llvmjit
+    - pg_uint128_14
+    - pg_uint128_14-llvmjit
+    - pg_uint128_15
+    - pg_uint128_15-llvmjit
+    - pg_uint128_16
+    - pg_uint128_16-llvmjit
+    - pg_uint128_17
+    - pg_uint128_17-llvmjit
     - pg_uri_12
     - pg_uri_12-llvmjit
     - pg_uri_13
@@ -1937,6 +2017,10 @@ data:
     - pg_zstd_14-llvmjit
     - pg_zstd_15
     - pg_zstd_15-llvmjit
+    - pg_zstd_16
+    - pg_zstd_16-llvmjit
+    - pg_zstd_17
+    - pg_zstd_17-llvmjit
     - pgcozy_12
     - pgcozy_13
     - pgcozy_14
@@ -2013,6 +2097,10 @@ data:
     - pgqr_14-llvmjit
     - pgqr_15
     - pgqr_15-llvmjit
+    - pgqr_16
+    - pgqr_16-llvmjit
+    - pgqr_17
+    - pgqr_17-llvmjit
     - pgsmcrypto_12
     - pgsmcrypto_13
     - pgsmcrypto_14
@@ -2072,6 +2160,8 @@ data:
     - postgres_shacrypt_17-llvmjit
     - postgresql-unit_16
     - postgresql-unit_16-llvmjit
+    - postgresql_anonymizer_17
+    - postgresql_anonymizer_17-llvmjit
     - preprepare_12
     - preprepare_12-llvmjit
     - preprepare_13
@@ -2154,6 +2244,10 @@ data:
     - smlar_14-llvmjit
     - smlar_15
     - smlar_15-llvmjit
+    - smlar_16
+    - smlar_16-llvmjit
+    - smlar_17
+    - smlar_17-llvmjit
     - supautils_13
     - supautils_13-llvmjit
     - supautils_14
@@ -2238,6 +2332,10 @@ data:
         rationale: Present in the repository
       acl_15:
         rationale: Present in the repository
+      acl_16:
+        rationale: Present in the repository
+      acl_17:
+        rationale: Present in the repository
       aggs_for_arrays_12:
         rationale: Present in the repository
       aggs_for_arrays_13:
@@ -2315,6 +2413,8 @@ data:
       cryptint_16:
         rationale: Present in the repository
       cryptint_17:
+        rationale: Present in the repository
+      ddlx_17:
         rationale: Present in the repository
       decoder_raw_12:
         rationale: Present in the repository
@@ -2652,6 +2752,18 @@ data:
         rationale: Present in the repository
       permuteseq_17:
         rationale: Present in the repository
+      pg4ml_12:
+        rationale: Present in the repository
+      pg4ml_13:
+        rationale: Present in the repository
+      pg4ml_14:
+        rationale: Present in the repository
+      pg4ml_15:
+        rationale: Present in the repository
+      pg4ml_16:
+        rationale: Present in the repository
+      pg4ml_17:
+        rationale: Present in the repository
       pg_analytics_13:
         rationale: Present in the repository
       pg_analytics_14:
@@ -2808,6 +2920,10 @@ data:
         rationale: Present in the repository
       pg_emailaddr_15:
         rationale: Present in the repository
+      pg_emailaddr_16:
+        rationale: Present in the repository
+      pg_emailaddr_17:
+        rationale: Present in the repository
       pg_envvar_12:
         rationale: Present in the repository
       pg_envvar_13:
@@ -2877,6 +2993,10 @@ data:
       pg_geohash_14:
         rationale: Present in the repository
       pg_geohash_15:
+        rationale: Present in the repository
+      pg_geohash_16:
+        rationale: Present in the repository
+      pg_geohash_17:
         rationale: Present in the repository
       pg_graphql_14:
         rationale: Present in the repository
@@ -3114,6 +3234,8 @@ data:
         rationale: Present in the repository
       pg_savior_16:
         rationale: Present in the repository
+      pg_savior_17:
+        rationale: Present in the repository
       pg_search_14:
         rationale: Present in the repository
       pg_search_15:
@@ -3210,6 +3332,18 @@ data:
         rationale: Present in the repository
       pg_timeseries_17:
         rationale: Present in the repository
+      pg_uint128_12:
+        rationale: Present in the repository
+      pg_uint128_13:
+        rationale: Present in the repository
+      pg_uint128_14:
+        rationale: Present in the repository
+      pg_uint128_15:
+        rationale: Present in the repository
+      pg_uint128_16:
+        rationale: Present in the repository
+      pg_uint128_17:
+        rationale: Present in the repository
       pg_uri_12:
         rationale: Present in the repository
       pg_uri_13:
@@ -3231,6 +3365,10 @@ data:
       pg_zstd_14:
         rationale: Present in the repository
       pg_zstd_15:
+        rationale: Present in the repository
+      pg_zstd_16:
+        rationale: Present in the repository
+      pg_zstd_17:
         rationale: Present in the repository
       pgcozy_12:
         rationale: Present in the repository
@@ -3340,6 +3478,10 @@ data:
         rationale: Present in the repository
       pgqr_15:
         rationale: Present in the repository
+      pgqr_16:
+        rationale: Present in the repository
+      pgqr_17:
+        rationale: Present in the repository
       pgsmcrypto_12:
         rationale: Present in the repository
       pgsmcrypto_13:
@@ -3413,6 +3555,8 @@ data:
       postgres_shacrypt_17:
         rationale: Present in the repository
       postgresql-unit_16:
+        rationale: Present in the repository
+      postgresql_anonymizer_17:
         rationale: Present in the repository
       preprepare_12:
         rationale: Present in the repository
@@ -3495,6 +3639,10 @@ data:
       smlar_14:
         rationale: Present in the repository
       smlar_15:
+        rationale: Present in the repository
+      smlar_16:
+        rationale: Present in the repository
+      smlar_17:
         rationale: Present in the repository
       supautils_13:
         rationale: Present in the repository
@@ -3596,6 +3744,10 @@ data:
     - acl_14-llvmjit-0:1.0.4-1PIGSTY.el8.x86_64
     - acl_15-0:1.0.4-1PIGSTY.el8.x86_64
     - acl_15-llvmjit-0:1.0.4-1PIGSTY.el8.x86_64
+    - acl_16-0:1.0.4-1PIGSTY.el8.x86_64
+    - acl_16-llvmjit-0:1.0.4-1PIGSTY.el8.x86_64
+    - acl_17-0:1.0.4-1PIGSTY.el8.x86_64
+    - acl_17-llvmjit-0:1.0.4-1PIGSTY.el8.x86_64
     - aggs_for_arrays_12-0:1.3.2-1PIGSTY.el8.x86_64
     - aggs_for_arrays_12-llvmjit-0:1.3.2-1PIGSTY.el8.x86_64
     - aggs_for_arrays_13-0:1.3.2-1PIGSTY.el8.x86_64
@@ -3667,6 +3819,7 @@ data:
     - cryptint_16-llvmjit-0:1.0.0-1PIGSTY.el8.x86_64
     - cryptint_17-0:1.0.0-1PIGSTY.el8.x86_64
     - cryptint_17-llvmjit-0:1.0.0-1PIGSTY.el8.x86_64
+    - ddlx_17-0:0.28-1PIGSTY.el8.x86_64
     - decoder_raw_12-0:1.0-1PIGSTY.el8.x86_64
     - decoder_raw_12-llvmjit-0:1.0-1PIGSTY.el8.x86_64
     - decoder_raw_13-0:1.0-1PIGSTY.el8.x86_64
@@ -3922,6 +4075,12 @@ data:
     - permuteseq_16-llvmjit-0:1.2.2-1PIGSTY.el8.x86_64
     - permuteseq_17-0:1.2.2-1PIGSTY.el8.x86_64
     - permuteseq_17-llvmjit-0:1.2.2-1PIGSTY.el8.x86_64
+    - pg4ml_12-0:2.0-1PIGSTY.el8.x86_64
+    - pg4ml_13-0:2.0-1PIGSTY.el8.x86_64
+    - pg4ml_14-0:2.0-1PIGSTY.el8.x86_64
+    - pg4ml_15-0:2.0-1PIGSTY.el8.x86_64
+    - pg4ml_16-0:2.0-1PIGSTY.el8.x86_64
+    - pg4ml_17-0:2.0-1PIGSTY.el8.x86_64
     - pg_analytics_13-0:0.2.1-1.el8.x86_64
     - pg_analytics_14-0:0.2.1-1.el8.x86_64
     - pg_analytics_15-0:0.2.1-1.el8.x86_64
@@ -4031,20 +4190,26 @@ data:
     - pg_currency_17-llvmjit-0:0.0.3-1PIGSTY.el8.x86_64
     - pg_duckdb_15-0:0.0.1-d663d8a.el8.x86_64
     - pg_duckdb_15-0:0.0.1-f34ae06.el8.x86_64
+    - pg_duckdb_15-0:0.1.0-f34ae06.el8.x86_64
     - pg_duckdb_15-llvmjit-0:0.0.1-d663d8a.el8.x86_64
     - pg_duckdb_15-llvmjit-0:0.0.1-f34ae06.el8.x86_64
+    - pg_duckdb_15-llvmjit-0:0.1.0-f34ae06.el8.x86_64
     - pg_duckdb_16-0:0.0.1-ba60ba7.el8.x86_64
     - pg_duckdb_16-0:0.0.1-d663d8a.el8.x86_64
     - pg_duckdb_16-0:0.0.1-f34ae06.el8.x86_64
+    - pg_duckdb_16-0:0.1.0-f34ae06.el8.x86_64
     - pg_duckdb_16-llvmjit-0:0.0.1-ba60ba7.el8.x86_64
     - pg_duckdb_16-llvmjit-0:0.0.1-d663d8a.el8.x86_64
     - pg_duckdb_16-llvmjit-0:0.0.1-f34ae06.el8.x86_64
+    - pg_duckdb_16-llvmjit-0:0.1.0-f34ae06.el8.x86_64
     - pg_duckdb_17-0:0.0.1-ba60ba7.el8.x86_64
     - pg_duckdb_17-0:0.0.1-d663d8a.el8.x86_64
     - pg_duckdb_17-0:0.0.1-f34ae06.el8.x86_64
+    - pg_duckdb_17-0:0.1.0-f34ae06.el8.x86_64
     - pg_duckdb_17-llvmjit-0:0.0.1-ba60ba7.el8.x86_64
     - pg_duckdb_17-llvmjit-0:0.0.1-d663d8a.el8.x86_64
     - pg_duckdb_17-llvmjit-0:0.0.1-f34ae06.el8.x86_64
+    - pg_duckdb_17-llvmjit-0:0.1.0-f34ae06.el8.x86_64
     - pg_ecdsa_12-0:1.0-1PIGSTY.el8.x86_64
     - pg_ecdsa_12-llvmjit-0:1.0-1PIGSTY.el8.x86_64
     - pg_ecdsa_13-0:1.0-1PIGSTY.el8.x86_64
@@ -4065,6 +4230,10 @@ data:
     - pg_emailaddr_14-llvmjit-0:0-1PIGSTY.el8.x86_64
     - pg_emailaddr_15-0:0-1PIGSTY.el8.x86_64
     - pg_emailaddr_15-llvmjit-0:0-1PIGSTY.el8.x86_64
+    - pg_emailaddr_16-0:0-1PIGSTY.el8.x86_64
+    - pg_emailaddr_16-llvmjit-0:0-1PIGSTY.el8.x86_64
+    - pg_emailaddr_17-0:0-1PIGSTY.el8.x86_64
+    - pg_emailaddr_17-llvmjit-0:0-1PIGSTY.el8.x86_64
     - pg_envvar_12-0:1.0.0-1PIGSTY.el8.x86_64
     - pg_envvar_12-llvmjit-0:1.0.0-1PIGSTY.el8.x86_64
     - pg_envvar_13-0:1.0.0-1PIGSTY.el8.x86_64
@@ -4130,6 +4299,10 @@ data:
     - pg_geohash_14-llvmjit-0:1.0-1PIGSTY.el8.x86_64
     - pg_geohash_15-0:1.0-1PIGSTY.el8.x86_64
     - pg_geohash_15-llvmjit-0:1.0-1PIGSTY.el8.x86_64
+    - pg_geohash_16-0:1.0-1PIGSTY.el8.x86_64
+    - pg_geohash_16-llvmjit-0:1.0-1PIGSTY.el8.x86_64
+    - pg_geohash_17-0:1.0-1PIGSTY.el8.x86_64
+    - pg_geohash_17-llvmjit-0:1.0-1PIGSTY.el8.x86_64
     - pg_graphql_14-0:1.5.9-1PIGSTY.el8.x86_64
     - pg_graphql_15-0:1.5.9-1PIGSTY.el8.x86_64
     - pg_graphql_16-0:1.5.7-1PIGSTY.el8.x86_64
@@ -4333,10 +4506,12 @@ data:
     - pg_savior_15-llvmjit-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_savior_16-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_savior_16-llvmjit-0:0.0.1-1PIGSTY.el8.x86_64
-    - pg_search_14-0:0.11.0-1.el8.x86_64
-    - pg_search_15-0:0.11.0-1.el8.x86_64
-    - pg_search_16-0:0.11.0-1.el8.x86_64
-    - pg_search_17-0:0.11.0-1.el8.x86_64
+    - pg_savior_17-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_savior_17-llvmjit-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_search_14-0:0.11.1-1.el8.x86_64
+    - pg_search_15-0:0.11.1-1.el8.x86_64
+    - pg_search_16-0:0.11.1-1.el8.x86_64
+    - pg_search_17-0:0.11.1-1.el8.x86_64
     - pg_similarity_12-0:1.0-2PIGSTY.el8.x86_64
     - pg_similarity_12-llvmjit-0:1.0-2PIGSTY.el8.x86_64
     - pg_similarity_13-0:1.0-2PIGSTY.el8.x86_64
@@ -4400,6 +4575,18 @@ data:
     - pg_timeseries_15-0:0.1.6-1PIGSTY.el8.x86_64
     - pg_timeseries_16-0:0.1.6-1PIGSTY.el8.x86_64
     - pg_timeseries_17-0:0.1.6-1PIGSTY.el8.x86_64
+    - pg_uint128_12-0:1.0.0-1PIGSTY.el8.x86_64
+    - pg_uint128_12-llvmjit-0:1.0.0-1PIGSTY.el8.x86_64
+    - pg_uint128_13-0:1.0.0-1PIGSTY.el8.x86_64
+    - pg_uint128_13-llvmjit-0:1.0.0-1PIGSTY.el8.x86_64
+    - pg_uint128_14-0:1.0.0-1PIGSTY.el8.x86_64
+    - pg_uint128_14-llvmjit-0:1.0.0-1PIGSTY.el8.x86_64
+    - pg_uint128_15-0:1.0.0-1PIGSTY.el8.x86_64
+    - pg_uint128_15-llvmjit-0:1.0.0-1PIGSTY.el8.x86_64
+    - pg_uint128_16-0:1.0.0-1PIGSTY.el8.x86_64
+    - pg_uint128_16-llvmjit-0:1.0.0-1PIGSTY.el8.x86_64
+    - pg_uint128_17-0:1.0.0-1PIGSTY.el8.x86_64
+    - pg_uint128_17-llvmjit-0:1.0.0-1PIGSTY.el8.x86_64
     - pg_uri_12-0:1.20151224-1PIGSTY.el8.x86_64
     - pg_uri_12-llvmjit-0:1.20151224-1PIGSTY.el8.x86_64
     - pg_uri_13-0:1.20151224-1PIGSTY.el8.x86_64
@@ -4421,6 +4608,10 @@ data:
     - pg_zstd_14-llvmjit-0:1.1.2-1PIGSTY.el8.x86_64
     - pg_zstd_15-0:1.1.2-1PIGSTY.el8.x86_64
     - pg_zstd_15-llvmjit-0:1.1.2-1PIGSTY.el8.x86_64
+    - pg_zstd_16-0:1.1.2-1PIGSTY.el8.x86_64
+    - pg_zstd_16-llvmjit-0:1.1.2-1PIGSTY.el8.x86_64
+    - pg_zstd_17-0:1.1.2-1PIGSTY.el8.x86_64
+    - pg_zstd_17-llvmjit-0:1.1.2-1PIGSTY.el8.x86_64
     - pgcozy_12-0:1.0-1PIGSTY.el8.x86_64
     - pgcozy_13-0:1.0-1PIGSTY.el8.x86_64
     - pgcozy_14-0:1.0-1PIGSTY.el8.x86_64
@@ -4500,6 +4691,10 @@ data:
     - pgqr_14-llvmjit-0:1.0-1PIGSTY.el8.x86_64
     - pgqr_15-0:1.0-1PIGSTY.el8.x86_64
     - pgqr_15-llvmjit-0:1.0-1PIGSTY.el8.x86_64
+    - pgqr_16-0:1.0-1PIGSTY.el8.x86_64
+    - pgqr_16-llvmjit-0:1.0-1PIGSTY.el8.x86_64
+    - pgqr_17-0:1.0-1PIGSTY.el8.x86_64
+    - pgqr_17-llvmjit-0:1.0-1PIGSTY.el8.x86_64
     - pgsmcrypto_12-0:0.1.0-1PIGSTY.el8.x86_64
     - pgsmcrypto_13-0:0.1.0-1PIGSTY.el8.x86_64
     - pgsmcrypto_14-0:0.1.0-1PIGSTY.el8.x86_64
@@ -4562,6 +4757,8 @@ data:
     - postgres_shacrypt_17-llvmjit-0:1.1-1PIGSTY.el8.x86_64
     - postgresql-unit_16-0:7.7-1PIGSTY.el8.x86_64
     - postgresql-unit_16-llvmjit-0:7.7-1PIGSTY.el8.x86_64
+    - postgresql_anonymizer_17-0:1.3.2-1PIGSTY.el8.x86_64
+    - postgresql_anonymizer_17-llvmjit-0:1.3.2-1PIGSTY.el8.x86_64
     - preprepare_12-0:0.9-1PIGSTY.el8.x86_64
     - preprepare_12-llvmjit-0:0.9-1PIGSTY.el8.x86_64
     - preprepare_13-0:0.9-1PIGSTY.el8.x86_64
@@ -4644,6 +4841,10 @@ data:
     - smlar_14-llvmjit-0:1.0-1PIGSTY.el8.x86_64
     - smlar_15-0:1.0-1PIGSTY.el8.x86_64
     - smlar_15-llvmjit-0:1.0-1PIGSTY.el8.x86_64
+    - smlar_16-0:1.0-1PIGSTY.el8.x86_64
+    - smlar_16-llvmjit-0:1.0-1PIGSTY.el8.x86_64
+    - smlar_17-0:1.0-1PIGSTY.el8.x86_64
+    - smlar_17-llvmjit-0:1.0-1PIGSTY.el8.x86_64
     - supautils_13-0:2.5.0-1PIGSTY.el8.x86_64
     - supautils_13-llvmjit-0:2.5.0-1PIGSTY.el8.x86_64
     - supautils_14-0:2.5.0-1PIGSTY.el8.x86_64
