@@ -1183,10 +1183,10 @@ Homepage: https://github.com/petere/pgemailaddr
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-emailaddr/postgresql-12-pg-emailaddr_0-1PIGSTY~jammy_amd64.deb
-Size: 13346
-SHA256: 55d32fc1f69af36f2c2599fc9aec2647e4a6196bdfd0c50cda993e3b800f8704
-SHA1: 1cf9558ac13d0c02c228c80a9127189515959ad8
-MD5sum: fa3452f07818adcc85a89995865b1d1f
+Size: 13348
+SHA256: c6951f2f9d230ded66f93c9e2248c05bf2a983a6d5649cfcc8d8a633317c56d8
+SHA1: 7f77b8df0384866012c3618a9710b5d721fefc48
+MD5sum: 749366b7c73ae172aed1e1bdf8bddddd
 Description: email address type for PostgreSQL
   This is an extension for PostgreSQL that provides a type emailaddr for storing email addresses.
   https://twitter.com/pvh/status/667106073199775744
@@ -1332,17 +1332,17 @@ Source: pg-geohash
 Version: 1.0-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 65
+Installed-Size: 66
 Depends: postgresql-12, postgresql-12-jit-llvm (>= 15), libc6 (>= 2.14)
 Provides: postgresql-pg-geohash
 Homepage: https://github.com/jistok/pg_geohash
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-geohash/postgresql-12-pg-geohash_1.0-1PIGSTY~jammy_amd64.deb
-Size: 19722
-SHA256: 3ff7aa1e131dc00598be81a3cad51acbd0a1ee66a2ad39099381f313f3b63744
-SHA1: e88eba2ac66644a39257b18d1936f12c2715a5b6
-MD5sum: 0bb7ea3c4e21c1709a3f58bd1f7a3c15
+Size: 18990
+SHA256: 06554a63430c963f7052d10eb5fdfb4c5205024d143f90de706e203fc1545387
+SHA1: fe150c60111dd4472a87e9818d8256447f4bfc79
+MD5sum: 03d57898460e0e205f7ab230fbe75309
 Description: Geohashing library for HAWQ, Greenplum DB, PostgreSQL
   Geohashing functionality for HAWQ, Greenplum DB, PostgreSQL
   Motivated by the need to compute aggregates based on geographic location
@@ -1995,12 +1995,31 @@ Homepage: https://github.com/grahamedgecombe/pgzstd
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-zstd/postgresql-12-pg-zstd_1.1.2-1PIGSTY~jammy_amd64.deb
-Size: 12368
-SHA256: 01cc8e3d2291a7336f3713e5f0ffb24bdfee4a0c3ebbbdfdb9b8ae872b770db8
-SHA1: 3bea55c5d3d9cdc271952908b63d5a14fe5b6a7f
-MD5sum: 5cbd19df862eb25376a454d8c52e32ba
+Size: 12380
+SHA256: a448f2a58f2dea00bbd5e8387d6c1c19fb3f7f2912cf3aee8c5797e82244561f
+SHA1: ac14ad52bf73d0969372b791669588b08320cbf3
+MD5sum: ee8abbc142c353724acbb3b9e897f3d9
 Description: Postgres module for Zstandard compression/decompression with preset dictionary support
   pgzstd is a PostgreSQL extension that provides functions for compressing and uncompressing Zstandard frames, with support for custom dictionaries.
+
+Package: postgresql-12-pg4ml
+Source: pg4ml
+Version: 2.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 4900
+Depends: postgresql-12
+Provides: postgresql-pg4ml
+Homepage: https://gitee.com/guotiecheng/plpgsql_pg4ml
+Priority: optional
+Section: database
+Filename: pool/main/p/pg4ml/postgresql-12-pg4ml_2.0-1PIGSTY~jammy_amd64.deb
+Size: 324852
+SHA256: dd6c28e34ad8ce14414e81532e3454b4e0018275a384d2e109593a1e5f16ee0b
+SHA1: 60f5bf703a88f031728fe4b0e01a55eddb0e9cb8
+MD5sum: af5970793170aab0610f7954f9b5ae71
+Description: Machine Learning framework for PostgreSQL 12
+  pg4ml is a machine learning framework for PostgreSQL 12
 
 Package: postgresql-12-pgcozy
 Source: pgcozy
@@ -2067,16 +2086,17 @@ Source: pgjwt
 Version: 0.2.0-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 12
+Installed-Size: 23
+Depends: postgresql-12
 Provides: postgresql-pgjwt
 Homepage: https://github.com/michelp/pgjwt
 Priority: optional
 Section: database
 Filename: pool/main/p/pgjwt/postgresql-12-pgjwt_0.2.0-1PIGSTY~jammy_amd64.deb
-Size: 2896
-SHA256: 5df759e2899f464dfee45d4433717857cbbde7808664bed82070ad792ebaa7dc
-SHA1: 7bffcb86f019bc5e3773fb0fc8b549accf1ba373
-MD5sum: 6811e816021194e80cdbaed65f754e46
+Size: 4124
+SHA256: 460d6a16900d15537becd5e218bb1bead5636a8ac4c475cbee4bf715beda4926
+SHA1: 194020c3fb7d680f7f2367c786347c837de004a7
+MD5sum: b398b255e7311dbd9aa5babcd8b0a323
 Description: PostgreSQL implementation of JSON Web Tokens for 12
   pgjwt allows you to sign & verify json web token via pure SQL interface.
   It requires the pgcrypto extension, included in most distribution's "postgresql-contrib" package.
@@ -2105,16 +2125,17 @@ Source: pgmq
 Version: 1.4.4-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 13
+Installed-Size: 152
+Depends: postgresql-12
 Provides: postgresql-pgmq
 Homepage: https://github.com/michelp/pgmq
 Priority: optional
 Section: database
 Filename: pool/main/p/pgmq/postgresql-12-pgmq_1.4.4-1PIGSTY~jammy_amd64.deb
-Size: 6310
-SHA256: 7e1878f90d4df20b41acf399d578dd617e8395d65476deb34aa771285badc369
-SHA1: 9b9f533d9722d8da208369e30ce464dff31259ed
-MD5sum: bec4fa022b8f11ce70731cbb036ed8fb
+Size: 17584
+SHA256: ba24828641b8063fb8a95c56579764a677c90fb206c45a9f9497f2b9bcebe407
+SHA1: 72c4989a72aa78550d356372c339442a17c3f906
+MD5sum: d5a52665eafa03a9ba1aa50793388a16
 Description: PostgreSQL implementation of JSON Web Tokens for 12
   pgmq allows you to sign & verify json web token via pure SQL interface.
   It requires the pgcrypto extension, included in most distribution's "postgresql-contrib" package.
@@ -2151,10 +2172,10 @@ Homepage: https://github.com/Fenoman/pgqr
 Priority: optional
 Section: database
 Filename: pool/main/p/pgqr/postgresql-12-pgqr_1.0-1PIGSTY~jammy_amd64.deb
-Size: 52368
-SHA256: da6ef696f6e977ab732cb4ce1c124cae2a4605d46178346d9eafac7b99484efb
-SHA1: 498089a5632a749dc7f561c1a410e870001b93f0
-MD5sum: b744fe2a79459c96058fcd3ccae93935
+Size: 52366
+SHA256: 10b33b298f39794d6c0aec83df798a05e003344624c5fcd73f3bec5171de2e7c
+SHA1: 7574902f3014c1f96542b8197c93973f48a10ccd
+MD5sum: 58affc010cb7314945272fb36e65f3ec
 Description: PostgreSQL extension to generate QR code
   Function pgqr has 4 parameters:
   t text: text to be encoded.
@@ -2526,6 +2547,25 @@ MD5sum: 2f8efce1d1375cc47da8b3e1c923a539
 Description: Temporal Tables PostgreSQL Extension
   A temporal table is a table that records the period of time when a row is valid.
   There are two types of periods: the application period (also known as valid-time or business-time) and the system period (also known as transaction-time).
+
+Package: postgresql-12-timestamp9
+Source: timestamp9
+Version: 1.4.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 51
+Depends: libc6 (>= 2.7)
+Provides: postgresql-timestamp9
+Homepage: https://github.com/petere/timestamp9
+Priority: optional
+Section: database
+Filename: pool/main/t/timestamp9/postgresql-12-timestamp9_1.4.0-1PIGSTY~jammy_amd64.deb
+Size: 9388
+SHA256: 17daa4a82a11e7c6e2afc84dfb98b80abda4c72cf4c9a520aee07ee892b6fa62
+SHA1: c814f1c49db736406ddc9c6b1e156c245ebd004f
+MD5sum: 9a11e5d809ba222a2ba6ce2d7f359ac8
+Description: Nanosecond precision timestamp type for Postgres 12
+  An efficient nanosecond precision timestamp type for 12
 
 Package: postgresql-12-url-encode
 Source: url-encode
@@ -3708,10 +3748,10 @@ Homepage: https://github.com/petere/pgemailaddr
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-emailaddr/postgresql-13-pg-emailaddr_0-1PIGSTY~jammy_amd64.deb
-Size: 13266
-SHA256: 2e844902e2bd029a2c6bef42c338e79f8ad5b6e527d00d7209bb0bcdc21a256d
-SHA1: b8b1a1ebc8ac6f394b66b4ebbcda0245ba0eaa46
-MD5sum: 6a1f7f76187bcff42a1642cc8e58b43b
+Size: 13264
+SHA256: 0a5a16b476e8ff1af0ea1268eba2e014d1f04452b7b1b93c934f23c6134d61f8
+SHA1: 25a3dfdb13d8def39c232f2041d8e0f62282c2fa
+MD5sum: 294ab4c0a48d50aa1b1c81f9de54946e
 Description: email address type for PostgreSQL
   This is an extension for PostgreSQL that provides a type emailaddr for storing email addresses.
   https://twitter.com/pvh/status/667106073199775744
@@ -3857,17 +3897,17 @@ Source: pg-geohash
 Version: 1.0-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 65
+Installed-Size: 66
 Depends: postgresql-13, postgresql-13-jit-llvm (>= 15), libc6 (>= 2.14)
 Provides: postgresql-pg-geohash
 Homepage: https://github.com/jistok/pg_geohash
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-geohash/postgresql-13-pg-geohash_1.0-1PIGSTY~jammy_amd64.deb
-Size: 19730
-SHA256: 25fa26c1d9f7bd96821fc35985c69bdc0a68c65fe6a5f48656d4e9118dc4ac25
-SHA1: 982e0e7a578f3c480e62f421ef1f42692a200109
-MD5sum: 1905cc5ec757fbaad647feb5ddbe836e
+Size: 18990
+SHA256: 0d6d7e4f84ede96c2b8ebb994c3279e5fe1d424a40ce65dc81cdc73958dadb74
+SHA1: 9ca963ff60b329043d163f93975c1a66106cf1a6
+MD5sum: 24185a2e00969628485a6dc56121f115
 Description: Geohashing library for HAWQ, Greenplum DB, PostgreSQL
   Geohashing functionality for HAWQ, Greenplum DB, PostgreSQL
   Motivated by the need to compute aggregates based on geographic location
@@ -4314,10 +4354,10 @@ Homepage: https://github.com/viggy28/pg_savior
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-savior/postgresql-13-pg-savior_0.0.1-1PIGSTY~jammy_amd64.deb
-Size: 18910
-SHA256: 6519d8a19299246119de8e7276e57d4cff258cbee45f7128660efbe7f963539a
-SHA1: a67a523e6859fe98d261a95052fe92bbe6cd416e
-MD5sum: 16ee4446cb903d527f1859faf8834bc9
+Size: 18904
+SHA256: b13d11216b9861f251fb2be7515d274bf82af7be2f38e7645c65952db738ee4d
+SHA1: 64c5cffeb071b9d3f9ffc27c3ee73b4dc15e6a29
+MD5sum: 5c3f2f0b78290ac53822edfd9399e10d
 Description: A postgres extension to avoid accidental mistakes
   pg_savior is a PostgreSQL extension designed to prevent accidental data loss
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
@@ -4580,12 +4620,31 @@ Homepage: https://github.com/grahamedgecombe/pgzstd
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-zstd/postgresql-13-pg-zstd_1.1.2-1PIGSTY~jammy_amd64.deb
-Size: 12674
-SHA256: c073f1d3f6eaf90df2cd1ac7fb980c8f7f4d876f78900415d4c00a7d2aaa4c8c
-SHA1: 4e4d6fe025eb2775a50ae9e9f5e4ee2af88cb26e
-MD5sum: c9c37668ad210f6b71114fefb23027cf
+Size: 12682
+SHA256: 2f2173fe6e2c28a42d743de5853afb58b7a6c7a64cb66026f36aaf0f83f924ca
+SHA1: 55a51c6ba1ee41efce4e53cc8dcb174d63809fe7
+MD5sum: 8b77db21fade37a0d644b5f41345fb42
 Description: Postgres module for Zstandard compression/decompression with preset dictionary support
   pgzstd is a PostgreSQL extension that provides functions for compressing and uncompressing Zstandard frames, with support for custom dictionaries.
+
+Package: postgresql-13-pg4ml
+Source: pg4ml
+Version: 2.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 4900
+Depends: postgresql-13
+Provides: postgresql-pg4ml
+Homepage: https://gitee.com/guotiecheng/plpgsql_pg4ml
+Priority: optional
+Section: database
+Filename: pool/main/p/pg4ml/postgresql-13-pg4ml_2.0-1PIGSTY~jammy_amd64.deb
+Size: 324818
+SHA256: d9cde0d5007e81b569c3b1c80417160a23e39767f0ddeec52e5bac25f80153cc
+SHA1: 17e6238055ebd58cad40f4c22252b7525c2aadf6
+MD5sum: f736b7de56cbbe9dfa2db89ddc07576a
+Description: Machine Learning framework for PostgreSQL 13
+  pg4ml is a machine learning framework for PostgreSQL 13
 
 Package: postgresql-13-pgcozy
 Source: pgcozy
@@ -4652,16 +4711,17 @@ Source: pgjwt
 Version: 0.2.0-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 12
+Installed-Size: 23
+Depends: postgresql-13
 Provides: postgresql-pgjwt
 Homepage: https://github.com/michelp/pgjwt
 Priority: optional
 Section: database
 Filename: pool/main/p/pgjwt/postgresql-13-pgjwt_0.2.0-1PIGSTY~jammy_amd64.deb
-Size: 2898
-SHA256: 9625feb09d500b52d8f2bf69d1643ae11b7a6d86ad7d3f82173f62b6c8d393f7
-SHA1: cd28f12782694eb6a846fc3a9d92df1192d591d3
-MD5sum: bd83803a755cc211d6ab4149d7a7624e
+Size: 4126
+SHA256: 55e586a032cdcd00269c8e83d87ad8f7c211b764cc7fdfa05fa00707ea773f70
+SHA1: d1c8b27db141503c00fcca8ae3f18b436a34f99d
+MD5sum: 6c3fe7171feb9e7cd4a2184375670d4f
 Description: PostgreSQL implementation of JSON Web Tokens for 13
   pgjwt allows you to sign & verify json web token via pure SQL interface.
   It requires the pgcrypto extension, included in most distribution's "postgresql-contrib" package.
@@ -4690,16 +4750,17 @@ Source: pgmq
 Version: 1.4.4-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 13
+Installed-Size: 152
+Depends: postgresql-13
 Provides: postgresql-pgmq
 Homepage: https://github.com/michelp/pgmq
 Priority: optional
 Section: database
 Filename: pool/main/p/pgmq/postgresql-13-pgmq_1.4.4-1PIGSTY~jammy_amd64.deb
-Size: 6312
-SHA256: ef8a3b9be4e05dd256a17c817d6344184590dbab4862166bc141262e8ff9f4ae
-SHA1: 5e9bbaf7175b791e06c256ba5638017a43bc4305
-MD5sum: 4910283da75fe6dbb459797995951605
+Size: 17584
+SHA256: 73e379514cbca330d9564ac308fdcfd46083a085046ec13febfe9d901255058d
+SHA1: f8fd811e6e0e52c989d7eb2510996917febf1483
+MD5sum: f5d24381f8a0b30575ca4f667657e219
 Description: PostgreSQL implementation of JSON Web Tokens for 13
   pgmq allows you to sign & verify json web token via pure SQL interface.
   It requires the pgcrypto extension, included in most distribution's "postgresql-contrib" package.
@@ -4736,10 +4797,10 @@ Homepage: https://github.com/Fenoman/pgqr
 Priority: optional
 Section: database
 Filename: pool/main/p/pgqr/postgresql-13-pgqr_1.0-1PIGSTY~jammy_amd64.deb
-Size: 52466
-SHA256: bdf764c1a5d77cd63970f2308d24e8c0a57b1611a5f226ed2642ab4d4720be2a
-SHA1: 3158adaab70807864a9a77fe36a44bb5caac7c96
-MD5sum: 894789e9a764a7768b4a11875f5594aa
+Size: 52470
+SHA256: ebd5e26b3aac867832fe58d52db3867d6dece6cbd91bf31c1440931c8dde7d37
+SHA1: 8e9b20412666b07aecd323794f36a69f0ee108cd
+MD5sum: 36d129ed3564fbd5523590ae9c8be6f0
 Description: PostgreSQL extension to generate QR code
   Function pgqr has 4 parameters:
   t text: text to be encoded.
@@ -5022,10 +5083,10 @@ Homepage: https://github.com/jirutka/smlar
 Priority: optional
 Section: database
 Filename: pool/main/s/smlar/postgresql-13-smlar_1.0-1PIGSTY~jammy_amd64.deb
-Size: 87836
-SHA256: d0deb8fe896d954b2e078a1fb52a0b9bf2c84a2a8dd2503dbcfce30198113a8d
-SHA1: a504b2b8add49bb482002d15260f6d1a04b60ae9
-MD5sum: 773b9c42343af72cd92ca0323b7ff725
+Size: 87834
+SHA256: 005bfc37591fc77a08079e552f4c5237ebdb58f3b8164a54ae45db0b72216e71
+SHA1: 52008083bc40a1074fb4a8495d30d1dbc9b3ee12
+MD5sum: 5e08425f056c8bb1515a57299e5ac418
 Description: PostgreSQL extension for an effective similarity search
   mirror of git://sigaev.ru/smlar.git, see https://www.pgcon.org/2012/schedule/track/Hacking/443.en.html
 
@@ -5151,6 +5212,25 @@ MD5sum: 163d4c11cccb362128c00bad470376ad
 Description: Temporal Tables PostgreSQL Extension
   A temporal table is a table that records the period of time when a row is valid.
   There are two types of periods: the application period (also known as valid-time or business-time) and the system period (also known as transaction-time).
+
+Package: postgresql-13-timestamp9
+Source: timestamp9
+Version: 1.4.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 51
+Depends: libc6 (>= 2.7)
+Provides: postgresql-timestamp9
+Homepage: https://github.com/petere/timestamp9
+Priority: optional
+Section: database
+Filename: pool/main/t/timestamp9/postgresql-13-timestamp9_1.4.0-1PIGSTY~jammy_amd64.deb
+Size: 9346
+SHA256: 65968ee4adac541391f2e9ba386a93bde49d71b1f6c085251604204f49d83183
+SHA1: 69d7b65a2ae3fd696afcc228bbb9bff44189415a
+MD5sum: 12f4de98c72cd3c7febb4b2ec5449d85
+Description: Nanosecond precision timestamp type for Postgres 13
+  An efficient nanosecond precision timestamp type for 13
 
 Package: postgresql-13-url-encode
 Source: url-encode
@@ -6354,10 +6434,10 @@ Homepage: https://github.com/petere/pgemailaddr
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-emailaddr/postgresql-14-pg-emailaddr_0-1PIGSTY~jammy_amd64.deb
-Size: 13340
-SHA256: fa05d2918c0e8e1fc0e9c13dd582ded60c0f9673163c2efb4aeffb2c2d814298
-SHA1: 3781faf2733d34565c261bcdcbc332ff550c294b
-MD5sum: a739f4a8cdb7209426ee60aa694d0567
+Size: 13378
+SHA256: b96e239628e5a9de034017f86a8a7da7518fc97d6bde5df00d875bb4addf9085
+SHA1: 084fd0615bcce1ced1146fcc9bce25252cc20a07
+MD5sum: 29179ea8fdfa215c3cd8104da3e203af
 Description: email address type for PostgreSQL
   This is an extension for PostgreSQL that provides a type emailaddr for storing email addresses.
   https://twitter.com/pvh/status/667106073199775744
@@ -6503,17 +6583,17 @@ Source: pg-geohash
 Version: 1.0-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 65
+Installed-Size: 66
 Depends: postgresql-14, postgresql-14-jit-llvm (>= 15), libc6 (>= 2.14)
 Provides: postgresql-pg-geohash
 Homepage: https://github.com/jistok/pg_geohash
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-geohash/postgresql-14-pg-geohash_1.0-1PIGSTY~jammy_amd64.deb
-Size: 19728
-SHA256: 2388f39cce2e5b9e8c241eb90ce939a94147c79649562b12c56e0180958e8e7c
-SHA1: d7814a8a5612ab6e1119a2ab9fae398fa24b0a26
-MD5sum: ec91fa55b4aed9f6eeeb3cf29595803e
+Size: 18994
+SHA256: a82d61f0f9c68aae4447de8467da99fc0715c8e8ebe9a4770a1170eed9827636
+SHA1: 2c662d341f8700639e997963a68fb27e6294b227
+MD5sum: 45da6a81d885fa1dd465f75fa72247e1
 Description: Geohashing library for HAWQ, Greenplum DB, PostgreSQL
   Geohashing functionality for HAWQ, Greenplum DB, PostgreSQL
   Motivated by the need to compute aggregates based on geographic location
@@ -7001,25 +7081,25 @@ Priority: optional
 Section: database
 Filename: pool/main/p/pg-savior/postgresql-14-pg-savior_0.0.1-1PIGSTY~jammy_amd64.deb
 Size: 19068
-SHA256: ef762d1df78c065e9a90c5c2d55c852df3100ef711fa896c8eab279e86de5e18
-SHA1: 879f990a36f45095af308059dc8ceb47e7374da7
-MD5sum: 74572c1a52c4f350e0203b965a3fce48
+SHA256: 9a206f4dadb660e2a050ecaf956ef06a9d486dec1e5d66f0ed1d92eeb4444c5c
+SHA1: d8ef0863e85cc3334bc9cea8cf1937676e621ec7
+MD5sum: d5710e01fbcfaf50196fa0e92826ae46
 Description: A postgres extension to avoid accidental mistakes
   pg_savior is a PostgreSQL extension designed to prevent accidental data loss
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
 Package: postgresql-14-pg-search
-Version: 0.11.0
+Version: 0.11.1
 Architecture: amd64
 Depends: postgresql-14
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.11.0_amd64.deb
-Size: 45766156
-SHA256: 347683a866bfed26dedff26d868836080d7f62f13daa71782f277712d2137825
-SHA1: 93990b79e4bfb384f679414e3faf51c573a4f9a6
-MD5sum: dbb25ed2dcd62dbe6bf1f99fd6e5002f
+Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.11.1_amd64.deb
+Size: 45738520
+SHA256: cb74eae553e8a8c1a98f20d2a4d5297f3d304b7c648ae628100e7eb3273f86af
+SHA1: ff6df18c0885fb23cf299269a15ad9eb430de1e0
+MD5sum: 4b3659afd2111d7814747ed137bd6c1d
 Description: Full-text search for PostgreSQL using BM25
 
 Package: postgresql-14-pg-sqlog
@@ -7300,12 +7380,31 @@ Homepage: https://github.com/grahamedgecombe/pgzstd
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-zstd/postgresql-14-pg-zstd_1.1.2-1PIGSTY~jammy_amd64.deb
-Size: 12862
-SHA256: 5d8947e07ff8f85a404b2676c92cc53ef85e0e8f94f20c5edc43da19fb98123f
-SHA1: 272b905cd749a69c856d6d7967e419af79cf2df4
-MD5sum: 4e861efc2da900a93b2cbceffa454051
+Size: 12864
+SHA256: d5ea5ee7c788a23991167f2bdd86b6aed36b022c0de72c7dea8ad9a66d56dc35
+SHA1: 45356a393e724dd1fd6551a35e3f5862ae2ccc0c
+MD5sum: 0c628b42513b966fa0982c8a19c94161
 Description: Postgres module for Zstandard compression/decompression with preset dictionary support
   pgzstd is a PostgreSQL extension that provides functions for compressing and uncompressing Zstandard frames, with support for custom dictionaries.
+
+Package: postgresql-14-pg4ml
+Source: pg4ml
+Version: 2.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 4900
+Depends: postgresql-14
+Provides: postgresql-pg4ml
+Homepage: https://gitee.com/guotiecheng/plpgsql_pg4ml
+Priority: optional
+Section: database
+Filename: pool/main/p/pg4ml/postgresql-14-pg4ml_2.0-1PIGSTY~jammy_amd64.deb
+Size: 324776
+SHA256: 83ee0efb67c75dd25d2945386c1467c617dafa5391894a9558ff5db435cb214c
+SHA1: 97823b64dd03a8ebdf1bbac65e9242ae4527da6c
+MD5sum: 4d1a6552e383210dfe0427cd23f31d26
+Description: Machine Learning framework for PostgreSQL 14
+  pg4ml is a machine learning framework for PostgreSQL 14
 
 Package: postgresql-14-pgcozy
 Source: pgcozy
@@ -7372,16 +7471,17 @@ Source: pgjwt
 Version: 0.2.0-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 12
+Installed-Size: 23
+Depends: postgresql-14
 Provides: postgresql-pgjwt
 Homepage: https://github.com/michelp/pgjwt
 Priority: optional
 Section: database
 Filename: pool/main/p/pgjwt/postgresql-14-pgjwt_0.2.0-1PIGSTY~jammy_amd64.deb
-Size: 2896
-SHA256: d626946fc03736d1d25193bb4253fd7915b1b315fd36fc097a4c0364ffc28def
-SHA1: a03013aeb06eaa287ccb0b72df0f60d18e01791a
-MD5sum: bf8360012712173d3572055bffc6522f
+Size: 4124
+SHA256: bb2d2245e9bcb50cff0a072b1d0ac8acd1ab3ad7afaa9c4580d8e140879b3239
+SHA1: a148f493c167f8dc6755305d7bb58b510314acfc
+MD5sum: 1daa3b71b6aa4250a7118a1492886610
 Description: PostgreSQL implementation of JSON Web Tokens for 14
   pgjwt allows you to sign & verify json web token via pure SQL interface.
   It requires the pgcrypto extension, included in most distribution's "postgresql-contrib" package.
@@ -7430,16 +7530,17 @@ Source: pgmq
 Version: 1.4.4-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 13
+Installed-Size: 152
+Depends: postgresql-14
 Provides: postgresql-pgmq
 Homepage: https://github.com/michelp/pgmq
 Priority: optional
 Section: database
 Filename: pool/main/p/pgmq/postgresql-14-pgmq_1.4.4-1PIGSTY~jammy_amd64.deb
-Size: 6306
-SHA256: fc238326f0f34f3b952a5ce540d223b156c47316e09f29bfd296aafe1eda4082
-SHA1: ce8b4d88aa04267278523a10c02ea4b36b6f9d1e
-MD5sum: 88971d880732ce20081bee40cec11de8
+Size: 17578
+SHA256: 61b30ebfe893f6784eaf3beae9fe2470a766aae984e7bb538d7b8dde99f364c2
+SHA1: f2e328b1eb5fb3d1a4521205bb3b3fde85e415a5
+MD5sum: d83ab9c74c006e2704510e53951c4bc1
 Description: PostgreSQL implementation of JSON Web Tokens for 14
   pgmq allows you to sign & verify json web token via pure SQL interface.
   It requires the pgcrypto extension, included in most distribution's "postgresql-contrib" package.
@@ -7476,10 +7577,10 @@ Homepage: https://github.com/Fenoman/pgqr
 Priority: optional
 Section: database
 Filename: pool/main/p/pgqr/postgresql-14-pgqr_1.0-1PIGSTY~jammy_amd64.deb
-Size: 52504
-SHA256: 36d16d2954095bdd30c186f982afad9382f6d9b438487baad1cdbeddf361dd89
-SHA1: 9397e4dfede47acc328fa6fb092a2ac72dec65d3
-MD5sum: 535e6d34c57e24796a955c7c9ead7056
+Size: 52498
+SHA256: 61a094bc79907e8e6d1ecbb91c5f4ad9355c77ccbcf4e0608d7714d54898be86
+SHA1: 218ef03e922bb237a1389f2c9c5208515e986f32
+MD5sum: 019e29dbf0e394a8819636d707f2ac9d
 Description: PostgreSQL extension to generate QR code
   Function pgqr has 4 parameters:
   t text: text to be encoded.
@@ -7762,10 +7863,10 @@ Homepage: https://github.com/jirutka/smlar
 Priority: optional
 Section: database
 Filename: pool/main/s/smlar/postgresql-14-smlar_1.0-1PIGSTY~jammy_amd64.deb
-Size: 88128
-SHA256: 76471dd422c0e45627bb42df30a78519cc76cc9d39914f46ec1ba75fa8d57927
-SHA1: 3de6990f80364174cd246e193acc7dbaef5bb340
-MD5sum: 23a44e182924d6e6a01b9862d4a2aaef
+Size: 88112
+SHA256: 5819102bde92a6f12b318f389127377d6a309c396c8109b0486ae96917201ed6
+SHA1: eb2b2ce812de031f2ff4b6c5b52cc5ae8130b817
+MD5sum: 687ae75e51fe1334e06a556e5bda2c41
 Description: PostgreSQL extension for an effective similarity search
   mirror of git://sigaev.ru/smlar.git, see https://www.pgcon.org/2012/schedule/track/Hacking/443.en.html
 
@@ -7891,6 +7992,25 @@ MD5sum: 970307b7df78af9a87a0b17c59326ffc
 Description: Temporal Tables PostgreSQL Extension
   A temporal table is a table that records the period of time when a row is valid.
   There are two types of periods: the application period (also known as valid-time or business-time) and the system period (also known as transaction-time).
+
+Package: postgresql-14-timestamp9
+Source: timestamp9
+Version: 1.4.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 51
+Depends: libc6 (>= 2.7)
+Provides: postgresql-timestamp9
+Homepage: https://github.com/petere/timestamp9
+Priority: optional
+Section: database
+Filename: pool/main/t/timestamp9/postgresql-14-timestamp9_1.4.0-1PIGSTY~jammy_amd64.deb
+Size: 9346
+SHA256: c5cc4a97bb569674bdb42ee564daa420784c1a6b206008efffbc1af20a69317f
+SHA1: 823ebd98db69fae0b7850241314d5290ebe943a4
+MD5sum: 155a000edaaaf59d7dc0d94356021f0f
+Description: Nanosecond precision timestamp type for Postgres 14
+  An efficient nanosecond precision timestamp type for 14
 
 Package: postgresql-14-url-encode
 Source: url-encode
@@ -9084,20 +9204,20 @@ Description: 1 Byte Currency ISO type for PostgreSQL
 
 Package: postgresql-15-pg-duckdb
 Source: pg-duckdb
-Version: 0.0.1-f34ae06
+Version: 0.1.0
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 34558
+Installed-Size: 26630
 Depends: postgresql-15, postgresql-15-jit-llvm (>= 15), libc6 (>= 2.34), libgcc-s1 (>= 3.4), liblz4-1 (>= 0.0~r113), libpq5, libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
 Provides: postgresql-pg-duckdb
 Homepage: https://github.com/duckdb/pg_duckdb
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-duckdb/postgresql-15-pg-duckdb_0.0.1-f34ae06_amd64.deb
-Size: 9781390
-SHA256: bd648baab1700a10981b1f198284e8d21cc82e4d2b3d40b9f0e2f28b30146a1b
-SHA1: 2a4f0d87335b8fd55dcbea00fec6108c86393a93
-MD5sum: d921edacb3fc89777bad9db11e0d31c4
+Filename: pool/main/p/pg-duckdb/postgresql-15-pg-duckdb_0.1.0_amd64.deb
+Size: 7902554
+SHA256: 82788c49cd277dc0705cb0a7fb87d20a072b92ac78f21653d6e7d1e1539c1f14
+SHA1: 5a05d6a1d110a2a8eb109719c69205980bcf3df9
+MD5sum: 0b35bb743ee933e33aeb506dcac0ab10
 Description: DuckDB-powered Postgres for high performance apps & analytics.
   pg_duckdb is a Postgres extension that embeds DuckDB's columnar-vectorized analytics engine and features into Postgres.
   We recommend using pg_duckdb to build high performance analytics and data-intensive applications.
@@ -9137,9 +9257,9 @@ Priority: optional
 Section: database
 Filename: pool/main/p/pg-emailaddr/postgresql-15-pg-emailaddr_0-1PIGSTY~jammy_amd64.deb
 Size: 13362
-SHA256: 59da596c581f444729c982391faea28a42c32aa1e393d6de4f14e30eb312f182
-SHA1: 3902dc39b1419648ac49bedfa24287585fb40482
-MD5sum: c6ad1653426903eafe31c3f220766b0f
+SHA256: 92a5f97631b470f798ef44a91effe706c9f73a3929a12fdca3fa383785b4be03
+SHA1: b10de216743a76c4ed1517e8cd0e04d9058cd1fd
+MD5sum: 8435e8275cbb7e16c294fe53a76c9245
 Description: email address type for PostgreSQL
   This is an extension for PostgreSQL that provides a type emailaddr for storing email addresses.
   https://twitter.com/pvh/status/667106073199775744
@@ -9285,17 +9405,17 @@ Source: pg-geohash
 Version: 1.0-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 65
+Installed-Size: 66
 Depends: postgresql-15, postgresql-15-jit-llvm (>= 15), libc6 (>= 2.14)
 Provides: postgresql-pg-geohash
 Homepage: https://github.com/jistok/pg_geohash
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-geohash/postgresql-15-pg-geohash_1.0-1PIGSTY~jammy_amd64.deb
-Size: 19730
-SHA256: a0cd3fbb5b13e6676204c9df983040e578a6cb0633c77093fdb76342599fa956
-SHA1: eee3e3792d452219b97b5cff31337dc62a02a378
-MD5sum: 68aa9a11bfdbd5788d91654288272839
+Size: 18990
+SHA256: 3e7f50dfa9c6bbcef842aad8f64cb7569f0b62c31c5e949ae675ece2f755b6af
+SHA1: 6c0c01de4f24e38a20ebe020add49a398ab3d588
+MD5sum: d837fb9606f90ae8445ed6675b3813a8
 Description: Geohashing library for HAWQ, Greenplum DB, PostgreSQL
   Geohashing functionality for HAWQ, Greenplum DB, PostgreSQL
   Motivated by the need to compute aggregates based on geographic location
@@ -9782,26 +9902,26 @@ Homepage: https://github.com/viggy28/pg_savior
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-savior/postgresql-15-pg-savior_0.0.1-1PIGSTY~jammy_amd64.deb
-Size: 20280
-SHA256: b8c29a0027a755f4011702814c8da457af446918ea3a022c3a51e9d87bc44920
-SHA1: f699fadbb3569cf4a0b3c260fc7c564f644f7eec
-MD5sum: 8676ad3e6a107b879f837d6397b7b3ab
+Size: 20282
+SHA256: 7774130d2778a686bc758fad8db4171711f6af23bba5c4fd23be40fe1774aec5
+SHA1: 53d66422369f739b5303b09f0458e241176c924d
+MD5sum: 10347378b48f76c64a4875c9cfed43b2
 Description: A postgres extension to avoid accidental mistakes
   pg_savior is a PostgreSQL extension designed to prevent accidental data loss
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
 Package: postgresql-15-pg-search
-Version: 0.11.0
+Version: 0.11.1
 Architecture: amd64
 Depends: postgresql-15
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.11.0_amd64.deb
-Size: 45765748
-SHA256: 2e0e0d16caf590cf870df2018bf6782b234489b535be9a6ab6ec2328bd5f8178
-SHA1: 63af61b4153e61f00a7d2b268f90cda48700402d
-MD5sum: 309b2f336507cdc5f31904d913d14b7c
+Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.11.1_amd64.deb
+Size: 45738528
+SHA256: 96bd70d2403a18b5e37b74c4681349885f13af940df27d1658177100fe1a46bb
+SHA1: 4b563a0143a2073490a5844b2a2d04da2d48727a
+MD5sum: c96ccf57df93653ec6201d226aea1f41
 Description: Full-text search for PostgreSQL using BM25
 
 Package: postgresql-15-pg-sqlog
@@ -10082,12 +10202,31 @@ Homepage: https://github.com/grahamedgecombe/pgzstd
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-zstd/postgresql-15-pg-zstd_1.1.2-1PIGSTY~jammy_amd64.deb
-Size: 12886
-SHA256: 59ce8533e825a1e463794da46aa55c9a7af5467671261302c840513d770375b8
-SHA1: 7796a0a752849fed0aa294090aa46b65cfc4dd94
-MD5sum: 930b784ce9a0554ba2039be65a45e8fd
+Size: 12900
+SHA256: a4b28d084084f79005f2c30894bef0ce0b05a055c0eb2f155eae500ba7f1aa33
+SHA1: c49194a9bd3a9bba2cfe3f6fa863a78452d21901
+MD5sum: f67b5268f2b614ced928464c6a1628f8
 Description: Postgres module for Zstandard compression/decompression with preset dictionary support
   pgzstd is a PostgreSQL extension that provides functions for compressing and uncompressing Zstandard frames, with support for custom dictionaries.
+
+Package: postgresql-15-pg4ml
+Source: pg4ml
+Version: 2.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 4900
+Depends: postgresql-15
+Provides: postgresql-pg4ml
+Homepage: https://gitee.com/guotiecheng/plpgsql_pg4ml
+Priority: optional
+Section: database
+Filename: pool/main/p/pg4ml/postgresql-15-pg4ml_2.0-1PIGSTY~jammy_amd64.deb
+Size: 324850
+SHA256: b3c18e7f7523136e46d182f41a4d59fc72838d97226a2755bd704aa4331105ba
+SHA1: b66ce9440d8e05e1b3530d0187861f1d68dd7356
+MD5sum: da20f27f25c3aa767f6fa37495fbeeae
+Description: Machine Learning framework for PostgreSQL 15
+  pg4ml is a machine learning framework for PostgreSQL 15
 
 Package: postgresql-15-pgcozy
 Source: pgcozy
@@ -10154,16 +10293,17 @@ Source: pgjwt
 Version: 0.2.0-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 12
+Installed-Size: 23
+Depends: postgresql-15
 Provides: postgresql-pgjwt
 Homepage: https://github.com/michelp/pgjwt
 Priority: optional
 Section: database
 Filename: pool/main/p/pgjwt/postgresql-15-pgjwt_0.2.0-1PIGSTY~jammy_amd64.deb
-Size: 2894
-SHA256: 121ced460d5b569afd1fdbd8cdb50fdf741a6b3943763f1673cb78bd1c41c483
-SHA1: e37814c3839ee286c9287718a1425b14fb165b48
-MD5sum: 2ff1a2f039529932e5d99a3a7c1a3c12
+Size: 4126
+SHA256: f55eaea8f5f741b778827eef5c6adf540cf4d50bd8bb6a7c7800cce2c9125e64
+SHA1: 9bf698ee2960c928cdf4b5a4e37d5c02d5333a53
+MD5sum: fc6ad533f0ca9dfaeaf0769484f2ac8c
 Description: PostgreSQL implementation of JSON Web Tokens for 15
   pgjwt allows you to sign & verify json web token via pure SQL interface.
   It requires the pgcrypto extension, included in most distribution's "postgresql-contrib" package.
@@ -10212,16 +10352,17 @@ Source: pgmq
 Version: 1.4.4-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 13
+Installed-Size: 152
+Depends: postgresql-15
 Provides: postgresql-pgmq
 Homepage: https://github.com/michelp/pgmq
 Priority: optional
 Section: database
 Filename: pool/main/p/pgmq/postgresql-15-pgmq_1.4.4-1PIGSTY~jammy_amd64.deb
-Size: 6308
-SHA256: 77395123b5df00d8bd054d96b0ec75195e128fef86ea63a58d0dce44efd76fc0
-SHA1: 0b5d7171628b4e16f69d611d2c58f45167b6e946
-MD5sum: 5420d7512c40b3b4d5db73f80c357f03
+Size: 17574
+SHA256: 5119aced23425ea8299dd3c565582d8f1c5c78b1f3d9ba477afbbfa237b6ba4a
+SHA1: e51a4d48653e9c0f1ed563447601f4385a3564f6
+MD5sum: 158222f7699ff445c3bd1567d39eaf9b
 Description: PostgreSQL implementation of JSON Web Tokens for 15
   pgmq allows you to sign & verify json web token via pure SQL interface.
   It requires the pgcrypto extension, included in most distribution's "postgresql-contrib" package.
@@ -10258,10 +10399,10 @@ Homepage: https://github.com/Fenoman/pgqr
 Priority: optional
 Section: database
 Filename: pool/main/p/pgqr/postgresql-15-pgqr_1.0-1PIGSTY~jammy_amd64.deb
-Size: 52550
-SHA256: db34ea9db1d09022cab54c020ede1074642a311d63d5f0f37b99e83dc07aa74a
-SHA1: 826d1b10d832f7011d54763852a6580a79a92703
-MD5sum: e2d7d3dca332ca1b699fb8475ade77c0
+Size: 52554
+SHA256: 5b623c3d258231c82d319a069e8d6db9ac142e93436dd75c97a9d8d06e019895
+SHA1: ee9f47af106a7a9a94b8615ed76a5f9f2d67d3d2
+MD5sum: 31425737a8cbbab501b3950b3507f36a
 Description: PostgreSQL extension to generate QR code
   Function pgqr has 4 parameters:
   t text: text to be encoded.
@@ -10562,10 +10703,10 @@ Homepage: https://github.com/jirutka/smlar
 Priority: optional
 Section: database
 Filename: pool/main/s/smlar/postgresql-15-smlar_1.0-1PIGSTY~jammy_amd64.deb
-Size: 88292
-SHA256: 4bba43f0370a243c3b16d1f449b893b7176f4c1cffc95b77d7d657b7dc394103
-SHA1: e25ffeb63ebd0a1d47bf3d4b41cd7d1d97f57ce8
-MD5sum: 3da9ebae69e867f60bf50dee7cc3b188
+Size: 88276
+SHA256: 550784e1b9db196f0b3f7e2d74539929b32c317d3f166cdccf2826ad89eefbf5
+SHA1: 3cd81f9e212371b6c51f23b1df3283dac47e3f52
+MD5sum: a3b67f8e31340dda00e1e0ddbaf44fcb
 Description: PostgreSQL extension for an effective similarity search
   mirror of git://sigaev.ru/smlar.git, see https://www.pgcon.org/2012/schedule/track/Hacking/443.en.html
 
@@ -10692,6 +10833,25 @@ Description: Temporal Tables PostgreSQL Extension
   A temporal table is a table that records the period of time when a row is valid.
   There are two types of periods: the application period (also known as valid-time or business-time) and the system period (also known as transaction-time).
 
+Package: postgresql-15-timestamp9
+Source: timestamp9
+Version: 1.4.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 51
+Depends: libc6 (>= 2.7)
+Provides: postgresql-timestamp9
+Homepage: https://github.com/petere/timestamp9
+Priority: optional
+Section: database
+Filename: pool/main/t/timestamp9/postgresql-15-timestamp9_1.4.0-1PIGSTY~jammy_amd64.deb
+Size: 9458
+SHA256: 8c79204597f6c699af237d7b0155a12a88173c17d078dbee57a21fb5b2421289
+SHA1: a8d61cc00fa2cea85786c72e1a2a42061670a62c
+MD5sum: 27f86af3b57e8f639c38d7e618b08db6
+Description: Nanosecond precision timestamp type for Postgres 15
+  An efficient nanosecond precision timestamp type for 15
+
 Package: postgresql-15-url-encode
 Source: url-encode
 Version: 1.2.5-1PIGSTY~jammy
@@ -10793,6 +10953,27 @@ MD5sum: 7656d9696224618339e150b7beadb8c0
 Description: Open-source full-text search of Chinese language
   zhparser is a PostgreSQL extension for full-text search of Chinese language (Mandarin Chinese).
   It implements a Chinese language parser base on the Simple Chinese Word Segmentation(SCWS).
+
+Package: postgresql-16-acl
+Source: acl
+Version: 1.0.4-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 149
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.14)
+Provides: postgresql-acl
+Homepage: https://github.com/arkhipov/acl
+Priority: optional
+Section: database
+Filename: pool/main/a/acl/postgresql-16-acl_1.0.4-1PIGSTY~jammy_amd64.deb
+Size: 51360
+SHA256: 02b1538415992b1ba5202639d78653e5ce776f626bf6a05b16af98d9c4b05963
+SHA1: 7f2ff509f2281aec8018718b27c48cc09d404785
+MD5sum: b902ca818354ba8406b00b1c0974da29
+Description: Access Control Lists (ACL) PostgreSQL Extension
+  You need this extension if you want to restrict access to rows in tables based on an authenticated user.
+  Access Control List (ACL) has become the de-facto standard for implementing a security model in modern applications.
+  Complex scenarios can be handled by using ACLs without having a complex permission model at the application level.
 
 Package: postgresql-16-aggs-for-arrays
 Source: aggs-for-arrays
@@ -11863,20 +12044,20 @@ Description: 1 Byte Currency ISO type for PostgreSQL
 
 Package: postgresql-16-pg-duckdb
 Source: pg-duckdb
-Version: 0.0.1-f34ae06
+Version: 0.1.0
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 34491
+Installed-Size: 26605
 Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.34), libgcc-s1 (>= 3.4), liblz4-1 (>= 0.0~r113), libpq5, libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
 Provides: postgresql-pg-duckdb
 Homepage: https://github.com/duckdb/pg_duckdb
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-duckdb/postgresql-16-pg-duckdb_0.0.1-f34ae06_amd64.deb
-Size: 9760618
-SHA256: bc366b32392f2acf7c33eee30bcee1b072e6860df94bdae4cae79aecb280718c
-SHA1: 7d3c468246e847ab52a595583d4a7be32cd0b245
-MD5sum: f77415dd946e56a1d0c7b8eb0fda5e02
+Filename: pool/main/p/pg-duckdb/postgresql-16-pg-duckdb_0.1.0_amd64.deb
+Size: 7885382
+SHA256: fb4bb3865519a01c2809a4448c776210b33a47f4ffc11061e704c0242fdcf8be
+SHA1: c6aa8859a3bfa65a547973143b9987f75df9e83a
+MD5sum: 038647f1c64dc76128f0a6d9f53e6601
 Description: DuckDB-powered Postgres for high performance apps & analytics.
   pg_duckdb is a Postgres extension that embeds DuckDB's columnar-vectorized analytics engine and features into Postgres.
   We recommend using pg_duckdb to build high performance analytics and data-intensive applications.
@@ -11915,10 +12096,10 @@ Homepage: https://github.com/petere/pgemailaddr
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-emailaddr/postgresql-16-pg-emailaddr_0-1PIGSTY~jammy_amd64.deb
-Size: 13600
-SHA256: deec09f6a0548771c82b331af48f55e846a80ca31bdbcb57f0706d3dcf2e2c8b
-SHA1: 9ea685c697209b9a6ba59923c0c1e23bf74ea86d
-MD5sum: 9babb0d0223035460a51c98669436ee6
+Size: 13366
+SHA256: beb7e8cdae463182066a25506e853db2867fec11942ddcc0174c35ab86b7fbef
+SHA1: 7fa60822076047eed3e0ebb17e8f73420a106d53
+MD5sum: 55016589af307884013217674b066e76
 Description: email address type for PostgreSQL
   This is an extension for PostgreSQL that provides a type emailaddr for storing email addresses.
   https://twitter.com/pvh/status/667106073199775744
@@ -12058,6 +12239,30 @@ MD5sum: 9a5a3b2081cfaa17b8740a72cf1a4994
 Description: PostgreSQL extension to partition tables following a foreign key
   pg_fkpart is a PostgreSQL extension to partition tables following a foreign key of a table.
   It is initially based of pg_part from Satoshi Nagayasu snaga@uptime.jp.
+
+Package: postgresql-16-pg-geohash
+Source: pg-geohash
+Version: 1.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 66
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.14)
+Provides: postgresql-pg-geohash
+Homepage: https://github.com/jistok/pg_geohash
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-geohash/postgresql-16-pg-geohash_1.0-1PIGSTY~jammy_amd64.deb
+Size: 18990
+SHA256: 71da9d20dada7662edbb03e1e5f13f0d838d84fda7f74f8ca3ffe7310f5a946e
+SHA1: 867314ae06992d134e0c5d54b6b49eef10194587
+MD5sum: 3bf2ffd3963f221c6ff4943f374d41c0
+Description: Geohashing library for HAWQ, Greenplum DB, PostgreSQL
+  Geohashing functionality for HAWQ, Greenplum DB, PostgreSQL
+  Motivated by the need to compute aggregates based on geographic location
+  Geohash background: http://en.wikipedia.org/wiki/Geohash
+  C based user defined functions
+  Based on this C language geohashing library: https://github.com/lyokato/libgeohash.git
+  Install (everthing shown here was run on the Pivotal HD single node VM, CentOS release 6.5): NOTE: the user running the make install requires write permission into the installation directory of the target database.
 
 Package: postgresql-16-pg-graphql
 Source: pg-graphql
@@ -12591,26 +12796,26 @@ Homepage: https://github.com/viggy28/pg_savior
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-savior/postgresql-16-pg-savior_0.0.1-1PIGSTY~jammy_amd64.deb
-Size: 20274
-SHA256: 89f275c67559a3996f4c7ade175381d0140cc14e6d56f6d1784645a1bc918f56
-SHA1: 1314910c3834c32c7119ca717c4becbf39bee8cb
-MD5sum: 85b5e1fa82102301d00e66a7c508b143
+Size: 20272
+SHA256: c17e6af4d149e540e0dcfcca4891d34d92fdd5b32a6a2a3120100016052206ee
+SHA1: 6f0860e096a08cc4b4c76e8fd596fd679d3d9c1c
+MD5sum: 328e8e4e41819ea76c3cc742e2feb8f2
 Description: A postgres extension to avoid accidental mistakes
   pg_savior is a PostgreSQL extension designed to prevent accidental data loss
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
 Package: postgresql-16-pg-search
-Version: 0.11.0
+Version: 0.11.1
 Architecture: amd64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.11.0_amd64.deb
-Size: 45764724
-SHA256: 48fba2862bbeef12943697a48667768870d6881e9842caac82b04252cd4219f7
-SHA1: b8ca3e3120975fc0f79411e07dffb1fae4158b97
-MD5sum: ce66e1e6d4d5cb627219f75344cb1310
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.11.1_amd64.deb
+Size: 45737332
+SHA256: 02518f5bd0b29114b1239e4b21ae6a8c0e06698f18533a40950c1816b3b44a03
+SHA1: bd45bc5dc86c58f78d1be29a702d314fe482e387
+MD5sum: a9d5257d9631bc21e8bc7eb138647219
 Description: Full-text search for PostgreSQL using BM25
 
 Package: postgresql-16-pg-sqlog
@@ -12918,6 +13123,44 @@ Description: reflects a vectorize schema from the existing PostgresSQL 16 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via vectorize with no additional servers, processes, or libraries.
 
+Package: postgresql-16-pg-zstd
+Source: pg-zstd
+Version: 1.1.2-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 48
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libzstd1 (>= 1.4.0)
+Provides: postgresql-pg-zstd
+Homepage: https://github.com/grahamedgecombe/pgzstd
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-zstd/postgresql-16-pg-zstd_1.1.2-1PIGSTY~jammy_amd64.deb
+Size: 12900
+SHA256: aba1027202432b28236c419613fb500b17c749c2ab9aa911bc324474bb93d9ee
+SHA1: cf258d399db1b25da6a95dffe07abfdb7a780062
+MD5sum: b279fa98db48ff00d12420b429059e30
+Description: Postgres module for Zstandard compression/decompression with preset dictionary support
+  pgzstd is a PostgreSQL extension that provides functions for compressing and uncompressing Zstandard frames, with support for custom dictionaries.
+
+Package: postgresql-16-pg4ml
+Source: pg4ml
+Version: 2.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 4900
+Depends: postgresql-16
+Provides: postgresql-pg4ml
+Homepage: https://gitee.com/guotiecheng/plpgsql_pg4ml
+Priority: optional
+Section: database
+Filename: pool/main/p/pg4ml/postgresql-16-pg4ml_2.0-1PIGSTY~jammy_amd64.deb
+Size: 324814
+SHA256: f881138fb696e0cf81021c8fea707fbf6ea6e6c8cc07aaa1324b08dd0a741823
+SHA1: a9bba796bbd58c5ec219b175bb2c4e99f76e5e3b
+MD5sum: aa353f6ea9e623aebe970c689be49837
+Description: Machine Learning framework for PostgreSQL 16
+  pg4ml is a machine learning framework for PostgreSQL 16
+
 Package: postgresql-16-pgcozy
 Source: pgcozy
 Version: 1.0-1PIGSTY~jammy
@@ -12983,16 +13226,17 @@ Source: pgjwt
 Version: 0.2.0-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 12
+Installed-Size: 23
+Depends: postgresql-16
 Provides: postgresql-pgjwt
 Homepage: https://github.com/michelp/pgjwt
 Priority: optional
 Section: database
 Filename: pool/main/p/pgjwt/postgresql-16-pgjwt_0.2.0-1PIGSTY~jammy_amd64.deb
-Size: 2894
-SHA256: a5c3a30e294ac5eceeb19f89f7a5a0732b75e1d124e378f024152511c9a95dc2
-SHA1: 784141e5baa88df8a74a111620fb079881a76c69
-MD5sum: 8cd13545450307df96f36e19070715e4
+Size: 4124
+SHA256: 08e247e2392c5cc321662ba9d11f29932d7425f8e73d1957c744f8a40dba8678
+SHA1: 3509d2a6b8ff6502c1ff52ec1cfc330ca12fa7c0
+MD5sum: a29c2c871e80a3fa4c46c2e3ef399511
 Description: PostgreSQL implementation of JSON Web Tokens for 16
   pgjwt allows you to sign & verify json web token via pure SQL interface.
   It requires the pgcrypto extension, included in most distribution's "postgresql-contrib" package.
@@ -13041,16 +13285,17 @@ Source: pgmq
 Version: 1.4.4-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 13
+Installed-Size: 152
+Depends: postgresql-16
 Provides: postgresql-pgmq
 Homepage: https://github.com/michelp/pgmq
 Priority: optional
 Section: database
 Filename: pool/main/p/pgmq/postgresql-16-pgmq_1.4.4-1PIGSTY~jammy_amd64.deb
-Size: 6312
-SHA256: 1d70a8202d4c9927418f228bd82913483b1e1a252c3210e0ac82a32e032508cc
-SHA1: c7b377a9966e4dc8986f19e4bdf004408b108282
-MD5sum: b5405c0c35ddc2c8b4e3b830fffda117
+Size: 17576
+SHA256: 9c94bd10e56b21ab382ec523f84ccdba5fe38dbcbb8e1873ea492031105d4eb4
+SHA1: c04380a8ba5b92e882215169e32c331b25c03f0c
+MD5sum: 001fa3179f1bcda43cb5ca1fc13efd21
 Description: PostgreSQL implementation of JSON Web Tokens for 16
   pgmq allows you to sign & verify json web token via pure SQL interface.
   It requires the pgcrypto extension, included in most distribution's "postgresql-contrib" package.
@@ -13074,6 +13319,29 @@ SHA1: f99d6dc61b02be8a19701b100431c8661289cd50
 MD5sum: f14e4ad2e24ef90545896e6ce576832b
 Description: A PostgreSQL extension that provides SQL functions to allow capture of node OS metrics via SQL queries.
   SQL functions that allow capture of node OS metrics from PostgreSQL
+
+Package: postgresql-16-pgqr
+Source: pgqr
+Version: 1.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 108
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.14)
+Provides: postgresql-pgqr
+Homepage: https://github.com/Fenoman/pgqr
+Priority: optional
+Section: database
+Filename: pool/main/p/pgqr/postgresql-16-pgqr_1.0-1PIGSTY~jammy_amd64.deb
+Size: 52140
+SHA256: 90044fc42c4b572968b721c3931361ec60c409dd2151149a016093ebf58a2d0b
+SHA1: 25c9e5006a9cf0e44dee85f4c9e72e838287007f
+MD5sum: 22a72574c5dcfa415fdf8d5425b83b0d
+Description: PostgreSQL extension to generate QR code
+  Function pgqr has 4 parameters:
+  t text: text to be encoded.
+  correction_level integer: 0 to 3.
+  model_number integer: 0 to 2.
+  scale integer: pixels for each dot.
 
 Package: postgresql-16-pgsmcrypto
 Source: pgsmcrypto
@@ -13356,6 +13624,25 @@ Description: Generate SHA256-CRYPT and SHA512-CRYPT password hashes in PostgreSQ
   A PostgreSQL extension to generate SHA256-CRYPT and SHA512-CRYPT password hashes.
   See https://www.akkadia.org/drepper/SHA-crypt.txt for the specification and upstream code by Ulrich Drepper.
 
+Package: postgresql-16-smlar
+Source: smlar
+Version: 1.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 216
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.14)
+Provides: postgresql-smlar
+Homepage: https://github.com/jirutka/smlar
+Priority: optional
+Section: database
+Filename: pool/main/s/smlar/postgresql-16-smlar_1.0-1PIGSTY~jammy_amd64.deb
+Size: 87674
+SHA256: 5d91d7238ab00d7a89c71cace407e70b1b6e408a74a13719706491182aa58a11
+SHA1: ab82107490b23cd8e4ad6822068f62b123473d3b
+MD5sum: e3fbeca48d13784b59280febfdec9638
+Description: PostgreSQL extension for an effective similarity search
+  mirror of git://sigaev.ru/smlar.git, see https://www.pgcon.org/2012/schedule/track/Hacking/443.en.html
+
 Package: postgresql-16-sqlite-fdw
 Source: sqlite-fdw
 Version: 2.4.0-1PIGSTY~jammy
@@ -13479,6 +13766,25 @@ Description: Temporal Tables PostgreSQL Extension
   A temporal table is a table that records the period of time when a row is valid.
   There are two types of periods: the application period (also known as valid-time or business-time) and the system period (also known as transaction-time).
 
+Package: postgresql-16-timestamp9
+Source: timestamp9
+Version: 1.4.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 51
+Depends: libc6 (>= 2.7)
+Provides: postgresql-timestamp9
+Homepage: https://github.com/petere/timestamp9
+Priority: optional
+Section: database
+Filename: pool/main/t/timestamp9/postgresql-16-timestamp9_1.4.0-1PIGSTY~jammy_amd64.deb
+Size: 9314
+SHA256: 029a22a96044fb05877d7016c5be400f160b55fca888ab7fe29cf4ce9d6063a9
+SHA1: f7884160768736e08c961c7fbf7cc66b3b299019
+MD5sum: 42fae5f36498acb84ce3579a60131535
+Description: Nanosecond precision timestamp type for Postgres 16
+  An efficient nanosecond precision timestamp type for 16
+
 Package: postgresql-16-url-encode
 Source: url-encode
 Version: 1.2.5-1PIGSTY~jammy
@@ -13580,6 +13886,27 @@ MD5sum: 3ec668329147c24cbb69d05e51d6f340
 Description: Open-source full-text search of Chinese language
   zhparser is a PostgreSQL extension for full-text search of Chinese language (Mandarin Chinese).
   It implements a Chinese language parser base on the Simple Chinese Word Segmentation(SCWS).
+
+Package: postgresql-17-acl
+Source: acl
+Version: 1.0.4-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 149
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libc6 (>= 2.14)
+Provides: postgresql-acl
+Homepage: https://github.com/arkhipov/acl
+Priority: optional
+Section: database
+Filename: pool/main/a/acl/postgresql-17-acl_1.0.4-1PIGSTY~jammy_amd64.deb
+Size: 51360
+SHA256: 3f237862162f49bebd9770efdf9c84cfdab700b285fd97d0700ffb68e6ef07b4
+SHA1: e0a94941258bc43fc3bdeab08ed0b3aa7d09591b
+MD5sum: 5c437c6c1acbd57bdbf96ecb0812d508
+Description: Access Control Lists (ACL) PostgreSQL Extension
+  You need this extension if you want to restrict access to rows in tables based on an authenticated user.
+  Access Control List (ACL) has become the de-facto standard for implementing a security model in modern applications.
+  Complex scenarios can be handled by using ACLs without having a complex permission model at the application level.
 
 Package: postgresql-17-aggs-for-arrays
 Source: aggs-for-arrays
@@ -14509,20 +14836,20 @@ Description: 1 Byte Currency ISO type for PostgreSQL
 
 Package: postgresql-17-pg-duckdb
 Source: pg-duckdb
-Version: 0.0.1-f34ae06
+Version: 0.1.0
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 34524
+Installed-Size: 26630
 Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libc6 (>= 2.34), libgcc-s1 (>= 3.4), liblz4-1 (>= 0.0~r113), libpq5, libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
 Provides: postgresql-pg-duckdb
 Homepage: https://github.com/duckdb/pg_duckdb
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-duckdb/postgresql-17-pg-duckdb_0.0.1-f34ae06_amd64.deb
-Size: 9778126
-SHA256: 760c0c96d7cf1eae3277fdb2a5300ef6fc5ee47984a137127cbf2f3042e8cfbd
-SHA1: a2286a13b917c72ef63d9999909fe20258b53666
-MD5sum: c427d606ecfc86385bafeb353d595cd9
+Filename: pool/main/p/pg-duckdb/postgresql-17-pg-duckdb_0.1.0_amd64.deb
+Size: 7902536
+SHA256: 553f23138b50e960fdeaefe23f9c9b18cda0a46cf4a4d2921300e95e5c7f6da8
+SHA1: f1b961b90f811ab1569b1fff7d7df29ed7c2e619
+MD5sum: 84bbe66cd81392f73dae3202618a02c2
 Description: DuckDB-powered Postgres for high performance apps & analytics.
   pg_duckdb is a Postgres extension that embeds DuckDB's columnar-vectorized analytics engine and features into Postgres.
   We recommend using pg_duckdb to build high performance analytics and data-intensive applications.
@@ -14548,6 +14875,26 @@ Description: ECDSA for PostgreSQL
   pguecc - Postgres Bindings for the micro-ecc Elliptic Curve Cryptography library
   pguecc exposes the elliptic curve cryptographic primitives from micro-ecc to Postgres.
   Note: currently only key generation and signing is supported.
+
+Package: postgresql-17-pg-emailaddr
+Source: pg-emailaddr
+Version: 0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 51
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libc6 (>= 2.14)
+Provides: postgresql-pg-emailaddr
+Homepage: https://github.com/petere/pgemailaddr
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-emailaddr/postgresql-17-pg-emailaddr_0-1PIGSTY~jammy_amd64.deb
+Size: 13368
+SHA256: 6b645095eaaf9c1ffef60c8472ef675424e18cb1d393e7e25e57ad04e6f45565
+SHA1: 0c9b5da3504a632021977ef663ac2c7ac7790136
+MD5sum: 0ee3dd0f84f6f2f2fdd16185cf94705e
+Description: email address type for PostgreSQL
+  This is an extension for PostgreSQL that provides a type emailaddr for storing email addresses.
+  https://twitter.com/pvh/status/667106073199775744
 
 Package: postgresql-17-pg-envvar
 Source: pg-envvar
@@ -14684,6 +15031,30 @@ MD5sum: 729b29bac19bf79a82c09838db87a0f2
 Description: PostgreSQL extension to partition tables following a foreign key
   pg_fkpart is a PostgreSQL extension to partition tables following a foreign key of a table.
   It is initially based of pg_part from Satoshi Nagayasu snaga@uptime.jp.
+
+Package: postgresql-17-pg-geohash
+Source: pg-geohash
+Version: 1.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 66
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libc6 (>= 2.14)
+Provides: postgresql-pg-geohash
+Homepage: https://github.com/jistok/pg_geohash
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-geohash/postgresql-17-pg-geohash_1.0-1PIGSTY~jammy_amd64.deb
+Size: 18984
+SHA256: a73af3ad86dab7a323ecec68aa98e907ff2fcea042604d1e69218baebed829ac
+SHA1: 448bea2e0346597609ba1547af9483a67e45d2b7
+MD5sum: e1cffa708fb9c19424686e32a606b630
+Description: Geohashing library for HAWQ, Greenplum DB, PostgreSQL
+  Geohashing functionality for HAWQ, Greenplum DB, PostgreSQL
+  Motivated by the need to compute aggregates based on geographic location
+  Geohash background: http://en.wikipedia.org/wiki/Geohash
+  C based user defined functions
+  Based on this C language geohashing library: https://github.com/lyokato/libgeohash.git
+  Install (everthing shown here was run on the Pivotal HD single node VM, CentOS release 6.5): NOTE: the user running the make install requires write permission into the installation directory of the target database.
 
 Package: postgresql-17-pg-graphql
 Source: pg-graphql
@@ -15143,26 +15514,26 @@ Homepage: https://github.com/viggy28/pg_savior
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-savior/postgresql-17-pg-savior_0.0.1-1PIGSTY~jammy_amd64.deb
-Size: 20854
-SHA256: b2b4df757496987569955348dcc54cd7a1fd1019209c594becb387792ea3e397
-SHA1: 9360770418c3a7e5a72034cefe25d0e66a67691e
-MD5sum: acf7d2f65b8e305f16209d4422b6ca2d
+Size: 20772
+SHA256: fc9d90bb48f1ccc0d3c9ba72ad57a7d89e13b2679db360cb2de2959002094759
+SHA1: 65307ac055cfdf14daec5feaf9e6593b857e65a9
+MD5sum: 4f71278a01cbb2782aeadf8d4af94a19
 Description: A postgres extension to avoid accidental mistakes
   pg_savior is a PostgreSQL extension designed to prevent accidental data loss
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
 Package: postgresql-17-pg-search
-Version: 0.11.0
+Version: 0.11.1
 Architecture: amd64
 Depends: postgresql-17
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.11.0_amd64.deb
-Size: 45767068
-SHA256: e7b3600e435f5e004bda9c7c88836ae6b3dc543debbe5770e581fe37aca7833f
-SHA1: 76fa972a7caf1323f349ba124bc43cb83025c7a4
-MD5sum: 75641cf09f427b7c995071afcb278115
+Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.11.1_amd64.deb
+Size: 45739516
+SHA256: 8e13b1a9f936c23135269e623e1af2ff97c5bf01a0cb49abb37f47dc8c816c91
+SHA1: 5d8e23f1e643cc37e0639d5ea60c1bd582d7b5a1
+MD5sum: 1e497f57658442dec8b81263a415ae41
 Description: Full-text search for PostgreSQL using BM25
 
 Package: postgresql-17-pg-sqlog
@@ -15369,6 +15740,44 @@ Description: A tiny Postgres extension to create version 7 UUIDs
   A tiny Postgres extension to create valid version 7 UUIDs in Postgres.
   These are regular Postgres UUIDs, so they can be used as primary keys, converted to and from strings, included in indexes, etc:
 
+Package: postgresql-17-pg-zstd
+Source: pg-zstd
+Version: 1.1.2-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 48
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libzstd1 (>= 1.4.0)
+Provides: postgresql-pg-zstd
+Homepage: https://github.com/grahamedgecombe/pgzstd
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-zstd/postgresql-17-pg-zstd_1.1.2-1PIGSTY~jammy_amd64.deb
+Size: 12900
+SHA256: 2119177ce4cfec68742c6329c0f1d8ec2b1073a96efec71b0276b198c6f39c98
+SHA1: a0ef1447035b1c973bdb5e747d9b109a923b3190
+MD5sum: 05fee8a8a6efaf99a3257c5b996cb8a6
+Description: Postgres module for Zstandard compression/decompression with preset dictionary support
+  pgzstd is a PostgreSQL extension that provides functions for compressing and uncompressing Zstandard frames, with support for custom dictionaries.
+
+Package: postgresql-17-pg4ml
+Source: pg4ml
+Version: 2.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 4900
+Depends: postgresql-17
+Provides: postgresql-pg4ml
+Homepage: https://gitee.com/guotiecheng/plpgsql_pg4ml
+Priority: optional
+Section: database
+Filename: pool/main/p/pg4ml/postgresql-17-pg4ml_2.0-1PIGSTY~jammy_amd64.deb
+Size: 324850
+SHA256: 2e8f10adb7135ea6ac8e5fe134c5b6e3053bec61a08a5c3be5b2b117e4441935
+SHA1: db8879276c071bb5f71edb872fb151a4d1ea73a9
+MD5sum: 504b7c776880bba50458d991d5144695
+Description: Machine Learning framework for PostgreSQL 17
+  pg4ml is a machine learning framework for PostgreSQL 17
+
 Package: postgresql-17-pgcozy
 Source: pgcozy
 Version: 1.0-1PIGSTY~jammy
@@ -15414,16 +15823,17 @@ Source: pgjwt
 Version: 0.2.0-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 12
+Installed-Size: 23
+Depends: postgresql-17
 Provides: postgresql-pgjwt
 Homepage: https://github.com/michelp/pgjwt
 Priority: optional
 Section: database
 Filename: pool/main/p/pgjwt/postgresql-17-pgjwt_0.2.0-1PIGSTY~jammy_amd64.deb
-Size: 2896
-SHA256: d3fa2b97b26a356d9102dea2b0fe604b337e8f00679dbc16f1774903412c0f6b
-SHA1: 507f43530287a9e02e808a2b6d2d92caa227d800
-MD5sum: 3252a607feb1a7fa441acae8f5f7aedc
+Size: 4124
+SHA256: 752d01c32872e3b7fbdef93effc4c53890edd885a379c4932735197d7f2756b0
+SHA1: cf96cfaec473b7bdc215584ac5c0bf12f785c22f
+MD5sum: 0b50854f722157f68937598ef267949a
 Description: PostgreSQL implementation of JSON Web Tokens for 17
   pgjwt allows you to sign & verify json web token via pure SQL interface.
   It requires the pgcrypto extension, included in most distribution's "postgresql-contrib" package.
@@ -15452,16 +15862,17 @@ Source: pgmq
 Version: 1.4.4-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 13
+Installed-Size: 152
+Depends: postgresql-17
 Provides: postgresql-pgmq
 Homepage: https://github.com/michelp/pgmq
 Priority: optional
 Section: database
 Filename: pool/main/p/pgmq/postgresql-17-pgmq_1.4.4-1PIGSTY~jammy_amd64.deb
-Size: 6310
-SHA256: 4b8b3dda51f111ad7230155c9a2745c05863824dcbc7320fb7351d2a9756b9c0
-SHA1: 9399cb24aa3a0e669dedd103b4de977ca47b4a90
-MD5sum: 367233c95027ca60470a396c414bdbf1
+Size: 17586
+SHA256: 57630fb5181b9fd5ab9173866481202e9eae36f70f76be2e3ef068cc9d9cf595
+SHA1: 9538bc1ec240ea21ed3d83e50f7e4b6d689d69ef
+MD5sum: 6ac86110930f0576de6a2f2d58923ca2
 Description: PostgreSQL implementation of JSON Web Tokens for 17
   pgmq allows you to sign & verify json web token via pure SQL interface.
   It requires the pgcrypto extension, included in most distribution's "postgresql-contrib" package.
@@ -15485,6 +15896,29 @@ SHA1: 8647b7b3b94d9ebf1453368bce16d2b9257f327d
 MD5sum: 534ea07e9c836fc98aec928320de6955
 Description: A PostgreSQL extension that provides SQL functions to allow capture of node OS metrics via SQL queries.
   SQL functions that allow capture of node OS metrics from PostgreSQL
+
+Package: postgresql-17-pgqr
+Source: pgqr
+Version: 1.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 108
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libc6 (>= 2.14)
+Provides: postgresql-pgqr
+Homepage: https://github.com/Fenoman/pgqr
+Priority: optional
+Section: database
+Filename: pool/main/p/pgqr/postgresql-17-pgqr_1.0-1PIGSTY~jammy_amd64.deb
+Size: 52144
+SHA256: b0640596aa68485c9f7422d975d9ff63d475dcb26b79562799a75184216f22e5
+SHA1: 9737caf4a88b549971bad43fe4a7a0d2e33f38fa
+MD5sum: 53595289b7b484d1e1c3150119ce2e4e
+Description: PostgreSQL extension to generate QR code
+  Function pgqr has 4 parameters:
+  t text: text to be encoded.
+  correction_level integer: 0 to 3.
+  model_number integer: 0 to 2.
+  scale integer: pixels for each dot.
 
 Package: postgresql-17-pgsmcrypto
 Source: pgsmcrypto
@@ -15725,6 +16159,25 @@ Description: Generate SHA256-CRYPT and SHA512-CRYPT password hashes in PostgreSQ
   A PostgreSQL extension to generate SHA256-CRYPT and SHA512-CRYPT password hashes.
   See https://www.akkadia.org/drepper/SHA-crypt.txt for the specification and upstream code by Ulrich Drepper.
 
+Package: postgresql-17-smlar
+Source: smlar
+Version: 1.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 216
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libc6 (>= 2.14)
+Provides: postgresql-smlar
+Homepage: https://github.com/jirutka/smlar
+Priority: optional
+Section: database
+Filename: pool/main/s/smlar/postgresql-17-smlar_1.0-1PIGSTY~jammy_amd64.deb
+Size: 87910
+SHA256: e0fe28a9f0deeb9013dc672e2cc296f46285548106153929d38089ff38e47965
+SHA1: f68f8f366de9d0a693a677935aff3bf136309a8b
+MD5sum: d6f88eddace547482b253ef102cfe330
+Description: PostgreSQL extension for an effective similarity search
+  mirror of git://sigaev.ru/smlar.git, see https://www.pgcon.org/2012/schedule/track/Hacking/443.en.html
+
 Package: postgresql-17-sslutils
 Source: sslutils
 Version: 1.3-1PIGSTY~jammy
@@ -15785,6 +16238,25 @@ MD5sum: d47ac28a2a8350eb1293b3b917fdab82
 Description: A Postgres extension for exposing system metrics such as CPU, memory and disk information
   system_stats is a Postgres extension that provides functions to access system level statistics that can be used for monitoring. It supports Linux, macOS and Windows.
   Note that not all values are relevant on all operating systems. In such cases NULL is returned for affected values.
+
+Package: postgresql-17-timestamp9
+Source: timestamp9
+Version: 1.4.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 51
+Depends: libc6 (>= 2.7)
+Provides: postgresql-timestamp9
+Homepage: https://github.com/petere/timestamp9
+Priority: optional
+Section: database
+Filename: pool/main/t/timestamp9/postgresql-17-timestamp9_1.4.0-1PIGSTY~jammy_amd64.deb
+Size: 9356
+SHA256: b6e48b5d169b4a8d8f0368ed8b4e32e326fa9ec27f48e5a0b3d5fef8d9b4cd7f
+SHA1: 2d7d96340d5fae2d8f6a28a20749dc6a64e693eb
+MD5sum: 6b53af744493733ec58700061eea1136
+Description: Nanosecond precision timestamp type for Postgres 17
+  An efficient nanosecond precision timestamp type for 17
 
 Package: postgresql-17-url-encode
 Source: url-encode
