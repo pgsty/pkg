@@ -11,7 +11,7 @@
 CF_PATH = cf:/repo
 COS_PATH = cos://repo-1304744452
 DEVEL_PATH = sv:/data/pkg
-VERSION=v3.0.3
+VERSION=v3.0.4
 
 all:
 	@echo "pgsty repo"

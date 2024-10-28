@@ -28,15 +28,6 @@ yum/infra/aarch64/repodata/
 yum/pgsql/el7.x86_64/repodata/
 yum/pgsql/el8.x86_64/repodata/
 yum/pgsql/el9.x86_64/repodata/
-yum/pgsty/el7.x86_64/repodata/
-yum/pgsty/el8.x86_64/repodata/
-yum/pgsty/el9.x86_64/repodata/
-yum/pgsty/el7.x86_64/debug/repodata/
-yum/pgsty/el8.x86_64/debug/repodata/
-yum/pgsty/el9.x86_64/debug/repodata/
-yum/pgsty/el7.aarch64/debug/repodata/
-yum/pgsty/el8.aarch64/debug/repodata/
-yum/pgsty/el9.aarch64/debug/repodata/
 yum/ivory
 yum/polar
 yum/mssql
@@ -50,11 +41,7 @@ apt/pgsql/focal/stash/
 apt/pgsql/jammy/stash/
 apt/pgsql/noble/stash/
 
-apt/pgsty/bookworm/stash/
-apt/pgsty/bullseye/stash/
-apt/pgsty/focal/stash/
-apt/pgsty/jammy/stash/
-apt/pgsty/noble/stash/
+
 apt/mssql/focal/stash/
 apt/mssql/jammy/stash/
 apt/mssql/noble/stash/
@@ -72,11 +59,7 @@ apt/pgsql/bullseye/pool/
 apt/pgsql/focal/pool/
 apt/pgsql/jammy/pool/
 apt/pgsql/noble/pool/
-apt/pgsty/bookworm/pool/
-apt/pgsty/bullseye/pool/
-apt/pgsty/focal/pool/
-apt/pgsty/jammy/pool/
-apt/pgsty/noble/pool/
+
 
 apt/infra/db/
 apt/pgsql/bookworm/db/
@@ -84,11 +67,6 @@ apt/pgsql/bullseye/db/
 apt/pgsql/focal/db/
 apt/pgsql/jammy/db/
 apt/pgsql/noble/db/
-apt/pgsty/bookworm/db/
-apt/pgsty/bullseye/db/
-apt/pgsty/focal/db/
-apt/pgsty/jammy/db/
-apt/pgsty/noble/db/
 apt/polar/focal/db/
 apt/polar/jammy/db/
 apt/polar/noble/db/
