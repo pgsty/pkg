@@ -28,14 +28,6 @@ add-jammy:
 	reprepro -b jammy includedeb jammy jammy/stash/*.deb
 add-noble:
 	reprepro -b noble includedeb noble noble/stash/*.deb
-purge:
-	rm -rf infra/stash/*.deb
-	rm -rf pgsql/focal/stash/*.deb
-	rm -rf pgsql/jammy/stash/*.deb
-	rm -rf pgsql/noble/stash/*.deb
-	rm -rf pgsty/focal/stash/*.deb
-	rm -rf pgsty/jammy/stash/*.deb
-	rm -rf pgsty/noble/stash/*.deb
 
 ls-focal:
 	reprepro -b focal list focal
@@ -47,8 +39,10 @@ ls-bookworm:
 
 
 # how to remove (e.g.)
-# reprepro -b pgsql remove bookworm haproxy
+
 # reprepro -b infra remove generic ferretdb
+# reprepro -b pgsql/noble remove noble haproxy
+# reprepro -b pgsql/bookworm remove bookworm postgresql-16-pg-analytics
 
 pgsql-include:
 	reprepro -b pgsql includedeb bookworm stash/bookworm.amd64/postgresql-16*.deb
