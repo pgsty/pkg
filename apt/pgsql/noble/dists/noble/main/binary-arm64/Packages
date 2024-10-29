@@ -1,3 +1,26 @@
+Package: haproxy
+Version: 3.0.5-1ppa1~noble
+Architecture: arm64
+Maintainer: Debian HAProxy Maintainers <team+haproxy@tracker.debian.org>
+Installed-Size: 5017
+Pre-Depends: dpkg (>= 1.17.14), init-system-helpers (>= 1.54~)
+Depends: libc6 (>= 2.38), libcrypt1 (>= 1:4.1.0), libjemalloc2 (>= 2.1.1), liblua5.4-0 (>= 5.4.6), libopentracing-c-wrapper0t64 (>= 1.1.0), libpcre2-8-0 (>= 10.22), libssl3t64 (>= 3.0.0), adduser, lsb-base (>= 3.0-6)
+Suggests: vim-haproxy, haproxy-doc
+Homepage: http://www.haproxy.org/
+Priority: optional
+Section: net
+Filename: pool/main/h/haproxy/haproxy_3.0.5-1ppa1~noble_arm64.deb
+Size: 2223524
+SHA256: 0856da5576d6f57267fcc4ef5d8c2d2d7d20398b3ade4a662f81dbfc4dbfe1b5
+SHA1: 8ec144c7a1e7b324ffe904c7c7899553afac4e12
+MD5sum: 90fa90fa86fcfd6ea24eafe7c745424f
+Description: fast and reliable load balancing reverse proxy
+ HAProxy is a TCP/HTTP reverse proxy which is particularly suited for high
+ availability environments. It features connection persistence through HTTP
+ cookies, load balancing, header addition, modification, deletion both ways. It
+ has request blocking capabilities and provides interface to display server
+ status.
+
 Package: postgresql-13-pg-analytics
 Version: 0.2.1
 Architecture: arm64
@@ -123,4 +146,27 @@ SHA256: 51bff17685ae378cfdb174e6f27f07ea753ea0ce06b4caecc7b1e1551aa7a3dc
 SHA1: fd5b1c683e1cac564762e4690b3685e243e6054c
 MD5sum: f9f0f7a9f57248edc6982bc3f3e60a9f
 Description: Full-text search for PostgreSQL using BM25
+
+Package: redis
+Version: 6:7.2.6-1rl1~noble1
+Architecture: all
+Maintainer: Redis Core Team <redis@redis.io>
+Installed-Size: 30
+Depends: redis-server (<< 6:7.2.6-1rl1~noble1.1~), redis-server (>= 6:7.2.6-1rl1~noble1)
+Homepage: https://redis.io/
+Priority: optional
+Section: database
+Filename: pool/main/r/redis/redis_7.2.6-1rl1~noble1_all.deb
+Size: 19824
+SHA256: aa9fe021625f7a4ff1463b53a292c08a6e6a5e2115712bea817bc235668115ac
+SHA1: 707ee2ea49a30a7c93057e3cab454a41c535f2f7
+MD5sum: 52ea632ac55ba5a771613414e09a4b1a
+Description: Persistent key-value database with network interface (metapackage)
+ Redis is a key-value database in a similar vein to memcache but the dataset
+ is non-volatile. Redis additionally provides native support for atomically
+ manipulating and querying data structures such as lists and sets.
+ .
+ The dataset is stored entirely in memory and periodically flushed to disk.
+ .
+ This package depends on the redis-server package.
 

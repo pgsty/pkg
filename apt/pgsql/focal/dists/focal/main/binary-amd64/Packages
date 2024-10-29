@@ -16,21 +16,21 @@ MD5sum: d8fa90253b0a4d70ad1819e665a2287c
 Description: cri-dockerd is a lightweight implementation of the CRI specification which talks to docker.
 
 Package: haproxy
-Version: 2.9.9-1ppa1~focal
+Version: 3.0.5-1ppa2~focal
 Architecture: amd64
 Maintainer: Debian HAProxy Maintainers <team+haproxy@tracker.debian.org>
-Installed-Size: 4852
+Installed-Size: 5077
 Pre-Depends: dpkg (>= 1.17.14), init-system-helpers (>= 1.54~)
-Depends: libc6 (>= 2.17), libcrypt1 (>= 1:4.1.0), libjemalloc2 (>= 2.1.1), liblua5.3-0, libpcre2-8-0 (>= 10.22), libssl1.1 (>= 1.1.1), libsystemd0, adduser, lsb-base (>= 3.0-6)
+Depends: libc6 (>= 2.17), libcrypt1 (>= 1:4.1.0), libjemalloc2 (>= 2.1.1), liblua5.3-0, libpcre2-8-0 (>= 10.22), libssl1.1 (>= 1.1.1), adduser, lsb-base (>= 3.0-6)
 Suggests: vim-haproxy, haproxy-doc
 Homepage: http://www.haproxy.org/
 Priority: optional
 Section: net
-Filename: pool/main/h/haproxy/haproxy_2.9.9-1ppa1~focal_amd64.deb
-Size: 2063908
-SHA256: fb3266d9303e9b23ef8291016ff5283d6254e7ca58035ca4634b587be7f3789c
-SHA1: 3f4fd2363e63c2b72ecd5107d49f03b35df9060d
-MD5sum: e5471bb00ecc57e2249b0d28a9e17d74
+Filename: pool/main/h/haproxy/haproxy_3.0.5-1ppa2~focal_amd64.deb
+Size: 2148544
+SHA256: 3958875beb8765e0b5b914b33555d79dc22eb2b4fa01ff4625d1250bab8f1ca5
+SHA1: faaf3838c21864adfdb3888f4f418fbc3780ab75
+MD5sum: 618d5f5b0307f1359261febd4ae5e721
 Description: fast and reliable load balancing reverse proxy
  HAProxy is a TCP/HTTP reverse proxy which is particularly suited for high
  availability environments. It features connection persistence through HTTP

@@ -1,19 +1,19 @@
 Package: haproxy
-Version: 3.0.2-1ppa1~noble
+Version: 3.0.5-1ppa1~noble
 Architecture: amd64
 Maintainer: Debian HAProxy Maintainers <team+haproxy@tracker.debian.org>
-Installed-Size: 4875
+Installed-Size: 4898
 Pre-Depends: dpkg (>= 1.17.14), init-system-helpers (>= 1.54~)
-Depends: libc6 (>= 2.38), libcrypt1 (>= 1:4.1.0), libjemalloc2 (>= 2.1.1), liblua5.3-0, libopentracing-c-wrapper0t64 (>= 1.1.0), libpcre2-8-0 (>= 10.22), libssl3t64 (>= 3.0.0), adduser, lsb-base (>= 3.0-6)
+Depends: libc6 (>= 2.38), libcrypt1 (>= 1:4.1.0), libjemalloc2 (>= 2.1.1), liblua5.4-0 (>= 5.4.6), libopentracing-c-wrapper0t64 (>= 1.1.0), libpcre2-8-0 (>= 10.22), libssl3t64 (>= 3.0.0), adduser, lsb-base (>= 3.0-6)
 Suggests: vim-haproxy, haproxy-doc
 Homepage: http://www.haproxy.org/
 Priority: optional
 Section: net
-Filename: pool/main/h/haproxy/haproxy_3.0.2-1ppa1~noble_amd64.deb
-Size: 2202744
-SHA256: f517c0104912973b1e74b25a45188cdc2188f48e5de629ba40b5d066fee7e4b7
-SHA1: 4b7db58b4945be96d81d057a54c6aa102f5a0a4e
-MD5sum: d01edf15d36707125aa1d65a893d29d8
+Filename: pool/main/h/haproxy/haproxy_3.0.5-1ppa1~noble_amd64.deb
+Size: 2213218
+SHA256: 063cf2132ccd3eeb996535b332614c460e5e4168b6a76e3b8ea8c9431626e25f
+SHA1: 33030b75a6384da24d916bf4bfa84fca882cae8f
+MD5sum: 38246a3c65b4f650d7b278f69291f024
 Description: fast and reliable load balancing reverse proxy
  HAProxy is a TCP/HTTP reverse proxy which is particularly suited for high
  availability environments. It features connection persistence through HTTP
@@ -160,4 +160,74 @@ SHA256: 544531202ad79acb33864b66b0419bcbd18d4e08a64d48a4c85d6f81c37e7d81
 SHA1: dbad5e89c7c9b612e82f427f64891b4a2afa8da4
 MD5sum: 9d7ee1be72ff55682ab448d0de368989
 Description: Full-text search for PostgreSQL using BM25
+
+Package: redis
+Version: 6:7.2.6-1rl1~noble1
+Architecture: all
+Maintainer: Redis Core Team <redis@redis.io>
+Installed-Size: 30
+Depends: redis-server (<< 6:7.2.6-1rl1~noble1.1~), redis-server (>= 6:7.2.6-1rl1~noble1)
+Homepage: https://redis.io/
+Priority: optional
+Section: database
+Filename: pool/main/r/redis/redis_7.2.6-1rl1~noble1_all.deb
+Size: 19824
+SHA256: aa9fe021625f7a4ff1463b53a292c08a6e6a5e2115712bea817bc235668115ac
+SHA1: 707ee2ea49a30a7c93057e3cab454a41c535f2f7
+MD5sum: 52ea632ac55ba5a771613414e09a4b1a
+Description: Persistent key-value database with network interface (metapackage)
+ Redis is a key-value database in a similar vein to memcache but the dataset
+ is non-volatile. Redis additionally provides native support for atomically
+ manipulating and querying data structures such as lists and sets.
+ .
+ The dataset is stored entirely in memory and periodically flushed to disk.
+ .
+ This package depends on the redis-server package.
+
+Package: redis-server
+Source: redis
+Version: 6:7.2.6-1rl1~noble1
+Architecture: amd64
+Maintainer: Redis Core Team <redis@redis.io>
+Installed-Size: 174
+Depends: lsb-base (>= 3.2-14), redis-tools (= 6:7.2.6-1rl1~noble1)
+Homepage: https://redis.io/
+Priority: optional
+Section: database
+Filename: pool/main/r/redis/redis-server_7.2.6-1rl1~noble1_amd64.deb
+Size: 67512
+SHA256: 0432f0a709d7d654ff5044627b4bb711a991d6d05f3957929d57772ba8010b5f
+SHA1: 0d0b46fbf1b83ea88bf49df30914003e9ed95edc
+MD5sum: 220ff0407640a15e127b4bf3984d32a2
+Description: Persistent key-value database with network interface
+ Redis is a key-value database in a similar vein to memcache but the dataset
+ is non-volatile. Redis additionally provides native support for atomically
+ manipulating and querying data structures such as lists and sets.
+ .
+ The dataset is stored entirely in memory and periodically flushed to disk.
+
+Package: redis-tools
+Source: redis
+Version: 6:7.2.6-1rl1~noble1
+Architecture: amd64
+Maintainer: Redis Core Team <redis@redis.io>
+Installed-Size: 9246
+Depends: adduser, libc6 (>= 2.38), libssl3t64 (>= 3.0.0), libsystemd0
+Suggests: ruby-redis
+Breaks: redis-server (<< 2:2.6.16-1)
+Replaces: redis-server (<< 2:2.6.16-1)
+Homepage: https://redis.io/
+Priority: optional
+Section: database
+Filename: pool/main/r/redis/redis-tools_7.2.6-1rl1~noble1_amd64.deb
+Size: 1554840
+SHA256: 71729248289d3a5dcf6c57732602a8238021ba04a853020ec053eada9af0a3a2
+SHA1: 0530ada196963dbff915a585b967f8a685a76ce5
+MD5sum: aa240b992c1dd254cdc7af140ca2c0b6
+Description: Persistent key-value database with network interface (client)
+ Redis is a key-value database in a similar vein to memcache but the dataset
+ is non-volatile. Redis additionally provides native support for atomically
+ manipulating and querying data structures such as lists and sets.
+ .
+ This package contains the command line client and other tools.
 

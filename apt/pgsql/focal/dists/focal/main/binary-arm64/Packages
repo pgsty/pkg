@@ -1,3 +1,26 @@
+Package: haproxy
+Version: 3.0.5-1ppa2~focal
+Architecture: arm64
+Maintainer: Debian HAProxy Maintainers <team+haproxy@tracker.debian.org>
+Installed-Size: 4936
+Pre-Depends: dpkg (>= 1.17.14), init-system-helpers (>= 1.54~)
+Depends: libc6 (>= 2.17), libcrypt1 (>= 1:4.1.0), libjemalloc2 (>= 2.1.1), liblua5.3-0, libpcre2-8-0 (>= 10.22), libssl1.1 (>= 1.1.1), adduser, lsb-base (>= 3.0-6)
+Suggests: vim-haproxy, haproxy-doc
+Homepage: http://www.haproxy.org/
+Priority: optional
+Section: net
+Filename: pool/main/h/haproxy/haproxy_3.0.5-1ppa2~focal_arm64.deb
+Size: 2019600
+SHA256: 92c0d7fd94a743c9e6ec4d02dcea9a28f623c02536d249e037c79948df336ac8
+SHA1: edf206e42da20e81622f8003ff1c8e34785e53c7
+MD5sum: bc9cea0aa963902bf885c0ea32310e3f
+Description: fast and reliable load balancing reverse proxy
+ HAProxy is a TCP/HTTP reverse proxy which is particularly suited for high
+ availability environments. It features connection persistence through HTTP
+ cookies, load balancing, header addition, modification, deletion both ways. It
+ has request blocking capabilities and provides interface to display server
+ status.
+
 Package: redis
 Version: 6:7.2.5-1rl1~focal1
 Architecture: all

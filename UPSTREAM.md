@@ -18,7 +18,7 @@
 - EL7：https://github.com/Vonng/haproxy-rpm/
 - EL8：https://download.postgresql.org/pub/repos/yum/common/pgdg-rhel8-extras/redhat/rhel-8-x86_64/
 - EL9：https://download.postgresql.org/pub/repos/yum/common/pgdg-rhel9-extras/redhat/rhel-9-x86_64/
-- Ubuntu: https://launchpad.net/~vbernat/+archive/ubuntu/haproxy-2.9/+packages
+- Ubuntu: https://launchpad.net/~vbernat/+archive/ubuntu/haproxy-3.0/+packages
 - Debian: https://haproxy.debian.net/pool/main/h/haproxy/
 
 - Debian 12 / 11 : https://haproxy.debian.net/pool/main/h/haproxy/
@@ -30,6 +30,12 @@
 - EL7: https://rpmfind.net/linux/remi/enterprise/7/remi/x86_64/    / [RedisStack](http://packages.redis.io/rpm/rhel$releasever)
 - EL8: https://rpmfind.net/linux/remi/enterprise/8/redis72/x86_64/ / [RedisStack](http://packages.redis.io/rpm/rhel$releasever)
 - EL9: https://rpmfind.net/linux/remi/enterprise/9/redis72/x86_64/
+
+```bash
+apt download redis=6:7.2.6*
+apt download redis-tools=6:7.2.6*
+apt download redis-server=6:7.2.6*
+```
 
 **MinIO**
 
