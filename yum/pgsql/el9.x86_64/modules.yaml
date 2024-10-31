@@ -623,6 +623,7 @@ data:
       - pg_later_14
       - pg_later_15
       - pg_later_16
+      - pg_later_17
       - pg_math_12
       - pg_math_12-llvmjit
       - pg_math_13
@@ -1771,6 +1772,7 @@ data:
     - pg_later_14
     - pg_later_15
     - pg_later_16
+    - pg_later_17
     - pg_math_12
     - pg_math_12-llvmjit
     - pg_math_13
@@ -3072,6 +3074,8 @@ data:
         rationale: Present in the repository
       pg_later_16:
         rationale: Present in the repository
+      pg_later_17:
+        rationale: Present in the repository
       pg_math_12:
         rationale: Present in the repository
       pg_math_13:
@@ -4337,10 +4341,11 @@ data:
     - pg_jsonschema_16-0:0.3.3-1PIGSTY.el9.x86_64
     - pg_jsonschema_17-0:0.3.3-1PIGSTY.el9.x86_64
     - pg_lakehouse_16-0:0.9.0-1.el9.x86_64
-    - pg_later_13-0:0.1.3-1PIGSTY.el9.x86_64
-    - pg_later_14-0:0.1.3-1PIGSTY.el9.x86_64
-    - pg_later_15-0:0.1.3-1PIGSTY.el9.x86_64
-    - pg_later_16-0:0.1.3-1PIGSTY.el9.x86_64
+    - pg_later_13-0:0.2.0-1PIGSTY.el9.x86_64
+    - pg_later_14-0:0.2.0-1PIGSTY.el9.x86_64
+    - pg_later_15-0:0.2.0-1PIGSTY.el9.x86_64
+    - pg_later_16-0:0.2.0-1PIGSTY.el9.x86_64
+    - pg_later_17-0:0.2.0-1PIGSTY.el9.x86_64
     - pg_math_12-0:1.0-1PIGSTY.el9.x86_64
     - pg_math_12-llvmjit-0:1.0-1PIGSTY.el9.x86_64
     - pg_math_13-0:1.0-1PIGSTY.el9.x86_64
