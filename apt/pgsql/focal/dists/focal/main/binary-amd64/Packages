@@ -63,6 +63,126 @@ Description: PolarDB is an advanced Object-Relational database management system
 Version: 15.8.2.0-f3737b0b
 Architecture: amd64
 
+Package: postgresql-12-citus-10.2
+Source: citus
+Version: 10.2.9.citus-1
+Architecture: amd64
+Maintainer: Citus Data <packaging@citusdata.com>
+Installed-Size: 6434
+Depends: libc6 (>= 2.17), libcurl4 (>= 7.16.2), liblz4-1 (>= 0.0~r130), libpq5 (>= 9.2~beta3), libssl1.1 (>= 1.1.0), libzstd1 (>= 1.3.2), postgresql-12
+Conflicts: postgresql-12-citus
+Provides: postgresql-12-citus
+Homepage: https://github.com/citusdata/citus
+Priority: optional
+Section: database
+Filename: pool/main/c/citus/postgresql-12-citus-10.2_10.2.9.citus-1_amd64.deb
+Size: 2286456
+SHA256: 51fb97b925f9bb12bbc65c6b19b5affd2eb278d148f2f1c49efbddee74799119
+SHA1: 0859986f07547c6d6990c495c83b94827355831b
+MD5sum: 95615fdafc60b5396e2eef121abe4a59
+Description: sharding and distributed joins for PostgreSQL
+ Citus is a distributed database implemented as a PostgreSQL extension. It
+ provides functions to easily split a PostgreSQL table into shards to be
+ placed on remote worker nodes. Citus can replicate shards, update their
+ schemas, and keep track of shard health. An advanced distributed planner
+ is included which handles queries and modifications against sharded tables.
+
+Package: postgresql-13-citus-11.3
+Source: citus
+Version: 11.3.1.citus-1
+Architecture: amd64
+Maintainer: Citus Data <packaging@citusdata.com>
+Installed-Size: 8715
+Depends: libc6 (>= 2.17), libcurl4 (>= 7.16.2), liblz4-1 (>= 0.0~r130), libpq5 (>= 9.2~beta3), libssl1.1 (>= 1.1.0), libzstd1 (>= 1.3.2), postgresql-13
+Conflicts: postgresql-13-citus
+Provides: postgresql-13-citus
+Homepage: https://github.com/citusdata/citus
+Priority: optional
+Section: database
+Filename: pool/main/c/citus/postgresql-13-citus-11.3_11.3.1.citus-1_amd64.deb
+Size: 2883136
+SHA256: 36076b4a9b4c3e8e44f4b5f777b133403b140fdbc5f87433ad1c01c06f22e99d
+SHA1: b440c0c0c876015eb171e579e6f97ef42b5fc51d
+MD5sum: 12b161e57e657cdf3c168ce852bc97c2
+Description: sharding and distributed joins for PostgreSQL
+ Citus is a distributed database implemented as a PostgreSQL extension. It
+ provides functions to easily split a PostgreSQL table into shards to be
+ placed on remote worker nodes. Citus can replicate shards, update their
+ schemas, and keep track of shard health. An advanced distributed planner
+ is included which handles queries and modifications against sharded tables.
+
+Package: postgresql-14-citus-12.1
+Source: citus
+Version: 12.1.5.citus-1
+Architecture: amd64
+Maintainer: Citus Data <packaging@citusdata.com>
+Installed-Size: 9154
+Depends: libc6 (>= 2.17), libcurl4 (>= 7.16.2), liblz4-1 (>= 0.0~r130), libpq5 (>= 9.2~beta3), libssl1.1 (>= 1.1.0), libzstd1 (>= 1.3.2), postgresql-14
+Conflicts: postgresql-14-citus
+Provides: postgresql-14-citus
+Homepage: https://github.com/citusdata/citus
+Priority: optional
+Section: database
+Filename: pool/main/c/citus/postgresql-14-citus-12.1_12.1.5.citus-1_amd64.deb
+Size: 3000076
+SHA256: 0ec615a42b698d06c102f86f379d712c6b6bb70e7b19ddb0c37402359b7e6a5a
+SHA1: 9ca6f3b263345739062d9d63fd30048b5339907b
+MD5sum: bac84e065684cb6b1a3f38487b1d50a7
+Description: sharding and distributed joins for PostgreSQL
+ Citus is a distributed database implemented as a PostgreSQL extension. It
+ provides functions to easily split a PostgreSQL table into shards to be
+ placed on remote worker nodes. Citus can replicate shards, update their
+ schemas, and keep track of shard health. An advanced distributed planner
+ is included which handles queries and modifications against sharded tables.
+
+Package: postgresql-15-citus-12.1
+Source: citus
+Version: 12.1.5.citus-1
+Architecture: amd64
+Maintainer: Citus Data <packaging@citusdata.com>
+Installed-Size: 9220
+Depends: libc6 (>= 2.17), libcurl4 (>= 7.16.2), liblz4-1 (>= 0.0~r130), libpq5 (>= 9.2~beta3), libssl1.1 (>= 1.1.0), libzstd1 (>= 1.3.2), postgresql-15
+Conflicts: postgresql-15-citus
+Provides: postgresql-15-citus
+Homepage: https://github.com/citusdata/citus
+Priority: optional
+Section: database
+Filename: pool/main/c/citus/postgresql-15-citus-12.1_12.1.5.citus-1_amd64.deb
+Size: 3030864
+SHA256: cd21536f6377379fefb3dbb3579bb12330fefcf27dd9f3e4a2ed707084636e75
+SHA1: 9391ee064b1907aafb558a64035b240166e94164
+MD5sum: dacafc9045d5a06b3a8d192bc22c0be8
+Description: sharding and distributed joins for PostgreSQL
+ Citus is a distributed database implemented as a PostgreSQL extension. It
+ provides functions to easily split a PostgreSQL table into shards to be
+ placed on remote worker nodes. Citus can replicate shards, update their
+ schemas, and keep track of shard health. An advanced distributed planner
+ is included which handles queries and modifications against sharded tables.
+
+Package: postgresql-16-citus-12.1
+Source: citus
+Version: 12.1.5.citus-1
+Architecture: amd64
+Maintainer: Citus Data <packaging@citusdata.com>
+Installed-Size: 9105
+Depends: libc6 (>= 2.17), libcurl4 (>= 7.16.2), liblz4-1 (>= 0.0~r130), libpq5 (>= 9.2~beta3), libssl1.1 (>= 1.1.0), libzstd1 (>= 1.3.2), postgresql-16
+Conflicts: postgresql-16-citus
+Provides: postgresql-16-citus
+Homepage: https://github.com/citusdata/citus
+Priority: optional
+Section: database
+Filename: pool/main/c/citus/postgresql-16-citus-12.1_12.1.5.citus-1_amd64.deb
+Size: 3006384
+SHA256: 0d4af07c5ceef374a172fff97f0885553a77575f077be873a01eeb780b6c334b
+SHA1: ef8c50406941c7a3d25105aa7fb96ab6a61feffd
+MD5sum: 0b7022d5b4e3d86448848c78401ac7da
+Description: sharding and distributed joins for PostgreSQL
+ Citus is a distributed database implemented as a PostgreSQL extension. It
+ provides functions to easily split a PostgreSQL table into shards to be
+ placed on remote worker nodes. Citus can replicate shards, update their
+ schemas, and keep track of shard health. An advanced distributed planner
+ is included which handles queries and modifications against sharded tables.
+
 Package: redis
 Version: 6:7.2.6-1rl1~focal1
 Architecture: all
@@ -178,4 +298,257 @@ Description: Persistent key-value database with network interface (client)
  manipulating and querying data structures such as lists and sets.
  .
  This package contains the command line client and other tools.
+
+Package: timescaledb-2-2.11.2-postgresql-12
+Version: 2.11.2~ubuntu20.04
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 23300
+Depends: timescaledb-2-loader-postgresql-12 (>= 2.11.2~), postgresql-12 (>= 12.8), libc6 (>= 2.14), libpq5 (>= 9.2~beta3), libssl1.1 (>= 1.1.0)
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.11.2-postgresql-12/timescaledb-2-2.11.2-postgresql-12_2.11.2~ubuntu20.04_amd64.deb
+Size: 3311560
+SHA256: 5d4493bdedd8b01a4ab6ee2fa9a52b6590cfe6b482d422dafcedcc5f0818ea60
+SHA1: f1fae92fe35d9619956a638c829744fb9506eb07
+MD5sum: 766da2d63681e7b295227b30d2652bbe
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-2.15.3-postgresql-13
+Version: 2.15.3~ubuntu20.04
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 25527
+Depends: timescaledb-2-loader-postgresql-13 (>= 2.15.3~), postgresql-13 (>= 13.4), libc6 (>= 2.17), libssl1.1 (>= 1.1.0)
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.15.3-postgresql-13/timescaledb-2-2.15.3-postgresql-13_2.15.3~ubuntu20.04_amd64.deb
+Size: 2991544
+SHA256: c664249ba758f3a62ba0e16a205726718c77cc55d09bfb219f24ce7b5a447b53
+SHA1: dd8a2e81ae2963405b18fe64eed138b4076e66b4
+MD5sum: ccbc49e6f69c9cd5edfac03dac2fc80a
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-2.17.1-postgresql-14
+Version: 2.17.1~ubuntu20.04
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 24929
+Depends: timescaledb-2-loader-postgresql-14 (>= 2.17.1~), postgresql-14, libc6 (>= 2.17)
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.17.1-postgresql-14/timescaledb-2-2.17.1-postgresql-14_2.17.1~ubuntu20.04_amd64.deb
+Size: 3316168
+SHA256: b38569cf8eaab400dae541075e1b35b5c2d2ae638c70ea5e03438606bbc7b50f
+SHA1: 1d2f680cb8aa68a417412ccc2e15b848ea85ca60
+MD5sum: 75b2180eb61baf1d4e7879a0f2e8f515
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-2.17.1-postgresql-15
+Version: 2.17.1~ubuntu20.04
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 25073
+Depends: timescaledb-2-loader-postgresql-15 (>= 2.17.1~), postgresql-15 (>= 15.1), libc6 (>= 2.17)
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.17.1-postgresql-15/timescaledb-2-2.17.1-postgresql-15_2.17.1~ubuntu20.04_amd64.deb
+Size: 3387952
+SHA256: 78ac16d6b5ccf86bb2d8a1aa250bdb9620f6a6430f3904e07c80f2363eb4da9e
+SHA1: a75913f8536fe1ee1e2115ea0f7b2a58214b0837
+MD5sum: f0af541c67d649066e4d379ce6a3b8f5
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-2.17.1-postgresql-16
+Version: 2.17.1~ubuntu20.04
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 25508
+Depends: timescaledb-2-loader-postgresql-16 (>= 2.17.1~), postgresql-16 (>= 16.0), libc6 (>= 2.17)
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.17.1-postgresql-16/timescaledb-2-2.17.1-postgresql-16_2.17.1~ubuntu20.04_amd64.deb
+Size: 3491544
+SHA256: e35ec49baf6a979fe61e5b003b8c7eb18a7ab9dd5d0832e1c7d3020dcd169ad5
+SHA1: dfa5e9883513572867e01e4f5fdc5838d8f8a575
+MD5sum: e12a90f666775755a4e9f7baf849a0ac
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-2.17.1-postgresql-17
+Version: 2.17.1~ubuntu20.04
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 26283
+Depends: timescaledb-2-loader-postgresql-17 (>= 2.17.1~), postgresql-17 (>= 1n.0), libc6 (>= 2.17)
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.17.1-postgresql-17/timescaledb-2-2.17.1-postgresql-17_2.17.1~ubuntu20.04_amd64.deb
+Size: 3665840
+SHA256: a3c5aae541beafd107174e27e76e2f354866317d577395268cfd5583d23960d6
+SHA1: 7e4d5c3d6093c5821836db14c7b68fb8ca69a4e7
+MD5sum: 15bc19397f444f35426fadb2de24ad70
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-loader-postgresql-12
+Source: timescaledb-2-2.11.2-postgresql-12
+Version: 2.11.2~ubuntu20.04
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 397
+Depends: postgresql-12, libc6 (>= 2.4)
+Recommends: timescaledb-tools
+Conflicts: timescaledb-loader-postgresql-12
+Breaks: timescaledb-postgresql-12 (<< 1.0.0)
+Replaces: timescaledb-postgresql-12 (<< 1.0.0)
+Provides: timescaledb-loader-postgresql-12
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.11.2-postgresql-12/timescaledb-2-loader-postgresql-12_2.11.2~ubuntu20.04_amd64.deb
+Size: 115660
+SHA256: 2352c5adad614ed357f4cf64e2bf38717a7c9fd6c993b13fb5d4fa4e23a3c1e3
+SHA1: 51552d8379272dbe34acaddb391eb323680ac711
+MD5sum: ccf09a5af8303596068df05b0d95efd6
+Description: The loader for TimescaleDB to load individual versions.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-loader-postgresql-13
+Source: timescaledb-2-2.15.3-postgresql-13
+Version: 2.15.3~ubuntu20.04
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 367
+Depends: postgresql-13, libc6 (>= 2.4)
+Recommends: timescaledb-tools
+Conflicts: timescaledb-loader-postgresql-13
+Breaks: timescaledb-postgresql-13 (<< 1.0.0)
+Replaces: timescaledb-postgresql-13 (<< 1.0.0)
+Provides: timescaledb-loader-postgresql-13
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.15.3-postgresql-13/timescaledb-2-loader-postgresql-13_2.15.3~ubuntu20.04_amd64.deb
+Size: 110512
+SHA256: b5a138ac467c537b151c2be8b70a9bf3ad0fa8537be7a49ec420c4c1aff1f2a7
+SHA1: 880ef214af9d95e53d9bbb59a6f5e42807c1cab1
+MD5sum: a768ccab3fd2871ace999dab50721585
+Description: The loader for TimescaleDB to load individual versions.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-loader-postgresql-14
+Source: timescaledb-2-2.17.1-postgresql-14
+Version: 2.17.1~ubuntu20.04
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 381
+Depends: postgresql-14, libc6 (>= 2.4)
+Recommends: timescaledb-tools
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.17.1-postgresql-14/timescaledb-2-loader-postgresql-14_2.17.1~ubuntu20.04_amd64.deb
+Size: 115328
+SHA256: 6b786d0c3c08c4180be57dec621edb666bfcabbbde48139281596241b60564ab
+SHA1: 110a9717866c06fbc6e45b5c384a82c4b4e5e3fa
+MD5sum: 92d72230d21213fa486c4401ce3209e3
+Description: The loader for TimescaleDB to load individual versions.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-loader-postgresql-15
+Source: timescaledb-2-2.17.1-postgresql-15
+Version: 2.17.1~ubuntu20.04
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 388
+Depends: postgresql-15 (>= 15.1), libc6 (>= 2.4)
+Recommends: timescaledb-tools
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.17.1-postgresql-15/timescaledb-2-loader-postgresql-15_2.17.1~ubuntu20.04_amd64.deb
+Size: 117364
+SHA256: b7df22a038190e0fc5131b1c009bc0391b3e9c1b84fc903e5fa83ba3dacf4d9c
+SHA1: 2d3278ccbf000b23baab55f46537d11eb1900deb
+MD5sum: abc83ba4f7070a2d9debdd401b484317
+Description: The loader for TimescaleDB to load individual versions.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-loader-postgresql-16
+Source: timescaledb-2-2.17.1-postgresql-16
+Version: 2.17.1~ubuntu20.04
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 397
+Depends: postgresql-16 (>= 16.0), libc6 (>= 2.4)
+Recommends: timescaledb-tools
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.17.1-postgresql-16/timescaledb-2-loader-postgresql-16_2.17.1~ubuntu20.04_amd64.deb
+Size: 119768
+SHA256: 55139bdc0d79b7aa004a8652b0954fbf0fa2ad5adebf50326517913d1662fea0
+SHA1: 745ae072e3605f95e7adcedb65744ef426ef21a7
+MD5sum: 0b9b19a319d6251d1c66f3cb3811e6cc
+Description: The loader for TimescaleDB to load individual versions.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-loader-postgresql-17
+Source: timescaledb-2-2.17.1-postgresql-17
+Version: 2.17.1~ubuntu20.04
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 434
+Depends: postgresql-17 (>= 17.0), libc6 (>= 2.4)
+Recommends: timescaledb-tools
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.17.1-postgresql-17/timescaledb-2-loader-postgresql-17_2.17.1~ubuntu20.04_amd64.deb
+Size: 131908
+SHA256: b74806dce3a8065dd8469dc142b775679f15192f3159a54a1a9910ad5278aac7
+SHA1: 13579104f8d961bb60be8be7b73986b5efd21f69
+MD5sum: 45a8a10eb1368b0ddde840458f632456
+Description: The loader for TimescaleDB to load individual versions.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-tools
+Version: 0.17.2~ubuntu20.04
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 8171
+Depends: libc6 (>= 2.3.4)
+Suggests: libpq-dev
+Homepage: https://www.timescale.com
+Priority: optional
+Section: misc
+Filename: pool/main/t/timescaledb-tools/timescaledb-tools_0.17.2~ubuntu20.04_amd64.deb
+Size: 2244060
+SHA256: 0aefa2778b13c9af376bb0a34d3d5f03e6f57f26380ee0dd27dc50d76906a6a4
+SHA1: 01fe6d7f529387d85d3b5e4b3f3ab842a5ee2758
+MD5sum: fd42734bce89f9487d61479a5fa7f271
+Description: A suite of tools that can be used with TimescaleDB.
 

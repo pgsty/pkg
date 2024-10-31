@@ -31,29 +31,6 @@
 - EL8: https://rpmfind.net/linux/remi/enterprise/8/redis72/x86_64/ / [RedisStack](http://packages.redis.io/rpm/rhel$releasever)
 - EL9: https://rpmfind.net/linux/remi/enterprise/9/redis72/x86_64/
 
-```bash
-apt-get download 'redis=6:7.2.6-1rl1~noble1'
-apt-get download 'redis-tools=6:7.2.6-1rl1~noble1'
-apt-get download 'redis-server=6:7.2.6-1rl1~noble1'
-apt-get download 'redis-sentinel=6:7.2.6-1rl1~noble1'
-apt-get download 'redis-redisearch=1:1.2.2-4'
-
-# jammy
-apt-get download 'redis=6:7.2.6-1rl1~jammy1'
-apt-get download 'redis-tools=6:7.2.6-1rl1~jammy1'
-apt-get download 'redis-server=6:7.2.6-1rl1~jammy1'
-apt-get download 'redis-sentinel=6:7.2.6-1rl1~jammy1'
-apt-get download 'redis-redisearch=1:1.2.2-4'
-#apt-get download redis-stack-server=7.4.0-v1
-
-# bookworm
-apt-get download 'redis=6:7.2.6-1rl1~bookworm1'
-apt-get download 'redis-tools=6:7.2.6-1rl1~bookworm1'
-apt-get download 'redis-server=6:7.2.6-1rl1~bookworm1'
-apt-get download 'redis-sentinel=6:7.2.6-1rl1~bookworm1'
-apt-get download 'redis-redisearch=1:1.2.2-4'
-#apt-get download 'redis-stack-server=6:7.2.6-1rl1~bookworm1'
-```
 
 **MinIO**
 
@@ -64,11 +41,11 @@ apt-get download 'redis-redisearch=1:1.2.2-4'
 
 **Misc**
 
-- [FerretDB](https://github.com/FerretDB/FerretDB) v1.223
-- [SealOS](https://github.com/labring/sealos) v5.0.0
-- [VIP Manager](https://github.com/cybertec-postgresql/vip-manager) v2.6.0
-- [Dalibo/Pev2](https://github.com/dalibo/pev2) v1.11.0
-- [Vector](https://packages.timber.io/vector/latest/) 0.40
+- [FerretDB](https://github.com/FerretDB/FerretDB) v1.24
+- [SealOS](https://github.com/labring/sealos) v5.0.1
+- [VIP Manager](https://github.com/cybertec-postgresql/vip-manager) v2.8.0
+- [Dalibo/Pev2](https://github.com/dalibo/pev2) v1.12.1
+- [Vector](https://packages.timber.io/vector/latest/) 0.42.0
 
 **Grafana**
 

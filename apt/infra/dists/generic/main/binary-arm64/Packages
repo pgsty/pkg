@@ -170,33 +170,33 @@ MD5sum: 7a446a24a5898698e69828fa14a7c8ba
 Description: Loki Logging Service
 
 Package: mcli
-Version: 20241008093726.0.0
+Version: 20241029153459.0.0
 Architecture: arm64
 Maintainer: MinIO Development <dev@minio.io>
-Installed-Size: 25536
+Installed-Size: 25664
 Homepage: https://min.io
 Priority: optional
 Section: 
-Filename: pool/main/m/mcli/mcli_20241008093726.0.0_arm64.deb
-Size: 9319338
-SHA256: b52466651f7876f4ad802017fafc47f83a388c07851afef4ba698b04c2017d5e
-SHA1: 99a3db8d3f156b61addd36b6def76554962cdfd6
-MD5sum: eab7de266592726a01f4ef0dd3fc29f5
+Filename: pool/main/m/mcli/mcli_20241029153459.0.0_arm64.deb
+Size: 9341628
+SHA256: dc7106ec1436f670cea437572ec4d9b666967798055a5e0df6593cb88a49b1ef
+SHA1: 323b8c4615e7eeba4be15fac3052197f9da8be18
+MD5sum: d21415d1136ed8323b842c4e19f3f261
 Description: MinIO Client for cloud storage and filesystems
 
 Package: minio
-Version: 20241013133411.0.0
+Version: 20241029160148.0.0
 Architecture: arm64
 Maintainer: MinIO Development <dev@minio.io>
 Installed-Size: 97409
 Homepage: https://min.io
 Priority: optional
 Section: 
-Filename: pool/main/m/minio/minio_20241013133411.0.0_arm64.deb
-Size: 35372362
-SHA256: f998385644156371a98cde215527b3b8a750496ca2423938c3561afb34b56cc3
-SHA1: a1631307602e75236270bef09cc8ab9e69b680d8
-MD5sum: 0c90a7b1d20374d6bad5d4e245e6f34d
+Filename: pool/main/m/minio/minio_20241029160148.0.0_arm64.deb
+Size: 35362572
+SHA256: dd62c6abdef9062277ad618084e7bef7a24d65538764366f100043d36f0cf2ae
+SHA1: 710792c318e52d7cccf69038e83dcea5fd075575
+MD5sum: 8f995e4848d2975d0d7b0b752f5b2d12
 Description: MinIO is a High Performance Object Storage released under AGPLv3.
  It is API compatible with Amazon S3 cloud storage service. Use MinIO to build
  high performance infrastructure for machine learning, analytics and application
@@ -405,21 +405,21 @@ MD5sum: 5b767feef694f61a82a67398f3a58b6d
 Description: The financial transactions database designed for mission critical safety and performance
 
 Package: vector
-Version: 0.41.1-1
+Version: 0.42.0-1
 Architecture: arm64
 Homepage: https://vector.dev
 Standards-Version: 3.9.4
 Maintainer: Vector Contributors <vector@datadoghq.com>
-Installed-Size: 120196
+Installed-Size: 114806
 Depends: libc6 (>= 2.18)
 Recommends: datadog-signing-keys (>= 1:1.3.1)
 Priority: optional
 Section: admin
-Filename: pool/main/v/vector/vector_0.41.1-1_arm64.deb
-Size: 28291430
-SHA256: 74ad86a66087bc182bb1a2badcf5627d7da3ffc73a6dc2ac320534594edff854
-SHA1: 8e113bc5209cd67bc600f18e95ff0e23ceb59ebf
-MD5sum: 5e513893c20a3222abae646c38519bb1
+Filename: pool/main/v/vector/vector_0.42.0-1_arm64.deb
+Size: 27916932
+SHA256: d64b0a22fcb1051a116663cc2eed6e60a3a602db7fc5b6ae05ac650faa3ad8d9
+SHA1: 651d7790b7ce8632c66a16cb4b5fe7e6414e4b4c
+MD5sum: 979012a359c2a1cdf588b32f23127f0a
 Description: A lightweight and ultra-fast tool for building observability pipelines
  .
 

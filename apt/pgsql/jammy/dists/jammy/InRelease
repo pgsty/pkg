@@ -4,44 +4,44 @@ Hash: SHA256
 Origin: Pigsty
 Label: Pigsty PGSQL
 Codename: jammy
-Date: Thu, 31 Oct 2024 06:50:03 UTC
+Date: Thu, 31 Oct 2024 09:58:50 UTC
 Architectures: amd64 arm64
 Components: main
 Description: pigsty apt repository for ubuntu 22.04 jammy
 MD5Sum:
- 9de0290b1befdb63b32583dafdf01eb5 772137 main/binary-amd64/Packages
- 34e3fce697ae208fc61aba349aa4de64 219769 main/binary-amd64/Packages.gz
+ e1b41acc1d2ce5a600c350503985fc30 789091 main/binary-amd64/Packages
+ a7b0d53e3c486da50f03d7ff5913b1b5 223784 main/binary-amd64/Packages.gz
  9d0a930a4fabd1474bc86a1aace7b6dc 129 main/binary-amd64/Release
- 80f8fdb6603a765a163357d6a08617bd 6548 main/binary-arm64/Packages
- 4dc2d25a0875016e56129ef9e9d76fd8 2312 main/binary-arm64/Packages.gz
+ 47821bbfbcf940fbfe3479d859d01280 20541 main/binary-arm64/Packages
+ b98d948703181dffa2851f776d5fc150 4819 main/binary-arm64/Packages.gz
  c50a580ae330a7efe66019b8141e8846 129 main/binary-arm64/Release
 SHA1:
- 7466fc2daf64bebf2390a3bbb5e721700d6001a5 772137 main/binary-amd64/Packages
- 2d1a9db7b4afcebaebe5084d9fb0b07d77764d9d 219769 main/binary-amd64/Packages.gz
+ 961276f5c6040a64d7593caa0529cf62b43bf581 789091 main/binary-amd64/Packages
+ e93f0641213672107a7a2ac8bef53755169d0052 223784 main/binary-amd64/Packages.gz
  2a2c4324b007711478288c543463a2d3d97da9d6 129 main/binary-amd64/Release
- ec5b3234d2ed7aecba1b4c034f00492918468566 6548 main/binary-arm64/Packages
- 2887cd80612391228192f021be962d47311f7fcb 2312 main/binary-arm64/Packages.gz
+ 591170a9cef04450377f3da2a79468020f36ab1e 20541 main/binary-arm64/Packages
+ e437b24cce44a9e472a7df115d4cadd6d8cca3df 4819 main/binary-arm64/Packages.gz
  d77e63c824c4d2b865bde3eb6fd1cb338ca17a1a 129 main/binary-arm64/Release
 SHA256:
- e9d9fb69038d63bb435aa35c17cefd8b3d5ea4aba007cc3934d845a38793dd7b 772137 main/binary-amd64/Packages
- 4dadb90ca9505da0b37839bbbec0d48785870e908ea5b39b54675a7fd9d792e1 219769 main/binary-amd64/Packages.gz
+ 3ef7a724f5d04b281c14bb7fe7898e3fd7d50a31a78037f707b57759a300bce1 789091 main/binary-amd64/Packages
+ c3d0160fa44d8c3f23424c7dbd81ab31db6467185f18b8f635848598cea17d14 223784 main/binary-amd64/Packages.gz
  032aa2d7e43113ff089270b7f4f69d8daa9d2537e0bd407a2f42c051a42d3cea 129 main/binary-amd64/Release
- 372994622c61b7c898cb601bfd7b2e396d0c5fb5d3dbbf68577c563e38d011c1 6548 main/binary-arm64/Packages
- 0de41f3e72fa3497d850674bbeb50eb3dcad7efda6ddfb365c91b8ba120c5685 2312 main/binary-arm64/Packages.gz
+ 845d180ee54942c01468d94ca41fa4967db7d99e9901f20f154ba3bb657ee058 20541 main/binary-arm64/Packages
+ 0f9e375fdd89e0324f811665a7cbba6bebe4fd0ed6ba9e2a5458d7200ce88629 4819 main/binary-arm64/Packages.gz
  7ad7454c09745deabfd98885abc897e6af7104169157cf4ed7586f0da2863bbb 129 main/binary-arm64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEElZKnvHpoLnMzN24J55Ndjbm9iyAFAmcjKJ4ACgkQ55Ndjbm9
-iyDTIhAAisJBWQ8mJYYRv4A70s/vorkovNlLJK/QIE1Yvu+YvciaxRmg5VAkRrWs
-kD496DftUOVEFVVdYyY1cJ7Il2YproVCmJjXDxHIAQ0uAUfMHhyVCgrEfATprwDv
-FhtFfFLMLg/u0fJYpDlNdUbKvvUMTaQ9DC+WHjkTxNuKUMjTYhQ4fWhbmSk3EX0t
-Ja0F5S/xvyj0v5pRRfCleCp+Wvtu1Vki23HWhkhaxpQDrhx43dmO04f3kJWpjbwj
-9Hf4TCwtXPMCFTmzdxgM1oIM72/fYtuM/+pFbdY9zlMyRmPgTwIsHJ4tS/4ljyC5
-GvNKFb4IqL+7fFMp4NZHecOzT6sEEuLkKNu3ZVoS1JDoisz/j7de7Z4hTODqPXO7
-Gqd/BWt0WoAa296PAHPzPC+YZNyTiRC3TEWi1RtBO63zyj0KMMJkbg8pprCR2tcJ
-4kUCFxy+cqd+eLnbW1GV7butYGFXo1sOKLhtRa0SWqngSJo90Qhmky79Bej05xIL
-R9dBmRsLqyjwXgUBP+tmbVYXrGg5DQTnzc765TWcOg8MIn2ajBu2DUIYdjCEPhZn
-qM3UIXYAi7oJjMbw1Mw89yp4gxKgLbfFDLIdBvxg9OfVqtNm+dlprfMN7wQP4PBZ
-udWsaUWNtoc7t9PqecklhbdRS/Iz4XwzDHk73Zk+ErNDltDbG+Q=
-=eF5g
+iQIzBAEBCAAdFiEElZKnvHpoLnMzN24J55Ndjbm9iyAFAmcjVNoACgkQ55Ndjbm9
+iyDPog//X0OwP2LlXYsL7rtc8/d3bRx9r1G7c3bn99gBByibvQinmxFphyPMhVav
+zRWBNDYJntVk2XlMDL7SumLlPozbiirNXyxKbjiFIDZ8zZ9/RUlfPIiDcE4IKq7O
+pJZEIIhr8xt/hzA69Z8zNreZIGJQemOOifoOmb7t/C1skkpaGnwJ5LkpZ6iV3zYL
+d0Ja+CYyM6POmsDWTqMa2FzLDqPOjeeBfDK8aTc0zootLXbsyvJS48uLT+OXlB8w
+nYpTDVj9eDsydrtpDlig3dOkpVXshGpV8KjFHbwbwd9UzSNtKzg43yeuOyR6JgLW
+0bH0ZPQN09NMfaWxzOJ8siyd9j0YWppR4pZ4FbzH+QhuX6M5YcPWvWKFczi784bM
+H+vzTzWpJjqP7CJwsPCvIb4fIckpYpkx2889mx7sqtT+tOdIUjzVRgK65W7ZwZyM
+trOaI5SwL8cRdZATX3nLIklDI/jtRn5u1HuMbTXkK+dODYGKgPI+Z8s5lGekSB/d
+t1/AbuB2rdfUsTsAq3R+scwKMfj1FilcnI1r+CzVj1Wp2WGj0URvg9jVySu2wcKr
+eDmuJaQ4Brbzn41ffQ85u8qvHv/TsbX2ZxmWzKHBOD9Qwfl2EEeRArfXVi1AaFbx
+6lPaY8WQE2+HrFtSMtBxWrEK5l59rDCzJbI5vCtt99vQ1sueXTI=
+=E5wN
 -----END PGP SIGNATURE-----

@@ -289,6 +289,30 @@ Description: Foreign-Data Wrapper facility to enable reading log files via SQL
   This was removed from Postgres 11 and later. This is a stand alone version for use with those.
   See documentaion for chkpass: https://www.postgresql.org/docs/10/chkpass.html
 
+Package: postgresql-12-citus-10.2
+Source: citus
+Version: 10.2.9.citus-1
+Architecture: amd64
+Maintainer: Citus Data <packaging@citusdata.com>
+Installed-Size: 6324
+Depends: libc6 (>= 2.33), libcurl4 (>= 7.16.2), liblz4-1 (>= 0.0~r130), libpq5 (>= 9.2~beta3), libssl3 (>= 3.0.0), libzstd1 (>= 1.5.2), postgresql-12
+Conflicts: postgresql-12-citus
+Provides: postgresql-12-citus
+Homepage: https://github.com/citusdata/citus
+Priority: optional
+Section: database
+Filename: pool/main/c/citus/postgresql-12-citus-10.2_10.2.9.citus-1_amd64.deb
+Size: 2354240
+SHA256: ab9f50431ab1832a899036360c48170237cb2f3a7c208f864c626a7c66dddfb6
+SHA1: 6024837b2ee7cd969bf1c142eca1831f7c20e8d9
+MD5sum: 8bc21e6e9848b0c29acdf4eef282bcc9
+Description: sharding and distributed joins for PostgreSQL
+ Citus is a distributed database implemented as a PostgreSQL extension. It
+ provides functions to easily split a PostgreSQL table into shards to be
+ placed on remote worker nodes. Citus can replicate shards, update their
+ schemas, and keep track of shard health. An advanced distributed planner
+ is included which handles queries and modifications against sharded tables.
+
 Package: postgresql-12-count-distinct
 Source: count-distinct
 Version: 3.0.2-1PIGSTY~bookworm
@@ -2798,6 +2822,30 @@ Description: Foreign-Data Wrapper facility to enable reading log files via SQL
   PostgreSQL versions lower than 11 come bundled with chkpass extension for storing encrypted passwords.
   This was removed from Postgres 11 and later. This is a stand alone version for use with those.
   See documentaion for chkpass: https://www.postgresql.org/docs/10/chkpass.html
+
+Package: postgresql-13-citus-11.3
+Source: citus
+Version: 11.3.1.citus-1
+Architecture: amd64
+Maintainer: Citus Data <packaging@citusdata.com>
+Installed-Size: 8599
+Depends: libc6 (>= 2.33), libcurl4 (>= 7.16.2), liblz4-1 (>= 0.0~r130), libpq5 (>= 9.2~beta3), libssl3 (>= 3.0.0), libzstd1 (>= 1.5.2), postgresql-13
+Conflicts: postgresql-13-citus
+Provides: postgresql-13-citus
+Homepage: https://github.com/citusdata/citus
+Priority: optional
+Section: database
+Filename: pool/main/c/citus/postgresql-13-citus-11.3_11.3.1.citus-1_amd64.deb
+Size: 2965268
+SHA256: 0457c9092852d31e5325378eaa9a6e904f0a9c659d94a73aae8a6131c44e11d6
+SHA1: bc97bea6d90c37934b9407acf0b261060f65a255
+MD5sum: 45e4bbacd3fb37a4622cfa98edf3464f
+Description: sharding and distributed joins for PostgreSQL
+ Citus is a distributed database implemented as a PostgreSQL extension. It
+ provides functions to easily split a PostgreSQL table into shards to be
+ placed on remote worker nodes. Citus can replicate shards, update their
+ schemas, and keep track of shard health. An advanced distributed planner
+ is included which handles queries and modifications against sharded tables.
 
 Package: postgresql-13-count-distinct
 Source: count-distinct
@@ -5520,6 +5568,30 @@ Description: Foreign-Data Wrapper facility to enable reading log files via SQL
   PostgreSQL versions lower than 11 come bundled with chkpass extension for storing encrypted passwords.
   This was removed from Postgres 11 and later. This is a stand alone version for use with those.
   See documentaion for chkpass: https://www.postgresql.org/docs/10/chkpass.html
+
+Package: postgresql-14-citus-12.1
+Source: citus
+Version: 12.1.5.citus-1
+Architecture: amd64
+Maintainer: Citus Data <packaging@citusdata.com>
+Installed-Size: 9024
+Depends: libc6 (>= 2.33), libcurl4 (>= 7.16.2), liblz4-1 (>= 0.0~r130), libpq5 (>= 9.2~beta3), libssl3 (>= 3.0.0), libzstd1 (>= 1.5.2), postgresql-14
+Conflicts: postgresql-14-citus
+Provides: postgresql-14-citus
+Homepage: https://github.com/citusdata/citus
+Priority: optional
+Section: database
+Filename: pool/main/c/citus/postgresql-14-citus-12.1_12.1.5.citus-1_amd64.deb
+Size: 3065420
+SHA256: 63ee5e8152105b49d10c26209228b72e7e7aeeaa50621dcd7ed5dc2993afe426
+SHA1: 6f96d918f3bfbe2d5aace1d061abc964a72cf623
+MD5sum: 62a3628c1f9a8e17f934c1351a7fb42e
+Description: sharding and distributed joins for PostgreSQL
+ Citus is a distributed database implemented as a PostgreSQL extension. It
+ provides functions to easily split a PostgreSQL table into shards to be
+ placed on remote worker nodes. Citus can replicate shards, update their
+ schemas, and keep track of shard health. An advanced distributed planner
+ is included which handles queries and modifications against sharded tables.
 
 Package: postgresql-14-count-distinct
 Source: count-distinct
@@ -8401,6 +8473,30 @@ Description: Foreign-Data Wrapper facility to enable reading log files via SQL
   PostgreSQL versions lower than 11 come bundled with chkpass extension for storing encrypted passwords.
   This was removed from Postgres 11 and later. This is a stand alone version for use with those.
   See documentaion for chkpass: https://www.postgresql.org/docs/10/chkpass.html
+
+Package: postgresql-15-citus-12.1
+Source: citus
+Version: 12.1.5.citus-1
+Architecture: amd64
+Maintainer: Citus Data <packaging@citusdata.com>
+Installed-Size: 9093
+Depends: libc6 (>= 2.33), libcurl4 (>= 7.16.2), liblz4-1 (>= 0.0~r130), libpq5 (>= 9.2~beta3), libssl3 (>= 3.0.0), libzstd1 (>= 1.5.2), postgresql-15
+Conflicts: postgresql-15-citus
+Provides: postgresql-15-citus
+Homepage: https://github.com/citusdata/citus
+Priority: optional
+Section: database
+Filename: pool/main/c/citus/postgresql-15-citus-12.1_12.1.5.citus-1_amd64.deb
+Size: 3103520
+SHA256: 1c204df226c82a12354475744506c859155de99fc2b602fbe64ed7027b2d9716
+SHA1: 17b38e0a4206b33d34613f3ac8da33c0125ef97c
+MD5sum: b4a66742568a2b1bba426ec7853a4de3
+Description: sharding and distributed joins for PostgreSQL
+ Citus is a distributed database implemented as a PostgreSQL extension. It
+ provides functions to easily split a PostgreSQL table into shards to be
+ placed on remote worker nodes. Citus can replicate shards, update their
+ schemas, and keep track of shard health. An advanced distributed planner
+ is included which handles queries and modifications against sharded tables.
 
 Package: postgresql-15-count-distinct
 Source: count-distinct
@@ -11303,6 +11399,30 @@ Description: Foreign-Data Wrapper facility to enable reading log files via SQL
   PostgreSQL versions lower than 11 come bundled with chkpass extension for storing encrypted passwords.
   This was removed from Postgres 11 and later. This is a stand alone version for use with those.
   See documentaion for chkpass: https://www.postgresql.org/docs/10/chkpass.html
+
+Package: postgresql-16-citus-12.1
+Source: citus
+Version: 12.1.5.citus-1
+Architecture: amd64
+Maintainer: Citus Data <packaging@citusdata.com>
+Installed-Size: 8900
+Depends: libc6 (>= 2.33), libcurl4 (>= 7.16.2), liblz4-1 (>= 0.0~r130), libpq5 (>= 9.2~beta3), libssl3 (>= 3.0.0), libzstd1 (>= 1.5.2), postgresql-16
+Conflicts: postgresql-16-citus
+Provides: postgresql-16-citus
+Homepage: https://github.com/citusdata/citus
+Priority: optional
+Section: database
+Filename: pool/main/c/citus/postgresql-16-citus-12.1_12.1.5.citus-1_amd64.deb
+Size: 3069312
+SHA256: 64ec110c893c2e9c81f5b3179a7efdec30a98490d92774e0c40671a9457faae9
+SHA1: 0e018edbbf0bb27748cdb2f697c04aa212d1da5f
+MD5sum: a88fb697e9a505157b2ac616340dbdff
+Description: sharding and distributed joins for PostgreSQL
+ Citus is a distributed database implemented as a PostgreSQL extension. It
+ provides functions to easily split a PostgreSQL table into shards to be
+ placed on remote worker nodes. Citus can replicate shards, update their
+ schemas, and keep track of shard health. An advanced distributed planner
+ is included which handles queries and modifications against sharded tables.
 
 Package: postgresql-16-count-distinct
 Source: count-distinct
@@ -16776,28 +16896,6 @@ Description: Full-text and secondary search index engine module for Redis
  numeric filtering for text queries that are not possible or efficient with
  traditional Redis search approaches.
 
-Package: redis-sentinel
-Source: redis
-Version: 6:7.2.6-1rl1~bookworm1
-Architecture: amd64
-Maintainer: Redis Core Team <redis@redis.io>
-Installed-Size: 73
-Depends: lsb-base (>= 3.2-14), redis-tools (= 6:7.2.6-1rl1~bookworm1)
-Homepage: https://redis.io/
-Priority: optional
-Section: database
-Filename: pool/main/r/redis/redis-sentinel_7.2.6-1rl1~bookworm1_amd64.deb
-Size: 28732
-SHA256: 2632b84c9c34cdcb148080fdc2e166990dfaa939794e90d19a0f00e3ecbe42c3
-SHA1: 893d4bcb7eae9ddfa25f1b77520234a00fdc688a
-MD5sum: 24bcd42693bb8353dcd78b5686c35fdd
-Description: Persistent key-value database with network interface (monitoring)
- Redis is a key-value database in a similar vein to memcache but the dataset
- is non-volatile. Redis additionally provides native support for atomically
- manipulating and querying data structures such as lists and sets.
- .
- This package contains the Redis Sentinel monitoring software.
-
 Package: redis-server
 Source: redis
 Version: 6:7.2.6-1rl1~bookworm1
@@ -16845,6 +16943,24 @@ Description: Persistent key-value database with network interface (client)
  .
  This package contains the command line client and other tools.
 
+Package: redis-tools-dbgsym
+Source: redis
+Version: 6:7.2.6-1rl1~bookworm1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Redis Core Team <redis@redis.io>
+Installed-Size: 9598
+Depends: redis-tools (= 6:7.2.6-1rl1~bookworm1)
+Priority: optional
+Section: debug
+Filename: pool/main/r/redis/redis-tools-dbgsym_7.2.6-1rl1~bookworm1_amd64.deb
+Size: 9200512
+SHA256: 9c382747cc10b40681b11f7e4038e1e4157c704c5198bb4fda9d9f83a5759cf5
+SHA1: 187da45862b402c0ad9064c18e35ae5cfbb19654
+MD5sum: 018c20c392d1d45c80d04bfd8a999586
+Description: debug symbols for redis-tools
+Build-Ids: 077ed182f0a6dd183dab040cf00d90a8aea7f79c 090e0871fd1df4a7a6ed148ccb89da088323c0ab a862f02d3518ddff7e043b2b349b765b2eb838ce
+
 Package: scws
 Version: 1.2.3-1PIGSTY~bookworm
 Architecture: amd64
@@ -16862,4 +16978,257 @@ SHA1: 40251a37d63d6d934910c40ef58e247d7b727a23
 MD5sum: 4d17fd32cbcd968675e9b4323efcc98a
 Description: Simple Chinese Word Segmentation
   SCWS (Simple Chinese Word Segmentation) is a high performance Chinese word segmentation utility.
+
+Package: timescaledb-2-2.11.2-postgresql-12
+Version: 2.11.2~debian12
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 19115
+Depends: timescaledb-2-loader-postgresql-12 (>= 2.11.2~), postgresql-12 (>= 12.8), libc6 (>= 2.14), libpq5 (>= 9.2~beta3), libssl3 (>= 3.0.0)
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.11.2-postgresql-12/timescaledb-2-2.11.2-postgresql-12_2.11.2~debian12_amd64.deb
+Size: 2898900
+SHA256: 558eadced80ac1a3dbd3d4d2b58e8e3a258ff4cccbc23a06931e2612d5637369
+SHA1: 44ff867764383afe461a1ee2fd2fea4760a558ae
+MD5sum: 87e77c7ae425e1b7e6b515382d052983
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-2.15.3-postgresql-13
+Version: 2.15.3~debian12
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 21346
+Depends: timescaledb-2-loader-postgresql-13 (>= 2.15.3~), postgresql-13 (>= 13.4), libc6 (>= 2.17), libssl3 (>= 3.0.0)
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.15.3-postgresql-13/timescaledb-2-2.15.3-postgresql-13_2.15.3~debian12_amd64.deb
+Size: 2512620
+SHA256: a1e6f04b3fc6ddac8025125df271ae8a3443f17f72bb6ed68ba44886ec8e6b6b
+SHA1: ddd1fa1fb84bc26b67d1fc4fc50417ea0359aa89
+MD5sum: 4fba23fac61ca4092c7f88a151cef61e
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-2.17.1-postgresql-14
+Version: 2.17.1~debian12
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 20241
+Depends: timescaledb-2-loader-postgresql-14 (>= 2.17.1~), postgresql-14, libc6 (>= 2.17)
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.17.1-postgresql-14/timescaledb-2-2.17.1-postgresql-14_2.17.1~debian12_amd64.deb
+Size: 2780144
+SHA256: 57b51cc9eefd42e24f7579de0c3b72f8c6b526c42e0a836c2bd9fffae3e9c418
+SHA1: e566eafe1cbabb5a7e026be62c5fb45ab0980987
+MD5sum: 6b6ddd001cc6d1ad8d29b3c204197410
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-2.17.1-postgresql-15
+Version: 2.17.1~debian12
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 20379
+Depends: timescaledb-2-loader-postgresql-15 (>= 2.17.1~), postgresql-15 (>= 15.1), libc6 (>= 2.17)
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.17.1-postgresql-15/timescaledb-2-2.17.1-postgresql-15_2.17.1~debian12_amd64.deb
+Size: 2828124
+SHA256: 20672b12dff7abea34ab70b83a58556036bb0583b1e66804c1c17e7de6489548
+SHA1: 33d4397fb98991c78c8a8984a30a238f7ef274a7
+MD5sum: ff3592a798045fbc35d59cb74dc39a6f
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-2.17.1-postgresql-16
+Version: 2.17.1~debian12
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 20702
+Depends: timescaledb-2-loader-postgresql-16 (>= 2.17.1~), postgresql-16 (>= 16.0), libc6 (>= 2.17)
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.17.1-postgresql-16/timescaledb-2-2.17.1-postgresql-16_2.17.1~debian12_amd64.deb
+Size: 2928896
+SHA256: 39c4b52b021d5bf3a428fc5a0fffa7c1c688ddf1601422e5fcca6d07fc7ea3b4
+SHA1: e731a6c26abb1882c9e872ed14c826010c4e6e8d
+MD5sum: 7ef35945eb6340f08eb3888040f5b68c
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-2.17.1-postgresql-17
+Version: 2.17.1~debian12
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 21212
+Depends: timescaledb-2-loader-postgresql-17 (>= 2.17.1~), postgresql-17 (>= 1n.0), libc6 (>= 2.17)
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.17.1-postgresql-17/timescaledb-2-2.17.1-postgresql-17_2.17.1~debian12_amd64.deb
+Size: 3025856
+SHA256: 17bf4566caa86f44ac7bc4f3739a118e13a7e8b1d300ffc55aa35240a07997f6
+SHA1: 1816251e0f51cca55eb2a7a35b27ef6dc20b62e4
+MD5sum: a428cd812be31ad44ca1489341e64b80
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-loader-postgresql-12
+Source: timescaledb-2-2.11.2-postgresql-12
+Version: 2.11.2~debian12
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 244
+Depends: postgresql-12, libc6 (>= 2.4)
+Recommends: timescaledb-tools
+Conflicts: timescaledb-loader-postgresql-12
+Breaks: timescaledb-postgresql-12 (<< 1.0.0)
+Replaces: timescaledb-postgresql-12 (<< 1.0.0)
+Provides: timescaledb-loader-postgresql-12
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.11.2-postgresql-12/timescaledb-2-loader-postgresql-12_2.11.2~debian12_amd64.deb
+Size: 87840
+SHA256: f038c0837f2d513adc54cd1917c91ea7303f653ca8f54a5e2ee16e73ffb80b17
+SHA1: 5fde3913f9b1ade40c7eec1f972b60f08dd16cad
+MD5sum: b0202939666c8335e5453b1517964f80
+Description: The loader for TimescaleDB to load individual versions.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-loader-postgresql-13
+Source: timescaledb-2-2.15.3-postgresql-13
+Version: 2.15.3~debian12
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 239
+Depends: postgresql-13, libc6 (>= 2.4)
+Recommends: timescaledb-tools
+Conflicts: timescaledb-loader-postgresql-13
+Breaks: timescaledb-postgresql-13 (<< 1.0.0)
+Replaces: timescaledb-postgresql-13 (<< 1.0.0)
+Provides: timescaledb-loader-postgresql-13
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.15.3-postgresql-13/timescaledb-2-loader-postgresql-13_2.15.3~debian12_amd64.deb
+Size: 84260
+SHA256: d98b9a26a5d6e7ceedae66c109062447f93543f4dc5acbb0ab1cdbf2e4226932
+SHA1: cd03afd4b890cac1da310a620fffe46a11eb3a91
+MD5sum: 4bfc0ae64f444ccfea94a62346f8f972
+Description: The loader for TimescaleDB to load individual versions.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-loader-postgresql-14
+Source: timescaledb-2-2.17.1-postgresql-14
+Version: 2.17.1~debian12
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 246
+Depends: postgresql-14, libc6 (>= 2.4)
+Recommends: timescaledb-tools
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.17.1-postgresql-14/timescaledb-2-loader-postgresql-14_2.17.1~debian12_amd64.deb
+Size: 86952
+SHA256: b7fb47bd2a91610a9f34192f82da3759bb55668b14b6fb2415ab9bb6f2c82722
+SHA1: 1d95f60b5f0c9fcc3902c4f62cc0e04d857c8a3e
+MD5sum: 4ef3205347f7d1de75665edc57e4cbd9
+Description: The loader for TimescaleDB to load individual versions.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-loader-postgresql-15
+Source: timescaledb-2-2.17.1-postgresql-15
+Version: 2.17.1~debian12
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 248
+Depends: postgresql-15 (>= 15.1), libc6 (>= 2.4)
+Recommends: timescaledb-tools
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.17.1-postgresql-15/timescaledb-2-loader-postgresql-15_2.17.1~debian12_amd64.deb
+Size: 87556
+SHA256: 42cd74f185392f2d283ac631e264ea65109b11ccc4b53433ff4b16d522585acd
+SHA1: 64631637d9ab08fda8888068f903046099fe8003
+MD5sum: 40c7ca655122e1f0008d9fea04ee0cb8
+Description: The loader for TimescaleDB to load individual versions.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-loader-postgresql-16
+Source: timescaledb-2-2.17.1-postgresql-16
+Version: 2.17.1~debian12
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 255
+Depends: postgresql-16 (>= 16.0), libc6 (>= 2.4)
+Recommends: timescaledb-tools
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.17.1-postgresql-16/timescaledb-2-loader-postgresql-16_2.17.1~debian12_amd64.deb
+Size: 90708
+SHA256: 7919a0a57d9983a594a6e7bf93d2daac3bb4d647a1d09045fcf0557c678d348f
+SHA1: c8a2d30f20e900fb7f3b644cfde169aa2bbbf80c
+MD5sum: 556fe40b53804f8058e61fd9a538947f
+Description: The loader for TimescaleDB to load individual versions.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-loader-postgresql-17
+Source: timescaledb-2-2.17.1-postgresql-17
+Version: 2.17.1~debian12
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 276
+Depends: postgresql-17 (>= 17.0), libc6 (>= 2.4)
+Recommends: timescaledb-tools
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.17.1-postgresql-17/timescaledb-2-loader-postgresql-17_2.17.1~debian12_amd64.deb
+Size: 98696
+SHA256: aff7549b2baa3172fb9237680c974d88aaaab723766609eb7fe76e3879540a8c
+SHA1: 850c66a578e5f4c369f71b4b6a0ea6d53c9b0a95
+MD5sum: b154687d929f054a625d5756f0fe6405
+Description: The loader for TimescaleDB to load individual versions.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-tools
+Version: 0.17.2~debian12
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 8171
+Depends: libc6 (>= 2.34)
+Suggests: libpq-dev
+Homepage: https://www.timescale.com
+Priority: optional
+Section: misc
+Filename: pool/main/t/timescaledb-tools/timescaledb-tools_0.17.2~debian12_amd64.deb
+Size: 2244472
+SHA256: 9f601b6ca8a147c8f6dd266714f2e28e2cdba7ea5e5ced3307c553b2e7d9cbed
+SHA1: f956398b5ecf308d41b7feeb153dd5af751b7024
+MD5sum: 95612fcc761dce667047f68e6010a1da
+Description: A suite of tools that can be used with TimescaleDB.
 

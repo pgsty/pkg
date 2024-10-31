@@ -16815,3 +16815,214 @@ MD5sum: c903727c510b053f012e94795f1fc0e7
 Description: Simple Chinese Word Segmentation
   SCWS (Simple Chinese Word Segmentation) is a high performance Chinese word segmentation utility.
 
+Package: timescaledb-2-2.15.3-postgresql-13
+Version: 2.15.3~ubuntu24.04
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 21483
+Depends: timescaledb-2-loader-postgresql-13 (>= 2.15.3~), postgresql-13 (>= 13.4), libc6 (>= 2.38), libssl3t64 (>= 3.0.0)
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.15.3-postgresql-13/timescaledb-2-2.15.3-postgresql-13_2.15.3~ubuntu24.04_amd64.deb
+Size: 2721152
+SHA256: 5bfa8c5f501c77fa67f494712885f665de15260e6eef90a36fb66104b0236a2f
+SHA1: 3f409023e9dfedc6d1067a1809205d9e203c50d2
+MD5sum: 9a4428c7f39aad0f1322e1146c64714c
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-2.17.1-postgresql-14
+Version: 2.17.1~ubuntu24.04
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 20365
+Depends: timescaledb-2-loader-postgresql-14 (>= 2.17.1~), postgresql-14, libc6 (>= 2.38)
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.17.1-postgresql-14/timescaledb-2-2.17.1-postgresql-14_2.17.1~ubuntu24.04_amd64.deb
+Size: 3004368
+SHA256: ff8d311b3b273bc9db0140b4d4fdf3d2022af263e5d01d8627fb1a531c8a2668
+SHA1: 454bf80df7957a03c1d22c8954a9ccc2933e8a72
+MD5sum: 010f9eee1c73065d9a1cce5f6fd36b1f
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-2.17.1-postgresql-15
+Version: 2.17.1~ubuntu24.04
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 20526
+Depends: timescaledb-2-loader-postgresql-15 (>= 2.17.1~), postgresql-15 (>= 15.1), libc6 (>= 2.38)
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.17.1-postgresql-15/timescaledb-2-2.17.1-postgresql-15_2.17.1~ubuntu24.04_amd64.deb
+Size: 3056994
+SHA256: 5f92c5b4f75230846876bee043b398feb5a71cf6f0bacdd253b8f65b518209c0
+SHA1: cac0c6275798cebc3735f7415b2f623f26416fe0
+MD5sum: f6b9cd0f4f7f6a5d5e3951b2d64bedf0
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-2.17.1-postgresql-16
+Version: 2.17.1~ubuntu24.04
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 20823
+Depends: timescaledb-2-loader-postgresql-16 (>= 2.17.1~), postgresql-16 (>= 16.0), libc6 (>= 2.38)
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.17.1-postgresql-16/timescaledb-2-2.17.1-postgresql-16_2.17.1~ubuntu24.04_amd64.deb
+Size: 3151576
+SHA256: 86bd57b3d60e2356a805a6d53fbfc3617110fdf89113d77ca222788a07529c51
+SHA1: 79d48259d034fba596b8e3e5b401a86d408b8782
+MD5sum: 08a3e29fd092198ba33b65e1de863288
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-2.17.1-postgresql-17
+Version: 2.17.1~ubuntu24.04
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 21321
+Depends: timescaledb-2-loader-postgresql-17 (>= 2.17.1~), postgresql-17 (>= 1n.0), libc6 (>= 2.38)
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.17.1-postgresql-17/timescaledb-2-2.17.1-postgresql-17_2.17.1~ubuntu24.04_amd64.deb
+Size: 3236872
+SHA256: a5a4fa1823b0c3c3a3d8582eaddf5b2cd0351483c5a82df3afa2c575128b0042
+SHA1: 72987ad824421af57537b1542640cd0240a8045a
+MD5sum: 27aefa925329e973f5cddf91fa663d5a
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-loader-postgresql-13
+Source: timescaledb-2-2.15.3-postgresql-13
+Version: 2.15.3~ubuntu24.04
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 243
+Depends: postgresql-13, libc6 (>= 2.38)
+Recommends: timescaledb-tools
+Conflicts: timescaledb-loader-postgresql-13
+Breaks: timescaledb-postgresql-13 (<< 1.0.0)
+Replaces: timescaledb-postgresql-13 (<< 1.0.0)
+Provides: timescaledb-loader-postgresql-13
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.15.3-postgresql-13/timescaledb-2-loader-postgresql-13_2.15.3~ubuntu24.04_amd64.deb
+Size: 91112
+SHA256: 4c19c636e9b1ab5463360c3b2ccd4932ab45afedd9db7c442d3bfef966e0d4ab
+SHA1: f07f5c7308adeee39b08d5f90d103160096271b3
+MD5sum: 0302343546bbe64aa26d852499420527
+Description: The loader for TimescaleDB to load individual versions.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-loader-postgresql-14
+Source: timescaledb-2-2.17.1-postgresql-14
+Version: 2.17.1~ubuntu24.04
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 253
+Depends: postgresql-14, libc6 (>= 2.38)
+Recommends: timescaledb-tools
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.17.1-postgresql-14/timescaledb-2-loader-postgresql-14_2.17.1~ubuntu24.04_amd64.deb
+Size: 94120
+SHA256: cb3e773e07843aab9738816f82ae00dad89a50ec1bd9d1458c331b2e0899c883
+SHA1: 0c5adb9154be0e10b0a20a9fbb61425664c8f4eb
+MD5sum: 3a7f0d0513cc3b41e012dfb51e88e43c
+Description: The loader for TimescaleDB to load individual versions.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-loader-postgresql-15
+Source: timescaledb-2-2.17.1-postgresql-15
+Version: 2.17.1~ubuntu24.04
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 253
+Depends: postgresql-15 (>= 15.1), libc6 (>= 2.38)
+Recommends: timescaledb-tools
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.17.1-postgresql-15/timescaledb-2-loader-postgresql-15_2.17.1~ubuntu24.04_amd64.deb
+Size: 95404
+SHA256: a14164f24c3cd9763ee20500b1d4e97594e213bd276e5d75472b3a9ac529ebcb
+SHA1: 5945073172269d1f08820810e56f8b230f467082
+MD5sum: eaeeb3d4f806d36b44361d4af35d3391
+Description: The loader for TimescaleDB to load individual versions.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-loader-postgresql-16
+Source: timescaledb-2-2.17.1-postgresql-16
+Version: 2.17.1~ubuntu24.04
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 265
+Depends: postgresql-16 (>= 16.0), libc6 (>= 2.38)
+Recommends: timescaledb-tools
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.17.1-postgresql-16/timescaledb-2-loader-postgresql-16_2.17.1~ubuntu24.04_amd64.deb
+Size: 98400
+SHA256: 624c7ef3d8a13574dab0f3c1d83279ef77039a488254010207c5f247effd4b5b
+SHA1: bdeb277fd60fa17f7d51c260e1aa5c8163eaeab6
+MD5sum: cd8593e82f71718a5be284c7e2959abf
+Description: The loader for TimescaleDB to load individual versions.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-loader-postgresql-17
+Source: timescaledb-2-2.17.1-postgresql-17
+Version: 2.17.1~ubuntu24.04
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 286
+Depends: postgresql-17 (>= 17.0), libc6 (>= 2.38)
+Recommends: timescaledb-tools
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-2.17.1-postgresql-17/timescaledb-2-loader-postgresql-17_2.17.1~ubuntu24.04_amd64.deb
+Size: 108482
+SHA256: 76fae335a667e61222e1648a95ebaaba2b404243060405bd2cd43ddc90691881
+SHA1: 84b83a7ae1963b0f91db6f1e5c8b5657c13057ea
+MD5sum: 9ab521ea071ae139a8d4567448716493
+Description: The loader for TimescaleDB to load individual versions.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-tools
+Version: 0.17.2~ubuntu24.04
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 8171
+Depends: libc6 (>= 2.34)
+Suggests: libpq-dev
+Homepage: https://www.timescale.com
+Priority: optional
+Section: misc
+Filename: pool/main/t/timescaledb-tools/timescaledb-tools_0.17.2~ubuntu24.04_amd64.deb
+Size: 2453662
+SHA256: 2582e30885a6796c0ecd48e2ee6023d9e0cb14cc16dcda3e22613c405c890138
+SHA1: 42fdf238e25e3f9dcf27d24750050496fb0b86f8
+MD5sum: dd0d021bf73646706863ec730f84758d
+Description: A suite of tools that can be used with TimescaleDB.
+
