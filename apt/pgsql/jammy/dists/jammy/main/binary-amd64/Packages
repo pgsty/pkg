@@ -6342,17 +6342,17 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 14
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
 Package: postgresql-14-pg-analytics
-Version: 0.2.1
+Version: 0.2.3
 Architecture: amd64
 Depends: postgresql-14
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-14-pg-analytics/postgresql-14-pg-analytics_0.2.1_amd64.deb
-Size: 9820528
-SHA256: 7c2581f046ed3ae474e8075a0fe4999878750ba53c9ade406494db59b899b778
-SHA1: e526a4ce3b53ea285858d30e4749c90fb709dc88
-MD5sum: 408a6e7eb7b0b37c4dd7a2520a57a81e
+Filename: pool/main/p/postgresql-14-pg-analytics/postgresql-14-pg-analytics_0.2.3_amd64.deb
+Size: 9826756
+SHA256: 7a9d74d3c6fbbc99f91412e83d20d496a332a01d33df2fc7afcfc7caacc346ab
+SHA1: 7d9d50e4a644356c6db9fcdd086df22c651c6f47
+MD5sum: 46fb146b45e66b376aa88f13d9d367a2
 Description: DuckDB-powered analytics for Postgres
 
 Package: postgresql-14-pg-arraymath
@@ -9247,17 +9247,17 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 15
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
 Package: postgresql-15-pg-analytics
-Version: 0.2.1
+Version: 0.2.3
 Architecture: amd64
 Depends: postgresql-15
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-15-pg-analytics/postgresql-15-pg-analytics_0.2.1_amd64.deb
-Size: 9839956
-SHA256: 60b65d391e3675deda73e7676bfe24d218e433897f8dcedeb4a706cc73a2af23
-SHA1: 1490f2d5c8de98ba6c08e927843ad6ee6fb301e0
-MD5sum: a0851eea131a9614ff7d2e1600fed906
+Filename: pool/main/p/postgresql-15-pg-analytics/postgresql-15-pg-analytics_0.2.3_amd64.deb
+Size: 9833904
+SHA256: 84fd845e3544bc0052061cc96eeccef19f70db7ba87523b033fc09182246ce0c
+SHA1: d0c16649bbde077c3fa001839af68f01d9286f4c
+MD5sum: 81c92bb42a904ce382ad83c9e2de7346
 Description: DuckDB-powered analytics for Postgres
 
 Package: postgresql-15-pg-arraymath
@@ -12173,17 +12173,17 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 16
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
 Package: postgresql-16-pg-analytics
-Version: 0.2.1
+Version: 0.2.3
 Architecture: amd64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-analytics/postgresql-16-pg-analytics_0.2.1_amd64.deb
-Size: 9830324
-SHA256: daf8921a1027198fb9bc12fa1b5330e405b85734ca4f233db4491e5c14f3dc2f
-SHA1: f005a48b0aaa0e5028155daae4aca4494bc9bd30
-MD5sum: 55572cbc233c6fc19137576ed0c9c6f4
+Filename: pool/main/p/postgresql-16-pg-analytics/postgresql-16-pg-analytics_0.2.3_amd64.deb
+Size: 9827768
+SHA256: e8b7fb7502f38b186b851a590a9d56e6c5c80f6c58b092ad5d1ec18313427c4a
+SHA1: c58dc7ff69cc3760b420f23784d9adb193cf8537
+MD5sum: 48dd37cce6de4a78bdf0455db6b6a96c
 Description: DuckDB-powered analytics for Postgres
 
 Package: postgresql-16-pg-arraymath
@@ -15066,17 +15066,17 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 17
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
 Package: postgresql-17-pg-analytics
-Version: 0.2.1
+Version: 0.2.3
 Architecture: amd64
 Depends: postgresql-17
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-17-pg-analytics/postgresql-17-pg-analytics_0.2.1_amd64.deb
-Size: 9829344
-SHA256: ed4e32f1846368ef0cb370143e060af7d8709c4a714d793747dd907f19ca737b
-SHA1: 244d4b61e932f5d27de6810b4342258493eaeefd
-MD5sum: 7e4afc589562ac05c1cf4112beda7f1e
+Filename: pool/main/p/postgresql-17-pg-analytics/postgresql-17-pg-analytics_0.2.3_amd64.deb
+Size: 9846396
+SHA256: 43787114a862cec316b3d292385762de67afbabd9a15770ace0a5010ce0ce205
+SHA1: eda48dbea917ba78f0f064162f01dda982a951de
+MD5sum: a3d2be9329824d5f21dc7921a5a848fa
 Description: DuckDB-powered analytics for Postgres
 
 Package: postgresql-17-pg-arraymath
@@ -16958,111 +16958,6 @@ MD5sum: bcdb566ec39010151114de4648a2a9ed
 Description: Open-source full-text search of Chinese language
   zhparser is a PostgreSQL extension for full-text search of Chinese language (Mandarin Chinese).
   It implements a Chinese language parser base on the Simple Chinese Word Segmentation(SCWS).
-
-Package: postgresql-pgml-12
-Version: 2.9.3
-Architecture: amd64
-Depends: postgresql-12, libopenblas-dev, postgresql-server-dev-12, python3, python3-dev, libpython3-dev
-Maintainer: PostgresML <team@postgresml.org>
-Homepage: https://postgresml.org
-Priority: optional
-Section: database
-Filename: pool/main/p/postgresql-pgml-12/postgresql-pgml-12_2.9.3_amd64.deb
-Size: 6685954
-SHA256: 85b6f8e3a7389ffdaf25a7d7958b13bebe43839583dad72c34dc461ab077d170
-SHA1: 839a7fc08832c0fdae3f08944f3fb5b57a501766
-MD5sum: df43bf5132b2f6544298074eed236a31
-Description: PostgresML - machine learning with PostgreSQL
- PostgresML is a PostgreSQL extension that allows to do machine
- learning directly in the database. It allows to both train
- algorithms on tables or views, and to predict novel datapoints
- using only SQL.
- The extension is written in Rust using tcdi/pgrx with some additional
- functionality written in Python & PlPython.
-
-Package: postgresql-pgml-13
-Version: 2.9.3
-Architecture: amd64
-Depends: postgresql-13, libopenblas-dev, postgresql-server-dev-13, python3, python3-dev, libpython3-dev
-Maintainer: PostgresML <team@postgresml.org>
-Homepage: https://postgresml.org
-Priority: optional
-Section: database
-Filename: pool/main/p/postgresql-pgml-13/postgresql-pgml-13_2.9.3_amd64.deb
-Size: 6681678
-SHA256: 20955fbc46cab29d7ea34605910fca9f035a2e981b5dbeca399734b0326b9c3d
-SHA1: 97de041ecfb5f449701e1439ca64ec71b94605e3
-MD5sum: d06b301c9a378c8aafe8501e55b83f8f
-Description: PostgresML - machine learning with PostgreSQL
- PostgresML is a PostgreSQL extension that allows to do machine
- learning directly in the database. It allows to both train
- algorithms on tables or views, and to predict novel datapoints
- using only SQL.
- The extension is written in Rust using tcdi/pgrx with some additional
- functionality written in Python & PlPython.
-
-Package: postgresql-pgml-14
-Version: 2.9.3
-Architecture: amd64
-Depends: postgresql-14, libopenblas-dev, postgresql-server-dev-14, python3, python3-dev, libpython3-dev
-Maintainer: PostgresML <team@postgresml.org>
-Homepage: https://postgresml.org
-Priority: optional
-Section: database
-Filename: pool/main/p/postgresql-pgml-14/postgresql-pgml-14_2.9.3_amd64.deb
-Size: 6686352
-SHA256: 898883bc2986365e5b75c282cb01eb871bae9f05da6b72987ec4d59fd81049b1
-SHA1: 0c2cda3c5e917a946db5c65dbb1b524ddb1ee028
-MD5sum: 0b08ab9c8c5698245cac483b7dae1e9a
-Description: PostgresML - machine learning with PostgreSQL
- PostgresML is a PostgreSQL extension that allows to do machine
- learning directly in the database. It allows to both train
- algorithms on tables or views, and to predict novel datapoints
- using only SQL.
- The extension is written in Rust using tcdi/pgrx with some additional
- functionality written in Python & PlPython.
-
-Package: postgresql-pgml-15
-Version: 2.9.3
-Architecture: amd64
-Depends: postgresql-15, libopenblas-dev, postgresql-server-dev-15, python3, python3-dev, libpython3-dev
-Maintainer: PostgresML <team@postgresml.org>
-Homepage: https://postgresml.org
-Priority: optional
-Section: database
-Filename: pool/main/p/postgresql-pgml-15/postgresql-pgml-15_2.9.3_amd64.deb
-Size: 6679932
-SHA256: e9f5dbabf7b9ec8c58c8da41c9a37af40c564be2c9343a1b6f75544e43cc2672
-SHA1: 4a3a17912b799dbc8f2f02bbdd176dec16160cbd
-MD5sum: a8c795465f4ca572fe9574d3a995140e
-Description: PostgresML - machine learning with PostgreSQL
- PostgresML is a PostgreSQL extension that allows to do machine
- learning directly in the database. It allows to both train
- algorithms on tables or views, and to predict novel datapoints
- using only SQL.
- The extension is written in Rust using tcdi/pgrx with some additional
- functionality written in Python & PlPython.
-
-Package: postgresql-pgml-16
-Version: 2.9.3
-Architecture: amd64
-Depends: postgresql-16, libopenblas-dev, postgresql-server-dev-16, python3, python3-dev, libpython3-dev
-Maintainer: PostgresML <team@postgresml.org>
-Homepage: https://postgresml.org
-Priority: optional
-Section: database
-Filename: pool/main/p/postgresql-pgml-16/postgresql-pgml-16_2.9.3_amd64.deb
-Size: 6682738
-SHA256: eeec7cd82736d712b027f5eca558539d87eb181166b54c2a757d3374a8b4ec79
-SHA1: 288b3d716941995979f2760f1510e5be724ecbd0
-MD5sum: 283a088e488d402b073cbc613006bb9a
-Description: PostgresML - machine learning with PostgreSQL
- PostgresML is a PostgreSQL extension that allows to do machine
- learning directly in the database. It allows to both train
- algorithms on tables or views, and to predict novel datapoints
- using only SQL.
- The extension is written in Rust using tcdi/pgrx with some additional
- functionality written in Python & PlPython.
 
 Package: redis
 Version: 6:7.2.6-1rl1~jammy1
