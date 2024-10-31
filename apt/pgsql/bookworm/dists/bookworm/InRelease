@@ -4,44 +4,44 @@ Hash: SHA256
 Origin: Pigsty
 Label: Pigsty PGSQL
 Codename: bookworm
-Date: Thu, 31 Oct 2024 22:37:02 UTC
+Date: Thu, 31 Oct 2024 23:08:29 UTC
 Architectures: amd64 arm64
 Components: main
 Description: pigsty apt repository for debian 12
 MD5Sum:
- 96cc2ffbb212ddae009029d7787e4dcf 787417 main/binary-amd64/Packages
- 13161a441b44ba6623ca330ecac25b4c 222332 main/binary-amd64/Packages.gz
+ b36ee425708971d389ecfe410e226277 787506 main/binary-amd64/Packages
+ 0b73df53dce0368871c9cb1f85be3743 222375 main/binary-amd64/Packages.gz
  05ff0d27e80014f75d65fcd4773761b8 120 main/binary-amd64/Release
  b06105a4edb1ab462ef8cad9d4ba1baa 18360 main/binary-arm64/Packages
  1ef7263182d483293f4d66631e1beae7 4631 main/binary-arm64/Packages.gz
  4ba97c199ff1bf556636dca2fa102fd7 120 main/binary-arm64/Release
 SHA1:
- 7a5ed22ba6f7448942b323697f90b407f066636d 787417 main/binary-amd64/Packages
- cb2f812fb5edcdad5739e0119bb042df7087d0cf 222332 main/binary-amd64/Packages.gz
+ 4810eb3f23fba82bd3140726f4823010669403a6 787506 main/binary-amd64/Packages
+ cf98eaf13dd48cd1e497feabbefce0c06d041409 222375 main/binary-amd64/Packages.gz
  38c45f87567a9074e476a2920aa5d594f00e4ffd 120 main/binary-amd64/Release
  4196a601fa2321cd6cc32fb6008d26eafc5336d5 18360 main/binary-arm64/Packages
  6b033d940aa7fc7e7f47948c903d0a9e6dd9bf83 4631 main/binary-arm64/Packages.gz
  789a0d87520489e371f388175d30fa52a8643a58 120 main/binary-arm64/Release
 SHA256:
- 49b7952e8c17a2a59cd5410fd1b19b79877a8c38a643487f36b3461e9e048001 787417 main/binary-amd64/Packages
- f813fbad6bcbf805c073022c05fb7fe444076bd3d6f4bffa3b60db0c0c59cb9d 222332 main/binary-amd64/Packages.gz
+ a22ca236bcae8fec8e35dc1621c3be489834f804aad1a1ff9600e56cd667dbac 787506 main/binary-amd64/Packages
+ 602a1e2dfdb22bc0d099ddc5cb15560462d3ef009dc46234ba575882e92d4586 222375 main/binary-amd64/Packages.gz
  5f2931fd66418a72660c45f9de6b7117635244edb08681bdac30d79de4b74b83 120 main/binary-amd64/Release
  a88e1042cfc28e1e10b64eb7a0a25506dda5cd3bae60de821b1e563f547178a7 18360 main/binary-arm64/Packages
  6cbfdce86aefc6916d1233d5e8cfe7c57ade1bfdd99fa6c8be3dcd424f84cd95 4631 main/binary-arm64/Packages.gz
  ec0250476e050c9b46c69624a17f67fb20f9545cb54d7a83977a6fbfa5a5b3fc 120 main/binary-arm64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEElZKnvHpoLnMzN24J55Ndjbm9iyAFAmckBo8ACgkQ55Ndjbm9
-iyAJgQ//RrwyFlEUGgN5LbNnwO73RjmgGCvSFF4Piwn8fcAQzaHkh3maVu4KFIwN
-loWAm8Yfa3PHSvpMOErAZ3I4NvmZoAwc3DJDfyYhRJqx9M4+PuzBpYGm0zCHSL81
-Q3N6bA08fSW+lIM7b4EQ635mCrSv9dvbBHB/rIN+lhBEUdKUEbSzKxSNOCeRcmRc
-AZS9AQ/krub8oBmL4392dHLqmWl1yE/5a9wjAIuXKl9w93z3cpdDippaienMMV6F
-fzN+3cjHNWin+7tJYUkLg8gq+j6sYMxnVaEhPP58RKLYsHv1ji0LwDk+fZVc4B2P
-6JdAFmzn8yi2w6aYI6WoGYtBKavNPHwMSnU+9g4UvjtNzZY2tk1MdNXtXoprlCRa
-sbxwZo6bkfPRlvzXDYDpngZnoHdRoDZaG8RJZgx0uFg/c/TmEj+cn1LUSlA0/uKP
-EgE8h5R3Kh9JtxmZU7gyje9Go95+7ahDLGn/xh8A+EBpGXFG82ppVmn1zrHkGVXj
-1NiVDYQtsSiX712n8Qzg74dvbRj395ReGIyKUnanIUPiJtd0GhvpjNcpqVMLU9EW
-kL+Jzf9IWhSmSf7dXEEgsKLaa2dpgT/mY13rdMqzHS0AVjU+aDNZdJNbWAy2OdTO
-PvNPEyCTJaAdt5hMF7c50G2AwM96/nEJkhTcrnnkUDZGPxrhPcw=
-=KJyc
+iQIzBAEBCAAdFiEElZKnvHpoLnMzN24J55Ndjbm9iyAFAmckDe4ACgkQ55Ndjbm9
+iyA5jQ/+Jnj1J3dwC3Zdy7IfT7dP57A+BB85z8khRvjexthgl2OxBLY+6QWFE/+s
+r8E7MBWvqOcmX9gkIRFOxlhBKqK/92bMY8JEMdv8m0YotU9ptRiwfVyT6qpToQD/
+5jTJmvchmTraeII1WIVrCZs1ihCs+kbjgXoApanSsAqzs73pUyfGokaMBYcm8CVJ
+qD45k7g+4lRcsEyvKdQL9rGaFq5JQoWBTnN84XuP6rZfTTIJi0eOqKsstsJ+VoC+
+tLAZy0+aSruAyIuIIusUsenQIYmmGxWd0CIe9My+uKoX8Bm+nA0SFt4U49rZMJ9G
+rNWUPmzHEU1KRlEGMrvO6QzF9bL8mbOKaEboT6/493FAN18addbHpmu+kyTQqNow
+9/SrC8tUnQh8UDxi8Fudnu/jQ1a9NB+DZoxJa8zddPb+7NzgRjcqdJoPPOBBTDS+
+a2faLswZENtr6dWJqRh9wvKjlJYySnDJojHJSXqH2LUw92zWGoQ6OpZ5mndliYEp
+Ji9VNTkwjYfaerUd/1uxVXzNE0veAicSnKCkobJW4CaEv0VI/JNgCpvEd62Rkiij
+nepXiKnSb38EDWspxGO+OQbCv0sHCp4p5enowY/2+BVM/pm8w2FuGm5WfiLiEZlD
+q0GZzaEDrT9/8FDuk12JowJGxlSq2owP7xmfbI4wiRlsHV3HjJ8=
+=G0Io
 -----END PGP SIGNATURE-----

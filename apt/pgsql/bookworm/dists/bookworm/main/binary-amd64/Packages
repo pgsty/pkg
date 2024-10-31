@@ -4412,25 +4412,6 @@ Description: A postgres extension to avoid accidental mistakes
   pg_savior is a PostgreSQL extension designed to prevent accidental data loss
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
-Package: postgresql-13-pg-smtp-client
-Source: pg-smtp-client
-Version: 0.1.0-1PIGSTY~bookworm
-Architecture: amd64
-Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 16
-Depends: postgresql-13
-Provides: postgresql-pg-smtp-client
-Homepage: https://github.com/Vonng/pg_smtp_client
-Priority: optional
-Section: database
-Filename: pool/main/p/pg-smtp-client/postgresql-13-pg-smtp-client_0.1.0-1PIGSTY~bookworm_amd64.deb
-Size: 2000
-SHA256: c155cb2a380af93aa0d264ac00170f4532a8c34bd047c7a64628cb4605ff11b9
-SHA1: 6de9e3eabeb045337858bc2399840d1d6d412191
-MD5sum: 06849d8dad6da5dd0afd6def3b6c4d21
-Description: PostgreSQL extension to send email using SMTP
-  Sending mail from PostgreSQL
-
 Package: postgresql-13-pg-sqlog
 Source: pg-sqlog
 Version: 3.1.9-1PIGSTY~bookworm
@@ -7278,20 +7259,20 @@ Description: Postgres Extension for JWT Sessions
 
 Package: postgresql-14-pg-smtp-client
 Source: pg-smtp-client
-Version: 0.1.0-1PIGSTY~bookworm
+Version: 0.2.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 1154
+Installed-Size: 1014
 Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0)
 Provides: postgresql-pg-smtp-client
-Homepage: https://github.com/Vonng/pg_smtp_client
+Homepage: https://github.com/brianpursley/pg_smtp_client
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-smtp-client/postgresql-14-pg-smtp-client_0.1.0-1PIGSTY~bookworm_amd64.deb
-Size: 395600
-SHA256: a02c57de7721bec96981812d1c7cb109a9a0c33c2154d06c14ac67ac52076be3
-SHA1: 70437bb2260f697e4bdbea6f6d23f08ac2bf8c16
-MD5sum: 2009e8633dc707279157541794826d56
+Filename: pool/main/p/pg-smtp-client/postgresql-14-pg-smtp-client_0.2.0-1PIGSTY~bookworm_amd64.deb
+Size: 353260
+SHA256: 7695f5ac5917d1e3e2392b1e4927944f62ff72b34d9681e012bdadc7e2d703c1
+SHA1: 60045751c56e12680ab754bf74345e154558d623
+MD5sum: 2d5fcd7a278035f451a9ebfab5d93948
 Description: PostgreSQL extension to send email using SMTP
   Sending mail from PostgreSQL
 
@@ -10224,20 +10205,20 @@ Description: Postgres Extension for JWT Sessions
 
 Package: postgresql-15-pg-smtp-client
 Source: pg-smtp-client
-Version: 0.1.0-1PIGSTY~bookworm
+Version: 0.2.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 1154
+Installed-Size: 1014
 Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0)
 Provides: postgresql-pg-smtp-client
-Homepage: https://github.com/Vonng/pg_smtp_client
+Homepage: https://github.com/brianpursley/pg_smtp_client
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-smtp-client/postgresql-15-pg-smtp-client_0.1.0-1PIGSTY~bookworm_amd64.deb
-Size: 395512
-SHA256: c21dcd059d76ebaf650e60945e8a8900cccac0643a298e4befdabf0b4bdff286
-SHA1: d7bf47891810f6963f39ea3b746077524ffdc931
-MD5sum: c6e051d5405127ab096736c699cc6b98
+Filename: pool/main/p/pg-smtp-client/postgresql-15-pg-smtp-client_0.2.0-1PIGSTY~bookworm_amd64.deb
+Size: 353092
+SHA256: 836987b0831cbd284c28c4f1809a0be0d6585919f44f9b8d4a26195aa81c06dd
+SHA1: b51405b847a4ea94568ac6c760908305e4281454
+MD5sum: 1b8d2c09c25652068cea70ff43e1e730
 Description: PostgreSQL extension to send email using SMTP
   Sending mail from PostgreSQL
 
@@ -13163,20 +13144,20 @@ Description: Postgres Extension for JWT Sessions
 
 Package: postgresql-16-pg-smtp-client
 Source: pg-smtp-client
-Version: 0.1.0-1PIGSTY~bookworm
+Version: 0.2.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 1154
+Installed-Size: 1014
 Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0)
 Provides: postgresql-pg-smtp-client
-Homepage: https://github.com/Vonng/pg_smtp_client
+Homepage: https://github.com/brianpursley/pg_smtp_client
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-smtp-client/postgresql-16-pg-smtp-client_0.1.0-1PIGSTY~bookworm_amd64.deb
-Size: 395732
-SHA256: e4b57a0c7b17eb64d8c6f36240f3dab615283efc379be054bf8ea12d5cba7511
-SHA1: 477f78aa3d9e2eafc1ad7aa6fa13aca46c2d91cf
-MD5sum: 05e69ec08eaebb6822ef8e1169a6ca5b
+Filename: pool/main/p/pg-smtp-client/postgresql-16-pg-smtp-client_0.2.0-1PIGSTY~bookworm_amd64.deb
+Size: 353176
+SHA256: 0c63760b9d348da0abc839d52059fa7399c7e8e766cf6a55886a5ff2fe9aa42c
+SHA1: 6a8ab267da1cb959d4ff7b3e02c9358f458b8d54
+MD5sum: 5c8c4a7d6fd82ef81bc2c71513882dcb
 Description: PostgreSQL extension to send email using SMTP
   Sending mail from PostgreSQL
 
@@ -16017,6 +15998,25 @@ MD5sum: b48e12e3eb8824ea0dbd0d48d79661cf
 Description: Postgres Extension for JWT Sessions
   pg_session_jwt is a PostgreSQL extension designed to handle authenticated sessions through a JWT.
   This JWT is then verified against a JWK (JSON Web Key) to ensure its authenticity.
+
+Package: postgresql-17-pg-smtp-client
+Source: pg-smtp-client
+Version: 0.2.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 1014
+Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0)
+Provides: postgresql-pg-smtp-client
+Homepage: https://github.com/brianpursley/pg_smtp_client
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-smtp-client/postgresql-17-pg-smtp-client_0.2.0-1PIGSTY~bookworm_amd64.deb
+Size: 353512
+SHA256: ba169489cd9e9cc98f39dc26dfbc50cbc4598a6a401a1ba79d3efb463626d029
+SHA1: 73c1d2b73441f858fcd50093ca664438bb04d787
+MD5sum: 3793e6a2dd1a696efdfba7009100808d
+Description: PostgreSQL extension to send email using SMTP
+  Sending mail from PostgreSQL
 
 Package: postgresql-17-pg-sqlog
 Source: pg-sqlog

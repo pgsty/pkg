@@ -4479,25 +4479,6 @@ Description: A postgres extension to avoid accidental mistakes
   pg_savior is a PostgreSQL extension designed to prevent accidental data loss
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
-Package: postgresql-13-pg-smtp-client
-Source: pg-smtp-client
-Version: 0.1.0-1PIGSTY~jammy
-Architecture: amd64
-Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 16
-Depends: postgresql-13
-Provides: postgresql-pg-smtp-client
-Homepage: https://github.com/Vonng/pg_smtp_client
-Priority: optional
-Section: database
-Filename: pool/main/p/pg-smtp-client/postgresql-13-pg-smtp-client_0.1.0-1PIGSTY~jammy_amd64.deb
-Size: 1876
-SHA256: 5638ed7712e189e5c93a7fddf978c841deded7a119e63749f059423d06317485
-SHA1: da0aa77d683fcf18876f6d1f849e445418b0fd7b
-MD5sum: 9d5258999128722d26799fa234ba459e
-Description: PostgreSQL extension to send email using SMTP
-  Sending mail from PostgreSQL
-
 Package: postgresql-13-pg-sqlog
 Source: pg-sqlog
 Version: 3.1.9-1PIGSTY~jammy
@@ -7345,20 +7326,20 @@ Description: Postgres Extension for JWT Sessions
 
 Package: postgresql-14-pg-smtp-client
 Source: pg-smtp-client
-Version: 0.1.0-1PIGSTY~jammy
+Version: 0.2.0-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 1154
+Installed-Size: 1014
 Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1)
 Provides: postgresql-pg-smtp-client
-Homepage: https://github.com/Vonng/pg_smtp_client
+Homepage: https://github.com/brianpursley/pg_smtp_client
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-smtp-client/postgresql-14-pg-smtp-client_0.1.0-1PIGSTY~jammy_amd64.deb
-Size: 447238
-SHA256: 45d30f5ea249747c8e483e87ce095b788c6ff68d6a5b2664324cd476372c445e
-SHA1: d52ebd8f0696fd7331802f5d1672d13a126d5774
-MD5sum: 9048f4b446eaf78ac9d4166c2aac84b6
+Filename: pool/main/p/pg-smtp-client/postgresql-14-pg-smtp-client_0.2.0-1PIGSTY~jammy_amd64.deb
+Size: 389556
+SHA256: 2b66ebeac2a7d96e8006395de7f3bee5879fc39f48326011dbe1ae5090d4c59c
+SHA1: 6cdd0cef634b4ffe6efb64f69bc977b4ebcf8198
+MD5sum: 07e1e1aa5aa5ce3005218acc1d1938a5
 Description: PostgreSQL extension to send email using SMTP
   Sending mail from PostgreSQL
 
@@ -10291,20 +10272,20 @@ Description: Postgres Extension for JWT Sessions
 
 Package: postgresql-15-pg-smtp-client
 Source: pg-smtp-client
-Version: 0.1.0-1PIGSTY~jammy
+Version: 0.2.0-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 1154
+Installed-Size: 1014
 Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1)
 Provides: postgresql-pg-smtp-client
-Homepage: https://github.com/Vonng/pg_smtp_client
+Homepage: https://github.com/brianpursley/pg_smtp_client
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-smtp-client/postgresql-15-pg-smtp-client_0.1.0-1PIGSTY~jammy_amd64.deb
-Size: 447334
-SHA256: b7961748b4c161c67aa7b072614c7804ebb954d5e350b3ed1a833b30f8442e13
-SHA1: c4b99d48a38979537ef6f4101f7532f0a85e9766
-MD5sum: 7580089c7a20b37d3671dc0e940e623e
+Filename: pool/main/p/pg-smtp-client/postgresql-15-pg-smtp-client_0.2.0-1PIGSTY~jammy_amd64.deb
+Size: 388794
+SHA256: 4a4eb38bfe97113a6c4740388253fe93a7ef433e643b298379996d3538a257ad
+SHA1: c6a496c58ab726df48b8ebab2cc7d78ce7b37a0f
+MD5sum: 7329b9eb0ba0bac7997154a7592ea8e9
 Description: PostgreSQL extension to send email using SMTP
   Sending mail from PostgreSQL
 
@@ -13251,20 +13232,20 @@ Description: Postgres Extension for JWT Sessions
 
 Package: postgresql-16-pg-smtp-client
 Source: pg-smtp-client
-Version: 0.1.0-1PIGSTY~jammy
+Version: 0.2.0-1PIGSTY~jammy
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 1154
+Installed-Size: 1014
 Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1)
 Provides: postgresql-pg-smtp-client
-Homepage: https://github.com/Vonng/pg_smtp_client
+Homepage: https://github.com/brianpursley/pg_smtp_client
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-smtp-client/postgresql-16-pg-smtp-client_0.1.0-1PIGSTY~jammy_amd64.deb
-Size: 447398
-SHA256: 03eb6524b7f0485dfbd25b4d2b2f2a569c825ab903684765604e0cb90970f57d
-SHA1: c15a5a2a210316ec65e99035f8375039082bde13
-MD5sum: d8cb0b8d3825e52796f1f92a77a59e5f
+Filename: pool/main/p/pg-smtp-client/postgresql-16-pg-smtp-client_0.2.0-1PIGSTY~jammy_amd64.deb
+Size: 389572
+SHA256: 6bd16ee633e30e7962adad28eb5385856bc95b259aed61b7d3f012a34df05218
+SHA1: 4a3d68569115dc8c044599953257a9c50c9c0ddc
+MD5sum: 6d9ec66d62820858ddf28dcc173d7c5e
 Description: PostgreSQL extension to send email using SMTP
   Sending mail from PostgreSQL
 
@@ -16126,6 +16107,25 @@ MD5sum: 0e46eb8fd338a2dd02081cd58f2f818f
 Description: Postgres Extension for JWT Sessions
   pg_session_jwt is a PostgreSQL extension designed to handle authenticated sessions through a JWT.
   This JWT is then verified against a JWK (JSON Web Key) to ensure its authenticity.
+
+Package: postgresql-17-pg-smtp-client
+Source: pg-smtp-client
+Version: 0.2.0-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 1014
+Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1)
+Provides: postgresql-pg-smtp-client
+Homepage: https://github.com/brianpursley/pg_smtp_client
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-smtp-client/postgresql-17-pg-smtp-client_0.2.0-1PIGSTY~jammy_amd64.deb
+Size: 389524
+SHA256: 752a1067b0d76ae98f323bdf3001e473380acb0965551bc54b79f83540491e3d
+SHA1: b6932076321155a9b110d52d0d63b5641f4213ec
+MD5sum: 9c9b001d236845ce9d1b103d3e0e208b
+Description: PostgreSQL extension to send email using SMTP
+  Sending mail from PostgreSQL
 
 Package: postgresql-17-pg-sqlog
 Source: pg-sqlog
