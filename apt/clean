@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# reprepro -b pgsql/noble remove noble
+# reprepro -b pgsql/jammy remove jammy
+# reprepro -b pgsql/focal remove noble
+# reprepro -b pgsql/bookworm remove bookworm
+# reprepro -b pgsql/bullseye remove bullseye
+
+

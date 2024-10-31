@@ -16,21 +16,21 @@ MD5sum: a8ebbc33f8576c8856d6e608a6411e1b
 Description: cri-dockerd is a lightweight implementation of the CRI specification which talks to docker.
 
 Package: haproxy
-Version: 3.0.2-1~bpo11+1
+Version: 3.0.5-1~bpo11+1
 Architecture: amd64
 Maintainer: Debian HAProxy Maintainers <team+haproxy@tracker.debian.org>
-Installed-Size: 5365
+Installed-Size: 5390
 Pre-Depends: dpkg (>= 1.17.14), init-system-helpers (>= 1.54~)
-Depends: libc6 (>= 2.17), libcrypt1 (>= 1:4.1.0), libjemalloc2 (>= 2.1.1), liblua5.3-0, libpcre2-8-0 (>= 10.22), libssl1.1 (>= 1.1.1), adduser, lsb-base (>= 3.0-6)
+Depends: libc6 (>= 2.17), libcrypt1 (>= 1:4.1.0), libjemalloc2 (>= 2.1.1), liblua5.4-0 (>= 5.4.2), libpcre2-8-0 (>= 10.22), libssl1.1 (>= 1.1.1), adduser, lsb-base (>= 3.0-6)
 Suggests: vim-haproxy, haproxy-doc
 Homepage: http://www.haproxy.org/
 Priority: optional
 Section: net
-Filename: pool/main/h/haproxy/haproxy_3.0.2-1~bpo11+1_amd64.deb
-Size: 2535524
-SHA256: 7a1bc3cb0f17cf2b0a50a2cec70979148902872e69247365a8c136deab32eca6
-SHA1: 208da4c83fc6bafd93b9cb25de907ed3f4d26cd0
-MD5sum: aef4e4738794b6be1d9008caa5d4558e
+Filename: pool/main/h/haproxy/haproxy_3.0.5-1~bpo11+1_amd64.deb
+Size: 2548124
+SHA256: 54b83078dce218d20c506ca4e355a2c92faff11d49b8452af20471a0add44192
+SHA1: e94f374c79cda7bfaf4dd4b16dbe04b1f7e9ba2d
+MD5sum: f5c1f338fec760f2b746f1806767d9ec
 Description: fast and reliable load balancing reverse proxy
  HAProxy is a TCP/HTTP reverse proxy which is particularly suited for high
  availability environments. It features connection persistence through HTTP
@@ -61,21 +61,66 @@ Description: Persistent key-value database with network interface (metapackage)
  .
  This package depends on the redis-server package.
 
-Package: redis-server
+Package: redis-redisearch
+Source: redisearch
+Version: 1:1.2.2-4
+Architecture: amd64
+Maintainer: Chris Lamb <lamby@debian.org>
+Installed-Size: 2044
+Depends: redis-server, libc6 (>= 2.29)
+Homepage: https://github.com/goodform/RediSearch
+Priority: optional
+Section: python
+Filename: pool/main/r/redisearch/redis-redisearch_1.2.2-4_amd64.deb
+Size: 1122972
+SHA256: 0bb97c88b96355cf91c16388261eec50538b4713e629401c7fd4d8fedaee01d9
+SHA1: dfa2a64c9fc3d33a718c3b0d9f1dacf5434808d4
+MD5sum: f2796874ef502255cbe22ff8d4cbb502
+Description: Full-text and secondary search index engine module for Redis
+ Redisearch implements a search engine on top of Redis but unlike other search
+ libraries it does not use internal data structures such as sorted sets.
+ .
+ This also enables more advanced features such as exact phrase matching and
+ numeric filtering for text queries that are not possible or efficient with
+ traditional Redis search approaches.
+
+Package: redis-sentinel
 Source: redis
-Version: 6:7.2.5-1rl1~bullseye1
+Version: 6:7.2.6-1rl1~bullseye1
 Architecture: amd64
 Maintainer: Redis Core Team <redis@redis.io>
-Installed-Size: 188
-Depends: lsb-base (>= 3.2-14), redis-tools (= 6:7.2.5-1rl1~bullseye1)
+Installed-Size: 86
+Depends: lsb-base (>= 3.2-14), redis-tools (= 6:7.2.6-1rl1~bullseye1)
 Homepage: https://redis.io/
 Priority: optional
 Section: database
-Filename: pool/main/r/redis/redis-server_7.2.5-1rl1~bullseye1_amd64.deb
-Size: 81192
-SHA256: 341c4e0a0acab6f85901888647a8a5a6f5abf9497bab226e3fdb209063edba26
-SHA1: db0bd9169c65d57c79e5e1be4131e9e3b28c89fd
-MD5sum: 141179b1c11c3f8fd2d86ad68e16288f
+Filename: pool/main/r/redis/redis-sentinel_7.2.6-1rl1~bullseye1_amd64.deb
+Size: 42748
+SHA256: aaf0707a1f21873500e40a19ed35dceb1c153e4f4dc2fb89c93a5f71cf1f9eb5
+SHA1: 42a6e258ec55884ed16d75802b7d039061a32a37
+MD5sum: dae8b1b468d92d0956aba48b4083ca2d
+Description: Persistent key-value database with network interface (monitoring)
+ Redis is a key-value database in a similar vein to memcache but the dataset
+ is non-volatile. Redis additionally provides native support for atomically
+ manipulating and querying data structures such as lists and sets.
+ .
+ This package contains the Redis Sentinel monitoring software.
+
+Package: redis-server
+Source: redis
+Version: 6:7.2.6-1rl1~bullseye1
+Architecture: amd64
+Maintainer: Redis Core Team <redis@redis.io>
+Installed-Size: 188
+Depends: lsb-base (>= 3.2-14), redis-tools (= 6:7.2.6-1rl1~bullseye1)
+Homepage: https://redis.io/
+Priority: optional
+Section: database
+Filename: pool/main/r/redis/redis-server_7.2.6-1rl1~bullseye1_amd64.deb
+Size: 81344
+SHA256: 39c4cb0962b0e86c5efbbe8648bf6e26b8e79725ddffc83ec8b18814438bef50
+SHA1: 51ae9fd234147e04bb8b324c47b68c7c0ebd3eee
+MD5sum: 1795a4d1b0a26397ee2806deb4e45539
 Description: Persistent key-value database with network interface
  Redis is a key-value database in a similar vein to memcache but the dataset
  is non-volatile. Redis additionally provides native support for atomically
@@ -85,10 +130,10 @@ Description: Persistent key-value database with network interface
 
 Package: redis-tools
 Source: redis
-Version: 6:7.2.5-1rl1~bullseye1
+Version: 6:7.2.6-1rl1~bullseye1
 Architecture: amd64
 Maintainer: Redis Core Team <redis@redis.io>
-Installed-Size: 9310
+Installed-Size: 9318
 Depends: adduser, libc6 (>= 2.29), libssl1.1 (>= 1.1.1), libsystemd0
 Suggests: ruby-redis
 Breaks: redis-server (<< 2:2.6.16-1)
@@ -96,11 +141,11 @@ Replaces: redis-server (<< 2:2.6.16-1)
 Homepage: https://redis.io/
 Priority: optional
 Section: database
-Filename: pool/main/r/redis/redis-tools_7.2.5-1rl1~bullseye1_amd64.deb
-Size: 1416416
-SHA256: f93c437447a47cd9591c33a07d47c706b765dd317a453929658f4eab08f365d2
-SHA1: af41d1007f62d0d14c9cf870756b2168d9ff0a79
-MD5sum: c17d86dad4bf604f1fced3e48b44587b
+Filename: pool/main/r/redis/redis-tools_7.2.6-1rl1~bullseye1_amd64.deb
+Size: 1416600
+SHA256: 94127211faa77fe62802fbdc6934613370d6e05e055a2ee7950849081aac83be
+SHA1: 56c7ba9b19b11a99c80832fd64dbefe828df6b81
+MD5sum: bcd16d8e1b27a6a4e573ac74d418618e
 Description: Persistent key-value database with network interface (client)
  Redis is a key-value database in a similar vein to memcache but the dataset
  is non-volatile. Redis additionally provides native support for atomically

@@ -32,9 +32,27 @@
 - EL9: https://rpmfind.net/linux/remi/enterprise/9/redis72/x86_64/
 
 ```bash
-apt download redis=6:7.2.6*
-apt download redis-tools=6:7.2.6*
-apt download redis-server=6:7.2.6*
+apt-get download 'redis=6:7.2.6-1rl1~noble1'
+apt-get download 'redis-tools=6:7.2.6-1rl1~noble1'
+apt-get download 'redis-server=6:7.2.6-1rl1~noble1'
+apt-get download 'redis-sentinel=6:7.2.6-1rl1~noble1'
+apt-get download 'redis-redisearch=1:1.2.2-4'
+
+# jammy
+apt-get download 'redis=6:7.2.6-1rl1~jammy1'
+apt-get download 'redis-tools=6:7.2.6-1rl1~jammy1'
+apt-get download 'redis-server=6:7.2.6-1rl1~jammy1'
+apt-get download 'redis-sentinel=6:7.2.6-1rl1~jammy1'
+apt-get download 'redis-redisearch=1:1.2.2-4'
+#apt-get download redis-stack-server=7.4.0-v1
+
+# bookworm
+apt-get download 'redis=6:7.2.6-1rl1~bookworm1'
+apt-get download 'redis-tools=6:7.2.6-1rl1~bookworm1'
+apt-get download 'redis-server=6:7.2.6-1rl1~bookworm1'
+apt-get download 'redis-sentinel=6:7.2.6-1rl1~bookworm1'
+apt-get download 'redis-redisearch=1:1.2.2-4'
+#apt-get download 'redis-stack-server=6:7.2.6-1rl1~bookworm1'
 ```
 
 **MinIO**
@@ -57,3 +75,14 @@ apt download redis-server=6:7.2.6*
 - EL https://mirrors.tuna.tsinghua.edu.cn/grafana/yum/rpm/Packages/
 - Debian: https://mirrors.tuna.tsinghua.edu.cn/grafana/apt/pool/main/g/grafana/
 
+
+
+**PGML**
+
+```bash
+postgresql-pgml-12
+postgresql-pgml-13
+postgresql-pgml-14
+postgresql-pgml-15
+postgresql-pgml-16
+```

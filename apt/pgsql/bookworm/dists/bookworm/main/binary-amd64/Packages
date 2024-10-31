@@ -16,21 +16,21 @@ MD5sum: c8f096f9c7463d0c55063848d03e003f
 Description: cri-dockerd is a lightweight implementation of the CRI specification which talks to docker.
 
 Package: haproxy
-Version: 3.0.2-1~bpo12+1
+Version: 3.0.5-1~bpo12+1
 Architecture: amd64
 Maintainer: Debian HAProxy Maintainers <team+haproxy@tracker.debian.org>
-Installed-Size: 5407
+Installed-Size: 5430
 Pre-Depends: dpkg (>= 1.17.14), init-system-helpers (>= 1.54~)
-Depends: libc6 (>= 2.34), libcrypt1 (>= 1:4.1.0), libjemalloc2 (>= 2.1.1), liblua5.3-0, libopentracing-c-wrapper0 (>= 1.1.0), libpcre2-8-0 (>= 10.22), libssl3 (>= 3.0.0), adduser, lsb-base (>= 3.0-6)
+Depends: libc6 (>= 2.34), libcrypt1 (>= 1:4.1.0), libjemalloc2 (>= 2.1.1), liblua5.4-0 (>= 5.4.4), libopentracing-c-wrapper0 (>= 1.1.0), libpcre2-8-0 (>= 10.22), libssl3 (>= 3.0.0), adduser, lsb-base (>= 3.0-6)
 Suggests: vim-haproxy, haproxy-doc
 Homepage: http://www.haproxy.org/
 Priority: optional
 Section: net
-Filename: pool/main/h/haproxy/haproxy_3.0.2-1~bpo12+1_amd64.deb
-Size: 2550796
-SHA256: 201c00f8c22d5e626e1d937f9c57f8f25f4e63e827d750fbc8631d7c575e743f
-SHA1: ff9aeda59753e9b923319b33f072367773771fb1
-MD5sum: 0dbbd7267343f8e310d74f0ab3b01b24
+Filename: pool/main/h/haproxy/haproxy_3.0.5-1~bpo12+1_amd64.deb
+Size: 2561984
+SHA256: c8285c9c844e38e84178a49ebefad51f396df60c794bc7f8a3477337ddee143c
+SHA1: 69c5e9c94bab287bab5ae7e1617d166cbb0ca110
+MD5sum: 809294135087a4e0da1d3a1f99c45c73
 Description: fast and reliable load balancing reverse proxy
  HAProxy is a TCP/HTTP reverse proxy which is particularly suited for high
  availability environments. It features connection persistence through HTTP
@@ -80,25 +80,25 @@ Description: In-process SQL OLAP Database Management System
   DuckDB supports arbitrary and nested correlated subqueries, window functions,
   collations, complex types (arrays, structs), and more.
 
-Package: pg-bulkload
-Version: 3.1.21-1PIGSTY~bookworm
+Package: libfq
+Version: 0.6.1-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 684
-Depends: libc6 (>= 2.34), libpq5 (>= 8.3~rc1-1~)
-Provides: pg-bulkload
-Homepage: https://github.com/ossc-db/pg_bulkload
+Installed-Size: 166
+Depends: libc6 (>= 2.14), libfbclient2 (>= 2.5.0.25784~ReleaseCandidate1.ds2)
+Provides: libfq
+Homepage: https://github.com/ibarwick/libfq
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-bulkload/pg-bulkload_3.1.21-1PIGSTY~bookworm_amd64.deb
-Size: 294452
-SHA256: 03eb655169bf9c7a50c0b8767ab6f74e6f504e6a531b99ffae9164cc2cd97195
-SHA1: aa5b0bab8834d1d74dbb9aa9e509e657361ea8e0
-MD5sum: f530ac2b5498db8a2ce28267bc7ebc3c
-Description: High speed data loading utility for PostgreSQL
-  pg_bulkload is a high speed data loading tool for PostgreSQL.
-  pg_bulkload is designed to load huge amount of data to a database. You can load data to table bypassing PostgreSQL shared buffers.
-  pg_bulkload also has some ETL features; input data validation and data transformation. to as many pg_restore jobs.
+Filename: pool/main/libf/libfq/libfq_0.6.1-1PIGSTY~bookworm_amd64.deb
+Size: 36776
+SHA256: a91c2795c0870f512caf29221ce137eb258169e84be8c313167ee0e8afb039c7
+SHA1: 4d162e055d0646eacd39d8707fcdb257541b2eba
+MD5sum: b98f4062a38874af2b66c58937178336
+Description: A wrapper library for Firebird's C API, loosely based on PostgreSQL's libpq
+  libfq provides a number of functions which act as convenience wrappers around the native Firebird C API, which is cumbersome to use.
+  It is loosely based on PostgreSQL's libpq and provides a subset of that API's functions - names beginning with FQ rather than PQ - with more-or-less identical function signatures. It also provides some Firebird-specific functions.
+  While basically functional, libfq is still work-in-progress and the API definitions may change between releases in an incompatible way. USE AT YOUR OWN RISK.
 
 Package: pgcopydb
 Version: 0.16-1PIGSTY~bookworm
@@ -143,20 +143,20 @@ Description: Access Control Lists (ACL) PostgreSQL Extension
 
 Package: postgresql-12-aggs-for-arrays
 Source: aggs-for-arrays
-Version: 1.3.2-1PIGSTY~bookworm
+Version: 1.3.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 119
+Installed-Size: 120
 Depends: postgresql-12, postgresql-12-jit-llvm (>= 16), libc6 (>= 2.14)
 Provides: postgresql-aggs-for-arrays
 Homepage: https://github.com/pjungwir/aggs_for_arrays
 Priority: optional
 Section: database
-Filename: pool/main/a/aggs-for-arrays/postgresql-12-aggs-for-arrays_1.3.2-1PIGSTY~bookworm_amd64.deb
-Size: 44132
-SHA256: bd0575fa7ce6810037e9155f22ec7b3335d2714c894e83edc958d376cc6e6cb4
-SHA1: 272033d99eb8f4b14dfd6868c6ec9512a089e14e
-MD5sum: 2eaf88850976ec58f531e3a293a1b431
+Filename: pool/main/a/aggs-for-arrays/postgresql-12-aggs-for-arrays_1.3.3-1PIGSTY~bookworm_amd64.deb
+Size: 44636
+SHA256: 29db6cfb2c3a8ec5232f6cffb37bb50d5f8c6ee02bd966d76c429b2719503e99
+SHA1: 200b1bfce03ebef27423f23d727608b5dba703c4
+MD5sum: 6bcd9029a598525a8f4ee4a602e3a8e7
 Description: A Postgres extension in C to compute statistics on arrays of numbers
   This Postgres extension provides various functions for operating on arrays, for instance taking the histogram of an array of numbers.
   These functions are useful because if you have a lot values you want to aggregate, queries that fetch each value from a separate row
@@ -166,20 +166,20 @@ Description: A Postgres extension in C to compute statistics on arrays of number
 
 Package: postgresql-12-aggs-for-vecs
 Source: aggs-for-vecs
-Version: 1.3.0-1PIGSTY~bookworm
+Version: 1.3.1-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 294
+Installed-Size: 295
 Depends: postgresql-12, postgresql-12-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-aggs-for-vecs
 Homepage: https://github.com/pjungwir/aggs_for_vecs
 Priority: optional
 Section: database
-Filename: pool/main/a/aggs-for-vecs/postgresql-12-aggs-for-vecs_1.3.0-1PIGSTY~bookworm_amd64.deb
-Size: 88464
-SHA256: 978024e6135bdbd81357826188a97df94f39dab5bec6becbea11661ae8751ed8
-SHA1: 2e0a8980994eb7cd38621f5aad84f5477e872f89
-MD5sum: 91cb64f9e28920b07014fd524bc39e4d
+Filename: pool/main/a/aggs-for-vecs/postgresql-12-aggs-for-vecs_1.3.1-1PIGSTY~bookworm_amd64.deb
+Size: 88532
+SHA256: 4c81611ce5847e1ef30ae40902b37447dc594fda80009067a6e418eb5a1cb227
+SHA1: 2e3e575400b7377901a9324309d3f9e391e1949e
+MD5sum: 4dc5a8ecdd67abf0d251ab41ab23ef17
 Description: Postgres C extension with aggregate functions for array inputs
   This is a C-based Postgres extension offering various aggregate functions
   like min, max, avg, and var_samp that operate on arrays instead of scalars.
@@ -393,18 +393,40 @@ Source: emaj
 Version: 4.4.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 6742
-Depends: postgresql-12
+Installed-Size: 12929
+Depends: postgresql-12, perl:any
 Provides: postgresql-emaj
 Homepage: https://github.com/dalibo/emaj
 Priority: optional
 Section: database
 Filename: pool/main/e/emaj/postgresql-12-emaj_4.4.0-1PIGSTY~bookworm_amd64.deb
-Size: 207048
-SHA256: 28b7543c050b2ac69532a82557d3304a9b647b7b5ad5944c8b20573301c2ed5b
-SHA1: aa0f6bad8d3f283830230a4abb32430add9ceb20
-MD5sum: 7fe126241e9fd3e941ed8e83b9d440e6
+Size: 5527024
+SHA256: b3e2369f1359fb3c048b4f61acec3dcf176a378f247d418e0d91068a67c891a2
+SHA1: 3b15a39c5283e54226c7922ceb1b09e7996f1382
+MD5sum: c2c9e48127afd0e1d79b3eeba7ed60ba
 Description: E-Maj is a PostgreSQL extension that tracks updates on tables sets with rollback capabilities
+
+Package: postgresql-12-firebird-fdw
+Source: firebird-fdw
+Version: 1.4.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 330
+Depends: postgresql-12, postgresql-12-jit-llvm (>= 16), libc6 (>= 2.4), libfq (>= 0.6.1)
+Provides: postgresql-firebird-fdw
+Homepage: https://github.com/ibarwick/firebird_fdw
+Priority: optional
+Section: database
+Filename: pool/main/f/firebird-fdw/postgresql-12-firebird-fdw_1.4.0-1PIGSTY~bookworm_amd64.deb
+Size: 153536
+SHA256: 27372317aaf213217e743854ef7e84f48d8d5db462c73f177e3627977fb99d5b
+SHA1: 71f588ed5804da865a5eddb5f22b9ef74f847d1c
+MD5sum: a3035274e783184b39b6ba618f5f9b51
+Description: A PostgreSQL foreign data wrapper (FDW) for Firebird
+  This is a foreign data wrapper (FDW) to connect PostgreSQL to Firebird. It provides both read (SELECT) and write (INSERT/UPDATE/DELETE) support, as well as pushdown of some operations. While it appears to be working reliably, please be aware this is still very much work-in-progress; USE AT YOUR OWN RISK.
+  firebird_fdw is designed to be compatible with PostgreSQL 9.5 ~ 17. The range of firebird_fdw options available for a particular PostgreSQL version depends on the state of the Foreign Data Wrapper (FDW) API for that version; the more recent the version, the more features will be available. However, not all FDW API features are currently supported.
+  firebird_fdw supports Firebird 2.5 and later. It will probably work with Firebird 2.0 or later, and may work with earlier versions if the disable_pushdowns option is set (see below), but has never been tested with those versions.
+  firebird_fdw is developed against the core PostgreSQL community version and may not be compatible with commercial forks.
 
 Package: postgresql-12-floatvec
 Source: floatvec
@@ -732,10 +754,10 @@ Homepage: https://github.com/munakoiso/logerrors
 Priority: optional
 Section: database
 Filename: pool/main/l/logerrors/postgresql-12-logerrors_2.1.3-1PIGSTY~bookworm_amd64.deb
-Size: 34816
-SHA256: f2ccd6ac90e1e6903cc1b384c1f0ee818a05f960eac8ab17f114db3f1a9c118c
-SHA1: 4ee61f324dd7876ec4e8aef300100b2205918275
-MD5sum: 48abdc67623c053315923618fcc1a851
+Size: 34844
+SHA256: d81b1e1f480666906a39d9d53bbbd93e142ad28601d893ccfbf349e14536314c
+SHA1: 5dd6debd6a2ea3e208ecc5fcabba899aa5221bbb
+MD5sum: 35453608358150860008f859f33f4fc0
 Description: Extension for PostgreSQL for collecting statistics about messages in logfile.
   Configuration variables:
   logerrors.interval - Time between writing statistic to buffer (ms). Default of 5s, max of 60s;
@@ -904,24 +926,6 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 12
   The general idea is to encrypt sequence positions with a Feistel cipher and cycle-walking.
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
-Package: postgresql-12-permuteseq-dbgsym
-Source: permuteseq
-Version: 1.2.2-1PIGSTY~bookworm
-Auto-Built-Package: debug-symbols
-Architecture: amd64
-Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 27
-Depends: postgresql-12-permuteseq (= 1.2.2-1PIGSTY~bookworm)
-Priority: optional
-Section: debug
-Filename: pool/main/p/permuteseq/postgresql-12-permuteseq-dbgsym_1.2.2-1PIGSTY~bookworm_amd64.deb
-Size: 14268
-SHA256: bf9e3465266e20fadd46d8807a45375de4142c4740faa26bcdd3b1b18d54eb44
-SHA1: 9789a9bc588fabc351a7a8dec92275369c2b405d
-MD5sum: 28874104bc613b58e4230c461f8dd85b
-Description: debug symbols for postgresql-12-permuteseq
-Build-Ids: 1f8221aa77222a5b2cc097d3e8e01646c9e1698c
-
 Package: postgresql-12-pg-arraymath
 Source: pg-arraymath
 Version: 1.1-1PIGSTY~bookworm
@@ -985,20 +989,20 @@ Description: PostgreSQL extension to store authentication attempts
 
 Package: postgresql-12-pg-background
 Source: pg-background
-Version: 1.2-1PIGSTY~bookworm
+Version: 1.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 125
+Installed-Size: 141
 Depends: postgresql-12, postgresql-12-jit-llvm (>= 16), libc6 (>= 2.14)
 Provides: postgresql-pg-background
 Homepage: https://github.com/vibhorkum/pg_background
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-background/postgresql-12-pg-background_1.2-1PIGSTY~bookworm_amd64.deb
-Size: 43568
-SHA256: 614f965d3561d4a44bda38ce0fe8a7a961de5d0359d8a734e2ec4944ee576869
-SHA1: e008a1180e2a3fc8a99ec359686bb0eb71304c03
-MD5sum: e66a8af2cc80c92faf924ded112ec836
+Filename: pool/main/p/pg-background/postgresql-12-pg-background_1.3-1PIGSTY~bookworm_amd64.deb
+Size: 46008
+SHA256: 979b10f7aa9ef4d48cb8d7ca9facf24ca69498633fff4873b34cf1985b90c17b
+SHA1: 7373d637585228c80e94d72d92139a1d6a8b0fa7
+MD5sum: b478188c68f3fd50545a07449f599c59
 Description: A simple set of views to see ALL background in a PostgreSQL database
   pg_background is an extension for Postgres 12
   Initially this extension was shared by Robert Haas in PostgreSQL community for demo purpose.
@@ -1016,10 +1020,10 @@ Homepage: https://github.com/Fell-x27/pg_base58
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-base58/postgresql-12-pg-base58_0.0.1-1PIGSTY~bookworm_amd64.deb
-Size: 163812
-SHA256: bfd2d7c92e75f34c41aa8958f26718ff6fa8c93d2abad75d2accdaddbda79d8f
-SHA1: aec01a66da36fee673bbbdc237d5e9472c243c24
-MD5sum: f5267f725a38c6e47a4f809362719c56
+Size: 163848
+SHA256: bf4f13ef5a39c835a985cc16c5cd4a55ed7d284a92453c3045f89cf427ea598b
+SHA1: ba5e31b5ebf27b58b05c536e09fbbf0901131467
+MD5sum: 495fc8afe117e4c2cf9a902648acd473
 Description: Base58 Encoder/Decoder Extension for PostgreSQL
   SELECT base58_encode('hello'::bytea);
   SELECT base58_decode('Cn8eVZg');
@@ -1056,10 +1060,10 @@ Homepage: https://github.com/Fell-x27/pg_cardano
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-cardano/postgresql-12-pg-cardano_1.0.2-1PIGSTY~bookworm_amd64.deb
-Size: 324592
-SHA256: 1c712ed860a03b0ccae667428980a9355cebe20526a49324b1cad793c5f6a113
-SHA1: 8779d1c3d97c0f8f173a00e35c5fbbd3db9015c4
-MD5sum: abc2461df7989cef71cd5362bbbe1bbe
+Size: 324456
+SHA256: e0b2a0898e464b09fa4f8caa97210d3c93133c3af4da05a1915b20e0cb6eca28
+SHA1: 30e64f0dcd64d3e2cdd5087c83a641989db1bb0c
+MD5sum: e9ab92b40e75346cc68021d1d6c62c1d
 Description: A PostgreSQL extension providing a suite of Cardano-related tools, including cryptographic functions, address encoding/decoding, and blockchain data processing.
   This extension is an attempt to create a Swiss Army knife for simplifying the work with binary data in Cardano db-sync, as well as automating some processes.
   It is written in Rust, which ensures high security and excellent performance.
@@ -1213,17 +1217,17 @@ Source: pg-explain-ui
 Version: 0.0.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 2665
-Depends: postgresql-12, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0)
+Installed-Size: 15
+Depends: postgresql-12
 Provides: postgresql-pg-explain-ui
 Homepage: https://github.com/davidgomes/pg-explain-ui
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-explain-ui/postgresql-12-pg-explain-ui_0.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 840732
-SHA256: 9df5cb8471f3119c0d320c6af6206ab9b98a3d6accc2b88c8a49ede179de180c
-SHA1: 680d27accc2d431287f111d9b2593554cf4653cb
-MD5sum: c46733750737fdfa4c46ecad5e5df538
+Size: 1416
+SHA256: 8e16d09d17ab40048b290dab73feed63de502a3ed25dc570caa91d6efbb653ec
+SHA1: ed61e957260a99065ee2e02c6a4103c41f0bc875
+MD5sum: fd2fb6698eaf2e396cbca3fe58c455a6
 Description: A Postgres extension that allows you to easily jump into a visual plan UI for any SQL query
   This is a simple Postgres extension that allows you to easily jump into a visual plan UI for any SQL query.
 
@@ -1414,16 +1418,16 @@ Source: pg-idkit
 Version: 0.2.4-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 812
+Installed-Size: 820
 Depends: postgresql-12, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Homepage: https://github.com/VADOSWARE/pg_idkit
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-idkit/postgresql-12-pg-idkit_0.2.4-1PIGSTY~bookworm_amd64.deb
-Size: 287520
-SHA256: 15bfe678f6448014106f0ddc567d32cd40609b7a8fa7d0fbbe71139e29fdb44b
-SHA1: 27d6e813eb88f546578f25a774a12fe3d13fc758
-MD5sum: aa8697ec61d797c0f4b0d73d19b270af
+Size: 289260
+SHA256: fe7454efdd239fa1aa448535b27c71ef04e7c02b7cddfce9ba41aecc4520814c
+SHA1: 341fb1a472b9a8c466a71bb75afa6a18f4fddaca
+MD5sum: 3f84452ae961b7dc32dd19d633c48a19
 Description: PG extension that generating many popular types of identifiers
   pg_idkit is a Postgres extension for generating many popular types of identifiers:
   uuidv6, uuidv7, nanoid, ksuid, ulid, timeflake, pushid, xid, cuid, cuid2
@@ -1454,17 +1458,17 @@ Source: pg-jsonschema
 Version: 0.3.2-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 3220
+Installed-Size: 3248
 Depends: postgresql-12, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Provides: postgresql-pg-jsonschema
 Homepage: https://github.com/supabase/pg_jsonschema
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-jsonschema/postgresql-12-pg-jsonschema_0.3.2-1PIGSTY~bookworm_amd64.deb
-Size: 960364
-SHA256: 18b439b4aa8103fc4fefa11a4ef4a0f0f5f03c378ef219d1ff323a880b25c6df
-SHA1: e5f7533e0a2922b01e936679974e3ee21a81150e
-MD5sum: e1a804a42125858fb338e89884b7c1ce
+Size: 966880
+SHA256: 440282c08798ba8010d80589e7bce77d52147e28e6a3183e300b9d273d3b8457
+SHA1: f8c052c82322f04b528c13c5add8e6381b6a63c9
+MD5sum: 0b36da7e6dab364cf45abe0053c56e94
 Description: PostgreSQL extension providing JSON Schema validation
   pg_jsonschema is a PostgreSQL extension adding support for JSON schema validation on json and jsonb data types.
 
@@ -1631,10 +1635,10 @@ Homepage: https://github.com/yihong0618/pg_polyline
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-polyline/postgresql-12-pg-polyline_0.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 183524
-SHA256: 04d0d130dc19bf3bdaed68765f8927da43d8ee0e6c3c49efa2a1cb45883caca2
-SHA1: 240d70c711adea9fd437e3bc040ccc3d827e583b
-MD5sum: 4230921906db1aa0ec491cd7699f7416
+Size: 183508
+SHA256: 37c1278b77ee65bb60440bd7eece65a28c7395ec65a8b416808ca0de94c8ce55
+SHA1: b6144a1c1147465204fa6628bb185ae75242fa95
+MD5sum: 9f6c40c0dedde1f895e9c1e7d12d6732
 Description: Fast Google Encoded Polyline encoding & decoding for postgres
   Fast Google Encoded Polyline encoding & decoding for postgres Extension
 
@@ -1828,10 +1832,10 @@ Homepage: https://github.com/HexaCluster/pg_summarize
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-summarize/postgresql-12-pg-summarize_0.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 821704
-SHA256: 3c6c02f027c9827924db3a0ac2e9106dd7743f66e00bea83ad441e8fc9d0225d
-SHA1: 47f3fc28cb1b16e7bd3aff36c40da6777dcc839b
-MD5sum: fcf07614c58fcb1400a641f0efe25893
+Size: 821580
+SHA256: 986ea7f94dbe7ec5461f4b70f5d490ccd496525dfd5862614cba55f5581d4215
+SHA1: b1aa972986d94de59447b4f103ec5b25e4c50047
+MD5sum: dcb0f1313c65b97af487474332a95bb5
 Description: Text Summarization using LLMs. Built using pgrx
   PostgreSQL is a powerful and versatile database management system.
   One of its strengths lies in its extensibility.
@@ -1851,10 +1855,10 @@ Homepage: https://github.com/kelvich/pg_tiktoken
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-tiktoken/postgresql-12-pg-tiktoken_0.0.1-1PIGSTY~bookworm_amd64.deb
-Size: 1380124
-SHA256: 6deabf5aaef99c1a6b428281ec86a708780862b03fec528dfd0a507e3ef3d6ae
-SHA1: 01676de9619652977f2a5e1236a9daf05785db27
-MD5sum: 1c1767945c0d967b4c757baf38b1fca0
+Size: 1379828
+SHA256: d9d74b29b71023d01799c55212bd2c27b2691c2108b7e76d91bd98736c7ddccb
+SHA1: 991cd70bfd0e84590acb993df1bfc8105c56959d
+MD5sum: 4884c208c2c33cd5da4540749fcc7155
 Description: OpenAI tiktoken tokenizer for PostgreSQL 12
   Postgres extension that does input tokenization using OpenAI's tiktoken.
 
@@ -2185,16 +2189,16 @@ Source: pgsmcrypto
 Version: 0.1.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 2341
+Installed-Size: 2345
 Depends: postgresql-12, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Homepage: https://github.com/zhuobie/pgsmcrypto
 Priority: optional
 Section: database
 Filename: pool/main/p/pgsmcrypto/postgresql-12-pgsmcrypto_0.1.0-1PIGSTY~bookworm_amd64.deb
-Size: 653968
-SHA256: a728182a75e066951c5a73be770a0cb986a88aa62908274712bc60677071b61d
-SHA1: ff65e20ff4f6340828c17c1a80eb4456a7bb1e77
-MD5sum: 555adc46c4192c3f23d72cae3ebc4638
+Size: 655164
+SHA256: b2ec71ee88c2c0954fc52c97317f208f14cea68f3a2caf0ff3abc2c133a293e4
+SHA1: 79d89c6ff74a4e46eeb9b8ed5b97b5621b021b55
+MD5sum: 2d5881220d9d4f13a84ad89f2657abe3
 Description: PostgreSQL SM Algorithm Extension
   China National SM algorithm extension for PostgreSQL. SM2 / SM3 / SM4
 
@@ -2251,10 +2255,10 @@ Homepage: https://github.com/darold/pgtt
 Priority: optional
 Section: database
 Filename: pool/main/p/pgtt/postgresql-12-pgtt_4.0-1PIGSTY~bookworm_amd64.deb
-Size: 57344
-SHA256: d06696eb798309de4d669a27ab6e9050d221e4a7b058587e80516ee18b37741c
-SHA1: 2162600833d97b08560184faf6af8ff331bd954a
-MD5sum: 41f82129dd2d824e955f2f822016a445
+Size: 57408
+SHA256: 4ff384843ed3c19e2bfea8073b4755ff8e485752b79e220959040ccbe36e67cf
+SHA1: 92419bb0ef8b0441702cb8a66c206721554fa023
+MD5sum: 79ca98c2415f113dd7acce24238b8845
 Description: Create, manage and use Oracle-style Global Temporary Tables and the others RDBMS in PostgreSQL 12
   pgtt is a PostgreSQL extension to create, manage and use Oracle-style Global Temporary Tables and the others RDBMS.
   The objective of this extension it to provide the Global Temporary Table feature to PostgreSQL waiting for an in core implementation.
@@ -2290,16 +2294,16 @@ Source: plprql
 Version: 1.0.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 6224
+Installed-Size: 6320
 Depends: postgresql-12, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Homepage: https://github.com/kaspermarstal/plprql
 Priority: optional
 Section: database
 Filename: pool/main/p/plprql/postgresql-12-plprql_1.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 1778044
-SHA256: 91667d9ed5e4b66ddcb0436c23c51f5cc5e7301283a1a34f98998d6b0c9286d0
-SHA1: 2fe762aa21a8eae59d5b7080c890c668d45d0ec3
-MD5sum: 5dd7df19a584ad9f4f263b51a419ee01
+Size: 1791324
+SHA256: 72b84ad4744278efa13dbc6db354fe1eb9a5add2158779e3f14136ecdff01366
+SHA1: dde2cfcded7926f6f911a3e20a3c963bcf1edf87
+MD5sum: 34161bd40608f359314f45612023e02e
 Description: PL/PRQL is a PostgreSQL extension that lets you write functions with PRQL.
   PRQL (Pipelined Relational Query Language) is an open source query language for data manipulation and analysis that compiles to SQL.
   PRQL introduces a pipeline concept (similar to Unix pipes) that transforms data line-by-line. The sequential series of transformations
@@ -2510,14 +2514,14 @@ Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 689
 Depends: postgresql-12
 Provides: postgresql-tableversion
-Homepage: http://www.linz.govt.nz
+Homepage: https://github.com/linz/postgresql-tableversion
 Priority: optional
 Section: database
 Filename: pool/main/t/tableversion/postgresql-12-tableversion_1.10.3-1PIGSTY~bookworm_amd64.deb
-Size: 28180
-SHA256: e7f9a9a13580eee2a2908d5a5c3178276b8fd8e180bd1ff987d2d28d3252aeb7
-SHA1: c7aec806232f07cbccfe4ec57d3db4d155aecc05
-MD5sum: 782c9df1f0c38ae92cca7a8b336230df
+Size: 28184
+SHA256: 374353c2e9b0ebac556a9cf50c82f343aa920069dd2fae585ff0b4256e35c8e9
+SHA1: 67bfeb7330b98c661308e04e081ba08eae1f728a
+MD5sum: db5dc3e9c1726526f9e50e7a21f5cc2c
 Description: PostgreSQL table versioning extension, recording row modifications
   and its history. The extension provides APIs for accessing snapshots of a table
   at certain revisions and the difference generated between any two given
@@ -2649,20 +2653,20 @@ Description: Access Control Lists (ACL) PostgreSQL Extension
 
 Package: postgresql-13-aggs-for-arrays
 Source: aggs-for-arrays
-Version: 1.3.2-1PIGSTY~bookworm
+Version: 1.3.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 119
+Installed-Size: 120
 Depends: postgresql-13, postgresql-13-jit-llvm (>= 16), libc6 (>= 2.14)
 Provides: postgresql-aggs-for-arrays
 Homepage: https://github.com/pjungwir/aggs_for_arrays
 Priority: optional
 Section: database
-Filename: pool/main/a/aggs-for-arrays/postgresql-13-aggs-for-arrays_1.3.2-1PIGSTY~bookworm_amd64.deb
-Size: 44060
-SHA256: 6140682984c294f4aa878b64608edb3fe2d26b649431dc0bee941e52ef77fe7a
-SHA1: 62bc59c9dbfbbda333a23fb8a64e33c80f28f030
-MD5sum: 81d84d3a9fa5802a73b6a61445bf6f10
+Filename: pool/main/a/aggs-for-arrays/postgresql-13-aggs-for-arrays_1.3.3-1PIGSTY~bookworm_amd64.deb
+Size: 44544
+SHA256: dfa8453dc9d97d65fc6e7d1deba3d57c606e37d16511230beab1b6059acb554f
+SHA1: 427858842f434f950ed05571e3611b64cbe900af
+MD5sum: fd8def79a9b0dc4d836d6e4d7872dae4
 Description: A Postgres extension in C to compute statistics on arrays of numbers
   This Postgres extension provides various functions for operating on arrays, for instance taking the histogram of an array of numbers.
   These functions are useful because if you have a lot values you want to aggregate, queries that fetch each value from a separate row
@@ -2672,20 +2676,20 @@ Description: A Postgres extension in C to compute statistics on arrays of number
 
 Package: postgresql-13-aggs-for-vecs
 Source: aggs-for-vecs
-Version: 1.3.0-1PIGSTY~bookworm
+Version: 1.3.1-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 295
+Installed-Size: 296
 Depends: postgresql-13, postgresql-13-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-aggs-for-vecs
 Homepage: https://github.com/pjungwir/aggs_for_vecs
 Priority: optional
 Section: database
-Filename: pool/main/a/aggs-for-vecs/postgresql-13-aggs-for-vecs_1.3.0-1PIGSTY~bookworm_amd64.deb
-Size: 88340
-SHA256: 68e050bef833a79897a538bb61c9c92d2a74d0a93fb00541c6450cb0e97eb912
-SHA1: 970d8871ebb8c99c074fee1387c119ec6766fd12
-MD5sum: 982e0bb6b05cd00086e058079e076a41
+Filename: pool/main/a/aggs-for-vecs/postgresql-13-aggs-for-vecs_1.3.1-1PIGSTY~bookworm_amd64.deb
+Size: 88428
+SHA256: 62d9954004d7e7042c474e7afc35327dde214bfeaedd25e2808e4405c518b0fc
+SHA1: 47426ed329006781eed69433af4bb38a95a265f1
+MD5sum: 5055bc552406a0df213b7674045b5a8d
 Description: Postgres C extension with aggregate functions for array inputs
   This is a C-based Postgres extension offering various aggregate functions
   like min, max, avg, and var_samp that operate on arrays instead of scalars.
@@ -2899,18 +2903,40 @@ Source: emaj
 Version: 4.4.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 6742
-Depends: postgresql-13
+Installed-Size: 12929
+Depends: postgresql-13, perl:any
 Provides: postgresql-emaj
 Homepage: https://github.com/dalibo/emaj
 Priority: optional
 Section: database
 Filename: pool/main/e/emaj/postgresql-13-emaj_4.4.0-1PIGSTY~bookworm_amd64.deb
-Size: 207040
-SHA256: e88efc5099e508a409b59c77731f7fdc5a9c0f3600ee4e70f3fd98b8ff0c9dcc
-SHA1: be34c905332cab11580897ae3c0f8c67262745d6
-MD5sum: 35108d18474680a86da30ab8db719dcb
+Size: 5527044
+SHA256: c102c5c6f12bc48bb059615e6d694fb35200220e9ade35e53b64a0a43d3f591b
+SHA1: ea3847d64ab7312afc86b815ef91599acb443941
+MD5sum: 017027faee2ab449d3b267221df86793
 Description: E-Maj is a PostgreSQL extension that tracks updates on tables sets with rollback capabilities
+
+Package: postgresql-13-firebird-fdw
+Source: firebird-fdw
+Version: 1.4.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 336
+Depends: postgresql-13, postgresql-13-jit-llvm (>= 16), libc6 (>= 2.4), libfq (>= 0.6.1)
+Provides: postgresql-firebird-fdw
+Homepage: https://github.com/ibarwick/firebird_fdw
+Priority: optional
+Section: database
+Filename: pool/main/f/firebird-fdw/postgresql-13-firebird-fdw_1.4.0-1PIGSTY~bookworm_amd64.deb
+Size: 157532
+SHA256: e78b82d02abd234d8e1bcb15f1f86a8d966916f687ac94c78c2f2d7698fb7383
+SHA1: 1beb930fbb80cf9f338633cb4f377b9a04417e24
+MD5sum: db821a7e6bee5b4739659ef2f2384c6e
+Description: A PostgreSQL foreign data wrapper (FDW) for Firebird
+  This is a foreign data wrapper (FDW) to connect PostgreSQL to Firebird. It provides both read (SELECT) and write (INSERT/UPDATE/DELETE) support, as well as pushdown of some operations. While it appears to be working reliably, please be aware this is still very much work-in-progress; USE AT YOUR OWN RISK.
+  firebird_fdw is designed to be compatible with PostgreSQL 9.5 ~ 17. The range of firebird_fdw options available for a particular PostgreSQL version depends on the state of the Foreign Data Wrapper (FDW) API for that version; the more recent the version, the more features will be available. However, not all FDW API features are currently supported.
+  firebird_fdw supports Firebird 2.5 and later. It will probably work with Firebird 2.0 or later, and may work with earlier versions if the disable_pushdowns option is set (see below), but has never been tested with those versions.
+  firebird_fdw is developed against the core PostgreSQL community version and may not be compatible with commercial forks.
 
 Package: postgresql-13-floatvec
 Source: floatvec
@@ -3178,9 +3204,9 @@ Priority: optional
 Section: database
 Filename: pool/main/h/hydra/postgresql-13-hydra_1.1.2-1PIGSTY~bookworm_amd64.deb
 Size: 373632
-SHA256: 47a072a5e2e2945e7bae1434ce779b43b3f36b4bc2c7de2bd48cd17c679c1537
-SHA1: 2fda7c475f2dc691dc750bef4bd9376ce21a9446
-MD5sum: 1d4208b6e434beb2f08cdc8baf633e9d
+SHA256: 5d01a77fd6fac3c34c88cb8127665c8f28672f7ec116be04619f130b88eedd28
+SHA1: 7377b79640447e7395767d83d387e0d39927c01d
+MD5sum: 80242a10dadeeda19233bce970520a59
 Description: Hydra: Column-oriented Postgres. Add scalable analytics to your project in minutes.
   Hydra is open source, column-oriented Postgres.
   You can query billions of rows instantly on Postgres without code changes.
@@ -3259,10 +3285,10 @@ Homepage: https://github.com/munakoiso/logerrors
 Priority: optional
 Section: database
 Filename: pool/main/l/logerrors/postgresql-13-logerrors_2.1.3-1PIGSTY~bookworm_amd64.deb
-Size: 34860
-SHA256: 4f4736b47f46f8d323624d3de6d4f6ff276735484b5f91bdbcee89579df070b5
-SHA1: e03ab4996727fb81d4d3c29dd0a565abdcb1d694
-MD5sum: 9922e7abd681b211ca14108151f4c483
+Size: 34852
+SHA256: f998a89d4f640e83d456765739ec264d0d68161cc81ca0642a33f8e327b77774
+SHA1: 0e093127fec222acfa9a8e05ad3fb5c253bebdbf
+MD5sum: 56f50af9eaa50ec1d05b7ca5b1596757
 Description: Extension for PostgreSQL for collecting statistics about messages in logfile.
   Configuration variables:
   logerrors.interval - Time between writing statistic to buffer (ms). Default of 5s, max of 60s;
@@ -3431,24 +3457,6 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 13
   The general idea is to encrypt sequence positions with a Feistel cipher and cycle-walking.
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
-Package: postgresql-13-permuteseq-dbgsym
-Source: permuteseq
-Version: 1.2.2-1PIGSTY~bookworm
-Auto-Built-Package: debug-symbols
-Architecture: amd64
-Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 28
-Depends: postgresql-13-permuteseq (= 1.2.2-1PIGSTY~bookworm)
-Priority: optional
-Section: debug
-Filename: pool/main/p/permuteseq/postgresql-13-permuteseq-dbgsym_1.2.2-1PIGSTY~bookworm_amd64.deb
-Size: 14528
-SHA256: 808b9b5286be18112aeddfce7c41d0cc41eee9bc6cd5dbd9e67ffeee0665b9a5
-SHA1: 818c73e9a24f4f1f75a7f5b5988339627d5a377b
-MD5sum: 58700cda3a4c3f806cfe92c07bcc70d6
-Description: debug symbols for postgresql-13-permuteseq
-Build-Ids: fd7b18c87cf5636a96ae51b9afefe37908efc032
-
 Package: postgresql-13-pg-analytics
 Version: 0.2.1
 Architecture: amd64
@@ -3526,20 +3534,20 @@ Description: PostgreSQL extension to store authentication attempts
 
 Package: postgresql-13-pg-background
 Source: pg-background
-Version: 1.2-1PIGSTY~bookworm
+Version: 1.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 126
+Installed-Size: 141
 Depends: postgresql-13, postgresql-13-jit-llvm (>= 16), libc6 (>= 2.14)
 Provides: postgresql-pg-background
 Homepage: https://github.com/vibhorkum/pg_background
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-background/postgresql-13-pg-background_1.2-1PIGSTY~bookworm_amd64.deb
-Size: 43596
-SHA256: 981f8f62957dda4de77806e76874907dad1d1beada498d35c335042ad8d5e5ca
-SHA1: 6a7ad4b73057468578fb73d618ea18583ead8aa9
-MD5sum: 6508c247f7a6e3b94254a690e986a9a3
+Filename: pool/main/p/pg-background/postgresql-13-pg-background_1.3-1PIGSTY~bookworm_amd64.deb
+Size: 46168
+SHA256: 7ab5a763bcb8252bb91f44b8b63d051cf52dbd8a09a1112c5c7b36c68b817626
+SHA1: afbe3f530f7b1a963e9d4983a5e85725919cb1b1
+MD5sum: 411e4083fee2b0d99503438b11e1109f
 Description: A simple set of views to see ALL background in a PostgreSQL database
   pg_background is an extension for Postgres 13
   Initially this extension was shared by Robert Haas in PostgreSQL community for demo purpose.
@@ -3557,10 +3565,10 @@ Homepage: https://github.com/Fell-x27/pg_base58
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-base58/postgresql-13-pg-base58_0.0.1-1PIGSTY~bookworm_amd64.deb
-Size: 163716
-SHA256: e25e4cf5bc090cafa4f672569d2730111ed4be5d95d89b56bbd483dd635c1c61
-SHA1: 1ca6101d1595f7bad935a7eb3a2ba47eb3fa27b1
-MD5sum: 469a25b6f7d698dc732db531663a5b60
+Size: 163628
+SHA256: 6a89c2cd4bd8443a9e13d471a358754e3e6a348ac909b888f0d1528c9882a2ac
+SHA1: 565f0e4bcac58904b31928bf483ebdc067033528
+MD5sum: 49755ca5d165ae20c786691649d48140
 Description: Base58 Encoder/Decoder Extension for PostgreSQL
   SELECT base58_encode('hello'::bytea);
   SELECT base58_decode('Cn8eVZg');
@@ -3618,10 +3626,10 @@ Homepage: https://github.com/Fell-x27/pg_cardano
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-cardano/postgresql-13-pg-cardano_1.0.2-1PIGSTY~bookworm_amd64.deb
-Size: 324296
-SHA256: 92600daa556b28d1aeb50f581392d5023b6e78ff47813f4d97892ec5f2087f7c
-SHA1: 73df83dbb1fc48ff936d0f16f5df87daf6a63340
-MD5sum: 9e91ac969c493d4049682f79f1a41f6a
+Size: 324148
+SHA256: 0963e738fcbe1576109d2f6ea7d160c281951a06b363a10059093839de28c977
+SHA1: 6b86e6ca42287643326686260949e349f003acc4
+MD5sum: 65f75fd1969f4947be20ac5d71c5f70f
 Description: A PostgreSQL extension providing a suite of Cardano-related tools, including cryptographic functions, address encoding/decoding, and blockchain data processing.
   This extension is an attempt to create a Swiss Army knife for simplifying the work with binary data in Cardano db-sync, as well as automating some processes.
   It is written in Rust, which ensures high security and excellent performance.
@@ -3775,17 +3783,17 @@ Source: pg-explain-ui
 Version: 0.0.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 2665
-Depends: postgresql-13, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0)
+Installed-Size: 15
+Depends: postgresql-13
 Provides: postgresql-pg-explain-ui
 Homepage: https://github.com/davidgomes/pg-explain-ui
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-explain-ui/postgresql-13-pg-explain-ui_0.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 841788
-SHA256: f4d0fefdb77d399e3db068bd7c596b4789ac5f4e70f2b9d58a3ff2fde9f019cd
-SHA1: fb2f36a805487ab7c0d8f34e052c0e00ddfd2cbb
-MD5sum: 1de3efb869ef658654a05085392a69d1
+Size: 1416
+SHA256: fcf24eb15b1073b3b4517345c94c3cfe48874a40e4eb0e61e3fbe672c4c2e668
+SHA1: 777e3f51f44e79853c6694748347d1cbe0193374
+MD5sum: 05e60fa221026d22a8cfa5ac4e6d7b11
 Description: A Postgres extension that allows you to easily jump into a visual plan UI for any SQL query
   This is a simple Postgres extension that allows you to easily jump into a visual plan UI for any SQL query.
 
@@ -3976,16 +3984,16 @@ Source: pg-idkit
 Version: 0.2.4-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 812
+Installed-Size: 816
 Depends: postgresql-13, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Homepage: https://github.com/VADOSWARE/pg_idkit
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-idkit/postgresql-13-pg-idkit_0.2.4-1PIGSTY~bookworm_amd64.deb
-Size: 287264
-SHA256: 566c7c524a67e63b236f8bfde3ed0f670188c9f772d17201fcdb907be85c33cd
-SHA1: 828bdaece4bbc0c63ce94b1cd37338bbe4a57d7a
-MD5sum: 21553a32293361255677b400d487da26
+Size: 289152
+SHA256: 4202d343bd5f7e50c29923f79835f62dbbd28a2be7a2602b50e9ac0f4f0ac065
+SHA1: 791418040756beb2d1aa66a52673056096b46619
+MD5sum: 63eb7974bfe86fbbe4b2c4892e9a5ca7
 Description: PG extension that generating many popular types of identifiers
   pg_idkit is a Postgres extension for generating many popular types of identifiers:
   uuidv6, uuidv7, nanoid, ksuid, ulid, timeflake, pushid, xid, cuid, cuid2
@@ -4036,36 +4044,36 @@ Source: pg-jsonschema
 Version: 0.3.2-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 3220
+Installed-Size: 3248
 Depends: postgresql-13, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Provides: postgresql-pg-jsonschema
 Homepage: https://github.com/supabase/pg_jsonschema
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-jsonschema/postgresql-13-pg-jsonschema_0.3.2-1PIGSTY~bookworm_amd64.deb
-Size: 960140
-SHA256: d0203df26bfb394eea0b8e776c23d9e5f7ae3f94094400d23e966b043f6ca260
-SHA1: b48ce21136a21b70cefa4b0798b2f40f5b2244d6
-MD5sum: 1fde8988f27218907ec868f650d71348
+Size: 966492
+SHA256: 4e317566a88f0ac514ab9142c8598a9db38f42b46eb55c0c217320e5a25c1801
+SHA1: 0586ceedef1dce884254d1e858abda893de39961
+MD5sum: 3be62095da837267ae27f187658c5379
 Description: PostgreSQL extension providing JSON Schema validation
   pg_jsonschema is a PostgreSQL extension adding support for JSON schema validation on json and jsonb data types.
 
 Package: postgresql-13-pg-later
 Source: pg-later
-Version: 0.1.3-1PIGSTY~bookworm
+Version: 0.2.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 3202
+Installed-Size: 3716
 Depends: postgresql-13, libc6 (>= 2.34), libgcc-s1 (>= 4.2), postgresql-13-pgmq
 Provides: postgresql-pg-later
 Homepage: https://github.com/tembo-io/pg_later
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-later/postgresql-13-pg-later_0.1.3-1PIGSTY~bookworm_amd64.deb
-Size: 1056320
-SHA256: 79ce5566305baca7bbf29b5e5886f2611384053c8536d2f8f4ea3b492612dc2c
-SHA1: b62e3d72ac73296021cbe9f272344c50e2c57970
-MD5sum: 52a034afb9dad5c9b7a48038ac0572ac
+Filename: pool/main/p/pg-later/postgresql-13-pg-later_0.2.0-1PIGSTY~bookworm_amd64.deb
+Size: 1148924
+SHA256: 03fb7e942fb4c22a80819bd9644b9c3d5d21e7103e2db72f4906608b0f64c9c7
+SHA1: 6cfb76db2ab71b8e05f233d9ff0c06f00ed4b906
+MD5sum: 7fdeb3ee24e0e11c8629e3cd8d7db118
 Description: reflects a later schema from the existing PostgresSQL 13 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via later with no additional servers, processes, or libraries.
@@ -4233,10 +4241,10 @@ Homepage: https://github.com/yihong0618/pg_polyline
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-polyline/postgresql-13-pg-polyline_0.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 183452
-SHA256: 39e9b23687aba2eddecaf71d828861ec094ddd7200a66cf9250f025c5bcd0785
-SHA1: 40877c73b6f88067499370a748c5b352b564298e
-MD5sum: 241190dbef8a1c4be4962bad73d371ad
+Size: 183332
+SHA256: 1dc2661b6e96098b9e5f51ecf8a01d4d4f6230b0586a6b86a9421873c67db5d3
+SHA1: 1455077285f7f2631d4ba24fd0d431bc617e2083
+MD5sum: 82ac114156551acecb63acf2aee378dd
 Description: Fast Google Encoded Polyline encoding & decoding for postgres
   Fast Google Encoded Polyline encoding & decoding for postgres Extension
 
@@ -4356,6 +4364,25 @@ Description: A postgres extension to avoid accidental mistakes
   pg_savior is a PostgreSQL extension designed to prevent accidental data loss
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
+Package: postgresql-13-pg-smtp-client
+Source: pg-smtp-client
+Version: 0.1.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 16
+Depends: postgresql-13
+Provides: postgresql-pg-smtp-client
+Homepage: https://github.com/Vonng/pg_smtp_client
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-smtp-client/postgresql-13-pg-smtp-client_0.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 2000
+SHA256: c155cb2a380af93aa0d264ac00170f4532a8c34bd047c7a64628cb4605ff11b9
+SHA1: 6de9e3eabeb045337858bc2399840d1d6d412191
+MD5sum: 06849d8dad6da5dd0afd6def3b6c4d21
+Description: PostgreSQL extension to send email using SMTP
+  Sending mail from PostgreSQL
+
 Package: postgresql-13-pg-sqlog
 Source: pg-sqlog
 Version: 3.1.9-1PIGSTY~bookworm
@@ -4450,10 +4477,10 @@ Homepage: https://github.com/HexaCluster/pg_summarize
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-summarize/postgresql-13-pg-summarize_0.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 823012
-SHA256: e3377f78cb6a16c8457df1fda0c838b12b640689c84d3678732583ec5c5363e1
-SHA1: 6a4d8f8596a2ae2559290e8e746ead5660320a68
-MD5sum: 3ee5b7a6711e56080df03f394841edae
+Size: 821072
+SHA256: dd0ab98a5c316f74e4b23c4a9b62f65344ceec4c139fef3fee6d75e93a910672
+SHA1: fd548471b3777ee1b09818e70109bdce36182d4a
+MD5sum: 17db87a4caed73ca2a32db587eef22b8
 Description: Text Summarization using LLMs. Built using pgrx
   PostgreSQL is a powerful and versatile database management system.
   One of its strengths lies in its extensibility.
@@ -4473,10 +4500,10 @@ Homepage: https://github.com/kelvich/pg_tiktoken
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-tiktoken/postgresql-13-pg-tiktoken_0.0.1-1PIGSTY~bookworm_amd64.deb
-Size: 1377720
-SHA256: f64400999476f2c73ba490f38c13e59ccad80bf918ce59ba30a6b017ae0a9f0f
-SHA1: e6f369feba76a698c8e686b2470d6384e5c7625c
-MD5sum: 7b61f04d23f66359e426b764ebb8ccb2
+Size: 1382300
+SHA256: 7feb3c69fd0512fac3b0c0990c8cae8e58a8df1407d96f74a559e1a529e1fbb1
+SHA1: d2c0ec621be7a53e408bd3767915b20fb8cc3059
+MD5sum: bc37344ed5569e3c794ef5abda9adbb7
 Description: OpenAI tiktoken tokenizer for PostgreSQL 13
   Postgres extension that does input tokenization using OpenAI's tiktoken.
 
@@ -4807,16 +4834,16 @@ Source: pgsmcrypto
 Version: 0.1.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 2341
+Installed-Size: 2345
 Depends: postgresql-13, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Homepage: https://github.com/zhuobie/pgsmcrypto
 Priority: optional
 Section: database
 Filename: pool/main/p/pgsmcrypto/postgresql-13-pgsmcrypto_0.1.0-1PIGSTY~bookworm_amd64.deb
-Size: 653400
-SHA256: 5007457d1e62981c6e8db7d1947dac0699a19b718b5d4d2414e84de11d098836
-SHA1: 337fd202ee2b63e0f1187d7adb160e394fb60b5b
-MD5sum: c6c7c6bbb62caa18c8e378725e0acf4a
+Size: 654976
+SHA256: fdb7e50a885834cd192d17476fbe81191bc2d1b2094b24785f6d9fbec055534b
+SHA1: e2e4fe537ddd912ef79aff6fef607cec8a5f5cb5
+MD5sum: df56faccc3518c9ed34f0edaf0ec3c66
 Description: PostgreSQL SM Algorithm Extension
   China National SM algorithm extension for PostgreSQL. SM2 / SM3 / SM4
 
@@ -4873,10 +4900,10 @@ Homepage: https://github.com/darold/pgtt
 Priority: optional
 Section: database
 Filename: pool/main/p/pgtt/postgresql-13-pgtt_4.0-1PIGSTY~bookworm_amd64.deb
-Size: 59024
-SHA256: 51c3df27778532c7fac104352c45bfe7aa1dcf542a9006ac99b4e5cc85164dd4
-SHA1: b36e05b56567c88904127506c02992f2ffee9bdc
-MD5sum: 7212c94556a056706a3341a78d7573ba
+Size: 58992
+SHA256: b32c5b3a08a8e19142efd94c2851b1812a40fff4348ea9e911735ddc0ea6bb6e
+SHA1: 41cea1c4ab737e087957726838a6d2dcc84e787c
+MD5sum: 484b454637ebd7c4c87caa6613c5398f
 Description: Create, manage and use Oracle-style Global Temporary Tables and the others RDBMS in PostgreSQL 13
   pgtt is a PostgreSQL extension to create, manage and use Oracle-style Global Temporary Tables and the others RDBMS.
   The objective of this extension it to provide the Global Temporary Table feature to PostgreSQL waiting for an in core implementation.
@@ -4907,21 +4934,39 @@ Description: Unsigned integer types extension for PostgreSQL
   uint4 (unsigned 32-bit integer)
   uint8 (unsigned 64-bit integer)
 
+Package: postgresql-13-pgvectorscale
+Source: pgvectorscale
+Version: 0.4.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 837
+Depends: postgresql-13, libc6 (>= 2.34), libgcc-s1 (>= 4.2), postgresql-13-pgvector
+Homepage: https://github.com/timescale/pgvectorscale
+Priority: optional
+Section: database
+Filename: pool/main/p/pgvectorscale/postgresql-13-pgvectorscale_0.4.0-1PIGSTY~bookworm_amd64.deb
+Size: 280868
+SHA256: 72bda270138f641a4dc9b4ceb25ab919e5264bd1e6448cedad03338a26efbbfc
+SHA1: fd781edfbbb862dbc9144f2aa48ea0fb0a3e4de0
+MD5sum: aa4b834fb3f664cd4c686d7f74f2eae3
+Description: A complement to pgvector for high performance, cost efficient vector search on large workloads.
+  pgvectorscale builds on pgvector with higher performance embedding search and cost-efficient storage for AI applications.
+
 Package: postgresql-13-plprql
 Source: plprql
 Version: 1.0.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 6224
+Installed-Size: 6320
 Depends: postgresql-13, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Homepage: https://github.com/kaspermarstal/plprql
 Priority: optional
 Section: database
 Filename: pool/main/p/plprql/postgresql-13-plprql_1.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 1777352
-SHA256: f4605913d8be44f7452f44941d1c0ef85c919f014ea9e56cfb66edf1672f3f8e
-SHA1: efab839260f8aa3400b70b8f00a5539b73341270
-MD5sum: 60f06f06b9ff08f8a8b7efb432d626ef
+Size: 1791052
+SHA256: ad5f02cbe92e7053f3820f4b37ea08adb0162ab4f1e2eb6b1a98809b825e950b
+SHA1: 4a00657d6d9778929277c1af72223a4947950e35
+MD5sum: 429da025568137efc2f31cdc417c0f56
 Description: PL/PRQL is a PostgreSQL extension that lets you write functions with PRQL.
   PRQL (Pipelined Relational Query Language) is an open source query language for data manipulation and analysis that compiles to SQL.
   PRQL introduces a pipeline concept (similar to Unix pipes) that transforms data line-by-line. The sequential series of transformations
@@ -5125,20 +5170,20 @@ Description: A Postgres extension for managing SSL certificates through SQL.
 
 Package: postgresql-13-supautils
 Source: supautils
-Version: 3.1.9-1PIGSTY~bookworm
+Version: 2.5.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 150
+Installed-Size: 165
 Depends: postgresql-13, postgresql-13-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-supautils
 Homepage: https://github.com/supabase/supautils
 Priority: optional
 Section: database
-Filename: pool/main/s/supautils/postgresql-13-supautils_3.1.9-1PIGSTY~bookworm_amd64.deb
-Size: 61808
-SHA256: 474597d70d5846cd20393c592c77c9838cdff7957e181432f8287b0f8188ce9c
-SHA1: 5bada7e3404d29eb295bc2093800460e01bb13df
-MD5sum: e023314d2086f53cff1da49d7d27ae0c
+Filename: pool/main/s/supautils/postgresql-13-supautils_2.5.0-1PIGSTY~bookworm_amd64.deb
+Size: 64064
+SHA256: d72584c209204d1d3af1299bb5e38d32a0c2dfd0ed1e237c4fc3e1e2a30e45c3
+SHA1: 43efa8473a4b1e9c45cbddde7e9019e86ca8c4b9
+MD5sum: d5241467803521113335a9f30f049f85
 Description: PostgreSQL extension that secures a cluster on a cloud environment
   Supautils is an extension that secures a PostgreSQL cluster on a cloud environment.
   It doesn't require creating database objects. It's a shared library that modifies PostgreSQL behavior through "hooks",
@@ -5172,14 +5217,14 @@ Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 689
 Depends: postgresql-13
 Provides: postgresql-tableversion
-Homepage: http://www.linz.govt.nz
+Homepage: https://github.com/linz/postgresql-tableversion
 Priority: optional
 Section: database
 Filename: pool/main/t/tableversion/postgresql-13-tableversion_1.10.3-1PIGSTY~bookworm_amd64.deb
-Size: 28192
-SHA256: 5c2c5d6bec3935afa287d65628b9cb67b548a68ca1b9addee49f4452699c3476
-SHA1: edff48684ee31f4bebebcfa4d4abdb53945e8cd8
-MD5sum: 65acca7a44b7a60732b36236b6012b88
+Size: 28196
+SHA256: 934ed2f7b3194d43f111e7c865858520e070da48167defea6b50f1281ed1fd3d
+SHA1: 97f0a87d9d5be5e66d2d9822e94277bafc3b0872
+MD5sum: 63718667d0895dc785441c127cd0c856
 Description: PostgreSQL table versioning extension, recording row modifications
   and its history. The extension provides APIs for accessing snapshots of a table
   at certain revisions and the difference generated between any two given
@@ -5330,20 +5375,20 @@ Description: Access Control Lists (ACL) PostgreSQL Extension
 
 Package: postgresql-14-aggs-for-arrays
 Source: aggs-for-arrays
-Version: 1.3.2-1PIGSTY~bookworm
+Version: 1.3.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 119
+Installed-Size: 120
 Depends: postgresql-14, postgresql-14-jit-llvm (>= 16), libc6 (>= 2.14)
 Provides: postgresql-aggs-for-arrays
 Homepage: https://github.com/pjungwir/aggs_for_arrays
 Priority: optional
 Section: database
-Filename: pool/main/a/aggs-for-arrays/postgresql-14-aggs-for-arrays_1.3.2-1PIGSTY~bookworm_amd64.deb
-Size: 44248
-SHA256: f588df58b89de135a0da48c8105a1db4275f8845d01d7aa1cb699621ec93714d
-SHA1: 9092e59871fb0f961287061fd95938b936469909
-MD5sum: 889796e9dc87d574cce8e555c9604295
+Filename: pool/main/a/aggs-for-arrays/postgresql-14-aggs-for-arrays_1.3.3-1PIGSTY~bookworm_amd64.deb
+Size: 44732
+SHA256: 02720d64f60b066638f043d13ed613dbe6eebf36569c20561f7a90e9dab4ee18
+SHA1: bb931bfd10365106cf9ac3619c164f0f21ad9a24
+MD5sum: 9e09596a0c3ea060998c95f59c5a5ad2
 Description: A Postgres extension in C to compute statistics on arrays of numbers
   This Postgres extension provides various functions for operating on arrays, for instance taking the histogram of an array of numbers.
   These functions are useful because if you have a lot values you want to aggregate, queries that fetch each value from a separate row
@@ -5353,20 +5398,20 @@ Description: A Postgres extension in C to compute statistics on arrays of number
 
 Package: postgresql-14-aggs-for-vecs
 Source: aggs-for-vecs
-Version: 1.3.0-1PIGSTY~bookworm
+Version: 1.3.1-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 295
+Installed-Size: 296
 Depends: postgresql-14, postgresql-14-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-aggs-for-vecs
 Homepage: https://github.com/pjungwir/aggs_for_vecs
 Priority: optional
 Section: database
-Filename: pool/main/a/aggs-for-vecs/postgresql-14-aggs-for-vecs_1.3.0-1PIGSTY~bookworm_amd64.deb
-Size: 88312
-SHA256: d2ca737fe8665438779bf998d990385e8f270f723efe1ff745ff6bfd7aa2d8b0
-SHA1: fa205faf836c6e8e743091797b07fb73b29c7a60
-MD5sum: 7a5321fd6d37291a33f94d05002474aa
+Filename: pool/main/a/aggs-for-vecs/postgresql-14-aggs-for-vecs_1.3.1-1PIGSTY~bookworm_amd64.deb
+Size: 88452
+SHA256: d23c1ba01461af51b7af69d2f70b8498e6a8258932a4532f972b42bfb02cfe2f
+SHA1: 4c0c28ebc882234c0b64524dd70320ade97b9a53
+MD5sum: 33f89290129893326226a3092ad7dbae
 Description: Postgres C extension with aggregate functions for array inputs
   This is a C-based Postgres extension offering various aggregate functions
   like min, max, avg, and var_samp that operate on arrays instead of scalars.
@@ -5580,18 +5625,40 @@ Source: emaj
 Version: 4.4.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 6742
-Depends: postgresql-14
+Installed-Size: 12929
+Depends: postgresql-14, perl:any
 Provides: postgresql-emaj
 Homepage: https://github.com/dalibo/emaj
 Priority: optional
 Section: database
 Filename: pool/main/e/emaj/postgresql-14-emaj_4.4.0-1PIGSTY~bookworm_amd64.deb
-Size: 207032
-SHA256: cc4be253df4bbbf06d6d07b525ea376b2bfbdb2ff36a13fa067dad5c4cf85b3b
-SHA1: fb36d7ff8e3a5f2dc53f2c7f4c0501f2f353b69c
-MD5sum: 5afd88e1adb53812627efd0c8372807d
+Size: 5526964
+SHA256: cfad2aa96214c3caeb08bcdc8070bd117d473ce378e2d0417adbe176562debf2
+SHA1: f60fec72a43ffe7157103be9c060a756fb61975a
+MD5sum: 9869f3702f6fe45cd422cfbd9dab7856
 Description: E-Maj is a PostgreSQL extension that tracks updates on tables sets with rollback capabilities
+
+Package: postgresql-14-firebird-fdw
+Source: firebird-fdw
+Version: 1.4.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 357
+Depends: postgresql-14, postgresql-14-jit-llvm (>= 16), libc6 (>= 2.4), libfq (>= 0.6.1)
+Provides: postgresql-firebird-fdw
+Homepage: https://github.com/ibarwick/firebird_fdw
+Priority: optional
+Section: database
+Filename: pool/main/f/firebird-fdw/postgresql-14-firebird-fdw_1.4.0-1PIGSTY~bookworm_amd64.deb
+Size: 166108
+SHA256: 4dee24fffcf664bd7dda9b36f3e359563e47f6990326c1299fc4ae88cb5c0488
+SHA1: b3b6404941b222de5d371d59f9d6f80d5e7439c5
+MD5sum: e9ffc947cf2a7905a97d08803968c741
+Description: A PostgreSQL foreign data wrapper (FDW) for Firebird
+  This is a foreign data wrapper (FDW) to connect PostgreSQL to Firebird. It provides both read (SELECT) and write (INSERT/UPDATE/DELETE) support, as well as pushdown of some operations. While it appears to be working reliably, please be aware this is still very much work-in-progress; USE AT YOUR OWN RISK.
+  firebird_fdw is designed to be compatible with PostgreSQL 9.5 ~ 17. The range of firebird_fdw options available for a particular PostgreSQL version depends on the state of the Foreign Data Wrapper (FDW) API for that version; the more recent the version, the more features will be available. However, not all FDW API features are currently supported.
+  firebird_fdw supports Firebird 2.5 and later. It will probably work with Firebird 2.0 or later, and may work with earlier versions if the disable_pushdowns option is set (see below), but has never been tested with those versions.
+  firebird_fdw is developed against the core PostgreSQL community version and may not be compatible with commercial forks.
 
 Package: postgresql-14-floatvec
 Source: floatvec
@@ -5858,10 +5925,10 @@ Homepage: https://github.com/hydradatabase/hydra
 Priority: optional
 Section: database
 Filename: pool/main/h/hydra/postgresql-14-hydra_1.1.2-1PIGSTY~bookworm_amd64.deb
-Size: 435468
-SHA256: 4e5b911bf365d4837c07da38c74c06d726a33851540355173523cdb0847a7c34
-SHA1: 0d2fb21ae7f0f1206c600e09c82f481619b3e407
-MD5sum: 0cc1f4a8c1f5dbd8b79c63ec80a79c4a
+Size: 435540
+SHA256: 762b34c99ae0400ad95032e91899fcb71cc5afc43a7bedba0e0a3b6ecccc7fec
+SHA1: 4e07bd81f4ceebddc3657e3b19f8a2918ff74a0c
+MD5sum: 46467baaad334e2c37ac052ee95a1f78
 Description: Hydra: Column-oriented Postgres. Add scalable analytics to your project in minutes.
   Hydra is open source, column-oriented Postgres.
   You can query billions of rows instantly on Postgres without code changes.
@@ -5963,10 +6030,10 @@ Homepage: https://github.com/munakoiso/logerrors
 Priority: optional
 Section: database
 Filename: pool/main/l/logerrors/postgresql-14-logerrors_2.1.3-1PIGSTY~bookworm_amd64.deb
-Size: 35120
-SHA256: 9204f1cdad7341fa37a9bc9d4b7a889f7631c41deb59fea8f090b6a11d9bc07e
-SHA1: dbca12ed4930553b6d82bec6ef787f32e5b8d602
-MD5sum: b71e4aaab84f3b21cf842643e2d97706
+Size: 35096
+SHA256: 5cf668c8a5d139609a304eb6ad1d7f39c2553325c5342100b247454f3dfb112c
+SHA1: d2c9ef7c6e5743c4ec62500c4997ae11cf3604aa
+MD5sum: b1758e306f2643107de0987983016d48
 Description: Extension for PostgreSQL for collecting statistics about messages in logfile.
   Configuration variables:
   logerrors.interval - Time between writing statistic to buffer (ms). Default of 5s, max of 60s;
@@ -6135,24 +6202,6 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 14
   The general idea is to encrypt sequence positions with a Feistel cipher and cycle-walking.
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
-Package: postgresql-14-permuteseq-dbgsym
-Source: permuteseq
-Version: 1.2.2-1PIGSTY~bookworm
-Auto-Built-Package: debug-symbols
-Architecture: amd64
-Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 28
-Depends: postgresql-14-permuteseq (= 1.2.2-1PIGSTY~bookworm)
-Priority: optional
-Section: debug
-Filename: pool/main/p/permuteseq/postgresql-14-permuteseq-dbgsym_1.2.2-1PIGSTY~bookworm_amd64.deb
-Size: 14676
-SHA256: cf299ad3ee92911d1190edb226e62d6e95b212c4a3f7d0841c8674354188ecc4
-SHA1: 4d63de6a40c33a395e96152499de482a437c21de
-MD5sum: b19afab832831444422fa14e0309f508
-Description: debug symbols for postgresql-14-permuteseq
-Build-Ids: 2ae169e58d9da32c218467b1048af137076345b0
-
 Package: postgresql-14-pg-analytics
 Version: 0.2.1
 Architecture: amd64
@@ -6230,20 +6279,20 @@ Description: PostgreSQL extension to store authentication attempts
 
 Package: postgresql-14-pg-background
 Source: pg-background
-Version: 1.2-1PIGSTY~bookworm
+Version: 1.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 126
+Installed-Size: 142
 Depends: postgresql-14, postgresql-14-jit-llvm (>= 16), libc6 (>= 2.14)
 Provides: postgresql-pg-background
 Homepage: https://github.com/vibhorkum/pg_background
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-background/postgresql-14-pg-background_1.2-1PIGSTY~bookworm_amd64.deb
-Size: 43880
-SHA256: bd1583933fbf3258ab4f4dd922a31ec782bccb3ce6ea09201a1633a6f7c4c136
-SHA1: 56733a6e1c1a250a14fd9b04970835768c7695ca
-MD5sum: 9df1a96440afb605c7257fda739cc30f
+Filename: pool/main/p/pg-background/postgresql-14-pg-background_1.3-1PIGSTY~bookworm_amd64.deb
+Size: 46524
+SHA256: 140eea95681fba78e6e291ae1c0d74ae955b9430377f5883531132e401724b0d
+SHA1: ac675fcec92b4e150e792da4a265924c5b73285b
+MD5sum: 0228fb37296f87d013d4c7b8f76e4ea8
 Description: A simple set of views to see ALL background in a PostgreSQL database
   pg_background is an extension for Postgres 14
   Initially this extension was shared by Robert Haas in PostgreSQL community for demo purpose.
@@ -6262,9 +6311,9 @@ Priority: optional
 Section: database
 Filename: pool/main/p/pg-base58/postgresql-14-pg-base58_0.0.1-1PIGSTY~bookworm_amd64.deb
 Size: 163640
-SHA256: c8fc940870f1e31617b29191ecf12128229466e949d795d09b33081055dde6f5
-SHA1: 01d191bce73734c7b6a94f42b70be4142fa74ecc
-MD5sum: eae4c835a3ca794387845936cb7b98d1
+SHA256: bf2894a808523573873057051926fb4e2425ff75b47043f5c3c55cb69ae938ef
+SHA1: 5979583b64e7052690dd054c0b1e573675e222be
+MD5sum: 458a803e441a43bc105447630bc22957
 Description: Base58 Encoder/Decoder Extension for PostgreSQL
   SELECT base58_encode('hello'::bytea);
   SELECT base58_decode('Cn8eVZg');
@@ -6322,10 +6371,10 @@ Homepage: https://github.com/Fell-x27/pg_cardano
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-cardano/postgresql-14-pg-cardano_1.0.2-1PIGSTY~bookworm_amd64.deb
-Size: 324204
-SHA256: e1e8e5443a153cf6697e3a421eb36bff5ce6b92a3a0ddb7eaa30f61295e675fa
-SHA1: b983b9104b8fd54cfc9412c555d3cadfed786deb
-MD5sum: 42239ab7bf1fe4335701b69b43302280
+Size: 324224
+SHA256: 35b5ce3f9ca7e9506d679a39e608941b91f71674c7b4c6c3716d56cbad97784a
+SHA1: 1a0e84bf327cd54f533dcc5d856db8e3bb2cfbd4
+MD5sum: 1a5d7bb96144c47454812db0287a166c
 Description: A PostgreSQL extension providing a suite of Cardano-related tools, including cryptographic functions, address encoding/decoding, and blockchain data processing.
   This extension is an attempt to create a Swiss Army knife for simplifying the work with binary data in Cardano db-sync, as well as automating some processes.
   It is written in Rust, which ensures high security and excellent performance.
@@ -6479,17 +6528,17 @@ Source: pg-explain-ui
 Version: 0.0.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 2665
+Installed-Size: 2661
 Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0)
 Provides: postgresql-pg-explain-ui
 Homepage: https://github.com/davidgomes/pg-explain-ui
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-explain-ui/postgresql-14-pg-explain-ui_0.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 841928
-SHA256: 6a389d4a106c494df9317b80e5388f15aba384933628b26cb11bffc9278b40dd
-SHA1: a9e9cffe59bb44537214e3b0230122a1941ab8b5
-MD5sum: 4abad29113df4c373ade6f32e6106e70
+Size: 840184
+SHA256: 82b25814f4f645b9f5555448046f70aa167b23d34c931673895609089eb7dd8b
+SHA1: 8af1b41a0163f4ef696c299c2d0e66dd783b8a9f
+MD5sum: db5d354b66f49477305a68feb0f2a75d
 Description: A Postgres extension that allows you to easily jump into a visual plan UI for any SQL query
   This is a simple Postgres extension that allows you to easily jump into a visual plan UI for any SQL query.
 
@@ -6619,17 +6668,17 @@ Source: pg-graphql
 Version: 1.5.9-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 1979
-Depends: postgresql-14
+Installed-Size: 1987
+Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Provides: postgresql-pg-graphql
 Homepage: https://github.com/supabase/pg_graphql
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-graphql/postgresql-14-pg-graphql_1.5.9-1PIGSTY~bookworm_amd64.deb
-Size: 668916
-SHA256: 87a4d42067a488cd9365d6816355512ebe976007391fd45b86436711b2d381d1
-SHA1: 8b8eefe31a45bab21bf31b1513af8adfb3c7865f
-MD5sum: 46a2c77220c2c601b2754c9764e0af4d
+Size: 672488
+SHA256: 785f8d8130a6e05f5b8a2fde47153620fa577cc4cf55c8b7095fb84a1ad6d4e8
+SHA1: ca3163ba13ac287e68824cba8e8a942207ac0063
+MD5sum: cbf35969bb897b6b6874ccd51cb38e83
 Description: reflects a GraphQL schema from the existing PostgresSQL 14 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via GraphQL with no additional servers, processes, or libraries.
@@ -6700,16 +6749,16 @@ Source: pg-idkit
 Version: 0.2.4-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 812
+Installed-Size: 816
 Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Homepage: https://github.com/VADOSWARE/pg_idkit
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-idkit/postgresql-14-pg-idkit_0.2.4-1PIGSTY~bookworm_amd64.deb
-Size: 287264
-SHA256: d4032a763d0dedb6aaf69acf6917baf68fe26198700a374aa1ab9c974e3eb28f
-SHA1: dd6315e5dc1d8361342717eceede6a91b39adc84
-MD5sum: f84b090c6dd059b0aaaf03dc630f3d94
+Size: 289140
+SHA256: 78443d632c9da24863eb9c18ab74dc62132556edb2ab93225a8bff094474823a
+SHA1: d9d7b49422c4d0d5ea45b2f92784946468014b23
+MD5sum: 83aa5ac80faef7f778c9706d1ef37e29
 Description: PG extension that generating many popular types of identifiers
   pg_idkit is a Postgres extension for generating many popular types of identifiers:
   uuidv6, uuidv7, nanoid, ksuid, ulid, timeflake, pushid, xid, cuid, cuid2
@@ -6760,36 +6809,36 @@ Source: pg-jsonschema
 Version: 0.3.2-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 3220
+Installed-Size: 3248
 Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Provides: postgresql-pg-jsonschema
 Homepage: https://github.com/supabase/pg_jsonschema
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-jsonschema/postgresql-14-pg-jsonschema_0.3.2-1PIGSTY~bookworm_amd64.deb
-Size: 960612
-SHA256: 949d97513038de8b293b8794f5caf3fce98c615ac8e1aa3f2b6555308e0df6d8
-SHA1: 6c90774c73cc6af0dc70298897a84bcf7be5b486
-MD5sum: 82b94710ec8b7df2e1cd2ceb7b22bec2
+Size: 966624
+SHA256: 08c50cb0b7be633e9368e8f3449b41e1fdb59862af220929b98f53289c0d4111
+SHA1: 85c2829c2089d5a00066477ae121bfec04c4c5c3
+MD5sum: ae4fc025af2109a4e874ff365800930f
 Description: PostgreSQL extension providing JSON Schema validation
   pg_jsonschema is a PostgreSQL extension adding support for JSON schema validation on json and jsonb data types.
 
 Package: postgresql-14-pg-later
 Source: pg-later
-Version: 0.1.3-1PIGSTY~bookworm
+Version: 0.2.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 3206
+Installed-Size: 3716
 Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2), postgresql-14-pgmq
 Provides: postgresql-pg-later
 Homepage: https://github.com/tembo-io/pg_later
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-later/postgresql-14-pg-later_0.1.3-1PIGSTY~bookworm_amd64.deb
-Size: 1057024
-SHA256: cb9a44f1f7534a9d76794d1e5adbca10c3bb4cd28de83af80a9d8c892a9412e1
-SHA1: 938d2b78cea842337daf8ce4122c83835ccf9eb5
-MD5sum: 9cf77d575325058c054fb944bf2419f1
+Filename: pool/main/p/pg-later/postgresql-14-pg-later_0.2.0-1PIGSTY~bookworm_amd64.deb
+Size: 1149052
+SHA256: f0df8a5fa4d5524c218e4dc3b793d54a88103b5987fa957d483607367a1e42bf
+SHA1: cad1798368f93491e50bc8a7b5648d2f36c6bce8
+MD5sum: e8748d731239028279fa8350032a0956
 Description: reflects a later schema from the existing PostgresSQL 14 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via later with no additional servers, processes, or libraries.
@@ -6906,6 +6955,27 @@ Description: Manipulate orphaned files in PostgreSQL 14
   pg_move_back_orphaned(): to move back the orphaned files from the "orphaned_backup" directory to their orginal location (if still orphaned).
   pg_remove_moved_orphaned(): to remove the orphaned files located in the "orphaned_backup" directory.
 
+Package: postgresql-14-pg-parquet
+Source: pg-parquet
+Version: 0.1.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 18548
+Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-parquet
+Homepage: https://github.com/CrunchyData/pg_parquet
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-parquet/postgresql-14-pg-parquet_0.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 4915044
+SHA256: cfdc80e642534ce48842d82f66ffd57e9bdef247a03a67e2c9f1b52e326c9d4b
+SHA1: 28f55c4ecfa903fb2ee60fe869a8dbe4ad061992
+MD5sum: 416bff81c74b67f9c090ab4cc8c201b4
+Description: Copy to/from Parquet in S3 from within PostgreSQL
+  pg_parquet is a PostgreSQL extension that allows you to read and write Parquet files,
+  which are located in S3 or file system, from PostgreSQL via COPY TO/FROM commands.
+  It depends on Apache Arrow project to read and write Parquet files and pgrx project to extend PostgreSQL's COPY command.
+
 Package: postgresql-14-pg-permissions
 Source: pg-permissions
 Version: 1.3-1PIGSTY~bookworm
@@ -6957,10 +7027,10 @@ Homepage: https://github.com/yihong0618/pg_polyline
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-polyline/postgresql-14-pg-polyline_0.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 183344
-SHA256: 793dd4e7829a0ae4b9776d2d43645103403348426c751a6a313c1bd8b41f8a74
-SHA1: c4abbd26c0b60d8e2cc2393f94f32022a4349a41
-MD5sum: 1d2ca01b4f0df16e66ea31ef6abae1fb
+Size: 183272
+SHA256: 7d80e05799725708f6fcd9db1337176f39ddab51859ca492992b857385af8cf2
+SHA1: b70e5e0be8436a4461e06ac32651b2791b471976
+MD5sum: 7b03588a65096134636f80fdf0ce8a2b
 Description: Fast Google Encoded Polyline encoding & decoding for postgres
   Fast Google Encoded Polyline encoding & decoding for postgres Extension
 
@@ -7114,6 +7184,25 @@ SHA1: 259374b3c9290d8e2283e760686779a8dc6fe00d
 MD5sum: 3aaefbebddd1c06c029135463fcb946d
 Description: Full-text search for PostgreSQL using BM25
 
+Package: postgresql-14-pg-smtp-client
+Source: pg-smtp-client
+Version: 0.1.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 1154
+Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0)
+Provides: postgresql-pg-smtp-client
+Homepage: https://github.com/Vonng/pg_smtp_client
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-smtp-client/postgresql-14-pg-smtp-client_0.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 395600
+SHA256: a02c57de7721bec96981812d1c7cb109a9a0c33c2154d06c14ac67ac52076be3
+SHA1: 70437bb2260f697e4bdbea6f6d23f08ac2bf8c16
+MD5sum: 2009e8633dc707279157541794826d56
+Description: PostgreSQL extension to send email using SMTP
+  Sending mail from PostgreSQL
+
 Package: postgresql-14-pg-sqlog
 Source: pg-sqlog
 Version: 3.1.9-1PIGSTY~bookworm
@@ -7208,10 +7297,10 @@ Homepage: https://github.com/HexaCluster/pg_summarize
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-summarize/postgresql-14-pg-summarize_0.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 822320
-SHA256: 83d799b213fbf300a3d771e225e28f1820e528a3aff4a16042918cd1f153b486
-SHA1: 0d9136b7979065b67e3cc79c81cc8138560132a0
-MD5sum: db2a9df37cf2b4c79bb611aeb8af3972
+Size: 821164
+SHA256: bb81ad38596cf067d46b20f9af9b874ba1081792a27b8634ebe6a6c4bf4d82bb
+SHA1: b7e62e0842a892af9dc00c1f4e1701224ed02829
+MD5sum: f9ab497b64bc283c94f0e776906ee12a
 Description: Text Summarization using LLMs. Built using pgrx
   PostgreSQL is a powerful and versatile database management system.
   One of its strengths lies in its extensibility.
@@ -7231,10 +7320,10 @@ Homepage: https://github.com/kelvich/pg_tiktoken
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-tiktoken/postgresql-14-pg-tiktoken_0.0.1-1PIGSTY~bookworm_amd64.deb
-Size: 1377748
-SHA256: 2053bf3eeff946478fa9b2f2d9de32f95008f0e55562ea806faebc20e6482238
-SHA1: f050b81c5165d6640731792499d447515031600a
-MD5sum: 8aa186e2ee0950138b699556b3336653
+Size: 1380716
+SHA256: 27421228b229b234e86dec7a29386784a6a9b0ba46f246aa0dff86e86c95e948
+SHA1: bb1829ff3f88820ef871cdb271bd8d322f84e718
+MD5sum: 867a42955d5eac741994cb7ff3e936bc
 Description: OpenAI tiktoken tokenizer for PostgreSQL 14
   Postgres extension that does input tokenization using OpenAI's tiktoken.
 
@@ -7365,17 +7454,17 @@ Source: pg-vectorize
 Version: 0.18.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 13479
+Installed-Size: 15068
 Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0), postgresql-14-pgmq, postgresql-14-pgvector, postgresql-14-cron
 Provides: postgresql-pg-vectorize
 Homepage: https://github.com/tembo-io/pg_vectorize
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-vectorize/postgresql-14-pg-vectorize_0.18.3-1PIGSTY~bookworm_amd64.deb
-Size: 3908692
-SHA256: febf2133edb415b1581a84b2a7eb2b6f0ef6a2704254fb588c27c305da5eae3b
-SHA1: 726abc6f751b7355248cf9069a08c5aaa5d88214
-MD5sum: 0ff389e9987d6261f41811a99649f61d
+Size: 4161572
+SHA256: 378703622068e5ff9ee51bb6abe58ae6ba0c8f22ef5fb4d2fe97b3a2d2996b3d
+SHA1: a09f585e545b27f16c23dbf688faa5318e7b03e6
+MD5sum: 281cefb5e847be173531d9aff3ad4e8c
 Description: reflects a vectorize schema from the existing PostgresSQL 14 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via vectorize with no additional servers, processes, or libraries.
@@ -7605,16 +7694,16 @@ Source: pgsmcrypto
 Version: 0.1.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 2341
+Installed-Size: 2345
 Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Homepage: https://github.com/zhuobie/pgsmcrypto
 Priority: optional
 Section: database
 Filename: pool/main/p/pgsmcrypto/postgresql-14-pgsmcrypto_0.1.0-1PIGSTY~bookworm_amd64.deb
-Size: 654132
-SHA256: 008569a287e6ed502eceb7b618be21dbc079bb4d47ba5161854590626890f165
-SHA1: c691861af6f5db8ae082bd89fbe5832b80e271ad
-MD5sum: 8331e11e7fb442d979970f392380dbd7
+Size: 654908
+SHA256: c47457be497f213262e573b1a6a32fa35d3a92c885088fd788e3fc8cfb70e275
+SHA1: 3844c5c9fd3ce6ea13db8a7c3d50f9f9a38235ba
+MD5sum: aaf587a18ccde4c77b276049c5cf9928
 Description: PostgreSQL SM Algorithm Extension
   China National SM algorithm extension for PostgreSQL. SM2 / SM3 / SM4
 
@@ -7671,10 +7760,10 @@ Homepage: https://github.com/darold/pgtt
 Priority: optional
 Section: database
 Filename: pool/main/p/pgtt/postgresql-14-pgtt_4.0-1PIGSTY~bookworm_amd64.deb
-Size: 59296
-SHA256: 43b8fec0fd966dec0652ad1c634f97ecd7ab9f63843b035b6548b9c6ee0ef1f6
-SHA1: cdd420fe2f404681f7a15ccee78dcd3c8a8d2a7a
-MD5sum: 4491218cdcbd28cbae0b78c4ca93addd
+Size: 59360
+SHA256: 11e78f4f69a1d9c24848889024e357998d7922f2915cd5763852444910d94604
+SHA1: b4adab21cd611084fffce5c47934eca94dcc7d7e
+MD5sum: d34fed2ed1d93515eb51bebef03c5d29
 Description: Create, manage and use Oracle-style Global Temporary Tables and the others RDBMS in PostgreSQL 14
   pgtt is a PostgreSQL extension to create, manage and use Oracle-style Global Temporary Tables and the others RDBMS.
   The objective of this extension it to provide the Global Temporary Table feature to PostgreSQL waiting for an in core implementation.
@@ -7705,21 +7794,39 @@ Description: Unsigned integer types extension for PostgreSQL
   uint4 (unsigned 32-bit integer)
   uint8 (unsigned 64-bit integer)
 
+Package: postgresql-14-pgvectorscale
+Source: pgvectorscale
+Version: 0.4.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 837
+Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2), postgresql-14-pgvector
+Homepage: https://github.com/timescale/pgvectorscale
+Priority: optional
+Section: database
+Filename: pool/main/p/pgvectorscale/postgresql-14-pgvectorscale_0.4.0-1PIGSTY~bookworm_amd64.deb
+Size: 280824
+SHA256: 97ccbf06fe2274914618f56f441c91275e35396ecbb6b0dd9fbde4198c1d2731
+SHA1: c443bd53814d5fd911b6d2933e82b459f39d4741
+MD5sum: 42e426dcd4731a993b540745ed185a4d
+Description: A complement to pgvector for high performance, cost efficient vector search on large workloads.
+  pgvectorscale builds on pgvector with higher performance embedding search and cost-efficient storage for AI applications.
+
 Package: postgresql-14-plprql
 Source: plprql
 Version: 1.0.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 6228
+Installed-Size: 6324
 Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Homepage: https://github.com/kaspermarstal/plprql
 Priority: optional
 Section: database
 Filename: pool/main/p/plprql/postgresql-14-plprql_1.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 1778280
-SHA256: 64e196b9877543de20de525dc2160ae81cfea1c1f796dbe320c8272705a28ad5
-SHA1: 8bf301adb6a1c7a4fd82979ea7ac2b9d1a384018
-MD5sum: b837456d706e30d063f044521fb3216e
+Size: 1791352
+SHA256: bbc4bf0d21803fdbca4f66d7e832b1caa347a0aaceaae2e6c77473bf51f49dec
+SHA1: f95165d2af690c1e64a5772d73aaece721c19ffe
+MD5sum: 91f048d3fed57b36472bc7349f9c3dcc
 Description: PL/PRQL is a PostgreSQL extension that lets you write functions with PRQL.
   PRQL (Pipelined Relational Query Language) is an open source query language for data manipulation and analysis that compiles to SQL.
   PRQL introduces a pipeline concept (similar to Unix pipes) that transforms data line-by-line. The sequential series of transformations
@@ -7923,20 +8030,20 @@ Description: A Postgres extension for managing SSL certificates through SQL.
 
 Package: postgresql-14-supautils
 Source: supautils
-Version: 3.1.9-1PIGSTY~bookworm
+Version: 2.5.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 151
+Installed-Size: 165
 Depends: postgresql-14, postgresql-14-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-supautils
 Homepage: https://github.com/supabase/supautils
 Priority: optional
 Section: database
-Filename: pool/main/s/supautils/postgresql-14-supautils_3.1.9-1PIGSTY~bookworm_amd64.deb
-Size: 62324
-SHA256: a5048f40e0893c152887d8c1f16bdb04f19a68aebd355ca4926e67dbf4d79a20
-SHA1: 54189bae3f171eb8c27f5848415b32fbeaa79db5
-MD5sum: 5a70bac1ad02dfaaf4cabadc0cf6edfd
+Filename: pool/main/s/supautils/postgresql-14-supautils_2.5.0-1PIGSTY~bookworm_amd64.deb
+Size: 64572
+SHA256: 337ddb992f004980078a64c581d0a87ca8ae2a1cbd17a21fbb1b680fca23277c
+SHA1: abc734b7d18b1a394cb2d7faa2e5285c45a2ba31
+MD5sum: 83e9e809fffbe8260cfaa6424e0814f3
 Description: PostgreSQL extension that secures a cluster on a cloud environment
   Supautils is an extension that secures a PostgreSQL cluster on a cloud environment.
   It doesn't require creating database objects. It's a shared library that modifies PostgreSQL behavior through "hooks",
@@ -7970,14 +8077,14 @@ Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 689
 Depends: postgresql-14
 Provides: postgresql-tableversion
-Homepage: http://www.linz.govt.nz
+Homepage: https://github.com/linz/postgresql-tableversion
 Priority: optional
 Section: database
 Filename: pool/main/t/tableversion/postgresql-14-tableversion_1.10.3-1PIGSTY~bookworm_amd64.deb
-Size: 28188
-SHA256: 4c4213c64115b8e30af6846b6836176c024a60eba787a03027cceb282abf832e
-SHA1: d60100d0b589c62fc82ecb1dc4c78942662bd132
-MD5sum: 475c43b12a7a808deb090f4b477111fd
+Size: 28192
+SHA256: 7c302259f1e27e06f0d1cfd41ae35900111132d56beea3f4a13c8fc76bcbe161
+SHA1: 38089414bd45566ef7860e7cf26a50d0bae4eee8
+MD5sum: b74d92d8d7d4fbe5b924f34e0741ac3f
 Description: PostgreSQL table versioning extension, recording row modifications
   and its history. The extension provides APIs for accessing snapshots of a table
   at certain revisions and the difference generated between any two given
@@ -8090,16 +8197,16 @@ Source: wrappers
 Version: 0.4.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 364
+Installed-Size: 368
 Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Homepage: https://github.com/supabase/wrappers
 Priority: optional
 Section: database
 Filename: pool/main/w/wrappers/postgresql-14-wrappers_0.4.3-1PIGSTY~bookworm_amd64.deb
-Size: 141772
-SHA256: c42097de07f0568c9fbd33da3dca697bfff53b72ab28577f82835430c92b06a5
-SHA1: 6edac3e2db078feec05c28311d1ec6bd601c76cf
-MD5sum: 41037e210474c95462cfb4742b247326
+Size: 143244
+SHA256: d0f7c614772a4da2c7dbab84566f9fd1691552734f90c161a556ff36dc7e3764
+SHA1: 9458cdd34db28c2816851451bc00784ab93b77fe
+MD5sum: 936e13cc001011c387907449e91dca34
 Description: Postgres Foreign Data Wrappers by Supabase
   Wrappers is a development framework for Postgres Foreign Data Wrappers (FDW), written in Rust.
   Its goal is to make Postgres FDW development easier while keeping Rust language's modern capabilities,
@@ -8149,20 +8256,20 @@ Description: Access Control Lists (ACL) PostgreSQL Extension
 
 Package: postgresql-15-aggs-for-arrays
 Source: aggs-for-arrays
-Version: 1.3.2-1PIGSTY~bookworm
+Version: 1.3.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 119
+Installed-Size: 120
 Depends: postgresql-15, postgresql-15-jit-llvm (>= 16), libc6 (>= 2.14)
 Provides: postgresql-aggs-for-arrays
 Homepage: https://github.com/pjungwir/aggs_for_arrays
 Priority: optional
 Section: database
-Filename: pool/main/a/aggs-for-arrays/postgresql-15-aggs-for-arrays_1.3.2-1PIGSTY~bookworm_amd64.deb
-Size: 44248
-SHA256: 242649c4af30ed6dde9ba267ae6c4af3d7d78ef13ca5d0037f3738100867a4c3
-SHA1: b1b69346fc592c6327a6d5d24ff72b4724928269
-MD5sum: ddc4c615fab85398c24372dbc4b17339
+Filename: pool/main/a/aggs-for-arrays/postgresql-15-aggs-for-arrays_1.3.3-1PIGSTY~bookworm_amd64.deb
+Size: 44812
+SHA256: 9734d8f1f970533157b2077d215a466d73608e54c7d369128a25d9326e0437e5
+SHA1: af1ab6ca453696e83bbfa7542f881343d1e6fe92
+MD5sum: b890a763e59fc4eba58571e34bb09d35
 Description: A Postgres extension in C to compute statistics on arrays of numbers
   This Postgres extension provides various functions for operating on arrays, for instance taking the histogram of an array of numbers.
   These functions are useful because if you have a lot values you want to aggregate, queries that fetch each value from a separate row
@@ -8172,20 +8279,20 @@ Description: A Postgres extension in C to compute statistics on arrays of number
 
 Package: postgresql-15-aggs-for-vecs
 Source: aggs-for-vecs
-Version: 1.3.0-1PIGSTY~bookworm
+Version: 1.3.1-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 295
+Installed-Size: 296
 Depends: postgresql-15, postgresql-15-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-aggs-for-vecs
 Homepage: https://github.com/pjungwir/aggs_for_vecs
 Priority: optional
 Section: database
-Filename: pool/main/a/aggs-for-vecs/postgresql-15-aggs-for-vecs_1.3.0-1PIGSTY~bookworm_amd64.deb
-Size: 88240
-SHA256: df2544c88a6d826c5033b8d0a56579342a6dba4a9de243ea7b7101d9cd363e8d
-SHA1: 1bf5059646ce9a2816ec13da269e1e1fa843f9fc
-MD5sum: b8ebedefd5a1ac40b695d996eab1610e
+Filename: pool/main/a/aggs-for-vecs/postgresql-15-aggs-for-vecs_1.3.1-1PIGSTY~bookworm_amd64.deb
+Size: 88436
+SHA256: c87504578bc1f4969e94a3d1cfd6d1921dacd3641d116d6f1ae393f49a249fae
+SHA1: e433c46fcb3ce4173c742924cdf761edfe0755b6
+MD5sum: 36587866b228cc1f3f15465e5ac1bfc7
 Description: Postgres C extension with aggregate functions for array inputs
   This is a C-based Postgres extension offering various aggregate functions
   like min, max, avg, and var_samp that operate on arrays instead of scalars.
@@ -8399,18 +8506,40 @@ Source: emaj
 Version: 4.4.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 6742
-Depends: postgresql-15
+Installed-Size: 12929
+Depends: postgresql-15, perl:any
 Provides: postgresql-emaj
 Homepage: https://github.com/dalibo/emaj
 Priority: optional
 Section: database
 Filename: pool/main/e/emaj/postgresql-15-emaj_4.4.0-1PIGSTY~bookworm_amd64.deb
-Size: 207084
-SHA256: e0ebf385c3b8bcee4444be0f86ab308a93fa9bfb02cb8a47c781c571714c0746
-SHA1: 0d99cc7dcd8f0e1e233d53ad0c6e98a67bd2bee8
-MD5sum: ef1f689a3a250e4ce189a26a8f110fec
+Size: 5527004
+SHA256: 5a0d931fa723a26c189233a84b2e76d0c22381444fc54a18887ba4bd10417510
+SHA1: eddcd3ed65e5e1121bf2ea3e2a75fa1d9c512829
+MD5sum: cf301c71e18d2f2596661c294e027663
 Description: E-Maj is a PostgreSQL extension that tracks updates on tables sets with rollback capabilities
+
+Package: postgresql-15-firebird-fdw
+Source: firebird-fdw
+Version: 1.4.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 358
+Depends: postgresql-15, postgresql-15-jit-llvm (>= 16), libc6 (>= 2.4), libfq (>= 0.6.1)
+Provides: postgresql-firebird-fdw
+Homepage: https://github.com/ibarwick/firebird_fdw
+Priority: optional
+Section: database
+Filename: pool/main/f/firebird-fdw/postgresql-15-firebird-fdw_1.4.0-1PIGSTY~bookworm_amd64.deb
+Size: 166936
+SHA256: 4462cf997a9dad2638ab0623701f9472e49f151758aa5cf886e165589ec94050
+SHA1: c92a9ec670c0cee303c304e63c53fc70d6cf1a4c
+MD5sum: 8b7ba184d64fcfe8ffadc118d1689eb3
+Description: A PostgreSQL foreign data wrapper (FDW) for Firebird
+  This is a foreign data wrapper (FDW) to connect PostgreSQL to Firebird. It provides both read (SELECT) and write (INSERT/UPDATE/DELETE) support, as well as pushdown of some operations. While it appears to be working reliably, please be aware this is still very much work-in-progress; USE AT YOUR OWN RISK.
+  firebird_fdw is designed to be compatible with PostgreSQL 9.5 ~ 17. The range of firebird_fdw options available for a particular PostgreSQL version depends on the state of the Foreign Data Wrapper (FDW) API for that version; the more recent the version, the more features will be available. However, not all FDW API features are currently supported.
+  firebird_fdw supports Firebird 2.5 and later. It will probably work with Firebird 2.0 or later, and may work with earlier versions if the disable_pushdowns option is set (see below), but has never been tested with those versions.
+  firebird_fdw is developed against the core PostgreSQL community version and may not be compatible with commercial forks.
 
 Package: postgresql-15-floatvec
 Source: floatvec
@@ -8677,10 +8806,10 @@ Homepage: https://github.com/hydradatabase/hydra
 Priority: optional
 Section: database
 Filename: pool/main/h/hydra/postgresql-15-hydra_1.1.2-1PIGSTY~bookworm_amd64.deb
-Size: 433492
-SHA256: 11b7d50e452573803a3e05727e683da6f4e18c7926be64046977b82a64a0c3eb
-SHA1: bf64bc855839ad62ee2cb3fa923e76a779001225
-MD5sum: ce456dbc70b640a4df662b5931fa2d88
+Size: 433584
+SHA256: 14507cfd3a0f6f5b77626f182c177648084d17dc728b788f822e5845ae579c93
+SHA1: d31fe06f072f262e73c8ed903f7d47d4b6a0e5c4
+MD5sum: ed8c1290a2340dcdf208efe3e9077933
 Description: Hydra: Column-oriented Postgres. Add scalable analytics to your project in minutes.
   Hydra is open source, column-oriented Postgres.
   You can query billions of rows instantly on Postgres without code changes.
@@ -8782,10 +8911,10 @@ Homepage: https://github.com/munakoiso/logerrors
 Priority: optional
 Section: database
 Filename: pool/main/l/logerrors/postgresql-15-logerrors_2.1.3-1PIGSTY~bookworm_amd64.deb
-Size: 37076
-SHA256: bc15c81295b02bd30640757e9505b4b1f46af8c4492eaca66a4c41b49453b5ed
-SHA1: a391053ab2ca25f3926648a7ecb02dc73801e44a
-MD5sum: 187f41c47963f49b8914e6e190358378
+Size: 37040
+SHA256: ed718125fafb2af45f15818f32adad9e8f9571e2833680cd863b59532761861d
+SHA1: 0647e4219a5f0a42715179be30a69e2873d40afe
+MD5sum: 512284c9a4b7b5789182f89b8a4e37bb
 Description: Extension for PostgreSQL for collecting statistics about messages in logfile.
   Configuration variables:
   logerrors.interval - Time between writing statistic to buffer (ms). Default of 5s, max of 60s;
@@ -8954,24 +9083,6 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 15
   The general idea is to encrypt sequence positions with a Feistel cipher and cycle-walking.
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
-Package: postgresql-15-permuteseq-dbgsym
-Source: permuteseq
-Version: 1.2.2-1PIGSTY~bookworm
-Auto-Built-Package: debug-symbols
-Architecture: amd64
-Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 27
-Depends: postgresql-15-permuteseq (= 1.2.2-1PIGSTY~bookworm)
-Priority: optional
-Section: debug
-Filename: pool/main/p/permuteseq/postgresql-15-permuteseq-dbgsym_1.2.2-1PIGSTY~bookworm_amd64.deb
-Size: 13996
-SHA256: 3ffeab968df1e60f0b53ef350c097b00c4da5f9cce3062e575db6a30c89cad18
-SHA1: a080ba6f08521ef19acda9bfe90fe33338f4032c
-MD5sum: e556f20181f67ab0884548f0d9dd60ae
-Description: debug symbols for postgresql-15-permuteseq
-Build-Ids: ba66897e2e9cc6c529bf51f43c605f8f18662a3b
-
 Package: postgresql-15-pg-analytics
 Version: 0.2.1
 Architecture: amd64
@@ -9049,20 +9160,20 @@ Description: PostgreSQL extension to store authentication attempts
 
 Package: postgresql-15-pg-background
 Source: pg-background
-Version: 1.2-1PIGSTY~bookworm
+Version: 1.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 126
+Installed-Size: 142
 Depends: postgresql-15, postgresql-15-jit-llvm (>= 16), libc6 (>= 2.14)
 Provides: postgresql-pg-background
 Homepage: https://github.com/vibhorkum/pg_background
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-background/postgresql-15-pg-background_1.2-1PIGSTY~bookworm_amd64.deb
-Size: 43956
-SHA256: 813379eade33cc3dc4a0b88c075ace85d9e9ed5cb16ee787ad8c7564f373ecb9
-SHA1: 731af25cbf2f4aa5e4ab3665ced6619ebc0e3149
-MD5sum: 97255d698639c91639982dcef49dbdd9
+Filename: pool/main/p/pg-background/postgresql-15-pg-background_1.3-1PIGSTY~bookworm_amd64.deb
+Size: 46460
+SHA256: 4c8dc14f8bc71c3a3a4a38b4ee9b22bc942eaafd84c130e104b2c093daa80773
+SHA1: 5dafc8bfa9e18fa6dc048fb29ea64917763d1ca1
+MD5sum: 8de3ae4703c80674d893130f626e9e2c
 Description: A simple set of views to see ALL background in a PostgreSQL database
   pg_background is an extension for Postgres 15
   Initially this extension was shared by Robert Haas in PostgreSQL community for demo purpose.
@@ -9080,10 +9191,10 @@ Homepage: https://github.com/Fell-x27/pg_base58
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-base58/postgresql-15-pg-base58_0.0.1-1PIGSTY~bookworm_amd64.deb
-Size: 163688
-SHA256: b7a714b98a94c1ed2ec4692a96bdd2b71399d8a6308d77056a3edfc5dd063ff0
-SHA1: 33fcd1bf4092d047a2c4a97170e36be0b86e1c79
-MD5sum: 5948b1e1650f7294a20282fb539ca4f2
+Size: 163668
+SHA256: bc7d28938b4d16348cc1d98ae415467b1d7951cd0821a06ddb3431b4717ba377
+SHA1: fe96a17c96c7f05d2ec45a3eb3304525776b1ce3
+MD5sum: d85ddd6ea1b9578ecb51b26100d29ed8
 Description: Base58 Encoder/Decoder Extension for PostgreSQL
   SELECT base58_encode('hello'::bytea);
   SELECT base58_decode('Cn8eVZg');
@@ -9141,10 +9252,10 @@ Homepage: https://github.com/Fell-x27/pg_cardano
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-cardano/postgresql-15-pg-cardano_1.0.2-1PIGSTY~bookworm_amd64.deb
-Size: 324124
-SHA256: 1c17fea09a870fb98d90c282ba11f5e171bc5d2e2346e6a544deebed981c5e8c
-SHA1: 2695787c6b42612d7bd90035ead3be6b90760525
-MD5sum: 88f81e4dde2bd79b4d10262e782cf0bd
+Size: 324116
+SHA256: ab5ef3be2c659ec9330bc401bb1fa1c759ce1a56756d7a8da346f60c5acad56a
+SHA1: a6105f257ebbaf4da3d6bdbf9758cfdbb4c79d3f
+MD5sum: d1b79bbafa2c108527bd1b748bd3b7d0
 Description: A PostgreSQL extension providing a suite of Cardano-related tools, including cryptographic functions, address encoding/decoding, and blockchain data processing.
   This extension is an attempt to create a Swiss Army knife for simplifying the work with binary data in Cardano db-sync, as well as automating some processes.
   It is written in Rust, which ensures high security and excellent performance.
@@ -9319,17 +9430,17 @@ Source: pg-explain-ui
 Version: 0.0.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 2665
+Installed-Size: 2661
 Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0)
 Provides: postgresql-pg-explain-ui
 Homepage: https://github.com/davidgomes/pg-explain-ui
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-explain-ui/postgresql-15-pg-explain-ui_0.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 842040
-SHA256: 57bae7e8295fe32659027edfef9f3f292d37620b4bdffcc6fc5cf0f02a7142c3
-SHA1: d616639716ab30c9f17fbdbf5471971de59ef705
-MD5sum: a52425a863030d7225e9b88b2327c3e1
+Size: 840180
+SHA256: 4a76d3a6a6f2e515a704c18eb7fa3d4b1cad822c0276fc37e00d5235ac884c3f
+SHA1: bcc05e211fd1b58d147466d252778a96532c0990
+MD5sum: 48d639bb62184b1b7d45548303e91e07
 Description: A Postgres extension that allows you to easily jump into a visual plan UI for any SQL query
   This is a simple Postgres extension that allows you to easily jump into a visual plan UI for any SQL query.
 
@@ -9459,17 +9570,17 @@ Source: pg-graphql
 Version: 1.5.9-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 1979
-Depends: postgresql-15
+Installed-Size: 1987
+Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Provides: postgresql-pg-graphql
 Homepage: https://github.com/supabase/pg_graphql
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-graphql/postgresql-15-pg-graphql_1.5.9-1PIGSTY~bookworm_amd64.deb
-Size: 669040
-SHA256: 5be5646d5a34d84a0c34c9a2741091ffcfbcc88986cb8cfdb47ae58de4415bc5
-SHA1: 0a47f08e949aef8db4d60ee60f820f9c90b90804
-MD5sum: fc6817cd568099802857c1a7eb687c8a
+Size: 672312
+SHA256: ca968f4f27d1b1d52b0da5d572553c89dad54a8c79ce9e52f22fa6d20c497197
+SHA1: 33944c1daec24a178d27bd389421f0b227e49b71
+MD5sum: 6291cb8883f20955682eca781cb66420
 Description: reflects a GraphQL schema from the existing PostgresSQL 15 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via GraphQL with no additional servers, processes, or libraries.
@@ -9540,16 +9651,16 @@ Source: pg-idkit
 Version: 0.2.4-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 812
+Installed-Size: 816
 Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Homepage: https://github.com/VADOSWARE/pg_idkit
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-idkit/postgresql-15-pg-idkit_0.2.4-1PIGSTY~bookworm_amd64.deb
-Size: 287288
-SHA256: 6d295b4c8d31adeb1eea2f67b56b74eb159284de5cf2736a17366aeda17523dd
-SHA1: cdac662ea144966a71752f98fbfa0292b6b23e8a
-MD5sum: 65e1a0e1d40d1ad1e91fdd43d832b8ed
+Size: 289076
+SHA256: 2a7bd0f149331344ce8274d4a6582ac0ca0542ea63f5f9638c060e04aac9d451
+SHA1: c6c8c176ea048704c828b9558b321e46d7ca7673
+MD5sum: 4550d763f488999854f4ca9825416aa8
 Description: PG extension that generating many popular types of identifiers
   pg_idkit is a Postgres extension for generating many popular types of identifiers:
   uuidv6, uuidv7, nanoid, ksuid, ulid, timeflake, pushid, xid, cuid, cuid2
@@ -9600,36 +9711,36 @@ Source: pg-jsonschema
 Version: 0.3.2-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 3220
+Installed-Size: 3248
 Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Provides: postgresql-pg-jsonschema
 Homepage: https://github.com/supabase/pg_jsonschema
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-jsonschema/postgresql-15-pg-jsonschema_0.3.2-1PIGSTY~bookworm_amd64.deb
-Size: 960352
-SHA256: d2884ec53ac321bbb5d1b14b76cafa5edad937dea3bf3b40759b93efd768c148
-SHA1: b35a41b189b1427a03d9fc1ed072ceb2a706cc71
-MD5sum: 502361500923daf428171a699695c1bc
+Size: 966848
+SHA256: 5b36d45ada724c4cd8c55dac85ea804159b3f8507572ad07e0fb86958aab4625
+SHA1: 4d0a91c1f8d8a47ded353a5a5da7b5da8c11d301
+MD5sum: de10b37cfa1052b2d179a81f8d950e0a
 Description: PostgreSQL extension providing JSON Schema validation
   pg_jsonschema is a PostgreSQL extension adding support for JSON schema validation on json and jsonb data types.
 
 Package: postgresql-15-pg-later
 Source: pg-later
-Version: 0.1.3-1PIGSTY~bookworm
+Version: 0.2.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 3206
+Installed-Size: 3716
 Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2), postgresql-15-pgmq
 Provides: postgresql-pg-later
 Homepage: https://github.com/tembo-io/pg_later
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-later/postgresql-15-pg-later_0.1.3-1PIGSTY~bookworm_amd64.deb
-Size: 1057048
-SHA256: 4f9e9d5615d88149897c5ebcb553cf76b16e7f2d3a67d57760422dc3d23dbbbe
-SHA1: 2ef534204a1c84e5c82633823caf22a122591eb1
-MD5sum: 5842c1008ae162290bbe3e0c950d2ba1
+Filename: pool/main/p/pg-later/postgresql-15-pg-later_0.2.0-1PIGSTY~bookworm_amd64.deb
+Size: 1149188
+SHA256: ba3c3b841279a8405f945e910e02f7a7fcc2956b2fb977f66979cb64ebda8319
+SHA1: 08d02095d277a3e64435df008956b821e1c1a301
+MD5sum: dce7e10d7e7896952871933a2f4f7db9
 Description: reflects a later schema from the existing PostgresSQL 15 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via later with no additional servers, processes, or libraries.
@@ -9746,6 +9857,27 @@ Description: Manipulate orphaned files in PostgreSQL 15
   pg_move_back_orphaned(): to move back the orphaned files from the "orphaned_backup" directory to their orginal location (if still orphaned).
   pg_remove_moved_orphaned(): to remove the orphaned files located in the "orphaned_backup" directory.
 
+Package: postgresql-15-pg-parquet
+Source: pg-parquet
+Version: 0.1.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 18548
+Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-parquet
+Homepage: https://github.com/CrunchyData/pg_parquet
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-parquet/postgresql-15-pg-parquet_0.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 4910456
+SHA256: 600d41a8f264cfb3dd18de30380cca01c3c2b0e099b945db3f5ca3a6324be4e9
+SHA1: 5c1b11233ef86edc70d9044747cb43240c7f347e
+MD5sum: 210fb979252d3ef226c8538f14425b2d
+Description: Copy to/from Parquet in S3 from within PostgreSQL
+  pg_parquet is a PostgreSQL extension that allows you to read and write Parquet files,
+  which are located in S3 or file system, from PostgreSQL via COPY TO/FROM commands.
+  It depends on Apache Arrow project to read and write Parquet files and pgrx project to extend PostgreSQL's COPY command.
+
 Package: postgresql-15-pg-permissions
 Source: pg-permissions
 Version: 1.3-1PIGSTY~bookworm
@@ -9797,10 +9929,10 @@ Homepage: https://github.com/yihong0618/pg_polyline
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-polyline/postgresql-15-pg-polyline_0.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 183424
-SHA256: 15b80823974f79b7e07892bfffc08f08530002fb695f95ff5ececbe1253dee0f
-SHA1: fe4f8489cd0b63c4e7962a8b1ba604905fb8f573
-MD5sum: 3f0b820be506591e68b8b4bec8fdc8fd
+Size: 183440
+SHA256: 4451518f6d944680ef744fed020a1892aa116d405082720e71ba91e63ec1c42a
+SHA1: 49f19ffb33911f3b6f3d2886484c738050af340f
+MD5sum: 5110b7c760271451e4e7b002f3566db9
 Description: Fast Google Encoded Polyline encoding & decoding for postgres
   Fast Google Encoded Polyline encoding & decoding for postgres Extension
 
@@ -9954,6 +10086,25 @@ SHA1: 0b083ed3ca39dc7981e70d8520e97790a52c8e6f
 MD5sum: 5a1541d4572a044ce2a72e503a3ac182
 Description: Full-text search for PostgreSQL using BM25
 
+Package: postgresql-15-pg-smtp-client
+Source: pg-smtp-client
+Version: 0.1.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 1154
+Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0)
+Provides: postgresql-pg-smtp-client
+Homepage: https://github.com/Vonng/pg_smtp_client
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-smtp-client/postgresql-15-pg-smtp-client_0.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 395512
+SHA256: c21dcd059d76ebaf650e60945e8a8900cccac0643a298e4befdabf0b4bdff286
+SHA1: d7bf47891810f6963f39ea3b746077524ffdc931
+MD5sum: c6e051d5405127ab096736c699cc6b98
+Description: PostgreSQL extension to send email using SMTP
+  Sending mail from PostgreSQL
+
 Package: postgresql-15-pg-sqlog
 Source: pg-sqlog
 Version: 3.1.9-1PIGSTY~bookworm
@@ -10048,10 +10199,10 @@ Homepage: https://github.com/HexaCluster/pg_summarize
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-summarize/postgresql-15-pg-summarize_0.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 821336
-SHA256: 3df7d9dac29c4b958b0b31c65b70d8341128bac8e528da02bcaf75ebeea27e12
-SHA1: 486f849b5d49dfdbd03fb8e8c6d6a2f978f1e720
-MD5sum: 3eb7acf8af5374024f952aff401e287f
+Size: 821704
+SHA256: e766e7a97c4e2bdccf5d1a9e6e7b11adc3ecb0da84f96a72933264fc7ebb035c
+SHA1: ae1effbc5336a66eb10b138bb69b10de43055810
+MD5sum: 63c2a537f4a5f8b35e6c9e507c4f1faf
 Description: Text Summarization using LLMs. Built using pgrx
   PostgreSQL is a powerful and versatile database management system.
   One of its strengths lies in its extensibility.
@@ -10071,10 +10222,10 @@ Homepage: https://github.com/kelvich/pg_tiktoken
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-tiktoken/postgresql-15-pg-tiktoken_0.0.1-1PIGSTY~bookworm_amd64.deb
-Size: 1380576
-SHA256: e97b8c600e04c461961ee72b06d9ef2a4304d665e01f6c07b712406834c802ba
-SHA1: fc583eba99a86f335e5fffc2973901f05261ccbd
-MD5sum: e723ceef6e389cfb249ee3961221893e
+Size: 1379560
+SHA256: 09d703d98f650b902d174b1ea9cd8844fbf1c86a9bd7f8980f748d582d772d07
+SHA1: 50419a62125c655c07e1ba27708269391cf9d9c4
+MD5sum: 2d983d10592e1d0d6ca4ff192b5daf85
 Description: OpenAI tiktoken tokenizer for PostgreSQL 15
   Postgres extension that does input tokenization using OpenAI's tiktoken.
 
@@ -10205,17 +10356,17 @@ Source: pg-vectorize
 Version: 0.18.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 13479
+Installed-Size: 15068
 Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0), postgresql-15-pgmq, postgresql-15-pgvector, postgresql-15-cron
 Provides: postgresql-pg-vectorize
 Homepage: https://github.com/tembo-io/pg_vectorize
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-vectorize/postgresql-15-pg-vectorize_0.18.3-1PIGSTY~bookworm_amd64.deb
-Size: 3904696
-SHA256: ecff6fd9231c226fecc60c9205429b59efa33f0a3f519fa23e79a84a1ac97e90
-SHA1: 54b9df1b613356be1ef9f16f004f71ebdf9c4d95
-MD5sum: 02dc72deef34b3b20dd17cb4d939a26d
+Size: 4163628
+SHA256: cf30840bd9d882e0bceccdb9cbe95a039c9b80169191f6c9e029fedcad3d9a99
+SHA1: 4f3f7abba58ec1dd4a0d0ebe492362fc19c8455f
+MD5sum: 628717dc9e2b0b5c8ad20f4985019980
 Description: reflects a vectorize schema from the existing PostgresSQL 15 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via vectorize with no additional servers, processes, or libraries.
@@ -10445,16 +10596,16 @@ Source: pgsmcrypto
 Version: 0.1.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 2341
+Installed-Size: 2345
 Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Homepage: https://github.com/zhuobie/pgsmcrypto
 Priority: optional
 Section: database
 Filename: pool/main/p/pgsmcrypto/postgresql-15-pgsmcrypto_0.1.0-1PIGSTY~bookworm_amd64.deb
-Size: 654120
-SHA256: f27faff52eca20fe5e2de0fbf6b2bb7e5756521e09e263359fc226a6e0917e32
-SHA1: a4424dd8b855fd130e87218813b59c51bb3be8bb
-MD5sum: 1d7cf6060d7cc57374c7b544b1fe411f
+Size: 654752
+SHA256: 28a3ec72c0307ad1f8838cad9e66066201fb0bd10d5bc264b04586f1e3678dba
+SHA1: c3537882569d176256778ba590ae7f7a755ae57a
+MD5sum: 83105766b7f3e3dc76136b1b63a0b529
 Description: PostgreSQL SM Algorithm Extension
   China National SM algorithm extension for PostgreSQL. SM2 / SM3 / SM4
 
@@ -10512,9 +10663,9 @@ Priority: optional
 Section: database
 Filename: pool/main/p/pgtt/postgresql-15-pgtt_4.0-1PIGSTY~bookworm_amd64.deb
 Size: 59496
-SHA256: 13fd94c016d79eb3c41329f34f21740665e4f8df3ad38a552353290123524795
-SHA1: c957c43add2cadf5db72560d938bc95c606422a5
-MD5sum: cca3a60073c20d6699ce9a3193b9453e
+SHA256: 6a337c3c0af04fe884ceab14e4c5cbe3a9c043c4d39905b751062065c940db22
+SHA1: 26de8f346f2c9bde5a647ca940828ca8863691f3
+MD5sum: 8c2051ea5577885a08c40010d15dd5ca
 Description: Create, manage and use Oracle-style Global Temporary Tables and the others RDBMS in PostgreSQL 15
   pgtt is a PostgreSQL extension to create, manage and use Oracle-style Global Temporary Tables and the others RDBMS.
   The objective of this extension it to provide the Global Temporary Table feature to PostgreSQL waiting for an in core implementation.
@@ -10550,16 +10701,16 @@ Source: pgvectorscale
 Version: 0.4.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 809
+Installed-Size: 837
 Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2), postgresql-15-pgvector
 Homepage: https://github.com/timescale/pgvectorscale
 Priority: optional
 Section: database
 Filename: pool/main/p/pgvectorscale/postgresql-15-pgvectorscale_0.4.0-1PIGSTY~bookworm_amd64.deb
-Size: 276828
-SHA256: 131aea9dc3a9e3e57750f3bea21ee74c6a7efbf1cd445d1273584c1812ba0450
-SHA1: c5a6199397ba6b5157898ae7d2a54cb136cc4559
-MD5sum: 7271eb5e8a7423d75dce19a241a6cb73
+Size: 280984
+SHA256: b175f90d40896278e15c0ea4afe9e9ec012d3cc018596a1d4293898187158c2b
+SHA1: 39a6db1d54a4d41e520f4a364e28e3677a0cfc55
+MD5sum: 8118301a9825901f1bc2628d05030b89
 Description: A complement to pgvector for high performance, cost efficient vector search on large workloads.
   pgvectorscale builds on pgvector with higher performance embedding search and cost-efficient storage for AI applications.
 
@@ -10568,16 +10719,16 @@ Source: plprql
 Version: 1.0.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 6224
+Installed-Size: 6320
 Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Homepage: https://github.com/kaspermarstal/plprql
 Priority: optional
 Section: database
 Filename: pool/main/p/plprql/postgresql-15-plprql_1.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 1777596
-SHA256: dd320ddb3893e43f09945e5b22484eb95c905c045521474f10c3198225ea3118
-SHA1: 4f85ea03070935174a0a2f298026191999ae3c0d
-MD5sum: 5a176676c186125696455b169ff5ff3a
+Size: 1791496
+SHA256: 348693a327d56ffaa86a533a64eccde40d0deaf436f5990d5d3e82b9ff6cf90d
+SHA1: 7fd11b93bcab9e94dac59575303f61b22e645c2e
+MD5sum: de34acbb7980f1af8d4139f2c0ab20fc
 Description: PL/PRQL is a PostgreSQL extension that lets you write functions with PRQL.
   PRQL (Pipelined Relational Query Language) is an open source query language for data manipulation and analysis that compiles to SQL.
   PRQL introduces a pipeline concept (similar to Unix pipes) that transforms data line-by-line. The sequential series of transformations
@@ -10781,20 +10932,20 @@ Description: A Postgres extension for managing SSL certificates through SQL.
 
 Package: postgresql-15-supautils
 Source: supautils
-Version: 3.1.9-1PIGSTY~bookworm
+Version: 2.5.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 154
+Installed-Size: 169
 Depends: postgresql-15, postgresql-15-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-supautils
 Homepage: https://github.com/supabase/supautils
 Priority: optional
 Section: database
-Filename: pool/main/s/supautils/postgresql-15-supautils_3.1.9-1PIGSTY~bookworm_amd64.deb
-Size: 64640
-SHA256: 41bf24981b57abe6bdc4978c45364f2ca8845d908e517dab177c5a671305fd24
-SHA1: f522d739c6347f79260d3b421c8df0b5f2ef0580
-MD5sum: 3e7021d3441b603da79a77431b313db1
+Filename: pool/main/s/supautils/postgresql-15-supautils_2.5.0-1PIGSTY~bookworm_amd64.deb
+Size: 66936
+SHA256: 567bb2c8c9c3e3a8a6c4d45f9fae2eb19d0c7d1224b8b7de98bfec883b667132
+SHA1: 178d49a1accafb2be6fdcd909a8c599b6dacee93
+MD5sum: aad1732e7768d650a0b3da82ebcb1cf7
 Description: PostgreSQL extension that secures a cluster on a cloud environment
   Supautils is an extension that secures a PostgreSQL cluster on a cloud environment.
   It doesn't require creating database objects. It's a shared library that modifies PostgreSQL behavior through "hooks",
@@ -10828,14 +10979,14 @@ Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 689
 Depends: postgresql-15
 Provides: postgresql-tableversion
-Homepage: http://www.linz.govt.nz
+Homepage: https://github.com/linz/postgresql-tableversion
 Priority: optional
 Section: database
 Filename: pool/main/t/tableversion/postgresql-15-tableversion_1.10.3-1PIGSTY~bookworm_amd64.deb
-Size: 28184
-SHA256: f429ad6e8200a8f75fac2067bf996efec7554534772a560fc392b904d1679dbf
-SHA1: 0a9e4fb88bb923cf1de21bd4951ba2d61ff2ebfb
-MD5sum: 532489bb8c3094556ae2fd5d63c1f2b4
+Size: 28188
+SHA256: ecb409b155975b6cdc7da3ffbb07102bc5a3876b20dbe2042ec001877beec941
+SHA1: 5f05da2662fc3a3045c5087e1db565114a07de8f
+MD5sum: 7836f656fa2a8d948ceaebc2fdb57b54
 Description: PostgreSQL table versioning extension, recording row modifications
   and its history. The extension provides APIs for accessing snapshots of a table
   at certain revisions and the difference generated between any two given
@@ -10948,16 +11099,16 @@ Source: wrappers
 Version: 0.4.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 364
+Installed-Size: 368
 Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Homepage: https://github.com/supabase/wrappers
 Priority: optional
 Section: database
 Filename: pool/main/w/wrappers/postgresql-15-wrappers_0.4.3-1PIGSTY~bookworm_amd64.deb
-Size: 141768
-SHA256: acfb56c0a94761e7373b934dc4f56ff340dcc2b4fa7ace194b62ea58b584697b
-SHA1: f4c28f16ada19995677e3c9e278ce12e78eafb03
-MD5sum: 190324284bdd44528f55df1cef483942
+Size: 143232
+SHA256: 8d5a4e54b3148475a1176e0f8df1625fdecfeef2f62653f481497f528d00b828
+SHA1: 5de36159756bd8f98276371927935bdcf850f118
+MD5sum: c2fbe66c991bd14571c1305c8ab0f8ac
 Description: Postgres Foreign Data Wrappers by Supabase
   Wrappers is a development framework for Postgres Foreign Data Wrappers (FDW), written in Rust.
   Its goal is to make Postgres FDW development easier while keeping Rust language's modern capabilities,
@@ -11007,20 +11158,20 @@ Description: Access Control Lists (ACL) PostgreSQL Extension
 
 Package: postgresql-16-aggs-for-arrays
 Source: aggs-for-arrays
-Version: 1.3.2-1PIGSTY~bookworm
+Version: 1.3.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 118
+Installed-Size: 120
 Depends: postgresql-16, postgresql-16-jit-llvm (>= 16), libc6 (>= 2.14)
 Provides: postgresql-aggs-for-arrays
 Homepage: https://github.com/pjungwir/aggs_for_arrays
 Priority: optional
 Section: database
-Filename: pool/main/a/aggs-for-arrays/postgresql-16-aggs-for-arrays_1.3.2-1PIGSTY~bookworm_amd64.deb
-Size: 44060
-SHA256: a46a062627ddef87145983b48c7cce0bff25ba7789d2e3367efe25212178746e
-SHA1: c305d25673eca51ee967e7b4506cf45e594b32f1
-MD5sum: 31ea4caa976d9b454ebbb5a5ff04c4b3
+Filename: pool/main/a/aggs-for-arrays/postgresql-16-aggs-for-arrays_1.3.3-1PIGSTY~bookworm_amd64.deb
+Size: 44692
+SHA256: af5a2b9825565ea422b111d5d89e3150506e2ff1e541690f7434e83a0ed8974f
+SHA1: b69811d630166b131007f8c51a559ccdc5451117
+MD5sum: b31337788e21ae165282c87ad2ece1b0
 Description: A Postgres extension in C to compute statistics on arrays of numbers
   This Postgres extension provides various functions for operating on arrays, for instance taking the histogram of an array of numbers.
   These functions are useful because if you have a lot values you want to aggregate, queries that fetch each value from a separate row
@@ -11030,20 +11181,20 @@ Description: A Postgres extension in C to compute statistics on arrays of number
 
 Package: postgresql-16-aggs-for-vecs
 Source: aggs-for-vecs
-Version: 1.3.0-1PIGSTY~bookworm
+Version: 1.3.1-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 295
+Installed-Size: 296
 Depends: postgresql-16, postgresql-16-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-aggs-for-vecs
 Homepage: https://github.com/pjungwir/aggs_for_vecs
 Priority: optional
 Section: database
-Filename: pool/main/a/aggs-for-vecs/postgresql-16-aggs-for-vecs_1.3.0-1PIGSTY~bookworm_amd64.deb
-Size: 88128
-SHA256: 351c5c2d0dad085947d291418cde5ab725f5b05bc688a1335ff43cf2d7f6fdcc
-SHA1: 871e1bc0d4a02b7949a40ee0924e1c6b39ad02ce
-MD5sum: fd5ce66065c86d560708a33e71d97ccb
+Filename: pool/main/a/aggs-for-vecs/postgresql-16-aggs-for-vecs_1.3.1-1PIGSTY~bookworm_amd64.deb
+Size: 88340
+SHA256: 89a23ae64d7d4ac36cb557adc559a3ff5efc0ef2428ff6a8c58491ab9c4b9a51
+SHA1: 873be0fef30c07b796ddac7c0240681cad3d0ef8
+MD5sum: bab0d3a6a214c23b20bf7e6031df0ca8
 Description: Postgres C extension with aggregate functions for array inputs
   This is a C-based Postgres extension offering various aggregate functions
   like min, max, avg, and var_samp that operate on arrays instead of scalars.
@@ -11257,18 +11408,40 @@ Source: emaj
 Version: 4.4.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 6742
-Depends: postgresql-16
+Installed-Size: 12929
+Depends: postgresql-16, perl:any
 Provides: postgresql-emaj
 Homepage: https://github.com/dalibo/emaj
 Priority: optional
 Section: database
 Filename: pool/main/e/emaj/postgresql-16-emaj_4.4.0-1PIGSTY~bookworm_amd64.deb
-Size: 207076
-SHA256: a89a60a9c7e57ab5b688955f79a9ab504346f61cfe769097a79f69f3369c4452
-SHA1: 671834b06bbaeea3be92d32e5f337705ec540fa8
-MD5sum: 58028ac09069a29d6cb7f477b1ebc19f
+Size: 5526996
+SHA256: 3a70a19b424a8987fe69c968c65d96e5afc72ad3bbfe3c04d213edc123daae85
+SHA1: cac206fa047ee9f5e491940247b86b5ba69ae7cc
+MD5sum: 75b04152c5430965f40c75f4c6801d98
 Description: E-Maj is a PostgreSQL extension that tracks updates on tables sets with rollback capabilities
+
+Package: postgresql-16-firebird-fdw
+Source: firebird-fdw
+Version: 1.4.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 358
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 16), libc6 (>= 2.4), libfq (>= 0.6.1)
+Provides: postgresql-firebird-fdw
+Homepage: https://github.com/ibarwick/firebird_fdw
+Priority: optional
+Section: database
+Filename: pool/main/f/firebird-fdw/postgresql-16-firebird-fdw_1.4.0-1PIGSTY~bookworm_amd64.deb
+Size: 166588
+SHA256: 8ec575a1ac57f9d96cad5de49eddb790270086f2ef4da9b20dd0b6688d31c2fd
+SHA1: de3e2e0b36df8bcbaa4b5fd6e5d57ed40ff346ec
+MD5sum: 9261a98a3d8819bb900b1307bd4fdc78
+Description: A PostgreSQL foreign data wrapper (FDW) for Firebird
+  This is a foreign data wrapper (FDW) to connect PostgreSQL to Firebird. It provides both read (SELECT) and write (INSERT/UPDATE/DELETE) support, as well as pushdown of some operations. While it appears to be working reliably, please be aware this is still very much work-in-progress; USE AT YOUR OWN RISK.
+  firebird_fdw is designed to be compatible with PostgreSQL 9.5 ~ 17. The range of firebird_fdw options available for a particular PostgreSQL version depends on the state of the Foreign Data Wrapper (FDW) API for that version; the more recent the version, the more features will be available. However, not all FDW API features are currently supported.
+  firebird_fdw supports Firebird 2.5 and later. It will probably work with Firebird 2.0 or later, and may work with earlier versions if the disable_pushdowns option is set (see below), but has never been tested with those versions.
+  firebird_fdw is developed against the core PostgreSQL community version and may not be compatible with commercial forks.
 
 Package: postgresql-16-floatvec
 Source: floatvec
@@ -11535,10 +11708,10 @@ Homepage: https://github.com/hydradatabase/hydra
 Priority: optional
 Section: database
 Filename: pool/main/h/hydra/postgresql-16-hydra_1.1.2-1PIGSTY~bookworm_amd64.deb
-Size: 429352
-SHA256: e42002810986756fb6a175f8da5b3c1d609c4722b4532997daaca8a9ab979421
-SHA1: 3bb0cb4dab7e61e2733a7a1ffc6f14a1010a0b58
-MD5sum: fda4ff4a2fcae5ea7647ad8e80352f74
+Size: 429408
+SHA256: b8f57a464a7d6ff05e5a5a5474dec179213532c78550030142effd2a52299489
+SHA1: 46a993a45f5c2636695c39fe58dcf536ea2356b0
+MD5sum: 9fe3339191fc6eb00ffbfc8e7cd8915c
 Description: Hydra: Column-oriented Postgres. Add scalable analytics to your project in minutes.
   Hydra is open source, column-oriented Postgres.
   You can query billions of rows instantly on Postgres without code changes.
@@ -11640,10 +11813,10 @@ Homepage: https://github.com/munakoiso/logerrors
 Priority: optional
 Section: database
 Filename: pool/main/l/logerrors/postgresql-16-logerrors_2.1.3-1PIGSTY~bookworm_amd64.deb
-Size: 36816
-SHA256: 1bca94aa820e625e1eb24d11b22207aa0bc0dfe5c5e0edee48ac713a6a7a8f53
-SHA1: 87ebb45e704d65de7a38aa2fe8a2cf8e33defedf
-MD5sum: fc25b1fa14b1783743726cfb7533ec99
+Size: 36828
+SHA256: f0cfc8ef93166fdd79cf7d5468fd5ebc3c087c385aae7dd1117d99aba0c1df62
+SHA1: 5bfe29d2bf36f7ae01f60cfa980ed20fe90d36c9
+MD5sum: 731cee45a56ce0dc0df903b9999f9f36
 Description: Extension for PostgreSQL for collecting statistics about messages in logfile.
   Configuration variables:
   logerrors.interval - Time between writing statistic to buffer (ms). Default of 5s, max of 60s;
@@ -11889,20 +12062,20 @@ Description: PostgreSQL extension to store authentication attempts
 
 Package: postgresql-16-pg-background
 Source: pg-background
-Version: 1.2-1PIGSTY~bookworm
+Version: 1.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 127
+Installed-Size: 142
 Depends: postgresql-16, postgresql-16-jit-llvm (>= 16), libc6 (>= 2.14)
 Provides: postgresql-pg-background
 Homepage: https://github.com/vibhorkum/pg_background
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-background/postgresql-16-pg-background_1.2-1PIGSTY~bookworm_amd64.deb
-Size: 44012
-SHA256: e93f4215c2f5ff13de66d6b70b28f2e83873e2a76a21f8d4893674a5e080fe6e
-SHA1: 22add231dd7ec0883d0fd2d4c925a49c5665be7d
-MD5sum: 2b3af8876961ccb8033e4a8ca18343ab
+Filename: pool/main/p/pg-background/postgresql-16-pg-background_1.3-1PIGSTY~bookworm_amd64.deb
+Size: 46600
+SHA256: 2642cd76e3064aa7ed7039c13a44077149ca89c2d5edd68063a21897f91c9bcd
+SHA1: fe5de65e5137da963ab14e16c56c78b3d97974fe
+MD5sum: 15da3303c3d0c6c7176a03a9d0400a59
 Description: A simple set of views to see ALL background in a PostgreSQL database
   pg_background is an extension for Postgres 16
   Initially this extension was shared by Robert Haas in PostgreSQL community for demo purpose.
@@ -11920,10 +12093,10 @@ Homepage: https://github.com/Fell-x27/pg_base58
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-base58/postgresql-16-pg-base58_0.0.1-1PIGSTY~bookworm_amd64.deb
-Size: 163696
-SHA256: dd64a167938c0361a27d51724544a642690839b2f10c0eaddb343290bc055568
-SHA1: e8735eb4de36a625cbc7b51fe18389732a00fd37
-MD5sum: 0ebdf8924f8c34eea8baf75a54f83ed1
+Size: 163736
+SHA256: 7eaf4760c15f95c98d06be5a80e1decddeebf4682e2a4496b162bd51dd70b8ac
+SHA1: 3dbd71dd211ed4a5dafb4b443b2b5d0cddd44ccb
+MD5sum: c96090c59d967de2bca2b0d103473f5a
 Description: Base58 Encoder/Decoder Extension for PostgreSQL
   SELECT base58_encode('hello'::bytea);
   SELECT base58_decode('Cn8eVZg');
@@ -11981,10 +12154,10 @@ Homepage: https://github.com/Fell-x27/pg_cardano
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-cardano/postgresql-16-pg-cardano_1.0.2-1PIGSTY~bookworm_amd64.deb
-Size: 324552
-SHA256: 5cd6f30b818f33e4a8121dbade2e64b7ff4f3a352dff686ee77f27e4ef2ca5dc
-SHA1: 537650cd955c5c757d83d9954e7b3ae7cd6e6737
-MD5sum: 5cecde7df019008627f4ff69da979847
+Size: 324164
+SHA256: 9330320f777a612472e597602b6d650a3b53c6502851ad0e5d63655c797651b1
+SHA1: 12b8171e957bc5761dce0553a81655799c094f5b
+MD5sum: dfe646150f08e07896742d8dcdfe30ae
 Description: A PostgreSQL extension providing a suite of Cardano-related tools, including cryptographic functions, address encoding/decoding, and blockchain data processing.
   This extension is an attempt to create a Swiss Army knife for simplifying the work with binary data in Cardano db-sync, as well as automating some processes.
   It is written in Rust, which ensures high security and excellent performance.
@@ -12159,17 +12332,17 @@ Source: pg-explain-ui
 Version: 0.0.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 2665
+Installed-Size: 2661
 Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0)
 Provides: postgresql-pg-explain-ui
 Homepage: https://github.com/davidgomes/pg-explain-ui
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-explain-ui/postgresql-16-pg-explain-ui_0.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 842048
-SHA256: 37b7f6a521f7d2cf78a47c776d60a2a5ce60e5ebca03d53679eaf0598a9fce62
-SHA1: a56c09057fc9b0aeaf6600040419525de604eaa4
-MD5sum: c91514d46673c851d938944bd5aa04b2
+Size: 841400
+SHA256: f524474ef2d625ef8f4e9d6e8e44be71cd095e6cf762edf455d97a5eabf85aa6
+SHA1: 88c2e929192446f56bd03dda9a21cf0b59a1a0f8
+MD5sum: a40de4c6deb753eadede9157d795dd10
 Description: A Postgres extension that allows you to easily jump into a visual plan UI for any SQL query
   This is a simple Postgres extension that allows you to easily jump into a visual plan UI for any SQL query.
 
@@ -12299,17 +12472,17 @@ Source: pg-graphql
 Version: 1.5.9-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 1979
-Depends: postgresql-16
+Installed-Size: 1987
+Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Provides: postgresql-pg-graphql
 Homepage: https://github.com/supabase/pg_graphql
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-graphql/postgresql-16-pg-graphql_1.5.9-1PIGSTY~bookworm_amd64.deb
-Size: 668928
-SHA256: 943936c9fe178bb3ee301ec75f2f6327bc5cab91c5f86f8489402e416e766d7a
-SHA1: d7dae3e3eeb4ce728b7f1b127f893a0dc6b9a8a5
-MD5sum: c6b5fe569d0866c039d63a4f9bb3e1b0
+Size: 672544
+SHA256: a63ad5dadef67c78f1d8928a3a53d36c7a3ea7db91d54d1a7fa823cabe1329c5
+SHA1: a3a5c74cb1bc77e3db2782f6a47048610dd25fe0
+MD5sum: 13689be3f6ae5d90eaf032965cbd7bf8
 Description: reflects a GraphQL schema from the existing PostgresSQL 16 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via GraphQL with no additional servers, processes, or libraries.
@@ -12380,16 +12553,16 @@ Source: pg-idkit
 Version: 0.2.4-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 812
+Installed-Size: 816
 Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Homepage: https://github.com/VADOSWARE/pg_idkit
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-idkit/postgresql-16-pg-idkit_0.2.4-1PIGSTY~bookworm_amd64.deb
-Size: 287344
-SHA256: acad3344a6357c9d2d5329d3e530d425af3c2c289d1bff9fc1127cbb3aafeb43
-SHA1: f5020eacfbec9c0fe7c3f3ea18f653276e7c41c0
-MD5sum: 92361af5d5bbb4f7de4ec8fa24c53876
+Size: 289048
+SHA256: 13ae942ee64fe4018ca87c9c9d6f1e119725758306c90786d3a2ff32eb21d28a
+SHA1: 9af80bb639984601018a8edb93d04ffced7e70a5
+MD5sum: d9fc19707ff8844117a4a983febfb6b9
 Description: PG extension that generating many popular types of identifiers
   pg_idkit is a Postgres extension for generating many popular types of identifiers:
   uuidv6, uuidv7, nanoid, ksuid, ulid, timeflake, pushid, xid, cuid, cuid2
@@ -12440,17 +12613,17 @@ Source: pg-jsonschema
 Version: 0.3.2-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 3220
+Installed-Size: 3248
 Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Provides: postgresql-pg-jsonschema
 Homepage: https://github.com/supabase/pg_jsonschema
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-jsonschema/postgresql-16-pg-jsonschema_0.3.2-1PIGSTY~bookworm_amd64.deb
-Size: 959996
-SHA256: 40141bbc089d1b6af6accf93ebb72973f5e4cadb820b2cd27e44eaf9cac96701
-SHA1: b592611aa81ad7158ab3ceda62eda35c35a4deda
-MD5sum: a07721b78b48ba0a276dd122272afe91
+Size: 967004
+SHA256: fe6ff8ab5132ffc3a9fde2adb030907e9415bdc8061b5ec3417d4473ece7a156
+SHA1: d785bf4f55cefd0679b518ba31c48e341601c76d
+MD5sum: 58da9cb5e5360d6c02d16b4368ac35db
 Description: PostgreSQL extension providing JSON Schema validation
   pg_jsonschema is a PostgreSQL extension adding support for JSON schema validation on json and jsonb data types.
 
@@ -12470,20 +12643,20 @@ Description: An analytical query engine for Postgres
 
 Package: postgresql-16-pg-later
 Source: pg-later
-Version: 0.1.3-1PIGSTY~bookworm
+Version: 0.2.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 3206
+Installed-Size: 3716
 Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2), postgresql-16-pgmq
 Provides: postgresql-pg-later
 Homepage: https://github.com/tembo-io/pg_later
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-later/postgresql-16-pg-later_0.1.3-1PIGSTY~bookworm_amd64.deb
-Size: 1056936
-SHA256: a5f7bfb3df30c8f16dee242d68356e5b9f188765f44fb432492b3611bdf4fa64
-SHA1: 7c58f83e7245a931cd062fa196efd975327d59c2
-MD5sum: 54b1f54521f47bef28ef699bcd202b67
+Filename: pool/main/p/pg-later/postgresql-16-pg-later_0.2.0-1PIGSTY~bookworm_amd64.deb
+Size: 1148796
+SHA256: b2b45f8cfb09b80304e9c169d4942423703b2ddd225737a51c36bc543e6d0eaa
+SHA1: 495895de23ad4bc2f8fc40cfa201085db08f92e9
+MD5sum: fd6e32d6cb135bf95a07b00c42ff95a4
 Description: reflects a later schema from the existing PostgresSQL 16 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via later with no additional servers, processes, or libraries.
@@ -12584,17 +12757,17 @@ Source: pg-parquet
 Version: 0.1.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 18488
+Installed-Size: 18548
 Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Provides: postgresql-pg-parquet
 Homepage: https://github.com/CrunchyData/pg_parquet
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-parquet/postgresql-16-pg-parquet_0.1.0-1PIGSTY~bookworm_amd64.deb
-Size: 4893016
-SHA256: 1449690a03cb4706fc8856af424210be9d13964150fa2dbedc4beccebfcb06af
-SHA1: 0fed802f96b672ce0b271b2793344ac942ea575d
-MD5sum: 42686b5cb049a01584bb32994d7a896e
+Size: 4912924
+SHA256: d8a62bfb47d01f97c33e63be5358a3141e292a1a8db8128768330b1cd6700714
+SHA1: 54dba7d1c010e44f396d8db9b5cf6ec38a57d5c2
+MD5sum: 1f967b9a19a569e62b0db916467e7b67
 Description: Copy to/from Parquet in S3 from within PostgreSQL
   pg_parquet is a PostgreSQL extension that allows you to read and write Parquet files,
   which are located in S3 or file system, from PostgreSQL via COPY TO/FROM commands.
@@ -12651,31 +12824,12 @@ Homepage: https://github.com/yihong0618/pg_polyline
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-polyline/postgresql-16-pg-polyline_0.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 183500
-SHA256: 028702e41bcc4b0969ac5ce655796c9dfce3156676af699000602a9526eff083
-SHA1: 33705873c7d5c77ba504e8fce5acd97e40399055
-MD5sum: e642562e9e2ff50631a1a28dfd88b159
+Size: 183320
+SHA256: 52563a8f13d7941814b4d61fe112a00511e243c5cd5fe9df41b2ac51076b73e2
+SHA1: e0ac53a8b93fdc78ff4838f8da7d8aa7a880571e
+MD5sum: 605a1683eea70935c414138d7ac65799
 Description: Fast Google Encoded Polyline encoding & decoding for postgres
   Fast Google Encoded Polyline encoding & decoding for postgres Extension
-
-Package: postgresql-16-pg-proctab
-Source: pg-proctab
-Version: 0.0.10-1PIGSTY~bookworm
-Architecture: amd64
-Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 145
-Depends: postgresql-16, postgresql-16-jit-llvm (>= 16), libc6 (>= 2.34)
-Provides: postgresql-pg-proctab
-Homepage: https://github.com/pg_proctab/pg_proctab
-Priority: optional
-Section: database
-Filename: pool/main/p/pg-proctab/postgresql-16-pg-proctab_0.0.10-1PIGSTY~bookworm_amd64.deb
-Size: 51044
-SHA256: 3916e8c4a3d1d695c52d6bee5dba4752c7a9c56f898d69002eb0b6adb7a01edd
-SHA1: 3dd77289c40c0c83a634d9bb4f5776a8061c5d74
-MD5sum: 6ff940ed2187c81e03c39d7f7bac4029
-Description: PostgreSQL extension to access the operating system process table.
-  PostgreSQL extension to access the operating system process table.
 
 Package: postgresql-16-pg-profile
 Source: pg-profile
@@ -12827,6 +12981,25 @@ SHA1: debceca98b5d2e64225cdebf443f52144679cc2e
 MD5sum: 997e9a7e7bb23fdaf75981bcbc638703
 Description: Full-text search for PostgreSQL using BM25
 
+Package: postgresql-16-pg-smtp-client
+Source: pg-smtp-client
+Version: 0.1.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 1154
+Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0)
+Provides: postgresql-pg-smtp-client
+Homepage: https://github.com/Vonng/pg_smtp_client
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-smtp-client/postgresql-16-pg-smtp-client_0.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 395732
+SHA256: e4b57a0c7b17eb64d8c6f36240f3dab615283efc379be054bf8ea12d5cba7511
+SHA1: 477f78aa3d9e2eafc1ad7aa6fa13aca46c2d91cf
+MD5sum: 05e69ec08eaebb6822ef8e1169a6ca5b
+Description: PostgreSQL extension to send email using SMTP
+  Sending mail from PostgreSQL
+
 Package: postgresql-16-pg-sqlog
 Source: pg-sqlog
 Version: 3.1.9-1PIGSTY~bookworm
@@ -12921,10 +13094,10 @@ Homepage: https://github.com/HexaCluster/pg_summarize
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-summarize/postgresql-16-pg-summarize_0.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 823264
-SHA256: 0e9ab4f802e707cc151ee4b1c883d6420ff4985bf2b9ae0a389f1c0a0027db55
-SHA1: 29579adcc04d43763466e9b12c50b5385f1f7d09
-MD5sum: 3200c236218be3246660c2cbd23fe371
+Size: 820516
+SHA256: 0fea11fbb791686a9b9463f40cde726a0197eece621c079b33d0547fa1175117
+SHA1: db9d2f986749c16b7fbf7fdcf000bda18163b668
+MD5sum: 3ca1d37a1abefdbde1dd7f159e388d5c
 Description: Text Summarization using LLMs. Built using pgrx
   PostgreSQL is a powerful and versatile database management system.
   One of its strengths lies in its extensibility.
@@ -12983,10 +13156,10 @@ Homepage: https://github.com/kelvich/pg_tiktoken
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-tiktoken/postgresql-16-pg-tiktoken_0.0.1-1PIGSTY~bookworm_amd64.deb
-Size: 1379164
-SHA256: c8b221d6cd1e5d38919baf29eb29862aee19f81bc009abf89ac0cc83f40bbd12
-SHA1: a806312544508a0017c2eb6130e7580537705014
-MD5sum: b51b31fb13cbc4134e3e99961b6d9bcb
+Size: 1379560
+SHA256: fbbd5f744e8df5ac99d3a5d4583983528f429251f380a19763bd1e5137332378
+SHA1: 1791fe76279fa7c8b224c27c1340cc26807caa0d
+MD5sum: 57fd2df2423b6da2245174f47f6f533b
 Description: OpenAI tiktoken tokenizer for PostgreSQL 16
   Postgres extension that does input tokenization using OpenAI's tiktoken.
 
@@ -13117,17 +13290,17 @@ Source: pg-vectorize
 Version: 0.18.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 13479
+Installed-Size: 15068
 Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0), postgresql-16-pgmq, postgresql-16-pgvector, postgresql-16-cron
 Provides: postgresql-pg-vectorize
 Homepage: https://github.com/tembo-io/pg_vectorize
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-vectorize/postgresql-16-pg-vectorize_0.18.3-1PIGSTY~bookworm_amd64.deb
-Size: 3906820
-SHA256: c2bf7f1fbe832ec32697947940e1b32877a818932e5ea9d550dc4d03ab490aba
-SHA1: 9d07df0aa6ac528a7416491806a962de596c4f8b
-MD5sum: 3237f3c193bb2e87dae65350b027826e
+Size: 4161764
+SHA256: a46dd3d473536c5a9486e732f77193efff7f354431a2daaa74fd31c06e0a723a
+SHA1: c3923c7bb8480296f61a84119c96f40f40226eb9
+MD5sum: ffede3f4b20de83e7f5766ad0f47cb64
 Description: reflects a vectorize schema from the existing PostgresSQL 16 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via vectorize with no additional servers, processes, or libraries.
@@ -13357,16 +13530,16 @@ Source: pgsmcrypto
 Version: 0.1.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 2341
+Installed-Size: 2345
 Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Homepage: https://github.com/zhuobie/pgsmcrypto
 Priority: optional
 Section: database
 Filename: pool/main/p/pgsmcrypto/postgresql-16-pgsmcrypto_0.1.0-1PIGSTY~bookworm_amd64.deb
-Size: 653328
-SHA256: 6befeb2bfa60200b88381e133bc5a6deb31b5f0445abaecc61699d20a0dd18f7
-SHA1: 39905cb64fa1dc601e62313328a4fe8f1e0c6641
-MD5sum: b1ef44e9d60e1db9a84e14a46c1f1475
+Size: 654948
+SHA256: 5700db80b240741de12ba599b4d8f1bbaac6acf3876eabf268332c14281569f6
+SHA1: 69bb2d37f1a351f3fbd0c3211d5819437a352323
+MD5sum: e071d71acb77d47e3800c77b70d74af1
 Description: PostgreSQL SM Algorithm Extension
   China National SM algorithm extension for PostgreSQL. SM2 / SM3 / SM4
 
@@ -13423,10 +13596,10 @@ Homepage: https://github.com/darold/pgtt
 Priority: optional
 Section: database
 Filename: pool/main/p/pgtt/postgresql-16-pgtt_4.0-1PIGSTY~bookworm_amd64.deb
-Size: 59064
-SHA256: 334c2771164a3a615607f3509c5896a4e7288dd563598fa4b47aac37a1fd5fe5
-SHA1: 6fccfe1b948eb4d79de80d8a4c82808a53317d78
-MD5sum: d634a31654f5ccd3878ff98c65a3c62e
+Size: 59080
+SHA256: c1e721d0eca66fea5167dd38cd20a6d0af6bc3ea38890f2b9e4351977260334a
+SHA1: 8c428caa00a5153e1140994e9ce65222d653ffff
+MD5sum: ae87ed4e9aa87b1b45bb999cdb080f2f
 Description: Create, manage and use Oracle-style Global Temporary Tables and the others RDBMS in PostgreSQL 16
   pgtt is a PostgreSQL extension to create, manage and use Oracle-style Global Temporary Tables and the others RDBMS.
   The objective of this extension it to provide the Global Temporary Table feature to PostgreSQL waiting for an in core implementation.
@@ -13462,16 +13635,16 @@ Source: pgvectorscale
 Version: 0.4.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 809
+Installed-Size: 837
 Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2), postgresql-16-pgvector
 Homepage: https://github.com/timescale/pgvectorscale
 Priority: optional
 Section: database
 Filename: pool/main/p/pgvectorscale/postgresql-16-pgvectorscale_0.4.0-1PIGSTY~bookworm_amd64.deb
-Size: 276772
-SHA256: ee2bf3de0ae43b2678e8dd0e42e5e80761c1381a44d5606aaca4f0e82943958d
-SHA1: ffdfed04b709f3525860f10b2ad19dfe525e5e58
-MD5sum: de074936c74bbb7f17648a3847da81b2
+Size: 281152
+SHA256: 6b9d5b976e5c5da286200c43e8b12dd3bc21d562ec2fd1d83e4b9457601bc8ef
+SHA1: c31957896c897406f89efe46c8210b77bb81d4a3
+MD5sum: ad4a8935310180d8f004283a5b7dbb2a
 Description: A complement to pgvector for high performance, cost efficient vector search on large workloads.
   pgvectorscale builds on pgvector with higher performance embedding search and cost-efficient storage for AI applications.
 
@@ -13480,16 +13653,16 @@ Source: plprql
 Version: 1.0.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 6224
+Installed-Size: 6320
 Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Homepage: https://github.com/kaspermarstal/plprql
 Priority: optional
 Section: database
 Filename: pool/main/p/plprql/postgresql-16-plprql_1.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 1777648
-SHA256: b2fe2316bd88fa310058ca503de99259eb0dc50be18ea778371769410fc4653e
-SHA1: e3a9dd78e389dcfb8dd87e2f2c22af8b89c6115c
-MD5sum: 8ab0b3ec01c12ad71fd6408a9674010d
+Size: 1791220
+SHA256: 4c83d2332f573060aa3d76b2d8add4d6e910243dd8b3127175fa925643289404
+SHA1: 5ad55a2cdaf790a39eebc925e6e3a63c5debd9ee
+MD5sum: 5d9b3432935f035634deef0c4e77f21e
 Description: PL/PRQL is a PostgreSQL extension that lets you write functions with PRQL.
   PRQL (Pipelined Relational Query Language) is an open source query language for data manipulation and analysis that compiles to SQL.
   PRQL introduces a pipeline concept (similar to Unix pipes) that transforms data line-by-line. The sequential series of transformations
@@ -13693,20 +13866,20 @@ Description: A Postgres extension for managing SSL certificates through SQL.
 
 Package: postgresql-16-supautils
 Source: supautils
-Version: 3.1.9-1PIGSTY~bookworm
+Version: 2.5.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 155
+Installed-Size: 170
 Depends: postgresql-16, postgresql-16-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-supautils
 Homepage: https://github.com/supabase/supautils
 Priority: optional
 Section: database
-Filename: pool/main/s/supautils/postgresql-16-supautils_3.1.9-1PIGSTY~bookworm_amd64.deb
-Size: 64408
-SHA256: a89121e3af6b481de8df6e5d0ef9452417d04a2a07f342e7eaf98f09a5210e70
-SHA1: 80d7d65419332a671193a07e704f2d18f8f67ece
-MD5sum: 32dcc550e1bf078446d8ca5fb0b69a4d
+Filename: pool/main/s/supautils/postgresql-16-supautils_2.5.0-1PIGSTY~bookworm_amd64.deb
+Size: 66704
+SHA256: ca9dd1e1b76806bdba0bacab4665aeba6d60c4a14535292e90e35d7785bb2664
+SHA1: 9cebf22cd2261a8c30cc08c863dd63e845237432
+MD5sum: 047b33b1493123e1af38a4750db4f064
 Description: PostgreSQL extension that secures a cluster on a cloud environment
   Supautils is an extension that secures a PostgreSQL cluster on a cloud environment.
   It doesn't require creating database objects. It's a shared library that modifies PostgreSQL behavior through "hooks",
@@ -13740,14 +13913,14 @@ Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 689
 Depends: postgresql-16
 Provides: postgresql-tableversion
-Homepage: http://www.linz.govt.nz
+Homepage: https://github.com/linz/postgresql-tableversion
 Priority: optional
 Section: database
 Filename: pool/main/t/tableversion/postgresql-16-tableversion_1.10.3-1PIGSTY~bookworm_amd64.deb
-Size: 28188
-SHA256: eba36e335235ff3926821ac68d7afaf03214517367e473f1f44731e8f0b0274e
-SHA1: 726f866decfe4804b14d74e8125b279b9219b254
-MD5sum: 4bf5f95774051acda3328445376508e4
+Size: 28192
+SHA256: c5d95550c40d435ea126d6139d8f542b2e3c739c872f7dc3ef40d3497fc642ae
+SHA1: c817fa1d8b23402f0160642c43064f86f22af1e9
+MD5sum: c6855b5c9514cca330aad152ba79ec92
 Description: PostgreSQL table versioning extension, recording row modifications
   and its history. The extension provides APIs for accessing snapshots of a table
   at certain revisions and the difference generated between any two given
@@ -13860,16 +14033,16 @@ Source: wrappers
 Version: 0.4.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 364
+Installed-Size: 368
 Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Homepage: https://github.com/supabase/wrappers
 Priority: optional
 Section: database
 Filename: pool/main/w/wrappers/postgresql-16-wrappers_0.4.3-1PIGSTY~bookworm_amd64.deb
-Size: 141772
-SHA256: f4d4a33925eb56bcc35d7310330c4ed72808e8cd33f402574536c7b6a761edb5
-SHA1: a221e760adcc3ff93a14b04fc84f8463c19e2fca
-MD5sum: 50736939fe4dfd75c165d175e2e78706
+Size: 143280
+SHA256: ac1cb36ffb4a95da7ce653dc2f8c4bef2a12ad0c1bd52896c3e41aa0b51a1f70
+SHA1: 8aa95a83ef161f7e0ebe8957e218beb7de9a22e3
+MD5sum: d920e91623b6e95d222df3dbb7f14eb3
 Description: Postgres Foreign Data Wrappers by Supabase
   Wrappers is a development framework for Postgres Foreign Data Wrappers (FDW), written in Rust.
   Its goal is to make Postgres FDW development easier while keeping Rust language's modern capabilities,
@@ -13919,20 +14092,20 @@ Description: Access Control Lists (ACL) PostgreSQL Extension
 
 Package: postgresql-17-aggs-for-arrays
 Source: aggs-for-arrays
-Version: 1.3.2-1PIGSTY~bookworm
+Version: 1.3.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 118
+Installed-Size: 120
 Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.14)
 Provides: postgresql-aggs-for-arrays
 Homepage: https://github.com/pjungwir/aggs_for_arrays
 Priority: optional
 Section: database
-Filename: pool/main/a/aggs-for-arrays/postgresql-17-aggs-for-arrays_1.3.2-1PIGSTY~bookworm_amd64.deb
-Size: 44064
-SHA256: a98bdfcd9f2ced94379ced635613912f6620f7c6fbf413f03ee8d4d74b637ec6
-SHA1: cb52bae09a4e64809b32eabe7643cf11ca3e981e
-MD5sum: 926903bafc92a933f152ccb93a1303ca
+Filename: pool/main/a/aggs-for-arrays/postgresql-17-aggs-for-arrays_1.3.3-1PIGSTY~bookworm_amd64.deb
+Size: 44672
+SHA256: 333f49b54684203697df816210a5f3868455505fbbe9fe0314629251ea8524b6
+SHA1: 5ccebd58d271a9378e2408a528cc0123a8fdea86
+MD5sum: 64169830c231abc771373de62a0658cc
 Description: A Postgres extension in C to compute statistics on arrays of numbers
   This Postgres extension provides various functions for operating on arrays, for instance taking the histogram of an array of numbers.
   These functions are useful because if you have a lot values you want to aggregate, queries that fetch each value from a separate row
@@ -13942,20 +14115,20 @@ Description: A Postgres extension in C to compute statistics on arrays of number
 
 Package: postgresql-17-aggs-for-vecs
 Source: aggs-for-vecs
-Version: 1.3.0-1PIGSTY~bookworm
+Version: 1.3.1-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 295
+Installed-Size: 296
 Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-aggs-for-vecs
 Homepage: https://github.com/pjungwir/aggs_for_vecs
 Priority: optional
 Section: database
-Filename: pool/main/a/aggs-for-vecs/postgresql-17-aggs-for-vecs_1.3.0-1PIGSTY~bookworm_amd64.deb
-Size: 88016
-SHA256: 297643773aa87a67ee445724d11f4f9eca39b3f41bd1036772ad0dc5664b3ab9
-SHA1: ee67954d24120b17ba842be542e8a1b068d7b09f
-MD5sum: 69fd911d5eacf9c0b82f549eb00907e7
+Filename: pool/main/a/aggs-for-vecs/postgresql-17-aggs-for-vecs_1.3.1-1PIGSTY~bookworm_amd64.deb
+Size: 88188
+SHA256: e44c8e5536aa43db1a3209b40400b79c679cdfd4340489414551e610a78e0cf9
+SHA1: d7bbeda51a290dc61293a901e8e8af4de0cb8444
+MD5sum: 99212ddca48f018860b4fa2f3b911b06
 Description: Postgres C extension with aggregate functions for array inputs
   This is a C-based Postgres extension offering various aggregate functions
   like min, max, avg, and var_samp that operate on arrays instead of scalars.
@@ -14143,6 +14316,46 @@ Description: Output plugin for logical replication
   This output plugin for logical replication generates raw queries based
   on the logical changes it finds. Those queries can be consumed as they
   are by any remote source.
+
+Package: postgresql-17-emaj
+Source: emaj
+Version: 4.4.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 12929
+Depends: postgresql-17, perl:any
+Provides: postgresql-emaj
+Homepage: https://github.com/dalibo/emaj
+Priority: optional
+Section: database
+Filename: pool/main/e/emaj/postgresql-17-emaj_4.4.0-1PIGSTY~bookworm_amd64.deb
+Size: 5526968
+SHA256: 718345315618dc1886b1a0828a8d4842cfa29b7af1f91add1d6a49a138c72809
+SHA1: 403aeec7ea78623db326b715f4da666b3078c9a6
+MD5sum: b63addbbea9e0e42b4aeae8d74419b16
+Description: E-Maj is a PostgreSQL extension that tracks updates on tables sets with rollback capabilities
+
+Package: postgresql-17-firebird-fdw
+Source: firebird-fdw
+Version: 1.4.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 358
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.4), libfq (>= 0.6.1)
+Provides: postgresql-firebird-fdw
+Homepage: https://github.com/ibarwick/firebird_fdw
+Priority: optional
+Section: database
+Filename: pool/main/f/firebird-fdw/postgresql-17-firebird-fdw_1.4.0-1PIGSTY~bookworm_amd64.deb
+Size: 166792
+SHA256: 9d78dbc83170a1a89d1775596b8ac6166bd2777c17fa1b8458659cf390aa53c2
+SHA1: bcf71e0ea8aac0ad0e096aa8cf32c89dba11e1da
+MD5sum: eeb724ba233190bf3726871545e3f364
+Description: A PostgreSQL foreign data wrapper (FDW) for Firebird
+  This is a foreign data wrapper (FDW) to connect PostgreSQL to Firebird. It provides both read (SELECT) and write (INSERT/UPDATE/DELETE) support, as well as pushdown of some operations. While it appears to be working reliably, please be aware this is still very much work-in-progress; USE AT YOUR OWN RISK.
+  firebird_fdw is designed to be compatible with PostgreSQL 9.5 ~ 17. The range of firebird_fdw options available for a particular PostgreSQL version depends on the state of the Foreign Data Wrapper (FDW) API for that version; the more recent the version, the more features will be available. However, not all FDW API features are currently supported.
+  firebird_fdw supports Firebird 2.5 and later. It will probably work with Firebird 2.0 or later, and may work with earlier versions if the disable_pushdowns option is set (see below), but has never been tested with those versions.
+  firebird_fdw is developed against the core PostgreSQL community version and may not be compatible with commercial forks.
 
 Package: postgresql-17-floatvec
 Source: floatvec
@@ -14472,10 +14685,10 @@ Homepage: https://github.com/munakoiso/logerrors
 Priority: optional
 Section: database
 Filename: pool/main/l/logerrors/postgresql-17-logerrors_2.1.3-1PIGSTY~bookworm_amd64.deb
-Size: 37300
-SHA256: f73fe7fc328ec5dc223c8eb24ac09263e5b8d75f6a1f5f19e580f2749663160d
-SHA1: 3a2c84e50f15acf7979d5089181c4d8a3f535876
-MD5sum: 297b7f4d14a20e4d517349d6ced5fc3f
+Size: 37320
+SHA256: 1aad010e003d80707505659da75e614dffbcfa770a1e4ab07ae2526b255cfaab
+SHA1: bcd30a8630c9a0e25e54a1b3a052965930aef87a
+MD5sum: 062ff0f7b64c7d9ff7ec9828519a30dc
 Description: Extension for PostgreSQL for collecting statistics about messages in logfile.
   Configuration variables:
   logerrors.interval - Time between writing statistic to buffer (ms). Default of 5s, max of 60s;
@@ -14542,6 +14755,25 @@ MD5sum: 0c0bf607bf33123e1b8e7179a659aadb
 Description: A custom data type for storing MD5 hashes (instead of the native TEXT varlena type).
   This extension provides a simple data type storing 128-bit values (e.g. MD5 hashes) in a bit more efficient way - in a fixed-length columns and inline.
   The extension defines the 'md5hash' type itself, casts, operators and an operator class for btree indexes. It's fairly straightforward and simple to add more operators or classes.
+
+Package: postgresql-17-mysqlcompat
+Source: mysqlcompat
+Version: 0.0.7-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 77
+Depends: postgresql-17
+Provides: postgresql-mysqlcompat
+Homepage: https://github.com/2ndQuadrant/mysqlcompat
+Priority: optional
+Section: database
+Filename: pool/main/m/mysqlcompat/postgresql-17-mysqlcompat_0.0.7-1PIGSTY~bookworm_amd64.deb
+Size: 12516
+SHA256: ef15ac5153bb434df866ab68a30a6d253c8c0f9f65fc5638cd26a6d811361d33
+SHA1: 15d62c103fabc96fbf95c65618c8b2ef5f854e70
+MD5sum: 72167d5ac26702e395d0536765168025
+Description: MySQL compatibility functions for PostgreSQL 17
+  A reimplemenation of as many MySQL functions as possible in PostgreSQL, as an aid to porting
 
 Package: postgresql-17-noset
 Source: noset
@@ -14702,20 +14934,20 @@ Description: PostgreSQL extension to store authentication attempts
 
 Package: postgresql-17-pg-background
 Source: pg-background
-Version: 1.2-1PIGSTY~bookworm
+Version: 1.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 127
+Installed-Size: 142
 Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.14)
 Provides: postgresql-pg-background
 Homepage: https://github.com/vibhorkum/pg_background
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-background/postgresql-17-pg-background_1.2-1PIGSTY~bookworm_amd64.deb
-Size: 44176
-SHA256: 227787cba3df3bea0c947cfd5180aaf4ebcb5be53d177307028bb2074686cae0
-SHA1: afd27c6bd74f47cf9203fe3887b8e1ef46906476
-MD5sum: 54aaf92ac411e1c1b484adfc2c9397fb
+Filename: pool/main/p/pg-background/postgresql-17-pg-background_1.3-1PIGSTY~bookworm_amd64.deb
+Size: 46560
+SHA256: e1f0d3dbab5cb8253f5fb25c90b382ec1d4adf11194a19ec9441b8f3e6598348
+SHA1: df28c270b0168d05c51653135c4ff31bf6af4c4e
+MD5sum: 473c9ce138e345844068c9b136200f92
 Description: A simple set of views to see ALL background in a PostgreSQL database
   pg_background is an extension for Postgres 17
   Initially this extension was shared by Robert Haas in PostgreSQL community for demo purpose.
@@ -14733,10 +14965,10 @@ Homepage: https://github.com/Fell-x27/pg_base58
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-base58/postgresql-17-pg-base58_0.0.1-1PIGSTY~bookworm_amd64.deb
-Size: 163664
-SHA256: 5d6ba7acfafa8c4d4cf9eb40b61b815f461ab9f68c27d4a97436b06f635360b0
-SHA1: f698c93275e719f07157858bfc9a9cc5262a2b7a
-MD5sum: 4999d7b1a740c476862dd39a3307d07a
+Size: 163668
+SHA256: 751149af253126aabba757a2e51ea5462f6426754346e59c8d9a03c1985c437a
+SHA1: b2debe307d7788cc696ad76390617126739b998a
+MD5sum: 9d70eec03d13d8327f18fcca6c565961
 Description: Base58 Encoder/Decoder Extension for PostgreSQL
   SELECT base58_encode('hello'::bytea);
   SELECT base58_decode('Cn8eVZg');
@@ -14773,10 +15005,10 @@ Homepage: https://github.com/Fell-x27/pg_cardano
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-cardano/postgresql-17-pg-cardano_1.0.2-1PIGSTY~bookworm_amd64.deb
-Size: 324016
-SHA256: 6992985b94a08649226432c250f6e32493d2d77f6ce1ef546307d3a761c09090
-SHA1: 95342bf716759834f671f0def57f8a1c2140c562
-MD5sum: 08e3fa37539be1c170c386f943490a43
+Size: 324220
+SHA256: 1f07d262beaa9189608933b7079921fa20e39b9017495b55dc979fa64b1426da
+SHA1: 5b414f987699867acbdb8884c25088f6cb2be748
+MD5sum: ff9349e045619f898f40562b0e710f32
 Description: A PostgreSQL extension providing a suite of Cardano-related tools, including cryptographic functions, address encoding/decoding, and blockchain data processing.
   This extension is an attempt to create a Swiss Army knife for simplifying the work with binary data in Cardano db-sync, as well as automating some processes.
   It is written in Rust, which ensures high security and excellent performance.
@@ -14951,17 +15183,17 @@ Source: pg-explain-ui
 Version: 0.0.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 2665
+Installed-Size: 2661
 Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0)
 Provides: postgresql-pg-explain-ui
 Homepage: https://github.com/davidgomes/pg-explain-ui
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-explain-ui/postgresql-17-pg-explain-ui_0.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 840648
-SHA256: 879607158af409d59ebfbcd8556d7c4de82d37911a4e5afa649b75296f159791
-SHA1: 8c03ef75e923fcd6e3cfc177e41f4b047dbd3621
-MD5sum: e2555ce9106028271ec3c51511205ec3
+Size: 840388
+SHA256: bdb946ffa894ddca30d0805d9152006c6084a1d1af6084eb4875dbe128a46d1f
+SHA1: 7e0101119a95f5897f386e3737ee6dfbbdcbc22c
+MD5sum: 68342717cc11bd7c9a758f7c5c618c3d
 Description: A Postgres extension that allows you to easily jump into a visual plan UI for any SQL query
   This is a simple Postgres extension that allows you to easily jump into a visual plan UI for any SQL query.
 
@@ -15091,17 +15323,17 @@ Source: pg-graphql
 Version: 1.5.9-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 20
-Depends: postgresql-17
+Installed-Size: 1987
+Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Provides: postgresql-pg-graphql
 Homepage: https://github.com/supabase/pg_graphql
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-graphql/postgresql-17-pg-graphql_1.5.9-1PIGSTY~bookworm_amd64.deb
-Size: 6548
-SHA256: 43bef093e0ffc9623b00d7b523f66aad9344453c1e4096d121e10de3a16ff61f
-SHA1: 482eab6d6f28ddc56aa8755b815fbfca9e1f303d
-MD5sum: 98cbc52c526d71ed408d84a9e78d04ae
+Size: 672628
+SHA256: 587346ffb9a52262eb44a8035657af585287a999b580977a9a3ef033d11e2d60
+SHA1: b946ef86afc1d690ba3231f02c4f9dce36d1442f
+MD5sum: cafd4054df55c61d84e6e6c04fc534bb
 Description: reflects a GraphQL schema from the existing PostgresSQL 17 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via GraphQL with no additional servers, processes, or libraries.
@@ -15172,16 +15404,16 @@ Source: pg-idkit
 Version: 0.2.4-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 21
-Depends: postgresql-17
+Installed-Size: 816
+Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Homepage: https://github.com/VADOSWARE/pg_idkit
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-idkit/postgresql-17-pg-idkit_0.2.4-1PIGSTY~bookworm_amd64.deb
-Size: 6776
-SHA256: 0daf523748c5a55f569d0fe851f6f0dc0e39de9163ba205374887bba1fc56d0b
-SHA1: c3fbb5717a18c15e8d1eff2d9f5fdc98e3c8e625
-MD5sum: f98c2766335f7c13a0e1382a6115a709
+Size: 289172
+SHA256: a78b1479c764c23a5f5c231602c46e8f9a073701378677b34d99e5ff9b0af490
+SHA1: 837a27c2b5bea0c9a2f78d716ed1b68ee1b5657a
+MD5sum: 8c00a721b10087e33e938d0b1951f33e
 Description: PG extension that generating many popular types of identifiers
   pg_idkit is a Postgres extension for generating many popular types of identifiers:
   uuidv6, uuidv7, nanoid, ksuid, ulid, timeflake, pushid, xid, cuid, cuid2
@@ -15206,24 +15438,65 @@ Description: IVM (Incremental View Maintenance) implementation as a PostgreSQL e
   The pg_ivm module provides Incremental View Maintenance (IVM) feature for PostgreSQL.
   The extension is compatible with PostgreSQL 13, 14, 15, and 16.
 
+Package: postgresql-17-pg-jobmon
+Source: pg-jobmon
+Version: 1.4.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 227
+Depends: postgresql-17
+Provides: postgresql-pg-jobmon
+Homepage: https://github.com/omniti-labs/pg_jobmon
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-jobmon/postgresql-17-pg-jobmon_1.4.1-1PIGSTY~bookworm_amd64.deb
+Size: 26760
+SHA256: 6cbcd69d6a0430bb1a89aa93e0bff8104c8dd954598e9f72c04519b633d898a1
+SHA1: f2728bae4b4c8a0e1d1d1e745c28c781837307b7
+MD5sum: c39ec691851b9911bca8a6f925259130
+Description: PostgreSQL extension which provides persistent logging within transactions and functions.
+  pg_jobmon is a PostgreSQL extension designed to add autonomous logging capabilities to transactions and functions.
+  The logging is done in a NON-TRANSACTIONAL method, so that if your function/transaction fails for any reason,
+  any information written to that point will be kept in the log tables rather than rolled back.
+
 Package: postgresql-17-pg-jsonschema
 Source: pg-jsonschema
 Version: 0.3.2-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 18
-Depends: postgresql-17
+Installed-Size: 3248
+Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Provides: postgresql-pg-jsonschema
 Homepage: https://github.com/supabase/pg_jsonschema
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-jsonschema/postgresql-17-pg-jsonschema_0.3.2-1PIGSTY~bookworm_amd64.deb
-Size: 4940
-SHA256: 0c0f3923596f41df46b87679528f1591d5f63f9a51dfa171a47629f131bfc724
-SHA1: f619872f92625475a42a416bf3a649fb55eb3978
-MD5sum: 1a9d560e885f881c47b275c41eeec732
+Size: 966756
+SHA256: 1ac3bfffe28c49e22babbd3f38f52b2883ee6048d7be1d3ffdbbd9610ec01ed5
+SHA1: ad582638ada9d9bf5658ae5cc0e368d362a336b7
+MD5sum: a3989b39076808be478fac437ce33779
 Description: PostgreSQL extension providing JSON Schema validation
   pg_jsonschema is a PostgreSQL extension adding support for JSON schema validation on json and jsonb data types.
+
+Package: postgresql-17-pg-later
+Source: pg-later
+Version: 0.2.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 3716
+Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2), postgresql-17-pgmq
+Provides: postgresql-pg-later
+Homepage: https://github.com/tembo-io/pg_later
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-later/postgresql-17-pg-later_0.2.0-1PIGSTY~bookworm_amd64.deb
+Size: 1149616
+SHA256: d3635c54323ac334d18f5498e538c95203bc111dbe1692aff8df08ae1c27a4ef
+SHA1: 250dabcf74f22d54b26d96c25bee381957e813f1
+MD5sum: d94dc00295f96656d4442b76d78cebe8
+Description: reflects a later schema from the existing PostgresSQL 17 schema
+  The extension keeps schema translation and query resolution neatly contained on your database server.
+  This enables any programming language that can connect to PostgreSQL to query the database via later with no additional servers, processes, or libraries.
 
 Package: postgresql-17-pg-math
 Source: pg-math
@@ -15321,17 +15594,17 @@ Source: pg-parquet
 Version: 0.1.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 18488
+Installed-Size: 18548
 Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Provides: postgresql-pg-parquet
 Homepage: https://github.com/CrunchyData/pg_parquet
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-parquet/postgresql-17-pg-parquet_0.1.0-1PIGSTY~bookworm_amd64.deb
-Size: 4893168
-SHA256: 827729b1f996b9760916ed87a371b6bc5639d2081a62df3d8672ce26bac6d365
-SHA1: 7542df232efb64f857e91ab179f0160ab96e28e3
-MD5sum: 35e92e29ca54ee295181aa43454c1591
+Size: 4912196
+SHA256: cc691c44b54413cc5878372e12fea06c0650f9b81517091d8b8827118c64c872
+SHA1: 00f8e93e685ace5c111d9e0481b08382002c23d1
+MD5sum: 346a9acc65e551d454a8e771390a1502
 Description: Copy to/from Parquet in S3 from within PostgreSQL
   pg_parquet is a PostgreSQL extension that allows you to read and write Parquet files,
   which are located in S3 or file system, from PostgreSQL via COPY TO/FROM commands.
@@ -15388,10 +15661,10 @@ Homepage: https://github.com/yihong0618/pg_polyline
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-polyline/postgresql-17-pg-polyline_0.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 183336
-SHA256: bad31c78c4452092fc378c76bd1a67b993281e72e3fe5cc8d0b01746f311effc
-SHA1: 41d916ad116194ef19f97738bd1500d8192bec27
-MD5sum: c45214a661640ec0acedcc88b985608a
+Size: 183344
+SHA256: 24f7a6363583b96cc3c11ee073d207b5d7f38ca37f24a389a5efd7a04f928da2
+SHA1: b1df661ebb3b0682a6fab6d898728393fee59b5f
+MD5sum: ddcecb59b9a0715f52aaad907cce3b4d
 Description: Fast Google Encoded Polyline encoding & decoding for postgres
   Fast Google Encoded Polyline encoding & decoding for postgres Extension
 
@@ -15585,6 +15858,28 @@ Description: Query Performance Monitoring Tool for PostgreSQL
   The pg_stat_monitor is a Query Performance Monitoring tool for PostgreSQL.
   It attempts to provide a more holistic picture by providing much-needed query performance insights in a single view.
 
+Package: postgresql-17-pg-statement-rollback
+Source: pg-statement-rollback
+Version: 1.4-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 76
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.4)
+Provides: postgresql-pg-statement-rollback
+Homepage: https://github.com/lzlabs/pg_statement_rollback
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-statement-rollback/postgresql-17-pg-statement-rollback_1.4-1PIGSTY~bookworm_amd64.deb
+Size: 31344
+SHA256: 8ea888275faad6b9322df0db686c6a969ed5c0982cf110e5c432e0725aa6c2dd
+SHA1: 6a54e8b9531a1b3d42050d91941bbb06fbe4f5f9
+MD5sum: 8e4c8770c388870e17c2b6216c75fdd0
+Description: Server side rollback at statement level for PostgreSQL like Oracle or DB2
+  pg_statement_rollback is a PostgreSQL extension to add server side transaction with rollback at statement level like in Oracle or DB2.
+  If at any time during execution a SQL statement causes an error, all effects of the statement are rolled back.
+  The effect of the rollback is as if that statement had never been run.
+  This operation is called statement-level rollback and has the following characteristics:
+
 Package: postgresql-17-pg-summarize
 Source: pg-summarize
 Version: 0.0.0-1PIGSTY~bookworm
@@ -15597,10 +15892,10 @@ Homepage: https://github.com/HexaCluster/pg_summarize
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-summarize/postgresql-17-pg-summarize_0.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 822248
-SHA256: 44c95701ca37782f1f46b9765e1c767ccad07e493870b66051325f174e9f8caf
-SHA1: e49ef2197861fef1e61c505e066a73f96ad0bf9c
-MD5sum: a1be33b3a0bb93802e0fd9d2cc487bd2
+Size: 820800
+SHA256: 058d168f280e4547b93a467b28965110549ea4b6816b6c540e4dca3c289fa5ad
+SHA1: 4d34b0595c2575cb8ab492336f2aa48a53ff2a4f
+MD5sum: ac2049a3013d3331a433bab906e40e24
 Description: Text Summarization using LLMs. Built using pgrx
   PostgreSQL is a powerful and versatile database management system.
   One of its strengths lies in its extensibility.
@@ -15748,6 +16043,26 @@ MD5sum: ce037724c6e1eee6e7b396a4d8029990
 Description: A tiny Postgres extension to create version 7 UUIDs
   A tiny Postgres extension to create valid version 7 UUIDs in Postgres.
   These are regular Postgres UUIDs, so they can be used as primary keys, converted to and from strings, included in indexes, etc:
+
+Package: postgresql-17-pg-vectorize
+Source: pg-vectorize
+Version: 0.18.3-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 15068
+Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0), postgresql-17-pgmq, postgresql-17-pgvector, postgresql-17-cron
+Provides: postgresql-pg-vectorize
+Homepage: https://github.com/tembo-io/pg_vectorize
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-vectorize/postgresql-17-pg-vectorize_0.18.3-1PIGSTY~bookworm_amd64.deb
+Size: 4162428
+SHA256: 13aa6897ed3c3c0b3cacae01fb2e3bfa4e3c61db2e240471a7e28c175f1f6f49
+SHA1: ee9d7d3fea732b126869ba143e3cc4b3b310174b
+MD5sum: 9d538bebd06d0706b319a93664db5d6e
+Description: reflects a vectorize schema from the existing PostgresSQL 17 schema
+  The extension keeps schema translation and query resolution neatly contained on your database server.
+  This enables any programming language that can connect to PostgreSQL to query the database via vectorize with no additional servers, processes, or libraries.
 
 Package: postgresql-17-pg-zstd
 Source: pg-zstd
@@ -15934,16 +16249,16 @@ Source: pgsmcrypto
 Version: 0.1.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 9
-Depends: postgresql-17
+Installed-Size: 2345
+Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Homepage: https://github.com/zhuobie/pgsmcrypto
 Priority: optional
 Section: database
 Filename: pool/main/p/pgsmcrypto/postgresql-17-pgsmcrypto_0.1.0-1PIGSTY~bookworm_amd64.deb
-Size: 1908
-SHA256: ae998a96cd176b9028bd7299d600d50adf1463511bb3ab1c7530bb55fc5d4949
-SHA1: 0eaac79464a701123514640d6fe9cc0733341f3c
-MD5sum: b0718ee089e6093e68a43342395d22a5
+Size: 655344
+SHA256: 779dc777db952d3bbe4dc62732f4cf3a7ebbef97ab89d4d252ff2515560fd285
+SHA1: c132674eb34140ee4aae0bdcb93dcabf3378f807
+MD5sum: c7316e969ec3f6773d06495d7e2f144f
 Description: PostgreSQL SM Algorithm Extension
   China National SM algorithm extension for PostgreSQL. SM2 / SM3 / SM4
 
@@ -15987,6 +16302,28 @@ MD5sum: 042f9696c2d0fd285197206f9ada3074
 Description: Contains PostgreSQL functions which I regularly needed.
   The functions and views published in this repository are some of those, which I regularly need in my daily job.
   As these procedures are sort of essential, at least to me, I install them in the public schema. That way they are available for everyone without having to know a schema name.
+
+Package: postgresql-17-pgtt
+Source: pgtt
+Version: 4.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 155
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.4)
+Provides: postgresql-pgtt
+Homepage: https://github.com/darold/pgtt
+Priority: optional
+Section: database
+Filename: pool/main/p/pgtt/postgresql-17-pgtt_4.0-1PIGSTY~bookworm_amd64.deb
+Size: 59152
+SHA256: eb9997a92d2026c8c0329fcec48fcca46923cd7f795f1f638852fc215328c063
+SHA1: 6e157178052ebdd64a6d07ac7459d7a2d8564caf
+MD5sum: 48c308218d3285c03c85dc3e86db6041
+Description: Create, manage and use Oracle-style Global Temporary Tables and the others RDBMS in PostgreSQL 17
+  pgtt is a PostgreSQL extension to create, manage and use Oracle-style Global Temporary Tables and the others RDBMS.
+  The objective of this extension it to provide the Global Temporary Table feature to PostgreSQL waiting for an in core implementation.
+  The main interest of this extension is to mimic the Oracle behavior with GTT when you can not or don't want to rewrite the application code when migrating to PostgreSQL.
+  In all other case best is to rewrite the code to use standard PostgreSQL temporary tables.
 
 Package: postgresql-17-pguint
 Source: pguint
@@ -16248,6 +16585,49 @@ Description: A Postgres extension for exposing system metrics such as CPU, memor
   system_stats is a Postgres extension that provides functions to access system level statistics that can be used for monitoring. It supports Linux, macOS and Windows.
   Note that not all values are relevant on all operating systems. In such cases NULL is returned for affected values.
 
+Package: postgresql-17-tableversion
+Source: tableversion
+Version: 1.10.3-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 689
+Depends: postgresql-17
+Provides: postgresql-tableversion
+Homepage: https://github.com/linz/postgresql-tableversion
+Priority: optional
+Section: database
+Filename: pool/main/t/tableversion/postgresql-17-tableversion_1.10.3-1PIGSTY~bookworm_amd64.deb
+Size: 28192
+SHA256: eb21a2fba93aab46e3af727460ba2c69423269c688aabdc361a2d7f94a51a3c1
+SHA1: 044e52e09593d691d7a22de7ba17ece7e7d48e6a
+MD5sum: ea3480e8709d1ba6cbc7e99d05ef16c1
+Description: PostgreSQL table versioning extension, recording row modifications
+  and its history. The extension provides APIs for accessing snapshots of a table
+  at certain revisions and the difference generated between any two given
+  revisions. The extension uses a PL/PgSQL trigger based system to record and
+  provide access to the row revisions.
+  This package contains the EXTENSION version of the code (requires access to server filesystem)
+
+Package: postgresql-17-temporal-tables
+Source: temporal-tables
+Version: 1.2.2-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 78
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.14)
+Provides: postgresql-temporal-tables
+Homepage: https://github.com/arkhipov/temporal_tables
+Priority: optional
+Section: database
+Filename: pool/main/t/temporal-tables/postgresql-17-temporal-tables_1.2.2-1PIGSTY~bookworm_amd64.deb
+Size: 30888
+SHA256: 0fa2b920de1f868eee0bf38ab525c235eecae1ba6d3e465aac7a60ec8c3cb70e
+SHA1: fdbb5072fa391de8b4f6bf26225591dc758cddfb
+MD5sum: c78b27c6238cac9556a794ed139536ad
+Description: Temporal Tables PostgreSQL Extension
+  A temporal table is a table that records the period of time when a row is valid.
+  There are two types of periods: the application period (also known as valid-time or business-time) and the system period (also known as transaction-time).
+
 Package: postgresql-17-timestamp9
 Source: timestamp9
 Version: 1.4.0-1PIGSTY~bookworm
@@ -16314,16 +16694,16 @@ Source: wrappers
 Version: 0.4.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 19
-Depends: postgresql-17
+Installed-Size: 368
+Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
 Homepage: https://github.com/supabase/wrappers
 Priority: optional
 Section: database
 Filename: pool/main/w/wrappers/postgresql-17-wrappers_0.4.3-1PIGSTY~bookworm_amd64.deb
-Size: 5296
-SHA256: c8fc22e60479c2dc594013acea3c65b9f023d477c1c092b52c7bd3adb98dbb7d
-SHA1: 2143db49139f732db684dc9243f110cf87f68994
-MD5sum: f28a25f654f443708988af798fdd88af
+Size: 143172
+SHA256: 2950788358928257a4915d3dc8eb063db1e475f45ad912ed4826a9d1ac48f04f
+SHA1: 5ac068a497194afc42be541cc955dbc6e60622e6
+MD5sum: 7c87d9748dea1cbd0bace24c232dbd19
 Description: Postgres Foreign Data Wrappers by Supabase
   Wrappers is a development framework for Postgres Foreign Data Wrappers (FDW), written in Rust.
   Its goal is to make Postgres FDW development easier while keeping Rust language's modern capabilities,
@@ -16351,19 +16731,19 @@ Description: Open-source full-text search of Chinese language
   It implements a Chinese language parser base on the Simple Chinese Word Segmentation(SCWS).
 
 Package: redis
-Version: 6:7.2.5-1rl1~bookworm1
+Version: 6:7.2.6-1rl1~bookworm1
 Architecture: all
 Maintainer: Redis Core Team <redis@redis.io>
 Installed-Size: 31
-Depends: redis-server (<< 6:7.2.5-1rl1~bookworm1.1~), redis-server (>= 6:7.2.5-1rl1~bookworm1)
+Depends: redis-server (<< 6:7.2.6-1rl1~bookworm1.1~), redis-server (>= 6:7.2.6-1rl1~bookworm1)
 Homepage: https://redis.io/
 Priority: optional
 Section: database
-Filename: pool/main/r/redis/redis_7.2.5-1rl1~bookworm1_all.deb
-Size: 20028
-SHA256: 68512de45729fa80153df92dcaa75bff124ec355af43452b2ba477dae60dbb67
-SHA1: d66ca147314bc155854ea9751be0ceaab7ee99bc
-MD5sum: 956b34bad24bb6ca37b1051b1fc3ba63
+Filename: pool/main/r/redis/redis_7.2.6-1rl1~bookworm1_all.deb
+Size: 20168
+SHA256: 33f633dfc87b540bd442588f01a8eec74f30578d5dcacffb474b7d3606bf964b
+SHA1: cc612e87d0acb4aca4a9b255307b967fff667613
+MD5sum: d53019b3db714fe702e14930b739e40a
 Description: Persistent key-value database with network interface (metapackage)
  Redis is a key-value database in a similar vein to memcache but the dataset
  is non-volatile. Redis additionally provides native support for atomically
@@ -16373,21 +16753,66 @@ Description: Persistent key-value database with network interface (metapackage)
  .
  This package depends on the redis-server package.
 
-Package: redis-server
+Package: redis-redisearch
+Source: redisearch
+Version: 1:1.2.2-4
+Architecture: amd64
+Maintainer: Chris Lamb <lamby@debian.org>
+Installed-Size: 2044
+Depends: redis-server, libc6 (>= 2.29)
+Homepage: https://github.com/goodform/RediSearch
+Priority: optional
+Section: python
+Filename: pool/main/r/redisearch/redis-redisearch_1.2.2-4_amd64.deb
+Size: 1122972
+SHA256: 0bb97c88b96355cf91c16388261eec50538b4713e629401c7fd4d8fedaee01d9
+SHA1: dfa2a64c9fc3d33a718c3b0d9f1dacf5434808d4
+MD5sum: f2796874ef502255cbe22ff8d4cbb502
+Description: Full-text and secondary search index engine module for Redis
+ Redisearch implements a search engine on top of Redis but unlike other search
+ libraries it does not use internal data structures such as sorted sets.
+ .
+ This also enables more advanced features such as exact phrase matching and
+ numeric filtering for text queries that are not possible or efficient with
+ traditional Redis search approaches.
+
+Package: redis-sentinel
 Source: redis
-Version: 6:7.2.5-1rl1~bookworm1
+Version: 6:7.2.6-1rl1~bookworm1
 Architecture: amd64
 Maintainer: Redis Core Team <redis@redis.io>
-Installed-Size: 175
-Depends: lsb-base (>= 3.2-14), redis-tools (= 6:7.2.5-1rl1~bookworm1)
+Installed-Size: 73
+Depends: lsb-base (>= 3.2-14), redis-tools (= 6:7.2.6-1rl1~bookworm1)
 Homepage: https://redis.io/
 Priority: optional
 Section: database
-Filename: pool/main/r/redis/redis-server_7.2.5-1rl1~bookworm1_amd64.deb
-Size: 67184
-SHA256: 92eee26911e5762b219fa8fc5bfd3a1865903b6fcfa83b7fa5fa6e294940f0ec
-SHA1: 40e64c88d1d483128630e1219b94a32f4bde99d2
-MD5sum: 55f0527124c1c6855d1cc8aeabbd16d3
+Filename: pool/main/r/redis/redis-sentinel_7.2.6-1rl1~bookworm1_amd64.deb
+Size: 28732
+SHA256: 2632b84c9c34cdcb148080fdc2e166990dfaa939794e90d19a0f00e3ecbe42c3
+SHA1: 893d4bcb7eae9ddfa25f1b77520234a00fdc688a
+MD5sum: 24bcd42693bb8353dcd78b5686c35fdd
+Description: Persistent key-value database with network interface (monitoring)
+ Redis is a key-value database in a similar vein to memcache but the dataset
+ is non-volatile. Redis additionally provides native support for atomically
+ manipulating and querying data structures such as lists and sets.
+ .
+ This package contains the Redis Sentinel monitoring software.
+
+Package: redis-server
+Source: redis
+Version: 6:7.2.6-1rl1~bookworm1
+Architecture: amd64
+Maintainer: Redis Core Team <redis@redis.io>
+Installed-Size: 175
+Depends: lsb-base (>= 3.2-14), redis-tools (= 6:7.2.6-1rl1~bookworm1)
+Homepage: https://redis.io/
+Priority: optional
+Section: database
+Filename: pool/main/r/redis/redis-server_7.2.6-1rl1~bookworm1_amd64.deb
+Size: 67364
+SHA256: 8a3512bd596654691da3867708fc89b965e8cef4784987dac7881273d15d1b3b
+SHA1: ebba070e6855c1e0c0c065e7dee241ea2c6f1642
+MD5sum: 1d86091df236614fe5042621c32a1e49
 Description: Persistent key-value database with network interface
  Redis is a key-value database in a similar vein to memcache but the dataset
  is non-volatile. Redis additionally provides native support for atomically
@@ -16397,7 +16822,7 @@ Description: Persistent key-value database with network interface
 
 Package: redis-tools
 Source: redis
-Version: 6:7.2.5-1rl1~bookworm1
+Version: 6:7.2.6-1rl1~bookworm1
 Architecture: amd64
 Maintainer: Redis Core Team <redis@redis.io>
 Installed-Size: 9277
@@ -16408,11 +16833,11 @@ Replaces: redis-server (<< 2:2.6.16-1)
 Homepage: https://redis.io/
 Priority: optional
 Section: database
-Filename: pool/main/r/redis/redis-tools_7.2.5-1rl1~bookworm1_amd64.deb
-Size: 1411408
-SHA256: b5688c824499e480f690b3de38cedc1c1b95fd78577e24b6d072a48e08ae2937
-SHA1: 529cb5560cebd8bb14cb32cc6881c9308900d87d
-MD5sum: 14866a388cd07b0ede9480c03a132a75
+Filename: pool/main/r/redis/redis-tools_7.2.6-1rl1~bookworm1_amd64.deb
+Size: 1406600
+SHA256: 717945549a7f3e4251139f3e09afa8bf96fcc35663e5bf3d419dd971491ae647
+SHA1: bf02995fedc441cced6854939e91206bf93b2637
+MD5sum: 20cb9ef71d6546807384864417f48800
 Description: Persistent key-value database with network interface (client)
  Redis is a key-value database in a similar vein to memcache but the dataset
  is non-volatile. Redis additionally provides native support for atomically

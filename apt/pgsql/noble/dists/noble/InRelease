@@ -4,44 +4,44 @@ Hash: SHA256
 Origin: Pigsty
 Label: Pigsty PGSQL
 Codename: noble
-Date: Tue, 29 Oct 2024 09:47:52 UTC
+Date: Thu, 31 Oct 2024 03:27:20 UTC
 Architectures: amd64 arm64
 Components: main
 Description: pigsty apt repository for ubuntu 24.04
 MD5Sum:
- 4dc0fb6b2bbeb399cc5e5a6d88eb707a 8925 main/binary-amd64/Packages
- 55473173b647f8f4aef5b1c99fcfb652 2820 main/binary-amd64/Packages.gz
+ 6f7d6abac4ac9a0de696557382047c23 758930 main/binary-amd64/Packages
+ 6f426d253c6e6f3e8887325757e489f1 216551 main/binary-amd64/Packages.gz
  39896153e8bf96eee21da3b3455cbd6c 123 main/binary-amd64/Release
  2de39273877d046e8c82667de49cdf6c 6546 main/binary-arm64/Packages
  00da15d1d3bd49995318cbe86600decf 2316 main/binary-arm64/Packages.gz
  d1ea05e6010d18293b8b9bd2b5d7a6b3 123 main/binary-arm64/Release
 SHA1:
- 63df75b29af187b7e9d6db69044ef80d3a2395bc 8925 main/binary-amd64/Packages
- 47ea302ba6bdd02acf6f6718a6a1639d254f9f9e 2820 main/binary-amd64/Packages.gz
+ 11a31dba872cb8602d0d8a1b2f9463973c6c897b 758930 main/binary-amd64/Packages
+ b56fa5317cd40cf8571d142bb2bb7fe1bb4d73c1 216551 main/binary-amd64/Packages.gz
  49425283a5178849a661783c5101531ce6fb85ae 123 main/binary-amd64/Release
  aaf6f0337f82dfd7eb2b7e9a3e39512eedc7107d 6546 main/binary-arm64/Packages
  85a3116393fce3bddd21372cdb70bb1159d0edce 2316 main/binary-arm64/Packages.gz
  a810fd142ae8f4f6a5c4664530fa23ad0a603824 123 main/binary-arm64/Release
 SHA256:
- 4d0bf23a8b3dd33f9abf30dd94c6555a9705f40e78d2100d14b619a0c9ff8cdd 8925 main/binary-amd64/Packages
- 174f5095fed5560ca93bb7b02293625a924ac2d4f38257176b222d75fa74605a 2820 main/binary-amd64/Packages.gz
+ 95aa75b3f722b5b05f82d73ae771e43e4d25df73f960339fda1d6881da889b93 758930 main/binary-amd64/Packages
+ 794d1c73b86f4e7a84a8058129eb31bb64fa500fcf8bbca9fb4f913640da24c3 216551 main/binary-amd64/Packages.gz
  10f5e3ef6d620c3da5fac6baae3c9b9282e0e340b3b57cd8daaf87859f04d590 123 main/binary-amd64/Release
  0ffe28b5e2e95421c4fa14e8550a346729c1721f8ad909d91d4ee95f549c36bb 6546 main/binary-arm64/Packages
  f0ff8420b8b3c276e30e790485b6218daf657a48d832109674f683a51a1601c6 2316 main/binary-arm64/Packages.gz
  65f6e14323b1738b3b881dd5e929a7672f58bfd495cd883f7b3a5db84ff2b684 123 main/binary-arm64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEElZKnvHpoLnMzN24J55Ndjbm9iyAFAmcgr0gACgkQ55Ndjbm9
-iyBKtg/+PK4BQEnFAdFnKt+toNqVeOBJ6ioI5OKZLKJL26JrWYVheOAWkyWyz8DI
-36/Ty7tHwY2rxfCp8WQHJhbhA3zVHhUyKtEDAjlAkDuDHT4wsOhFoUDrwebmrfBi
-c8uEJBPdKcNk/cI/PUijIY/dSsjgv4S9D8FOE4srrrHAHXbTyLFl9jr+HoGl7VLb
-DdkBVEr0ED7XVLEtRwPMMSoN59kC3l9dPx8BYCH/NRplbylDnX+Z5dYNVRTOgLsm
-/jKPnrjGgRV0KmswPa+LNt5z9N1luAxooWmA+vTtR/QHgHD3Yb52/1taO5uPCqw6
-0+Hg/XeKHKsUOgKKx+ikj1ckjooLFK6Zzy9c5wJ7EuVFEyFGrSbRvnOpu2rS9LBv
-NZC9+zKLHWYSS9kZEj8d3f3T+KZRpB+cxEvr2D5KmHqEi5j3G5C8ZN8WS3CRXzzi
-Ty406NyB2aa3wfjAXPy8KHnwnCr3VV5R0wgDyBrCvi6bDJmQF1YxgE1NKKXsmND6
-O5ovF+ZLBsqIexv6ZuGCCBr3st1QhIdyHmjmm5f6zS2LZe+FLqXGcUVWVu7AmIPF
-js3b0YbKlbDjTDaE4c3MVx8bsg0HlUChlrwLBPZDYatK+iz+uVu+Gx1QzVDJRhOc
-MwCwcvOuZu5zvogbpWPtDhIi82QmjH3fEk5XqNqrIzahTtXAEy0=
-=C2UU
+iQIzBAEBCAAdFiEElZKnvHpoLnMzN24J55Ndjbm9iyAFAmci+RgACgkQ55Ndjbm9
+iyCjMw/+LP5j/pN/49xuwMMfMYgh8dupZ2gZJGhRZrtIJIBP3K0h65Ex7rFMVhCX
+RKFETsKpFLSbbTOf1gBbWGBr8HT+CwQrJyORwMeQpAFJpKa+shMfN3UYXjcVg2WQ
+YbFhPM29va0EwAIvdEZdRPUJe+xpjMBcqAiA9I0kiQCi4lmFAA5DjN2tknGfs5Bi
+kT4L/VTuvfbG5mADhGKf2tH53jtMk+exNFStVu5j3h1QIYkDLr9tJ12NfYUIeedr
+IfB9M1jNDX2jI6xCYWtA4zo8MVE/c48EZ1yeOvgDeu4PCVlSPmQEKD4+0TZhUk4y
+4pCJ5MRtbrNUGSdilNHM3JNm/s8js+4LFdeCO1W14e3ErpuhFycnNtEQoGkMg5Es
+PXQCfS9+g3RIMGw1s9R2F4+Qwy9FMEe0TtlZ6YBlHhrOTbuJo3xYP7zLTkJqxbai
+9OyULY8P2b+e+KDcPGXum+2pWwzlMfQqn9ziuLH3V53cIXnhQ8PRXjFtHCXH28hE
++pUIRjzVXGGu63uH6SuB6ClrdMjOMuCGKk6lfhepQgAsH1DzFYZK/qCzXyiQRO8x
+xTX/ppaBbZlt860giUNA6sb31S+dCPJKYwxdStpkE9/cCKsCdn9GMUy1gBjlroe1
+7P1OZ1CFKLfxk/li4CvXzVtUsq63unsAukQnJYkHiVAETitxQ9g=
+=YMih
 -----END PGP SIGNATURE-----

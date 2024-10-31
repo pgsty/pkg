@@ -22,19 +22,19 @@ Description: fast and reliable load balancing reverse proxy
  status.
 
 Package: redis
-Version: 6:7.2.5-1rl1~focal1
+Version: 6:7.2.6-1rl1~focal1
 Architecture: all
 Maintainer: Redis Core Team <redis@redis.io>
 Installed-Size: 44
-Depends: redis-server (<< 6:7.2.5-1rl1~focal1.1~), redis-server (>= 6:7.2.5-1rl1~focal1)
+Depends: redis-server (<< 6:7.2.6-1rl1~focal1.1~), redis-server (>= 6:7.2.6-1rl1~focal1)
 Homepage: https://redis.io/
 Priority: optional
 Section: database
-Filename: pool/main/r/redis/redis_7.2.5-1rl1~focal1_all.deb
-Size: 34092
-SHA256: 1e9f4305056cb13a6fd7c253ac4d86ac8819c5fd53b9658583c441739745276e
-SHA1: 0740979637b6b048322f353d637c6d4a2d2b53bb
-MD5sum: 1258e714df9247efd5da4f8dfaf6486e
+Filename: pool/main/r/redis/redis_7.2.6-1rl1~focal1_all.deb
+Size: 34244
+SHA256: dab5a92b010d9d76ec07c6178ebfd7608529e7047538f0ac6d0749bbab7f4952
+SHA1: 5ee8a3e7c1f88289839aae496ec23b5ada1b58ee
+MD5sum: 74a5839c290596d690e7c50be6b84fb4
 Description: Persistent key-value database with network interface (metapackage)
  Redis is a key-value database in a similar vein to memcache but the dataset
  is non-volatile. Redis additionally provides native support for atomically
