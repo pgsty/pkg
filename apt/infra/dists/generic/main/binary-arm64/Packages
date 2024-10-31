@@ -484,7 +484,7 @@ MD5sum: 56e5d83e8ccbeffdbec6c60cf462aeb8
 Description: fast, cost-effective monitoring solution and time series database, agent,alert,auth,backup,ctl
 
 Package: vip-manager
-Version: 2.7.0
+Version: 2.8.0
 Architecture: arm64
 License: BSD 2-Clause License
 Maintainer: Julian Markwort <julian.markwort@cybertec.at>
@@ -493,10 +493,10 @@ Provides: vip-manager
 Homepage: https://github.com/cybertec-postgresql/vip-manager/
 Priority: optional
 Section: default
-Filename: pool/main/v/vip-manager/vip-manager_2.7.0_arm64.deb
-Size: 5794406
-SHA256: 3b6f47fd363b496eb389be4d12cb14564dd96333137340035acff2d3442fa8e7
-SHA1: 39cb3c8f5c41ba676a89e9f14909c5112ff5ebc8
-MD5sum: 7a158df8284c7308398a128ba730c5d4
+Filename: pool/main/v/vip-manager/vip-manager_2.8.0_arm64.deb
+Size: 5797696
+SHA256: afc753d1daba75e39a599acd8ce77ba6831edb3cafe9d0c761df258c908b3e0e
+SHA1: ca92ec0942c2d89686d75dda1f42a1691cd0611c
+MD5sum: 6185900fef1d0e3b7613d7b825ff3182
 Description: Manages a virtual IP based on state kept in etcd/consul
 
