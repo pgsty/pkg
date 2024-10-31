@@ -32,6 +32,7 @@ yum/ivory
 yum/polar
 yum/mssql
 yum/gpsql
+yum/polaro
 
 apt/stash
 apt/infra/stash/
@@ -42,9 +43,7 @@ apt/pgsql/jammy/stash/
 apt/pgsql/noble/stash/
 
 
-apt/mssql/focal/stash/
-apt/mssql/jammy/stash/
-apt/mssql/noble/stash/
+apt/mssql/pool
 
 apt/polar/bookworm/stash/
 apt/polar/bullseye/stash/

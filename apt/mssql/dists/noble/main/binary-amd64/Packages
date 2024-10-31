@@ -1,0 +1,570 @@
+Package: babelfishpg-common
+Source: wiltondb
+Priority: optional
+Section: database
+Installed-Size: 1285
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: amd64
+Version: 3.lts-12-16-1~noble
+Depends: postgresql-15 (>= 1:15.4+wiltondb3.lts), postgresql-15 (<< 1:15.5), libc6 (>= 2.38)
+Filename: pool/main/w/wiltondb/babelfishpg-common_3.lts-12-16-1~noble_amd64.deb
+Size: 311390
+MD5sum: c70725714e9579368c5c97ecf8ff628b
+SHA1: 33a10c54b07466627f050dec1322e1efe4b30f6a
+SHA256: 4ded9f1036e8866e7250c3cb01840402a83999db8b1ed2f2cdd68414c03ec2fa
+Description: Supports NUMERIC, VARBINARY and other datatypes.
+Description-md5: 0e52cd0770fab9bf63ad97f65f6a1035
+
+Package: babelfishpg-money
+Source: wiltondb
+Priority: optional
+Section: database
+Installed-Size: 140
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: amd64
+Version: 3.lts-12-16-1~noble
+Depends: postgresql-15 (>= 1:15.4+wiltondb3.lts), postgresql-15 (<< 1:15.5), libc6 (>= 2.4)
+Filename: pool/main/w/wiltondb/babelfishpg-money_3.lts-12-16-1~noble_amd64.deb
+Size: 23402
+MD5sum: f9f166373e8c64e283b03f4068e381be
+SHA1: c0553d7cdb5172822b7fa6547898e7f2c908b338
+SHA256: c160ada128adabdb842ac0696783df7eb9942d6c7726f2df4404951f00c62d90
+Description: This is a variation of the opensource fixeddecimal extension.
+Description-md5: 46bb9314d4c9ab498bbc99e90b6ec8f9
+
+Package: babelfishpg-tds
+Source: wiltondb
+Priority: optional
+Section: database
+Installed-Size: 366
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: amd64
+Version: 3.lts-12-16-1~noble
+Depends: postgresql-15 (>= 1:15.4+wiltondb3.lts), postgresql-15 (<< 1:15.5), libc6 (>= 2.38)
+Filename: pool/main/w/wiltondb/babelfishpg-tds_3.lts-12-16-1~noble_amd64.deb
+Size: 130390
+MD5sum: 7d0309f6f278032d66a4dfdd18b8699d
+SHA1: 8674f2180be6b5debae42d4bec60cc9b8b9fd665
+SHA256: 3751d74fe271b26aa152aeee89744fbf56761c52962076b6767e6d33789e8984
+Description: Supports Tabular Data Stream (TDS) protocol.
+Description-md5: 6ba3a2a233e2b4ee38259f5e49427e74
+
+Package: babelfishpg-tsql
+Source: wiltondb
+Priority: optional
+Section: database
+Installed-Size: 12288
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: amd64
+Version: 3.lts-12-16-1~noble
+Depends: postgresql-15 (>= 1:15.4+wiltondb3.lts), postgresql-15 (<< 1:15.5), babelfishpg-common (= 3.lts-12-16-1~noble), libantlr4-runtime4.9.3 (>= 1:4.9.3+wiltondb), libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libssl3t64 (>= 3.0.0), libsybdb5 (>= 0.63), libuuid1 (>= 2.16)
+Filename: pool/main/w/wiltondb/babelfishpg-tsql_3.lts-12-16-1~noble_amd64.deb
+Size: 1778046
+MD5sum: 8903caf8d1607f061ac60d46303c93c2
+SHA1: 848461cbd9348dc9ef0469a88fcb9f93195c944a
+SHA256: 461f8ebdeac29b5323e61c3cd88ff7bba1e964262bf96e6179bf35b3ce9d44da
+Description: Supports Transact-SQL (T-SQL) language.
+Description-md5: 809b4ec7aab987463465c8922cd2c073
+
+Package: libantlr4-runtime-dev
+Source: antlr4-cpp-runtime
+Priority: optional
+Section: libdevel
+Installed-Size: 3671
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: amd64
+Version: 1:4.9.3+wiltondb-1~noble
+Depends: libantlr4-runtime4.9.3 (= 1:4.9.3+wiltondb-1~noble)
+Filename: pool/main/a/antlr4-cpp-runtime/libantlr4-runtime-dev_4.9.3+wiltondb-1~noble_amd64.deb
+Size: 557426
+MD5sum: b6eb635973b5d0c5ea05720ee47fc42c
+SHA1: 6d86340c041796f186436459f8d3729d01b7ddbd
+SHA256: b13a175cfa260dd4f167ca9a3f5de4532392c10ad479ce90e07a12a5fa4e277c
+Description: ANTLR Parser Generator - C++ runtime support (development files)
+Description-md5: 365f44b6f095e8ae1af31dd567c97bf7
+Multi-Arch: same
+
+Package: libantlr4-runtime4.9.3
+Source: antlr4-cpp-runtime
+Priority: optional
+Section: libs
+Installed-Size: 1005
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: amd64
+Version: 1:4.9.3+wiltondb-1~noble
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.4), libstdc++6 (>= 13.1)
+Filename: pool/main/a/antlr4-cpp-runtime/libantlr4-runtime4.9.3_4.9.3+wiltondb-1~noble_amd64.deb
+Size: 320130
+MD5sum: b108faf2c5247e35838bcecfeb39cf81
+SHA1: 05dc51d5f9d501663d0d96d93fc76848ab1faf50
+SHA256: e379d6c30c7abb08a780d8c2fae639533e674c5082248ca88d2759184276a523
+Description: ANTLR Parser Generator - C++ runtime support (shared library)
+Description-md5: b71b31defe6837dd06dbc5e0f9648a07
+Multi-Arch: same
+
+Package: libecpg-compat3
+Source: postgresql-15
+Priority: optional
+Section: libs
+Installed-Size: 64
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: amd64
+Version: 1:15.4+wiltondb3.lts-12-1~noble
+Depends: libc6 (>= 2.14), libecpg6 (>= 9.0~), libpgtypes3
+Filename: pool/main/p/postgresql-15/libecpg-compat3_15.4+wiltondb3.lts-12-1~noble_amd64.deb
+Size: 21094
+MD5sum: 9d95f7b578dfe999e91dece1f080dfbb
+SHA1: 28137436b120d2cf893dbeb71dc6866af672476a
+SHA256: 06c799f35999a456ba56e6cfc0a579feb6e7a7929f8ed9ecf82023da43bf0baa
+Description: older version of run-time library for ECPG programs
+Description-md5: 66ce228306ea5636e1cb757bd540255b
+Multi-Arch: same
+
+Package: libecpg-dev
+Source: postgresql-15
+Priority: optional
+Section: libdevel
+Installed-Size: 1635
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: amd64
+Version: 1:15.4+wiltondb3.lts-12-1~noble
+Depends: libecpg-compat3 (= 1:15.4+wiltondb3.lts-12-1~noble), libecpg6 (= 1:15.4+wiltondb3.lts-12-1~noble), libpgtypes3 (= 1:15.4+wiltondb3.lts-12-1~noble), libpq-dev, libc6 (>= 2.38)
+Filename: pool/main/p/postgresql-15/libecpg-dev_15.4+wiltondb3.lts-12-1~noble_amd64.deb
+Size: 321416
+MD5sum: 6116f76a7491782e16ad746f9cd19f08
+SHA1: de4992962b230835cf8d30b840b95864112de632
+SHA256: bba4e0e0309fcbb8e49cf0e0a219668330a6f5148924b6f05369b60a856e898d
+Description: development files for ECPG (Embedded PostgreSQL for C)
+Description-md5: 5eb928e68d1075508e3d6a4d7fc6f514
+
+Package: libecpg6
+Source: postgresql-15
+Priority: optional
+Section: libs
+Installed-Size: 233
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: amd64
+Version: 1:15.4+wiltondb3.lts-12-1~noble
+Depends: libc6 (>= 2.38), libpgtypes3, libpq5 (>= 9.0~)
+Filename: pool/main/p/postgresql-15/libecpg6_15.4+wiltondb3.lts-12-1~noble_amd64.deb
+Size: 62124
+MD5sum: 8593c93128a540cd9f6bf7583b3d9345
+SHA1: ae2e463b9eb2734b47fa095220e178f872c08da7
+SHA256: 2fccc37c25fde59a37d895bbb725b351ba447451be34c5433bbdd837fb870db2
+Description: run-time library for ECPG programs
+Description-md5: 51ed6df58b24baddae9952acb91903bd
+Multi-Arch: same
+
+Package: libpgtypes3
+Source: postgresql-15
+Priority: optional
+Section: libs
+Installed-Size: 109
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: amd64
+Version: 1:15.4+wiltondb3.lts-12-1~noble
+Depends: libc6 (>= 2.38)
+Filename: pool/main/p/postgresql-15/libpgtypes3_15.4+wiltondb3.lts-12-1~noble_amd64.deb
+Size: 42944
+MD5sum: 3045926387f7e7f68dbba04437e41261
+SHA1: 4cbe1252521301a5f7a2d0dd211898ca84aa6da7
+SHA256: 0d7aca35a11385fb5514e4d01e2409307d21f1e987f730756c8eba8305515a70
+Description: shared library libpgtypes for PostgreSQL 15
+Description-md5: 63a68f84010c7e49dfda4a3f9c7b4aaf
+Multi-Arch: same
+
+Package: libpq-dev
+Source: postgresql-15
+Priority: optional
+Section: libdevel
+Installed-Size: 580
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: amd64
+Version: 1:15.4+wiltondb3.lts-12-1~noble
+Suggests: postgresql-doc-15
+Depends: libpq5 (= 1:15.4+wiltondb3.lts-12-1~noble), libssl-dev
+Filename: pool/main/p/postgresql-15/libpq-dev_15.4+wiltondb3.lts-12-1~noble_amd64.deb
+Size: 152304
+MD5sum: 45f235e17ca29bf4f829298f28d0c4cc
+SHA1: 8cb2f632db67ecc2919059215c6c0661ca1b5248
+SHA256: 0825eb96ad35fdf25761b897a0d8189d46360089e804b8f910797a485138c3ad
+Description: header files for libpq5 (PostgreSQL library)
+Description-md5: 7f4362b106aae6b219ccc880faa1f04c
+
+Package: libpq5
+Source: postgresql-15
+Priority: optional
+Section: libs
+Installed-Size: 846
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: amd64
+Version: 1:15.4+wiltondb3.lts-12-1~noble
+Depends: libc6 (>= 2.38), libgssapi-krb5-2 (>= 1.17), libldap2 (>= 2.6.2), libssl3t64 (>= 3.0.0)
+Filename: pool/main/p/postgresql-15/libpq5_15.4+wiltondb3.lts-12-1~noble_amd64.deb
+Size: 210824
+MD5sum: 558c26f8b49bbcd47764067470d6b9bd
+SHA1: 32a3ed160b8e299e1e3aba73307614606852e607
+SHA256: 9da8f22eea101ca75bea23017ed90c533d0243926ca0c7e7e57843ffdfabfe8f
+Description: PostgreSQL C client library
+Description-md5: 4109d08c168c8058d09c0cc8bf8b18b1
+Multi-Arch: same
+
+Package: postgresql
+Source: postgresql-common
+Priority: optional
+Section: database
+Installed-Size: 16
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: all
+Version: 1:248+wiltondb3.lts-7~noble
+Suggests: postgresql-doc
+Depends: postgresql-15
+Filename: pool/main/p/postgresql-common/postgresql_248+wiltondb3.lts-7~noble_all.deb
+Size: 10242
+MD5sum: 675b8ba1ec9022a5411be51c4e34e681
+SHA1: a14641b60eb0b7aecd3e6107759b291afdd2c0a8
+SHA256: 3de68d594573eb12d7a59ea888f2f136902a21ebece55a403b46b9eb02fd0832
+Description: object-relational SQL database (supported version)
+Description-md5: bdff2d6e5b2a1dd00e72b3ed8729d9ac
+
+Package: postgresql-15
+Priority: optional
+Section: database
+Installed-Size: 28559
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: amd64
+Version: 1:15.4+wiltondb3.lts-12-1~noble
+Recommends: sysstat
+Provides: postgresql-contrib-15
+Depends: locales | locales-all, postgresql-client-15 (= 1:15.4+wiltondb3.lts-12-1~noble), postgresql-common (>= 1:248+wiltondb3.lts-7~), postgresql-common (<< 1:248+wiltondb3.lts-8), ssl-cert, tzdata, tzdata-legacy, debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.38), libgssapi-krb5-2 (>= 1.14+dfsg), libicu74 (>= 74.1-1~), libldap2 (>= 2.6.2), liblz4-1 (>= 0.0~r130), libpam0g (>= 0.99.7.1), libpq5 (>= 14~~), libselinux1 (>= 3.1~), libssl3t64 (>= 3.0.0), libsystemd0, libuuid1 (>= 2.16), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Breaks: dbconfig-common (<< 2.0.22~)
+Filename: pool/main/p/postgresql-15/postgresql-15_15.4+wiltondb3.lts-12-1~noble_amd64.deb
+Size: 6785700
+MD5sum: 35ac80f4b47617c31585b076f91eda9b
+SHA1: 4810045eeeaeb4b68bd80078a5e3d29297b58200
+SHA256: 605ceadb6389131ea181ae3fe96edbb8b225ca8952f4dd5398eab9be36af18cd
+Description: The World's Most Advanced Open Source Relational Database
+Description-md5: ff581fbc7eeb8143b9e56451b41dadfa
+Postgresql-Catversion: 202209061
+
+Package: postgresql-all
+Source: postgresql-common
+Priority: optional
+Section: database
+Installed-Size: 16
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: all
+Version: 1:248+wiltondb3.lts-7~noble
+Depends: libecpg-dev, libpq-dev, postgresql-common (= 1:248+wiltondb3.lts-7~noble), postgresql-server-dev-all, postgresql-contrib-15, postgresql-plperl-15, postgresql-plpython3-15, postgresql-pltcl-15
+Filename: pool/main/p/postgresql-common/postgresql-all_248+wiltondb3.lts-7~noble_all.deb
+Size: 10342
+MD5sum: 4272492ca11c4645aba3889063cbf103
+SHA1: 24f26df200da05b27e82e7ffff00f6f00c7037c7
+SHA256: 9c130437c62d8251f2cac6328b5416424977475f2ddde8b81cb862949e551a6f
+Description: metapackage depending on all PostgreSQL server packages
+Description-md5: 9a0aaba975f82ef14ff2e821d8683975
+
+Package: postgresql-client
+Source: postgresql-common
+Priority: optional
+Section: database
+Installed-Size: 16
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: all
+Version: 1:248+wiltondb3.lts-7~noble
+Depends: postgresql-client-15
+Filename: pool/main/p/postgresql-common/postgresql-client_248+wiltondb3.lts-7~noble_all.deb
+Size: 10264
+MD5sum: 589034a9ec1dc16a8014ee0e13169fb4
+SHA1: e496e0a6e4e80d7b1b90573f70ee26df234fedce
+SHA256: 7df585cf9b3e5534780fa8d91e83c68b01cf39ad7c6c289b32812a95bfa5ca71
+Description: front-end programs for PostgreSQL (supported version)
+Description-md5: d46431edbfde0d6360f2c20aed4a288c
+Multi-Arch: foreign
+
+Package: postgresql-client-15
+Source: postgresql-15
+Priority: optional
+Section: database
+Installed-Size: 7486
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: amd64
+Version: 1:15.4+wiltondb3.lts-12-1~noble
+Suggests: postgresql-15, postgresql-doc-15
+Provides: postgresql-client
+Depends: libpq5 (= 1:15.4+wiltondb3.lts-12-1~noble), postgresql-common (>= 1:248+wiltondb3.lts-7~), postgresql-common (<< 1:248+wiltondb3.lts-8), sensible-utils, libc6 (>= 2.38), liblz4-1 (>= 0.0~r127), libreadline8t64 (>= 6.0), libssl3t64 (>= 3.0.0), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Filename: pool/main/p/postgresql-15/postgresql-client-15_15.4+wiltondb3.lts-12-1~noble_amd64.deb
+Size: 1793130
+MD5sum: 2eb973a6f7cab04c34133ece662e6dc5
+SHA1: 53534ec6cd7b17150bc219306e2a7c498792df69
+SHA256: 5626a74c5c003bc9e9d4b14078418a1792d4f78baf740564caaced3c9215bdf3
+Description: front-end programs for PostgreSQL 15
+Description-md5: dfa598d2d49fa0efc749db97056d87b3
+Multi-Arch: foreign
+
+Package: postgresql-client-common
+Source: postgresql-common
+Priority: optional
+Section: database
+Installed-Size: 129
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: all
+Version: 1:248+wiltondb3.lts-7~noble
+Depends: netbase, perl:any
+Filename: pool/main/p/postgresql-common/postgresql-client-common_248+wiltondb3.lts-7~noble_all.deb
+Size: 34870
+MD5sum: dfc17ed572e9ceee7dd59a8db09abe39
+SHA1: b4f64569f388334aa92222e82980187ef5fbcac9
+SHA256: aacec6dd1179feb7f87b24668d6069b06290a6e64018af6fd2f3658bb5197c5a
+Description: manager for multiple PostgreSQL client versions
+Description-md5: d5f4a87e9a06590d824a9f706fa1a755
+Multi-Arch: foreign
+
+Package: postgresql-common
+Priority: optional
+Section: database
+Installed-Size: 645
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: all
+Version: 1:248+wiltondb3.lts-7~noble
+Recommends: e2fsprogs, logrotate
+Replaces: pgdg-keyring, postgresql-server-dev-all (<< 204)
+Depends: adduser, debconf (>= 0.5.00) | debconf-2.0, libjson-perl, lsb-base (>= 3.0-3), postgresql-client-common (= 1:248+wiltondb3.lts-7~noble), ssl-cert (>= 1.0.11), ucf, perl:any
+Conflicts: pgdg-keyring
+Pre-Depends: init-system-helpers (>= 1.54~)
+Breaks: postgresql-9.1 (<< 9.1.1-3~), postgresql-server-dev-all (<< 204)
+Filename: pool/main/p/postgresql-common/postgresql-common_248+wiltondb3.lts-7~noble_all.deb
+Size: 168948
+MD5sum: 0b5eed5f65540cc5638e613510a36bc0
+SHA1: 12fef656fd73e84281d9b152c83794bd63b37f94
+SHA256: c9f63d2d8c81f0a97d591f009001774bd131aaead320370b109b7816773ade96
+Description: PostgreSQL database-cluster manager
+Description-md5: 1baa00ede83212202318224f2d18d771
+Multi-Arch: foreign
+
+Package: postgresql-contrib
+Source: postgresql-common
+Priority: optional
+Section: database
+Installed-Size: 16
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: all
+Version: 1:248+wiltondb3.lts-7~noble
+Depends: postgresql-contrib-15
+Filename: pool/main/p/postgresql-common/postgresql-contrib_248+wiltondb3.lts-7~noble_all.deb
+Size: 10248
+MD5sum: 484adca9bb343405cf4dc9a9d80b06e1
+SHA1: 5ef4074efc6fd58de10f36a670b4364c773d3b72
+SHA256: fc7ed9c1d710fbcffa368f1e8a9b64a2071f28709f46fa056cc01a593e4482a7
+Description: additional facilities for PostgreSQL (supported version)
+Description-md5: 1548dd7748148521c6b13b8290f451b4
+
+Package: postgresql-doc
+Source: postgresql-common
+Priority: optional
+Section: doc
+Installed-Size: 16
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: all
+Version: 1:248+wiltondb3.lts-7~noble
+Depends: postgresql-doc-15
+Filename: pool/main/p/postgresql-common/postgresql-doc_248+wiltondb3.lts-7~noble_all.deb
+Size: 10244
+MD5sum: 57c5e85000286def181460132dcfcd9c
+SHA1: e8859711718d96675cd808a6370cd3e245d7ed9a
+SHA256: 4fd9116ba2dfdf2ad0ef7571fbe18165e38e9ef3661d9d11ac9b7f8852e61eb5
+Description: documentation for the PostgreSQL database management system
+Description-md5: 065f6c25df2011c353e26faea6c8ad7c
+Multi-Arch: foreign
+
+Package: postgresql-doc-15
+Source: postgresql-15
+Priority: optional
+Section: doc
+Installed-Size: 15960
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: all
+Version: 1:15.4+wiltondb3.lts-12-1~noble
+Breaks: postgresql-common (<< 158~)
+Filename: pool/main/p/postgresql-15/postgresql-doc-15_15.4+wiltondb3.lts-12-1~noble_all.deb
+Size: 2028464
+MD5sum: 32059fbc264580b4510588607284b74a
+SHA1: 35836c88090aded32384c4fcf7a6df6efadc2987
+SHA256: bf40943891030c02fbc8a9782b570e3cc63fea1b19d24943c25abe7803706cca
+Description: documentation for the PostgreSQL database management system
+Description-md5: 6a17033d20fab4fe17f2f26098270a36
+Multi-Arch: foreign
+
+Package: postgresql-plperl-15
+Source: postgresql-15
+Priority: optional
+Section: database
+Installed-Size: 342
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: amd64
+Version: 1:15.4+wiltondb3.lts-12-1~noble
+Provides: postgresql-plperl
+Depends: perl, postgresql-15 (= 1:15.4+wiltondb3.lts-12-1~noble), libc6 (>= 2.34), libperl5.38t64 (>= 5.38.2)
+Filename: pool/main/p/postgresql-15/postgresql-plperl-15_15.4+wiltondb3.lts-12-1~noble_amd64.deb
+Size: 71162
+MD5sum: 59519e51c25bcc3b427e9e849e943b13
+SHA1: 2893bcfe679ea5b7a877a6af89931c0353d44cbf
+SHA256: 4335cf93a4dc23d59b574687f65f330d04be139bce39af0ff12d5b199a1033ce
+Description: PL/Perl procedural language for PostgreSQL 15
+Description-md5: 18ddc53b40c99b420c85550d381182d3
+
+Package: postgresql-plpython3-15
+Source: postgresql-15
+Priority: optional
+Section: database
+Installed-Size: 489
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: amd64
+Version: 1:15.4+wiltondb3.lts-12-1~noble
+Provides: postgresql-plpython3
+Depends: postgresql-15 (= 1:15.4+wiltondb3.lts-12-1~noble), libc6 (>= 2.14), libpython3.12t64 (>= 3.12.1)
+Filename: pool/main/p/postgresql-15/postgresql-plpython3-15_15.4+wiltondb3.lts-12-1~noble_amd64.deb
+Size: 98900
+MD5sum: 1b329a2409c13f16915bd9013b77610a
+SHA1: e6e02dd1523f721547b4fbd7b6675f8fe22584c8
+SHA256: dd9348f04db911378ef7c50904f74da31b4fb22829d6c17676477b1580dec43c
+Description: PL/Python 3 procedural language for PostgreSQL 15
+Description-md5: 4ede3cd472c9c48ccd5b6bda7ae6f8b8
+
+Package: postgresql-pltcl-15
+Source: postgresql-15
+Priority: optional
+Section: database
+Installed-Size: 199
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: amd64
+Version: 1:15.4+wiltondb3.lts-12-1~noble
+Provides: postgresql-pltcl
+Depends: postgresql-15 (= 1:15.4+wiltondb3.lts-12-1~noble), libc6 (>= 2.4), libtcl8.6 (>= 8.6.0)
+Filename: pool/main/p/postgresql-15/postgresql-pltcl-15_15.4+wiltondb3.lts-12-1~noble_amd64.deb
+Size: 42422
+MD5sum: be34453b679dea8a5b545608291280d2
+SHA1: 9f63c8fc675bf6f5a2d11d223a282d5dee413ee5
+SHA256: e00c007cbfde5375055851b4a6c078d974d84ad728fdc51015f2a8639f0b356c
+Description: PL/Tcl procedural language for PostgreSQL 15
+Description-md5: 458f9588e99dab7623d492623fec4c0c
+
+Package: postgresql-server-dev-15
+Source: postgresql-15
+Priority: optional
+Section: libdevel
+Installed-Size: 6823
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: amd64
+Version: 1:15.4+wiltondb3.lts-12-1~noble
+Depends: libpq-dev (= 1:15.4+wiltondb3.lts-12-1~noble), postgresql-client-15 (= 1:15.4+wiltondb3.lts-12-1~noble), postgresql-common (>= 1:248+wiltondb3.lts-7~), postgresql-common (<< 1:248+wiltondb3.lts-8)
+Filename: pool/main/p/postgresql-15/postgresql-server-dev-15_15.4+wiltondb3.lts-12-1~noble_amd64.deb
+Size: 1203410
+MD5sum: a8424a93e438da900a8d1ffe99876520
+SHA1: d49975ee9ae011444463f17fe28b1ed94458df9c
+SHA256: aaa1a90c440b3e8c8e419c5d5de3e3b4fe5eb07715a7f0b027051df208a71a18
+Description: development files for PostgreSQL 15 server-side programming
+Description-md5: fa041c1e1b127b176146f21333d19a3e
+
+Package: postgresql-server-dev-all
+Source: postgresql-common
+Priority: optional
+Section: database
+Installed-Size: 58
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: amd64
+Version: 1:248+wiltondb3.lts-7~noble
+Depends: make:any, postgresql-common (= 1:248+wiltondb3.lts-7~noble), postgresql-server-dev-15
+Filename: pool/main/p/postgresql-common/postgresql-server-dev-all_248+wiltondb3.lts-7~noble_amd64.deb
+Size: 19158
+MD5sum: 22386ddd842d783f4a9b93436397c163
+SHA1: 02d94fca1400d3b33404403c359b578174dee1bd
+SHA256: 7bf6f80bd02f763f2ace7e6dc1029790b56ac807a2e19994f49d0841c41d19ad
+Description: extension build tool for multiple PostgreSQL versions
+Description-md5: 27ac3f69789728b5b5444cc5ee5cf4dc
+Multi-Arch: same
+
+Package: wiltondb
+Priority: optional
+Section: database
+Installed-Size: 25
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: all
+Version: 3.lts-12-16-1~noble
+Depends: postgresql-15 (>= 1:15.4+wiltondb3.lts), postgresql-15 (<< 1:15.5), babelfishpg-money (= 3.lts-12-16-1~noble), babelfishpg-common (= 3.lts-12-16-1~noble), babelfishpg-tds (= 3.lts-12-16-1~noble), babelfishpg-tsql (= 3.lts-12-16-1~noble), wiltondb-pg-hint-plan (= 3.lts-12-16-1~noble), wiltondb-tds-fdw (= 3.lts-12-16-1~noble), wiltondb-system-stats (= 3.lts-12-16-1~noble), wiltondb-pgagent (= 3.lts-12-16-1~noble), openssl
+Filename: pool/main/w/wiltondb/wiltondb_3.lts-12-16-1~noble_all.deb
+Size: 6884
+MD5sum: 17da52851e872e34ab81afaad7c2d913
+SHA1: c0e6fe0b44fed4cc985d79e92eeffa18ef2457fd
+SHA256: efebf47afc9f8246c3add82f24dc71a03f09552561a68cd41b664b0c5c561fde
+Description: Uses a set of Babelfish extensions to provide the
+Description-md5: eab8351266b52a9e2f0d6e5dcb868882
+
+Package: wiltondb-pg-hint-plan
+Source: wiltondb
+Priority: optional
+Section: database
+Installed-Size: 122
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: amd64
+Version: 3.lts-12-16-1~noble
+Depends: postgresql-15 (>= 1:15.4+wiltondb3.lts), postgresql-15 (<< 1:15.5), libc6 (>= 2.14)
+Filename: pool/main/w/wiltondb/wiltondb-pg-hint-plan_3.lts-12-16-1~noble_amd64.deb
+Size: 36430
+MD5sum: 0aea7e9fac8b67afc7fcbb7bd055295d
+SHA1: d8311b4509070a61fd56a7322f45e3dabdb84311
+SHA256: 35c361540297928c44cb8ab5436d34c011d92f3b1c0bf2c2f30e1d1af82048ff
+Description: Makes it possible to tweak execution plans
+Description-md5: cc5bd34fe1a777a701d795cf10abbf21
+
+Package: wiltondb-pgagent
+Source: wiltondb
+Priority: optional
+Section: database
+Installed-Size: 52
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: amd64
+Version: 3.lts-12-16-1~noble
+Depends: postgresql-15 (>= 1:15.4+wiltondb3.lts), postgresql-15 (<< 1:15.5)
+Filename: pool/main/w/wiltondb/wiltondb-pgagent_3.lts-12-16-1~noble_amd64.deb
+Size: 10278
+MD5sum: 041b5cd0bdd8164d1760a9d410470168
+SHA1: ce1687ea34651812a54948ae3dfe4a910691baae
+SHA256: 65e5967a0befafb9cb84623ec94a768bb1cdde22dc6755979387fe76d0ff6cb9
+Description: PostgreSQL sheduler extension
+Description-md5: 93eef2da641fc0af550208b794f7dc3a
+
+Package: wiltondb-system-stats
+Source: wiltondb
+Priority: optional
+Section: database
+Installed-Size: 83
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: amd64
+Version: 3.lts-12-16-1~noble
+Depends: postgresql-15 (>= 1:15.4+wiltondb3.lts), postgresql-15 (<< 1:15.5), libc6 (>= 2.38)
+Filename: pool/main/w/wiltondb/wiltondb-system-stats_3.lts-12-16-1~noble_amd64.deb
+Size: 21492
+MD5sum: 89ca8c5d913f605cd50b470b0ae3d4ab
+SHA1: 7b665fc6672760c72e1607a129c5442c4ebaba82
+SHA256: ed76ae0f19efb1d761f6446736092845bdaf55b6ae36dfe5b3973e35c2eb70bd
+Description: PostgreSQL extension that provides functions to access system
+Description-md5: 6fa285eb8dfe03eb23309d48f40696d9
+
+Package: wiltondb-tds-fdw
+Source: wiltondb
+Priority: optional
+Section: database
+Installed-Size: 116
+Maintainer: WiltonDB Software <info@wiltondb.com>
+Architecture: amd64
+Version: 3.lts-12-16-1~noble
+Depends: postgresql-15 (>= 1:15.4+wiltondb3.lts), postgresql-15 (<< 1:15.5), libc6 (>= 2.38), libsybdb5 (>= 0.91)
+Filename: pool/main/w/wiltondb/wiltondb-tds-fdw_3.lts-12-16-1~noble_amd64.deb
+Size: 36996
+MD5sum: 36a2103abf09319c477b78b887ee5d89
+SHA1: 4524bd60439e7198eca48d57c0f290fe04fe3300
+SHA256: 05ee2182815369e2af817b2fe48a37c9cbbcb2015cdd843c8b9e24864d6d9094
+Description: PostgreSQL foreign data wrapper that can connect to databases
+Description-md5: 459d5502be7d343f190448b0cc991c9e
+
