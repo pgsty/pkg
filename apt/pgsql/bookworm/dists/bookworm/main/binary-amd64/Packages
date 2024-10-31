@@ -7256,6 +7256,26 @@ SHA1: 259374b3c9290d8e2283e760686779a8dc6fe00d
 MD5sum: 3aaefbebddd1c06c029135463fcb946d
 Description: Full-text search for PostgreSQL using BM25
 
+Package: postgresql-14-pg-session-jwt
+Source: pg-session-jwt
+Version: 0.1.2-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 727
+Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-session-jwt
+Homepage: https://github.com/neondatabase/pg_session_jwt
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-session-jwt/postgresql-14-pg-session-jwt_0.1.2-1PIGSTY~bookworm_amd64.deb
+Size: 272228
+SHA256: 3e4b77f9e4c71ac914ec4b3fe7071d8b20231352a3fd773b41c7e97a9c12f108
+SHA1: 8dfbff395f6b50b19a3681468e1c13c7479cf6ae
+MD5sum: 7737d6b26d18e11fe611e04a01d49882
+Description: Postgres Extension for JWT Sessions
+  pg_session_jwt is a PostgreSQL extension designed to handle authenticated sessions through a JWT.
+  This JWT is then verified against a JWK (JSON Web Key) to ensure its authenticity.
+
 Package: postgresql-14-pg-smtp-client
 Source: pg-smtp-client
 Version: 0.1.0-1PIGSTY~bookworm
@@ -9441,20 +9461,20 @@ Description: 1 Byte Currency ISO type for PostgreSQL
 
 Package: postgresql-15-pg-duckdb
 Source: pg-duckdb
-Version: 0.1.0
+Version: 0.1.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 34943
+Installed-Size: 34944
 Depends: postgresql-15, postgresql-15-jit-llvm (>= 16), libc6 (>= 2.34), libgcc-s1 (>= 3.4), liblz4-1 (>= 0.0~r113), libpq5, libssl3 (>= 3.0.0), libstdc++6 (>= 12)
 Provides: postgresql-pg-duckdb
 Homepage: https://github.com/duckdb/pg_duckdb
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-duckdb/postgresql-15-pg-duckdb_0.1.0_amd64.deb
-Size: 9436332
-SHA256: ce18c4b0960e9d0771270cab708d2f0cc517c99faaf465bc32d642ea64da424e
-SHA1: 2e25afed7a1134968852ec9c0f146d1e6541e698
-MD5sum: 0fddb872a47b6811cdae9df529fe4320
+Filename: pool/main/p/pg-duckdb/postgresql-15-pg-duckdb_0.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 9436448
+SHA256: 6bacae2a8567552350decd6bf5c9a2ea8c33ef910b3c18ea1bf92813333a2b04
+SHA1: 84297ab6bf9e604a4add1bded6674adbfae1792f
+MD5sum: c8d5c0a7be96544ecbb8ac4ff137bff6
 Description: DuckDB-powered Postgres for high performance apps & analytics.
   pg_duckdb is a Postgres extension that embeds DuckDB's columnar-vectorized analytics engine and features into Postgres.
   We recommend using pg_duckdb to build high performance analytics and data-intensive applications.
@@ -10181,6 +10201,26 @@ SHA256: 49bad1ba8f8ed41140f59c9983273ea9cb0d8146698b3a1e75bf1da5d80de9df
 SHA1: 0b083ed3ca39dc7981e70d8520e97790a52c8e6f
 MD5sum: 5a1541d4572a044ce2a72e503a3ac182
 Description: Full-text search for PostgreSQL using BM25
+
+Package: postgresql-15-pg-session-jwt
+Source: pg-session-jwt
+Version: 0.1.2-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 727
+Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-session-jwt
+Homepage: https://github.com/neondatabase/pg_session_jwt
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-session-jwt/postgresql-15-pg-session-jwt_0.1.2-1PIGSTY~bookworm_amd64.deb
+Size: 272316
+SHA256: 58207e4266eae21d51e1a786e837d5638ae8375a63eabacefd8f4f7870525131
+SHA1: 8edb8fa1f89c0d6249d37e2d6b2e1a86c5e3a96e
+MD5sum: 3845d38edcd9352a0b88645a3f154ac0
+Description: Postgres Extension for JWT Sessions
+  pg_session_jwt is a PostgreSQL extension designed to handle authenticated sessions through a JWT.
+  This JWT is then verified against a JWK (JSON Web Key) to ensure its authenticity.
 
 Package: postgresql-15-pg-smtp-client
 Source: pg-smtp-client
@@ -12367,20 +12407,20 @@ Description: 1 Byte Currency ISO type for PostgreSQL
 
 Package: postgresql-16-pg-duckdb
 Source: pg-duckdb
-Version: 0.1.0
+Version: 0.1.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 34917
+Installed-Size: 34918
 Depends: postgresql-16, postgresql-16-jit-llvm (>= 16), libc6 (>= 2.34), libgcc-s1 (>= 3.4), liblz4-1 (>= 0.0~r113), libpq5, libssl3 (>= 3.0.0), libstdc++6 (>= 12)
 Provides: postgresql-pg-duckdb
 Homepage: https://github.com/duckdb/pg_duckdb
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-duckdb/postgresql-16-pg-duckdb_0.1.0_amd64.deb
-Size: 9423312
-SHA256: ac91bd4e609079f75d7d435b0aa18368cb108a5e724268206251ff60705253e9
-SHA1: 39754db75b4cef63866f2f88458e1faa1f1a6852
-MD5sum: 09c0665973f7a8f383486e6e36d8c59d
+Filename: pool/main/p/pg-duckdb/postgresql-16-pg-duckdb_0.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 9423424
+SHA256: e8f31fe8a96f2f8e0f389c945575ea9ba486dbccef0b44d0d887ec6fb081637a
+SHA1: df5e2a7e82f307f003a8a5f83446f395a732efed
+MD5sum: fcc21dc6de1493322c00442839195605
 Description: DuckDB-powered Postgres for high performance apps & analytics.
   pg_duckdb is a Postgres extension that embeds DuckDB's columnar-vectorized analytics engine and features into Postgres.
   We recommend using pg_duckdb to build high performance analytics and data-intensive applications.
@@ -13100,6 +13140,26 @@ SHA256: da282af0ac3c7ed54d14f5eb1487e3aadd774fe074afd9c7c3901b43190234ae
 SHA1: debceca98b5d2e64225cdebf443f52144679cc2e
 MD5sum: 997e9a7e7bb23fdaf75981bcbc638703
 Description: Full-text search for PostgreSQL using BM25
+
+Package: postgresql-16-pg-session-jwt
+Source: pg-session-jwt
+Version: 0.1.2-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 727
+Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-session-jwt
+Homepage: https://github.com/neondatabase/pg_session_jwt
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-session-jwt/postgresql-16-pg-session-jwt_0.1.2-1PIGSTY~bookworm_amd64.deb
+Size: 272304
+SHA256: e585631e51e07ac30d081d53b0aecf57a058ce223998db399073514047652c87
+SHA1: 678836069368d78b56ddd8cc4244b748d061c86e
+MD5sum: af7989d988d213f5169eeb1c066cc5fc
+Description: Postgres Extension for JWT Sessions
+  pg_session_jwt is a PostgreSQL extension designed to handle authenticated sessions through a JWT.
+  This JWT is then verified against a JWK (JSON Web Key) to ensure its authenticity.
 
 Package: postgresql-16-pg-smtp-client
 Source: pg-smtp-client
@@ -15218,20 +15278,20 @@ Description: 1 Byte Currency ISO type for PostgreSQL
 
 Package: postgresql-17-pg-duckdb
 Source: pg-duckdb
-Version: 0.1.0
+Version: 0.1.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 34943
+Installed-Size: 34944
 Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.34), libgcc-s1 (>= 3.4), liblz4-1 (>= 0.0~r113), libpq5, libssl3 (>= 3.0.0), libstdc++6 (>= 12)
 Provides: postgresql-pg-duckdb
 Homepage: https://github.com/duckdb/pg_duckdb
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-duckdb/postgresql-17-pg-duckdb_0.1.0_amd64.deb
-Size: 9437640
-SHA256: 0a77e542122f19e21d6d3676f946589e7b46b06aa6fada8b46fb3544523f04b3
-SHA1: 87417ba872fbd1cb6c9142264feac7f362e67bc1
-MD5sum: 47c5804c1ebf40ac81fff970e28df9cc
+Filename: pool/main/p/pg-duckdb/postgresql-17-pg-duckdb_0.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 9437760
+SHA256: 549e3df329d63812ed59c6d8e8889c9a1f85197f8e80cf232ff3e33fac3b6057
+SHA1: 4e5b3f45d2d330a859681f5bbddcd7465ee949cc
+MD5sum: d70825480a19f460efc03d0a7214e5cd
 Description: DuckDB-powered Postgres for high performance apps & analytics.
   pg_duckdb is a Postgres extension that embeds DuckDB's columnar-vectorized analytics engine and features into Postgres.
   We recommend using pg_duckdb to build high performance analytics and data-intensive applications.
@@ -15937,6 +15997,26 @@ SHA256: 9c477a604a3a503382a51b9b25c149fad9dcffbb2c9d57a6a68094fd7f688ee1
 SHA1: d62a5afddb0c116e85fb9e6bb1ae15733b150600
 MD5sum: 26dcac1a8eaffbb621129f1acfc0d232
 Description: Full-text search for PostgreSQL using BM25
+
+Package: postgresql-17-pg-session-jwt
+Source: pg-session-jwt
+Version: 0.1.2-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 727
+Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-session-jwt
+Homepage: https://github.com/neondatabase/pg_session_jwt
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-session-jwt/postgresql-17-pg-session-jwt_0.1.2-1PIGSTY~bookworm_amd64.deb
+Size: 272312
+SHA256: ddcc98effe7a5200f0179f6dcf7b7689c775325212a9a80850b3c3913c1ef408
+SHA1: e32b59af23f7ed309b7cc3933e385faa0a0d0f7c
+MD5sum: b48e12e3eb8824ea0dbd0d48d79661cf
+Description: Postgres Extension for JWT Sessions
+  pg_session_jwt is a PostgreSQL extension designed to handle authenticated sessions through a JWT.
+  This JWT is then verified against a JWK (JSON Web Key) to ensure its authenticity.
 
 Package: postgresql-17-pg-sqlog
 Source: pg-sqlog

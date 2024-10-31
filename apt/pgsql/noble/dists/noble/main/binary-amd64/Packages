@@ -7194,6 +7194,26 @@ SHA1: 29c934ec0e59a2e6fc1854d53fd419c593c1a7a5
 MD5sum: 5889b47efcef46da9fe76dddefb0c145
 Description: Full-text search for PostgreSQL using BM25
 
+Package: postgresql-14-pg-session-jwt
+Source: pg-session-jwt
+Version: 0.1.2-1PIGSTY~noble
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 727
+Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-session-jwt
+Homepage: https://github.com/neondatabase/pg_session_jwt
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-session-jwt/postgresql-14-pg-session-jwt_0.1.2-1PIGSTY~noble_amd64.deb
+Size: 294368
+SHA256: d50bf26a97f52282aa0fbff9bca73db28432b8ede71efc04f1241aef5d9a8917
+SHA1: bfb3d45dd114ab49b3c560be1d437163dfedbff0
+MD5sum: 09ff7a368fc82946bc3ee256ef973303
+Description: Postgres Extension for JWT Sessions
+  pg_session_jwt is a PostgreSQL extension designed to handle authenticated sessions through a JWT.
+  This JWT is then verified against a JWK (JSON Web Key) to ensure its authenticity.
+
 Package: postgresql-14-pg-smtp-client
 Source: pg-smtp-client
 Version: 0.1.0-1PIGSTY~noble
@@ -10075,6 +10095,26 @@ SHA256: 85f48c92c45c638eac6ede16d974eaba317fe0c2a9b8052326746be0a7822156
 SHA1: 6a632405748faa7b9aa84324b577c42cf96ee543
 MD5sum: c806de77430add2ada9de9dbedeb41d8
 Description: Full-text search for PostgreSQL using BM25
+
+Package: postgresql-15-pg-session-jwt
+Source: pg-session-jwt
+Version: 0.1.2-1PIGSTY~noble
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 727
+Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-session-jwt
+Homepage: https://github.com/neondatabase/pg_session_jwt
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-session-jwt/postgresql-15-pg-session-jwt_0.1.2-1PIGSTY~noble_amd64.deb
+Size: 294328
+SHA256: 65af5b815e4c2dc66d85d57dfdb03aacf7cf5194e5f4767173b6018c8f97495e
+SHA1: 035e901bf43fe68a79e2d898755dc8e3b8f47958
+MD5sum: 64ee73f3a3009ee6cdcd4e55da1b20c4
+Description: Postgres Extension for JWT Sessions
+  pg_session_jwt is a PostgreSQL extension designed to handle authenticated sessions through a JWT.
+  This JWT is then verified against a JWK (JSON Web Key) to ensure its authenticity.
 
 Package: postgresql-15-pg-smtp-client
 Source: pg-smtp-client
@@ -12972,6 +13012,26 @@ SHA1: 9aa5a1804a7d4359d2ad29fb6d29b83a5de3727f
 MD5sum: c18f7ab91224f8ac681b64ee7442cdbb
 Description: Full-text search for PostgreSQL using BM25
 
+Package: postgresql-16-pg-session-jwt
+Source: pg-session-jwt
+Version: 0.1.2-1PIGSTY~noble
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 727
+Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-session-jwt
+Homepage: https://github.com/neondatabase/pg_session_jwt
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-session-jwt/postgresql-16-pg-session-jwt_0.1.2-1PIGSTY~noble_amd64.deb
+Size: 294188
+SHA256: 0f65ef85331c5039a354b7ac81e9f417847204912446e67e6b0edb623a332e8e
+SHA1: 56d0e8a751edb98f0853f2b5051e387091b8f53a
+MD5sum: e4d70ebd5412d9162ae4fc4fdbe291ac
+Description: Postgres Extension for JWT Sessions
+  pg_session_jwt is a PostgreSQL extension designed to handle authenticated sessions through a JWT.
+  This JWT is then verified against a JWK (JSON Web Key) to ensure its authenticity.
+
 Package: postgresql-16-pg-smtp-client
 Source: pg-smtp-client
 Version: 0.1.0-1PIGSTY~noble
@@ -15768,6 +15828,26 @@ SHA256: 544531202ad79acb33864b66b0419bcbd18d4e08a64d48a4c85d6f81c37e7d81
 SHA1: dbad5e89c7c9b612e82f427f64891b4a2afa8da4
 MD5sum: 9d7ee1be72ff55682ab448d0de368989
 Description: Full-text search for PostgreSQL using BM25
+
+Package: postgresql-17-pg-session-jwt
+Source: pg-session-jwt
+Version: 0.1.2-1PIGSTY~noble
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 727
+Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Provides: postgresql-pg-session-jwt
+Homepage: https://github.com/neondatabase/pg_session_jwt
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-session-jwt/postgresql-17-pg-session-jwt_0.1.2-1PIGSTY~noble_amd64.deb
+Size: 294254
+SHA256: b9c50f9468cf2a59b04bf31258615685b35a52c7f248a5ee376570f610a05d94
+SHA1: 8b0dfed3570527a1102528f3dfbd1408fb9f2a75
+MD5sum: c8ef06f75efdfff36e171b8fc331bbcd
+Description: Postgres Extension for JWT Sessions
+  pg_session_jwt is a PostgreSQL extension designed to handle authenticated sessions through a JWT.
+  This JWT is then verified against a JWK (JSON Web Key) to ensure its authenticity.
 
 Package: postgresql-17-pg-sqlog
 Source: pg-sqlog

@@ -7,22 +7,3 @@
 # reprepro -b pgsql/bookworm remove bookworm
 # reprepro -b pgsql/bullseye remove bullseye
 
-
-reprepro -b pgsql/noble remove noble
-reprepro -b pgsql/jammy remove jammy
-reprepro -b pgsql/bookworm remove bookworm
-
-reprepro -b pgsql/noble remove noble postgresql-14-pg-analytics
-reprepro -b pgsql/noble remove noble postgresql-15-pg-analytics
-reprepro -b pgsql/noble remove noble postgresql-16-pg-analytics
-reprepro -b pgsql/noble remove noble postgresql-17-pg-analytics
-
-reprepro -b pgsql/jammy remove jammy postgresql-14-pg-analytics
-reprepro -b pgsql/jammy remove jammy postgresql-15-pg-analytics
-reprepro -b pgsql/jammy remove jammy postgresql-16-pg-analytics
-reprepro -b pgsql/jammy remove jammy postgresql-17-pg-analytics
-
-reprepro -b pgsql/bookworm remove bookworm postgresql-14-pg-analytics
-reprepro -b pgsql/bookworm remove bookworm postgresql-15-pg-analytics
-reprepro -b pgsql/bookworm remove bookworm postgresql-16-pg-analytics
-reprepro -b pgsql/bookworm remove bookworm postgresql-17-pg-analytics
