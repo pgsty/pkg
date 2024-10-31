@@ -9355,7 +9355,7 @@ Description: 1 Byte Currency ISO type for PostgreSQL
 
 Package: postgresql-15-pg-duckdb
 Source: pg-duckdb
-Version: 0.1.0
+Version: 0.1.0-1PIGSTY~noble
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 26121
@@ -9364,11 +9364,11 @@ Provides: postgresql-pg-duckdb
 Homepage: https://github.com/duckdb/pg_duckdb
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-duckdb/postgresql-15-pg-duckdb_0.1.0_amd64.deb
-Size: 7781468
-SHA256: be2eae55b48dedf188e6baade3f018d223cb38b54ccdc2456fa24fa2176ab1ab
-SHA1: 19128525d9298afc0af51a45db7f883ec1da6f65
-MD5sum: 98fcc322cb024607dc8127a12c29f71f
+Filename: pool/main/p/pg-duckdb/postgresql-15-pg-duckdb_0.1.0-1PIGSTY~noble_amd64.deb
+Size: 7781694
+SHA256: 5f17260842172ae0d126116cb03e5032420012ff25bb68af8662662c35728283
+SHA1: 52df83540d448a2fd479839ce344c5fefd4b0776
+MD5sum: 9acfb031d24b49cf385265b7b919c3ce
 Description: DuckDB-powered Postgres for high performance apps & analytics.
   pg_duckdb is a Postgres extension that embeds DuckDB's columnar-vectorized analytics engine and features into Postgres.
   We recommend using pg_duckdb to build high performance analytics and data-intensive applications.
@@ -12257,7 +12257,7 @@ Description: 1 Byte Currency ISO type for PostgreSQL
 
 Package: postgresql-16-pg-duckdb
 Source: pg-duckdb
-Version: 0.1.0
+Version: 0.1.0-1PIGSTY~noble
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 26110
@@ -12266,11 +12266,11 @@ Provides: postgresql-pg-duckdb
 Homepage: https://github.com/duckdb/pg_duckdb
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-duckdb/postgresql-16-pg-duckdb_0.1.0_amd64.deb
-Size: 7770274
-SHA256: 608e9acdb307663ad1350498a67e6a9b9f1d4fc102abb934cd0e12e9a58fd92c
-SHA1: 9137150603e6b5edfd9fba37f644171a993ea841
-MD5sum: 0d86ee43eab6593849ceea3ce389b512
+Filename: pool/main/p/pg-duckdb/postgresql-16-pg-duckdb_0.1.0-1PIGSTY~noble_amd64.deb
+Size: 7770196
+SHA256: cffb4dcfe096c067a8e95a6c64c0755629ddb95b1cd2f8b15025682148fc0c9d
+SHA1: 2d81cd56684ce61f4d0eb86586d31301454c5491
+MD5sum: 44377be7c7b9188013f0bd59409e36a3
 Description: DuckDB-powered Postgres for high performance apps & analytics.
   pg_duckdb is a Postgres extension that embeds DuckDB's columnar-vectorized analytics engine and features into Postgres.
   We recommend using pg_duckdb to build high performance analytics and data-intensive applications.
@@ -15109,7 +15109,7 @@ Description: 1 Byte Currency ISO type for PostgreSQL
 
 Package: postgresql-17-pg-duckdb
 Source: pg-duckdb
-Version: 0.1.0
+Version: 0.1.0-1PIGSTY~noble
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 26121
@@ -15118,11 +15118,11 @@ Provides: postgresql-pg-duckdb
 Homepage: https://github.com/duckdb/pg_duckdb
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-duckdb/postgresql-17-pg-duckdb_0.1.0_amd64.deb
-Size: 7781440
-SHA256: 298c98a329e1e4eaff4ad49e8ffb5043589973886a8fca00a795fc37dca09707
-SHA1: bb21ee78165745d8da8b83d1c4a6d107d60ce0be
-MD5sum: 48dc769bb9df06927dd3fa00027bb074
+Filename: pool/main/p/pg-duckdb/postgresql-17-pg-duckdb_0.1.0-1PIGSTY~noble_amd64.deb
+Size: 7781672
+SHA256: c42a41714856c0ae347b89c4810d18df7a855b1d9afb6aed47c867dcedd35a8a
+SHA1: f861ac38e1e60c56e3e2a0ac973e891e201fde2e
+MD5sum: 744c87f3f41ce9bf7c05d7ad4501c83c
 Description: DuckDB-powered Postgres for high performance apps & analytics.
   pg_duckdb is a Postgres extension that embeds DuckDB's columnar-vectorized analytics engine and features into Postgres.
   We recommend using pg_duckdb to build high performance analytics and data-intensive applications.
