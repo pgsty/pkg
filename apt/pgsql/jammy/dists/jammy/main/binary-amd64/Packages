@@ -9976,6 +9976,26 @@ Description: PostgreSQL extension to enhance query monitoring
   better execution time monitoring by histograms and saving important query plan
   information in shared hash table which is available via view --pg_mon.
 
+Package: postgresql-15-pg-mooncake
+Source: pg-mooncake
+Version: 0.0.1-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 92207
+Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
+Provides: postgresql-pg-mooncake
+Homepage: https://github.com/Mooncake-Labs/pg_mooncake
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-mooncake/postgresql-15-pg-mooncake_0.0.1-1PIGSTY~jammy_amd64.deb
+Size: 23200794
+SHA256: 657e2fc011798a855b22c32dc6b252e7971ad26332a00ec1e3f598e3c6664305
+SHA1: 5cd1a2df8bf0c50945a5f6d9e34cf94b97070b7e
+MD5sum: b8ff18da5cfd006efe28464ab4ee19e1
+Description: Columnstore Table in Postgres
+  pg_mooncake is a PostgreSQL extension that adds native columnstore tables with DuckDB execution.
+  Columnstore tables are stored as Iceberg or Delta Lake tables in object storage.
+
 Package: postgresql-15-pg-net
 Source: pg-net
 Version: 0.9.2-1PIGSTY~jammy
@@ -12936,6 +12956,26 @@ Description: PostgreSQL extension to enhance query monitoring
   better execution time monitoring by histograms and saving important query plan
   information in shared hash table which is available via view --pg_mon.
 
+Package: postgresql-16-pg-mooncake
+Source: pg-mooncake
+Version: 0.0.1-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 92111
+Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
+Provides: postgresql-pg-mooncake
+Homepage: https://github.com/Mooncake-Labs/pg_mooncake
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-mooncake/postgresql-16-pg-mooncake_0.0.1-1PIGSTY~jammy_amd64.deb
+Size: 23152000
+SHA256: 7f0379081d7bdb837eefcb20c0b8529ef04e10356f72f451d58d77d21d1670db
+SHA1: 4541ceb662ed04f8b7030e09b38a406a090d647e
+MD5sum: bf77b40fc68c346c2d80093850c6e585
+Description: Columnstore Table in Postgres
+  pg_mooncake is a PostgreSQL extension that adds native columnstore tables with DuckDB execution.
+  Columnstore tables are stored as Iceberg or Delta Lake tables in object storage.
+
 Package: postgresql-16-pg-net
 Source: pg-net
 Version: 0.9.2-1PIGSTY~jammy
@@ -15813,6 +15853,26 @@ Description: PostgreSQL extension to enhance query monitoring
   In this extension we solve a couple of important monitoring issues, viz,
   better execution time monitoring by histograms and saving important query plan
   information in shared hash table which is available via view --pg_mon.
+
+Package: postgresql-17-pg-mooncake
+Source: pg-mooncake
+Version: 0.0.1-1PIGSTY~jammy
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 92119
+Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
+Provides: postgresql-pg-mooncake
+Homepage: https://github.com/Mooncake-Labs/pg_mooncake
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-mooncake/postgresql-17-pg-mooncake_0.0.1-1PIGSTY~jammy_amd64.deb
+Size: 23196264
+SHA256: 6c84cd197b5a80558c690f287f730de773f04025903605e88dd5ef86e2d110a1
+SHA1: a6d8b41e5915b0e23676b74b258037ce238802c0
+MD5sum: 26c20978d2d6f982f0194a28a5b34ab9
+Description: Columnstore Table in Postgres
+  pg_mooncake is a PostgreSQL extension that adds native columnstore tables with DuckDB execution.
+  Columnstore tables are stored as Iceberg or Delta Lake tables in object storage.
 
 Package: postgresql-17-pg-net
 Source: pg-net
