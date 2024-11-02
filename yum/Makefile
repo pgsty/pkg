@@ -98,7 +98,9 @@ cf-pgsql:
 cf-ivory:
 	rclone sync -P --transfers=8 ./ivory/ $(CF_PATH)/ivory/
 cf-gpsql:
-	rclone sync -P --transfers=8 ./ivory/ $(CF_PATH)/gpsql/
+	rclone sync -P --transfers=8 ./gpsql/ $(CF_PATH)/gpsql/
+cf-mssql:
+	rclone sync -P --transfers=8 ./mssql/ $(CF_PATH)/mssql/
 
 cos-upload: cos-infra cos-pgsql
 cos-infra:
@@ -108,7 +110,9 @@ cos-pgsql:
 cos-ivory:
 	rclone sync -P --transfers=8 ./ivory/ $(COS_PATH)/ivory/
 cos-gpsql:
-	rclone sync -P --transfers=8 ./ivory/ $(COS_PATH)/gpsql/
+	rclone sync -P --transfers=8 ./gpsql/ $(COS_PATH)/gpsql/
+cos-mssql:
+	rclone sync -P --transfers=8 ./mssql/ $(COS_PATH)/mssql/
 
 upload-repo:
 	rclone copyto repo.io $(CF_PATH)/repo
@@ -119,5 +123,6 @@ upload-repo:
 ###############################################################
 .PHONY: init build builds push pushd pull pulld \
 	upload cf-upload cos-upload upload-repo \
-    cf-infra cf-pgsql cos-infra cos-cdn \
+    cf-infra cf-pgsql cf-ivory cf-gpsql cf-mssql \
+    cos-infra cos-pgsql cos-ivory cos-gpsql cos-mssql \
     rb rbs bb bbs

@@ -96,12 +96,18 @@ cf-infra:
 	rclone sync -P --transfers=8 ./infra/ $(CF_PATH)/infra/
 cf-pgsql:
 	rclone sync -P --transfers=8 ./pgsql/ $(CF_PATH)/pgsql/
+cf-mssql:
+	rclone sync -P --transfers=8 ./mssql/ $(CF_PATH)/mssql/
+
 
 cos-upload: cos-infra cos-pgsql
 cos-infra:
 	rclone sync -P --transfers=8 ./infra/ $(COS_PATH)/infra/
 cos-pgsql:
 	rclone sync -P --transfers=8 ./pgsql/ $(COS_PATH)/pgsql/
+cos-mssql:
+	rclone sync -P --transfers=8 ./mssql/ $(CF_PATH)/mssql/
+
 
 ###############################################################
 #                         Inventory                           #
