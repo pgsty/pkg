@@ -95,12 +95,20 @@ cf-infra:
 	rclone sync -P --transfers=8 ./infra/ $(CF_PATH)/infra/
 cf-pgsql:
 	rclone sync -P --transfers=8 ./pgsql/ $(CF_PATH)/pgsql/
+cf-ivory:
+	rclone sync -P --transfers=8 ./ivory/ $(CF_PATH)/ivory/
+cf-gpsql:
+	rclone sync -P --transfers=8 ./ivory/ $(CF_PATH)/gpsql/
 
 cos-upload: cos-infra cos-pgsql
 cos-infra:
 	rclone sync -P --transfers=8 ./infra/ $(COS_PATH)/infra/
 cos-pgsql:
 	rclone sync -P --transfers=8 ./pgsql/ $(COS_PATH)/pgsql/
+cos-ivory:
+	rclone sync -P --transfers=8 ./ivory/ $(COS_PATH)/ivory/
+cos-gpsql:
+	rclone sync -P --transfers=8 ./ivory/ $(COS_PATH)/gpsql/
 
 upload-repo:
 	rclone copyto repo.io $(CF_PATH)/repo
