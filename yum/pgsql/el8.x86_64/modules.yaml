@@ -967,6 +967,18 @@ data:
       - pgjwt_15
       - pgjwt_16
       - pgjwt_17
+      - pglogical_ticker_12
+      - pglogical_ticker_12-llvmjit
+      - pglogical_ticker_13
+      - pglogical_ticker_13-llvmjit
+      - pglogical_ticker_14
+      - pglogical_ticker_14-llvmjit
+      - pglogical_ticker_15
+      - pglogical_ticker_15-llvmjit
+      - pglogical_ticker_16
+      - pglogical_ticker_16-llvmjit
+      - pglogical_ticker_17
+      - pglogical_ticker_17-llvmjit
       - pgmeminfo_12
       - pgmeminfo_12-llvmjit
       - pgmeminfo_13
@@ -2241,6 +2253,18 @@ data:
     - pgjwt_15
     - pgjwt_16
     - pgjwt_17
+    - pglogical_ticker_12
+    - pglogical_ticker_12-llvmjit
+    - pglogical_ticker_13
+    - pglogical_ticker_13-llvmjit
+    - pglogical_ticker_14
+    - pglogical_ticker_14-llvmjit
+    - pglogical_ticker_15
+    - pglogical_ticker_15-llvmjit
+    - pglogical_ticker_16
+    - pglogical_ticker_16-llvmjit
+    - pglogical_ticker_17
+    - pglogical_ticker_17-llvmjit
     - pgmeminfo_12
     - pgmeminfo_12-llvmjit
     - pgmeminfo_13
@@ -3772,6 +3796,18 @@ data:
         rationale: Present in the repository
       pgjwt_17:
         rationale: Present in the repository
+      pglogical_ticker_12:
+        rationale: Present in the repository
+      pglogical_ticker_13:
+        rationale: Present in the repository
+      pglogical_ticker_14:
+        rationale: Present in the repository
+      pglogical_ticker_15:
+        rationale: Present in the repository
+      pglogical_ticker_16:
+        rationale: Present in the repository
+      pglogical_ticker_17:
+        rationale: Present in the repository
       pgmeminfo_12:
         rationale: Present in the repository
       pgmeminfo_13:
@@ -5091,6 +5127,18 @@ data:
     - pgjwt_15-0:0.2.0-1PIGSTY.el8.x86_64
     - pgjwt_16-0:0.2.0-1PIGSTY.el8.x86_64
     - pgjwt_17-0:0.2.0-1PIGSTY.el8.x86_64
+    - pglogical_ticker_12-0:1.4.1-1PIGSTY.el8.x86_64
+    - pglogical_ticker_12-llvmjit-0:1.4.1-1PIGSTY.el8.x86_64
+    - pglogical_ticker_13-0:1.4.1-1PIGSTY.el8.x86_64
+    - pglogical_ticker_13-llvmjit-0:1.4.1-1PIGSTY.el8.x86_64
+    - pglogical_ticker_14-0:1.4.1-1PIGSTY.el8.x86_64
+    - pglogical_ticker_14-llvmjit-0:1.4.1-1PIGSTY.el8.x86_64
+    - pglogical_ticker_15-0:1.4.1-1PIGSTY.el8.x86_64
+    - pglogical_ticker_15-llvmjit-0:1.4.1-1PIGSTY.el8.x86_64
+    - pglogical_ticker_16-0:1.4.1-1PIGSTY.el8.x86_64
+    - pglogical_ticker_16-llvmjit-0:1.4.1-1PIGSTY.el8.x86_64
+    - pglogical_ticker_17-0:1.4.1-1PIGSTY.el8.x86_64
+    - pglogical_ticker_17-llvmjit-0:1.4.1-1PIGSTY.el8.x86_64
     - pgmeminfo_12-0:1.0.0-1PIGSTY.el8.x86_64
     - pgmeminfo_12-llvmjit-0:1.0.0-1PIGSTY.el8.x86_64
     - pgmeminfo_13-0:1.0.0-1PIGSTY.el8.x86_64
