@@ -22,20 +22,20 @@ Description: fast and reliable load balancing reverse proxy
  status.
 
 Package: libduckdb
-Version: 1.0.0-1PIGSTY~noble
+Version: 1.1.2-1PIGSTY~noble
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 44411
+Installed-Size: 48187
 Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.4), libstdc++6 (>= 4.8)
 Provides: libduckdb
 Homepage: https://github.com/duckdb/duckdb/
 Priority: optional
 Section: database
-Filename: pool/main/libd/libduckdb/libduckdb_1.0.0-1PIGSTY~noble_amd64.deb
-Size: 11915076
-SHA256: 32782e52269a923e4970d7e36d5b6c34cdc61794425749e5dc65ba599f7dfff7
-SHA1: f2539ac4a8131f962fc6ae23b5b1dff325a2b200
-MD5sum: d852af1c414286e3a6cfad808344b716
+Filename: pool/main/libd/libduckdb/libduckdb_1.1.2-1PIGSTY~noble_amd64.deb
+Size: 13022988
+SHA256: 28bea5211ffcde95379f8e6bb75898c796848220c68fe2590c946b47197f970e
+SHA1: 28f1fa1764240bedf73780ee9d0a18c08b7bd0e3
+MD5sum: 680e3a47cc1d48952cc439f51cc3e587
 Description: In-process SQL OLAP Database Management System
   DuckDB is a high-performance analytical database system.
   It is designed to be fast, reliable, portable, and easy to use.
@@ -358,23 +358,23 @@ Description: Output plugin for logical replication
 
 Package: postgresql-12-duckdb-fdw
 Source: duckdb-fdw
-Version: 1.0.0-1PIGSTY~noble
+Version: 1.1.2-1PIGSTY~noble
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 498
-Depends: postgresql-12, postgresql-12-jit-llvm (>= 17), libc6 (>= 2.32), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 11), libduckdb (>= 1.0.0)
+Installed-Size: 500
+Depends: postgresql-12, postgresql-12-jit-llvm (>= 17), libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 11), libduckdb (>= 1.1.2)
 Provides: postgresql-duckdb-fdw
 Homepage: https://github.com/alitrack/duckdb_fdw
 Priority: optional
 Section: database
-Filename: pool/main/d/duckdb-fdw/postgresql-12-duckdb-fdw_1.0.0-1PIGSTY~noble_amd64.deb
-Size: 223104
-SHA256: 11a9d3cc099da13dab3956c298b6a044d412bb20630e2eadbf80de6f9b79d0a4
-SHA1: 1e64430dff54ffaf79dcbdacb33c0d07a80c5488
-MD5sum: 83dce97ef23f0febac5379efc9e16de2
+Filename: pool/main/d/duckdb-fdw/postgresql-12-duckdb-fdw_1.1.2-1PIGSTY~noble_amd64.deb
+Size: 223850
+SHA256: 19d735eb7152a5cbba1e9f0054ffd9893dd3f1583ad1d3e82048568313c80e92
+SHA1: a9ce3daa46a19ed3d8db9d347fe8d295d826292f
+MD5sum: d531736a7db6b6c442db4ce5b9233986
 Description: DuckDB Foreign data wrapper extension for PostgreSQL 12
   This is a foreign data wrapper (FDW) to connect PostgreSQL to DuckDB database file.
-  This FDW works with PostgreSQL 9.6 ... 16 and compiled with exact same version of libduckdb.
+  This FDW works with PostgreSQL 9.6 ... 17 and compiled with exact same version of libduckdb.
 
 Package: postgresql-12-emaj
 Source: emaj
@@ -2890,23 +2890,23 @@ Description: Output plugin for logical replication
 
 Package: postgresql-13-duckdb-fdw
 Source: duckdb-fdw
-Version: 1.0.0-1PIGSTY~noble
+Version: 1.1.2-1PIGSTY~noble
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 503
-Depends: postgresql-13, postgresql-13-jit-llvm (>= 17), libc6 (>= 2.32), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 11), libduckdb (>= 1.0.0)
+Installed-Size: 505
+Depends: postgresql-13, postgresql-13-jit-llvm (>= 17), libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 11), libduckdb (>= 1.1.2)
 Provides: postgresql-duckdb-fdw
 Homepage: https://github.com/alitrack/duckdb_fdw
 Priority: optional
 Section: database
-Filename: pool/main/d/duckdb-fdw/postgresql-13-duckdb-fdw_1.0.0-1PIGSTY~noble_amd64.deb
-Size: 226758
-SHA256: 620a748fa2505ba0ad0c9d9b7531e9d4a68ded80eb775c98a7b1fe2a2f572b34
-SHA1: 6b10a087494471dbb5a45ae859d98f55133f4e20
-MD5sum: ed354267a890ed77ba0dd3c86ffda5b9
+Filename: pool/main/d/duckdb-fdw/postgresql-13-duckdb-fdw_1.1.2-1PIGSTY~noble_amd64.deb
+Size: 227850
+SHA256: a402d656695e4cf8f03b1761d805f0693a047c195b8bc437260342c0f030409c
+SHA1: 5a35bf4417776e629581810544948c421ee1190e
+MD5sum: be99c3a969c568fd19492e6ab5cad932
 Description: DuckDB Foreign data wrapper extension for PostgreSQL 13
   This is a foreign data wrapper (FDW) to connect PostgreSQL to DuckDB database file.
-  This FDW works with PostgreSQL 9.6 ... 16 and compiled with exact same version of libduckdb.
+  This FDW works with PostgreSQL 9.6 ... 17 and compiled with exact same version of libduckdb.
 
 Package: postgresql-13-emaj
 Source: emaj
@@ -5593,23 +5593,23 @@ Description: Output plugin for logical replication
 
 Package: postgresql-14-duckdb-fdw
 Source: duckdb-fdw
-Version: 1.0.0-1PIGSTY~noble
+Version: 1.1.2-1PIGSTY~noble
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 516
-Depends: postgresql-14, postgresql-14-jit-llvm (>= 17), libc6 (>= 2.32), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 11), libduckdb (>= 1.0.0)
+Installed-Size: 518
+Depends: postgresql-14, postgresql-14-jit-llvm (>= 17), libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 11), libduckdb (>= 1.1.2)
 Provides: postgresql-duckdb-fdw
 Homepage: https://github.com/alitrack/duckdb_fdw
 Priority: optional
 Section: database
-Filename: pool/main/d/duckdb-fdw/postgresql-14-duckdb-fdw_1.0.0-1PIGSTY~noble_amd64.deb
-Size: 233458
-SHA256: 6045aec96db7ba67dceee80ca92147bf857424f1b0cfe502f7c9541a0056bf17
-SHA1: b029ef38e462e8f3668d602edcadae095a9729ab
-MD5sum: 0ee1deccfef524cfff2a229a88b7646e
+Filename: pool/main/d/duckdb-fdw/postgresql-14-duckdb-fdw_1.1.2-1PIGSTY~noble_amd64.deb
+Size: 234588
+SHA256: 821882f301d6dca22f83c10c9e5dde07ae0995bb5439f9ecd137fb3eebcfbacd
+SHA1: e20f7a54983e708814d329feabb8ffbeda918e28
+MD5sum: fbf2e7e82c0e3d540a2621325911f141
 Description: DuckDB Foreign data wrapper extension for PostgreSQL 14
   This is a foreign data wrapper (FDW) to connect PostgreSQL to DuckDB database file.
-  This FDW works with PostgreSQL 9.6 ... 16 and compiled with exact same version of libduckdb.
+  This FDW works with PostgreSQL 9.6 ... 17 and compiled with exact same version of libduckdb.
 
 Package: postgresql-14-emaj
 Source: emaj
@@ -8474,23 +8474,23 @@ Description: Output plugin for logical replication
 
 Package: postgresql-15-duckdb-fdw
 Source: duckdb-fdw
-Version: 1.0.0-1PIGSTY~noble
+Version: 1.1.2-1PIGSTY~noble
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 516
-Depends: postgresql-15, postgresql-15-jit-llvm (>= 17), libc6 (>= 2.32), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 11), libduckdb (>= 1.0.0)
+Installed-Size: 518
+Depends: postgresql-15, postgresql-15-jit-llvm (>= 17), libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 11), libduckdb (>= 1.1.2)
 Provides: postgresql-duckdb-fdw
 Homepage: https://github.com/alitrack/duckdb_fdw
 Priority: optional
 Section: database
-Filename: pool/main/d/duckdb-fdw/postgresql-15-duckdb-fdw_1.0.0-1PIGSTY~noble_amd64.deb
-Size: 233924
-SHA256: 7a45aa31ead2c2739d4ab9b60d3b5df7522c0303858f82b35d49c3fe70fd9c58
-SHA1: 07bfec9c67f93077cf1a082dc2031cd4d585bb35
-MD5sum: 81cc49815af108270c648cfa2c7eadda
+Filename: pool/main/d/duckdb-fdw/postgresql-15-duckdb-fdw_1.1.2-1PIGSTY~noble_amd64.deb
+Size: 234598
+SHA256: bf3dff4863a84be80add4275a07c25f34b5fcac4426ec68cf8dc31a370571197
+SHA1: 845b2acf351dcd2001407193b6096f93c0687977
+MD5sum: 157439bbd6f46aa136fcfb2a5fbc2239
 Description: DuckDB Foreign data wrapper extension for PostgreSQL 15
   This is a foreign data wrapper (FDW) to connect PostgreSQL to DuckDB database file.
-  This FDW works with PostgreSQL 9.6 ... 16 and compiled with exact same version of libduckdb.
+  This FDW works with PostgreSQL 9.6 ... 17 and compiled with exact same version of libduckdb.
 
 Package: postgresql-15-emaj
 Source: emaj
@@ -11396,23 +11396,23 @@ Description: Output plugin for logical replication
 
 Package: postgresql-16-duckdb-fdw
 Source: duckdb-fdw
-Version: 1.0.0-1PIGSTY~noble
+Version: 1.1.2-1PIGSTY~noble
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 477
-Depends: postgresql-16, postgresql-16-jit-llvm (>= 17), libc6 (>= 2.32), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 11), libduckdb (>= 1.0.0)
+Installed-Size: 479
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 17), libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 11), libduckdb (>= 1.1.2)
 Provides: postgresql-duckdb-fdw
 Homepage: https://github.com/alitrack/duckdb_fdw
 Priority: optional
 Section: database
-Filename: pool/main/d/duckdb-fdw/postgresql-16-duckdb-fdw_1.0.0-1PIGSTY~noble_amd64.deb
-Size: 221528
-SHA256: 6430c59624cc2fdedd76fe561e21e599a6cd19978cda79b7de88dd4f80342369
-SHA1: 3284be34144fb8cd42f7a2b44d866da76a153877
-MD5sum: 1b0ce098b6fc6549e87e0871a59df1e6
+Filename: pool/main/d/duckdb-fdw/postgresql-16-duckdb-fdw_1.1.2-1PIGSTY~noble_amd64.deb
+Size: 223084
+SHA256: a7758bfc76c0c388d55eb6818275431fea2d0ca9ae88ac2d80b542c5fdf4dd6c
+SHA1: 389df8f67d0c12ff5062de4f0373e0f81935443b
+MD5sum: 6499238b323c5e9d1ccac9f6b6c2fc29
 Description: DuckDB Foreign data wrapper extension for PostgreSQL 16
   This is a foreign data wrapper (FDW) to connect PostgreSQL to DuckDB database file.
-  This FDW works with PostgreSQL 9.6 ... 16 and compiled with exact same version of libduckdb.
+  This FDW works with PostgreSQL 9.6 ... 17 and compiled with exact same version of libduckdb.
 
 Package: postgresql-16-emaj
 Source: emaj
@@ -14348,6 +14348,26 @@ Description: Output plugin for logical replication
   This output plugin for logical replication generates raw queries based
   on the logical changes it finds. Those queries can be consumed as they
   are by any remote source.
+
+Package: postgresql-17-duckdb-fdw
+Source: duckdb-fdw
+Version: 1.1.2-1PIGSTY~noble
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 479
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 17), libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 11), libduckdb (>= 1.1.2)
+Provides: postgresql-duckdb-fdw
+Homepage: https://github.com/alitrack/duckdb_fdw
+Priority: optional
+Section: database
+Filename: pool/main/d/duckdb-fdw/postgresql-17-duckdb-fdw_1.1.2-1PIGSTY~noble_amd64.deb
+Size: 222992
+SHA256: 0573692602c9563a06e2416ee8d46d2863bc34882f77300af1e316a189a52c1b
+SHA1: 9697240af36a2144aa834075228e1ce44e5c4d05
+MD5sum: 6c2e3298c3c315431d238ea0721704da
+Description: DuckDB Foreign data wrapper extension for PostgreSQL 17
+  This is a foreign data wrapper (FDW) to connect PostgreSQL to DuckDB database file.
+  This FDW works with PostgreSQL 9.6 ... 17 and compiled with exact same version of libduckdb.
 
 Package: postgresql-17-emaj
 Source: emaj

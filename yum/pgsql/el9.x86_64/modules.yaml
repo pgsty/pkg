@@ -149,6 +149,8 @@ data:
       - duckdb_fdw_15-llvmjit
       - duckdb_fdw_16
       - duckdb_fdw_16-llvmjit
+      - duckdb_fdw_17
+      - duckdb_fdw_17-llvmjit
       - firebird_fdw_12
       - firebird_fdw_12-llvmjit
       - firebird_fdw_13
@@ -1433,6 +1435,8 @@ data:
     - duckdb_fdw_15-llvmjit
     - duckdb_fdw_16
     - duckdb_fdw_16-llvmjit
+    - duckdb_fdw_17
+    - duckdb_fdw_17-llvmjit
     - firebird_fdw_12
     - firebird_fdw_12-llvmjit
     - firebird_fdw_13
@@ -2729,6 +2733,8 @@ data:
       duckdb_fdw_15:
         rationale: Present in the repository
       duckdb_fdw_16:
+        rationale: Present in the repository
+      duckdb_fdw_17:
         rationale: Present in the repository
       firebird_fdw_12:
         rationale: Present in the repository
@@ -4288,15 +4294,27 @@ data:
     - decoder_raw_17-0:1.0-1PIGSTY.el9.x86_64
     - decoder_raw_17-llvmjit-0:1.0-1PIGSTY.el9.x86_64
     - duckdb_fdw_12-0:1.0.0-1PIGSTY.el9.x86_64
+    - duckdb_fdw_12-0:1.1.2-1PIGSTY.el9.x86_64
     - duckdb_fdw_12-llvmjit-0:1.0.0-1PIGSTY.el9.x86_64
+    - duckdb_fdw_12-llvmjit-0:1.1.2-1PIGSTY.el9.x86_64
     - duckdb_fdw_13-0:1.0.0-1PIGSTY.el9.x86_64
+    - duckdb_fdw_13-0:1.1.2-1PIGSTY.el9.x86_64
     - duckdb_fdw_13-llvmjit-0:1.0.0-1PIGSTY.el9.x86_64
+    - duckdb_fdw_13-llvmjit-0:1.1.2-1PIGSTY.el9.x86_64
     - duckdb_fdw_14-0:1.0.0-1PIGSTY.el9.x86_64
+    - duckdb_fdw_14-0:1.1.2-1PIGSTY.el9.x86_64
     - duckdb_fdw_14-llvmjit-0:1.0.0-1PIGSTY.el9.x86_64
+    - duckdb_fdw_14-llvmjit-0:1.1.2-1PIGSTY.el9.x86_64
     - duckdb_fdw_15-0:1.0.0-1PIGSTY.el9.x86_64
+    - duckdb_fdw_15-0:1.1.2-1PIGSTY.el9.x86_64
     - duckdb_fdw_15-llvmjit-0:1.0.0-1PIGSTY.el9.x86_64
+    - duckdb_fdw_15-llvmjit-0:1.1.2-1PIGSTY.el9.x86_64
     - duckdb_fdw_16-0:1.0.0-1PIGSTY.el9.x86_64
+    - duckdb_fdw_16-0:1.1.2-1PIGSTY.el9.x86_64
     - duckdb_fdw_16-llvmjit-0:1.0.0-1PIGSTY.el9.x86_64
+    - duckdb_fdw_16-llvmjit-0:1.1.2-1PIGSTY.el9.x86_64
+    - duckdb_fdw_17-0:1.1.2-1PIGSTY.el9.x86_64
+    - duckdb_fdw_17-llvmjit-0:1.1.2-1PIGSTY.el9.x86_64
     - firebird_fdw_12-0:1.4.0-1PIGSTY.el9.x86_64
     - firebird_fdw_12-llvmjit-0:1.4.0-1PIGSTY.el9.x86_64
     - firebird_fdw_13-0:1.4.0-1PIGSTY.el9.x86_64
@@ -4452,6 +4470,7 @@ data:
     - kafka_fdw_16-llvmjit-0:0.0.3-1PIGSTY.el9.x86_64
     - libarrow-s3-0:17.0.0-1PIGSTY.el9.x86_64
     - libduckdb-0:1.0.0-1PIGSTY.el9.x86_64
+    - libduckdb-0:1.1.2-1PIGSTY.el9.x86_64
     - log_fdw_14-0:1.4-1PIGSTY.el9.x86_64
     - log_fdw_14-llvmjit-0:1.4-1PIGSTY.el9.x86_64
     - log_fdw_15-0:1.4-1PIGSTY.el9.x86_64
