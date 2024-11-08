@@ -341,6 +341,21 @@ SHA1: 13bb148aaa46a2e321046cdbdc7b22b9794f041a
 MD5sum: 72a077e9e5712ee7b04f29b1958faa65
 Description: Promtail Logging Agent
 
+Package: pushgateway
+Version: 1.9.0
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 17782
+Homepage: https://github.com/prometheus/pushgateway
+Priority: optional
+Section: 
+Filename: pool/main/p/pushgateway/pushgateway_1.9.0_arm64.deb
+Size: 10091212
+SHA256: 070415c280fb37b104738d1e71d0615c8fd5502698c38cf0603164561f756d25
+SHA1: 39cfbc7952268f520224abaed29a1b69628433fc
+MD5sum: 3786de76fb6f9242976c53be5b7a9359
+Description: Prometheus pushgateway
+
 Package: redis-exporter
 Version: 1.64.1
 Architecture: arm64
