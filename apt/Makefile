@@ -106,7 +106,7 @@ cos-infra:
 cos-pgsql:
 	rclone sync -P --transfers=8 ./pgsql/ $(COS_PATH)/pgsql/
 cos-mssql:
-	rclone sync -P --transfers=8 ./mssql/ $(CF_PATH)/mssql/
+	rclone sync -P --transfers=8 ./mssql/ $(COS_PATH)/mssql/
 
 
 ###############################################################
