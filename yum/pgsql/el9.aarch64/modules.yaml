@@ -27,6 +27,7 @@ data:
     everything:
       rpms:
       - haproxy
+      - keepalived
       - pg_analytics_13
       - pg_analytics_14
       - pg_analytics_15
@@ -45,6 +46,7 @@ data:
   api:
     rpms:
     - haproxy
+    - keepalived
     - pg_analytics_13
     - pg_analytics_14
     - pg_analytics_15
@@ -63,6 +65,8 @@ data:
   components:
     rpms:
       haproxy:
+        rationale: Present in the repository
+      keepalived:
         rationale: Present in the repository
       pg_analytics_13:
         rationale: Present in the repository
@@ -93,6 +97,7 @@ data:
   artifacts:
     rpms:
     - haproxy-0:3.0.5-1PGDG.rhel9.aarch64
+    - keepalived-0:2.3.2-1PGDG.rhel9.aarch64
     - pg_analytics_13-0:0.2.1-1.el9.aarch64
     - pg_analytics_14-0:0.2.3-1.el9.aarch64
     - pg_analytics_15-0:0.2.3-1.el9.aarch64

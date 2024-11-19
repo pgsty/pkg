@@ -303,6 +303,7 @@ data:
       - kafka_fdw_15-llvmjit
       - kafka_fdw_16
       - kafka_fdw_16-llvmjit
+      - keepalived
       - libarrow-s3
       - libduckdb
       - log_fdw_14
@@ -1591,6 +1592,7 @@ data:
     - kafka_fdw_15-llvmjit
     - kafka_fdw_16
     - kafka_fdw_16-llvmjit
+    - keepalived
     - libarrow-s3
     - libduckdb
     - log_fdw_14
@@ -2965,6 +2967,8 @@ data:
       kafka_fdw_15:
         rationale: Present in the repository
       kafka_fdw_16:
+        rationale: Present in the repository
+      keepalived:
         rationale: Present in the repository
       libarrow-s3:
         rationale: Present in the repository
@@ -4367,6 +4371,7 @@ data:
     - geoip_16-0:0.3.0-1PIGSTY.el8.x86_64
     - geoip_17-0:0.3.0-1PIGSTY.el8.x86_64
     - haproxy-0:3.0.5-1PGDG.rhel8.x86_64
+    - haproxy-0:3.0.6-1PGDG.rhel8.x86_64
     - hunspell_cs_cz_12-0:1.0-1PIGSTY.el8.x86_64
     - hunspell_cs_cz_13-0:1.0-1PIGSTY.el8.x86_64
     - hunspell_cs_cz_14-0:1.0-1PIGSTY.el8.x86_64
@@ -4477,6 +4482,7 @@ data:
     - kafka_fdw_15-llvmjit-0:0.0.3-1PIGSTY.el8.x86_64
     - kafka_fdw_16-0:0.0.3-1PIGSTY.el8.x86_64
     - kafka_fdw_16-llvmjit-0:0.0.3-1PIGSTY.el8.x86_64
+    - keepalived-0:2.3.2-1PGDG.rhel8.x86_64
     - libarrow-s3-0:17.0.0-1PIGSTY.el8.x86_64
     - libduckdb-0:1.0.0-1PIGSTY.el8.x86_64
     - libduckdb-0:1.1.2-1PIGSTY.el8.x86_64
