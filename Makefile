@@ -2,7 +2,7 @@
 # File      :   Makefile
 # Desc      :   pgsty/pkg repo shortcuts
 # Ctime     :   2024-07-28
-# Mtime     :   2024-08-23
+# Mtime     :   2024-11-15
 # Path      :   Makefile
 # Author    :   Ruohang Feng (rh@vonng.com)
 # License   :   AGPLv3
@@ -11,7 +11,7 @@
 CF_PATH = cf:/repo
 COS_PATH = cos://repo-1304744452
 DEVEL_PATH = sv:/data/pkg
-VERSION=v3.0.4
+VERSION=v3.1.0
 
 all:
 	@echo "pgsty repo"
