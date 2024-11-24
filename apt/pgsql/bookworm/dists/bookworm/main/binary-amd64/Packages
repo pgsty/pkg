@@ -7224,18 +7224,18 @@ Description: A postgres extension to avoid accidental mistakes
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
 Package: postgresql-14-pg-search
-Version: 0.11.1
+Version: 0.13.0
 Architecture: amd64
 Depends: postgresql-14
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.11.1_amd64.deb
-Size: 45743228
-SHA256: b18a60af7f38f712e93aa62f7fe1e2ce902f725d75422e2a61bdc880ad467232
-SHA1: 259374b3c9290d8e2283e760686779a8dc6fe00d
-MD5sum: 3aaefbebddd1c06c029135463fcb946d
-Description: Full-text search for PostgreSQL using BM25
+Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.13.0_amd64.deb
+Size: 45812212
+SHA256: 20b1580a7e48808cbc9254c43abd4ad2f831f32506f7f0b3e85f0b2369a62f6b
+SHA1: ece624c43328f8f3c742417430f95ef9c5d5d23f
+MD5sum: 2a8063ef7174a602197bf7a5956a035e
+Description: Postgres for Search and Analytics
 
 Package: postgresql-14-pg-session-jwt
 Source: pg-session-jwt
@@ -10190,18 +10190,18 @@ Description: A postgres extension to avoid accidental mistakes
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
 Package: postgresql-15-pg-search
-Version: 0.11.1
+Version: 0.13.0
 Architecture: amd64
 Depends: postgresql-15
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.11.1_amd64.deb
-Size: 45747732
-SHA256: 49bad1ba8f8ed41140f59c9983273ea9cb0d8146698b3a1e75bf1da5d80de9df
-SHA1: 0b083ed3ca39dc7981e70d8520e97790a52c8e6f
-MD5sum: 5a1541d4572a044ce2a72e503a3ac182
-Description: Full-text search for PostgreSQL using BM25
+Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.13.0_amd64.deb
+Size: 45813348
+SHA256: dacf9041cf5e366e48c2d742f98a41d5c2758d8d60de7ea15be95103be502116
+SHA1: c55d5f5feff15b711449c51be4531f1a208c015f
+MD5sum: 7def0ce5c36d45a5679a74117d4d0c25
+Description: Postgres for Search and Analytics
 
 Package: postgresql-15-pg-session-jwt
 Source: pg-session-jwt
@@ -13149,18 +13149,18 @@ Description: A postgres extension to avoid accidental mistakes
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
 Package: postgresql-16-pg-search
-Version: 0.11.1
+Version: 0.13.0
 Architecture: amd64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.11.1_amd64.deb
-Size: 45744432
-SHA256: da282af0ac3c7ed54d14f5eb1487e3aadd774fe074afd9c7c3901b43190234ae
-SHA1: debceca98b5d2e64225cdebf443f52144679cc2e
-MD5sum: 997e9a7e7bb23fdaf75981bcbc638703
-Description: Full-text search for PostgreSQL using BM25
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.13.0_amd64.deb
+Size: 45815424
+SHA256: bd07d1c9a51c8fe76b20b1c3e007cf01af268cc8cba42ef48ecfb8a530d74d7e
+SHA1: 6ce2d870128e5f7b559b8c0f61e239973b339bc8
+MD5sum: d9cd92c7168c4a3b8510eeff3a57d3c3
+Description: Postgres for Search and Analytics
 
 Package: postgresql-16-pg-session-jwt
 Source: pg-session-jwt
@@ -16046,18 +16046,18 @@ Description: A postgres extension to avoid accidental mistakes
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
 Package: postgresql-17-pg-search
-Version: 0.11.1
+Version: 0.13.0
 Architecture: amd64
 Depends: postgresql-17
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.11.1_amd64.deb
-Size: 45743844
-SHA256: 9c477a604a3a503382a51b9b25c149fad9dcffbb2c9d57a6a68094fd7f688ee1
-SHA1: d62a5afddb0c116e85fb9e6bb1ae15733b150600
-MD5sum: 26dcac1a8eaffbb621129f1acfc0d232
-Description: Full-text search for PostgreSQL using BM25
+Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.13.0_amd64.deb
+Size: 45812328
+SHA256: e502817e821f98f1a1e3e7ba5205c7dba0c3be843feded303707b9f911ff933b
+SHA1: fb6ddb63ef97a760c340cf010043f3aa5495d209
+MD5sum: fad3297dc35f0a32fab408a41fc7d7fc
+Description: Postgres for Search and Analytics
 
 Package: postgresql-17-pg-session-jwt
 Source: pg-session-jwt

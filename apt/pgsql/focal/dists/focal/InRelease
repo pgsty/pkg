@@ -4,44 +4,44 @@ Hash: SHA256
 Origin: Pigsty
 Label: Pigsty PGSQL
 Codename: focal
-Date: Thu, 31 Oct 2024 09:58:53 UTC
+Date: Sun, 24 Nov 2024 13:05:11 UTC
 Architectures: amd64 arm64
 Components: main
 Description: pigsty apt repository for ubuntu 20.04 focal
 MD5Sum:
- 15dcaa8965e3fec0831d5521054aa4bf 24899 main/binary-amd64/Packages
- abc81793fc0fa886a1b847499dd9e029 5956 main/binary-amd64/Packages.gz
+ ac5200ad49c5580280a93ea7e01dd6b9 26835 main/binary-amd64/Packages
+ 02b6f3d16d5aa62cb65572f42457baf1 6469 main/binary-amd64/Packages.gz
  efc46a52a8eb36c9121ba15c8ac18952 129 main/binary-amd64/Release
- 8dd6e2bc3cf945e2cd4caa51d20ef0bb 16030 main/binary-arm64/Packages
- 67eaec93ca7cd6919c66f2666aefd420 3665 main/binary-arm64/Packages.gz
+ f6cf8afb38bfc6e00702a5890dee8a57 17966 main/binary-arm64/Packages
+ 27180102864decf262fc72a4be01c9ac 4193 main/binary-arm64/Packages.gz
  1036608c7c147d035712c88c717460e9 129 main/binary-arm64/Release
 SHA1:
- 7841af7abd66eb36a567d3f00ee08dbc513bd8ac 24899 main/binary-amd64/Packages
- 0a1d348fdb50a39bf088c8979bf9b1c7c6359c27 5956 main/binary-amd64/Packages.gz
+ f57be63d0d825100db95e068ab34962d139bbadd 26835 main/binary-amd64/Packages
+ 12ecd105cec314ba2d00f2ca554e46818b6d0d19 6469 main/binary-amd64/Packages.gz
  28743dc0efb6bf61f1a9bf0462b56ac2b2a940f0 129 main/binary-amd64/Release
- 0be3534beb31b6630fe1dd92065379e1b405ff11 16030 main/binary-arm64/Packages
- 383735e8a0acc18a3b2c47744e533c38287da0fa 3665 main/binary-arm64/Packages.gz
+ 62ae457dfca9f893ef7075237dc7415b2cf60244 17966 main/binary-arm64/Packages
+ 7a60260f9b86364a50eac94f49f119ee47a0ed36 4193 main/binary-arm64/Packages.gz
  5b596c1282c65dcb37a95151604179147c1bdbcf 129 main/binary-arm64/Release
 SHA256:
- 9bc9d4dcd3cc4ed875df2fa5975271de22828e34906e429a6855f53be438f3e2 24899 main/binary-amd64/Packages
- f99fc9c51ce6d19d37d556e0d3fde7a305b67a3ea1a9eb1140544a660a7ae573 5956 main/binary-amd64/Packages.gz
+ b5bcf1df82d1288a6b0c1de54fdb0d92d539e7b3a86b8bbce2b3b35099a57c73 26835 main/binary-amd64/Packages
+ f8c69e8563b72da4a2a8216cfc69a69dbe85fbfa0148a37e11e6be63f07d25d6 6469 main/binary-amd64/Packages.gz
  5e93a6694f708751c1e8645d62560332f3f2bcf1cbfbc1497990626ff6fea524 129 main/binary-amd64/Release
- 72ca29e22031fdde5098bef5ba0247ec71c1eb7ba63a22bcc95dd9d5e2277dab 16030 main/binary-arm64/Packages
- bd389581877d60246cb5e2444c6af03bcb64721ed2d1af6690158f828a25d527 3665 main/binary-arm64/Packages.gz
+ e5c4a0fa1d1dc19d76cdc91d79db572250a7b4eb6441b9a5caeed26938f4281d 17966 main/binary-arm64/Packages
+ 30b4389d21611861d0b0a0b38b8f360cf4739730649d71954f44e0e071cc5119 4193 main/binary-arm64/Packages.gz
  bfb1196289da385e5e6650b14eedd9dddbfdc29774d51cbf29db455d8ed92e04 129 main/binary-arm64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEElZKnvHpoLnMzN24J55Ndjbm9iyAFAmcjVN0ACgkQ55Ndjbm9
-iyCZlQ/+LMHdvvimW1YlFdDe48WMuideRZyrEL5Ol9B6yE/Pzn03GCndV2jhELXc
-c+FcSWzx5PCUj5QpzfXmMQYwAlJEvn7fUpYYkHefw42ViWpB9D5kfxYh1ql4lSF3
-kYAZhU6m+0fxWNFeVEnz7N/GpZo34BSgMK54i29s/m09EzJtl/xM6fH2vBmYEdHC
-cglHM3QR3HC7Ace4wMezOoTwZLzS+G5d3/uFVRI0ztHvIcBs27sZv5FWw1Yykn3T
-q5mqgMSsdhvv3AmYD7VWO165qqOfxEruvTatUOBBVKrsQE0DVi8qP7fNzlaNOMKm
-iFnQwx/nEMR/zNEvMmDFBgmnBGsdfhcP7NPxTO4gl2O0norN9nOPmfcjXJPfKudt
-M2vKiyFpgS64yRebhz47JDfo0qth4ywYJdVBSIlehW07jFLHeT2m6BlxL2kxRdmr
-Gqgg2gGBMg0CUvkkSHNfhD3q5BZfMHO8A/GDIDdBv/A6eiE42YK3GPEMVUrVQlRc
-+wgkL/FTU7E4zKLRBcvGNw+nxrp9lzfo8hCXYksMphYx3KTNSJwNNIQIDsUXRMWx
-B5wiPUrMvNsfOzjipARiw32JRNDGbt7mncNEhT2jdIBGGIIu5tF/taqW4cMeLW+1
-Z1t+Emy3HxLujDCFMwj2PqNCyxdyrYXO/1flMdyqlThQSh6yxQc=
-=umXL
+iQIzBAEBCAAdFiEElZKnvHpoLnMzN24J55Ndjbm9iyAFAmdDJIcACgkQ55Ndjbm9
+iyDKuBAAhYYYww7venQyGakgjOA1oXuqWa+71O7W0tNMt5Pox6c9o1NNhcnUKnpA
+6Ws4JO0v5K7+aeSGbYTqfu2NknlXWy+Nq6dQG71r5xuAyV5qiUM2pDcY3Yp+t4Du
+yeb2l0MXWJDNj/59uEBqKekQD+GcxhpPyNMwl79xtca+H3FHNcgvAFU07xuUyO2G
+LvohjKP+XJXbn6Kl7D1ecWCTj8C1cYkGO18by/dqhFyt8Spn6KMJ0NrncBJokW/E
+Gr0A1ozFuZE41dek2sqERX86S6dUaz0UeZWMJRYX4E7nGnRQlfga406i01+9CfWI
+ADCv039VsDGArZpuX4orTBVHzoENyt2pdGRua6swrblCg2DUyo0H338ojwtJu8nX
+Io/ArJowtr5DHlVs7V0IS027/eoXgcWT63KxNxHh8Xqv4TTJUp0N8HhvZHlkfIaG
+ceDaKuQAeoxZQ16Lp574w/izATcHh0qbIL5cdTcm2jSmB1ExqplOowoOPKiUJVyA
+mDPh+pZe5OwrvflW/V/5jUCxEQmsTe60xPCanRu1ZWtqgWmGfbUg2Lc1Vq34gW2e
+HqCWyRnOhaWBY3l+5cGyhwA1SZAMD97iLgnIgmq/unz3mGcHAiFyU5OJYOB6uk0O
+9BdztQcpyyTiMoOfaa7kZ4iptwAKqc/gqp1crc5neIdgmCC3hAs=
+=FvTb
 -----END PGP SIGNATURE-----

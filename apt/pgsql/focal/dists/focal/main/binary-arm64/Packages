@@ -21,6 +21,62 @@ Description: fast and reliable load balancing reverse proxy
  has request blocking capabilities and provides interface to display server
  status.
 
+Package: postgresql-14-pg-search
+Version: 0.13.0
+Architecture: arm64
+Depends: postgresql-14
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.13.0_arm64.deb
+Size: 45755540
+SHA256: 93621ccc6436453922c97384ab29a945a1f9039465ebcf7a1823c9089a560928
+SHA1: 47c25837fd7c7c9a166c71d4c11d67924425f869
+MD5sum: 915a8d035c56ad5c40d2196a93ba243f
+Description: Postgres for Search and Analytics
+
+Package: postgresql-15-pg-search
+Version: 0.13.0
+Architecture: arm64
+Depends: postgresql-15
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.13.0_arm64.deb
+Size: 45756940
+SHA256: cb8ae8b9fb42b30251750ffa48e2ca336d46d5a2390cbd0ac87118362c918793
+SHA1: 3cd872712007a1a82f070a28b89cc91e9c97d33c
+MD5sum: 92d6f7d6f0642e412b542258c7767811
+Description: Postgres for Search and Analytics
+
+Package: postgresql-16-pg-search
+Version: 0.13.0
+Architecture: arm64
+Depends: postgresql-16
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.13.0_arm64.deb
+Size: 45760976
+SHA256: 525efda0eb66a08ab4c91db129c633e6d3a196ae77dc884bc0d0f3706766f020
+SHA1: 0f4f0fa459a1c1843367fb5107b587f7f5883d56
+MD5sum: 57718852f09d3268726cf7144d933b2a
+Description: Postgres for Search and Analytics
+
+Package: postgresql-17-pg-search
+Version: 0.13.0
+Architecture: arm64
+Depends: postgresql-17
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.13.0_arm64.deb
+Size: 45755360
+SHA256: 2897d9325a6286cbbe8a3d7c06204686a47b8ad5d2859d7e510b1beafdef3640
+SHA1: aa67463469cbbf96e1f3846a1dc2df2a2caac6a7
+MD5sum: f0557a788459c71eb0b5118686464f3d
+Description: Postgres for Search and Analytics
+
 Package: redis
 Version: 6:7.2.6-1rl1~focal1
 Architecture: all

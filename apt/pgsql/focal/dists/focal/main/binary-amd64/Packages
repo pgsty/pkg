@@ -135,6 +135,20 @@ Description: sharding and distributed joins for PostgreSQL
  schemas, and keep track of shard health. An advanced distributed planner
  is included which handles queries and modifications against sharded tables.
 
+Package: postgresql-14-pg-search
+Version: 0.13.0
+Architecture: amd64
+Depends: postgresql-14
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.13.0_amd64.deb
+Size: 46128668
+SHA256: 9542cd2f01c9ff8013d5780f5c18294e940749adfe2a7cf3a9744c4aed0d0edf
+SHA1: 8a8a23b07bb044c4fbbefcd2fc9566fffdf527c3
+MD5sum: d3f563c29eac6a9e6954e781a8392e22
+Description: Postgres for Search and Analytics
+
 Package: postgresql-15-citus-12.1
 Source: citus
 Version: 12.1.5.citus-1
@@ -159,6 +173,20 @@ Description: sharding and distributed joins for PostgreSQL
  schemas, and keep track of shard health. An advanced distributed planner
  is included which handles queries and modifications against sharded tables.
 
+Package: postgresql-15-pg-search
+Version: 0.13.0
+Architecture: amd64
+Depends: postgresql-15
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.13.0_amd64.deb
+Size: 46127228
+SHA256: 01b3e5ab5b3183a3918400a55c4a8cadb6f392f84a56dc0b6870252580949010
+SHA1: 397e45db648837f1cd36aedb272abfedf3b94efe
+MD5sum: 5f9587be6354850d1282d680ddf651d1
+Description: Postgres for Search and Analytics
+
 Package: postgresql-16-citus-12.1
 Source: citus
 Version: 12.1.5.citus-1
@@ -182,6 +210,34 @@ Description: sharding and distributed joins for PostgreSQL
  placed on remote worker nodes. Citus can replicate shards, update their
  schemas, and keep track of shard health. An advanced distributed planner
  is included which handles queries and modifications against sharded tables.
+
+Package: postgresql-16-pg-search
+Version: 0.13.0
+Architecture: amd64
+Depends: postgresql-16
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.13.0_amd64.deb
+Size: 46129160
+SHA256: 6a49b8a85c5d55d279a879bf7f2811ff31e6884d67e39566625328583a5c3a6a
+SHA1: 6aa5afd5e41c8130f8373ba825cf10beff96332a
+MD5sum: 30008861478c7807cf620f07bdc5b393
+Description: Postgres for Search and Analytics
+
+Package: postgresql-17-pg-search
+Version: 0.13.0
+Architecture: amd64
+Depends: postgresql-17
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.13.0_amd64.deb
+Size: 46129256
+SHA256: 2767054fb5f891e1df35a5b1ce96e43a6d74c26aa95f3ff76e608a3b5c2261b8
+SHA1: 08dcba55d5d94a2c21e764e28f1359709cd254fe
+MD5sum: 2805619d0fa3cc714560337b123c5ad1
+Description: Postgres for Search and Analytics
 
 Package: redis
 Version: 6:7.2.6-1rl1~focal1
