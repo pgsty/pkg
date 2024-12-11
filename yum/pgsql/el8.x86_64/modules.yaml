@@ -448,6 +448,12 @@ data:
       - pg_base62_16-llvmjit
       - pg_base62_17
       - pg_base62_17-llvmjit
+      - pg_bestmatch_12
+      - pg_bestmatch_13
+      - pg_bestmatch_14
+      - pg_bestmatch_15
+      - pg_bestmatch_16
+      - pg_bestmatch_17
       - pg_cardano_12
       - pg_cardano_13
       - pg_cardano_14
@@ -680,6 +686,16 @@ data:
       - pg_mooncake_15
       - pg_mooncake_16
       - pg_mooncake_17
+      - pg_net_12
+      - pg_net_12-llvmjit
+      - pg_net_13
+      - pg_net_13-llvmjit
+      - pg_net_14
+      - pg_net_14-llvmjit
+      - pg_net_15
+      - pg_net_15-llvmjit
+      - pg_net_16
+      - pg_net_16-llvmjit
       - pg_net_17
       - pg_net_17-llvmjit
       - pg_orphaned_12
@@ -970,6 +986,12 @@ data:
       - pgjwt_15
       - pgjwt_16
       - pgjwt_17
+      - pglite_fusion_12
+      - pglite_fusion_13
+      - pglite_fusion_14
+      - pglite_fusion_15
+      - pglite_fusion_16
+      - pglite_fusion_17
       - pglogical_ticker_12
       - pglogical_ticker_12-llvmjit
       - pglogical_ticker_13
@@ -1027,6 +1049,18 @@ data:
       - pgpcre_16-llvmjit
       - pgpcre_17
       - pgpcre_17-llvmjit
+      - pgpdf_12
+      - pgpdf_12-llvmjit
+      - pgpdf_13
+      - pgpdf_13-llvmjit
+      - pgpdf_14
+      - pgpdf_14-llvmjit
+      - pgpdf_15
+      - pgpdf_15-llvmjit
+      - pgpdf_16
+      - pgpdf_16-llvmjit
+      - pgpdf_17
+      - pgpdf_17-llvmjit
       - pgqr_12
       - pgqr_12-llvmjit
       - pgqr_13
@@ -1297,6 +1331,10 @@ data:
       - vault_15
       - vault_16
       - vault_17
+      - vchord_14
+      - vchord_15
+      - vchord_16
+      - vchord_17
       - wrappers_14
       - wrappers_15
       - wrappers_16
@@ -1737,6 +1775,12 @@ data:
     - pg_base62_16-llvmjit
     - pg_base62_17
     - pg_base62_17-llvmjit
+    - pg_bestmatch_12
+    - pg_bestmatch_13
+    - pg_bestmatch_14
+    - pg_bestmatch_15
+    - pg_bestmatch_16
+    - pg_bestmatch_17
     - pg_cardano_12
     - pg_cardano_13
     - pg_cardano_14
@@ -1969,6 +2013,16 @@ data:
     - pg_mooncake_15
     - pg_mooncake_16
     - pg_mooncake_17
+    - pg_net_12
+    - pg_net_12-llvmjit
+    - pg_net_13
+    - pg_net_13-llvmjit
+    - pg_net_14
+    - pg_net_14-llvmjit
+    - pg_net_15
+    - pg_net_15-llvmjit
+    - pg_net_16
+    - pg_net_16-llvmjit
     - pg_net_17
     - pg_net_17-llvmjit
     - pg_orphaned_12
@@ -2259,6 +2313,12 @@ data:
     - pgjwt_15
     - pgjwt_16
     - pgjwt_17
+    - pglite_fusion_12
+    - pglite_fusion_13
+    - pglite_fusion_14
+    - pglite_fusion_15
+    - pglite_fusion_16
+    - pglite_fusion_17
     - pglogical_ticker_12
     - pglogical_ticker_12-llvmjit
     - pglogical_ticker_13
@@ -2316,6 +2376,18 @@ data:
     - pgpcre_16-llvmjit
     - pgpcre_17
     - pgpcre_17-llvmjit
+    - pgpdf_12
+    - pgpdf_12-llvmjit
+    - pgpdf_13
+    - pgpdf_13-llvmjit
+    - pgpdf_14
+    - pgpdf_14-llvmjit
+    - pgpdf_15
+    - pgpdf_15-llvmjit
+    - pgpdf_16
+    - pgpdf_16-llvmjit
+    - pgpdf_17
+    - pgpdf_17-llvmjit
     - pgqr_12
     - pgqr_12-llvmjit
     - pgqr_13
@@ -2586,6 +2658,10 @@ data:
     - vault_15
     - vault_16
     - vault_17
+    - vchord_14
+    - vchord_15
+    - vchord_16
+    - vchord_17
     - wrappers_14
     - wrappers_15
     - wrappers_16
@@ -3152,6 +3228,18 @@ data:
         rationale: Present in the repository
       pg_base62_17:
         rationale: Present in the repository
+      pg_bestmatch_12:
+        rationale: Present in the repository
+      pg_bestmatch_13:
+        rationale: Present in the repository
+      pg_bestmatch_14:
+        rationale: Present in the repository
+      pg_bestmatch_15:
+        rationale: Present in the repository
+      pg_bestmatch_16:
+        rationale: Present in the repository
+      pg_bestmatch_17:
+        rationale: Present in the repository
       pg_cardano_12:
         rationale: Present in the repository
       pg_cardano_13:
@@ -3441,6 +3529,16 @@ data:
       pg_mooncake_16:
         rationale: Present in the repository
       pg_mooncake_17:
+        rationale: Present in the repository
+      pg_net_12:
+        rationale: Present in the repository
+      pg_net_13:
+        rationale: Present in the repository
+      pg_net_14:
+        rationale: Present in the repository
+      pg_net_15:
+        rationale: Present in the repository
+      pg_net_16:
         rationale: Present in the repository
       pg_net_17:
         rationale: Present in the repository
@@ -3806,6 +3904,18 @@ data:
         rationale: Present in the repository
       pgjwt_17:
         rationale: Present in the repository
+      pglite_fusion_12:
+        rationale: Present in the repository
+      pglite_fusion_13:
+        rationale: Present in the repository
+      pglite_fusion_14:
+        rationale: Present in the repository
+      pglite_fusion_15:
+        rationale: Present in the repository
+      pglite_fusion_16:
+        rationale: Present in the repository
+      pglite_fusion_17:
+        rationale: Present in the repository
       pglogical_ticker_12:
         rationale: Present in the repository
       pglogical_ticker_13:
@@ -3871,6 +3981,18 @@ data:
       pgpcre_16:
         rationale: Present in the repository
       pgpcre_17:
+        rationale: Present in the repository
+      pgpdf_12:
+        rationale: Present in the repository
+      pgpdf_13:
+        rationale: Present in the repository
+      pgpdf_14:
+        rationale: Present in the repository
+      pgpdf_15:
+        rationale: Present in the repository
+      pgpdf_16:
+        rationale: Present in the repository
+      pgpdf_17:
         rationale: Present in the repository
       pgqr_12:
         rationale: Present in the repository
@@ -4170,6 +4292,14 @@ data:
         rationale: Present in the repository
       vault_17:
         rationale: Present in the repository
+      vchord_14:
+        rationale: Present in the repository
+      vchord_15:
+        rationale: Present in the repository
+      vchord_16:
+        rationale: Present in the repository
+      vchord_17:
+        rationale: Present in the repository
       wrappers_14:
         rationale: Present in the repository
       wrappers_15:
@@ -4192,7 +4322,7 @@ data:
         rationale: Present in the repository
   artifacts:
     rpms:
-    - PolarDB-0:15.8.2.0-f3737b0b.el8.x86_64
+    - PolarDB-0:15.10.2.0-35199b32.el8.x86_64
     - acl_12-0:1.0.4-1PIGSTY.el8.x86_64
     - acl_12-llvmjit-0:1.0.4-1PIGSTY.el8.x86_64
     - acl_13-0:1.0.4-1PIGSTY.el8.x86_64
@@ -4217,18 +4347,18 @@ data:
     - aggs_for_arrays_16-llvmjit-0:1.3.3-1PIGSTY.el8.x86_64
     - aggs_for_arrays_17-0:1.3.3-1PIGSTY.el8.x86_64
     - aggs_for_arrays_17-llvmjit-0:1.3.3-1PIGSTY.el8.x86_64
-    - aggs_for_vecs_12-0:1.3.1-1PIGSTY.el8.x86_64
-    - aggs_for_vecs_12-llvmjit-0:1.3.1-1PIGSTY.el8.x86_64
-    - aggs_for_vecs_13-0:1.3.1-1PIGSTY.el8.x86_64
-    - aggs_for_vecs_13-llvmjit-0:1.3.1-1PIGSTY.el8.x86_64
-    - aggs_for_vecs_14-0:1.3.1-1PIGSTY.el8.x86_64
-    - aggs_for_vecs_14-llvmjit-0:1.3.1-1PIGSTY.el8.x86_64
-    - aggs_for_vecs_15-0:1.3.1-1PIGSTY.el8.x86_64
-    - aggs_for_vecs_15-llvmjit-0:1.3.1-1PIGSTY.el8.x86_64
-    - aggs_for_vecs_16-0:1.3.1-1PIGSTY.el8.x86_64
-    - aggs_for_vecs_16-llvmjit-0:1.3.1-1PIGSTY.el8.x86_64
-    - aggs_for_vecs_17-0:1.3.1-1PIGSTY.el8.x86_64
-    - aggs_for_vecs_17-llvmjit-0:1.3.1-1PIGSTY.el8.x86_64
+    - aggs_for_vecs_12-0:1.3.2-1PIGSTY.el8.x86_64
+    - aggs_for_vecs_12-llvmjit-0:1.3.2-1PIGSTY.el8.x86_64
+    - aggs_for_vecs_13-0:1.3.2-1PIGSTY.el8.x86_64
+    - aggs_for_vecs_13-llvmjit-0:1.3.2-1PIGSTY.el8.x86_64
+    - aggs_for_vecs_14-0:1.3.2-1PIGSTY.el8.x86_64
+    - aggs_for_vecs_14-llvmjit-0:1.3.2-1PIGSTY.el8.x86_64
+    - aggs_for_vecs_15-0:1.3.2-1PIGSTY.el8.x86_64
+    - aggs_for_vecs_15-llvmjit-0:1.3.2-1PIGSTY.el8.x86_64
+    - aggs_for_vecs_16-0:1.3.2-1PIGSTY.el8.x86_64
+    - aggs_for_vecs_16-llvmjit-0:1.3.2-1PIGSTY.el8.x86_64
+    - aggs_for_vecs_17-0:1.3.2-1PIGSTY.el8.x86_64
+    - aggs_for_vecs_17-llvmjit-0:1.3.2-1PIGSTY.el8.x86_64
     - apache-age_15-0:1.4.0-1PIGSTY.el8.x86_64
     - apache-age_15-llvmjit-0:1.4.0-1PIGSTY.el8.x86_64
     - apache-age_16-0:1.5.0-1PIGSTY.el8.x86_64
@@ -4306,25 +4436,15 @@ data:
     - decoder_raw_16-llvmjit-0:1.0-1PIGSTY.el8.x86_64
     - decoder_raw_17-0:1.0-1PIGSTY.el8.x86_64
     - decoder_raw_17-llvmjit-0:1.0-1PIGSTY.el8.x86_64
-    - duckdb_fdw_12-0:1.0.0-1PIGSTY.el8.x86_64
     - duckdb_fdw_12-0:1.1.2-1PIGSTY.el8.x86_64
-    - duckdb_fdw_12-llvmjit-0:1.0.0-1PIGSTY.el8.x86_64
     - duckdb_fdw_12-llvmjit-0:1.1.2-1PIGSTY.el8.x86_64
-    - duckdb_fdw_13-0:1.0.0-1PIGSTY.el8.x86_64
     - duckdb_fdw_13-0:1.1.2-1PIGSTY.el8.x86_64
-    - duckdb_fdw_13-llvmjit-0:1.0.0-1PIGSTY.el8.x86_64
     - duckdb_fdw_13-llvmjit-0:1.1.2-1PIGSTY.el8.x86_64
-    - duckdb_fdw_14-0:1.0.0-1PIGSTY.el8.x86_64
     - duckdb_fdw_14-0:1.1.2-1PIGSTY.el8.x86_64
-    - duckdb_fdw_14-llvmjit-0:1.0.0-1PIGSTY.el8.x86_64
     - duckdb_fdw_14-llvmjit-0:1.1.2-1PIGSTY.el8.x86_64
-    - duckdb_fdw_15-0:1.0.0-1PIGSTY.el8.x86_64
     - duckdb_fdw_15-0:1.1.2-1PIGSTY.el8.x86_64
-    - duckdb_fdw_15-llvmjit-0:1.0.0-1PIGSTY.el8.x86_64
     - duckdb_fdw_15-llvmjit-0:1.1.2-1PIGSTY.el8.x86_64
-    - duckdb_fdw_16-0:1.0.0-1PIGSTY.el8.x86_64
     - duckdb_fdw_16-0:1.1.2-1PIGSTY.el8.x86_64
-    - duckdb_fdw_16-llvmjit-0:1.0.0-1PIGSTY.el8.x86_64
     - duckdb_fdw_16-llvmjit-0:1.1.2-1PIGSTY.el8.x86_64
     - duckdb_fdw_17-0:1.1.2-1PIGSTY.el8.x86_64
     - duckdb_fdw_17-llvmjit-0:1.1.2-1PIGSTY.el8.x86_64
@@ -4370,7 +4490,6 @@ data:
     - geoip_15-0:0.3.0-1PIGSTY.el8.x86_64
     - geoip_16-0:0.3.0-1PIGSTY.el8.x86_64
     - geoip_17-0:0.3.0-1PIGSTY.el8.x86_64
-    - haproxy-0:3.0.5-1PGDG.rhel8.x86_64
     - haproxy-0:3.0.6-1PGDG.rhel8.x86_64
     - hunspell_cs_cz_12-0:1.0-1PIGSTY.el8.x86_64
     - hunspell_cs_cz_13-0:1.0-1PIGSTY.el8.x86_64
@@ -4448,9 +4567,7 @@ data:
     - icu_ext_14-llvmjit-0:1.9.0-1PIGSTY.el8.x86_64
     - icu_ext_15-0:1.9.0-1PIGSTY.el8.x86_64
     - icu_ext_15-llvmjit-0:1.9.0-1PIGSTY.el8.x86_64
-    - icu_ext_16-0:1.8.0-1PIGSTY.el8.x86_64
     - icu_ext_16-0:1.9.0-1PIGSTY.el8.x86_64
-    - icu_ext_16-llvmjit-0:1.8.0-1PIGSTY.el8.x86_64
     - icu_ext_16-llvmjit-0:1.9.0-1PIGSTY.el8.x86_64
     - icu_ext_17-0:1.9.0-1PIGSTY.el8.x86_64
     - icu_ext_17-llvmjit-0:1.9.0-1PIGSTY.el8.x86_64
@@ -4628,12 +4745,18 @@ data:
     - pg_base62_16-llvmjit-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_base62_17-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_base62_17-llvmjit-0:0.0.1-1PIGSTY.el8.x86_64
-    - pg_cardano_12-0:1.0.2-1PIGSTY.el8.x86_64
-    - pg_cardano_13-0:1.0.2-1PIGSTY.el8.x86_64
-    - pg_cardano_14-0:1.0.2-1PIGSTY.el8.x86_64
-    - pg_cardano_15-0:1.0.2-1PIGSTY.el8.x86_64
-    - pg_cardano_16-0:1.0.2-1PIGSTY.el8.x86_64
-    - pg_cardano_17-0:1.0.2-1PIGSTY.el8.x86_64
+    - pg_bestmatch_12-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_bestmatch_13-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_bestmatch_14-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_bestmatch_15-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_bestmatch_16-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_bestmatch_17-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_cardano_12-0:1.0.3-1PIGSTY.el8.x86_64
+    - pg_cardano_13-0:1.0.3-1PIGSTY.el8.x86_64
+    - pg_cardano_14-0:1.0.3-1PIGSTY.el8.x86_64
+    - pg_cardano_15-0:1.0.3-1PIGSTY.el8.x86_64
+    - pg_cardano_16-0:1.0.3-1PIGSTY.el8.x86_64
+    - pg_cardano_17-0:1.0.3-1PIGSTY.el8.x86_64
     - pg_cheat_funcs_12-0:1.0-1PIGSTY.el8.x86_64
     - pg_cheat_funcs_12-llvmjit-0:1.0-1PIGSTY.el8.x86_64
     - pg_cheat_funcs_13-0:1.0-1PIGSTY.el8.x86_64
@@ -4682,12 +4805,12 @@ data:
     - pg_currency_16-llvmjit-0:0.0.3-1PIGSTY.el8.x86_64
     - pg_currency_17-0:0.0.3-1PIGSTY.el8.x86_64
     - pg_currency_17-llvmjit-0:0.0.3-1PIGSTY.el8.x86_64
-    - pg_duckdb_15-0:0.1.0-1PIGSTY.el8.x86_64
-    - pg_duckdb_15-llvmjit-0:0.1.0-1PIGSTY.el8.x86_64
-    - pg_duckdb_16-0:0.1.0-1PIGSTY.el8.x86_64
-    - pg_duckdb_16-llvmjit-0:0.1.0-1PIGSTY.el8.x86_64
-    - pg_duckdb_17-0:0.1.0-1PIGSTY.el8.x86_64
-    - pg_duckdb_17-llvmjit-0:0.1.0-1PIGSTY.el8.x86_64
+    - pg_duckdb_15-0:0.2.0-1PIGSTY.el8.x86_64
+    - pg_duckdb_15-llvmjit-0:0.2.0-1PIGSTY.el8.x86_64
+    - pg_duckdb_16-0:0.2.0-1PIGSTY.el8.x86_64
+    - pg_duckdb_16-llvmjit-0:0.2.0-1PIGSTY.el8.x86_64
+    - pg_duckdb_17-0:0.2.0-1PIGSTY.el8.x86_64
+    - pg_duckdb_17-llvmjit-0:0.2.0-1PIGSTY.el8.x86_64
     - pg_ecdsa_12-0:1.0-1PIGSTY.el8.x86_64
     - pg_ecdsa_12-llvmjit-0:1.0-1PIGSTY.el8.x86_64
     - pg_ecdsa_13-0:1.0-1PIGSTY.el8.x86_64
@@ -4738,9 +4861,7 @@ data:
     - pg_failover_slots_14-llvmjit-0:1.1.0-1PIGSTY.el8.x86_64
     - pg_failover_slots_15-0:1.1.0-1PIGSTY.el8.x86_64
     - pg_failover_slots_15-llvmjit-0:1.1.0-1PIGSTY.el8.x86_64
-    - pg_failover_slots_16-0:1.0.1-1PIGSTY.el8.x86_64
     - pg_failover_slots_16-0:1.1.0-1PIGSTY.el8.x86_64
-    - pg_failover_slots_16-llvmjit-0:1.0.1-1PIGSTY.el8.x86_64
     - pg_failover_slots_16-llvmjit-0:1.1.0-1PIGSTY.el8.x86_64
     - pg_failover_slots_17-0:1.1.0-1PIGSTY.el8.x86_64
     - pg_failover_slots_17-llvmjit-0:1.1.0-1PIGSTY.el8.x86_64
@@ -4862,6 +4983,16 @@ data:
     - pg_mooncake_15-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_mooncake_16-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_mooncake_17-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_net_12-0:0.9.2-1PIGSTY.el8.x86_64
+    - pg_net_12-llvmjit-0:0.9.2-1PIGSTY.el8.x86_64
+    - pg_net_13-0:0.9.2-1PIGSTY.el8.x86_64
+    - pg_net_13-llvmjit-0:0.9.2-1PIGSTY.el8.x86_64
+    - pg_net_14-0:0.9.2-1PIGSTY.el8.x86_64
+    - pg_net_14-llvmjit-0:0.9.2-1PIGSTY.el8.x86_64
+    - pg_net_15-0:0.9.2-1PIGSTY.el8.x86_64
+    - pg_net_15-llvmjit-0:0.9.2-1PIGSTY.el8.x86_64
+    - pg_net_16-0:0.9.2-1PIGSTY.el8.x86_64
+    - pg_net_16-llvmjit-0:0.9.2-1PIGSTY.el8.x86_64
     - pg_net_17-0:0.9.2-1PIGSTY.el8.x86_64
     - pg_net_17-llvmjit-0:0.9.2-1PIGSTY.el8.x86_64
     - pg_orphaned_12-0:1.0-1PIGSTY.el8.x86_64
@@ -4876,10 +5007,10 @@ data:
     - pg_orphaned_16-llvmjit-0:1.0-1PIGSTY.el8.x86_64
     - pg_orphaned_17-0:1.0-1PIGSTY.el8.x86_64
     - pg_orphaned_17-llvmjit-0:1.0-1PIGSTY.el8.x86_64
-    - pg_parquet_14-0:0.1.0-1PIGSTY.el8.x86_64
-    - pg_parquet_15-0:0.1.0-1PIGSTY.el8.x86_64
-    - pg_parquet_16-0:0.1.0-1PIGSTY.el8.x86_64
-    - pg_parquet_17-0:0.1.0-1PIGSTY.el8.x86_64
+    - pg_parquet_14-0:0.1.1-1PIGSTY.el8.x86_64
+    - pg_parquet_15-0:0.1.1-1PIGSTY.el8.x86_64
+    - pg_parquet_16-0:0.1.1-1PIGSTY.el8.x86_64
+    - pg_parquet_17-0:0.1.1-1PIGSTY.el8.x86_64
     - pg_plan_filter_12-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_plan_filter_12-llvmjit-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_plan_filter_13-0:0.0.1-1PIGSTY.el8.x86_64
@@ -4892,12 +5023,12 @@ data:
     - pg_plan_filter_16-llvmjit-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_plan_filter_17-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_plan_filter_17-llvmjit-0:0.0.1-1PIGSTY.el8.x86_64
-    - pg_polyline_12-0:0.0.0-1PIGSTY.el8.x86_64
-    - pg_polyline_13-0:0.0.0-1PIGSTY.el8.x86_64
-    - pg_polyline_14-0:0.0.0-1PIGSTY.el8.x86_64
-    - pg_polyline_15-0:0.0.0-1PIGSTY.el8.x86_64
-    - pg_polyline_16-0:0.0.0-1PIGSTY.el8.x86_64
-    - pg_polyline_17-0:0.0.0-1PIGSTY.el8.x86_64
+    - pg_polyline_12-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_polyline_13-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_polyline_14-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_polyline_15-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_polyline_16-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_polyline_17-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_protobuf_12-0:1.0-1PIGSTY.el8.x86_64
     - pg_protobuf_12-llvmjit-0:1.0-1PIGSTY.el8.x86_64
     - pg_protobuf_13-0:1.0-1PIGSTY.el8.x86_64
@@ -5032,12 +5163,12 @@ data:
     - pg_store_plans_15-llvmjit-0:1.8-1PIGSTY.el8.x86_64
     - pg_store_plans_16-0:1.8-1PIGSTY.el8.x86_64
     - pg_store_plans_16-llvmjit-0:1.8-1PIGSTY.el8.x86_64
-    - pg_summarize_12-0:0.0.0-1PIGSTY.el8.x86_64
-    - pg_summarize_13-0:0.0.0-1PIGSTY.el8.x86_64
-    - pg_summarize_14-0:0.0.0-1PIGSTY.el8.x86_64
-    - pg_summarize_15-0:0.0.0-1PIGSTY.el8.x86_64
-    - pg_summarize_16-0:0.0.0-1PIGSTY.el8.x86_64
-    - pg_summarize_17-0:0.0.0-1PIGSTY.el8.x86_64
+    - pg_summarize_12-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_summarize_13-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_summarize_14-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_summarize_15-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_summarize_16-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_summarize_17-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_tde_16-0:1.0.0-1PIGSTY.el8.x86_64
     - pg_tde_16-llvmjit-0:1.0.0-1PIGSTY.el8.x86_64
     - pg_tier_16-0:0.0.3-1PIGSTY.el8.x86_64
@@ -5152,6 +5283,12 @@ data:
     - pgjwt_15-0:0.2.0-1PIGSTY.el8.x86_64
     - pgjwt_16-0:0.2.0-1PIGSTY.el8.x86_64
     - pgjwt_17-0:0.2.0-1PIGSTY.el8.x86_64
+    - pglite_fusion_12-0:0.0.3-1PIGSTY.el8.x86_64
+    - pglite_fusion_13-0:0.0.3-1PIGSTY.el8.x86_64
+    - pglite_fusion_14-0:0.0.3-1PIGSTY.el8.x86_64
+    - pglite_fusion_15-0:0.0.3-1PIGSTY.el8.x86_64
+    - pglite_fusion_16-0:0.0.3-1PIGSTY.el8.x86_64
+    - pglite_fusion_17-0:0.0.3-1PIGSTY.el8.x86_64
     - pglogical_ticker_12-0:1.4.1-1PIGSTY.el8.x86_64
     - pglogical_ticker_12-llvmjit-0:1.4.1-1PIGSTY.el8.x86_64
     - pglogical_ticker_13-0:1.4.1-1PIGSTY.el8.x86_64
@@ -5183,7 +5320,6 @@ data:
     - pgmq_13-0:1.4.4-1PIGSTY.el8.x86_64
     - pgmq_14-0:1.4.4-1PIGSTY.el8.x86_64
     - pgmq_15-0:1.4.4-1PIGSTY.el8.x86_64
-    - pgmq_16-0:1.2.1-1PIGSTY.el8.x86_64
     - pgmq_16-0:1.4.4-1PIGSTY.el8.x86_64
     - pgmq_17-0:1.4.4-1PIGSTY.el8.x86_64
     - pgnodemx_12-0:1.7-1PIGSTY.el8.x86_64
@@ -5194,9 +5330,7 @@ data:
     - pgnodemx_14-llvmjit-0:1.7-1PIGSTY.el8.x86_64
     - pgnodemx_15-0:1.7-1PIGSTY.el8.x86_64
     - pgnodemx_15-llvmjit-0:1.7-1PIGSTY.el8.x86_64
-    - pgnodemx_16-0:1.6-1PIGSTY.el8.x86_64
     - pgnodemx_16-0:1.7-1PIGSTY.el8.x86_64
-    - pgnodemx_16-llvmjit-0:1.6-1PIGSTY.el8.x86_64
     - pgnodemx_16-llvmjit-0:1.7-1PIGSTY.el8.x86_64
     - pgnodemx_17-0:1.7-1PIGSTY.el8.x86_64
     - pgnodemx_17-llvmjit-0:1.7-1PIGSTY.el8.x86_64
@@ -5212,6 +5346,18 @@ data:
     - pgpcre_16-llvmjit-0:1-1PIGSTY.el8.x86_64
     - pgpcre_17-0:1-1PIGSTY.el8.x86_64
     - pgpcre_17-llvmjit-0:1-1PIGSTY.el8.x86_64
+    - pgpdf_12-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgpdf_12-llvmjit-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgpdf_13-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgpdf_13-llvmjit-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgpdf_14-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgpdf_14-llvmjit-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgpdf_15-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgpdf_15-llvmjit-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgpdf_16-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgpdf_16-llvmjit-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgpdf_17-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgpdf_17-llvmjit-0:0.1.0-1PIGSTY.el8.x86_64
     - pgqr_12-0:1.0-1PIGSTY.el8.x86_64
     - pgqr_12-llvmjit-0:1.0-1PIGSTY.el8.x86_64
     - pgqr_13-0:1.0-1PIGSTY.el8.x86_64
@@ -5255,10 +5401,15 @@ data:
     - pguint_17-0:1.20231206-1PIGSTY.el8.x86_64
     - pguint_17-llvmjit-0:1.20231206-1PIGSTY.el8.x86_64
     - pgvectorscale_13-0:0.4.0-1PIGSTY.el8.x86_64
+    - pgvectorscale_13-0:0.5.1-1PIGSTY.el8.x86_64
     - pgvectorscale_14-0:0.4.0-1PIGSTY.el8.x86_64
+    - pgvectorscale_14-0:0.5.1-1PIGSTY.el8.x86_64
     - pgvectorscale_15-0:0.4.0-1PIGSTY.el8.x86_64
+    - pgvectorscale_15-0:0.5.1-1PIGSTY.el8.x86_64
     - pgvectorscale_16-0:0.4.0-1PIGSTY.el8.x86_64
+    - pgvectorscale_16-0:0.5.1-1PIGSTY.el8.x86_64
     - pgvectorscale_17-0:0.4.0-1PIGSTY.el8.x86_64
+    - pgvectorscale_17-0:0.5.1-1PIGSTY.el8.x86_64
     - plproxy_12-0:2.11.0-1PIGSTY.el8.x86_64
     - plproxy_12-llvmjit-0:2.11.0-1PIGSTY.el8.x86_64
     - plproxy_13-0:2.11.0-1PIGSTY.el8.x86_64
@@ -5284,9 +5435,7 @@ data:
     - plv8_14-llvmjit-0:3.2.3-1PIGSTY.el8.x86_64
     - plv8_15-0:3.2.3-1PIGSTY.el8.x86_64
     - plv8_15-llvmjit-0:3.2.3-1PIGSTY.el8.x86_64
-    - plv8_16-0:3.2.2-1PIGSTY.el8.x86_64
     - plv8_16-0:3.2.3-1PIGSTY.el8.x86_64
-    - plv8_16-llvmjit-0:3.2.2-1PIGSTY.el8.x86_64
     - plv8_16-llvmjit-0:3.2.3-1PIGSTY.el8.x86_64
     - plv8_17-0:3.2.3-1PIGSTY.el8.x86_64
     - plv8_17-llvmjit-0:3.2.3-1PIGSTY.el8.x86_64
@@ -5487,6 +5636,10 @@ data:
     - vault_15-0:0.2.9-1PIGSTY.el8.x86_64
     - vault_16-0:0.2.9-1PIGSTY.el8.x86_64
     - vault_17-0:0.2.9-1PIGSTY.el8.x86_64
+    - vchord_14-0:0.1.0-1PIGSTY.el8.x86_64
+    - vchord_15-0:0.1.0-1PIGSTY.el8.x86_64
+    - vchord_16-0:0.1.0-1PIGSTY.el8.x86_64
+    - vchord_17-0:0.1.0-1PIGSTY.el8.x86_64
     - wrappers_14-0:0.4.3-1PIGSTY.el8.x86_64
     - wrappers_15-0:0.4.3-1PIGSTY.el8.x86_64
     - wrappers_16-0:0.4.3-1PIGSTY.el8.x86_64
