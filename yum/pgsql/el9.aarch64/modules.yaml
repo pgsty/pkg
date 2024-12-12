@@ -496,6 +496,8 @@ data:
       - pg_currency_16-llvmjit
       - pg_currency_17
       - pg_currency_17-llvmjit
+      - pg_duckdb_14
+      - pg_duckdb_14-llvmjit
       - pg_duckdb_15
       - pg_duckdb_15-llvmjit
       - pg_duckdb_16
@@ -1789,6 +1791,8 @@ data:
     - pg_currency_16-llvmjit
     - pg_currency_17
     - pg_currency_17-llvmjit
+    - pg_duckdb_14
+    - pg_duckdb_14-llvmjit
     - pg_duckdb_15
     - pg_duckdb_15-llvmjit
     - pg_duckdb_16
@@ -3209,6 +3213,8 @@ data:
       pg_currency_16:
         rationale: Present in the repository
       pg_currency_17:
+        rationale: Present in the repository
+      pg_duckdb_14:
         rationale: Present in the repository
       pg_duckdb_15:
         rationale: Present in the repository
@@ -4672,6 +4678,8 @@ data:
     - pg_currency_16-llvmjit-0:0.0.3-1PIGSTY.el9.aarch64
     - pg_currency_17-0:0.0.3-1PIGSTY.el9.aarch64
     - pg_currency_17-llvmjit-0:0.0.3-1PIGSTY.el9.aarch64
+    - pg_duckdb_14-0:0.2.0-1PIGSTY.el9.aarch64
+    - pg_duckdb_14-llvmjit-0:0.2.0-1PIGSTY.el9.aarch64
     - pg_duckdb_15-0:0.2.0-1PIGSTY.el9.aarch64
     - pg_duckdb_15-llvmjit-0:0.2.0-1PIGSTY.el9.aarch64
     - pg_duckdb_16-0:0.2.0-1PIGSTY.el9.aarch64
