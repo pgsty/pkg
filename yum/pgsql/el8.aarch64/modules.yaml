@@ -1144,6 +1144,7 @@ data:
       - preprepare_16-llvmjit
       - preprepare_17
       - preprepare_17-llvmjit
+      - python3-cdiff
       - q3c_12
       - q3c_12-llvmjit
       - q3c_13
@@ -2440,6 +2441,7 @@ data:
     - preprepare_16-llvmjit
     - preprepare_17
     - preprepare_17-llvmjit
+    - python3-cdiff
     - q3c_12
     - q3c_12-llvmjit
     - q3c_13
@@ -4014,6 +4016,8 @@ data:
         rationale: Present in the repository
       preprepare_17:
         rationale: Present in the repository
+      python3-cdiff:
+        rationale: Present in the repository
       q3c_12:
         rationale: Present in the repository
       q3c_13:
@@ -4988,10 +4992,10 @@ data:
     - pg_savior_16-llvmjit-0:0.0.1-1PIGSTY.el8.aarch64
     - pg_savior_17-0:0.0.1-1PIGSTY.el8.aarch64
     - pg_savior_17-llvmjit-0:0.0.1-1PIGSTY.el8.aarch64
-    - pg_search_14-0:0.13.0-1.el8.aarch64
-    - pg_search_15-0:0.13.0-1.el8.aarch64
-    - pg_search_16-0:0.13.0-1.el8.aarch64
-    - pg_search_17-0:0.13.0-1.el8.aarch64
+    - pg_search_14-0:0.13.1-1.el8.aarch64
+    - pg_search_15-0:0.13.1-1.el8.aarch64
+    - pg_search_16-0:0.13.1-1.el8.aarch64
+    - pg_search_17-0:0.13.1-1.el8.aarch64
     - pg_session_jwt_14-0:0.1.2-1PIGSTY.el8.aarch64
     - pg_session_jwt_15-0:0.1.2-1PIGSTY.el8.aarch64
     - pg_session_jwt_16-0:0.1.2-1PIGSTY.el8.aarch64
@@ -5331,6 +5335,7 @@ data:
     - preprepare_16-llvmjit-0:0.9-1PIGSTY.el8.aarch64
     - preprepare_17-0:0.9-1PIGSTY.el8.aarch64
     - preprepare_17-llvmjit-0:0.9-1PIGSTY.el8.aarch64
+    - python3-cdiff-0:1.0-1.el8.noarch
     - q3c_12-0:2.0.1-1PIGSTY.el8.aarch64
     - q3c_12-llvmjit-0:2.0.1-1PIGSTY.el8.aarch64
     - q3c_13-0:2.0.1-1PIGSTY.el8.aarch64
