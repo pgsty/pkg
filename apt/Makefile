@@ -2,7 +2,7 @@
 # File      :   Makefile
 # Desc      :   apt repo shortcuts
 # Ctime     :   2024-07-28
-# Mtime     :   2024-10-20
+# Mtime     :   2024-12-12
 # Path      :   Makefile
 # Author    :   Ruohang Feng (rh@vonng.com)
 # License   :   AGPLv3
@@ -72,6 +72,20 @@ ls-bullseye:
 pgsql-include:
 	reprepro -b pgsql includedeb bookworm stash/bookworm.amd64/postgresql-16*.deb
 	reprepro -b pgsql includedeb jammy    stash/jammy.amd64/postgresql-16*.deb
+
+
+# beta repo
+add2-all: add2-focal add2-jammy add2-noble add2-bookworm add2-bullseye
+add2-focal:
+	reprepro -b pgsql2/focal includedeb focal ~/pgsty/apt/focal/*.deb
+add2-jammy:
+	reprepro -b pgsql2/jammy includedeb jammy ~/pgsty/apt/jammy/*.deb
+add2-noble:
+	reprepro -b pgsql2/noble includedeb noble ~/pgsty/apt/noble/*.deb
+add2-bookworm:
+	reprepro -b pgsql2/bookworm includedeb bookworm ~/pgsty/apt/bookworm/*.deb
+add2-bullseye:
+	reprepro -b pgsql2/bullseye includedeb bullseye ~/pgsty/apt/bullseye/*.deb
 
 
 ###############################################################

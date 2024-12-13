@@ -70,21 +70,25 @@ Rsync to local
 cd /data/pkg/apt/; mkdir -p haproxy haproxy/ubuntu haproxy/debian
 rsync -avz u24:/var/spool/apt-mirror/mirror/ppa.launchpadcontent.net/vbernat/haproxy-3.0/ubuntu/ haproxy/ubuntu
 rsync -avz u24:/var/spool/apt-mirror/mirror/haproxy.debian.net/ haproxy/debian
+
+
+rsync -avz u24:/var/spool/apt-mirror/mirror/ppa.launchpadcontent.net/vbernat/haproxy-3.0/ubuntu/ haproxy/ubuntu
+rsync -avz u24:/var/spool/apt-mirror/mirror/haproxy.debian.net/ haproxy/debian
 ```
 
 Collect the latest haproxy deb
 
 ```bash
-cp haproxy/debian/pool/main/h/haproxy/haproxy_3.0.5-1~bpo11+1_amd64.deb   pgsql/bullseye/stash
-cp haproxy/debian/pool/main/h/haproxy/haproxy_3.0.3-1~bpo11+1_arm64.deb   pgsql/bullseye/stash
-cp haproxy/debian/pool/main/h/haproxy/haproxy_3.0.5-1~bpo12+1_amd64.deb   pgsql/bookworm/stash
-cp haproxy/debian/pool/main/h/haproxy/haproxy_3.0.3-1~bpo12+1_arm64.deb   pgsql/bookworm/stash
-cp haproxy/ubuntu/pool/main/h/haproxy/haproxy_3.0.5-1ppa1~jammy_amd64.deb pgsql/jammy/stash
-cp haproxy/ubuntu/pool/main/h/haproxy/haproxy_3.0.5-1ppa1~jammy_arm64.deb pgsql/jammy/stash
-cp haproxy/ubuntu/pool/main/h/haproxy/haproxy_3.0.5-1ppa1~noble_amd64.deb pgsql/noble/stash
-cp haproxy/ubuntu/pool/main/h/haproxy/haproxy_3.0.5-1ppa1~noble_arm64.deb pgsql/noble/stash
-cp haproxy/ubuntu/pool/main/h/haproxy/haproxy_3.0.5-1ppa2~focal_amd64.deb pgsql/focal/stash
-cp haproxy/ubuntu/pool/main/h/haproxy/haproxy_3.0.5-1ppa2~focal_arm64.deb pgsql/focal/stash
+cp haproxy/debian/pool/main/h/haproxy/haproxy_3.1.0-2~bpo11+1_amd64.deb   /tmp/apt/bullseye/
+cp haproxy/debian/pool/main/h/haproxy/haproxy_3.1.0-2~bpo11+1_arm64.deb   /tmp/apt/bullseye/
+cp haproxy/debian/pool/main/h/haproxy/haproxy_3.1.0-2~bpo12+1_amd64.deb   /tmp/apt/bookworm/
+cp haproxy/debian/pool/main/h/haproxy/haproxy_3.1.0-2~bpo12+1_arm64.deb   /tmp/apt/bookworm/
+cp haproxy/ubuntu/pool/main/h/haproxy/haproxy_3.1.0-1ppa1~jammy_amd64.deb /tmp/apt/jammy/
+cp haproxy/ubuntu/pool/main/h/haproxy/haproxy_3.1.0-1ppa1~jammy_arm64.deb /tmp/apt/jammy/
+cp haproxy/ubuntu/pool/main/h/haproxy/haproxy_3.1.0-1ppa1~noble_amd64.deb /tmp/apt/noble/
+cp haproxy/ubuntu/pool/main/h/haproxy/haproxy_3.1.0-1ppa1~noble_arm64.deb /tmp/apt/noble/
+cp haproxy/ubuntu/pool/main/h/haproxy/haproxy_3.1.0-1ppa2~focal_amd64.deb /tmp/apt/focal/
+cp haproxy/ubuntu/pool/main/h/haproxy/haproxy_3.1.0-1ppa2~focal_arm64.deb /tmp/apt/focal/
 ```
 
 
@@ -123,11 +127,11 @@ rsync -avz u24:/var/spool/apt-mirror/mirror/packages.redis.io/deb redis/
 Collect the latest redis deb
 
 ```bash
-cp redis/deb/pool/jammy/r/re/redis*7.2.6*    pgsql/jammy/stash/
-cp redis/deb/pool/noble/r/re/redis*7.2.6*    pgsql/noble/stash/
-cp redis/deb/pool/focal/r/re/redis*7.2.6*    pgsql/focal/stash/
-cp redis/deb/pool/bookworm/r/re/redis*7.2.6* pgsql/bookworm/stash/
-cp redis/deb/pool/bullseye/r/re/redis*7.2.6* pgsql/bullseye/stash/
+cp redis/deb/pool/jammy/r/re/redis*7.2.5*    pgsql/jammy/stash/
+cp redis/deb/pool/noble/r/re/redis*7.2.5*    pgsql/noble/stash/
+cp redis/deb/pool/focal/r/re/redis*7.2.5*    pgsql/focal/stash/
+cp redis/deb/pool/bookworm/r/re/redis*7.2.5* pgsql/bookworm/stash/
+cp redis/deb/pool/bullseye/r/re/redis*7.2.5* pgsql/bullseye/stash/
 ```
 
 
@@ -172,12 +176,12 @@ cp -f citus/debian/pool/bullseye/main/p/citus/{postgresql-*-citus-12.1_12.1.5*.d
 cp -f citus/ubuntu/pool/jammy/main/p/citus/{postgresql-*-citus-12.1_12.1.5*.deb,postgresql-12-citus-10.2_10.2.9*.deb,postgresql-13-citus-11.3_11.3.1.citus-1_amd64.deb}     pgsql/jammy/stash/
 cp -f citus/ubuntu/pool/focal/main/p/citus/{postgresql-*-citus-12.1_12.1.5*.deb,postgresql-12-citus-10.2_10.2.9*.deb,postgresql-13-citus-11.3_11.3.1.citus-1_amd64.deb}     pgsql/focal/stash/
 
+cp citus/debian/pool/bookworm/main/p/citus/postgresql-*-citus-12.1_12.1.6*.deb  pgsql/bookworm/stash/
+cp citus/debian/pool/bullseye/main/p/citus/postgresql-*-citus-12.1_12.1.6*.deb  pgsql/bullseye/stash/
+cp citus/ubuntu/pool/jammy/main/p/citus/postgresql-*-citus-12.1_12.1.5*.deb     pgsql/jammy/stash/
+cp citus/ubuntu/pool/focal/main/p/citus/postgresql-*-citus-12.1_12.1.5*.deb     pgsql/focal/stash/
+#cp citus/ubuntu/pool/focal/main/p/citus/postgresql-*-citus-12.1_12.1.5*.deb    pgsql/noble/stash/ # not supported yet
 
-cp citus/debian/pool/bookworm/main/p/citus/postgresql-*-citus-12.1_12.1.5*.deb                             pgsql/bookworm/stash/
-cp citus/debian/pool/bullseye/main/p/citus/postgresql-*-citus-12.1_12.1.5*.deb                             pgsql/bullseye/stash/
-cp citus/ubuntu/pool/jammy/main/p/citus/postgresql-*-citus-12.1_12.1.5*.deb                                pgsql/jammy/stash/
-cp citus/ubuntu/pool/focal/main/p/citus/postgresql-*-citus-12.1_12.1.5*.deb                                pgsql/focal/stash/
-#cp citus/ubuntu/pool/focal/main/p/citus/postgresql-*-citus-12.1_12.1.5*.deb     pgsql/noble/stash/ # not supported yet
 ```
 
 
@@ -212,8 +216,8 @@ sudo apt-mirror
 
 ncdu /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/ubuntu
 ncdu /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/debian
-
 ```
+
 
 ```bash
 ls -alh /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/ubuntu/pool/jammy/main/t/
@@ -278,3 +282,85 @@ cp timescale/bullseye/* pgsql/bullseye/stash/
 ```bash
 ll pgsql/*/stash
 ```
+
+
+
+## Pull back
+
+
+```bash
+scp -r d12:/var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb .
+scp -r u22:/var/spool/apt-mirror/mirror/packagecloud.io/citusdata/community citus
+scp -r u22:/var/spool/apt-mirror/mirror/packages.redis.io/deb/pool redis
+scp -r u24:/var/spool/apt-mirror/mirror/ppa.launchpadcontent.net/wiltondb/wiltondb .
+scp -r u24:/var/spool/apt-mirror/mirror/ppa.launchpadcontent.net/vbernat/haproxy-3.0/ubuntu haproxy/ubuntu
+scp -r u24:/var/spool/apt-mirror/mirror/haproxy.debian.net/ haproxy/debian
+```
+
+```bash
+mkdir -p /data/apt/{bookworm,bullseye,jammy,focal,noble}
+
+# find and copy redis
+find redis -name redis*7.2.6*bookworm*.deb -exec cp {} /data/apt/bookworm/ \;
+find redis -name redis*7.2.6*bullseye*.deb -exec cp {} /data/apt/bullseye/ \;
+find redis -name redis*7.2.6*noble*.deb    -exec cp {} /data/apt/noble/ \;
+find redis -name redis*7.2.6*focal*.deb    -exec cp {} /data/apt/focal/ \;
+find redis -name redis*7.2.6*jammy*.deb    -exec cp {} /data/apt/jammy/ \;
+
+# find and copy haproxy
+find haproxy -name haproxy_3.1.0*bpo12*.deb -exec cp {} /data/apt/bookworm/ \;
+find haproxy -name haproxy_3.1.0*bpo11*.deb -exec cp {} /data/apt/bullseye/ \;
+find haproxy -name haproxy_3.0.6*noble*.deb    -exec cp {} /data/apt/noble/ \;
+find haproxy -name haproxy_3.0.6*focal*.deb    -exec cp {} /data/apt/focal/ \;
+find haproxy -name haproxy_3.0.6*jammy*.deb    -exec cp {} /data/apt/jammy/ \;
+
+# find and copy citus (no arm64, no17, no noble)
+cp citus/debian/pool/bookworm/main/p/citus/{postgresql-*-citus-12.1_12.1.6*.deb,postgresql-12-citus-10.2_10.2.9*.deb,postgresql-13-citus-11.3_11.3.1.citus-1_amd64.deb}  /data/apt/bookworm/
+cp citus/debian/pool/bullseye/main/p/citus/{postgresql-*-citus-12.1_12.1.6*.deb,postgresql-12-citus-10.2_10.2.9*.deb,postgresql-13-citus-11.3_11.3.1.citus-1_amd64.deb}  /data/apt/bullseye/
+cp citus/ubuntu/pool/jammy/main/p/citus/{postgresql-*-citus-12.1_12.1.6*.deb,postgresql-12-citus-10.2_10.2.9*.deb,postgresql-13-citus-11.3_11.3.1.citus-1_amd64.deb}     /data/apt/jammy/
+cp citus/ubuntu/pool/focal/main/p/citus/{postgresql-*-citus-12.1_12.1.6*.deb,postgresql-12-citus-10.2_10.2.9*.deb,postgresql-13-citus-11.3_11.3.1.citus-1_amd64.deb}     /data/apt/focal/
+
+find citus/debian/pool/bookworm/ -name postgresql-*-topn_2.6.0*.deb -exec cp {} /data/apt/bookworm/ \;
+find citus/debian/pool/bullseye/ -name postgresql-*-topn_2.6.0*.deb -exec cp {} /data/apt/bullseye/ \;
+find citus/ubuntu/pool/focal/ -name postgresql-*-topn_2.6.0*.deb    -exec cp {} /data/apt/focal/ \;
+find citus/ubuntu/pool/jammy/ -name postgresql-*-topn_2.6.0*.deb    -exec cp {} /data/apt/jammy/ \;
+
+
+# timescaledb
+mkdir -p /data/apt/tmp
+# tool are available for 5 deb distro
+find timescaledb -name timescaledb-tools*0.18.0*               -exec cp {} /data/apt/tmp/ \;
+# toolkit does not have ubuntu 24.04 support yet
+find timescaledb -name timescaledb-toolkit*1.19.0*.deb         -exec cp {} /data/apt/tmp/ \;
+
+# no bookworm / noble
+find timescaledb -name promscale_0.17*.deb                     -exec cp {} /data/apt/tmp/ \;
+find timescaledb -name promscale-extension*0.8.0*.deb          -exec cp {} /data/apt/tmp/ \;
+
+find timescaledb -name timescaledb-2-2.17.2*.deb               -exec cp {} /data/apt/tmp/ \;
+find timescaledb -name timescaledb-2-2.15.3-postgresql-13*.deb -exec cp {} /data/apt/tmp/ \;
+find timescaledb -name timescaledb-2-2.11.2-postgresql-12*.deb -exec cp {} /data/apt/tmp/ \;
+
+rm -rf /data/apt/tmp/*dbgsym*
+
+find /data/apt/tmp/ -name *debian11*.deb -exec cp {} /data/apt/bullseye/ \;
+find /data/apt/tmp/ -name *debian12*.deb -exec cp {} /data/apt/bookworm/ \;
+find /data/apt/tmp/ -name *ubuntu20.04*.deb -exec cp {} /data/apt/focal/ \;
+find /data/apt/tmp/ -name *ubuntu22.04*.deb -exec cp {} /data/apt/jammy/ \;
+find /data/apt/tmp/ -name *ubuntu24.04*.deb -exec cp {} /data/apt/noble/ \;
+
+# find and copy haproxy
+
+mkdir /data/apt/haproxy
+find haproxy -name haproxy_3.1.0*bpo12*.deb -exec cp {} /data/apt/haproxy/ \;
+find haproxy -name haproxy_3.1.0*bpo11*.deb -exec cp {} /data/apt/haproxy/ \;
+find haproxy -name haproxy_3.0.6*noble*.deb    -exec cp {} /data/apt/haproxy/ \;
+find haproxy -name haproxy_3.0.6*focal*.deb    -exec cp {} /data/apt/haproxy/ \;
+find haproxy -name haproxy_3.0.6*jammy*.deb    -exec cp {} /data/apt/haproxy/ \;
+```
+
+
+find citus/debian/pool/bookworm/ -name postgresql-*-topn_2.6.0*.deb -exec cp {} /data/apt/bookworm/ \;
+find citus/debian/pool/bullseye/ -name postgresql-*-topn_2.6.0*.deb -exec cp {} /data/apt/bullseye/ \;
+find citus/ubuntu/pool/focal/ -name postgresql-*-topn_2.6.0*.deb    -exec cp {} /data/apt/focal/ \;
+find citus/ubuntu/pool/jammy/ -name postgresql-*-topn_2.6.0*.deb    -exec cp {} /data/apt/jammy/ \;

@@ -329,6 +329,25 @@ SHA1: 1791a1d4d015bf7990f7af7f337ea547784a6385
 MD5sum: a3311a18660a5846b3159bb7a75ac691
 Description: The Prometheus monitoring system and time series database.
 
+Package: promscale
+Version: 0.17.0
+Architecture: amd64
+Maintainer: Timescale <info@timescale.com>
+Installed-Size: 32853
+Priority: optional
+Section: 
+Filename: pool/main/p/promscale/promscale_0.17.0_amd64.deb
+Size: 11809772
+SHA256: f5d0c911fa7cdb93c1de85b3969fadf6fa6f2959e27fe77990889885933b09b5
+SHA1: 50d0bea43182d8e3b85030f5215d420b39916b7c
+MD5sum: 9a2c47ff19609759110e08a226b860cb
+Description: Promscale is a horizontally scalable and operationally mature analytical
+ platform for Prometheus data that offers the combined power of PromQL
+ and SQL, enabling developers to ask any question, create any dashboard,
+ and achieve greater visibility into their systems.  Promscale is built
+ on top of TimescaleDB, the relational database for time-series built on
+ top of PostgreSQL.
+
 Package: promtail
 Version: 3.0.0
 Architecture: amd64

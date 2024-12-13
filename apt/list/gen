@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cd ~/pgsty/pkg/apt
+
+reprepro -b pgsql/focal     list focal    | sort | uniq > list/pgsql.focal
+reprepro -b pgsql/jammy     list jammy    | sort | uniq > list/pgsql.jammy
+reprepro -b pgsql/noble     list noble    | sort | uniq > list/pgsql.noble
+reprepro -b pgsql/bookworm  list bookworm | sort | uniq > list/pgsql.bookworm
+reprepro -b pgsql/bullseye  list bullseye | sort | uniq > list/pgsql.bullseye
+
+reprepro -b infra/ list generic | sort | uniq > list/infra
