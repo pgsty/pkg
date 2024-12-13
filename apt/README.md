@@ -333,13 +333,20 @@ find timescaledb -name timescaledb-tools*0.18.0*               -exec cp {} /data
 # toolkit does not have ubuntu 24.04 support yet
 find timescaledb -name timescaledb-toolkit*1.19.0*.deb         -exec cp {} /data/apt/tmp/ \;
 
+find timescaledb -name timescaledb-2-2.17.2*.deb               -exec cp {} /data/apt/tmp/ \;
+find timescaledb -name timescaledb-2-2.15.3-postgresql-13*.deb -exec cp {} /data/apt/tmp/ \;
+find timescaledb -name timescaledb-2-2.11.2-postgresql-12*.deb -exec cp {} /data/apt/tmp/ \;
+
+# loader missing debian 12 arm packages
+find timescaledb -name timescaledb-2-loader-postgresql-*_2.17.2*.deb   -exec cp {} /data/apt/tmp/ \;
+find timescaledb -name timescaledb-2-loader-postgresql-13_2.15.3*.deb  -exec cp {} /data/apt/tmp/ \;
+find timescaledb -name timescaledb-2-loader-postgresql-12_2.11.2*.deb  -exec cp {} /data/apt/tmp/ \;
+
+
 # no bookworm / noble
 find timescaledb -name promscale_0.17*.deb                     -exec cp {} /data/apt/tmp/ \;
 find timescaledb -name promscale-extension*0.8.0*.deb          -exec cp {} /data/apt/tmp/ \;
 
-find timescaledb -name timescaledb-2-2.17.2*.deb               -exec cp {} /data/apt/tmp/ \;
-find timescaledb -name timescaledb-2-2.15.3-postgresql-13*.deb -exec cp {} /data/apt/tmp/ \;
-find timescaledb -name timescaledb-2-2.11.2-postgresql-12*.deb -exec cp {} /data/apt/tmp/ \;
 
 rm -rf /data/apt/tmp/*dbgsym*
 
@@ -360,7 +367,8 @@ find haproxy -name haproxy_3.0.6*jammy*.deb    -exec cp {} /data/apt/haproxy/ \;
 ```
 
 
-find citus/debian/pool/bookworm/ -name postgresql-*-topn_2.6.0*.deb -exec cp {} /data/apt/bookworm/ \;
-find citus/debian/pool/bullseye/ -name postgresql-*-topn_2.6.0*.deb -exec cp {} /data/apt/bullseye/ \;
-find citus/ubuntu/pool/focal/ -name postgresql-*-topn_2.6.0*.deb    -exec cp {} /data/apt/focal/ \;
-find citus/ubuntu/pool/jammy/ -name postgresql-*-topn_2.6.0*.deb    -exec cp {} /data/apt/jammy/ \;
+cp *debian11*.deb     ~/pgsty/pkg/apt/pgsql/bullseye/stash
+cp *debian12*.deb     ~/pgsty/pkg/apt/pgsql/bookworm/stash
+cp *ubuntu20.04*.deb  ~/pgsty/pkg/apt/pgsql/focal/stash
+cp *ubuntu22.04*.deb  ~/pgsty/pkg/apt/pgsql/jammy/stash
+cp *ubuntu24.04*.deb  ~/pgsty/pkg/apt/pgsql/noble/stash

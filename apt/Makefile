@@ -74,20 +74,6 @@ pgsql-include:
 	reprepro -b pgsql includedeb jammy    stash/jammy.amd64/postgresql-16*.deb
 
 
-# beta repo
-add2-all: add2-focal add2-jammy add2-noble add2-bookworm add2-bullseye
-add2-focal:
-	reprepro -b pgsql2/focal includedeb focal ~/pgsty/apt/focal/*.deb
-add2-jammy:
-	reprepro -b pgsql2/jammy includedeb jammy ~/pgsty/apt/jammy/*.deb
-add2-noble:
-	reprepro -b pgsql2/noble includedeb noble ~/pgsty/apt/noble/*.deb
-add2-bookworm:
-	reprepro -b pgsql2/bookworm includedeb bookworm ~/pgsty/apt/bookworm/*.deb
-add2-bullseye:
-	reprepro -b pgsql2/bullseye includedeb bullseye ~/pgsty/apt/bullseye/*.deb
-
-
 ###############################################################
 #                        2. Syncing                           #
 ###############################################################
