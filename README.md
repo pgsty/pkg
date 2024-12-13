@@ -7,9 +7,10 @@ Contains 150+ PG extensions for PostgreSQL 12 - 17 in addition to the official P
 Related Projects:
 
 - [`infra_pkg`](https://github.com/pgsty/infra-pkg): Building observability stack & modules from tarball
-- [`pgsql-rpm`](https://github.com/pgsty/pgsql-rpm): Building PostgreSQL RPM packages from source code
-- [`pgsql-deb`](https://github.com/pgsty/pgsql-deb): Building PostgreSQL DEB packages from source code
+- [`rpm`](https://github.com/pgsty/rpm): Building PostgreSQL RPM packages from source code
+- [`deb`](https://github.com/pgsty/deb): Building PostgreSQL DEB packages from source code
 
+The complete 340 [Extension List](https://ext.pigsty.io/list)
 
 
 --------
@@ -125,10 +126,10 @@ Prepacked RPM & DEB binary packages for the following software.
 
 **Observability Stack**:
 
-- [grafana](https://github.com/grafana/grafana/) : 11.1.4
+- [grafana](https://github.com/grafana/grafana/) : 11.4.0
 - [loki](https://github.com/grafana/loki) : 3.1.1
 - [promtail](https://github.com/grafana/loki) : 3.0.0 (buggy 3.1.0)
-- [prometheus](https://github.com/prometheus/prometheus) : 2.54.0
+- [prometheus](https://github.com/prometheus/prometheus) : 3.0.1
 - [pushgateway](https://github.com/prometheus/pushgateway) : 1.9.0
 - [alertmanager](https://github.com/prometheus/alertmanager) : 0.27.0
 - [blackbox_exporter](https://github.com/prometheus/blackbox_exporter) : 0.25.0
@@ -147,25 +148,24 @@ Prepacked RPM & DEB binary packages for the following software.
 
 **Database Modules**:
 
-- [duckdb](https://github.com/duckdb/duckdb) : 1.0.0
-- [etcd](https://github.com/etcd-io/etcd) : 3.5.15
-- [redis](https://github.com/redis/redis) 7.2.5
+- [duckdb](https://github.com/duckdb/duckdb) : 1.1.3
+- [etcd](https://github.com/etcd-io/etcd) : 3.5.17
+- [redis](https://github.com/redis/redis) 7.2.6
 - [minio](https://github.com/minio/minio): 20240817012454
 - [mcli](https://github.com/minio/mc): 20240817113350
-- [sealos](https://github.com/labring/sealos): 5.0.0
-- [ferretdb](https://github.com/FerretDB/FerretDB): 1.23.1
-- [paradedb](https://github.com/paradedb/paradedb): pg_search 0.10.2, pg_analytics 0.1.4
-- [tigerbeetle](https://github.com/tigerbeetle/tigerbeetle): 0.15.6
-- [cloudberrydb](https://github.com/cloudberrydb/cloudberrydb): 1.5.4
+- [sealos](https://github.com/labring/sealos): 5.0.1
+- [ferretdb](https://github.com/FerretDB/FerretDB): 1.24.0
+- [paradedb](https://github.com/paradedb/paradedb): pg_search 0.13.1, pg_analytics 0.2.3
+- [tigerbeetle](https://github.com/tigerbeetle/tigerbeetle): 0.16.13
+- [cloudberrydb](https://github.com/cloudberrydb/cloudberrydb): 1.6.0
 
 **PostgreSQL Tools**:
 
 - [vip-manager](https://github.com/cybertec-postgresql/vip-manager): 2.6.0
 - [pg_timetable](https://github.com/cybertec-postgresql/pg_timetable): 5.9.0
 - [scws](https://github.com/hightman/scws): 1.2.3, deps of `zhparser`
-- [libduckdb](https://github.com/duckdb/duckdb) : 1.0.0, deps of `duckdb_fdw`
-- [libarrow-s3](https://github.com/apache/arrow) : 17.0.0, deps of `parquet_s3_fdw`
-
+- [libduckdb](https://github.com/duckdb/duckdb) : 1.1.2, deps of `duckdb_fdw`
+- [promscale](https://github.com/timescale/promscale) 0.17.0
 
 **PostgreSQL Extensions**:
 
@@ -182,6 +182,7 @@ While others (the `pgsql` module) are supported on the following distros:
 - `el9.x86_64`: ⭐️ RockyLinux 9.3, and other compatible distros
 - `d12.x86_64`: ⭐️ Debian 12 bookworm, and other compatible distros
 - `u22.x86_64`: ⭐️ Ubuntu 22.04.3 jammy, and other compatible distros
+- `u24.x86_64`: ⭐️ Ubuntu 24.04.3 noble, and other compatible distros
 - `el8.x86_64`: ⭐️ RockyLinux 8.9, and other compatible distros
 
 We may drop legacy support for the following distros in the future due to EOL:

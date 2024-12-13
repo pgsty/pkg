@@ -36,3 +36,34 @@ This repo contains supplementary packages for the official [PGDG YUM](https://do
 - libduckdb 1.0.0
 - **pgxnclient** 1.3.2 (MISSING in PGDG)
 - PostgreSQL 16 Extra Extensions
+
+
+## TimescaleDB
+
+```bash
+mkdir -p /data/yum/{el8,el9}
+
+find t8 -name timescaledb-tools*0.18.0*               -exec cp {} /data/yum/el8 \;
+find t9 -name timescaledb-tools*0.18.0*               -exec cp {} /data/yum/el9 \;
+
+# timescaletoolkit no el8 support
+find t9 -name timescaledb-toolkit*1.19.0*.rpm         -exec cp {} /data/yum/el9 \;
+find t9 -name timescaledb-toolkit*1.19.0*.rpm         -exec cp {} /data/yum/el9 \;
+
+
+find t8 -name timescaledb-2-postgresql-*2.17.2*.rpm   -exec cp {} /data/yum/el8/ \;
+find t8 -name timescaledb-2-postgresql-13*2.15.3*.rpm -exec cp {} /data/yum/el8/ \;
+find t8 -name timescaledb-2-postgresql-12*2.11.2*.rpm -exec cp {} /data/yum/el8/ \;
+find t8 -name timescaledb-2-loader-postgresql-*2.17.2*.rpm   -exec cp {} /data/yum/el8/ \;
+find t8 -name timescaledb-2-loader-postgresql-13*2.15.3*.rpm -exec cp {} /data/yum/el8/ \;
+find t8 -name timescaledb-2-loader-postgresql-12*2.11.2*.rpm -exec cp {} /data/yum/el8/ \;
+
+
+
+find t9 -name timescaledb-2-postgresql-*2.17.2*.rpm   -exec cp {} /data/yum/el9/ \;
+find t9 -name timescaledb-2-postgresql-13*2.15.3*.rpm -exec cp {} /data/yum/el9/ \;
+find t9 -name timescaledb-2-postgresql-12*2.11.2*.rpm -exec cp {} /data/yum/el9/ \;
+find t9 -name timescaledb-2-loader-postgresql-*2.17.2*.rpm   -exec cp {} /data/yum/el9/ \;
+find t9 -name timescaledb-2-loader-postgresql-13*2.15.3*.rpm -exec cp {} /data/yum/el9/ \;
+find t9 -name timescaledb-2-loader-postgresql-12*2.11.2*.rpm -exec cp {} /data/yum/el9/ \;
+```
