@@ -1,3 +1,26 @@
+Package: groonga-tokenizer-mecab
+Source: groonga
+Version: 14.1.1-1.ubuntu24.04.1
+Architecture: arm64
+Maintainer: Groonga Project <packages@groonga.org>
+Installed-Size: 93
+Depends: libc6 (>= 2.17), libgroonga0 (= 14.1.1-1.ubuntu24.04.1), libmecab2 (>= 0.996), mecab-naist-jdic | mecab-jumandic-utf8
+Breaks: libgroonga-tokenizer-mecab (<< 1.2.0-1)
+Replaces: libgroonga-tokenizer-mecab (<< 1.2.0-1)
+Homepage: https://groonga.org/
+Priority: optional
+Section: libs
+Filename: pool/main/g/groonga/groonga-tokenizer-mecab_14.1.1-1.ubuntu24.04.1_arm64.deb
+Size: 15026
+SHA256: 251470f4512ab9d424f60bf78f8df570704bed9d330008d94578b12289f584f0
+SHA1: 9bd56c3c395ce212a11bfa198090e4852a88fce5
+MD5sum: 5e4f16f645b3fd9ebb95961d6f089c2c
+Description: MeCab tokenizer for Groonga
+ Groonga is an open-source fulltext search engine and column store.
+ It lets you write high-performance applications that requires fulltext search.
+ .
+ This package provides MeCab tokenizer.
+
 Package: haproxy
 Version: 3.0.6-3ppa1~noble
 Architecture: arm64
@@ -62,6 +85,30 @@ Description: A wrapper library for Firebird's C API, loosely based on PostgreSQL
   libfq provides a number of functions which act as convenience wrappers around the native Firebird C API, which is cumbersome to use.
   It is loosely based on PostgreSQL's libpq and provides a subset of that API's functions - names beginning with FQ rather than PQ - with more-or-less identical function signatures. It also provides some Firebird-specific functions.
   While basically functional, libfq is still work-in-progress and the API definitions may change between releases in an incompatible way. USE AT YOUR OWN RISK.
+
+Package: libgroonga0
+Source: groonga
+Version: 14.1.1-1.ubuntu24.04.1
+Architecture: arm64
+Maintainer: Groonga Project <packages@groonga.org>
+Installed-Size: 10530
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libgomp1 (>= 4.9), liblz4-1 (>= 0.0~r130), libmsgpackc2 (>= 2.1.0), libsimdjson19 (>= 3.6.4), libstdc++6 (>= 13.1), libxxhash0 (>= 0.8.0), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.0)
+Breaks: libgroonga (<< 1.2.0-1)
+Replaces: libgroonga (<< 1.2.0-1)
+Multi-Arch: same
+Homepage: https://groonga.org/
+Priority: optional
+Section: libs
+Filename: pool/main/g/groonga/libgroonga0_14.1.1-1.ubuntu24.04.1_arm64.deb
+Size: 2541538
+SHA256: 5fd394262bc1fb7e3b547a0b63b5d79ba1ff1a5a88c942e3f27b70ec65398ae2
+SHA1: d6ff55ef1f56ee41d83ba44666a65ef331d51ba1
+MD5sum: 055a17254054dd88b7ec54908ddbb765
+Description: Library files for Groonga
+ Groonga is an open-source fulltext search engine and column store.
+ It lets you write high-performance applications that requires fulltext search.
+ .
+ This package provides library files.
 
 Package: pgcopydb
 Version: 0.16-1PIGSTY~noble
@@ -154,20 +201,19 @@ Version: 1.3.2-1PIGSTY~noble
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 692
-Depends: postgresql-12, postgresql-12-jit-llvm (>= 17), libc6 (>= 2.38), postgresql-contrib-12
+Depends: postgresql-12, postgresql-12-jit-llvm (>= 17), libc6 (>= 2.38), postgresql-12-ddlx
 Provides: postgresql-anonymizer
-Homepage: https://github.com/fboulnois/pg_permissions
+Homepage: https://gitlab.com/dalibo/postgresql_anonymizer
 Priority: optional
 Section: database
 Filename: pool/main/p/postgresql-anonymizer/postgresql-12-anonymizer_1.3.2-1PIGSTY~noble_arm64.deb
-Size: 229608
-SHA256: 72c5c8d2a7ee351a1b90585e357620430adac0580b17ff582918974049605e82
-SHA1: 8d83034a3b6a17c040aee0c6a0be5cb3615ee5b0
-MD5sum: bdd6fb04db35c26802279b9e38120f02
-Description: PostgreSQL extension to anonymize data
+Size: 229588
+SHA256: acb2be1aa31f1fb4fe983101b8646387e639a07df31fbae8c5bcc04c880ab03f
+SHA1: d435b16b212d88643db84183efc19eeb650ba1ad
+MD5sum: 4e9e7e4c84bb9e2cfeac56b8597c285f
+Description: Anonymization & Data Masking for PostgreSQL
   postgresql_anonymizer is an extension to mask or replace personally
-  identifiable information (PII) or commercially sensitive data from
-  a PostgreSQL database.
+  identifiable information (PII) or commercially sensitive data from a PostgreSQL database.
   The project relies on a declarative approach of anonymization. This means
   we're using the PostgreSQL Data Definition Language (DDL) in order to specify
   the anonymization strategy inside the table definition itself.
@@ -1985,6 +2031,25 @@ Description: Cryptographic key management extension for PostgreSQL 12
   pgcryptokey allows the creation, selection, rotation, and deletion of cryptographic data keys.
   Each cryptographic data key is encrypted/decrypted with (i.e., wrapped inside) an access password. Accessing a cryptographic data key requires the proper access password, as illustrated below:
 
+Package: postgresql-12-pgdg-pgroonga
+Version: 3.2.4-1
+Architecture: arm64
+Maintainer: PGroonga Project <packages@groonga.org>
+Installed-Size: 2921
+Depends: libc6 (>= 2.38), libgroonga0 (>= 14.0.9), libmsgpackc2 (>= 2.1.0), postgresql-12
+Conflicts: postgresql-12-pgroonga
+Homepage: https://pgroonga.github.io/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-12-pgdg-pgroonga/postgresql-12-pgdg-pgroonga_3.2.4-1_arm64.deb
+Size: 654036
+SHA256: c5a63cd23dfa7674a7ed2a16bc022d1cf9e5cc2ca024f4136a9c7459ee24226b
+SHA1: fa6bc9917195060181505c8a1f46d33d828f1f3e
+MD5sum: a0d01621602d99e35d2a61bc0d2f9de9
+Description: Fast full-text search plugin for PostgreSQL based on Groonga
+ PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
+ It is based on Groonga full-text search engine.
+
 Package: postgresql-12-pgjwt
 Source: pgjwt
 Version: 0.2.0-1PIGSTY~noble
@@ -2082,6 +2147,26 @@ SHA1: 36fc23ee33d42f59735a96f8cf4c6a62e788874f
 MD5sum: 41d5a1139d8ab2aade1abf77d75ab026
 Description: A PostgreSQL extension that provides SQL functions to allow capture of node OS metrics via SQL queries.
   SQL functions that allow capture of node OS metrics from PostgreSQL
+
+Package: postgresql-12-pgpdf
+Source: pgpdf
+Version: 0.1.0-1PIGSTY~noble
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 128
+Depends: postgresql-12, postgresql-12-jit-llvm (>= 17), libc6 (>= 2.17), libglib2.0-0t64 (>= 2.32.0), libpoppler-glib8t64 (>= 20.09.0)
+Provides: postgresql-pgpdf
+Homepage: https://github.com/dverite/pgpdf
+Priority: optional
+Section: database
+Filename: pool/main/p/pgpdf/postgresql-12-pgpdf_0.1.0-1PIGSTY~noble_arm64.deb
+Size: 26080
+SHA256: 207a68eeac2db3005a15660ec194a2104bcba66987c62d02f5089d2bc349cf53
+SHA1: a02323a6bba4c43c11a7e772b791717076dea3eb
+MD5sum: 92a27f9021d8ea3728f30f1ea6acd070
+Description: PDF type for Postgres
+  This extension for PostgreSQL provides a pdf data type and assorted functions.
+  You can create a pdf type, by casting either a text filepath or bytea column.
 
 Package: postgresql-12-pgqr
 Source: pgqr
@@ -2623,20 +2708,19 @@ Version: 1.3.2-1PIGSTY~noble
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 692
-Depends: postgresql-13, postgresql-13-jit-llvm (>= 17), libc6 (>= 2.38), postgresql-contrib-13
+Depends: postgresql-13, postgresql-13-jit-llvm (>= 17), libc6 (>= 2.38), postgresql-13-ddlx
 Provides: postgresql-anonymizer
-Homepage: https://github.com/fboulnois/pg_permissions
+Homepage: https://gitlab.com/dalibo/postgresql_anonymizer
 Priority: optional
 Section: database
 Filename: pool/main/p/postgresql-anonymizer/postgresql-13-anonymizer_1.3.2-1PIGSTY~noble_arm64.deb
-Size: 229566
-SHA256: 084b3dbbbb809cdd0136bd72b7b10739146763a53e7c4d4f4702cbfd9bddb96c
-SHA1: 4c5e6f6ab2a88a13baa7a5cbb828730906fe7baa
-MD5sum: 59bb25caf0828c3011b8e3b8325ddd40
-Description: PostgreSQL extension to anonymize data
+Size: 229596
+SHA256: d08ea2dd1cde8a07d915dcb4db8b6835a244c0578a30212cfcfdcc2d0867eee5
+SHA1: 76ca722e976480380930543ad58c29ca0f092f0e
+MD5sum: 7ac61bd90e18d9314011554a905d70be
+Description: Anonymization & Data Masking for PostgreSQL
   postgresql_anonymizer is an extension to mask or replace personally
-  identifiable information (PII) or commercially sensitive data from
-  a PostgreSQL database.
+  identifiable information (PII) or commercially sensitive data from a PostgreSQL database.
   The project relies on a declarative approach of anonymization. This means
   we're using the PostgreSQL Data Definition Language (DDL) in order to specify
   the anonymization strategy inside the table definition itself.
@@ -4556,6 +4640,25 @@ Description: Cryptographic key management extension for PostgreSQL 13
   pgcryptokey allows the creation, selection, rotation, and deletion of cryptographic data keys.
   Each cryptographic data key is encrypted/decrypted with (i.e., wrapped inside) an access password. Accessing a cryptographic data key requires the proper access password, as illustrated below:
 
+Package: postgresql-13-pgdg-pgroonga
+Version: 3.2.5-1
+Architecture: arm64
+Maintainer: PGroonga Project <packages@groonga.org>
+Installed-Size: 2926
+Depends: libc6 (>= 2.38), libgroonga0 (>= 14.1.1), libmsgpackc2 (>= 2.1.0), postgresql-13
+Conflicts: postgresql-13-pgroonga
+Homepage: https://pgroonga.github.io/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-13-pgdg-pgroonga/postgresql-13-pgdg-pgroonga_3.2.5-1_arm64.deb
+Size: 660820
+SHA256: 4134fdcb52253dc8403a1dc8d0b874323223251509781b045bfa3fbd15e127c6
+SHA1: cf21632bdb1ec15ae8b8383031744c6b780494ec
+MD5sum: 6e8fa083c9b68f28b92eceaa5b0c6250
+Description: Fast full-text search plugin for PostgreSQL based on Groonga
+ PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
+ It is based on Groonga full-text search engine.
+
 Package: postgresql-13-pgjwt
 Source: pgjwt
 Version: 0.2.0-1PIGSTY~noble
@@ -4653,6 +4756,26 @@ SHA1: a91fbcc06014131212861cf395768f76ef442cec
 MD5sum: 0876f437534681802d58672079024f30
 Description: A PostgreSQL extension that provides SQL functions to allow capture of node OS metrics via SQL queries.
   SQL functions that allow capture of node OS metrics from PostgreSQL
+
+Package: postgresql-13-pgpdf
+Source: pgpdf
+Version: 0.1.0-1PIGSTY~noble
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 129
+Depends: postgresql-13, postgresql-13-jit-llvm (>= 17), libc6 (>= 2.17), libglib2.0-0t64 (>= 2.32.0), libpoppler-glib8t64 (>= 20.09.0)
+Provides: postgresql-pgpdf
+Homepage: https://github.com/dverite/pgpdf
+Priority: optional
+Section: database
+Filename: pool/main/p/pgpdf/postgresql-13-pgpdf_0.1.0-1PIGSTY~noble_arm64.deb
+Size: 26340
+SHA256: 9f89144f8197dc9a168749d2247af1a4911c62dbb21bd417750e80e9bf08eda6
+SHA1: 2619c36926632cdc00689cca693e8dded4548149
+MD5sum: ed3937b2fba84391332d0ad448dd5ff9
+Description: PDF type for Postgres
+  This extension for PostgreSQL provides a pdf data type and assorted functions.
+  You can create a pdf type, by casting either a text filepath or bytea column.
 
 Package: postgresql-13-pgqr
 Source: pgqr
@@ -5271,20 +5394,19 @@ Version: 1.3.2-1PIGSTY~noble
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 692
-Depends: postgresql-14, postgresql-14-jit-llvm (>= 17), libc6 (>= 2.38), postgresql-contrib-14
+Depends: postgresql-14, postgresql-14-jit-llvm (>= 17), libc6 (>= 2.38), postgresql-14-ddlx
 Provides: postgresql-anonymizer
-Homepage: https://github.com/fboulnois/pg_permissions
+Homepage: https://gitlab.com/dalibo/postgresql_anonymizer
 Priority: optional
 Section: database
 Filename: pool/main/p/postgresql-anonymizer/postgresql-14-anonymizer_1.3.2-1PIGSTY~noble_arm64.deb
-Size: 230260
-SHA256: 48363f6271487ddfb3bcea53adb921a3327f999719aeed21a6c8e14f5c8e5c0c
-SHA1: e48a5a1cfe4b917a4bb0be808b68a4acffb5bbbf
-MD5sum: 8751bfc7f49d0fc3e88c9064f974a3bb
-Description: PostgreSQL extension to anonymize data
+Size: 230230
+SHA256: 141c1ff530000cab1fdc88e62fb3f4589e91d13eacca6b6232ac4c422148c6d3
+SHA1: 277784bd14afff171a0e1ef4d23078ae4e362409
+MD5sum: 0a08ec19a5be4329edae88a258f638f2
+Description: Anonymization & Data Masking for PostgreSQL
   postgresql_anonymizer is an extension to mask or replace personally
-  identifiable information (PII) or commercially sensitive data from
-  a PostgreSQL database.
+  identifiable information (PII) or commercially sensitive data from a PostgreSQL database.
   The project relies on a declarative approach of anonymization. This means
   we're using the PostgreSQL Data Definition Language (DDL) in order to specify
   the anonymization strategy inside the table definition itself.
@@ -7396,6 +7518,25 @@ Description: Cryptographic key management extension for PostgreSQL 14
   pgcryptokey allows the creation, selection, rotation, and deletion of cryptographic data keys.
   Each cryptographic data key is encrypted/decrypted with (i.e., wrapped inside) an access password. Accessing a cryptographic data key requires the proper access password, as illustrated below:
 
+Package: postgresql-14-pgdg-pgroonga
+Version: 3.2.5-1
+Architecture: arm64
+Maintainer: PGroonga Project <packages@groonga.org>
+Installed-Size: 2934
+Depends: libc6 (>= 2.38), libgroonga0 (>= 14.1.1), libmsgpackc2 (>= 2.1.0), postgresql-14
+Conflicts: postgresql-14-pgroonga
+Homepage: https://pgroonga.github.io/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-14-pgdg-pgroonga/postgresql-14-pgdg-pgroonga_3.2.5-1_arm64.deb
+Size: 661324
+SHA256: 87a4c40216591a44c3752cf2befe42c421d036308f14f5b532e628e9889d16ed
+SHA1: be864a6f16d0a4554ac6d36cd9529fe4a84c3d09
+MD5sum: 65f61b1da17c93aa3c7c2ee6c7bffea3
+Description: Fast full-text search plugin for PostgreSQL based on Groonga
+ PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
+ It is based on Groonga full-text search engine.
+
 Package: postgresql-14-pgjwt
 Source: pgjwt
 Version: 0.2.0-1PIGSTY~noble
@@ -7493,6 +7634,26 @@ SHA1: 421798cf343288143c791f80180ede0e6909884f
 MD5sum: 0fc0ff490b891fff25d9a067a0060758
 Description: A PostgreSQL extension that provides SQL functions to allow capture of node OS metrics via SQL queries.
   SQL functions that allow capture of node OS metrics from PostgreSQL
+
+Package: postgresql-14-pgpdf
+Source: pgpdf
+Version: 0.1.0-1PIGSTY~noble
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 129
+Depends: postgresql-14, postgresql-14-jit-llvm (>= 17), libc6 (>= 2.17), libglib2.0-0t64 (>= 2.32.0), libpoppler-glib8t64 (>= 20.09.0)
+Provides: postgresql-pgpdf
+Homepage: https://github.com/dverite/pgpdf
+Priority: optional
+Section: database
+Filename: pool/main/p/pgpdf/postgresql-14-pgpdf_0.1.0-1PIGSTY~noble_arm64.deb
+Size: 26372
+SHA256: f9d171abc7903b5f93015325f312889818fa4ed4b4cfb1bdc10f758b6a6181e0
+SHA1: d024c7ca216aa976154ea8810bef330b92415a44
+MD5sum: 041a8be48069edbc717256f96076d38c
+Description: PDF type for Postgres
+  This extension for PostgreSQL provides a pdf data type and assorted functions.
+  You can create a pdf type, by casting either a text filepath or bytea column.
 
 Package: postgresql-14-pgqr
 Source: pgqr
@@ -8007,16 +8168,16 @@ Version: 0.1.0-1PIGSTY~noble
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 1769
-Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2), postgresql-14-pgvector
 Provides: postgresql-vchord
 Homepage: https://github.com/tensorchord/VectorChord
 Priority: optional
 Section: database
 Filename: pool/main/v/vchord/postgresql-14-vchord_0.1.0-1PIGSTY~noble_arm64.deb
-Size: 630994
-SHA256: b43c4a92ac71d2102c328e3bf3863fb89086b3ffb4b44ffa9bdf19a5e25f2cb1
-SHA1: 8db8534732bdc49902c5c5ed06218db8b58e9e15
-MD5sum: daab06d56626e37f420d1e8d22b9caa1
+Size: 631062
+SHA256: 48822821a97d836a08b1d8a6d286c055537b50e2911f941cec0b4da75ec76c7e
+SHA1: 8b99b015b827961f611cda64513deffdbca51f86
+MD5sum: f4518c4957422f1817e5deee4f048e26
 Description: Scalable, fast, and disk-friendly vector search in Postgres, the successor of pgvecto.rs.
   VectorChord (vchord) is a PostgreSQL extension designed for scalable, high-performance, and disk-efficient vector similarity search, and serves as the successor to pgvecto.rs.
   With VectorChord, you can store 400,000 vectors for just $1, enabling significant savings: 6x more vectors compared to Pinecone's optimized storage and 26x more than pgvector/pgvecto.rs for the same price1. For further insights, check out our launch blog post.
@@ -8152,20 +8313,19 @@ Version: 1.3.2-1PIGSTY~noble
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 692
-Depends: postgresql-15, postgresql-15-jit-llvm (>= 17), libc6 (>= 2.38), postgresql-contrib-15
+Depends: postgresql-15, postgresql-15-jit-llvm (>= 17), libc6 (>= 2.38), postgresql-15-ddlx
 Provides: postgresql-anonymizer
-Homepage: https://github.com/fboulnois/pg_permissions
+Homepage: https://gitlab.com/dalibo/postgresql_anonymizer
 Priority: optional
 Section: database
 Filename: pool/main/p/postgresql-anonymizer/postgresql-15-anonymizer_1.3.2-1PIGSTY~noble_arm64.deb
-Size: 229684
-SHA256: 3912d7e1af4fa06063e03e63d20ee36e0ecaa071cbfb6d5f7240e6efa812d624
-SHA1: db8fa86f16d105259f05a7ec85ab36c92177e5ee
-MD5sum: eb7fb6b3e90bbf683dd1a6e8dbccc36a
-Description: PostgreSQL extension to anonymize data
+Size: 229656
+SHA256: 5c21cc42238dcf9ab39808c8b38f8a28e83e1da8da8d636cf83e4406e5a0b05a
+SHA1: c85458d63a361937ec0be71daa47ccfe3e76d26b
+MD5sum: b8e2491bf4493adeb26dca1d1e31892f
+Description: Anonymization & Data Masking for PostgreSQL
   postgresql_anonymizer is an extension to mask or replace personally
-  identifiable information (PII) or commercially sensitive data from
-  a PostgreSQL database.
+  identifiable information (PII) or commercially sensitive data from a PostgreSQL database.
   The project relies on a declarative approach of anonymization. This means
   we're using the PostgreSQL Data Definition Language (DDL) in order to specify
   the anonymization strategy inside the table definition itself.
@@ -10277,6 +10437,25 @@ Description: Cryptographic key management extension for PostgreSQL 15
   pgcryptokey allows the creation, selection, rotation, and deletion of cryptographic data keys.
   Each cryptographic data key is encrypted/decrypted with (i.e., wrapped inside) an access password. Accessing a cryptographic data key requires the proper access password, as illustrated below:
 
+Package: postgresql-15-pgdg-pgroonga
+Version: 3.2.5-1
+Architecture: arm64
+Maintainer: PGroonga Project <packages@groonga.org>
+Installed-Size: 3006
+Depends: libc6 (>= 2.38), libgroonga0 (>= 14.1.1), libmsgpackc2 (>= 2.1.0), postgresql-15
+Conflicts: postgresql-15-pgroonga
+Homepage: https://pgroonga.github.io/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-15-pgdg-pgroonga/postgresql-15-pgdg-pgroonga_3.2.5-1_arm64.deb
+Size: 715076
+SHA256: 7795fb4362f7a4e298c407773af10acea1e9ebd909d252cfb052823991b6ea4a
+SHA1: d8616bf6a647e6dc0787b1a3c6f4c45eb86bca81
+MD5sum: 0db4af368068a17d5b74f57d9189a854
+Description: Fast full-text search plugin for PostgreSQL based on Groonga
+ PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
+ It is based on Groonga full-text search engine.
+
 Package: postgresql-15-pgjwt
 Source: pgjwt
 Version: 0.2.0-1PIGSTY~noble
@@ -10374,6 +10553,26 @@ SHA1: 49ba8d0cda681580622eabbaf5ecc15091636758
 MD5sum: 6b6d2d47bbcf5b2f7e628b593478f316
 Description: A PostgreSQL extension that provides SQL functions to allow capture of node OS metrics via SQL queries.
   SQL functions that allow capture of node OS metrics from PostgreSQL
+
+Package: postgresql-15-pgpdf
+Source: pgpdf
+Version: 0.1.0-1PIGSTY~noble
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 129
+Depends: postgresql-15, postgresql-15-jit-llvm (>= 17), libc6 (>= 2.17), libglib2.0-0t64 (>= 2.32.0), libpoppler-glib8t64 (>= 20.09.0)
+Provides: postgresql-pgpdf
+Homepage: https://github.com/dverite/pgpdf
+Priority: optional
+Section: database
+Filename: pool/main/p/pgpdf/postgresql-15-pgpdf_0.1.0-1PIGSTY~noble_arm64.deb
+Size: 26434
+SHA256: 6a96c4d1321a1468d02359aa17db782c7ee4a87dfee3254420125ba4e6f74066
+SHA1: 0efd02b6950f5b12b0d8ba3038f631d290b302a2
+MD5sum: 5e9ab486f1c84267d4233204bbbba5ee
+Description: PDF type for Postgres
+  This extension for PostgreSQL provides a pdf data type and assorted functions.
+  You can create a pdf type, by casting either a text filepath or bytea column.
 
 Package: postgresql-15-pgqr
 Source: pgqr
@@ -10888,16 +11087,16 @@ Version: 0.1.0-1PIGSTY~noble
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 1769
-Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2), postgresql-15-pgvector
 Provides: postgresql-vchord
 Homepage: https://github.com/tensorchord/VectorChord
 Priority: optional
 Section: database
 Filename: pool/main/v/vchord/postgresql-15-vchord_0.1.0-1PIGSTY~noble_arm64.deb
-Size: 630820
-SHA256: e9205f0c4d5b54a051231137f49a252c7bb8b47a06a20304b08a7b42ec523080
-SHA1: 93c10b46aeed4276c4837e6996b8d37ffce4fc0f
-MD5sum: 2645d7fa48c7b356f0ef208938ea7876
+Size: 630962
+SHA256: 8a1a554a232972855a66469f1fdbe5691cd0c5136a737e78cd24e0791c0bc97b
+SHA1: aca057543171e454d68bc9dccc63758894f16c05
+MD5sum: 1328854938f37d4d10c49fe1539bf0b3
 Description: Scalable, fast, and disk-friendly vector search in Postgres, the successor of pgvecto.rs.
   VectorChord (vchord) is a PostgreSQL extension designed for scalable, high-performance, and disk-efficient vector similarity search, and serves as the successor to pgvecto.rs.
   With VectorChord, you can store 400,000 vectors for just $1, enabling significant savings: 6x more vectors compared to Pinecone's optimized storage and 26x more than pgvector/pgvecto.rs for the same price1. For further insights, check out our launch blog post.
@@ -11033,20 +11232,19 @@ Version: 1.3.2-1PIGSTY~noble
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 692
-Depends: postgresql-16, postgresql-16-jit-llvm (>= 17), libc6 (>= 2.38), postgresql-contrib-16
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 17), libc6 (>= 2.38), postgresql-16-ddlx
 Provides: postgresql-anonymizer
-Homepage: https://github.com/fboulnois/pg_permissions
+Homepage: https://gitlab.com/dalibo/postgresql_anonymizer
 Priority: optional
 Section: database
 Filename: pool/main/p/postgresql-anonymizer/postgresql-16-anonymizer_1.3.2-1PIGSTY~noble_arm64.deb
-Size: 229822
-SHA256: 67fc8f8bc1b5b12fc633bae75a15280411e451807715a3eee947dcb618bf51a0
-SHA1: da514f994ec0dad13e815ac7562669b2d01a3916
-MD5sum: 4c719642346a9bc0d92edbc220c2c3f8
-Description: PostgreSQL extension to anonymize data
+Size: 229720
+SHA256: 1e04885d0af826be33d038b4a93e8a1c1fa73fdcbc4109b2cb68b31bbacf81f2
+SHA1: 7e247f285c4af644926d8f45fecb1c39bdfaea71
+MD5sum: 80ce5fdb4a6f01f35566f2eec9b65a00
+Description: Anonymization & Data Masking for PostgreSQL
   postgresql_anonymizer is an extension to mask or replace personally
-  identifiable information (PII) or commercially sensitive data from
-  a PostgreSQL database.
+  identifiable information (PII) or commercially sensitive data from a PostgreSQL database.
   The project relies on a declarative approach of anonymization. This means
   we're using the PostgreSQL Data Definition Language (DDL) in order to specify
   the anonymization strategy inside the table definition itself.
@@ -13177,6 +13375,25 @@ Description: Cryptographic key management extension for PostgreSQL 16
   pgcryptokey allows the creation, selection, rotation, and deletion of cryptographic data keys.
   Each cryptographic data key is encrypted/decrypted with (i.e., wrapped inside) an access password. Accessing a cryptographic data key requires the proper access password, as illustrated below:
 
+Package: postgresql-16-pgdg-pgroonga
+Version: 3.2.5-1
+Architecture: arm64
+Maintainer: PGroonga Project <packages@groonga.org>
+Installed-Size: 2945
+Depends: libc6 (>= 2.38), libgroonga0 (>= 14.1.1), libmsgpackc2 (>= 2.1.0), libxxhash0 (>= 0.7.1), postgresql-16
+Conflicts: postgresql-16-pgroonga
+Homepage: https://pgroonga.github.io/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-16-pgdg-pgroonga/postgresql-16-pgdg-pgroonga_3.2.5-1_arm64.deb
+Size: 699638
+SHA256: 0ab94b82c0de22f63942000c915efd00c6cd33e0c38308da3f81753a2abdaadb
+SHA1: 8d3b2b0f3bed1d069631a12f1adeb9fa70b02071
+MD5sum: 3cc5c9e9ecfbe26d42d9d2e94ecc7254
+Description: Fast full-text search plugin for PostgreSQL based on Groonga
+ PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
+ It is based on Groonga full-text search engine.
+
 Package: postgresql-16-pgjwt
 Source: pgjwt
 Version: 0.2.0-1PIGSTY~noble
@@ -13274,6 +13491,26 @@ SHA1: 133d0510773ae949810649cd7c4be67c4f0de00e
 MD5sum: 1077093fee434739ba629cde490578b0
 Description: A PostgreSQL extension that provides SQL functions to allow capture of node OS metrics via SQL queries.
   SQL functions that allow capture of node OS metrics from PostgreSQL
+
+Package: postgresql-16-pgpdf
+Source: pgpdf
+Version: 0.1.0-1PIGSTY~noble
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 129
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 17), libc6 (>= 2.17), libglib2.0-0t64 (>= 2.32.0), libpoppler-glib8t64 (>= 20.09.0)
+Provides: postgresql-pgpdf
+Homepage: https://github.com/dverite/pgpdf
+Priority: optional
+Section: database
+Filename: pool/main/p/pgpdf/postgresql-16-pgpdf_0.1.0-1PIGSTY~noble_arm64.deb
+Size: 26422
+SHA256: c18d1e74a0a66ef630a3703b1d4a3b5de459235f5593073780d018b88e100364
+SHA1: 39dc60473013dc20b57559add50faeee3998f604
+MD5sum: 734fd3ebcbd1dcb76e5f9ebc8beada1d
+Description: PDF type for Postgres
+  This extension for PostgreSQL provides a pdf data type and assorted functions.
+  You can create a pdf type, by casting either a text filepath or bytea column.
 
 Package: postgresql-16-pgqr
 Source: pgqr
@@ -13788,16 +14025,16 @@ Version: 0.1.0-1PIGSTY~noble
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 1769
-Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2), postgresql-16-pgvector
 Provides: postgresql-vchord
 Homepage: https://github.com/tensorchord/VectorChord
 Priority: optional
 Section: database
 Filename: pool/main/v/vchord/postgresql-16-vchord_0.1.0-1PIGSTY~noble_arm64.deb
-Size: 631180
-SHA256: 1b897c7b5de10683f089696fe6f20057793cb3cb98f13adb6d4bff5ef6fd2d9d
-SHA1: 0aab05cc4ecaa1feb8b07b3d6347a34d75777208
-MD5sum: ab1aeb381b246bc462cda1671f3cba0d
+Size: 631104
+SHA256: 2eb1b77f7ab84df2edde72fe95ae486398810b6fa9856b6cae855f000b7a9320
+SHA1: 886efb6271de72f92b4fa83dd542290b743fc4e8
+MD5sum: 5c09b0888669e0048559c9de48dda292
 Description: Scalable, fast, and disk-friendly vector search in Postgres, the successor of pgvecto.rs.
   VectorChord (vchord) is a PostgreSQL extension designed for scalable, high-performance, and disk-efficient vector similarity search, and serves as the successor to pgvecto.rs.
   With VectorChord, you can store 400,000 vectors for just $1, enabling significant savings: 6x more vectors compared to Pinecone's optimized storage and 26x more than pgvector/pgvecto.rs for the same price1. For further insights, check out our launch blog post.
@@ -13933,20 +14170,19 @@ Version: 1.3.2-1PIGSTY~noble
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 692
-Depends: postgresql-17, postgresql-17-jit-llvm (>= 17), libc6 (>= 2.38), postgresql-contrib-17
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 17), libc6 (>= 2.38), postgresql-17-ddlx
 Provides: postgresql-anonymizer
-Homepage: https://github.com/fboulnois/pg_permissions
+Homepage: https://gitlab.com/dalibo/postgresql_anonymizer
 Priority: optional
 Section: database
 Filename: pool/main/p/postgresql-anonymizer/postgresql-17-anonymizer_1.3.2-1PIGSTY~noble_arm64.deb
-Size: 230272
-SHA256: f2fc788815a945ab30f8a163fee425c989c00e1a2c7c0bdbae5febbdebd58e94
-SHA1: bfcb5e2550e74fa852e17b311caf496287b81f2e
-MD5sum: b3f9a24eeb61558193b2187afc068c4a
-Description: PostgreSQL extension to anonymize data
+Size: 229754
+SHA256: c14c1553dfb89e936b33c7d349d158498a76b5ab21fcb945dea3e8819d1507ef
+SHA1: 41845f73ed8ad6d48cd45d974283fccf2338b6ea
+MD5sum: 43a8352b9918de8b781c0930a9d402f2
+Description: Anonymization & Data Masking for PostgreSQL
   postgresql_anonymizer is an extension to mask or replace personally
-  identifiable information (PII) or commercially sensitive data from
-  a PostgreSQL database.
+  identifiable information (PII) or commercially sensitive data from a PostgreSQL database.
   The project relies on a declarative approach of anonymization. This means
   we're using the PostgreSQL Data Definition Language (DDL) in order to specify
   the anonymization strategy inside the table definition itself.
@@ -15975,6 +16211,25 @@ Description: Cryptographic key management extension for PostgreSQL 17
   pgcryptokey allows the creation, selection, rotation, and deletion of cryptographic data keys.
   Each cryptographic data key is encrypted/decrypted with (i.e., wrapped inside) an access password. Accessing a cryptographic data key requires the proper access password, as illustrated below:
 
+Package: postgresql-17-pgdg-pgroonga
+Version: 3.2.5-1
+Architecture: arm64
+Maintainer: PGroonga Project <packages@groonga.org>
+Installed-Size: 2947
+Depends: libc6 (>= 2.38), libgroonga0 (>= 14.1.1), libmsgpackc2 (>= 2.1.0), libxxhash0 (>= 0.7.1), postgresql-17
+Conflicts: postgresql-17-pgroonga
+Homepage: https://pgroonga.github.io/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-17-pgdg-pgroonga/postgresql-17-pgdg-pgroonga_3.2.5-1_arm64.deb
+Size: 700474
+SHA256: 2f1b200244b5d8464bf3b633abc9f3e34bf02388c24c5e060df1d57b4ca54834
+SHA1: 7ae3615093d7533616ed6ad0c07628ce27c2f7f5
+MD5sum: 036db73530b6baf44550e50ff8f538bf
+Description: Fast full-text search plugin for PostgreSQL based on Groonga
+ PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
+ It is based on Groonga full-text search engine.
+
 Package: postgresql-17-pgjwt
 Source: pgjwt
 Version: 0.2.0-1PIGSTY~noble
@@ -16072,6 +16327,26 @@ SHA1: e8043e1cf19870ed1c7e7b40e7a825e2fe6e58fa
 MD5sum: e446e331feb7ed18511ca4028da1805e
 Description: A PostgreSQL extension that provides SQL functions to allow capture of node OS metrics via SQL queries.
   SQL functions that allow capture of node OS metrics from PostgreSQL
+
+Package: postgresql-17-pgpdf
+Source: pgpdf
+Version: 0.1.0-1PIGSTY~noble
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 129
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 17), libc6 (>= 2.17), libglib2.0-0t64 (>= 2.32.0), libpoppler-glib8t64 (>= 20.09.0)
+Provides: postgresql-pgpdf
+Homepage: https://github.com/dverite/pgpdf
+Priority: optional
+Section: database
+Filename: pool/main/p/pgpdf/postgresql-17-pgpdf_0.1.0-1PIGSTY~noble_arm64.deb
+Size: 26428
+SHA256: f0f8258eb7695b9d8757fc0d7cc01d3ba6d859fc7055eafcab1e7e189a821377
+SHA1: cc84934da5dc191a4454a133a19bcc2acde848f0
+MD5sum: 5554390a5eec349527d5006076b93e74
+Description: PDF type for Postgres
+  This extension for PostgreSQL provides a pdf data type and assorted functions.
+  You can create a pdf type, by casting either a text filepath or bytea column.
 
 Package: postgresql-17-pgqr
 Source: pgqr
@@ -16547,16 +16822,16 @@ Version: 0.1.0-1PIGSTY~noble
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 1769
-Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2), postgresql-17-pgvector
 Provides: postgresql-vchord
 Homepage: https://github.com/tensorchord/VectorChord
 Priority: optional
 Section: database
 Filename: pool/main/v/vchord/postgresql-17-vchord_0.1.0-1PIGSTY~noble_arm64.deb
-Size: 630338
-SHA256: f798984b59dcf2e82e841b899bc3fe16d11cff3b9108f2961077c4fe4b45fca8
-SHA1: 6a8b9a753fb0f08176b4d8b707fd910c04c3a817
-MD5sum: 5531211244638d83dab634e0705a4ffc
+Size: 630786
+SHA256: 70d902e4544bb77ad07b28342ba13abb0ed045b6bf626332aa0957fb8e1ae4b4
+SHA1: 1af775dbdb36ad3973d3f1eca4778493a82e0218
+MD5sum: 79805a69cc6a60fe54224c4e5d3a0cf7
 Description: Scalable, fast, and disk-friendly vector search in Postgres, the successor of pgvecto.rs.
   VectorChord (vchord) is a PostgreSQL extension designed for scalable, high-performance, and disk-efficient vector similarity search, and serves as the successor to pgvecto.rs.
   With VectorChord, you can store 400,000 vectors for just $1, enabling significant savings: 6x more vectors compared to Pinecone's optimized storage and 26x more than pgvector/pgvecto.rs for the same price1. For further insights, check out our launch blog post.
