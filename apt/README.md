@@ -224,11 +224,11 @@ ls -alh /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/ubunt
 ls -alh /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/debian/pool/bookworm/main/t/
 
 # main extensions
-ls -alh /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/ubuntu/pool/jammy/main/t/{timescaledb-2-2.17.1-postgresql-17,timescaledb-2-2.17.1-postgresql-16,timescaledb-2-2.17.1-postgresql-15,timescaledb-2-2.17.1-postgresql-14,timescaledb-2-2.15.3-postgresql-13,timescaledb-2-2.11.2-postgresql-12}
-ls -alh /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/ubuntu/pool/focal/main/t/{timescaledb-2-2.17.1-postgresql-17,timescaledb-2-2.17.1-postgresql-16,timescaledb-2-2.17.1-postgresql-15,timescaledb-2-2.17.1-postgresql-14,timescaledb-2-2.15.3-postgresql-13,timescaledb-2-2.11.2-postgresql-12}
-ls -alh /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/ubuntu/pool/noble/main/t/{timescaledb-2-2.17.1-postgresql-17,timescaledb-2-2.17.1-postgresql-16,timescaledb-2-2.17.1-postgresql-15,timescaledb-2-2.17.1-postgresql-14,timescaledb-2-2.15.3-postgresql-13}
-ls -alh /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/debian/pool/bookworm/main/t/{timescaledb-2-2.17.1-postgresql-17,timescaledb-2-2.17.1-postgresql-16,timescaledb-2-2.17.1-postgresql-15,timescaledb-2-2.17.1-postgresql-14,timescaledb-2-2.15.3-postgresql-13,timescaledb-2-2.11.2-postgresql-12}
-ls -alh /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/debian/pool/bullseye/main/t/{timescaledb-2-2.17.1-postgresql-17,timescaledb-2-2.17.1-postgresql-16,timescaledb-2-2.17.1-postgresql-15,timescaledb-2-2.17.1-postgresql-14,timescaledb-2-2.15.3-postgresql-13,timescaledb-2-2.11.2-postgresql-12}
+ls -alh /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/ubuntu/pool/jammy/main/t/{timescaledb-2-2.17.2-postgresql-17,timescaledb-2-2.17.2-postgresql-16,timescaledb-2-2.17.2-postgresql-15,timescaledb-2-2.17.2-postgresql-14,timescaledb-2-2.15.3-postgresql-13,timescaledb-2-2.11.2-postgresql-12}
+ls -alh /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/ubuntu/pool/focal/main/t/{timescaledb-2-2.17.2-postgresql-17,timescaledb-2-2.17.2-postgresql-16,timescaledb-2-2.17.2-postgresql-15,timescaledb-2-2.17.2-postgresql-14,timescaledb-2-2.15.3-postgresql-13,timescaledb-2-2.11.2-postgresql-12}
+ls -alh /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/ubuntu/pool/noble/main/t/{timescaledb-2-2.17.2-postgresql-17,timescaledb-2-2.17.2-postgresql-16,timescaledb-2-2.17.2-postgresql-15,timescaledb-2-2.17.2-postgresql-14,timescaledb-2-2.15.3-postgresql-13}
+ls -alh /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/debian/pool/bookworm/main/t/{timescaledb-2-2.17.2-postgresql-17,timescaledb-2-2.17.2-postgresql-16,timescaledb-2-2.17.2-postgresql-15,timescaledb-2-2.17.2-postgresql-14,timescaledb-2-2.15.3-postgresql-13,timescaledb-2-2.11.2-postgresql-12}
+ls -alh /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/debian/pool/bullseye/main/t/{timescaledb-2-2.17.2-postgresql-17,timescaledb-2-2.17.2-postgresql-16,timescaledb-2-2.17.2-postgresql-15,timescaledb-2-2.17.2-postgresql-14,timescaledb-2-2.15.3-postgresql-13,timescaledb-2-2.11.2-postgresql-12}
 
 # timescaledb tools
 ls -alh /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/ubuntu/pool/jammy/main/t/timescaledb-tools/timescaledb-tools_0.17.2*.deb
@@ -248,11 +248,11 @@ ls -alh /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/debia
 cd /tmp; mkdir -p pgsql/ pgsql/jammy pgsql/focal pgsql/noble pgsql/bookworm pgsql/bullseye; cd /tmp/pgsql/;
 
 # main ext
-cp /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/ubuntu/pool/jammy/main/t/{timescaledb-2-2.17.1-postgresql-17,timescaledb-2-2.17.1-postgresql-16,timescaledb-2-2.17.1-postgresql-15,timescaledb-2-2.17.1-postgresql-14,timescaledb-2-2.15.3-postgresql-13,timescaledb-2-2.11.2-postgresql-12}/*      jammy/
-cp /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/ubuntu/pool/focal/main/t/{timescaledb-2-2.17.1-postgresql-17,timescaledb-2-2.17.1-postgresql-16,timescaledb-2-2.17.1-postgresql-15,timescaledb-2-2.17.1-postgresql-14,timescaledb-2-2.15.3-postgresql-13,timescaledb-2-2.11.2-postgresql-12}/*      focal/
-cp /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/ubuntu/pool/noble/main/t/{timescaledb-2-2.17.1-postgresql-17,timescaledb-2-2.17.1-postgresql-16,timescaledb-2-2.17.1-postgresql-15,timescaledb-2-2.17.1-postgresql-14,timescaledb-2-2.15.3-postgresql-13}/*                                         noble/
-cp /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/debian/pool/bookworm/main/t/{timescaledb-2-2.17.1-postgresql-17,timescaledb-2-2.17.1-postgresql-16,timescaledb-2-2.17.1-postgresql-15,timescaledb-2-2.17.1-postgresql-14,timescaledb-2-2.15.3-postgresql-13,timescaledb-2-2.11.2-postgresql-12}/*   bookworm/
-cp /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/debian/pool/bullseye/main/t/{timescaledb-2-2.17.1-postgresql-17,timescaledb-2-2.17.1-postgresql-16,timescaledb-2-2.17.1-postgresql-15,timescaledb-2-2.17.1-postgresql-14,timescaledb-2-2.15.3-postgresql-13,timescaledb-2-2.11.2-postgresql-12}/*   bullseye/
+cp /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/ubuntu/pool/jammy/main/t/{timescaledb-2-2.17.2-postgresql-17,timescaledb-2-2.17.2-postgresql-16,timescaledb-2-2.17.2-postgresql-15,timescaledb-2-2.17.2-postgresql-14,timescaledb-2-2.15.3-postgresql-13,timescaledb-2-2.11.2-postgresql-12}/*      jammy/
+cp /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/ubuntu/pool/focal/main/t/{timescaledb-2-2.17.2-postgresql-17,timescaledb-2-2.17.2-postgresql-16,timescaledb-2-2.17.2-postgresql-15,timescaledb-2-2.17.2-postgresql-14,timescaledb-2-2.15.3-postgresql-13,timescaledb-2-2.11.2-postgresql-12}/*      focal/
+cp /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/ubuntu/pool/noble/main/t/{timescaledb-2-2.17.2-postgresql-17,timescaledb-2-2.17.2-postgresql-16,timescaledb-2-2.17.2-postgresql-15,timescaledb-2-2.17.2-postgresql-14,timescaledb-2-2.15.3-postgresql-13}/*                                         noble/
+cp /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/debian/pool/bookworm/main/t/{timescaledb-2-2.17.2-postgresql-17,timescaledb-2-2.17.2-postgresql-16,timescaledb-2-2.17.2-postgresql-15,timescaledb-2-2.17.2-postgresql-14,timescaledb-2-2.15.3-postgresql-13,timescaledb-2-2.11.2-postgresql-12}/*   bookworm/
+cp /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/debian/pool/bullseye/main/t/{timescaledb-2-2.17.2-postgresql-17,timescaledb-2-2.17.2-postgresql-16,timescaledb-2-2.17.2-postgresql-15,timescaledb-2-2.17.2-postgresql-14,timescaledb-2-2.15.3-postgresql-13,timescaledb-2-2.11.2-postgresql-12}/*   bullseye/
 
 # timescaledb tools
 cp /var/spool/apt-mirror/mirror/packagecloud.io/timescale/timescaledb/ubuntu/pool/jammy/main/t/timescaledb-tools/timescaledb-tools_0.17.2*.deb    jammy/
@@ -343,18 +343,55 @@ find timescaledb -name timescaledb-2-loader-postgresql-13_2.15.3*.deb  -exec cp 
 find timescaledb -name timescaledb-2-loader-postgresql-12_2.11.2*.deb  -exec cp {} /data/apt/tmp/ \;
 
 
-# no bookworm / noble
-find timescaledb -name promscale_0.17*.deb                     -exec cp {} /data/apt/tmp/ \;
-find timescaledb -name promscale-extension*0.8.0*.deb          -exec cp {} /data/apt/tmp/ \;
+# main extensions
+rm -rf /data/apt/tmp
+mkdir /data/apt/tmp
+cp timescaledb/ubuntu/pool/jammy/main/t/{timescaledb-2-postgresql-17,timescaledb-2-postgresql-16,timescaledb-2-postgresql-15,timescaledb-2-postgresql-14,timescaledb-2-postgresql-13,timescaledb-2-postgresql-12} /data/apt/ts
+cp timescaledb/ubuntu/pool/focal/main/t/{timescaledb-2-postgresql-17,timescaledb-2-postgresql-16,timescaledb-2-postgresql-15,timescaledb-2-postgresql-14,timescaledb-2-postgresql-13,timescaledb-2-postgresql-12} /data/apt/ts
+cp timescaledb/ubuntu/pool/noble/main/t/{timescaledb-2-postgresql-17,timescaledb-2-postgresql-16,timescaledb-2-postgresql-15,timescaledb-2-postgresql-14,timescaledb-2-postgresql-13}
+cp timescaledb/debian/pool/bookworm/main/t/{timescaledb-2-postgresql-17,timescaledb-2-postgresql-16,timescaledb-2-postgresql-15,timescaledb-2-postgresql-14,timescaledb-2-postgresql-13,timescaledb-2-postgresql-12} /data/apt/ts
+cp timescaledb/debian/pool/bullseye/main/t/{timescaledb-2-postgresql-17,timescaledb-2-postgresql-16,timescaledb-2-postgresql-15,timescaledb-2-postgresql-14,timescaledb-2-postgresql-13,timescaledb-2-postgresql-12} /data/apt/ts
+
+cp timescaledb/debian/pool/bookworm/main/t/timescaledb-2-postgresql-17/*2.17.2*   /data/mirror/tmp
+cp timescaledb/debian/pool/bookworm/main/t/timescaledb-2-postgresql-16/*2.17.2*   /data/mirror/tmp
+cp timescaledb/debian/pool/bookworm/main/t/timescaledb-2-postgresql-15/*2.17.2*   /data/mirror/tmp
+cp timescaledb/debian/pool/bookworm/main/t/timescaledb-2-postgresql-14/*2.17.2*   /data/mirror/tmp
+cp timescaledb/debian/pool/bookworm/main/t/timescaledb-2-postgresql-13/*2.15.3*   /data/mirror/tmp
+cp timescaledb/debian/pool/bookworm/main/t/timescaledb-2-postgresql-12/*2.11.2*   /data/mirror/tmp
+ 
+cp timescaledb/debian/pool/bullseye/main/t/timescaledb-2-postgresql-17/*2.17.2*   /data/mirror/tmp
+cp timescaledb/debian/pool/bullseye/main/t/timescaledb-2-postgresql-16/*2.17.2*   /data/mirror/tmp
+cp timescaledb/debian/pool/bullseye/main/t/timescaledb-2-postgresql-15/*2.17.2*   /data/mirror/tmp
+cp timescaledb/debian/pool/bullseye/main/t/timescaledb-2-postgresql-14/*2.17.2*   /data/mirror/tmp
+cp timescaledb/debian/pool/bullseye/main/t/timescaledb-2-postgresql-13/*2.15.3*   /data/mirror/tmp
+cp timescaledb/debian/pool/bullseye/main/t/timescaledb-2-postgresql-12/*2.11.2*   /data/mirror/tmp
+   
+cp timescaledb/ubuntu/pool/noble/main/t/timescaledb-2-postgresql-17/*2.17.2*   /data/mirror/tmp
+cp timescaledb/ubuntu/pool/noble/main/t/timescaledb-2-postgresql-16/*2.17.2*   /data/mirror/tmp
+cp timescaledb/ubuntu/pool/noble/main/t/timescaledb-2-postgresql-15/*2.17.2*   /data/mirror/tmp
+cp timescaledb/ubuntu/pool/noble/main/t/timescaledb-2-postgresql-14/*2.17.2*   /data/mirror/tmp
+cp timescaledb/ubuntu/pool/noble/main/t/timescaledb-2-postgresql-13/*2.15.3*   /data/mirror/tmp
+cp timescaledb/ubuntu/pool/noble/main/t/timescaledb-2-postgresql-12/*2.11.2*   /data/mirror/tmp
+
+# loader missing debian 12 arm packages
+find timescaledb -name timescaledb-2-loader-postgresql-*_2.17.2*.deb   -exec cp {} /data/mirror/tmp/ \;
+find timescaledb -name timescaledb-2-loader-postgresql-13_2.15.3*.deb  -exec cp {} /data/mirror/tmp/ \;
+find timescaledb -name timescaledb-2-loader-postgresql-12_2.11.2*.deb  -exec cp {} /data/mirror/tmp/ \;
+
+
+cp timescaledb/ubuntu/pool/focal/main/t/timescaledb-2-postgresql-13,timescaledb-2-postgresql-12} /data/apt/ts
+cp timescaledb/ubuntu/pool/noble/main/t/timescaledb-2-postgresql-13}
+cp timescaledb/debian/pool/bookworm/main/t/{timescaledb-2-postgresql-17,timescaledb-2-postgresql-16,timescaledb-2-postgresql-15,timescaledb-2-postgresql-14,timescaledb-2-postgresql-13,timescaledb-2-postgresql-12} /data/apt/ts
+cp timescaledb/debian/pool/bullseye/main/t/{timescaledb-2-postgresql-17,timescaledb-2-postgresql-16,timescaledb-2-postgresql-15,timescaledb-2-postgresql-14,timescaledb-2-postgresql-13,timescaledb-2-postgresql-12} /data/apt/ts
 
 
 rm -rf /data/apt/tmp/*dbgsym*
 
-find /data/apt/tmp/ -name *debian11*.deb -exec cp {} /data/apt/bullseye/ \;
-find /data/apt/tmp/ -name *debian12*.deb -exec cp {} /data/apt/bookworm/ \;
-find /data/apt/tmp/ -name *ubuntu20.04*.deb -exec cp {} /data/apt/focal/ \;
-find /data/apt/tmp/ -name *ubuntu22.04*.deb -exec cp {} /data/apt/jammy/ \;
-find /data/apt/tmp/ -name *ubuntu24.04*.deb -exec cp {} /data/apt/noble/ \;
+find tmp/ -name *debian11*.deb -exec cp {}    ~/pgsty/apt/extra/bullseye/ \;
+find tmp/ -name *debian12*.deb -exec cp {}    ~/pgsty/apt/extra/bookworm/ \;
+find tmp/ -name *ubuntu20.04*.deb -exec cp {} ~/pgsty/apt/extra/focal/ \;
+find tmp/ -name *ubuntu22.04*.deb -exec cp {} ~/pgsty/apt/extra/jammy/ \;
+find tmp/ -name *ubuntu24.04*.deb -exec cp {} ~/pgsty/apt/extra/noble/ \;
 
 # find and copy haproxy
 

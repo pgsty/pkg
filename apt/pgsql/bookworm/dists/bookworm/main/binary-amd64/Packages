@@ -15,6 +15,29 @@ SHA1: edafa5e83eac39946ba6c25555d3fd8397e62cb7
 MD5sum: 0b9cff06e98847a310ee26eacdca0a77
 Description: cri-dockerd is a lightweight implementation of the CRI specification which talks to docker.
 
+Package: groonga-tokenizer-mecab
+Source: groonga
+Version: 14.1.1-1
+Architecture: amd64
+Maintainer: Groonga Project <packages@groonga.org>
+Installed-Size: 53
+Depends: libc6 (>= 2.4), libgroonga0 (= 14.1.1-1), libmecab2 (>= 0.996), mecab-naist-jdic | mecab-jumandic-utf8
+Breaks: libgroonga-tokenizer-mecab (<< 1.2.0-1)
+Replaces: libgroonga-tokenizer-mecab (<< 1.2.0-1)
+Homepage: https://groonga.org/
+Priority: optional
+Section: libs
+Filename: pool/main/g/groonga/groonga-tokenizer-mecab_14.1.1-1_amd64.deb
+Size: 14100
+SHA256: 9eb5c61946ef338ddde8e08aa9d1d13e064d3865f4f5aba561a0b5edb7f86ecf
+SHA1: f03b12a877d50f78295ee2f55fc8dcfc997a8c14
+MD5sum: 1cd6f8833a1dc15352e4a9f286c2c4f3
+Description: MeCab tokenizer for Groonga
+ Groonga is an open-source fulltext search engine and column store.
+ It lets you write high-performance applications that requires fulltext search.
+ .
+ This package provides MeCab tokenizer.
+
 Package: haproxy
 Version: 3.1.0-2~bpo12+1
 Architecture: amd64
@@ -37,6 +60,26 @@ Description: fast and reliable load balancing reverse proxy
  cookies, load balancing, header addition, modification, deletion both ways. It
  has request blocking capabilities and provides interface to display server
  status.
+
+Package: libarrow1801
+Source: apache-arrow
+Version: 18.1.0-1
+Architecture: amd64
+Maintainer: Apache Arrow Developers <dev@arrow.apache.org>
+Installed-Size: 40203
+Depends: libabsl20220623 (>= 0~20220623.0-1), libbrotli1 (>= 0.6.0), libbz2-1.0, libc6 (>= 2.34), libcurl4 (>= 7.66.0), libgcc-s1 (>= 7), liblz4-1 (>= 1.8.0), libprotobuf32 (>= 3.21.12), libre2-9 (>= 20201101+dfsg), libsnappy1v5 (>= 1.1.9), libssl3 (>= 3.0.0), libstdc++6 (>= 12), libutf8proc2 (>= 1.3), libxml2 (>= 2.7.4), libzstd1 (>= 1.5.2), zlib1g (>= 1:1.2.0)
+Multi-Arch: same
+Homepage: https://arrow.apache.org/
+Priority: optional
+Section: libs
+Filename: pool/main/a/apache-arrow/libarrow1801_18.1.0-1_amd64.deb
+Size: 9585072
+SHA256: 2b56e4c9038cacbe50c03f00dd13fefde207d1daeddf7b4fb5405b27689dd12c
+SHA1: e3331efdd2873298da8199b0c427954c9f862993
+MD5sum: 50bd6758893ffebdeafaada62da23bf9
+Description: Apache Arrow is a data processing library for analysis
+ .
+ This package provides C++ library files.
 
 Package: libduckdb
 Version: 1.1.2-1PIGSTY~bookworm
@@ -79,6 +122,30 @@ Description: A wrapper library for Firebird's C API, loosely based on PostgreSQL
   libfq provides a number of functions which act as convenience wrappers around the native Firebird C API, which is cumbersome to use.
   It is loosely based on PostgreSQL's libpq and provides a subset of that API's functions - names beginning with FQ rather than PQ - with more-or-less identical function signatures. It also provides some Firebird-specific functions.
   While basically functional, libfq is still work-in-progress and the API definitions may change between releases in an incompatible way. USE AT YOUR OWN RISK.
+
+Package: libgroonga0
+Source: groonga
+Version: 14.1.1-1
+Architecture: amd64
+Maintainer: Groonga Project <packages@groonga.org>
+Installed-Size: 19962
+Depends: libarrow1801 (>= 18.1.0), libc6 (>= 2.35), libgcc-s1 (>= 3.0), libgomp1 (>= 4.9), liblz4-1 (>= 0.0~r130), libmsgpackc2 (>= 2.1.0), libsimdjson14 (>= 2.0.1), libstdc++6 (>= 11), libxxhash0 (>= 0.8.0), libzstd1 (>= 1.5.2), zlib1g (>= 1:1.2.0)
+Breaks: libgroonga (<< 1.2.0-1)
+Replaces: libgroonga (<< 1.2.0-1)
+Multi-Arch: same
+Homepage: https://groonga.org/
+Priority: optional
+Section: libs
+Filename: pool/main/g/groonga/libgroonga0_14.1.1-1_amd64.deb
+Size: 2749928
+SHA256: 2d5a1fe47d8b54b6d28aa4a24209b3bb551986eb42479a513370cdc2f033d12c
+SHA1: 053dcda5fb4d9dee80ecfa2bd1b444300a43502e
+MD5sum: 529af176c9d2766dc6869512e4ea8710
+Description: Library files for Groonga
+ Groonga is an open-source fulltext search engine and column store.
+ It lets you write high-performance applications that requires fulltext search.
+ .
+ This package provides library files.
 
 Package: pgcopydb
 Version: 0.16-1PIGSTY~bookworm
@@ -191,20 +258,19 @@ Version: 1.3.2-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 663
-Depends: postgresql-12, postgresql-12-jit-llvm (>= 16), libc6 (>= 2.4), postgresql-contrib-12
+Depends: postgresql-12, postgresql-12-jit-llvm (>= 16), libc6 (>= 2.4), postgresql-12-ddlx
 Provides: postgresql-anonymizer
-Homepage: https://github.com/fboulnois/pg_permissions
+Homepage: https://gitlab.com/dalibo/postgresql_anonymizer
 Priority: optional
 Section: database
 Filename: pool/main/p/postgresql-anonymizer/postgresql-12-anonymizer_1.3.2-1PIGSTY~bookworm_amd64.deb
 Size: 223476
-SHA256: 4a743ee5747ab39f2911afe7e2e1fe2ef8ee28c7919bbd7616847ee3840d46ae
-SHA1: 24b2f1184d3a1b69fb2f314257275744502f255d
-MD5sum: 2a7a1fb6642614b4d55cc2e5d19fa64c
-Description: PostgreSQL extension to anonymize data
+SHA256: f6d9d7b9171c98e3c8f0c434bec025f991d3bf2b4025459880d470be6c8754d8
+SHA1: 9eeff207ce471e1cf2b50f3327bdcb8f1747b2e7
+MD5sum: 48edaea576a275ea22a313bd92244285
+Description: Anonymization & Data Masking for PostgreSQL
   postgresql_anonymizer is an extension to mask or replace personally
-  identifiable information (PII) or commercially sensitive data from
-  a PostgreSQL database.
+  identifiable information (PII) or commercially sensitive data from a PostgreSQL database.
   The project relies on a declarative approach of anonymization. This means
   we're using the PostgreSQL Data Definition Language (DDL) in order to specify
   the anonymization strategy inside the table definition itself.
@@ -2086,6 +2152,25 @@ Description: PostgreSQL Data Dictionary, Inspect data dictionary via SQL
   This extension makes it easy to provide a usable data dictionary to all users of a PostgreSQL database.
   See the full project documentation: https://rustprooflabs.github.io/pgdd/ for more information.
 
+Package: postgresql-12-pgdg-pgroonga
+Version: 3.2.4-1
+Architecture: amd64
+Maintainer: PGroonga Project <packages@groonga.org>
+Installed-Size: 2661
+Depends: libc6 (>= 2.33), libgroonga0 (>= 14.0.9), libmsgpackc2 (>= 2.1.0), postgresql-12
+Conflicts: postgresql-12-pgroonga
+Homepage: https://pgroonga.github.io/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-12-pgdg-pgroonga/postgresql-12-pgdg-pgroonga_3.2.4-1_amd64.deb
+Size: 685516
+SHA256: ae80ee60a3df9d5ecdd57e6762577396cafca3f70120966dc36ed5a606ece627
+SHA1: 1d4ca6ead3d053bcecea708c14bf0402b9b72524
+MD5sum: 8e73aca82aeef06dd065d4bc8bd3e8ae
+Description: Fast full-text search plugin for PostgreSQL based on Groonga
+ PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
+ It is based on Groonga full-text search engine.
+
 Package: postgresql-12-pgjwt
 Source: pgjwt
 Version: 0.2.0-1PIGSTY~bookworm
@@ -2183,6 +2268,26 @@ SHA1: 2d992853c72195e11989641d8fc75a047baf9cd0
 MD5sum: 42641ea081a4fe930b3e102d22838512
 Description: A PostgreSQL extension that provides SQL functions to allow capture of node OS metrics via SQL queries.
   SQL functions that allow capture of node OS metrics from PostgreSQL
+
+Package: postgresql-12-pgpdf
+Source: pgpdf
+Version: 0.1.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 86
+Depends: postgresql-12, postgresql-12-jit-llvm (>= 16), libc6 (>= 2.14), libglib2.0-0 (>= 2.31.8), libpoppler-glib8 (>= 20.09.0)
+Provides: postgresql-pgpdf
+Homepage: https://github.com/dverite/pgpdf
+Priority: optional
+Section: database
+Filename: pool/main/p/pgpdf/postgresql-12-pgpdf_0.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 26116
+SHA256: f9bb08a8821a488fc9a6cee5e259650ca917ae1c32ed53ef63aaa41a8dad295e
+SHA1: 132a019de3db52578c161e610c7f200e8b537104
+MD5sum: 98b972f2a79bc21860dc3995c461e08d
+Description: PDF type for Postgres
+  This extension for PostgreSQL provides a pdf data type and assorted functions.
+  You can create a pdf type, by casting either a text filepath or bytea column.
 
 Package: postgresql-12-pgqr
 Source: pgqr
@@ -2762,20 +2867,19 @@ Version: 1.3.2-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 663
-Depends: postgresql-13, postgresql-13-jit-llvm (>= 16), libc6 (>= 2.4), postgresql-contrib-13
+Depends: postgresql-13, postgresql-13-jit-llvm (>= 16), libc6 (>= 2.4), postgresql-13-ddlx
 Provides: postgresql-anonymizer
-Homepage: https://github.com/fboulnois/pg_permissions
+Homepage: https://gitlab.com/dalibo/postgresql_anonymizer
 Priority: optional
 Section: database
 Filename: pool/main/p/postgresql-anonymizer/postgresql-13-anonymizer_1.3.2-1PIGSTY~bookworm_amd64.deb
 Size: 223508
-SHA256: 46a622d9abd974b4727270d4ac451bb16bf8d3dfee3edfcbf450275cfeea3dfd
-SHA1: 7f2f796bcfad387fa0e3128f97b13678a64afe9f
-MD5sum: 85c4edb126a103e2a12ab213d1484203
-Description: PostgreSQL extension to anonymize data
+SHA256: 983f24a160cca856d49f0fab97041782fd2352299c7af5733ec08ce31740c759
+SHA1: eacab313aa57c4ac16f410898cefcb4a6e3555c7
+MD5sum: b7a9909a2e8456fd4f0451344b42506e
+Description: Anonymization & Data Masking for PostgreSQL
   postgresql_anonymizer is an extension to mask or replace personally
-  identifiable information (PII) or commercially sensitive data from
-  a PostgreSQL database.
+  identifiable information (PII) or commercially sensitive data from a PostgreSQL database.
   The project relies on a declarative approach of anonymization. This means
   we're using the PostgreSQL Data Definition Language (DDL) in order to specify
   the anonymization strategy inside the table definition itself.
@@ -4759,6 +4863,25 @@ Description: PostgreSQL Data Dictionary, Inspect data dictionary via SQL
   This extension makes it easy to provide a usable data dictionary to all users of a PostgreSQL database.
   See the full project documentation: https://rustprooflabs.github.io/pgdd/ for more information.
 
+Package: postgresql-13-pgdg-pgroonga
+Version: 3.2.5-1
+Architecture: amd64
+Maintainer: PGroonga Project <packages@groonga.org>
+Installed-Size: 2670
+Depends: libc6 (>= 2.33), libgroonga0 (>= 14.1.1), libmsgpackc2 (>= 2.1.0), postgresql-13
+Conflicts: postgresql-13-pgroonga
+Homepage: https://pgroonga.github.io/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-13-pgdg-pgroonga/postgresql-13-pgdg-pgroonga_3.2.5-1_amd64.deb
+Size: 690208
+SHA256: 837e3e670b422fc9207a71bb8ab919ef0f6769eb0d13646daa46e38df1aaaf74
+SHA1: 9fa92b645ab1f61a99fcc51369229a8ffa40c0e6
+MD5sum: ffc5875d070c56170f59bee5ced68755
+Description: Fast full-text search plugin for PostgreSQL based on Groonga
+ PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
+ It is based on Groonga full-text search engine.
+
 Package: postgresql-13-pgjwt
 Source: pgjwt
 Version: 0.2.0-1PIGSTY~bookworm
@@ -4856,6 +4979,26 @@ SHA1: 6d14052f6bb5d2f2f0d5b7f931416a7fd837f562
 MD5sum: f593e923e80a3cb3c48d2a23b768571b
 Description: A PostgreSQL extension that provides SQL functions to allow capture of node OS metrics via SQL queries.
   SQL functions that allow capture of node OS metrics from PostgreSQL
+
+Package: postgresql-13-pgpdf
+Source: pgpdf
+Version: 0.1.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 86
+Depends: postgresql-13, postgresql-13-jit-llvm (>= 16), libc6 (>= 2.14), libglib2.0-0 (>= 2.31.8), libpoppler-glib8 (>= 20.09.0)
+Provides: postgresql-pgpdf
+Homepage: https://github.com/dverite/pgpdf
+Priority: optional
+Section: database
+Filename: pool/main/p/pgpdf/postgresql-13-pgpdf_0.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 26348
+SHA256: ae9fc1f7496201a17399ac5393c7478202304cb7f447c052e6b9b8a301c5289d
+SHA1: 49ff69b0908529df3f478b965c865a6ede6770b9
+MD5sum: 0ee91a692f2b3a323e9c5f2a7f9d82b4
+Description: PDF type for Postgres
+  This extension for PostgreSQL provides a pdf data type and assorted functions.
+  You can create a pdf type, by casting either a text filepath or bytea column.
 
 Package: postgresql-13-pgqr
 Source: pgqr
@@ -5512,20 +5655,19 @@ Version: 1.3.2-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 667
-Depends: postgresql-14, postgresql-14-jit-llvm (>= 16), libc6 (>= 2.4), postgresql-contrib-14
+Depends: postgresql-14, postgresql-14-jit-llvm (>= 16), libc6 (>= 2.4), postgresql-14-ddlx
 Provides: postgresql-anonymizer
-Homepage: https://github.com/fboulnois/pg_permissions
+Homepage: https://gitlab.com/dalibo/postgresql_anonymizer
 Priority: optional
 Section: database
 Filename: pool/main/p/postgresql-anonymizer/postgresql-14-anonymizer_1.3.2-1PIGSTY~bookworm_amd64.deb
-Size: 223824
-SHA256: e8f7eb96aa88e414e7040d13fc454d7706e637c905a7561581e95488f14797cb
-SHA1: 60d9201256c37b58eea4e104b8e34ab161ec4b47
-MD5sum: 672273c1ab32aa99f1ec50c59c4b2281
-Description: PostgreSQL extension to anonymize data
+Size: 223820
+SHA256: 506178fc620ca70f83a2672738697ea85772a3c652b08837755ce00e609c749b
+SHA1: 7b9abe7cd53fb6f4a728582574af729f1182217f
+MD5sum: 200c46ca223ab9c74e2b30d54b82bcf9
+Description: Anonymization & Data Masking for PostgreSQL
   postgresql_anonymizer is an extension to mask or replace personally
-  identifiable information (PII) or commercially sensitive data from
-  a PostgreSQL database.
+  identifiable information (PII) or commercially sensitive data from a PostgreSQL database.
   The project relies on a declarative approach of anonymization. This means
   we're using the PostgreSQL Data Definition Language (DDL) in order to specify
   the anonymization strategy inside the table definition itself.
@@ -7701,6 +7843,25 @@ Description: PostgreSQL Data Dictionary, Inspect data dictionary via SQL
   This extension makes it easy to provide a usable data dictionary to all users of a PostgreSQL database.
   See the full project documentation: https://rustprooflabs.github.io/pgdd/ for more information.
 
+Package: postgresql-14-pgdg-pgroonga
+Version: 3.2.5-1
+Architecture: amd64
+Maintainer: PGroonga Project <packages@groonga.org>
+Installed-Size: 2680
+Depends: libc6 (>= 2.33), libgroonga0 (>= 14.1.1), libmsgpackc2 (>= 2.1.0), postgresql-14
+Conflicts: postgresql-14-pgroonga
+Homepage: https://pgroonga.github.io/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-14-pgdg-pgroonga/postgresql-14-pgdg-pgroonga_3.2.5-1_amd64.deb
+Size: 692708
+SHA256: 15dd1dbf5d1b0f36fd876a58d3266379cc860c4a7e9060999cff4ca86cd54a78
+SHA1: edbf1641fcc2a05056e017344467a191197eb111
+MD5sum: 307b709977048c5d15ab586f660a7c95
+Description: Fast full-text search plugin for PostgreSQL based on Groonga
+ PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
+ It is based on Groonga full-text search engine.
+
 Package: postgresql-14-pgjwt
 Source: pgjwt
 Version: 0.2.0-1PIGSTY~bookworm
@@ -7798,6 +7959,26 @@ SHA1: 09ef3eaf759c892bdaeb0e3f01132903287b59da
 MD5sum: c88ab31fd65c64daec61e061a5625b07
 Description: A PostgreSQL extension that provides SQL functions to allow capture of node OS metrics via SQL queries.
   SQL functions that allow capture of node OS metrics from PostgreSQL
+
+Package: postgresql-14-pgpdf
+Source: pgpdf
+Version: 0.1.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 87
+Depends: postgresql-14, postgresql-14-jit-llvm (>= 16), libc6 (>= 2.14), libglib2.0-0 (>= 2.31.8), libpoppler-glib8 (>= 20.09.0)
+Provides: postgresql-pgpdf
+Homepage: https://github.com/dverite/pgpdf
+Priority: optional
+Section: database
+Filename: pool/main/p/pgpdf/postgresql-14-pgpdf_0.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 26536
+SHA256: 506921d732f2c42fb307c74df23d54ff9d1d5af2be563f70e849dfd63acc24d7
+SHA1: ee08d4b37898518b00c55586461c17ef40f515ac
+MD5sum: 1214c81b917c2deb2ce6426cfeb18907
+Description: PDF type for Postgres
+  This extension for PostgreSQL provides a pdf data type and assorted functions.
+  You can create a pdf type, by casting either a text filepath or bytea column.
 
 Package: postgresql-14-pgqr
 Source: pgqr
@@ -8350,16 +8531,16 @@ Version: 0.1.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 2229
-Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2), postgresql-14-pgvector
 Provides: postgresql-vchord
 Homepage: https://github.com/tensorchord/VectorChord
 Priority: optional
 Section: database
 Filename: pool/main/v/vchord/postgresql-14-vchord_0.1.0-1PIGSTY~bookworm_amd64.deb
-Size: 717216
-SHA256: df29a8de35e17018e3650bdfad9f4f7d0d931b3f000532fcaf862161eb8244c1
-SHA1: 8d6e21e28e82b3d47bd808ecef793c30630e0f52
-MD5sum: 1112815416dc8233c8ed6c3d858fec63
+Size: 717180
+SHA256: ec57fc627e93618bb9a7cf4c73f1de0212510d20da42e7fcb9fb8648bf3f108f
+SHA1: 40aa2733f0d0cfc8ee9b6c7f6a680c70a029eb44
+MD5sum: 63f657a9ec040fced990317d47644140
 Description: Scalable, fast, and disk-friendly vector search in Postgres, the successor of pgvecto.rs.
   VectorChord (vchord) is a PostgreSQL extension designed for scalable, high-performance, and disk-efficient vector similarity search, and serves as the successor to pgvecto.rs.
   With VectorChord, you can store 400,000 vectors for just $1, enabling significant savings: 6x more vectors compared to Pinecone's optimized storage and 26x more than pgvector/pgvecto.rs for the same price1. For further insights, check out our launch blog post.
@@ -8495,20 +8676,19 @@ Version: 1.3.2-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 667
-Depends: postgresql-15, postgresql-15-jit-llvm (>= 16), libc6 (>= 2.4), postgresql-contrib-15
+Depends: postgresql-15, postgresql-15-jit-llvm (>= 16), libc6 (>= 2.4), postgresql-15-ddlx
 Provides: postgresql-anonymizer
-Homepage: https://github.com/fboulnois/pg_permissions
+Homepage: https://gitlab.com/dalibo/postgresql_anonymizer
 Priority: optional
 Section: database
 Filename: pool/main/p/postgresql-anonymizer/postgresql-15-anonymizer_1.3.2-1PIGSTY~bookworm_amd64.deb
 Size: 223432
-SHA256: cb0ef80b50585586991ab44c5c264adb504563cf9400d7501b2cbc92fe3ecc38
-SHA1: 0ffe3bb44daa0a15c5d819b205af69250c955a2b
-MD5sum: de567ae6237bac3fb00893482637ed46
-Description: PostgreSQL extension to anonymize data
+SHA256: d83221d5cdbd44a004ffa3991c287fb0261c9447f69b9504153a3d356903a464
+SHA1: 80e5f51b605acbd5c237b92a8df89305e6d071c1
+MD5sum: 2935847a36fa9d10c9cdaaf8c030959c
+Description: Anonymization & Data Masking for PostgreSQL
   postgresql_anonymizer is an extension to mask or replace personally
-  identifiable information (PII) or commercially sensitive data from
-  a PostgreSQL database.
+  identifiable information (PII) or commercially sensitive data from a PostgreSQL database.
   The project relies on a declarative approach of anonymization. This means
   we're using the PostgreSQL Data Definition Language (DDL) in order to specify
   the anonymization strategy inside the table definition itself.
@@ -10684,6 +10864,25 @@ Description: PostgreSQL Data Dictionary, Inspect data dictionary via SQL
   This extension makes it easy to provide a usable data dictionary to all users of a PostgreSQL database.
   See the full project documentation: https://rustprooflabs.github.io/pgdd/ for more information.
 
+Package: postgresql-15-pgdg-pgroonga
+Version: 3.2.5-1
+Architecture: amd64
+Maintainer: PGroonga Project <packages@groonga.org>
+Installed-Size: 2803
+Depends: libc6 (>= 2.33), libgroonga0 (>= 14.1.1), libmsgpackc2 (>= 2.1.0), postgresql-15
+Conflicts: postgresql-15-pgroonga
+Homepage: https://pgroonga.github.io/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-15-pgdg-pgroonga/postgresql-15-pgdg-pgroonga_3.2.5-1_amd64.deb
+Size: 750012
+SHA256: e259b17f5abb64462f4dc36b114581e0f1fe873e50f40a58a7f55cfe9d05b5f5
+SHA1: b0114f67709ed878f5261fd26a8d3e4d100371a0
+MD5sum: 1cdebd18eba40cf34080af74cc675e35
+Description: Fast full-text search plugin for PostgreSQL based on Groonga
+ PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
+ It is based on Groonga full-text search engine.
+
 Package: postgresql-15-pgjwt
 Source: pgjwt
 Version: 0.2.0-1PIGSTY~bookworm
@@ -10781,6 +10980,26 @@ SHA1: 1646bfea2f862e4bfbaadec42321b54998cd15dc
 MD5sum: 417c9d01854913a21e744ef7b9c10525
 Description: A PostgreSQL extension that provides SQL functions to allow capture of node OS metrics via SQL queries.
   SQL functions that allow capture of node OS metrics from PostgreSQL
+
+Package: postgresql-15-pgpdf
+Source: pgpdf
+Version: 0.1.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 87
+Depends: postgresql-15, postgresql-15-jit-llvm (>= 16), libc6 (>= 2.14), libglib2.0-0 (>= 2.31.8), libpoppler-glib8 (>= 20.09.0)
+Provides: postgresql-pgpdf
+Homepage: https://github.com/dverite/pgpdf
+Priority: optional
+Section: database
+Filename: pool/main/p/pgpdf/postgresql-15-pgpdf_0.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 26584
+SHA256: 615f95dd078d74963c5b5d2d7aa77e90ecf08bcdd329210dbafea8483e48338c
+SHA1: ef2de56efb7374e1eff00b64931b6bd1c23041d6
+MD5sum: 4682bb703030fa5465ff87330626dfe4
+Description: PDF type for Postgres
+  This extension for PostgreSQL provides a pdf data type and assorted functions.
+  You can create a pdf type, by casting either a text filepath or bytea column.
 
 Package: postgresql-15-pgqr
 Source: pgqr
@@ -11333,16 +11552,16 @@ Version: 0.1.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 2229
-Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2), postgresql-15-pgvector
 Provides: postgresql-vchord
 Homepage: https://github.com/tensorchord/VectorChord
 Priority: optional
 Section: database
 Filename: pool/main/v/vchord/postgresql-15-vchord_0.1.0-1PIGSTY~bookworm_amd64.deb
-Size: 717316
-SHA256: 423ba8bbbbf54f4489ce23cbbe06d9ce3739790567e5d5858b068077d5b22054
-SHA1: dd61b06d4ba767b0d2c9bedad8d2b56e90c8fd6c
-MD5sum: ea309f6fdf1227baab88153d0cc227dd
+Size: 717424
+SHA256: e2bb6b26080d3b5ed462e63d8e8c7b8f05cd59f2cd2c2314271ef013ccd39a9a
+SHA1: 6f86d2e37fccb38c7173be1e5f67ca019b3f3dd2
+MD5sum: a9680eeaf964adaee844a4b0754dc7ce
 Description: Scalable, fast, and disk-friendly vector search in Postgres, the successor of pgvecto.rs.
   VectorChord (vchord) is a PostgreSQL extension designed for scalable, high-performance, and disk-efficient vector similarity search, and serves as the successor to pgvecto.rs.
   With VectorChord, you can store 400,000 vectors for just $1, enabling significant savings: 6x more vectors compared to Pinecone's optimized storage and 26x more than pgvector/pgvecto.rs for the same price1. For further insights, check out our launch blog post.
@@ -11478,20 +11697,19 @@ Version: 1.3.2-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 663
-Depends: postgresql-16, postgresql-16-jit-llvm (>= 16), libc6 (>= 2.4), postgresql-contrib-16
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 16), libc6 (>= 2.4), postgresql-16-ddlx
 Provides: postgresql-anonymizer
-Homepage: https://github.com/fboulnois/pg_permissions
+Homepage: https://gitlab.com/dalibo/postgresql_anonymizer
 Priority: optional
 Section: database
 Filename: pool/main/p/postgresql-anonymizer/postgresql-16-anonymizer_1.3.2-1PIGSTY~bookworm_amd64.deb
 Size: 223544
-SHA256: af59ad2e9cfcba451b9a212b44b649692d66fb3b1d90dae2ae92bb80a5296c54
-SHA1: 4aa48118b3fe0d422368f671fe441cd5cb635291
-MD5sum: 2b80e30b51a1ad76467b3bff109217fa
-Description: PostgreSQL extension to anonymize data
+SHA256: 0cdeec2d564e27ac21ad06dbaa461b081bd4dec650686507a940c18e02959a4c
+SHA1: 3c9ef4aa87d273ec4b0e638fd1557a58041b5296
+MD5sum: 475d8eb7c87e6080e37117ff45de450c
+Description: Anonymization & Data Masking for PostgreSQL
   postgresql_anonymizer is an extension to mask or replace personally
-  identifiable information (PII) or commercially sensitive data from
-  a PostgreSQL database.
+  identifiable information (PII) or commercially sensitive data from a PostgreSQL database.
   The project relies on a declarative approach of anonymization. This means
   we're using the PostgreSQL Data Definition Language (DDL) in order to specify
   the anonymization strategy inside the table definition itself.
@@ -13686,6 +13904,25 @@ Description: PostgreSQL Data Dictionary, Inspect data dictionary via SQL
   This extension makes it easy to provide a usable data dictionary to all users of a PostgreSQL database.
   See the full project documentation: https://rustprooflabs.github.io/pgdd/ for more information.
 
+Package: postgresql-16-pgdg-pgroonga
+Version: 3.2.5-1
+Architecture: amd64
+Maintainer: PGroonga Project <packages@groonga.org>
+Installed-Size: 2765
+Depends: libc6 (>= 2.33), libgroonga0 (>= 14.1.1), libmsgpackc2 (>= 2.1.0), libxxhash0 (>= 0.7.1), postgresql-16
+Conflicts: postgresql-16-pgroonga
+Homepage: https://pgroonga.github.io/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-16-pgdg-pgroonga/postgresql-16-pgdg-pgroonga_3.2.5-1_amd64.deb
+Size: 736116
+SHA256: 37310c53796d7e709487ed258672016e6ef5d96eb8f45f54480b42cb474c2f38
+SHA1: 8a1f13a762bce9630167614cb30fd342ea625c9e
+MD5sum: 3933ee7cb6f288359f2fd7133fa634d2
+Description: Fast full-text search plugin for PostgreSQL based on Groonga
+ PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
+ It is based on Groonga full-text search engine.
+
 Package: postgresql-16-pgjwt
 Source: pgjwt
 Version: 0.2.0-1PIGSTY~bookworm
@@ -13783,6 +14020,26 @@ SHA1: cca99ed27a488ef185d309cf440ae012c55338de
 MD5sum: 6b13a69bcd7dfe0ccf6b8bcb773d2c8d
 Description: A PostgreSQL extension that provides SQL functions to allow capture of node OS metrics via SQL queries.
   SQL functions that allow capture of node OS metrics from PostgreSQL
+
+Package: postgresql-16-pgpdf
+Source: pgpdf
+Version: 0.1.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 87
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 16), libc6 (>= 2.14), libglib2.0-0 (>= 2.31.8), libpoppler-glib8 (>= 20.09.0)
+Provides: postgresql-pgpdf
+Homepage: https://github.com/dverite/pgpdf
+Priority: optional
+Section: database
+Filename: pool/main/p/pgpdf/postgresql-16-pgpdf_0.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 26596
+SHA256: 513417589fbedf7319badc6569b25154e4679226c58791afa1187c66f61d058c
+SHA1: c6983f60afd89469c19079415525615ce9f31f84
+MD5sum: 08ff359b52c1ee31a1076952e9a030fb
+Description: PDF type for Postgres
+  This extension for PostgreSQL provides a pdf data type and assorted functions.
+  You can create a pdf type, by casting either a text filepath or bytea column.
 
 Package: postgresql-16-pgqr
 Source: pgqr
@@ -14335,16 +14592,16 @@ Version: 0.1.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 2229
-Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2), postgresql-16-pgvector
 Provides: postgresql-vchord
 Homepage: https://github.com/tensorchord/VectorChord
 Priority: optional
 Section: database
 Filename: pool/main/v/vchord/postgresql-16-vchord_0.1.0-1PIGSTY~bookworm_amd64.deb
-Size: 717460
-SHA256: f8a19d073efa6b513e9c7d5f473f2102d676c143eb787582d32c454fa94e4370
-SHA1: f12cec34f55a4ea4aaeec3f63bef5d52d36fdc63
-MD5sum: c5e77602697ca177c900528e55c3d95f
+Size: 717296
+SHA256: 354749954f58c1401fca2cedde31d5393f2efbb8cc8e0f50d7048083fcae8318
+SHA1: 9428073988b6e40322d3e85ee0a86714e077b064
+MD5sum: 83f17396ac3bed9bd7d61c1261087a57
 Description: Scalable, fast, and disk-friendly vector search in Postgres, the successor of pgvecto.rs.
   VectorChord (vchord) is a PostgreSQL extension designed for scalable, high-performance, and disk-efficient vector similarity search, and serves as the successor to pgvecto.rs.
   With VectorChord, you can store 400,000 vectors for just $1, enabling significant savings: 6x more vectors compared to Pinecone's optimized storage and 26x more than pgvector/pgvecto.rs for the same price1. For further insights, check out our launch blog post.
@@ -14480,20 +14737,19 @@ Version: 1.3.2-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 663
-Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.4), postgresql-contrib-17
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.4), postgresql-17-ddlx
 Provides: postgresql-anonymizer
-Homepage: https://github.com/fboulnois/pg_permissions
+Homepage: https://gitlab.com/dalibo/postgresql_anonymizer
 Priority: optional
 Section: database
 Filename: pool/main/p/postgresql-anonymizer/postgresql-17-anonymizer_1.3.2-1PIGSTY~bookworm_amd64.deb
 Size: 223808
-SHA256: c88d5df8992d03f46000f2c2b82b09a0f351046cbc2f3ffb3a76619b89f92ec0
-SHA1: 13b29773a2227e88789339d8cad10248a7c77538
-MD5sum: 2f3264c8be1795b471f671c4f349512e
-Description: PostgreSQL extension to anonymize data
+SHA256: 17a08dfe3a3d33f91e7cb3b1d401ee1dcc95a7f4bade83ce60a7032b7b0f0106
+SHA1: 3766fcbc4e05082e6b9e9fbb86ad4c820c398ac2
+MD5sum: 0542707d0f28df4ab1e7836f5b302dba
+Description: Anonymization & Data Masking for PostgreSQL
   postgresql_anonymizer is an extension to mask or replace personally
-  identifiable information (PII) or commercially sensitive data from
-  a PostgreSQL database.
+  identifiable information (PII) or commercially sensitive data from a PostgreSQL database.
   The project relies on a declarative approach of anonymization. This means
   we're using the PostgreSQL Data Definition Language (DDL) in order to specify
   the anonymization strategy inside the table definition itself.
@@ -16542,6 +16798,25 @@ Description: Cryptographic key management extension for PostgreSQL 17
   pgcryptokey allows the creation, selection, rotation, and deletion of cryptographic data keys.
   Each cryptographic data key is encrypted/decrypted with (i.e., wrapped inside) an access password. Accessing a cryptographic data key requires the proper access password, as illustrated below:
 
+Package: postgresql-17-pgdg-pgroonga
+Version: 3.2.5-1
+Architecture: amd64
+Maintainer: PGroonga Project <packages@groonga.org>
+Installed-Size: 2762
+Depends: libc6 (>= 2.33), libgroonga0 (>= 14.1.1), libmsgpackc2 (>= 2.1.0), libxxhash0 (>= 0.7.1), postgresql-17
+Conflicts: postgresql-17-pgroonga
+Homepage: https://pgroonga.github.io/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-17-pgdg-pgroonga/postgresql-17-pgdg-pgroonga_3.2.5-1_amd64.deb
+Size: 740660
+SHA256: 450d93741c3bd8972dbe29e913df16d9fb8087dd68c5a51b51b3ae0506924e6c
+SHA1: 80cea61e88448cc76a5f64f312379f064b036768
+MD5sum: 889e8cad0314eb5ec1524ce95023c177
+Description: Fast full-text search plugin for PostgreSQL based on Groonga
+ PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
+ It is based on Groonga full-text search engine.
+
 Package: postgresql-17-pgjwt
 Source: pgjwt
 Version: 0.2.0-1PIGSTY~bookworm
@@ -16639,6 +16914,26 @@ SHA1: 78d8b5d113ef5de711194f9a03a807af65738511
 MD5sum: 1bab79afcfba6ebe4dc9a9dc7f8e37a5
 Description: A PostgreSQL extension that provides SQL functions to allow capture of node OS metrics via SQL queries.
   SQL functions that allow capture of node OS metrics from PostgreSQL
+
+Package: postgresql-17-pgpdf
+Source: pgpdf
+Version: 0.1.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 87
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.14), libglib2.0-0 (>= 2.31.8), libpoppler-glib8 (>= 20.09.0)
+Provides: postgresql-pgpdf
+Homepage: https://github.com/dverite/pgpdf
+Priority: optional
+Section: database
+Filename: pool/main/p/pgpdf/postgresql-17-pgpdf_0.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 26612
+SHA256: 55ec089e4d17bc7748bd9765e15440850e4c289546435e3c6e923cdda121ca6a
+SHA1: 29f7fa4ebb266186ca092a9eefdcea901026a7e7
+MD5sum: c722e88007cc29ddda81d40c607fc570
+Description: PDF type for Postgres
+  This extension for PostgreSQL provides a pdf data type and assorted functions.
+  You can create a pdf type, by casting either a text filepath or bytea column.
 
 Package: postgresql-17-pgqr
 Source: pgqr
@@ -17132,16 +17427,16 @@ Version: 0.1.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 2229
-Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2), postgresql-17-pgvector
 Provides: postgresql-vchord
 Homepage: https://github.com/tensorchord/VectorChord
 Priority: optional
 Section: database
 Filename: pool/main/v/vchord/postgresql-17-vchord_0.1.0-1PIGSTY~bookworm_amd64.deb
-Size: 717692
-SHA256: 6a9c0c852d68e448c16a24be6000969abd355c3b7efd98d6fe9d7e42c5c49c5c
-SHA1: 7af095235f926ed850d671150cfee555f0a172b2
-MD5sum: 1c94096d15531131e75dd1393a35d204
+Size: 718360
+SHA256: 1ac98212c49367395a0f142a7d615375af3f14ac935be3c523b6dcf4928f2a90
+SHA1: 391abd7b3c9d3b35c47864e23ada6a1db72e052d
+MD5sum: de0860176301bb2365ee250ae920c6e7
 Description: Scalable, fast, and disk-friendly vector search in Postgres, the successor of pgvecto.rs.
   VectorChord (vchord) is a PostgreSQL extension designed for scalable, high-performance, and disk-efficient vector similarity search, and serves as the successor to pgvecto.rs.
   With VectorChord, you can store 400,000 vectors for just $1, enabling significant savings: 6x more vectors compared to Pinecone's optimized storage and 26x more than pgvector/pgvecto.rs for the same price1. For further insights, check out our launch blog post.
@@ -17315,114 +17610,6 @@ MD5sum: e7230c457075f6e6ff8c07588127c6eb
 Description: Simple Chinese Word Segmentation
   SCWS (Simple Chinese Word Segmentation) is a high performance Chinese word segmentation utility.
 
-Package: timescaledb-2-2.11.2-postgresql-12
-Version: 2.11.2~debian12
-Architecture: amd64
-Maintainer: Timescale <hello@timescale.com>
-Installed-Size: 19115
-Depends: timescaledb-2-loader-postgresql-12 (>= 2.11.2~), postgresql-12 (>= 12.8), libc6 (>= 2.14), libpq5 (>= 9.2~beta3), libssl3 (>= 3.0.0)
-Homepage: https://timescale.com
-Priority: optional
-Section: database
-Filename: pool/main/t/timescaledb-2-2.11.2-postgresql-12/timescaledb-2-2.11.2-postgresql-12_2.11.2~debian12_amd64.deb
-Size: 2898900
-SHA256: 558eadced80ac1a3dbd3d4d2b58e8e3a258ff4cccbc23a06931e2612d5637369
-SHA1: 44ff867764383afe461a1ee2fd2fea4760a558ae
-MD5sum: 87e77c7ae425e1b7e6b515382d052983
-Description: An open-source time-series database based on PostgreSQL, as an extension.
- An open-source time-series database optimized for fast ingest and complex queries.
- Engineered up from PostgreSQL, packaged as an extension.
-
-Package: timescaledb-2-2.15.3-postgresql-13
-Version: 2.15.3~debian12
-Architecture: amd64
-Maintainer: Timescale <hello@timescale.com>
-Installed-Size: 21346
-Depends: timescaledb-2-loader-postgresql-13 (>= 2.15.3~), postgresql-13 (>= 13.4), libc6 (>= 2.17), libssl3 (>= 3.0.0)
-Homepage: https://timescale.com
-Priority: optional
-Section: database
-Filename: pool/main/t/timescaledb-2-2.15.3-postgresql-13/timescaledb-2-2.15.3-postgresql-13_2.15.3~debian12_amd64.deb
-Size: 2512620
-SHA256: a1e6f04b3fc6ddac8025125df271ae8a3443f17f72bb6ed68ba44886ec8e6b6b
-SHA1: ddd1fa1fb84bc26b67d1fc4fc50417ea0359aa89
-MD5sum: 4fba23fac61ca4092c7f88a151cef61e
-Description: An open-source time-series database based on PostgreSQL, as an extension.
- An open-source time-series database optimized for fast ingest and complex queries.
- Engineered up from PostgreSQL, packaged as an extension.
-
-Package: timescaledb-2-2.17.2-postgresql-14
-Version: 2.17.2~debian12
-Architecture: amd64
-Maintainer: Timescale <hello@timescale.com>
-Installed-Size: 20458
-Depends: timescaledb-2-loader-postgresql-14 (>= 2.17.2~), postgresql-14, libc6 (>= 2.17)
-Homepage: https://timescale.com
-Priority: optional
-Section: database
-Filename: pool/main/t/timescaledb-2-2.17.2-postgresql-14/timescaledb-2-2.17.2-postgresql-14_2.17.2~debian12_amd64.deb
-Size: 2781088
-SHA256: 396e34114a0606c694c2ae03ca8807f8d0fc64a7550fe6f8c33aba26fcbd5b80
-SHA1: 30badaa65751ecddcd5865858d53c37568085b99
-MD5sum: a0d79bb3a664bb38c4a16331ba25a7ba
-Description: An open-source time-series database based on PostgreSQL, as an extension.
- An open-source time-series database optimized for fast ingest and complex queries.
- Engineered up from PostgreSQL, packaged as an extension.
-
-Package: timescaledb-2-2.17.2-postgresql-15
-Version: 2.17.2~debian12
-Architecture: amd64
-Maintainer: Timescale <hello@timescale.com>
-Installed-Size: 20596
-Depends: timescaledb-2-loader-postgresql-15 (>= 2.17.2~), postgresql-15 (>= 15.1), libc6 (>= 2.17)
-Homepage: https://timescale.com
-Priority: optional
-Section: database
-Filename: pool/main/t/timescaledb-2-2.17.2-postgresql-15/timescaledb-2-2.17.2-postgresql-15_2.17.2~debian12_amd64.deb
-Size: 2828172
-SHA256: 8efa78bd01e823a3c1b3fc9265b83f0900150f11d11d3ce53658460876d784fd
-SHA1: 7183fcd057ae48e0184ca71a8eba2ac735d838ae
-MD5sum: e6181c8c2c82f670271dd8c4bcdfc69e
-Description: An open-source time-series database based on PostgreSQL, as an extension.
- An open-source time-series database optimized for fast ingest and complex queries.
- Engineered up from PostgreSQL, packaged as an extension.
-
-Package: timescaledb-2-2.17.2-postgresql-16
-Version: 2.17.2~debian12
-Architecture: amd64
-Maintainer: Timescale <hello@timescale.com>
-Installed-Size: 20919
-Depends: timescaledb-2-loader-postgresql-16 (>= 2.17.2~), postgresql-16 (>= 16.0), libc6 (>= 2.17)
-Homepage: https://timescale.com
-Priority: optional
-Section: database
-Filename: pool/main/t/timescaledb-2-2.17.2-postgresql-16/timescaledb-2-2.17.2-postgresql-16_2.17.2~debian12_amd64.deb
-Size: 2929236
-SHA256: 4dc173749f6658de98ee849f52b45ae8dfc2e27e8e9eab60aae6c396e2459d42
-SHA1: 94292728886c89d1d92dced9f03144e548ac1ea7
-MD5sum: c626764c98a540c445e47c2f42cac29c
-Description: An open-source time-series database based on PostgreSQL, as an extension.
- An open-source time-series database optimized for fast ingest and complex queries.
- Engineered up from PostgreSQL, packaged as an extension.
-
-Package: timescaledb-2-2.17.2-postgresql-17
-Version: 2.17.2~debian12
-Architecture: amd64
-Maintainer: Timescale <hello@timescale.com>
-Installed-Size: 21429
-Depends: timescaledb-2-loader-postgresql-17 (>= 2.17.2~), postgresql-17 (>= 1n.0), libc6 (>= 2.17)
-Homepage: https://timescale.com
-Priority: optional
-Section: database
-Filename: pool/main/t/timescaledb-2-2.17.2-postgresql-17/timescaledb-2-2.17.2-postgresql-17_2.17.2~debian12_amd64.deb
-Size: 3025000
-SHA256: 77ba5adfcb7e68b7826f2eba6b96036bc6e7c4acb77a9d3c01bccff5071b899b
-SHA1: 7e3c81f21fcd6e5ef26dd7fcdb61d69d02a95c0e
-MD5sum: 5bb736c97ccef61e720da995ceeb7ce6
-Description: An open-source time-series database based on PostgreSQL, as an extension.
- An open-source time-series database optimized for fast ingest and complex queries.
- Engineered up from PostgreSQL, packaged as an extension.
-
 Package: timescaledb-2-loader-postgresql-12
 Source: timescaledb-2-2.11.2-postgresql-12
 Version: 2.11.2~debian12
@@ -17548,6 +17735,120 @@ SHA256: 77087e3c14920640e936289c4af5f17538c72a76023fe3d30e33fc6b2a9a41a4
 SHA1: 9b30dff323bb128fb2b4b7b2f7245b7d52a19964
 MD5sum: e755c37971af7a65b9af13a85145b29a
 Description: The loader for TimescaleDB to load individual versions.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-postgresql-12
+Version: 2.11.2~debian12
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 19116
+Depends: timescaledb-2-loader-postgresql-12 (>= 2.11.2~), postgresql-12 (>= 12.8), libc6 (>= 2.14), libpq5 (>= 9.2~beta3), libssl3 (>= 3.0.0)
+Recommends: timescaledb-tools, timescaledb-toolkit-postgresql-12
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-postgresql-12/timescaledb-2-postgresql-12_2.11.2~debian12_amd64.deb
+Size: 2899212
+SHA256: bb7a79aeda46081ca03dff45d27c74d25060889f1c7f10bf75ffd47d103009e8
+SHA1: 2bef5665777e613c1ae43a102a575d9244880da4
+MD5sum: b4ff869045bdee1774c8e32f80f4316e
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-postgresql-13
+Version: 2.15.3~debian12
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 152023
+Depends: timescaledb-2-loader-postgresql-13 (>= 2.15.3~), postgresql-13 (>= 13.4), libc6 (>= 2.17), libpq5 (>= 9.2~beta3), libssl3 (>= 3.0.0)
+Recommends: timescaledb-tools, timescaledb-toolkit-postgresql-13
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-postgresql-13/timescaledb-2-postgresql-13_2.15.3~debian12_amd64.deb
+Size: 19009688
+SHA256: 34c98a22b3a9c413757324363893b174e6afb1a70d63d94bbcd7a3d2f8e47c85
+SHA1: 0a8e96c280e12b2d57bcfbd5867c268722b85763
+MD5sum: 99e0d522eead199ffaa4b5488b900dc2
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-postgresql-14
+Version: 2.17.2~debian12
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 202925
+Depends: timescaledb-2-loader-postgresql-14 (>= 2.17.2~), postgresql-14, libc6 (>= 2.17), libpq5 (>= 9.2~beta3), libssl3 (>= 3.0.0)
+Recommends: timescaledb-tools, timescaledb-toolkit-postgresql-14
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-postgresql-14/timescaledb-2-postgresql-14_2.17.2~debian12_amd64.deb
+Size: 25345840
+SHA256: d8e22faae6677ec99f167536f2548ac0c759c9a05e13c67090c7f96b81b8e2d7
+SHA1: 5bb1cf0241011b2b4440553f9c6d768c896dbb8d
+MD5sum: 81337a74a9f924a5b1ee4ef650178e19
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-postgresql-15
+Version: 2.17.2~debian12
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 205659
+Depends: timescaledb-2-loader-postgresql-15 (>= 2.17.2~), postgresql-15 (>= 15.1), libc6 (>= 2.17), libpq5 (>= 9.2~beta3), libssl3 (>= 3.0.0)
+Recommends: timescaledb-tools, timescaledb-toolkit-postgresql-15
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-postgresql-15/timescaledb-2-postgresql-15_2.17.2~debian12_amd64.deb
+Size: 25349444
+SHA256: 7627fd630894f82d3e0ed3721a094df48f5ab4a3cfbf28f22ec2ddfb40a39939
+SHA1: 40f22c8bae4b1e0a9cdb3748c9b238f442123597
+MD5sum: 112e1b1363aa81a7a4588d9c73daa926
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-postgresql-16
+Version: 2.17.2~debian12
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 146144
+Depends: timescaledb-2-loader-postgresql-16 (>= 2.17.2~), postgresql-16 (>= 16.0), libc6 (>= 2.17), libpq5 (>= 9.2~beta3), libssl3 (>= 3.0.0)
+Recommends: timescaledb-tools, timescaledb-toolkit-postgresql-16
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-postgresql-16/timescaledb-2-postgresql-16_2.17.2~debian12_amd64.deb
+Size: 17464968
+SHA256: 11e1b72e55d90e4b196914344c0db7733ffa5adf7039bba718067c2b81403602
+SHA1: ca58e98019eac74872871c0ae899e1bbabc1b476
+MD5sum: 8282cd5f4cfbc1363c22038823c6d741
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-postgresql-17
+Version: 2.17.2~debian12
+Architecture: amd64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 42051
+Depends: timescaledb-2-loader-postgresql-17 (>= 2.17.2~), postgresql-17 (>= 17.0), libc6 (>= 2.17)
+Recommends: timescaledb-tools
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-postgresql-17/timescaledb-2-postgresql-17_2.17.2~debian12_amd64.deb
+Size: 4822548
+SHA256: 03a2321589e4ae0759d7f9dae223b0bddba0b0391e5243f7f0e364bccc805b34
+SHA1: 4c885fc84690951fabf7795b111a69fe2118e24b
+MD5sum: 8972771e0d828ff47f8a8148a45e77cb
+Description: An open-source time-series database based on PostgreSQL, as an extension.
  An open-source time-series database optimized for fast ingest and complex queries.
  Engineered up from PostgreSQL, packaged as an extension.
 

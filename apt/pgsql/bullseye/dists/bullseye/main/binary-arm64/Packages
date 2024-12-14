@@ -131,114 +131,6 @@ MD5sum: d5b70e0f482f6310ffe42be57ddf2f17
 Description: debug symbols for redis-tools
 Build-Ids: 1cd064f4496141313e2a2c546a83aac70058b0f7 547a507a81a62f277b4b235096b42e1771d35da4 62158647701a6d19a00544c4c5ebab4658feb3d1
 
-Package: timescaledb-2-2.11.2-postgresql-12
-Version: 2.11.2~debian11
-Architecture: arm64
-Maintainer: Timescale <hello@timescale.com>
-Installed-Size: 20523
-Depends: timescaledb-2-loader-postgresql-12 (>= 2.11.2~), postgresql-12 (>= 12.8), libc6 (>= 2.17), libpq5 (>= 9.2~beta3), libssl1.1 (>= 1.1.0)
-Homepage: https://timescale.com
-Priority: optional
-Section: database
-Filename: pool/main/t/timescaledb-2-2.11.2-postgresql-12/timescaledb-2-2.11.2-postgresql-12_2.11.2~debian11_arm64.deb
-Size: 2707128
-SHA256: beff719b05ab74c9f0828602f043a4a5c1ea552af54d4be8e18ad5b6677dcd56
-SHA1: 8598e14f61644ef98b96b1e9768032f6f612f3f7
-MD5sum: 27dc10d49ef15d6a9c813844f79cd103
-Description: An open-source time-series database based on PostgreSQL, as an extension.
- An open-source time-series database optimized for fast ingest and complex queries.
- Engineered up from PostgreSQL, packaged as an extension.
-
-Package: timescaledb-2-2.15.3-postgresql-13
-Version: 2.15.3~debian11
-Architecture: arm64
-Maintainer: Timescale <hello@timescale.com>
-Installed-Size: 22571
-Depends: timescaledb-2-loader-postgresql-13 (>= 2.15.3~), postgresql-13 (>= 13.4), libc6 (>= 2.17), libssl1.1 (>= 1.1.0)
-Homepage: https://timescale.com
-Priority: optional
-Section: database
-Filename: pool/main/t/timescaledb-2-2.15.3-postgresql-13/timescaledb-2-2.15.3-postgresql-13_2.15.3~debian11_arm64.deb
-Size: 2341464
-SHA256: 1dce6b95a6595e148c03ed3e4014218123c671921a61ba96562b992bb976199d
-SHA1: 6c1f4fdcb71cb9f246e94166aaa0d873c918c2d0
-MD5sum: 07e709c3902ac2a272ecfc79f7019452
-Description: An open-source time-series database based on PostgreSQL, as an extension.
- An open-source time-series database optimized for fast ingest and complex queries.
- Engineered up from PostgreSQL, packaged as an extension.
-
-Package: timescaledb-2-2.17.2-postgresql-14
-Version: 2.17.2~debian11
-Architecture: arm64
-Maintainer: Timescale <hello@timescale.com>
-Installed-Size: 21859
-Depends: timescaledb-2-loader-postgresql-14 (>= 2.17.2~), postgresql-14, libc6 (>= 2.17)
-Homepage: https://timescale.com
-Priority: optional
-Section: database
-Filename: pool/main/t/timescaledb-2-2.17.2-postgresql-14/timescaledb-2-2.17.2-postgresql-14_2.17.2~debian11_arm64.deb
-Size: 2598800
-SHA256: b4ac6e9f59527b4ee23f04ac2845c85cc0c1c80d9e221415ba7717632c4a225e
-SHA1: 2e8f01900f66c8a944e7d783fd5d985eeae728ae
-MD5sum: 8a90d1a91018e6355a49e8e9867445d2
-Description: An open-source time-series database based on PostgreSQL, as an extension.
- An open-source time-series database optimized for fast ingest and complex queries.
- Engineered up from PostgreSQL, packaged as an extension.
-
-Package: timescaledb-2-2.17.2-postgresql-15
-Version: 2.17.2~debian11
-Architecture: arm64
-Maintainer: Timescale <hello@timescale.com>
-Installed-Size: 22005
-Depends: timescaledb-2-loader-postgresql-15 (>= 2.17.2~), postgresql-15 (>= 15.1), libc6 (>= 2.17)
-Homepage: https://timescale.com
-Priority: optional
-Section: database
-Filename: pool/main/t/timescaledb-2-2.17.2-postgresql-15/timescaledb-2-2.17.2-postgresql-15_2.17.2~debian11_arm64.deb
-Size: 2657528
-SHA256: a112ae50ca7584a1e8359cae94a8e5c635a3a6d0900c203e3e9852cf06f0a924
-SHA1: ba55e26f9eb2b8c4f3e11ec58c2c12ef9f756103
-MD5sum: c1119f51ec40ad2d807bbb15841a59ad
-Description: An open-source time-series database based on PostgreSQL, as an extension.
- An open-source time-series database optimized for fast ingest and complex queries.
- Engineered up from PostgreSQL, packaged as an extension.
-
-Package: timescaledb-2-2.17.2-postgresql-16
-Version: 2.17.2~debian11
-Architecture: arm64
-Maintainer: Timescale <hello@timescale.com>
-Installed-Size: 22430
-Depends: timescaledb-2-loader-postgresql-16 (>= 2.17.2~), postgresql-16 (>= 16.0), libc6 (>= 2.17)
-Homepage: https://timescale.com
-Priority: optional
-Section: database
-Filename: pool/main/t/timescaledb-2-2.17.2-postgresql-16/timescaledb-2-2.17.2-postgresql-16_2.17.2~debian11_arm64.deb
-Size: 2773704
-SHA256: 28abeea6e2516b0ef934da957392f8682e3bd9b9230710c846ee19aabfc2416a
-SHA1: 5fc5e0225b889e1092606f593598f17cd99692db
-MD5sum: db15a9ba4f06871481e1acaf24161967
-Description: An open-source time-series database based on PostgreSQL, as an extension.
- An open-source time-series database optimized for fast ingest and complex queries.
- Engineered up from PostgreSQL, packaged as an extension.
-
-Package: timescaledb-2-2.17.2-postgresql-17
-Version: 2.17.2~debian11
-Architecture: arm64
-Maintainer: Timescale <hello@timescale.com>
-Installed-Size: 22949
-Depends: timescaledb-2-loader-postgresql-17 (>= 2.17.2~), postgresql-17 (>= 1n.0), libc6 (>= 2.17)
-Homepage: https://timescale.com
-Priority: optional
-Section: database
-Filename: pool/main/t/timescaledb-2-2.17.2-postgresql-17/timescaledb-2-2.17.2-postgresql-17_2.17.2~debian11_arm64.deb
-Size: 2888184
-SHA256: 41655c37236469cdd7c3ecec97d1f8b8885a9a6d44d7e2e6eb566f7cf301c005
-SHA1: 1acaaf7b897e250048a54864362beaf2958bc9e2
-MD5sum: 9cab5c25563256f0e0e1946cc77209f0
-Description: An open-source time-series database based on PostgreSQL, as an extension.
- An open-source time-series database optimized for fast ingest and complex queries.
- Engineered up from PostgreSQL, packaged as an extension.
-
 Package: timescaledb-2-loader-postgresql-12
 Source: timescaledb-2-2.11.2-postgresql-12
 Version: 2.11.2~debian11
@@ -364,6 +256,120 @@ SHA256: e28bdd326d97970b0e3efc69a9af324721581ae30fda1f9bc77c3d56473dbce4
 SHA1: 4fef8bf961552f5ba7f29d001d7d44a8da54becc
 MD5sum: e9248fabca39a126cf2923054d573ad2
 Description: The loader for TimescaleDB to load individual versions.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-postgresql-12
+Version: 2.11.2~debian11
+Architecture: arm64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 191011
+Depends: timescaledb-2-loader-postgresql-12 (>= 2.11.2~), postgresql-12 (>= 12.8), libc6 (>= 2.17), libpq5 (>= 9.2~beta3), libssl1.1 (>= 1.1.0)
+Recommends: timescaledb-tools
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-postgresql-12/timescaledb-2-postgresql-12_2.11.2~debian11_arm64.deb
+Size: 21740656
+SHA256: 4b415189cc95fc04e083f22385fae5908db9e63408c19404405c2503b82f535e
+SHA1: 58878a9cdabea327dc7481dcd799d15af3c6ef89
+MD5sum: d1f555d240d82ae20aaea9b30b4640fd
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-postgresql-13
+Version: 2.15.3~debian11
+Architecture: arm64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 326510
+Depends: timescaledb-2-loader-postgresql-13 (>= 2.15.3~), postgresql-13 (>= 13.4), libc6 (>= 2.17), libpq5 (>= 9.2~beta3), libssl1.1 (>= 1.1.0)
+Recommends: timescaledb-tools
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-postgresql-13/timescaledb-2-postgresql-13_2.15.3~debian11_arm64.deb
+Size: 35320248
+SHA256: e830ce736cb09b160bf36a9ab5be82db30c1181986c451d19b8d339b7b343b5e
+SHA1: 1de13f2d5f3cda8819a230f10dab32f74c575319
+MD5sum: b752783e48867e9774a1aaaed51202d9
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-postgresql-14
+Version: 2.17.2~debian11
+Architecture: arm64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 388464
+Depends: timescaledb-2-loader-postgresql-14 (>= 2.17.2~), postgresql-14, libc6 (>= 2.17), libpq5 (>= 9.2~beta3), libssl1.1 (>= 1.1.0)
+Recommends: timescaledb-tools
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-postgresql-14/timescaledb-2-postgresql-14_2.17.2~debian11_arm64.deb
+Size: 44749532
+SHA256: c713e9f9b221b500ffe8c1cc631e2f28c933e53ee54823df957c1ca833186448
+SHA1: c7a654af8c0e197a704b6b84a081fa0ebf2c6514
+MD5sum: c64fd9d900eadf86596dd5f9bf2af090
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-postgresql-15
+Version: 2.17.2~debian11
+Architecture: arm64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 321302
+Depends: timescaledb-2-loader-postgresql-15 (>= 2.17.2~), postgresql-15 (>= 15.1), libc6 (>= 2.17), libpq5 (>= 9.2~beta3), libssl1.1 (>= 1.1.0)
+Recommends: timescaledb-tools
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-postgresql-15/timescaledb-2-postgresql-15_2.17.2~debian11_arm64.deb
+Size: 37980608
+SHA256: eecad5129d86f03711695a5c582871bdddc573b54e7409947cc633320c8a93b0
+SHA1: d2522c0f2902abf81738ac72d52dcc14672fe85f
+MD5sum: 1f9718fb79441cdc8890e7ac68c68807
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-postgresql-16
+Version: 2.17.2~debian11
+Architecture: arm64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 165674
+Depends: timescaledb-2-loader-postgresql-16 (>= 2.17.2~), postgresql-16 (>= 16.0), libc6 (>= 2.17), libpq5 (>= 9.2~beta3), libssl1.1 (>= 1.1.0)
+Recommends: timescaledb-tools
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-postgresql-16/timescaledb-2-postgresql-16_2.17.2~debian11_arm64.deb
+Size: 18879504
+SHA256: 1167eabe6ea45d253ee94669a5ce659a204d302986676b116cfda67366c830a7
+SHA1: 273058129d36fdabe78186b7ef07a40d08f27db6
+MD5sum: b1e52a6818a63ab5cb60db9814e385a4
+Description: An open-source time-series database based on PostgreSQL, as an extension.
+ An open-source time-series database optimized for fast ingest and complex queries.
+ Engineered up from PostgreSQL, packaged as an extension.
+
+Package: timescaledb-2-postgresql-17
+Version: 2.17.2~debian11
+Architecture: arm64
+Maintainer: Timescale <hello@timescale.com>
+Installed-Size: 46610
+Depends: timescaledb-2-loader-postgresql-17 (>= 2.17.2~), postgresql-17 (>= 17.0), libc6 (>= 2.17)
+Recommends: timescaledb-tools
+Homepage: https://timescale.com
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-2-postgresql-17/timescaledb-2-postgresql-17_2.17.2~debian11_arm64.deb
+Size: 4472552
+SHA256: 197346cc8d7f3a7e270c7346dba07ee70deaf2eb897ba23b985af0f71289ad09
+SHA1: 7066f2173100295ac8f20291f1239a30588efa43
+MD5sum: 18b14de30f56f5fad1a1b9ea78ac4869
+Description: An open-source time-series database based on PostgreSQL, as an extension.
  An open-source time-series database optimized for fast ingest and complex queries.
  Engineered up from PostgreSQL, packaged as an extension.
 

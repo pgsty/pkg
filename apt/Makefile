@@ -74,6 +74,27 @@ pgsql-include:
 	reprepro -b pgsql includedeb jammy    stash/jammy.amd64/postgresql-16*.deb
 
 
+init-all: init-focal init-jammy init-noble init-bookworm init-bullseye
+init-focal:
+	rm -rf pgsql/focal/{db,dists,pool}
+	reprepro -b pgsql/focal includedeb focal ~/pgsty/apt/focal/*.deb
+init-jammy:
+	rm -rf pgsql/jammy/{db,dists,pool}
+	reprepro -b pgsql/jammy includedeb jammy ~/pgsty/apt/jammy/*.deb
+init-noble:
+	rm -rf pgsql/noble/{db,dists,pool}
+	reprepro -b pgsql/noble includedeb noble ~/pgsty/apt/noble/*.deb
+init-bookworm:
+	rm -rf pgsql/bookworm/{db,dists,pool}
+	reprepro -b pgsql/bookworm includedeb bookworm ~/pgsty/apt/bookworm/*.deb
+init-bullseye:
+	rm -rf pgsql/bullseye/{db,dists,pool}
+	reprepro -b pgsql/bullseye includedeb bullseye ~/pgsty/apt/bullseye/*.deb
+
+gen:
+	list/gen
+	git diff list/*
+
 ###############################################################
 #                        2. Syncing                           #
 ###############################################################
