@@ -332,19 +332,19 @@ MD5sum: 88faeab499e7904d1c196aab3d24b2d8
 Description: The Prometheus monitoring system and time series database.
 
 Package: prometheus2
-Version: 3.0.0-1
+Version: 2.55.1-1
 Architecture: arm64
 License: Apache-2.0 license
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 276637
+Installed-Size: 274965
 Homepage: https://github.com/prometheus/prometheus
 Priority: optional
 Section: 
-Filename: pool/main/p/prometheus2/prometheus2_3.0.0-1_arm64.deb
-Size: 108354788
-SHA256: afc39291e49a87456b9635a4c2b7253b23a4b282d96ef727ecd45d59c59b5523
-SHA1: 30bb21c28dcde47472749730eafcdca0237522fa
-MD5sum: f54669e8d482050203114f1d78f3bed3
+Filename: pool/main/p/prometheus2/prometheus2_2.55.1-1_arm64.deb
+Size: 106993768
+SHA256: d68bc5c024ad93cd8e056819e02b505a9ac47f50fa12954be12a5265e4e6cdf3
+SHA1: ed3b05473db26aa435178584e9f31f952b661fae
+MD5sum: 0504600c489b82eac42d942d68208b0c
 Description: The Prometheus monitoring system and time series database.
 
 Package: promscale
@@ -478,6 +478,22 @@ SHA256: d8ddbf7ca3430a2ee3c9971e01e56666eb19ffa846bc7e7f897a6f784299f9ce
 SHA1: 9cd5c65748faf4256602ca7fa1d51f6439dc470b
 MD5sum: d510a14a36e28db5d05fc71f5ff135b6
 Description: The financial transactions database designed for mission critical safety and performance
+
+Package: v2ray
+Version: 5.23.0-1
+Architecture: arm64
+License: MIT License
+Maintainer: V2fly Teams
+Installed-Size: 48879
+Homepage: https://github.com/v2fly/v2ray-core
+Priority: optional
+Section: 
+Filename: pool/main/v/v2ray/v2ray_5.23.0-1_arm64.deb
+Size: 15712054
+SHA256: 6ca2205f043b5bed12ee28757eb8288da4612c6d7c1b14baea3608577680f831
+SHA1: 441ae7dbc827f86f2857745aeb56e56b470a10ad
+MD5sum: a9f1e97ea4c19e9b325ec7b4d89f13db
+Description: A platform for building proxies to bypass network restrictions.
 
 Package: vector
 Version: 0.43.1-1
