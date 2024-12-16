@@ -89,23 +89,22 @@ Description: A wrapper library for Firebird's C API, loosely based on PostgreSQL
 
 Package: libgroonga0
 Source: groonga
-Version: 12.0.0-1
+Version: 14.1.1-1.ubuntu22.04.1
 Architecture: arm64
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Groonga Project <packages@groonga.org>
-Installed-Size: 7728
-Depends: libc6 (>= 2.35), libgcc-s1 (>= 3.3.1), liblz4-1 (>= 0.0~r130), libmsgpackc2 (>= 2.1.0), libstdc++6 (>= 11), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.2.0)
+Maintainer: Groonga Project <packages@groonga.org>
+Installed-Size: 9675
+Depends: libc6 (>= 2.35), libgcc-s1 (>= 3.3.1), libgomp1 (>= 4.9), liblz4-1 (>= 0.0~r130), libmsgpackc2 (>= 2.1.0), libsimdjson9 (>= 1.0.2), libstdc++6 (>= 11), libxxhash0 (>= 0.8.0), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.2.0)
 Breaks: libgroonga (<< 1.2.0-1)
 Replaces: libgroonga (<< 1.2.0-1)
 Multi-Arch: same
 Homepage: https://groonga.org/
 Priority: optional
 Section: libs
-Filename: pool/main/g/groonga/libgroonga0_12.0.0-1_arm64.deb
-Size: 1764474
-SHA256: f09eac82fd7d823a4384c391471783d0db7e861898ba36b72bf5e68458d90911
-SHA1: 04de660435552d2949267b0768ffdce62f16d440
-MD5sum: ee6b813b6797984eb332876c21d91858
+Filename: pool/main/g/groonga/libgroonga0_14.1.1-1.ubuntu22.04.1_arm64.deb
+Size: 2550410
+SHA256: 48628fc1dc92742aa2f6cba04b15c566da3cfe3c7d3d97c922aa0ece14806059
+SHA1: f3416af677375b9bc664a747f10ee849784e8cad
+MD5sum: cae9c8a9d7f87bb2a2ddacd098181c55
 Description: Library files for Groonga
  Groonga is an open-source fulltext search engine and column store.
  It lets you write high-performance applications that requires fulltext search.
