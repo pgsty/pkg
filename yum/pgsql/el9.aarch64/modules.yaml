@@ -1064,6 +1064,18 @@ data:
       - pgsphere_16-llvmjit
       - pgsphere_17
       - pgsphere_17-llvmjit
+      - pgsql_gzip_12
+      - pgsql_gzip_12-llvmjit
+      - pgsql_gzip_13
+      - pgsql_gzip_13-llvmjit
+      - pgsql_gzip_14
+      - pgsql_gzip_14-llvmjit
+      - pgsql_gzip_15
+      - pgsql_gzip_15-llvmjit
+      - pgsql_gzip_16
+      - pgsql_gzip_16-llvmjit
+      - pgsql_gzip_17
+      - pgsql_gzip_17-llvmjit
       - pguint_13
       - pguint_13-llvmjit
       - pguint_14
@@ -2361,6 +2373,18 @@ data:
     - pgsphere_16-llvmjit
     - pgsphere_17
     - pgsphere_17-llvmjit
+    - pgsql_gzip_12
+    - pgsql_gzip_12-llvmjit
+    - pgsql_gzip_13
+    - pgsql_gzip_13-llvmjit
+    - pgsql_gzip_14
+    - pgsql_gzip_14-llvmjit
+    - pgsql_gzip_15
+    - pgsql_gzip_15-llvmjit
+    - pgsql_gzip_16
+    - pgsql_gzip_16-llvmjit
+    - pgsql_gzip_17
+    - pgsql_gzip_17-llvmjit
     - pguint_13
     - pguint_13-llvmjit
     - pguint_14
@@ -3926,6 +3950,18 @@ data:
         rationale: Present in the repository
       pgsphere_17:
         rationale: Present in the repository
+      pgsql_gzip_12:
+        rationale: Present in the repository
+      pgsql_gzip_13:
+        rationale: Present in the repository
+      pgsql_gzip_14:
+        rationale: Present in the repository
+      pgsql_gzip_15:
+        rationale: Present in the repository
+      pgsql_gzip_16:
+        rationale: Present in the repository
+      pgsql_gzip_17:
+        rationale: Present in the repository
       pguint_13:
         rationale: Present in the repository
       pguint_14:
@@ -5254,6 +5290,18 @@ data:
     - pgsphere_16-llvmjit-0:1.5.1-1PIGSTY.el9.aarch64
     - pgsphere_17-0:1.5.1-1PIGSTY.el9.aarch64
     - pgsphere_17-llvmjit-0:1.5.1-1PIGSTY.el9.aarch64
+    - pgsql_gzip_12-0:1.0.0-4PIGSTY.el9.aarch64
+    - pgsql_gzip_12-llvmjit-0:1.0.0-4PIGSTY.el9.aarch64
+    - pgsql_gzip_13-0:1.0.0-4PIGSTY.el9.aarch64
+    - pgsql_gzip_13-llvmjit-0:1.0.0-4PIGSTY.el9.aarch64
+    - pgsql_gzip_14-0:1.0.0-4PIGSTY.el9.aarch64
+    - pgsql_gzip_14-llvmjit-0:1.0.0-4PIGSTY.el9.aarch64
+    - pgsql_gzip_15-0:1.0.0-4PIGSTY.el9.aarch64
+    - pgsql_gzip_15-llvmjit-0:1.0.0-4PIGSTY.el9.aarch64
+    - pgsql_gzip_16-0:1.0.0-4PIGSTY.el9.aarch64
+    - pgsql_gzip_16-llvmjit-0:1.0.0-4PIGSTY.el9.aarch64
+    - pgsql_gzip_17-0:1.0.0-4PIGSTY.el9.aarch64
+    - pgsql_gzip_17-llvmjit-0:1.0.0-4PIGSTY.el9.aarch64
     - pguint_13-0:1.20231206-1PIGSTY.el9.aarch64
     - pguint_13-llvmjit-0:1.20231206-1PIGSTY.el9.aarch64
     - pguint_14-0:1.20231206-1PIGSTY.el9.aarch64
