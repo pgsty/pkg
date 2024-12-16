@@ -558,6 +558,7 @@ data:
       - pg_failover_slots_16-llvmjit
       - pg_failover_slots_17
       - pg_failover_slots_17-llvmjit
+      - pg_filedump
       - pg_financial_12
       - pg_financial_12-llvmjit
       - pg_financial_13
@@ -1269,6 +1270,7 @@ data:
       - temporal_tables_16-llvmjit
       - temporal_tables_17
       - temporal_tables_17-llvmjit
+      - timescaledb-tools
       - toastinfo_12
       - toastinfo_12-llvmjit
       - toastinfo_13
@@ -1853,6 +1855,7 @@ data:
     - pg_failover_slots_16-llvmjit
     - pg_failover_slots_17
     - pg_failover_slots_17-llvmjit
+    - pg_filedump
     - pg_financial_12
     - pg_financial_12-llvmjit
     - pg_financial_13
@@ -2564,6 +2567,7 @@ data:
     - temporal_tables_16-llvmjit
     - temporal_tables_17
     - temporal_tables_17-llvmjit
+    - timescaledb-tools
     - toastinfo_12
     - toastinfo_12-llvmjit
     - toastinfo_13
@@ -3281,6 +3285,8 @@ data:
       pg_failover_slots_16:
         rationale: Present in the repository
       pg_failover_slots_17:
+        rationale: Present in the repository
+      pg_filedump:
         rationale: Present in the repository
       pg_financial_12:
         rationale: Present in the repository
@@ -4142,6 +4148,8 @@ data:
         rationale: Present in the repository
       temporal_tables_17:
         rationale: Present in the repository
+      timescaledb-tools:
+        rationale: Present in the repository
       toastinfo_12:
         rationale: Present in the repository
       toastinfo_13:
@@ -4740,6 +4748,7 @@ data:
     - pg_failover_slots_16-llvmjit-0:1.1.0-1PIGSTY.el9.aarch64
     - pg_failover_slots_17-0:1.1.0-1PIGSTY.el9.aarch64
     - pg_failover_slots_17-llvmjit-0:1.1.0-1PIGSTY.el9.aarch64
+    - pg_filedump-0:17.1-1PIGSTY.el9.aarch64
     - pg_financial_12-0:1.0.1-1PIGSTY.el9.aarch64
     - pg_financial_12-llvmjit-0:1.0.1-1PIGSTY.el9.aarch64
     - pg_financial_13-0:1.0.1-1PIGSTY.el9.aarch64
@@ -5451,6 +5460,7 @@ data:
     - temporal_tables_16-llvmjit-0:1.2.2-1PIGSTY.el9.aarch64
     - temporal_tables_17-0:1.2.2-1PIGSTY.el9.aarch64
     - temporal_tables_17-llvmjit-0:1.2.2-1PIGSTY.el9.aarch64
+    - timescaledb-tools-0:0.18.0-0.el9.aarch64
     - toastinfo_12-0:1.4-1PIGSTY.el9.aarch64
     - toastinfo_12-llvmjit-0:1.4-1PIGSTY.el9.aarch64
     - toastinfo_13-0:1.4-1PIGSTY.el9.aarch64

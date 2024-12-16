@@ -1271,6 +1271,7 @@ data:
       - temporal_tables_16-llvmjit
       - temporal_tables_17
       - temporal_tables_17-llvmjit
+      - timescaledb-tools
       - toastinfo_12
       - toastinfo_12-llvmjit
       - toastinfo_13
@@ -2568,6 +2569,7 @@ data:
     - temporal_tables_16-llvmjit
     - temporal_tables_17
     - temporal_tables_17-llvmjit
+    - timescaledb-tools
     - toastinfo_12
     - toastinfo_12-llvmjit
     - toastinfo_13
@@ -4150,6 +4152,8 @@ data:
         rationale: Present in the repository
       temporal_tables_17:
         rationale: Present in the repository
+      timescaledb-tools:
+        rationale: Present in the repository
       toastinfo_12:
         rationale: Present in the repository
       toastinfo_13:
@@ -5462,6 +5466,7 @@ data:
     - temporal_tables_16-llvmjit-0:1.2.2-1PIGSTY.el8.aarch64
     - temporal_tables_17-0:1.2.2-1PIGSTY.el8.aarch64
     - temporal_tables_17-llvmjit-0:1.2.2-1PIGSTY.el8.aarch64
+    - timescaledb-tools-0:0.18.0-0.el8.aarch64
     - toastinfo_12-0:1.4-1PIGSTY.el8.aarch64
     - toastinfo_12-llvmjit-0:1.4-1PIGSTY.el8.aarch64
     - toastinfo_13-0:1.4-1PIGSTY.el8.aarch64
