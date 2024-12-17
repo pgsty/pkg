@@ -32,7 +32,10 @@ data:
       - etcd
       - ferretdb
       - grafana
-      - grafana-extra
+      - grafana-infinity-ds
+      - grafana-plugins
+      - grafana-victorialogs-ds
+      - grafana-victoriametrics-ds
       - kafka
       - kafka_exporter
       - keepalived_exporter
@@ -76,7 +79,10 @@ data:
     - etcd
     - ferretdb
     - grafana
-    - grafana-extra
+    - grafana-infinity-ds
+    - grafana-plugins
+    - grafana-victorialogs-ds
+    - grafana-victoriametrics-ds
     - kafka
     - kafka_exporter
     - keepalived_exporter
@@ -126,7 +132,13 @@ data:
         rationale: Present in the repository
       grafana:
         rationale: Present in the repository
-      grafana-extra:
+      grafana-infinity-ds:
+        rationale: Present in the repository
+      grafana-plugins:
+        rationale: Present in the repository
+      grafana-victorialogs-ds:
+        rationale: Present in the repository
+      grafana-victoriametrics-ds:
         rationale: Present in the repository
       kafka:
         rationale: Present in the repository
@@ -206,7 +218,10 @@ data:
     - etcd-0:3.5.17-1.x86_64
     - ferretdb-0:1.24.0-1.x86_64
     - grafana-0:11.4.0-1.x86_64
-    - grafana-extra-0:11.4.0-1.noarch
+    - grafana-infinity-ds-0:2.11.4-1.x86_64
+    - grafana-plugins-0:11.4.0-1.noarch
+    - grafana-victorialogs-ds-0:0.12.0-1.x86_64
+    - grafana-victoriametrics-ds-0:0.10.3-1.x86_64
     - kafka-0:3.8.0-1.noarch
     - kafka_exporter-0:1.8.0-1.x86_64
     - keepalived_exporter-0:1.4.0-1.x86_64
