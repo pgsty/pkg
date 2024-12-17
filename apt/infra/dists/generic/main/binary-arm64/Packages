@@ -94,22 +94,73 @@ SHA1: 34f26747a238e330797fa3f0678601141211116c
 MD5sum: 1abe7d7c92c43a98f9c91a2eb28eb859
 Description: Grafana
 
-Package: grafana-extra
+Package: grafana-infinity-ds
+Version: 2.11.4
+Architecture: arm64
+License: Apache-2.0
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 43883
+Depends: grafana (>= 9.5.15)
+Homepage: https://github.com/grafana/grafana-infinity-datasource
+Priority: optional
+Section: 
+Filename: pool/main/g/grafana-infinity-ds/grafana-infinity-ds_2.11.4_arm64.deb
+Size: 14391264
+SHA256: 5aabaeea75bce99c9a532604711df6b9a7234c2fbdd49bb5835bb410cd1d8d14
+SHA1: d23e3dc1c9f0474e5e3a5d706d12dd6a6cdb44bf
+MD5sum: e9dfaf7febe66fe5ce5edfc39c45ed84
+Description: CSV, JSON, GraphQL, XML and HTML datasource for grafana.
+
+Package: grafana-plugins
 Version: 11.4.0
 Architecture: all
 License: Apache-2.0
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 67964
-Depends: grafana
+Depends: grafana (>= 11.0.0)
 Homepage: https://pigsty.io
 Priority: optional
 Section: 
-Filename: pool/main/g/grafana-extra/grafana-extra_11.4.0_all.deb
-Size: 26964320
-SHA256: f44e44ca81ba57e93c0b56db4332634e281205093766f4c955fd4068df929743
-SHA1: 579aef135bece83c41b1231492a19dfe06874e09
-MD5sum: 90914a9f72dc3de516bbbffcaab428d5
+Filename: pool/main/g/grafana-plugins/grafana-plugins_11.4.0_all.deb
+Size: 26964336
+SHA256: 261c069af963140581d9fd78ae12e6bb9ed168666e301e27a5c8356ff9aeb5e4
+SHA1: 3b6998439debab293dd199b0a2fc4048b81a3adb
+MD5sum: b153f1df828831f565bdfe58f1141f22
 Description: extra panels, datasources, resources for grafana
+
+Package: grafana-victorialogs-ds
+Version: 0.12.0
+Architecture: arm64
+License: Apache-2.0
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 32400
+Depends: grafana (>= 10.0.3)
+Homepage: https://github.com/VictoriaMetrics/victorialogs-datasource
+Priority: optional
+Section: 
+Filename: pool/main/g/grafana-victorialogs-ds/grafana-victorialogs-ds_0.12.0_arm64.deb
+Size: 16261130
+SHA256: 64e136af6e8e6a2931565645d5ba4c6744ccd41272c1687370fec39b487c8714
+SHA1: 518a45d1363b0ad23364348ac9dd635604e27f0e
+MD5sum: 97cbaff6af2e1d445fa2e6c30fcf40b6
+Description: Grafana datasource for VictoriaLogs
+
+Package: grafana-victoriametrics-ds
+Version: 0.10.3
+Architecture: arm64
+License: AGPL-3.0
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 51266
+Depends: grafana (>= 8.3.0)
+Homepage: https://github.com/VictoriaMetrics/victoriametrics-datasource
+Priority: optional
+Section: 
+Filename: pool/main/g/grafana-victoriametrics-ds/grafana-victoriametrics-ds_0.10.3_arm64.deb
+Size: 20745670
+SHA256: 7413279807e5a9fc16147b4ab3975693529b83e5a9be8c16bfaa982b58d37dc3
+SHA1: 517e462d830e7766b6f59c3712556f9d6d388d85
+MD5sum: 27ab5e90dd99e6a59e5bec48f2cded2b
+Description: Grafana datasource for VictoriaMetrics
 
 Package: kafka
 Version: 3.8.0
@@ -293,10 +344,10 @@ Homepage: https://github.com/dalibo/pev2
 Priority: optional
 Section: 
 Filename: pool/main/p/pev2/pev2_1.12.1_all.deb
-Size: 277566
-SHA256: 106531efe5a7d5e0089a5f3f49390e3141727ef0ac45a863cbc953eabd5c3acb
-SHA1: 9c35d15214674ba7a63f505b0fa7dda0071c1990
-MD5sum: 8a87aff51cdc63a8aa291bafdf87a65f
+Size: 277554
+SHA256: e7771bd9636373fbfa6e28d0d0210ff6b27919787a6aa6c768b66761d64cb151
+SHA1: 8553f41000fcdfdd1e84d9a80982a9ae9d822936
+MD5sum: 6c4e938ceee96b15fa6b172aba6ee813
 Description: PostgreSQL Explain Visualizer
 
 Package: pg-exporter
@@ -610,40 +661,6 @@ SHA256: 8544f30b3c5eab5e98ff0ecf13180f5168a7337f1ffcaba643d6f62fb59931c2
 SHA1: 1814a113c770262a39f583b986805867d1e40e38
 MD5sum: 8b5ee3c76bdfaafed6738333898837c0
 Description: fast, cost-effective monitoring solution and time series database, agent,alert,auth,backup,ctl
-
-Package: victorialogs-datasource
-Version: 0.12.0
-Architecture: all
-License: Apache-2.0
-Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 207770
-Depends: grafana
-Homepage: https://github.com/VictoriaMetrics/victorialogs-datasource
-Priority: optional
-Section: 
-Filename: pool/main/v/victorialogs-datasource/victorialogs-datasource_0.12.0_all.deb
-Size: 101394232
-SHA256: 889eefce6bf69f1e4f80b75ce52800eaa0d46ff881248bad36e93aeacecb9ae1
-SHA1: 6ef73f67d1a7d9122ab1a17fcdf3f81ccb7c8fc1
-MD5sum: 7ae7aaa6da4953ce3f6478ffc4770fa5
-Description: Grafana datasource for VictoriaLogs
-
-Package: victoriametrics-datasource
-Version: 0.10.3
-Architecture: all
-License: AGPL-3.0
-Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 224815
-Depends: grafana
-Homepage: https://github.com/VictoriaMetrics/victoriametrics-datasource
-Priority: optional
-Section: 
-Filename: pool/main/v/victoriametrics-datasource/victoriametrics-datasource_0.10.3_all.deb
-Size: 104866848
-SHA256: 79650970b0ec238da530123812d665844c9d552b5fff7002e12e6777de747ae9
-SHA1: 520204b8b494b8c23a22e0a79d0bb83162586f0e
-MD5sum: e6a73d76f4114203f8fdb67c26fb7178
-Description: Grafana datasource for VictoriaMetrics
 
 Package: vip-manager
 Version: 3.0.0
