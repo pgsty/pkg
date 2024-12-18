@@ -239,33 +239,33 @@ MD5sum: 7a446a24a5898698e69828fa14a7c8ba
 Description: Loki Logging Service
 
 Package: mcli
-Version: 20241117193525.0.0
+Version: 20241121172154.0.0
 Architecture: arm64
 Maintainer: MinIO Development <dev@minio.io>
 Installed-Size: 25984
 Homepage: https://min.io
 Priority: optional
 Section: 
-Filename: pool/main/m/mcli/mcli_20241117193525.0.0_arm64.deb
-Size: 9491332
-SHA256: 179eec5bc870b98e47196e29d3bb169c727f46014e8311219e48c181c5ea3aea
-SHA1: f4cdd2f6fd2ff187d3b8ec110debffd869c7b2b1
-MD5sum: d41c80dfe9f4d1b3ac5754c74d119e7d
+Filename: pool/main/m/mcli/mcli_20241121172154.0.0_arm64.deb
+Size: 9492864
+SHA256: cc450807c59072d250c51932d49737a163be6c4ee90dc51c55f1c1cd7f026d11
+SHA1: 90f87d396b26a21e3ca1f1d54cc313bcf36771ea
+MD5sum: ae7a6ad2cd6ffdefa466834431e07039
 Description: MinIO Client for cloud storage and filesystems
 
 Package: minio
-Version: 20241107005220.0.0
+Version: 20241213221912.0.0
 Architecture: arm64
 Maintainer: MinIO Development <dev@minio.io>
-Installed-Size: 97025
+Installed-Size: 108417
 Homepage: https://min.io
 Priority: optional
 Section: 
-Filename: pool/main/m/minio/minio_20241107005220.0.0_arm64.deb
-Size: 35315920
-SHA256: f6e9ff15b6a5df1285e337691b31b6ada60111be0bda8b06252e0f242b4a0ac1
-SHA1: 236e53e4c2016859fdaedb2b65fcf2daa8a12845
-MD5sum: 216aee74ccd9a811aeebb95c2f9f1bf1
+Filename: pool/main/m/minio/minio_20241213221912.0.0_arm64.deb
+Size: 37982952
+SHA256: e70c212692e100c41e2d269a30777952880d23a6997fad6248f1a726a729a31c
+SHA1: 0f8647406aaa0735e14198bb8119c8659daf7490
+MD5sum: dc0c2d930b4d2e25a00241c66595550c
 Description: MinIO is a High Performance Object Storage released under AGPLv3.
  It is API compatible with Amazon S3 cloud storage service. Use MinIO to build
  high performance infrastructure for machine learning, analytics and application

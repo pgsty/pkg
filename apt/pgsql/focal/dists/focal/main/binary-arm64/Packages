@@ -22,59 +22,59 @@ Description: fast and reliable load balancing reverse proxy
  status.
 
 Package: postgresql-14-pg-search
-Version: 0.13.1
+Version: 0.13.2
 Architecture: arm64
 Depends: postgresql-14
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.13.1_arm64.deb
-Size: 45513940
-SHA256: 4687b4e633e69caaba3817a097725d338a18a2c22f4819b18ea37dba935127d1
-SHA1: f9f14e4b5b526f7da9ca33d391fe8461ed9bf88e
-MD5sum: f7ca690eb74290a5253e49e877ef8b8b
+Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.13.2_arm64.deb
+Size: 45516520
+SHA256: f27328d45d18b897d3abe3f18bf6cd23a8731c00edb2c6dbd71946531a82150e
+SHA1: c511858a53f4789cbc993b0236807da4cc891667
+MD5sum: 7a0b69bc5b57604c38692a01e8482650
 Description: Postgres for Search and Analytics
 
 Package: postgresql-15-pg-search
-Version: 0.13.1
+Version: 0.13.2
 Architecture: arm64
 Depends: postgresql-15
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.13.1_arm64.deb
-Size: 45510508
-SHA256: b0235317320e754a8f8fcabe81ed5eb2a58612c0cbe9b10e44269af4ab1d0fc3
-SHA1: 8d05ae2ae83d91f420f5e528b28c7b5f0e1b65db
-MD5sum: 85a86dc8d5ec0c5b0042e065da7b2bcc
+Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.13.2_arm64.deb
+Size: 45510968
+SHA256: aaae684922a95d4cc84d460e50fa3ef5f0d41e29fc700b4811e964996f74e4fa
+SHA1: d9c482e5cabfd0a08302041c279c47c81230f4f2
+MD5sum: 4e3779ce3ece4266fb3ab7d20457544f
 Description: Postgres for Search and Analytics
 
 Package: postgresql-16-pg-search
-Version: 0.13.1
+Version: 0.13.2
 Architecture: arm64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.13.1_arm64.deb
-Size: 45512596
-SHA256: 0fa756f1887ad14c8543e94385661906161cf93abd1db37e765bd94cc6f2b92d
-SHA1: 7eec339a1ef092fc944d91294e839997c61b761b
-MD5sum: 67252f2e7d67a9062b360d709b9279a5
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.13.2_arm64.deb
+Size: 45512548
+SHA256: d1ed8c60a2682afab93cab065f65662b6155ac278b8631351f608c6d1a7a3b60
+SHA1: 90205237f092f26cb9432439a176d2342aacea84
+MD5sum: 235374872662fc66d311fb6eb5e7b52d
 Description: Postgres for Search and Analytics
 
 Package: postgresql-17-pg-search
-Version: 0.13.1
+Version: 0.13.2
 Architecture: arm64
 Depends: postgresql-17
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.13.1_arm64.deb
-Size: 45512544
-SHA256: 2f3ac71b8df2b292cafc63d1c612218574a167d056d5be8b64d3bb5a30f190e1
-SHA1: e55e3beccba7208a39e453599a95c99d72e1146c
-MD5sum: e0a3db474486bad47dcde9dac29532c1
+Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.13.2_arm64.deb
+Size: 45512100
+SHA256: 967239f04aedd6a95fddb0fde9a086403feb938d316d144437cfa37e7efe5abf
+SHA1: f18c9383a8b46321a31f38c03d6626cda194f050
+MD5sum: 4d1b80f1724373c1752d1dcf1803eccf
 Description: Postgres for Search and Analytics
 
 Package: redis

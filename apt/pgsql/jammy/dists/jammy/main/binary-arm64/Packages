@@ -89,22 +89,23 @@ Description: A wrapper library for Firebird's C API, loosely based on PostgreSQL
 
 Package: libgroonga0
 Source: groonga
-Version: 14.1.1-1.ubuntu22.04.1
+Version: 12.0.0-1
 Architecture: arm64
-Maintainer: Groonga Project <packages@groonga.org>
-Installed-Size: 9675
-Depends: libc6 (>= 2.35), libgcc-s1 (>= 3.3.1), libgomp1 (>= 4.9), liblz4-1 (>= 0.0~r130), libmsgpackc2 (>= 2.1.0), libsimdjson9 (>= 1.0.2), libstdc++6 (>= 11), libxxhash0 (>= 0.8.0), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.2.0)
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Groonga Project <packages@groonga.org>
+Installed-Size: 7728
+Depends: libc6 (>= 2.35), libgcc-s1 (>= 3.3.1), liblz4-1 (>= 0.0~r130), libmsgpackc2 (>= 2.1.0), libstdc++6 (>= 11), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.2.0)
 Breaks: libgroonga (<< 1.2.0-1)
 Replaces: libgroonga (<< 1.2.0-1)
 Multi-Arch: same
 Homepage: https://groonga.org/
 Priority: optional
 Section: libs
-Filename: pool/main/g/groonga/libgroonga0_14.1.1-1.ubuntu22.04.1_arm64.deb
-Size: 2550410
-SHA256: 48628fc1dc92742aa2f6cba04b15c566da3cfe3c7d3d97c922aa0ece14806059
-SHA1: f3416af677375b9bc664a747f10ee849784e8cad
-MD5sum: cae9c8a9d7f87bb2a2ddacd098181c55
+Filename: pool/main/g/groonga/libgroonga0_12.0.0-1_arm64.deb
+Size: 1764474
+SHA256: f09eac82fd7d823a4384c391471783d0db7e861898ba36b72bf5e68458d90911
+SHA1: 04de660435552d2949267b0768ffdce62f16d440
+MD5sum: ee6b813b6797984eb332876c21d91858
 Description: Library files for Groonga
  Groonga is an open-source fulltext search engine and column store.
  It lets you write high-performance applications that requires fulltext search.
@@ -6195,17 +6196,17 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 14
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
 Package: postgresql-14-pg-analytics
-Version: 0.2.3
+Version: 0.2.4
 Architecture: arm64
 Depends: postgresql-14
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-14-pg-analytics/postgresql-14-pg-analytics_0.2.3_arm64.deb
-Size: 8513388
-SHA256: 31c4141eab1b82a27947ec3b9b8a50a6012cd5857b9e749e8b6091f33a843740
-SHA1: 0673be8057ff604a754467dc562e43f6693aa755
-MD5sum: 33dea20b0ac625f529d8947f62fd037f
+Filename: pool/main/p/postgresql-14-pg-analytics/postgresql-14-pg-analytics_0.2.4_arm64.deb
+Size: 9352480
+SHA256: e48eec3dd7a63ae11f4b28c8c8b4892f59d098b5d31e4dc32b65ada9e5c4818c
+SHA1: e76be0aeb70527766e748c394ff2e37561260518
+MD5sum: b95a7fddfefa2ed7470b1e426b6937aa
 Description: DuckDB-powered analytics for Postgres
 
 Package: postgresql-14-pg-arraymath
@@ -6479,18 +6480,18 @@ Source: pg-duckdb
 Version: 0.2.0-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 23438
-Depends: postgresql-14, postgresql-14-jit-llvm (>= 15), libc6 (>= 2.34), libgcc-s1 (>= 4.5), liblz4-1 (>= 0.0~r113), libpq5, libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
+Installed-Size: 38437
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.5), liblz4-1 (>= 0.0~r113), libpq5, libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12), postgresql-14
 Provides: postgresql-pg-duckdb
 Homepage: https://github.com/duckdb/pg_duckdb
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-duckdb/postgresql-14-pg-duckdb_0.2.0-1PIGSTY~jammy_arm64.deb
-Size: 7173696
-SHA256: afc580c9ef66d3e47f791c70277e9a70da20413c0525d6f6111919855a1a051c
-SHA1: d69cf7da949a3b63cef34a94d834752ead7d1690
-MD5sum: 1abd30adc1e2a819dfb43897147926f6
-Description: DuckDB-powered Postgres for high performance apps & analytics.
+Size: 10232150
+SHA256: 7cbbe91f4de985cfcf12d0451763257ed48c447b3fa883b155e8c514b7cd0d1c
+SHA1: 9274504fb8108d6fe2e23721f9b91407872f2d76
+MD5sum: b798fdec1cb4dfe69a7db5caf3013dc3
+Description: DuckDB-powered Postgres for high performance apps & analytics for PostgreSQL 14
   pg_duckdb is a Postgres extension that embeds DuckDB's columnar-vectorized analytics engine and features into Postgres.
   We recommend using pg_duckdb to build high performance analytics and data-intensive applications.
   pg_duckdb was developed in collaboration with our partners, Hydra and MotherDuck.
@@ -7183,17 +7184,17 @@ Description: A postgres extension to avoid accidental mistakes
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
 Package: postgresql-14-pg-search
-Version: 0.13.1
+Version: 0.13.2
 Architecture: arm64
 Depends: postgresql-14
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.13.1_arm64.deb
-Size: 45506224
-SHA256: f888771e42d67ae3ba194f62166837ad5af199dc65b43ca4aeed3f8527819f78
-SHA1: 911e73d723b599d8e16271ed50477e74f92d62f5
-MD5sum: 06da22f1676c479a426abf2d83865311
+Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.13.2_arm64.deb
+Size: 45506020
+SHA256: 12e2b47823f6240597913b87ee85e2ca61c27d9f6b2ac012c756f56459ece916
+SHA1: 6311cd39069f79bc05f423260ef175d24f4f84cc
+MD5sum: 1d5b9ed27a80ee3aa32958641b7f2348
 Description: Postgres for Search and Analytics
 
 Package: postgresql-14-pg-session-jwt
@@ -9134,17 +9135,17 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 15
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
 Package: postgresql-15-pg-analytics
-Version: 0.2.3
+Version: 0.2.4
 Architecture: arm64
 Depends: postgresql-15
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-15-pg-analytics/postgresql-15-pg-analytics_0.2.3_arm64.deb
-Size: 8521736
-SHA256: bb32c98cacf4f4dbc5f6299f1e258a9e33a532398590e219e7673ebf391b498f
-SHA1: 13467afc4a2033990c3ff520a66199cd65cd0b9f
-MD5sum: fe96f3d6a1ee1ebff683087fd24823b9
+Filename: pool/main/p/postgresql-15-pg-analytics/postgresql-15-pg-analytics_0.2.4_arm64.deb
+Size: 9350688
+SHA256: 7b13a9c08242b98a82179f1f3c7331a5ff5384d658e566ad76d7f3968378a058
+SHA1: 8f685d378e46436338bc0d7e3c917ce2ad38812b
+MD5sum: 51cafd61aaaac0e1c93700b9baa84c3e
 Description: DuckDB-powered analytics for Postgres
 
 Package: postgresql-15-pg-arraymath
@@ -9418,18 +9419,18 @@ Source: pg-duckdb
 Version: 0.2.0-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 23438
-Depends: postgresql-15, postgresql-15-jit-llvm (>= 15), libc6 (>= 2.34), libgcc-s1 (>= 4.5), liblz4-1 (>= 0.0~r113), libpq5, libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
+Installed-Size: 38449
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.5), liblz4-1 (>= 0.0~r113), libpq5, libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12), postgresql-15
 Provides: postgresql-pg-duckdb
 Homepage: https://github.com/duckdb/pg_duckdb
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-duckdb/postgresql-15-pg-duckdb_0.2.0-1PIGSTY~jammy_arm64.deb
-Size: 7173690
-SHA256: dbc8fc49564f0f098b707497f788e7972615e142a6aa582944eb5fb012408726
-SHA1: 5fa7292f5ef888346d9107e25336e00611d5475d
-MD5sum: c05fb67da62aff3100d6df748eb89dad
-Description: DuckDB-powered Postgres for high performance apps & analytics.
+Size: 10232534
+SHA256: 477965b09b67903672fe44277f1d7dd07381a3f2156fbf1f652ee35704c8fb06
+SHA1: 5754fa70a713236d2c2b6b0882444b069e376652
+MD5sum: 0dc32b79ec00a3bd2346469c6aa0e072
+Description: DuckDB-powered Postgres for high performance apps & analytics for PostgreSQL 15
   pg_duckdb is a Postgres extension that embeds DuckDB's columnar-vectorized analytics engine and features into Postgres.
   We recommend using pg_duckdb to build high performance analytics and data-intensive applications.
   pg_duckdb was developed in collaboration with our partners, Hydra and MotherDuck.
@@ -10122,17 +10123,17 @@ Description: A postgres extension to avoid accidental mistakes
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
 Package: postgresql-15-pg-search
-Version: 0.13.1
+Version: 0.13.2
 Architecture: arm64
 Depends: postgresql-15
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.13.1_arm64.deb
-Size: 45504856
-SHA256: df564f983f8ba3c5d4f3f0a4e541620fe949581574c3682cbc8c7622820357d6
-SHA1: f767c5a94954aa2e1795a7ba97515f752f3f902d
-MD5sum: 57bbfef66d7fc6572c55f0ed288cd3a6
+Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.13.2_arm64.deb
+Size: 45505852
+SHA256: 658fa206374f8c5d49298c05f861580e36df207a0d52758b9e71e4fb61c2cb55
+SHA1: d367eb76037f9618463bc138d8db53b6e02daa40
+MD5sum: 2b26885abc53a4abfa5478b08280cbb5
 Description: Postgres for Search and Analytics
 
 Package: postgresql-15-pg-session-jwt
@@ -12073,17 +12074,17 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 16
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
 Package: postgresql-16-pg-analytics
-Version: 0.2.3
+Version: 0.2.4
 Architecture: arm64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-analytics/postgresql-16-pg-analytics_0.2.3_arm64.deb
-Size: 8536988
-SHA256: c4dbbb712c779a3c5782996cdb2b257f7c285f09c2eac8a9461835dae5b5b5c1
-SHA1: 372865a7b0dd2a85a861233a9d1f17cd7c2acf58
-MD5sum: 169bf392c82f76153e421942e09e7195
+Filename: pool/main/p/postgresql-16-pg-analytics/postgresql-16-pg-analytics_0.2.4_arm64.deb
+Size: 9346648
+SHA256: 96785b08e7320e6902e5f3f38bcaf65f1cc263de59b436c23738ef6b53a72ae1
+SHA1: c6028d8242aac9817ed2a6fc79e143eaf852419c
+MD5sum: 23de888eee509c424f7377dfdb3ad897
 Description: DuckDB-powered analytics for Postgres
 
 Package: postgresql-16-pg-arraymath
@@ -12357,18 +12358,18 @@ Source: pg-duckdb
 Version: 0.2.0-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 23421
-Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.34), libgcc-s1 (>= 4.5), liblz4-1 (>= 0.0~r113), libpq5, libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
+Installed-Size: 38368
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.5), liblz4-1 (>= 0.0~r113), libpq5, libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12), postgresql-16
 Provides: postgresql-pg-duckdb
 Homepage: https://github.com/duckdb/pg_duckdb
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-duckdb/postgresql-16-pg-duckdb_0.2.0-1PIGSTY~jammy_arm64.deb
-Size: 7158396
-SHA256: df4fb91dfcc1ba7ab787d15ae8048b8feb9825a83c3e55d284b80887a3354eae
-SHA1: 35e0b2a39874165abd77b65e38d2c29892afe5e0
-MD5sum: 400c69a6bc914c6213fdfe167845dfe4
-Description: DuckDB-powered Postgres for high performance apps & analytics.
+Size: 10226280
+SHA256: 9ee32d17bfbf568774990a0038ce6c444ffde10c301c515bd6d91ff2d2df5996
+SHA1: 5ba956543c7fd71f2c80e0f7f0a2914fcc190b60
+MD5sum: 27c5f9260b7bc34a27d7e77a33299337
+Description: DuckDB-powered Postgres for high performance apps & analytics for PostgreSQL 16
   pg_duckdb is a Postgres extension that embeds DuckDB's columnar-vectorized analytics engine and features into Postgres.
   We recommend using pg_duckdb to build high performance analytics and data-intensive applications.
   pg_duckdb was developed in collaboration with our partners, Hydra and MotherDuck.
@@ -13061,17 +13062,17 @@ Description: A postgres extension to avoid accidental mistakes
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
 Package: postgresql-16-pg-search
-Version: 0.13.1
+Version: 0.13.2
 Architecture: arm64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.13.1_arm64.deb
-Size: 45505564
-SHA256: c25468d68b9f04f987c2e539800969bef653386043064e197ce6a9a60cd3db46
-SHA1: 51498d5023a2f29072b20a30d0650604691191a2
-MD5sum: 2854a7eb59371486b379eb04b6ea477e
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.13.2_arm64.deb
+Size: 45509536
+SHA256: a9c99b3b25efef3ab97a21da6b4e0489c007bed8a9d59902d28a6f6da6f8ee8b
+SHA1: 2f0e25342ba496dc0758eac9e388b64a9dd0b33b
+MD5sum: a6c97056cbe5dfb55d05d0d2ca60b9fd
 Description: Postgres for Search and Analytics
 
 Package: postgresql-16-pg-session-jwt
@@ -14989,17 +14990,17 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 17
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
 Package: postgresql-17-pg-analytics
-Version: 0.2.3
+Version: 0.2.4
 Architecture: arm64
 Depends: postgresql-17
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-17-pg-analytics/postgresql-17-pg-analytics_0.2.3_arm64.deb
-Size: 8536408
-SHA256: c5cf88c919e37416edc45c7edd7cd3940645961aa618702195df02fa5e2c3c19
-SHA1: 7007798b2ed06853210a30a3b093d772a60c7ea4
-MD5sum: 91f6225095e77311a3f828a461eca272
+Filename: pool/main/p/postgresql-17-pg-analytics/postgresql-17-pg-analytics_0.2.4_arm64.deb
+Size: 9341528
+SHA256: a89f5c54b8e7414a6e233e7c5f2b8275e93f363930bad8d3fb40334b4b5a9cd6
+SHA1: 5ffd4cb11855a5fe713df618a84741880d5b19b2
+MD5sum: 5d1c03cc5bb6e08be358035fe609e22f
 Description: DuckDB-powered analytics for Postgres
 
 Package: postgresql-17-pg-arraymath
@@ -15252,18 +15253,18 @@ Source: pg-duckdb
 Version: 0.2.0-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 23438
-Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libc6 (>= 2.34), libgcc-s1 (>= 4.5), liblz4-1 (>= 0.0~r113), libpq5, libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
+Installed-Size: 38393
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.5), liblz4-1 (>= 0.0~r113), libpq5, libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12), postgresql-17
 Provides: postgresql-pg-duckdb
 Homepage: https://github.com/duckdb/pg_duckdb
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-duckdb/postgresql-17-pg-duckdb_0.2.0-1PIGSTY~jammy_arm64.deb
-Size: 7173672
-SHA256: 5af8a9a1ac9fb30dfd82fb40860d3f18c31dba40ff12e17b53ac1225bbed9d56
-SHA1: d6e53ca3b7a20aef7b06597b107ece95a8e53ded
-MD5sum: ecc8b064b5afee1be7630ec7cc641650
-Description: DuckDB-powered Postgres for high performance apps & analytics.
+Size: 10226050
+SHA256: 2aa2eaed8f09fc7173aa25f275465e9d8584d83d39d8150ff5b4b64008c1822e
+SHA1: 8c254a4f6da69e69d1c87ba90cc5ec57a456443b
+MD5sum: fedc0d5390edcb5799b3caf26f687ca7
+Description: DuckDB-powered Postgres for high performance apps & analytics for PostgreSQL 17
   pg_duckdb is a Postgres extension that embeds DuckDB's columnar-vectorized analytics engine and features into Postgres.
   We recommend using pg_duckdb to build high performance analytics and data-intensive applications.
   pg_duckdb was developed in collaboration with our partners, Hydra and MotherDuck.
@@ -15956,17 +15957,17 @@ Description: A postgres extension to avoid accidental mistakes
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
 
 Package: postgresql-17-pg-search
-Version: 0.13.1
+Version: 0.13.2
 Architecture: arm64
 Depends: postgresql-17
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.13.1_arm64.deb
-Size: 45506400
-SHA256: f2e28461fd87a3ad53ec1acc17248b8d687949ec35be192c6020b2eb63494a56
-SHA1: db3740a9c8b9c0b6e2976da941e2fab0c55d5585
-MD5sum: 57eb4538da024c7f25cb5ad2de635a0d
+Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.13.2_arm64.deb
+Size: 45513120
+SHA256: 9c6e5b023e1ad86c743fa7564cd2bd24d123fa2b2a5d2b8b0931be992e28b013
+SHA1: 22a73783db01511ac3dce32cd5d7878082b927d6
+MD5sum: 535f9c1a16c9a77a81114cab23e3715a
 Description: Postgres for Search and Analytics
 
 Package: postgresql-17-pg-session-jwt
