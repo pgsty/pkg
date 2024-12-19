@@ -511,6 +511,14 @@ data:
       - pg_currency_16-llvmjit
       - pg_currency_17
       - pg_currency_17-llvmjit
+      - pg_duckdb_14
+      - pg_duckdb_14-llvmjit
+      - pg_duckdb_15
+      - pg_duckdb_15-llvmjit
+      - pg_duckdb_16
+      - pg_duckdb_16-llvmjit
+      - pg_duckdb_17
+      - pg_duckdb_17-llvmjit
       - pg_ecdsa_12
       - pg_ecdsa_12-llvmjit
       - pg_ecdsa_13
@@ -1855,6 +1863,14 @@ data:
     - pg_currency_16-llvmjit
     - pg_currency_17
     - pg_currency_17-llvmjit
+    - pg_duckdb_14
+    - pg_duckdb_14-llvmjit
+    - pg_duckdb_15
+    - pg_duckdb_15-llvmjit
+    - pg_duckdb_16
+    - pg_duckdb_16-llvmjit
+    - pg_duckdb_17
+    - pg_duckdb_17-llvmjit
     - pg_ecdsa_12
     - pg_ecdsa_12-llvmjit
     - pg_ecdsa_13
@@ -3337,6 +3353,14 @@ data:
       pg_currency_16:
         rationale: Present in the repository
       pg_currency_17:
+        rationale: Present in the repository
+      pg_duckdb_14:
+        rationale: Present in the repository
+      pg_duckdb_15:
+        rationale: Present in the repository
+      pg_duckdb_16:
+        rationale: Present in the repository
+      pg_duckdb_17:
         rationale: Present in the repository
       pg_ecdsa_12:
         rationale: Present in the repository
@@ -4880,6 +4904,14 @@ data:
     - pg_currency_16-llvmjit-0:0.0.3-1PIGSTY.el8.x86_64
     - pg_currency_17-0:0.0.3-1PIGSTY.el8.x86_64
     - pg_currency_17-llvmjit-0:0.0.3-1PIGSTY.el8.x86_64
+    - pg_duckdb_14-0:0.2.0-1PIGSTY.el8.x86_64
+    - pg_duckdb_14-llvmjit-0:0.2.0-1PIGSTY.el8.x86_64
+    - pg_duckdb_15-0:0.2.0-1PIGSTY.el8.x86_64
+    - pg_duckdb_15-llvmjit-0:0.2.0-1PIGSTY.el8.x86_64
+    - pg_duckdb_16-0:0.2.0-1PIGSTY.el8.x86_64
+    - pg_duckdb_16-llvmjit-0:0.2.0-1PIGSTY.el8.x86_64
+    - pg_duckdb_17-0:0.2.0-1PIGSTY.el8.x86_64
+    - pg_duckdb_17-llvmjit-0:0.2.0-1PIGSTY.el8.x86_64
     - pg_ecdsa_12-0:1.0-1PIGSTY.el8.x86_64
     - pg_ecdsa_12-llvmjit-0:1.0-1PIGSTY.el8.x86_64
     - pg_ecdsa_13-0:1.0-1PIGSTY.el8.x86_64

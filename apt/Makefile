@@ -117,6 +117,18 @@ cf-infra:
 	rclone sync -P --transfers=8 ./infra/ $(CF_PATH)/infra/
 cf-pgsql:
 	rclone sync -P --transfers=8 ./pgsql/ $(CF_PATH)/pgsql/
+
+cf-jammy:
+	rclone sync -P --transfers=8 ./pgsql/jammy/ $(CF_PATH)/pgsql/jammy/
+cf-noble:
+	rclone sync -P --transfers=8 ./pgsql/noble/ $(CF_PATH)/pgsql/noble/
+cf-focal:
+	rclone sync -P --transfers=8 ./pgsql/focal/ $(CF_PATH)/pgsql/focal/
+cf-bookworm:
+	rclone sync -P --transfers=8 ./pgsql/bookworm/ $(CF_PATH)/pgsql/bookworm/
+cf-bullseye:
+	rclone sync -P --transfers=8 ./pgsql/bullseye/ $(CF_PATH)/pgsql/bullseye/
+
 cf-mssql:
 	rclone sync -P --transfers=8 ./mssql/ $(CF_PATH)/mssql/
 
@@ -126,6 +138,18 @@ cos-infra:
 	rclone sync -P --transfers=8 ./infra/ $(COS_PATH)/infra/
 cos-pgsql:
 	rclone sync -P --transfers=8 ./pgsql/ $(COS_PATH)/pgsql/
+
+cos-jammy:
+	rclone sync -P --transfers=8 ./pgsql/jammy/ $(COS_PATH)/pgsql/jammy/
+cos-noble:
+	rclone sync -P --transfers=8 ./pgsql/noble/ $(COS_PATH)/pgsql/noble/
+cos-focal:
+	rclone sync -P --transfers=8 ./pgsql/focal/ $(COS_PATH)/pgsql/focal/
+cos-bookworm:
+	rclone sync -P --transfers=8 ./pgsql/bookworm/ $(COS_PATH)/pgsql/bookworm/
+cos-bullseye:
+	rclone sync -P --transfers=8 ./pgsql/bullseye/ $(COS_PATH)/pgsql/bullseye/
+
 cos-mssql:
 	rclone sync -P --transfers=8 ./mssql/ $(COS_PATH)/mssql/
 

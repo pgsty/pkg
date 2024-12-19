@@ -351,18 +351,19 @@ MD5sum: 6c4e938ceee96b15fa6b172aba6ee813
 Description: PostgreSQL Explain Visualizer
 
 Package: pg-exporter
-Version: 0.7.0
+Version: 0.7.1
 Architecture: arm64
+License: Apache-2.0 License
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 15727
+Installed-Size: 16427
 Homepage: https://github.com/Vonng/pg_exporter
 Priority: optional
 Section: 
-Filename: pool/main/p/pg-exporter/pg-exporter_0.7.0_arm64.deb
-Size: 8256900
-SHA256: 81a2c7f3ce2f7e40a7b02ed68d677eaf81c04b4002858550a2a944169b787ddf
-SHA1: 4c6781ab732d27d51907175af613a12cc93670c6
-MD5sum: 5359ed0cd4b967dcb7f1f4bf294379ab
+Filename: pool/main/p/pg-exporter/pg-exporter_0.7.1_arm64.deb
+Size: 8626072
+SHA256: cf38e55e8daaf3f557e516c0c1727af6593534b94b7c5c3fdfb2b417e7906ea7
+SHA1: bfd6460a467e4b49bc76924f6bd0501dc0e14b5a
+MD5sum: cb2134f31a7b962734bd45f0a6617ff1
 Description: Prometheus exporter for PostgreSQL / Pgbouncer server metrics.
  Supported version: Postgres9.4 - 17+ & Pgbouncer 1.8 - 1.23+
  Part of Project Pigsty -- Battery Included PostgreSQL Distribution
