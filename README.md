@@ -24,7 +24,7 @@ You can install pigsty source from this repo, via:
 curl -fsSL https://repo.pigsty.io/get | bash
 
 # install a specific version
-curl -fsSL https://repo.pigsty.io/get | bash -s v3.1.0
+curl -fsSL https://repo.pigsty.io/get | bash -s v3.2.0
 ```
 
 
@@ -146,25 +146,26 @@ Prepacked RPM & DEB binary packages for the following software.
 - [duckdb](https://github.com/duckdb/duckdb) : 1.1.3
 - [etcd](https://github.com/etcd-io/etcd) : 3.5.17
 - [redis](https://github.com/redis/redis) 7.2.6
-- [minio](https://github.com/minio/minio): 20240817012454
-- [mcli](https://github.com/minio/mc): 20240817113350
+- [minio](https://github.com/minio/minio): 20241213221912
+- [mcli](https://github.com/minio/mc): 20241121172154
 - [sealos](https://github.com/labring/sealos): 5.0.1
 - [ferretdb](https://github.com/FerretDB/FerretDB): 1.24.0
-- [paradedb](https://github.com/paradedb/paradedb): pg_search 0.13.1, pg_analytics 0.2.3
-- [tigerbeetle](https://github.com/tigerbeetle/tigerbeetle): 0.16.13
+- [paradedb](https://github.com/paradedb/paradedb): pg_search 0.13.2, pg_analytics 0.2.4
+- [tigerbeetle](https://github.com/tigerbeetle/tigerbeetle): 0.16.17
 - [cloudberrydb](https://github.com/cloudberrydb/cloudberrydb): 1.6.0
 
 **PostgreSQL Tools**:
 
 - [vip-manager](https://github.com/cybertec-postgresql/vip-manager): 3.0.0
-- [pg_timetable](https://github.com/cybertec-postgresql/pg_timetable): 5.9.0
+- [pg_timetable](https://github.com/cybertec-postgresql/pg_timetable): 5.10.0
 - [scws](https://github.com/hightman/scws): 1.2.3, deps of `zhparser`
 - [libduckdb](https://github.com/duckdb/duckdb) : 1.1.2, deps of `duckdb_fdw`
 - [promscale](https://github.com/timescale/promscale) 0.17.0
 
 **PostgreSQL Extensions**:
 
-- All Other PostgreSQL 16 Extensions for el8, el9, debian12, and ubuntu22.
+- PostgreSQL 12-17 Extensions for el8, el9, debian12, and ubuntu22.
+
 
 --------
 
