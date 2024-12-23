@@ -36,6 +36,14 @@ upload-get:
 	@echo "https://repo.pigsty.cc/get" @ "https://console.cloud.tencent.com/cdn/refresh?tab=url"
 	@echo "https://repo.pigsty.io/get" @ "https://dash.cloudflare.com/72cdbd1b54f7add44ecbd3d986399481/pigsty.io/caching/configuration"
 
+up: upload-pig
+upload-pig:
+	rclone copyto pig.io $(CF_PATH)/pig
+	rclone copyto pig.cc $(COS_PATH)/pig
+	@echo "https://repo.pigsty.cc/pig" @ "https://console.cloud.tencent.com/cdn/refresh?tab=url"
+	@echo "https://repo.pigsty.io/pig" @ "https://dash.cloudflare.com/72cdbd1b54f7add44ecbd3d986399481/pigsty.io/caching/configuration"
+
+
 ue: upload-etc
 upload-etc:
 	rclone sync -P --transfers=8 ./etc/ $(CF_PATH)/etc/
