@@ -2,7 +2,7 @@
 # File      :   Makefile
 # Desc      :   pgsty/pkg repo shortcuts
 # Ctime     :   2024-07-28
-# Mtime     :   2024-11-15
+# Mtime     :   2024-12-16
 # Path      :   Makefile
 # Author    :   Ruohang Feng (rh@vonng.com)
 # License   :   AGPLv3
@@ -11,7 +11,7 @@
 CF_PATH = cf:/repo
 COS_PATH = cos://repo-1304744452
 DEVEL_PATH = sv:/data/pkg
-VERSION=v3.1.0
+VERSION=v3.2.0
 
 all:
 	@echo "pgsty repo"
@@ -69,10 +69,12 @@ pull:
 	rsync -avc $(DEVEL_PATH)/ ./
 pulld:
 	rsync -avc --delete $(DEVEL_PATH)/ ./
-
+pl: pull-src
+pull-src:
+	rsync -avz  sv:/data/pigsty/dist/${VERSION}/pigsty-${VERSION}.tgz src/pigsty-${VERSION}.tgz
 
 ###############################################################
 #                         Inventory                           #
 ###############################################################
-.PHONY: all uy ua uk ug ue us ul push pushd pull pulld \
+.PHONY: all uy ua uk ug ue us ul push pushd pull pulld pl pull-src \
 	upload-yum upload-apt upload-key upload-get upload-etc upload-src upload-latest

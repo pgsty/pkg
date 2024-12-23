@@ -51,6 +51,7 @@ data:
       - pg_exporter
       - pg_timetable
       - pgbackrest_exporter
+      - pig
       - prometheus
       - prometheus2
       - promscale
@@ -98,6 +99,7 @@ data:
     - pg_exporter
     - pg_timetable
     - pgbackrest_exporter
+    - pig
     - prometheus
     - prometheus2
     - promscale
@@ -170,6 +172,8 @@ data:
         rationale: Present in the repository
       pgbackrest_exporter:
         rationale: Present in the repository
+      pig:
+        rationale: Present in the repository
       prometheus:
         rationale: Present in the repository
       prometheus2:
@@ -240,6 +244,7 @@ data:
     - pg_exporter-0:0.7.1-1.x86_64
     - pg_timetable-0:5.10.0-1.x86_64
     - pgbackrest_exporter-0:0.18.0-1.x86_64
+    - pig-0:0.0.1-1.x86_64
     - prometheus-0:3.0.1-1.x86_64
     - prometheus2-0:2.55.1-1.x86_64
     - promscale-0:0.17.0-1.x86_64

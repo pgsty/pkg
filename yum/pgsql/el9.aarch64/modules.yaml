@@ -66,6 +66,8 @@ data:
       - apache-age_15-llvmjit
       - apache-age_16
       - apache-age_16-llvmjit
+      - arrow-devel
+      - arrow1800-libs
       - asn1oid_12
       - asn1oid_12-llvmjit
       - asn1oid_13
@@ -192,6 +194,9 @@ data:
       - geoip_15
       - geoip_16
       - geoip_17
+      - groonga-devel
+      - groonga-libs
+      - groonga-tokenizer-mecab
       - haproxy
       - hunspell_cs_cz_12
       - hunspell_cs_cz_13
@@ -867,6 +872,10 @@ data:
       - pg_tiktoken_15
       - pg_tiktoken_16
       - pg_tiktoken_17
+      - pg_timescaledb_14
+      - pg_timescaledb_15
+      - pg_timescaledb_16
+      - pg_timescaledb_17
       - pg_timeseries_12
       - pg_timeseries_13
       - pg_timeseries_14
@@ -1044,6 +1053,16 @@ data:
       - pgqr_16-llvmjit
       - pgqr_17
       - pgqr_17-llvmjit
+      - pgroonga_13
+      - pgroonga_13-llvmjit
+      - pgroonga_14
+      - pgroonga_14-llvmjit
+      - pgroonga_15
+      - pgroonga_15-llvmjit
+      - pgroonga_16
+      - pgroonga_16-llvmjit
+      - pgroonga_17
+      - pgroonga_17-llvmjit
       - pgsmcrypto_12
       - pgsmcrypto_13
       - pgsmcrypto_14
@@ -1375,6 +1394,8 @@ data:
     - apache-age_15-llvmjit
     - apache-age_16
     - apache-age_16-llvmjit
+    - arrow-devel
+    - arrow1800-libs
     - asn1oid_12
     - asn1oid_12-llvmjit
     - asn1oid_13
@@ -1501,6 +1522,9 @@ data:
     - geoip_15
     - geoip_16
     - geoip_17
+    - groonga-devel
+    - groonga-libs
+    - groonga-tokenizer-mecab
     - haproxy
     - hunspell_cs_cz_12
     - hunspell_cs_cz_13
@@ -2176,6 +2200,10 @@ data:
     - pg_tiktoken_15
     - pg_tiktoken_16
     - pg_tiktoken_17
+    - pg_timescaledb_14
+    - pg_timescaledb_15
+    - pg_timescaledb_16
+    - pg_timescaledb_17
     - pg_timeseries_12
     - pg_timeseries_13
     - pg_timeseries_14
@@ -2353,6 +2381,16 @@ data:
     - pgqr_16-llvmjit
     - pgqr_17
     - pgqr_17-llvmjit
+    - pgroonga_13
+    - pgroonga_13-llvmjit
+    - pgroonga_14
+    - pgroonga_14-llvmjit
+    - pgroonga_15
+    - pgroonga_15-llvmjit
+    - pgroonga_16
+    - pgroonga_16-llvmjit
+    - pgroonga_17
+    - pgroonga_17-llvmjit
     - pgsmcrypto_12
     - pgsmcrypto_13
     - pgsmcrypto_14
@@ -2684,6 +2722,8 @@ data:
         rationale: Present in the repository
       apache-age_16:
         rationale: Present in the repository
+      arrow:
+        rationale: Present in the repository
       asn1oid_12:
         rationale: Present in the repository
       asn1oid_13:
@@ -2827,6 +2867,8 @@ data:
       geoip_16:
         rationale: Present in the repository
       geoip_17:
+        rationale: Present in the repository
+      groonga:
         rationale: Present in the repository
       haproxy:
         rationale: Present in the repository
@@ -3702,6 +3744,14 @@ data:
         rationale: Present in the repository
       pg_tiktoken_17:
         rationale: Present in the repository
+      pg_timescaledb_14:
+        rationale: Present in the repository
+      pg_timescaledb_15:
+        rationale: Present in the repository
+      pg_timescaledb_16:
+        rationale: Present in the repository
+      pg_timescaledb_17:
+        rationale: Present in the repository
       pg_timeseries_12:
         rationale: Present in the repository
       pg_timeseries_13:
@@ -3923,6 +3973,16 @@ data:
       pgqr_16:
         rationale: Present in the repository
       pgqr_17:
+        rationale: Present in the repository
+      pgroonga_13:
+        rationale: Present in the repository
+      pgroonga_14:
+        rationale: Present in the repository
+      pgroonga_15:
+        rationale: Present in the repository
+      pgroonga_16:
+        rationale: Present in the repository
+      pgroonga_17:
         rationale: Present in the repository
       pgsmcrypto_12:
         rationale: Present in the repository
@@ -4292,6 +4352,8 @@ data:
     - apache-age_15-llvmjit-0:1.4.0-1PIGSTY.el9.aarch64
     - apache-age_16-0:1.5.0-1PIGSTY.el9.aarch64
     - apache-age_16-llvmjit-0:1.5.0-1PIGSTY.el9.aarch64
+    - arrow-devel-0:18.0.0-1.el9.aarch64
+    - arrow1800-libs-0:18.0.0-1.el9.aarch64
     - asn1oid_12-0:1.5-1PIGSTY.el9.aarch64
     - asn1oid_12-llvmjit-0:1.5-1PIGSTY.el9.aarch64
     - asn1oid_13-0:1.5-1PIGSTY.el9.aarch64
@@ -4418,6 +4480,9 @@ data:
     - geoip_15-0:0.3.0-1PIGSTY.el9.aarch64
     - geoip_16-0:0.3.0-1PIGSTY.el9.aarch64
     - geoip_17-0:0.3.0-1PIGSTY.el9.aarch64
+    - groonga-devel-0:14.1.1-1.el9.aarch64
+    - groonga-libs-0:14.1.1-1.el9.aarch64
+    - groonga-tokenizer-mecab-0:14.1.1-1.el9.aarch64
     - haproxy-0:3.0.5-1PGDG.rhel9.aarch64
     - hunspell_cs_cz_12-0:1.0-1PIGSTY.el9.aarch64
     - hunspell_cs_cz_13-0:1.0-1PIGSTY.el9.aarch64
@@ -5093,6 +5158,10 @@ data:
     - pg_tiktoken_15-0:0.0.1-1PIGSTY.el9.aarch64
     - pg_tiktoken_16-0:0.0.1-1PIGSTY.el9.aarch64
     - pg_tiktoken_17-0:0.0.1-1PIGSTY.el9.aarch64
+    - pg_timescaledb_14-0:2.17.2-1PIGSTY.el9.aarch64
+    - pg_timescaledb_15-0:2.17.2-1PIGSTY.el9.aarch64
+    - pg_timescaledb_16-0:2.17.2-1PIGSTY.el9.aarch64
+    - pg_timescaledb_17-0:2.17.2-1PIGSTY.el9.aarch64
     - pg_timeseries_12-0:0.1.6-1PIGSTY.el9.aarch64
     - pg_timeseries_13-0:0.1.6-1PIGSTY.el9.aarch64
     - pg_timeseries_14-0:0.1.6-1PIGSTY.el9.aarch64
@@ -5270,6 +5339,16 @@ data:
     - pgqr_16-llvmjit-0:1.0-1PIGSTY.el9.aarch64
     - pgqr_17-0:1.0-1PIGSTY.el9.aarch64
     - pgqr_17-llvmjit-0:1.0-1PIGSTY.el9.aarch64
+    - pgroonga_13-0:3.2.5-1.el9.aarch64
+    - pgroonga_13-llvmjit-0:3.2.5-1.el9.aarch64
+    - pgroonga_14-0:3.2.5-1.el9.aarch64
+    - pgroonga_14-llvmjit-0:3.2.5-1.el9.aarch64
+    - pgroonga_15-0:3.2.5-1.el9.aarch64
+    - pgroonga_15-llvmjit-0:3.2.5-1.el9.aarch64
+    - pgroonga_16-0:3.2.5-1.el9.aarch64
+    - pgroonga_16-llvmjit-0:3.2.5-1.el9.aarch64
+    - pgroonga_17-0:3.2.5-1.el9.aarch64
+    - pgroonga_17-llvmjit-0:3.2.5-1.el9.aarch64
     - pgsmcrypto_12-0:0.1.0-1PIGSTY.el9.aarch64
     - pgsmcrypto_13-0:0.1.0-1PIGSTY.el9.aarch64
     - pgsmcrypto_14-0:0.1.0-1PIGSTY.el9.aarch64

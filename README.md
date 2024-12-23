@@ -10,7 +10,7 @@ Related Projects:
 - [`rpm`](https://github.com/pgsty/rpm): Building PostgreSQL RPM packages from source code
 - [`deb`](https://github.com/pgsty/deb): Building PostgreSQL DEB packages from source code
 
-The complete 340 [Extension List](https://ext.pigsty.io/list)
+The complete 341 [Extension List](https://ext.pigsty.io/list)
 
 
 --------
@@ -24,7 +24,7 @@ You can install pigsty source from this repo, via:
 curl -fsSL https://repo.pigsty.io/get | bash
 
 # install a specific version
-curl -fsSL https://repo.pigsty.io/get | bash -s v3.0.3
+curl -fsSL https://repo.pigsty.io/get | bash -s v3.1.0
 ```
 
 
@@ -45,6 +45,7 @@ For EL 7/8/9 and compatible systems, use the following commands to add the GPG p
 ```bash
 curl -fsSL https://repo.pigsty.io/key      | sudo tee /etc/pki/rpm-gpg/RPM-GPG-KEY-pigsty >/dev/null  # add gpg key
 curl -fsSL https://repo.pigsty.io/yum/repo | sudo tee /etc/yum.repos.d/pigsty.repo        >/dev/null  # add repo file
+sudo yum makecache
 ```
 
 All RPMs are signed with the GPG key fingerprint `9592A7BC7A682E7333376E09E7935D8DB9BD8B20` (`B9BD8B20`).
@@ -96,17 +97,11 @@ Once an extension is added to the PGDG APT repository, Pigsty APT repository wil
 For Debian/Ubuntu and compatible systems, use the following commands to sequentially add the GPG public key and the upstream repository file of the Pigsty repository:
 
 ```bash
-# add GPG key to keyring
-curl -fsSL https://repo.pigsty.io/key | sudo gpg --dearmor -o /etc/apt/keyrings/pigsty.gpg
-
-# get debian codename, distro_codename=jammy, focal, bullseye, bookworm
-distro_codename=$(lsb_release -cs)
+curl -fsSL https://repo.pigsty.io/key | sudo gpg --dearmor -o /etc/apt/keyrings/pigsty.gpg  # add gpg key
 sudo tee /etc/apt/sources.list.d/pigsty-io.list > /dev/null <<EOF
 deb [signed-by=/etc/apt/keyrings/pigsty.gpg] https://repo.pigsty.io/apt/infra generic main 
-deb [signed-by=/etc/apt/keyrings/pigsty.gpg] https://repo.pigsty.io/apt/pgsql/${distro_codename} ${distro_codename} main
+deb [signed-by=/etc/apt/keyrings/pigsty.gpg] https://repo.pigsty.io/apt/pgsql/$(lsb_release -cs) $(lsb_release -cs) main
 EOF
-
-# refresh APT repo cache
 sudo apt update
 ```
 
@@ -161,7 +156,7 @@ Prepacked RPM & DEB binary packages for the following software.
 
 **PostgreSQL Tools**:
 
-- [vip-manager](https://github.com/cybertec-postgresql/vip-manager): 2.6.0
+- [vip-manager](https://github.com/cybertec-postgresql/vip-manager): 3.0.0
 - [pg_timetable](https://github.com/cybertec-postgresql/pg_timetable): 5.9.0
 - [scws](https://github.com/hightman/scws): 1.2.3, deps of `zhparser`
 - [libduckdb](https://github.com/duckdb/duckdb) : 1.1.2, deps of `duckdb_fdw`
@@ -179,17 +174,16 @@ Observability Stack (the `infra` module) runs on any Linux distro.
 
 While others (the `pgsql` module) are supported on the following distros:
 
-- `el9.x86_64`: ⭐️ RockyLinux 9.3, and other compatible distros
-- `d12.x86_64`: ⭐️ Debian 12 bookworm, and other compatible distros
-- `u22.x86_64`: ⭐️ Ubuntu 22.04.3 jammy, and other compatible distros
-- `u24.x86_64`: ⭐️ Ubuntu 24.04.3 noble, and other compatible distros
-- `el8.x86_64`: ⭐️ RockyLinux 8.9, and other compatible distros
-
-We may drop legacy support for the following distros in the future due to EOL:
-
-- `el7.x86_64`: CentOS 7.9, and other compatible distros
-- `d11.x86_64`: Debian 11 bullseye, and other compatible distros
-- `u20.x86_64`: Ubuntu 20.04 focal, and other compatible distros
+|  Code   | Distro                            |   `amd64`    | Availability |   `arm64`   | Availability |
+|:-------:|-----------------------------------|:------------:|:------------:|:-----------:|:------------:|
+| **EL9** | RHEL 9 / Rocky9 / Alma9           | `el9.x86_64` |      ✔       | `el9.arm64` |      ✔       |
+| **EL8** | RHEL 8 / Rocky8 / Alma8 / Anolis8 | `el8.x86_64` |      ✔       | `el8.arm64` |      ✔       |
+| **U24** | Ubuntu 24.04 (noble)              | `u24.x86_64` |      ✔       | `u24.arm64` |      ✔       |
+| **U22** | Ubuntu 22.04 (jammy)              | `u22.x86_64` |      ✔       | `u22.arm64` |      ✔       |
+| **D12** | Debian 12 (bookworm)              | `d12.x86_64` |      ✔       | `d12.arm64` |      ✔       |
+| **D11** | Debian 11 (bullseye)              | `d12.x86_64` |      ✓       | `d11.arm64` |      ✘       |
+| **U20** | Ubuntu 20.04 (focal)              | `d12.x86_64` |      ✓       | `u20.arm64` |      ✘       |
+| **EL7** | RHEL7 / CentOS7                   | `d12.x86_64` |      ✓       | `el7.arm64` |      ✘       |
 
 
 --------

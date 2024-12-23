@@ -95,6 +95,14 @@ cf-infra:
 	rclone sync -P --transfers=8 ./infra/ $(CF_PATH)/infra/
 cf-pgsql:
 	rclone sync -P --transfers=8 ./pgsql/ $(CF_PATH)/pgsql/
+cf-pgsql8:
+	rclone sync -P --transfers=8 ./pgsql/el8.x86_64/  $(CF_PATH)/pgsql/el8.x86_64/
+cf-pgsql8a:
+	rclone sync -P --transfers=8 ./pgsql/el8.aarch64/ $(CF_PATH)/pgsql/el8.aarch64/
+cf-pgsql9:
+	rclone sync -P --transfers=8 ./pgsql/el9.x86_64/  $(CF_PATH)/pgsql/el9.x86_64/
+cf-pgsql9a:
+	rclone sync -P --transfers=8 ./pgsql/el9.aarch64/ $(CF_PATH)/pgsql/el9.aarch64/
 cf-ivory:
 	rclone sync -P --transfers=8 ./ivory/ $(CF_PATH)/ivory/
 cf-gpsql:
@@ -107,6 +115,15 @@ cos-infra:
 	rclone sync -P --transfers=8 ./infra/ $(COS_PATH)/infra/
 cos-pgsql:
 	rclone sync -P --transfers=8 ./pgsql/ $(COS_PATH)/pgsql/
+cos-pgsql8:
+	rclone sync -P --transfers=8 ./pgsql/el8.x86_64/  $(COS_PATH)/pgsql/el8.x86_64/
+cos-pgsql8a:
+	rclone sync -P --transfers=8 ./pgsql/el8.aarch64/ $(COS_PATH)/pgsql/el8.aarch64/
+cos-pgsql9:
+	rclone sync -P --transfers=8 ./pgsql/el9.x86_64/  $(COS_PATH)/pgsql/el9.x86_64/
+cos-pgsql9a:
+	rclone sync -P --transfers=8 ./pgsql/el9.aarch64/ $(COS_PATH)/pgsql/el9.aarch64/
+
 cos-ivory:
 	rclone sync -P --transfers=8 ./ivory/ $(COS_PATH)/ivory/
 cos-gpsql:
