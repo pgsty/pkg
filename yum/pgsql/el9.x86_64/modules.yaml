@@ -99,6 +99,15 @@ data:
       - chkpass_16-llvmjit
       - chkpass_17
       - chkpass_17-llvmjit
+      - citus_14
+      - citus_14-devel
+      - citus_14-llvmjit
+      - citus_15
+      - citus_15-devel
+      - citus_15-llvmjit
+      - citus_16
+      - citus_16-devel
+      - citus_16-llvmjit
       - count_distinct_12
       - count_distinct_12-llvmjit
       - count_distinct_13
@@ -1467,6 +1476,15 @@ data:
     - chkpass_16-llvmjit
     - chkpass_17
     - chkpass_17-llvmjit
+    - citus_14
+    - citus_14-devel
+    - citus_14-llvmjit
+    - citus_15
+    - citus_15-devel
+    - citus_15-llvmjit
+    - citus_16
+    - citus_16-devel
+    - citus_16-llvmjit
     - count_distinct_12
     - count_distinct_12-llvmjit
     - count_distinct_13
@@ -2841,6 +2859,12 @@ data:
       chkpass_16:
         rationale: Present in the repository
       chkpass_17:
+        rationale: Present in the repository
+      citus_14:
+        rationale: Present in the repository
+      citus_15:
+        rationale: Present in the repository
+      citus_16:
         rationale: Present in the repository
       count_distinct_12:
         rationale: Present in the repository
@@ -4541,6 +4565,15 @@ data:
     - chkpass_16-llvmjit-0:1.0-1PIGSTY.el9.x86_64
     - chkpass_17-0:1.0-1PIGSTY.el9.x86_64
     - chkpass_17-llvmjit-0:1.0-1PIGSTY.el9.x86_64
+    - citus_14-0:12.1.6-2PIGSTY.el8.aarch64
+    - citus_14-devel-0:12.1.6-2PIGSTY.el8.aarch64
+    - citus_14-llvmjit-0:12.1.6-2PIGSTY.el8.aarch64
+    - citus_15-0:12.1.6-2PIGSTY.el8.aarch64
+    - citus_15-devel-0:12.1.6-2PIGSTY.el8.aarch64
+    - citus_15-llvmjit-0:12.1.6-2PIGSTY.el8.aarch64
+    - citus_16-0:12.1.6-2PIGSTY.el8.aarch64
+    - citus_16-devel-0:12.1.6-2PIGSTY.el8.aarch64
+    - citus_16-llvmjit-0:12.1.6-2PIGSTY.el8.aarch64
     - count_distinct_12-0:3.0.2-1PIGSTY.el9.x86_64
     - count_distinct_12-llvmjit-0:3.0.2-1PIGSTY.el9.x86_64
     - count_distinct_13-0:3.0.2-1PIGSTY.el9.x86_64
