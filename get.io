@@ -1,17 +1,17 @@
 #!/bin/bash
-# set -o pipefail
+#set -uo pipefail
 #==============================================================#
 # File      :   install
 # Desc      :   download & install pigsty src
 # Ctime     :   2022-10-30
-# Mtime     :   2024-12-16
+# Mtime     :   2024-12-28
 # Path      :   https://repo.pigsty.io/get (global, default)
 # Usage     :   curl -fsSL https://repo.pigsty.io/get | bash
 # Deps      :   curl
 # Author    :   Ruohang Feng (rh@vonng.com)
 # License   :   AGPLv3
 #==============================================================#
-DEFAULT_VERSION=v3.1.0
+DEFAULT_VERSION=v3.2.0
 DEFAULT_REGION=global
 
 # To install the latest version of pigsty (v3.1.0):
@@ -66,7 +66,7 @@ function check_version(){
     local found=false
 
     # validate version format
-    if [[ ! ${VERSION} =~ ^v[0-9]+\.[0-9]+\.[0-9]+(-[a-z]+[0-9]+)?$ ]]; then
+    if [[ ! ${VERSION} =~ ^[0-9]+\.[0-9]+\.[0-9]+(-[a-z]+[0-9]+)?$ ]]; then
         log_error "invalid version string from ${VERSION_FROM}: ${VERSION}"
         exit 1
     fi

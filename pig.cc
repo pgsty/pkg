@@ -1,23 +1,23 @@
 #!/bin/bash
-set -e pipefail
+set -o pipefail
 #==============================================================#
 # File      :   pig
 # Desc      :   download & install pig cli
-# Mtime     :   2024-12-23
+# Mtime     :   2024-12-28
 # Path      :   https://repo.pigsty.cc/pig (china region)
-# Usage     :   curl -fsSL https://repo.pigsty.cc/pig | bash
+# Usage     :   curl -fsSL https://repo.pigsty.cc/pig/get | bash
 # Deps      :   curl
 # License   :   Apache-2.0
 # Copyright :   2018-2024  Ruohang Feng / Vonng (rh@vonng.com)
 #==============================================================#
-PIG_VERSION=0.0.1
+DEFAULT_VERSION=0.0.2
 BASEURL="https://repo.pigsty.cc"
-#BASEURL="https://repo.pigsty.io"
-
 
 # To install the latest version of pig
-# curl -fsSL https://repo.pigsty.io/pig | bash
 # curl -fsSL https://repo.pigsty.cc/pig | bash
+
+# To install a specific version of pig
+# curl -fsSL https://repo.pigsty.cc/pig | bash -s 0.0.2
 
 #--------------------------------------------------------------#
 # Log Util
@@ -39,6 +39,18 @@ ARCH=$(uname -m)
 DOWNLOAD_URL=""
 DOWNLOAD_TO=""
 FILENAME=""
+
+# arg1 > env > default
+if [[ -n "$1" ]]; then
+    VERSION="$1"
+    VERSION_FROM="arg"
+elif [[ -n "${PIG_VERSION}" ]]; then
+    VERSION="${PIG_VERSION}"
+    VERSION_FROM="env"
+else
+    VERSION=${DEFAULT_VERSION}
+    VERSION_FROM="default"
+fi
 
 
 #----------------------------------------------#
@@ -96,24 +108,24 @@ check_pkg_url() {
         rpm)
             case "${ARCH}" in
                 x86_64)
-                    FILENAME="pig-${PIG_VERSION}-1.x86_64.rpm"
+                    FILENAME="pig-${VERSION}-1.x86_64.rpm"
                     ;;
                 aarch64)
-                    FILENAME="pig-${PIG_VERSION}-1.aarch64.rpm"
+                    FILENAME="pig-${VERSION}-1.aarch64.rpm"
                     ;;
             esac
-            DOWNLOAD_URL="${BASEURL}/yum/infra/${ARCH}/${FILENAME}"
+            DOWNLOAD_URL="${BASEURL}/pkg/pig/v${VERSION}/${FILENAME}"
             ;;
         deb)
             case "${ARCH}" in
                 x86_64)
-                    FILENAME="pig_${PIG_VERSION}_amd64.deb"
+                    FILENAME="pig_${VERSION}_amd64.deb"
                     ;;
                 aarch64)
-                    FILENAME="pig_${PIG_VERSION}_arm64.deb"
+                    FILENAME="pig_${VERSION}_arm64.deb"
                     ;;
             esac
-            DOWNLOAD_URL="${BASEURL}/apt/infra/pool/main/p/pig/${FILENAME}"
+            DOWNLOAD_URL="${BASEURL}/pkg/pig/v${VERSION}/${FILENAME}"
             ;;
     esac
     DOWNLOAD_TO="/tmp/${FILENAME}"
@@ -177,4 +189,4 @@ case "${OS_PACKAGE}" in
         ;;
 esac
 
-log_info "pig installed"
+log_info "pig v${VERSION} installed"

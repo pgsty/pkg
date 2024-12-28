@@ -1,10 +1,10 @@
 #!/bin/bash
-# set -o pipefail
+#set -o pipefail
 #==============================================================#
 # File      :   install
 # Desc      :   download & install pigsty src
 # Ctime     :   2022-10-30
-# Mtime     :   2024-12-16
+# Mtime     :   2024-12-25
 # Path      :   https://repo.pigsty.cc/get (global, default)
 # Usage     :   curl -fsSL https://repo.pigsty.cc/get | bash
 # Deps      :   curl
