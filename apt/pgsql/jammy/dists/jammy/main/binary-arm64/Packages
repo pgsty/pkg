@@ -1,21 +1,20 @@
 Package: groonga-tokenizer-mecab
 Source: groonga
-Version: 12.0.0-1
+Version: 14.1.2-1
 Architecture: arm64
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Groonga Project <packages@groonga.org>
-Installed-Size: 58
-Depends: libc6 (>= 2.17), libgroonga0 (= 12.0.0-1), libmecab2 (>= 0.996), mecab-naist-jdic | mecab-jumandic-utf8
+Maintainer: Groonga Project <packages@groonga.org>
+Installed-Size: 51
+Depends: libc6 (>= 2.17), libgroonga0 (= 14.1.2-1), libmecab2 (>= 0.996), mecab-naist-jdic | mecab-jumandic-utf8
 Breaks: libgroonga-tokenizer-mecab (<< 1.2.0-1)
 Replaces: libgroonga-tokenizer-mecab (<< 1.2.0-1)
 Homepage: https://groonga.org/
 Priority: optional
 Section: libs
-Filename: pool/main/g/groonga/groonga-tokenizer-mecab_12.0.0-1_arm64.deb
-Size: 14774
-SHA256: c7965b97f095b026add0195271c1124dc5bb11c039fe2765e15822f28ebc3768
-SHA1: c215fb1d6440c4d9a1ea41f0cfa2a1294404bb36
-MD5sum: ffd6e14d977ab0f2c77fafc29669f569
+Filename: pool/main/g/groonga/groonga-tokenizer-mecab_14.1.2-1_arm64.deb
+Size: 17624
+SHA256: 6def6c8cff202b74f2a2ed670df114ef4b1ea14af157b3ab6dac92e012df5951
+SHA1: 32e15aef922015eca95112ecd1b76a01cd5c70c7
+MD5sum: eeae48ac0ce350b5f5fc39e81b1425bd
 Description: MeCab tokenizer for Groonga
  Groonga is an open-source fulltext search engine and column store.
  It lets you write high-performance applications that requires fulltext search.
@@ -89,23 +88,22 @@ Description: A wrapper library for Firebird's C API, loosely based on PostgreSQL
 
 Package: libgroonga0
 Source: groonga
-Version: 12.0.0-1
+Version: 14.1.2-1
 Architecture: arm64
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Groonga Project <packages@groonga.org>
-Installed-Size: 7728
-Depends: libc6 (>= 2.35), libgcc-s1 (>= 3.3.1), liblz4-1 (>= 0.0~r130), libmsgpackc2 (>= 2.1.0), libstdc++6 (>= 11), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.2.0)
+Maintainer: Groonga Project <packages@groonga.org>
+Installed-Size: 9675
+Depends: libc6 (>= 2.35), libgcc-s1 (>= 3.3.1), libgomp1 (>= 4.9), liblz4-1 (>= 0.0~r130), libmsgpackc2 (>= 2.1.0), libsimdjson9 (>= 1.0.2), libstdc++6 (>= 11), libxxhash0 (>= 0.8.0), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.2.0)
 Breaks: libgroonga (<< 1.2.0-1)
 Replaces: libgroonga (<< 1.2.0-1)
 Multi-Arch: same
 Homepage: https://groonga.org/
 Priority: optional
 Section: libs
-Filename: pool/main/g/groonga/libgroonga0_12.0.0-1_arm64.deb
-Size: 1764474
-SHA256: f09eac82fd7d823a4384c391471783d0db7e861898ba36b72bf5e68458d90911
-SHA1: 04de660435552d2949267b0768ffdce62f16d440
-MD5sum: ee6b813b6797984eb332876c21d91858
+Filename: pool/main/g/groonga/libgroonga0_14.1.2-1_arm64.deb
+Size: 2548560
+SHA256: 0b9d447cb8f5fdfb9437bbff9447e9c7cd9ee1a251fd6386a283caa21faedb79
+SHA1: 62ca1da76d53adf6f355e5910e4dafbf13d69d9b
+MD5sum: 89678d172708dbbc650a845523593c44
 Description: Library files for Groonga
  Groonga is an open-source fulltext search engine and column store.
  It lets you write high-performance applications that requires fulltext search.
