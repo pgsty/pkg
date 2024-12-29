@@ -3,21 +3,21 @@ set -o pipefail
 #==============================================================#
 # File      :   pig
 # Desc      :   download & install pig cli
-# Mtime     :   2024-12-28
+# Mtime     :   2024-12-29
 # Path      :   https://repo.pigsty.io/pig (global, default)
 # Usage     :   curl -fsSL https://repo.pigsty.io/pig | bash
 # Deps      :   curl
 # License   :   Apache-2.0
 # Copyright :   2018-2024  Ruohang Feng / Vonng (rh@vonng.com)
 #==============================================================#
-DEFAULT_VERSION=0.0.2
+DEFAULT_VERSION=0.1.0
 BASEURL="https://repo.pigsty.io"
 
 # To install the latest version of pig
 # curl -fsSL https://repo.pigsty.io/pig | bash
 
 # To install a specific version of pig
-# curl -fsSL https://repo.pigsty.io/pig | bash -s 0.0.2
+# curl -fsSL https://repo.pigsty.io/pig | bash -s 0.1.0
 
 #--------------------------------------------------------------#
 # Log Util

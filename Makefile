@@ -36,13 +36,17 @@ upload-get:
 	@echo "https://repo.pigsty.cc/get" @ "https://console.cloud.tencent.com/cdn/refresh?tab=url"
 	@echo "https://repo.pigsty.io/get" @ "https://dash.cloudflare.com/72cdbd1b54f7add44ecbd3d986399481/pigsty.io/caching/configuration"
 
-up: upload-pig
-upload-pig:
+upg: upload-pig-get
+upload-pig-get:
 	rclone copyto pig.io $(CF_PATH)/pig
 	rclone copyto pig.cc $(COS_PATH)/pig
 	@echo "https://repo.pigsty.cc/pig" @ "https://console.cloud.tencent.com/cdn/refresh?tab=url"
 	@echo "https://repo.pigsty.io/pig" @ "https://dash.cloudflare.com/72cdbd1b54f7add44ecbd3d986399481/pigsty.io/caching/configuration"
 
+up: upload-pkg
+upload-pkg:
+	rclone sync -P --transfers=8 ./pkg/ $(CF_PATH)/pkg/
+	rclone sync -P --transfers=8 ./pkg/ $(COS_PATH)/pkg/
 
 ue: upload-etc
 upload-etc:
@@ -84,5 +88,5 @@ pull-src:
 ###############################################################
 #                         Inventory                           #
 ###############################################################
-.PHONY: all uy ua uk ug ue us ul push pushd pull pulld pl pull-src \
-	upload-yum upload-apt upload-key upload-get upload-etc upload-src upload-latest
+.PHONY: all uy ua uk ug up upg ue us ul push pushd pull pulld pl pull-src \
+	upload-yum upload-apt upload-key upload-get upload-etc upload-src upload-latest upload-pkg upload-pig-get

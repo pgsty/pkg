@@ -254,18 +254,18 @@ MD5sum: b4fb52809cf6f13d6a9d21082d3d296f
 Description: MinIO Client for cloud storage and filesystems
 
 Package: minio
-Version: 20241213221912.0.0
+Version: 20241218131544.0.0
 Architecture: amd64
 Maintainer: MinIO Development <dev@minio.io>
-Installed-Size: 112981
+Installed-Size: 113937
 Homepage: https://min.io
 Priority: optional
 Section: 
-Filename: pool/main/m/minio/minio_20241213221912.0.0_amd64.deb
-Size: 40325062
-SHA256: 1295f08ef735e41ab3e49e804b534c3777b58fc8d450851d1c6003cba4f5af13
-SHA1: af18bcbc7dc697cb4b0aff5f9b7825bab73e3340
-MD5sum: 5f3fd7147c21acc5101d474ee689a9c2
+Filename: pool/main/m/minio/minio_20241218131544.0.0_amd64.deb
+Size: 40683464
+SHA256: a62a97a1a131eb3a9c390da1d32bdb82d9e7d82f8db5ef8cf2c3d08b569900a0
+SHA1: 48299295153ec771eabf44ffeb58f2ebdda289f3
+MD5sum: b74972320ead4cfd66ee7a74513607e0
 Description: MinIO is a High Performance Object Storage released under AGPLv3.
  It is API compatible with Amazon S3 cloud storage service. Use MinIO to build
  high performance infrastructure for machine learning, analytics and application
@@ -401,19 +401,19 @@ MD5sum: 3a1a32b72f94c500927b32ac67a82a22
 Description: Prometheus exporter for pgBackRest
 
 Package: pig
-Version: 0.0.1
+Version: 0.1.0
 Architecture: amd64
 License: Apache-2.0 License
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 15249
+Installed-Size: 15527
 Homepage: https://github.com/pgsty/pig
 Priority: optional
 Section: 
-Filename: pool/main/p/pig/pig_0.0.1_amd64.deb
-Size: 9237358
-SHA256: fa555b4fc6ea9a3bd58a1a42edb6e16439a8cf5e892dd768ed51d824a55d5120
-SHA1: 8befc78dc1727615a11b6369b2ee5ca5f149d4ce
-MD5sum: cede1a79b48f801c39e05d4b938beb94
+Filename: pool/main/p/pig/pig_0.1.0_amd64.deb
+Size: 9371202
+SHA256: aa7972a86b464f1b442f06e4e2e0eb74f7e6ee5337a0394d4388d4abb29949e3
+SHA1: 8609b2389fd1276d25d40296fafbc60da270591d
+MD5sum: 4d25597cff8425c7e52a2b411344aa4a
 Description: CLI Tools for Pigsty and PostgreSQL
 
 Package: prometheus

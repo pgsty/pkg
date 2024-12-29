@@ -27,6 +27,13 @@ curl -fsSL https://repo.pigsty.io/get | bash
 curl -fsSL https://repo.pigsty.io/get | bash -s v3.2.0
 ```
 
+You can install pigsty cli - `pig` with
+
+```bash
+curl -fsSL https://repo.pigsty.io/pig | bash
+curl -fsSL https://repo.pigsty.cc/pig | bash  # mirror
+```
+
 
 --------
 
@@ -121,25 +128,27 @@ Prepacked RPM & DEB binary packages for the following software.
 
 **Observability Stack**:
 
-- [grafana](https://github.com/grafana/grafana/) : 11.4.0
-- [loki](https://github.com/grafana/loki) : 3.1.1
-- [promtail](https://github.com/grafana/loki) : 3.0.0 (buggy 3.1.0)
 - [prometheus](https://github.com/prometheus/prometheus) : 3.0.1
-- [pushgateway](https://github.com/prometheus/pushgateway) : 1.9.0
+- [pushgateway](https://github.com/prometheus/pushgateway) : 1.10.0
 - [alertmanager](https://github.com/prometheus/alertmanager) : 0.27.0
 - [blackbox_exporter](https://github.com/prometheus/blackbox_exporter) : 0.25.0
-- [nginx_exporter](https://github.com/nginxinc/nginx-prometheus-exporter) : 1.2.0
+- [nginx_exporter](https://github.com/nginxinc/nginx-prometheus-exporter) : 1.4.0
 - [node_exporter](https://github.com/prometheus/node_exporter) : 1.8.2
-- [keepalived_exporter](https://github.com/gen2brain/keepalived_exporter) : 0.7.0
-- [**pg_exporter**](https://github.com/Vonng/pg_exporter) : 0.7.0
+- [keepalived_exporter](https://github.com/mehdy/keepalived-exporter) : 1.4.0
 - [pgbackrest_exporter](https://github.com/woblerr/pgbackrest_exporter) 0.18.0
-- [mysqld_exporter](https://github.com/prometheus/mysqld_exporter) : 0.15.1
-- [redis_exporter](https://github.com/oliver006/redis_exporter) : v1.62.0
+- [mysqld_exporter](https://github.com/prometheus/mysqld_exporter) : 0.16.0
+- [redis_exporter](https://github.com/oliver006/redis_exporter) : v1.66.0
 - [kafka_exporter](https://github.com/danielqsj/kafka_exporter) : 1.8.0
-- [mongodb_exporter](https://github.com/percona/mongodb_exporter) : 0.40.0
-- [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics) : 1.102.1
-- [VictoriaLogs](https://github.com/VictoriaMetrics/VictoriaMetrics/releases) : v0.28.0
-- [vector](https://github.com/vectordotdev/vector/releases) : 0.40.0
+- [mongodb_exporter](https://github.com/percona/mongodb_exporter) : 0.43.0
+- [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics) : 1.107.0
+- [VictoriaLogs](https://github.com/VictoriaMetrics/VictoriaMetrics/releases) : v1.3.2
+- [pg_timetable](https://github.com/cybertec-postgresql/pg_timetable): 5.10.0
+- [ferretdb](https://github.com/FerretDB/FerretDB): 1.24.0
+- [tigerbeetle](https://github.com/tigerbeetle/tigerbeetle) 0.16.13
+- [loki](https://github.com/grafana/loki) : 3.1.1
+- [promtail](https://github.com/grafana/loki/releases/tag/v3.0.0) : 3.0.0 (3.1.1 fail on el7/el8)
+- [vector](https://github.com/vectordotdev/vector/releases) : 0.43.1
+- [**pg_exporter**](https://github.com/Vonng/pg_exporter) : 0.7.1 (Maintained Separately)
 
 **Database Modules**:
 
@@ -164,7 +173,8 @@ Prepacked RPM & DEB binary packages for the following software.
 
 **PostgreSQL Extensions**:
 
-- PostgreSQL 12-17 Extensions for el8, el9, debian12, and ubuntu22.
+- PostgreSQL 12-17 Extensions for el8, el9, debian12, and ubuntu22. 
+- check the [Extension List](https://ext.pigsty.io/#/list) for details.
 
 
 --------
