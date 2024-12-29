@@ -111,6 +111,8 @@ pulld:
 #                       3. Publishing                         #
 ###############################################################
 upload: cf-upload cos-upload
+upload-infra: cf-infra cos-infra
+upload-pgsql: cf-pgsql cos-pgsql
 
 cf-upload: cf-infra cf-pgsql
 cf-infra:

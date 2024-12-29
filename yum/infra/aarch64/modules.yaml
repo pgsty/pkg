@@ -231,10 +231,8 @@ data:
     - keepalived_exporter-0:1.4.0-1.aarch64
     - logcli-0:3.1.1-1.aarch64
     - loki-0:3.1.1-1.aarch64
-    - mcli-0:20241117193525.0.0-1.aarch64
     - mcli-0:20241121172154.0.0-1.aarch64
-    - minio-0:20241107005220.0.0-1.aarch64
-    - minio-0:20241213221912.0.0-1.aarch64
+    - minio-0:20241218131544.0.0-1.aarch64
     - mongodb_exporter-0:0.43.0-1.aarch64
     - mysqld_exporter-0:0.16.0-1.aarch64
     - nginx_exporter-0:1.4.0-1.aarch64
@@ -244,7 +242,6 @@ data:
     - pg_exporter-0:0.7.1-1.aarch64
     - pg_timetable-0:5.10.0-1.aarch64
     - pgbackrest_exporter-0:0.18.0-1.aarch64
-    - pig-0:0.0.1-1.aarch64
     - pig-0:0.1.0-1.aarch64
     - prometheus-0:3.0.1-1.aarch64
     - prometheus2-0:2.55.1-1.aarch64

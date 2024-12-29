@@ -91,6 +91,9 @@ pulld:
 ###############################################################
 upload: cf-upload cos-upload
 cf-upload: cf-infra cf-pgsql
+upload-infra: cf-infra cos-infra
+upload-pgsql: cf-pgsql cos-pgsql
+
 cf-infra:
 	rclone sync -P --transfers=8 ./infra/ $(CF_PATH)/infra/
 cf-pgsql:
