@@ -1,8 +1,9 @@
-noble|main|amd64: groonga-tokenizer-mecab 14.1.1-1.ubuntu24.04.1
+noble|main|amd64: groonga-tokenizer-mecab 14.1.2-1
 noble|main|amd64: haproxy 3.0.6-3ppa1~noble
 noble|main|amd64: libduckdb 1.1.2-1PIGSTY~noble
 noble|main|amd64: libfq 0.6.1-1PIGSTY~noble
-noble|main|amd64: libgroonga0 14.1.1-1.ubuntu24.04.1
+noble|main|amd64: libgroonga-dev 14.1.2-1
+noble|main|amd64: libgroonga0 14.1.2-1
 noble|main|amd64: pgcopydb 0.16-1PIGSTY~noble
 noble|main|amd64: polardb-for-postgresql 15.10.2.0-35199b32
 noble|main|amd64: postgresql-12-acl 1.0.4-1PIGSTY~noble
@@ -240,6 +241,7 @@ noble|main|amd64: postgresql-13-pgmq 1.4.4-1PIGSTY~noble
 noble|main|amd64: postgresql-13-pgnodemx 1.7-1PIGSTY~noble
 noble|main|amd64: postgresql-13-pgpdf 0.1.0-1PIGSTY~noble
 noble|main|amd64: postgresql-13-pgqr 1.0-1PIGSTY~noble
+noble|main|amd64: postgresql-13-pgroonga 3.2.5-1PIGSTY~noble
 noble|main|amd64: postgresql-13-pgsmcrypto 0.1.0-1PIGSTY~noble
 noble|main|amd64: postgresql-13-pgsodium 3.1.9-1PIGSTY~noble
 noble|main|amd64: postgresql-13-pgsql-tweaks 0.10.4-1PIGSTY~noble
@@ -274,6 +276,7 @@ noble|main|amd64: postgresql-14-aws-s3 0.0.1-1PIGSTY~noble
 noble|main|amd64: postgresql-14-base36 1.0.0-1PIGSTY~noble
 noble|main|amd64: postgresql-14-base62 0.0.1-1PIGSTY~noble
 noble|main|amd64: postgresql-14-chkpass 1.0-1PIGSTY~noble
+noble|main|amd64: postgresql-14-citus 12.1.6-1PIGSTY~noble
 noble|main|amd64: postgresql-14-count-distinct 3.0.2-1PIGSTY~noble
 noble|main|amd64: postgresql-14-cryptint 1.0.0-1PIGSTY~noble
 noble|main|amd64: postgresql-14-ddlx 0.28-1PIGSTY~noble
@@ -385,6 +388,7 @@ noble|main|amd64: postgresql-14-pgmq 1.4.4-1PIGSTY~noble
 noble|main|amd64: postgresql-14-pgnodemx 1.7-1PIGSTY~noble
 noble|main|amd64: postgresql-14-pgpdf 0.1.0-1PIGSTY~noble
 noble|main|amd64: postgresql-14-pgqr 1.0-1PIGSTY~noble
+noble|main|amd64: postgresql-14-pgroonga 3.2.5-1PIGSTY~noble
 noble|main|amd64: postgresql-14-pgsmcrypto 0.1.0-1PIGSTY~noble
 noble|main|amd64: postgresql-14-pgsodium 3.1.9-1PIGSTY~noble
 noble|main|amd64: postgresql-14-pgsql-tweaks 0.10.4-1PIGSTY~noble
@@ -406,6 +410,7 @@ noble|main|amd64: postgresql-14-supautils 2.5.0-1PIGSTY~noble
 noble|main|amd64: postgresql-14-system-stats 3.2-1PIGSTY~noble
 noble|main|amd64: postgresql-14-tableversion 1.10.3-1PIGSTY~noble
 noble|main|amd64: postgresql-14-temporal-tables 1.2.2-1PIGSTY~noble
+noble|main|amd64: postgresql-14-timescaledb 2.17.2-1PIGSTY~noble
 noble|main|amd64: postgresql-14-timestamp9 1.4.0-1PIGSTY~noble
 noble|main|amd64: postgresql-14-url-encode 1.2.5-1PIGSTY~noble
 noble|main|amd64: postgresql-14-vault 0.2.9-1PIGSTY~noble
@@ -421,6 +426,7 @@ noble|main|amd64: postgresql-15-aws-s3 0.0.1-1PIGSTY~noble
 noble|main|amd64: postgresql-15-base36 1.0.0-1PIGSTY~noble
 noble|main|amd64: postgresql-15-base62 0.0.1-1PIGSTY~noble
 noble|main|amd64: postgresql-15-chkpass 1.0-1PIGSTY~noble
+noble|main|amd64: postgresql-15-citus 12.1.6-1PIGSTY~noble
 noble|main|amd64: postgresql-15-count-distinct 3.0.2-1PIGSTY~noble
 noble|main|amd64: postgresql-15-cryptint 1.0.0-1PIGSTY~noble
 noble|main|amd64: postgresql-15-ddlx 0.28-1PIGSTY~noble
@@ -532,6 +538,7 @@ noble|main|amd64: postgresql-15-pgmq 1.4.4-1PIGSTY~noble
 noble|main|amd64: postgresql-15-pgnodemx 1.7-1PIGSTY~noble
 noble|main|amd64: postgresql-15-pgpdf 0.1.0-1PIGSTY~noble
 noble|main|amd64: postgresql-15-pgqr 1.0-1PIGSTY~noble
+noble|main|amd64: postgresql-15-pgroonga 3.2.5-1PIGSTY~noble
 noble|main|amd64: postgresql-15-pgsmcrypto 0.1.0-1PIGSTY~noble
 noble|main|amd64: postgresql-15-pgsodium 3.1.9-1PIGSTY~noble
 noble|main|amd64: postgresql-15-pgsql-tweaks 0.10.4-1PIGSTY~noble
@@ -553,6 +560,7 @@ noble|main|amd64: postgresql-15-supautils 2.5.0-1PIGSTY~noble
 noble|main|amd64: postgresql-15-system-stats 3.2-1PIGSTY~noble
 noble|main|amd64: postgresql-15-tableversion 1.10.3-1PIGSTY~noble
 noble|main|amd64: postgresql-15-temporal-tables 1.2.2-1PIGSTY~noble
+noble|main|amd64: postgresql-15-timescaledb 2.17.2-1PIGSTY~noble
 noble|main|amd64: postgresql-15-timestamp9 1.4.0-1PIGSTY~noble
 noble|main|amd64: postgresql-15-url-encode 1.2.5-1PIGSTY~noble
 noble|main|amd64: postgresql-15-vault 0.2.9-1PIGSTY~noble
@@ -568,6 +576,7 @@ noble|main|amd64: postgresql-16-aws-s3 0.0.1-1PIGSTY~noble
 noble|main|amd64: postgresql-16-base36 1.0.0-1PIGSTY~noble
 noble|main|amd64: postgresql-16-base62 0.0.1-1PIGSTY~noble
 noble|main|amd64: postgresql-16-chkpass 1.0-1PIGSTY~noble
+noble|main|amd64: postgresql-16-citus 12.1.6-1PIGSTY~noble
 noble|main|amd64: postgresql-16-count-distinct 3.0.2-1PIGSTY~noble
 noble|main|amd64: postgresql-16-cryptint 1.0.0-1PIGSTY~noble
 noble|main|amd64: postgresql-16-ddlx 0.28-1PIGSTY~noble
@@ -680,6 +689,7 @@ noble|main|amd64: postgresql-16-pgmq 1.4.4-1PIGSTY~noble
 noble|main|amd64: postgresql-16-pgnodemx 1.7-1PIGSTY~noble
 noble|main|amd64: postgresql-16-pgpdf 0.1.0-1PIGSTY~noble
 noble|main|amd64: postgresql-16-pgqr 1.0-1PIGSTY~noble
+noble|main|amd64: postgresql-16-pgroonga 3.2.5-1PIGSTY~noble
 noble|main|amd64: postgresql-16-pgsmcrypto 0.1.0-1PIGSTY~noble
 noble|main|amd64: postgresql-16-pgsodium 3.1.9-1PIGSTY~noble
 noble|main|amd64: postgresql-16-pgsql-tweaks 0.10.4-1PIGSTY~noble
@@ -701,6 +711,7 @@ noble|main|amd64: postgresql-16-supautils 2.5.0-1PIGSTY~noble
 noble|main|amd64: postgresql-16-system-stats 3.2-1PIGSTY~noble
 noble|main|amd64: postgresql-16-tableversion 1.10.3-1PIGSTY~noble
 noble|main|amd64: postgresql-16-temporal-tables 1.2.2-1PIGSTY~noble
+noble|main|amd64: postgresql-16-timescaledb 2.17.2-1PIGSTY~noble
 noble|main|amd64: postgresql-16-timestamp9 1.4.0-1PIGSTY~noble
 noble|main|amd64: postgresql-16-url-encode 1.2.5-1PIGSTY~noble
 noble|main|amd64: postgresql-16-vault 0.2.9-1PIGSTY~noble
@@ -822,6 +833,7 @@ noble|main|amd64: postgresql-17-pgmq 1.4.4-1PIGSTY~noble
 noble|main|amd64: postgresql-17-pgnodemx 1.7-1PIGSTY~noble
 noble|main|amd64: postgresql-17-pgpdf 0.1.0-1PIGSTY~noble
 noble|main|amd64: postgresql-17-pgqr 1.0-1PIGSTY~noble
+noble|main|amd64: postgresql-17-pgroonga 3.2.5-1PIGSTY~noble
 noble|main|amd64: postgresql-17-pgsmcrypto 0.1.0-1PIGSTY~noble
 noble|main|amd64: postgresql-17-pgsodium 3.1.9-1PIGSTY~noble
 noble|main|amd64: postgresql-17-pgsql-tweaks 0.10.4-1PIGSTY~noble
@@ -841,6 +853,7 @@ noble|main|amd64: postgresql-17-supautils 2.5.0-1PIGSTY~noble
 noble|main|amd64: postgresql-17-system-stats 3.2-1PIGSTY~noble
 noble|main|amd64: postgresql-17-tableversion 1.10.3-1PIGSTY~noble
 noble|main|amd64: postgresql-17-temporal-tables 1.2.2-1PIGSTY~noble
+noble|main|amd64: postgresql-17-timescaledb 2.17.2-1PIGSTY~noble
 noble|main|amd64: postgresql-17-timestamp9 1.4.0-1PIGSTY~noble
 noble|main|amd64: postgresql-17-url-encode 1.2.5-1PIGSTY~noble
 noble|main|amd64: postgresql-17-vault 0.2.9-1PIGSTY~noble
@@ -863,11 +876,12 @@ noble|main|amd64: timescaledb-2-postgresql-15 2.17.2~ubuntu24.04
 noble|main|amd64: timescaledb-2-postgresql-16 2.17.2~ubuntu24.04
 noble|main|amd64: timescaledb-2-postgresql-17 2.17.2~ubuntu24.04
 noble|main|amd64: timescaledb-tools 0.18.0~ubuntu24.04
-noble|main|arm64: groonga-tokenizer-mecab 14.1.1-1.ubuntu24.04.1
+noble|main|arm64: groonga-tokenizer-mecab 14.1.2-1
 noble|main|arm64: haproxy 3.0.6-3ppa1~noble
 noble|main|arm64: libduckdb 1.1.2-1PIGSTY~noble
 noble|main|arm64: libfq 0.6.1-1PIGSTY~noble
-noble|main|arm64: libgroonga0 14.1.1-1.ubuntu24.04.1
+noble|main|arm64: libgroonga-dev 14.1.2-1
+noble|main|arm64: libgroonga0 14.1.2-1
 noble|main|arm64: pgcopydb 0.16-1PIGSTY~noble
 noble|main|arm64: postgresql-12-acl 1.0.4-1PIGSTY~noble
 noble|main|arm64: postgresql-12-aggs-for-arrays 1.3.3-1PIGSTY~noble
@@ -1100,6 +1114,7 @@ noble|main|arm64: postgresql-13-pgmq 1.4.4-1PIGSTY~noble
 noble|main|arm64: postgresql-13-pgnodemx 1.7-1PIGSTY~noble
 noble|main|arm64: postgresql-13-pgpdf 0.1.0-1PIGSTY~noble
 noble|main|arm64: postgresql-13-pgqr 1.0-1PIGSTY~noble
+noble|main|arm64: postgresql-13-pgroonga 3.2.5-1PIGSTY~noble
 noble|main|arm64: postgresql-13-pgsmcrypto 0.1.0-1PIGSTY~noble
 noble|main|arm64: postgresql-13-pgsodium 3.1.9-1PIGSTY~noble
 noble|main|arm64: postgresql-13-pgsql-tweaks 0.10.4-1PIGSTY~noble
@@ -1134,6 +1149,7 @@ noble|main|arm64: postgresql-14-aws-s3 0.0.1-1PIGSTY~noble
 noble|main|arm64: postgresql-14-base36 1.0.0-1PIGSTY~noble
 noble|main|arm64: postgresql-14-base62 0.0.1-1PIGSTY~noble
 noble|main|arm64: postgresql-14-chkpass 1.0-1PIGSTY~noble
+noble|main|arm64: postgresql-14-citus 12.1.6-1PIGSTY~noble
 noble|main|arm64: postgresql-14-count-distinct 3.0.2-1PIGSTY~noble
 noble|main|arm64: postgresql-14-cryptint 1.0.0-1PIGSTY~noble
 noble|main|arm64: postgresql-14-ddlx 0.28-1PIGSTY~noble
@@ -1243,6 +1259,7 @@ noble|main|arm64: postgresql-14-pgmq 1.4.4-1PIGSTY~noble
 noble|main|arm64: postgresql-14-pgnodemx 1.7-1PIGSTY~noble
 noble|main|arm64: postgresql-14-pgpdf 0.1.0-1PIGSTY~noble
 noble|main|arm64: postgresql-14-pgqr 1.0-1PIGSTY~noble
+noble|main|arm64: postgresql-14-pgroonga 3.2.5-1PIGSTY~noble
 noble|main|arm64: postgresql-14-pgsmcrypto 0.1.0-1PIGSTY~noble
 noble|main|arm64: postgresql-14-pgsodium 3.1.9-1PIGSTY~noble
 noble|main|arm64: postgresql-14-pgsql-tweaks 0.10.4-1PIGSTY~noble
@@ -1264,6 +1281,7 @@ noble|main|arm64: postgresql-14-supautils 2.5.0-1PIGSTY~noble
 noble|main|arm64: postgresql-14-system-stats 3.2-1PIGSTY~noble
 noble|main|arm64: postgresql-14-tableversion 1.10.3-1PIGSTY~noble
 noble|main|arm64: postgresql-14-temporal-tables 1.2.2-1PIGSTY~noble
+noble|main|arm64: postgresql-14-timescaledb 2.17.2-1PIGSTY~noble
 noble|main|arm64: postgresql-14-timestamp9 1.4.0-1PIGSTY~noble
 noble|main|arm64: postgresql-14-url-encode 1.2.5-1PIGSTY~noble
 noble|main|arm64: postgresql-14-vault 0.2.9-1PIGSTY~noble
@@ -1279,6 +1297,7 @@ noble|main|arm64: postgresql-15-aws-s3 0.0.1-1PIGSTY~noble
 noble|main|arm64: postgresql-15-base36 1.0.0-1PIGSTY~noble
 noble|main|arm64: postgresql-15-base62 0.0.1-1PIGSTY~noble
 noble|main|arm64: postgresql-15-chkpass 1.0-1PIGSTY~noble
+noble|main|arm64: postgresql-15-citus 12.1.6-1PIGSTY~noble
 noble|main|arm64: postgresql-15-count-distinct 3.0.2-1PIGSTY~noble
 noble|main|arm64: postgresql-15-cryptint 1.0.0-1PIGSTY~noble
 noble|main|arm64: postgresql-15-ddlx 0.28-1PIGSTY~noble
@@ -1388,6 +1407,7 @@ noble|main|arm64: postgresql-15-pgmq 1.4.4-1PIGSTY~noble
 noble|main|arm64: postgresql-15-pgnodemx 1.7-1PIGSTY~noble
 noble|main|arm64: postgresql-15-pgpdf 0.1.0-1PIGSTY~noble
 noble|main|arm64: postgresql-15-pgqr 1.0-1PIGSTY~noble
+noble|main|arm64: postgresql-15-pgroonga 3.2.5-1PIGSTY~noble
 noble|main|arm64: postgresql-15-pgsmcrypto 0.1.0-1PIGSTY~noble
 noble|main|arm64: postgresql-15-pgsodium 3.1.9-1PIGSTY~noble
 noble|main|arm64: postgresql-15-pgsql-tweaks 0.10.4-1PIGSTY~noble
@@ -1409,6 +1429,7 @@ noble|main|arm64: postgresql-15-supautils 2.5.0-1PIGSTY~noble
 noble|main|arm64: postgresql-15-system-stats 3.2-1PIGSTY~noble
 noble|main|arm64: postgresql-15-tableversion 1.10.3-1PIGSTY~noble
 noble|main|arm64: postgresql-15-temporal-tables 1.2.2-1PIGSTY~noble
+noble|main|arm64: postgresql-15-timescaledb 2.17.2-1PIGSTY~noble
 noble|main|arm64: postgresql-15-timestamp9 1.4.0-1PIGSTY~noble
 noble|main|arm64: postgresql-15-url-encode 1.2.5-1PIGSTY~noble
 noble|main|arm64: postgresql-15-vault 0.2.9-1PIGSTY~noble
@@ -1424,6 +1445,7 @@ noble|main|arm64: postgresql-16-aws-s3 0.0.1-1PIGSTY~noble
 noble|main|arm64: postgresql-16-base36 1.0.0-1PIGSTY~noble
 noble|main|arm64: postgresql-16-base62 0.0.1-1PIGSTY~noble
 noble|main|arm64: postgresql-16-chkpass 1.0-1PIGSTY~noble
+noble|main|arm64: postgresql-16-citus 12.1.6-1PIGSTY~noble
 noble|main|arm64: postgresql-16-count-distinct 3.0.2-1PIGSTY~noble
 noble|main|arm64: postgresql-16-cryptint 1.0.0-1PIGSTY~noble
 noble|main|arm64: postgresql-16-ddlx 0.28-1PIGSTY~noble
@@ -1534,6 +1556,7 @@ noble|main|arm64: postgresql-16-pgmq 1.4.4-1PIGSTY~noble
 noble|main|arm64: postgresql-16-pgnodemx 1.7-1PIGSTY~noble
 noble|main|arm64: postgresql-16-pgpdf 0.1.0-1PIGSTY~noble
 noble|main|arm64: postgresql-16-pgqr 1.0-1PIGSTY~noble
+noble|main|arm64: postgresql-16-pgroonga 3.2.5-1PIGSTY~noble
 noble|main|arm64: postgresql-16-pgsmcrypto 0.1.0-1PIGSTY~noble
 noble|main|arm64: postgresql-16-pgsodium 3.1.9-1PIGSTY~noble
 noble|main|arm64: postgresql-16-pgsql-tweaks 0.10.4-1PIGSTY~noble
@@ -1555,6 +1578,7 @@ noble|main|arm64: postgresql-16-supautils 2.5.0-1PIGSTY~noble
 noble|main|arm64: postgresql-16-system-stats 3.2-1PIGSTY~noble
 noble|main|arm64: postgresql-16-tableversion 1.10.3-1PIGSTY~noble
 noble|main|arm64: postgresql-16-temporal-tables 1.2.2-1PIGSTY~noble
+noble|main|arm64: postgresql-16-timescaledb 2.17.2-1PIGSTY~noble
 noble|main|arm64: postgresql-16-timestamp9 1.4.0-1PIGSTY~noble
 noble|main|arm64: postgresql-16-url-encode 1.2.5-1PIGSTY~noble
 noble|main|arm64: postgresql-16-vault 0.2.9-1PIGSTY~noble
@@ -1675,6 +1699,7 @@ noble|main|arm64: postgresql-17-pgmq 1.4.4-1PIGSTY~noble
 noble|main|arm64: postgresql-17-pgnodemx 1.7-1PIGSTY~noble
 noble|main|arm64: postgresql-17-pgpdf 0.1.0-1PIGSTY~noble
 noble|main|arm64: postgresql-17-pgqr 1.0-1PIGSTY~noble
+noble|main|arm64: postgresql-17-pgroonga 3.2.5-1PIGSTY~noble
 noble|main|arm64: postgresql-17-pgsmcrypto 0.1.0-1PIGSTY~noble
 noble|main|arm64: postgresql-17-pgsodium 3.1.9-1PIGSTY~noble
 noble|main|arm64: postgresql-17-pgsql-tweaks 0.10.4-1PIGSTY~noble
@@ -1694,6 +1719,7 @@ noble|main|arm64: postgresql-17-supautils 2.5.0-1PIGSTY~noble
 noble|main|arm64: postgresql-17-system-stats 3.2-1PIGSTY~noble
 noble|main|arm64: postgresql-17-tableversion 1.10.3-1PIGSTY~noble
 noble|main|arm64: postgresql-17-temporal-tables 1.2.2-1PIGSTY~noble
+noble|main|arm64: postgresql-17-timescaledb 2.17.2-1PIGSTY~noble
 noble|main|arm64: postgresql-17-timestamp9 1.4.0-1PIGSTY~noble
 noble|main|arm64: postgresql-17-url-encode 1.2.5-1PIGSTY~noble
 noble|main|arm64: postgresql-17-vault 0.2.9-1PIGSTY~noble

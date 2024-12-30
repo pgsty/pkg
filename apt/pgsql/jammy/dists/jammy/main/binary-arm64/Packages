@@ -86,6 +86,30 @@ Description: A wrapper library for Firebird's C API, loosely based on PostgreSQL
   It is loosely based on PostgreSQL's libpq and provides a subset of that API's functions - names beginning with FQ rather than PQ - with more-or-less identical function signatures. It also provides some Firebird-specific functions.
   While basically functional, libfq is still work-in-progress and the API definitions may change between releases in an incompatible way. USE AT YOUR OWN RISK.
 
+Package: libgroonga-dev
+Source: groonga
+Version: 14.1.2-1
+Architecture: arm64
+Maintainer: Groonga Project <packages@groonga.org>
+Installed-Size: 513
+Depends: libgroonga0 (= 14.1.2-1), libmsgpack-dev, pkg-config
+Breaks: libgroonga (<< 1.2.0-1)
+Replaces: libgroonga (<< 1.2.0-1)
+Multi-Arch: same
+Homepage: https://groonga.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/g/groonga/libgroonga-dev_14.1.2-1_arm64.deb
+Size: 67664
+SHA256: b8ad5fbf9bf81a52426853f7081d84bed50007e3a58df3f6fd5ff6c5ff99cdaa
+SHA1: c17ced8d04bc377334a86a4c2c1d5db9c509e516
+MD5sum: a60bacb9aef6fc7154582266e1c7cd88
+Description: Development files to use Groonga as a library
+ Groonga is an open-source fulltext search engine and column store.
+ It lets you write high-performance applications that requires fulltext search.
+ .
+ This package provides header files to use Groonga as a library.
+
 Package: libgroonga0
 Source: groonga
 Version: 14.1.2-1
@@ -4840,6 +4864,26 @@ Description: PostgreSQL extension to generate QR code
   model_number integer: 0 to 2.
   scale integer: pixels for each dot.
 
+Package: postgresql-13-pgroonga
+Source: pgroonga
+Version: 3.2.5-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 2745
+Depends: postgresql-13, postgresql-13-jit-llvm (>= 15), libc6 (>= 2.33), libgroonga0 (>= 14.1.2), libmsgpackc2 (>= 2.1.0)
+Provides: postgresql-pgroonga
+Homepage: https://pgroonga.github.io/
+Priority: optional
+Section: database
+Filename: pool/main/p/pgroonga/postgresql-13-pgroonga_3.2.5-1PIGSTY~jammy_arm64.deb
+Size: 795854
+SHA256: a25b338ed4afd4b9d32d58ff47da57146d0a12914bab1185fd936aaaebd176dc
+SHA1: fba1c92732504dd4712b4c519f67a4202156ef3e
+MD5sum: 322f7fa28ef09f0f0e78be53afc60b51
+Description: Fast full-text search plugin for PostgreSQL based on Groonga
+ PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
+ It is based on Groonga full-text search engine.
+
 Package: postgresql-13-pgsmcrypto
 Source: pgsmcrypto
 Version: 0.1.0-1PIGSTY~jammy
@@ -5530,6 +5574,36 @@ Description: Foreign-Data Wrapper facility to enable reading log files via SQL
   PostgreSQL versions lower than 11 come bundled with chkpass extension for storing encrypted passwords.
   This was removed from Postgres 11 and later. This is a stand alone version for use with those.
   See documentaion for chkpass: https://www.postgresql.org/docs/10/chkpass.html
+
+Package: postgresql-14-citus
+Source: citus
+Version: 12.1.6-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 8869
+Depends: postgresql-14, postgresql-14-jit-llvm (>= 15), libc6 (>= 2.33), libcurl4 (>= 7.16.2), liblz4-1 (>= 0.0~r130), libpq5 (>= 9.2~beta3), libssl3 (>= 3.0.0~~alpha1), libzstd1 (>= 1.4.0)
+Provides: postgresql-citus
+Homepage: https://github.com/citusdatabase/citus
+Priority: optional
+Section: database
+Filename: pool/main/c/citus/postgresql-14-citus_12.1.6-1PIGSTY~jammy_arm64.deb
+Size: 3246512
+SHA256: bc66ce91a3c8cdfe65113496c2ce228a1826ab35398765305362dbd9609dd86f
+SHA1: a9e19a5f4cd085274a323ed2ab2f89272f033dd3
+MD5sum: 609a32a78128f0ad99ff8ef21027edbc
+Description: PostgreSQL extension that transforms Postgres into a distributed database
+ Citus horizontally scales PostgreSQL across commodity servers
+ using sharding and replication. Its query engine parallelizes
+ incoming SQL queries across these servers to enable real-time
+ responses on large datasets.
+ .
+ Citus extends the underlying database rather than forking it,
+ which gives developers and enterprises the power and familiarity
+ of a traditional relational database. As an extension, Citus
+ supports new PostgreSQL releases, allowing users to benefit from
+ new features while maintaining compatibility with existing
+ PostgreSQL tools. Note that Citus supports many (but not all) SQL
+ commands.
 
 Package: postgresql-14-count-distinct
 Source: count-distinct
@@ -7738,6 +7812,26 @@ Description: PostgreSQL extension to generate QR code
   model_number integer: 0 to 2.
   scale integer: pixels for each dot.
 
+Package: postgresql-14-pgroonga
+Source: pgroonga
+Version: 3.2.5-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 2560
+Depends: postgresql-14, postgresql-14-jit-llvm (>= 15), libc6 (>= 2.33), libgroonga0 (>= 14.1.2)
+Provides: postgresql-pgroonga
+Homepage: https://pgroonga.github.io/
+Priority: optional
+Section: database
+Filename: pool/main/p/pgroonga/postgresql-14-pgroonga_3.2.5-1PIGSTY~jammy_arm64.deb
+Size: 685484
+SHA256: fea56d507130e8de33a8b6fdfc8a95a8d50f8a767e83b3b4af89d8e45ddfac69
+SHA1: c628fcdad0846f9ae38779534400ef56cf306b79
+MD5sum: ea3856e9854770b0b8a43d9e4c6850ac
+Description: Fast full-text search plugin for PostgreSQL based on Groonga
+ PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
+ It is based on Groonga full-text search engine.
+
 Package: postgresql-14-pgsmcrypto
 Source: pgsmcrypto
 Version: 0.1.0-1PIGSTY~jammy
@@ -8161,6 +8255,25 @@ Description: Temporal Tables PostgreSQL Extension
   A temporal table is a table that records the period of time when a row is valid.
   There are two types of periods: the application period (also known as valid-time or business-time) and the system period (also known as transaction-time).
 
+Package: postgresql-14-timescaledb
+Source: timescaledb
+Version: 2.17.2-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 12570
+Depends: postgresql-14, libc6 (>= 2.17)
+Provides: postgresql-timescaledb
+Homepage: https://github.com/timescale/timescaledb
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb/postgresql-14-timescaledb_2.17.2-1PIGSTY~jammy_arm64.deb
+Size: 635244
+SHA256: a2bd55f2e8f569ff7becb6bb78ebe43dc30314cf37894203bd80bc4e5ed5088b
+SHA1: 31102d1984b4c7d5423ec2a030ab8b46d06cfa4e
+MD5sum: 2a90b95039f130ff5b30a05ffe5f5ba7
+Description: PostgreSQL extension for high-performance real-time analytics on time-series and event data
+  An open-source time-series SQL database optimized for fast ingest and complex queries. Packaged as a PostgreSQL extension.
+
 Package: postgresql-14-timestamp9
 Source: timestamp9
 Version: 1.4.0-1PIGSTY~jammy
@@ -8469,6 +8582,36 @@ Description: Foreign-Data Wrapper facility to enable reading log files via SQL
   PostgreSQL versions lower than 11 come bundled with chkpass extension for storing encrypted passwords.
   This was removed from Postgres 11 and later. This is a stand alone version for use with those.
   See documentaion for chkpass: https://www.postgresql.org/docs/10/chkpass.html
+
+Package: postgresql-15-citus
+Source: citus
+Version: 12.1.6-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 8936
+Depends: postgresql-15, postgresql-15-jit-llvm (>= 15), libc6 (>= 2.33), libcurl4 (>= 7.16.2), liblz4-1 (>= 0.0~r130), libpq5 (>= 9.2~beta3), libssl3 (>= 3.0.0~~alpha1), libzstd1 (>= 1.4.0)
+Provides: postgresql-citus
+Homepage: https://github.com/citusdatabase/citus
+Priority: optional
+Section: database
+Filename: pool/main/c/citus/postgresql-15-citus_12.1.6-1PIGSTY~jammy_arm64.deb
+Size: 3286048
+SHA256: af483cecef15acf6e9f9da2e7f05387e06a495d494530d0f766942f0849ac3b2
+SHA1: dc60b480b490e59fef307f18c06dc50af5f98a42
+MD5sum: a7df1c53ee67c2909c7baae53fec136b
+Description: PostgreSQL extension that transforms Postgres into a distributed database
+ Citus horizontally scales PostgreSQL across commodity servers
+ using sharding and replication. Its query engine parallelizes
+ incoming SQL queries across these servers to enable real-time
+ responses on large datasets.
+ .
+ Citus extends the underlying database rather than forking it,
+ which gives developers and enterprises the power and familiarity
+ of a traditional relational database. As an extension, Citus
+ supports new PostgreSQL releases, allowing users to benefit from
+ new features while maintaining compatibility with existing
+ PostgreSQL tools. Note that Citus supports many (but not all) SQL
+ commands.
 
 Package: postgresql-15-count-distinct
 Source: count-distinct
@@ -10677,6 +10820,26 @@ Description: PostgreSQL extension to generate QR code
   model_number integer: 0 to 2.
   scale integer: pixels for each dot.
 
+Package: postgresql-15-pgroonga
+Source: pgroonga
+Version: 3.2.5-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 2677
+Depends: postgresql-15, postgresql-15-jit-llvm (>= 15), libc6 (>= 2.33), libgroonga0 (>= 14.1.2)
+Provides: postgresql-pgroonga
+Homepage: https://pgroonga.github.io/
+Priority: optional
+Section: database
+Filename: pool/main/p/pgroonga/postgresql-15-pgroonga_3.2.5-1PIGSTY~jammy_arm64.deb
+Size: 746552
+SHA256: a7ac39f330e3a3051825324c8989b0ae3ac36c9375b8be43e3d5e4c03257cecf
+SHA1: 74fd141385395a16a47ac3aff54e8719741797ab
+MD5sum: 44dde03424e7cb91b16eab710a4f354f
+Description: Fast full-text search plugin for PostgreSQL based on Groonga
+ PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
+ It is based on Groonga full-text search engine.
+
 Package: postgresql-15-pgsmcrypto
 Source: pgsmcrypto
 Version: 0.1.0-1PIGSTY~jammy
@@ -11100,6 +11263,25 @@ Description: Temporal Tables PostgreSQL Extension
   A temporal table is a table that records the period of time when a row is valid.
   There are two types of periods: the application period (also known as valid-time or business-time) and the system period (also known as transaction-time).
 
+Package: postgresql-15-timescaledb
+Source: timescaledb
+Version: 2.17.2-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 12570
+Depends: postgresql-15, libc6 (>= 2.17)
+Provides: postgresql-timescaledb
+Homepage: https://github.com/timescale/timescaledb
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb/postgresql-15-timescaledb_2.17.2-1PIGSTY~jammy_arm64.deb
+Size: 639700
+SHA256: dad659bd8c54f38ef32da3fa2eaa5a26d3f0706f73ade7854b68d6cf835cf156
+SHA1: 0eb6480856d2d84f68fbd33d812a4696b01f7497
+MD5sum: 42ce43f4dcdde208e2ba59c6405780dc
+Description: PostgreSQL extension for high-performance real-time analytics on time-series and event data
+  An open-source time-series SQL database optimized for fast ingest and complex queries. Packaged as a PostgreSQL extension.
+
 Package: postgresql-15-timestamp9
 Source: timestamp9
 Version: 1.4.0-1PIGSTY~jammy
@@ -11408,6 +11590,36 @@ Description: Foreign-Data Wrapper facility to enable reading log files via SQL
   PostgreSQL versions lower than 11 come bundled with chkpass extension for storing encrypted passwords.
   This was removed from Postgres 11 and later. This is a stand alone version for use with those.
   See documentaion for chkpass: https://www.postgresql.org/docs/10/chkpass.html
+
+Package: postgresql-16-citus
+Source: citus
+Version: 12.1.6-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 8732
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.33), libcurl4 (>= 7.16.2), liblz4-1 (>= 0.0~r130), libpq5 (>= 9.2~beta3), libssl3 (>= 3.0.0~~alpha1), libzstd1 (>= 1.4.0)
+Provides: postgresql-citus
+Homepage: https://github.com/citusdatabase/citus
+Priority: optional
+Section: database
+Filename: pool/main/c/citus/postgresql-16-citus_12.1.6-1PIGSTY~jammy_arm64.deb
+Size: 3258286
+SHA256: fddb8ba2c8c14a6b590b1c276b7175c99e8384823494fdfe9ae4b25735cb0fa2
+SHA1: ce25d24d518d57eae8d5ba2a71ee3a3af992766d
+MD5sum: 91bd03615f88d0130ad4c643c816808d
+Description: PostgreSQL extension that transforms Postgres into a distributed database
+ Citus horizontally scales PostgreSQL across commodity servers
+ using sharding and replication. Its query engine parallelizes
+ incoming SQL queries across these servers to enable real-time
+ responses on large datasets.
+ .
+ Citus extends the underlying database rather than forking it,
+ which gives developers and enterprises the power and familiarity
+ of a traditional relational database. As an extension, Citus
+ supports new PostgreSQL releases, allowing users to benefit from
+ new features while maintaining compatibility with existing
+ PostgreSQL tools. Note that Citus supports many (but not all) SQL
+ commands.
 
 Package: postgresql-16-count-distinct
 Source: count-distinct
@@ -13635,6 +13847,26 @@ Description: PostgreSQL extension to generate QR code
   model_number integer: 0 to 2.
   scale integer: pixels for each dot.
 
+Package: postgresql-16-pgroonga
+Source: pgroonga
+Version: 3.2.5-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 2646
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.33), libgroonga0 (>= 14.1.2)
+Provides: postgresql-pgroonga
+Homepage: https://pgroonga.github.io/
+Priority: optional
+Section: database
+Filename: pool/main/p/pgroonga/postgresql-16-pgroonga_3.2.5-1PIGSTY~jammy_arm64.deb
+Size: 736094
+SHA256: ea3ae2c269dd8408c0c86dd03d2d1d7f6fbed0f644765b79c31e97f823775278
+SHA1: 8821512212eb2c0ac94613eeed79fc031e323b87
+MD5sum: 3b7f3e42aa4b0c2f6dbb43785c1b6183
+Description: Fast full-text search plugin for PostgreSQL based on Groonga
+ PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
+ It is based on Groonga full-text search engine.
+
 Package: postgresql-16-pgsmcrypto
 Source: pgsmcrypto
 Version: 0.1.0-1PIGSTY~jammy
@@ -14057,6 +14289,25 @@ MD5sum: 3165da232624c7d0f93bc550f0d28ab8
 Description: Temporal Tables PostgreSQL Extension
   A temporal table is a table that records the period of time when a row is valid.
   There are two types of periods: the application period (also known as valid-time or business-time) and the system period (also known as transaction-time).
+
+Package: postgresql-16-timescaledb
+Source: timescaledb
+Version: 2.17.2-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 12580
+Depends: postgresql-16, libc6 (>= 2.17)
+Provides: postgresql-timescaledb
+Homepage: https://github.com/timescale/timescaledb
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb/postgresql-16-timescaledb_2.17.2-1PIGSTY~jammy_arm64.deb
+Size: 642710
+SHA256: 0da817e316f0746ef96e6980b15a93397736ac1ababc76b716551c2077cc10e5
+SHA1: 1d78ac561665a5d5c2b2ca4c2cba55863797ce80
+MD5sum: 815cf6ca107d5666151adad3fa44a8fc
+Description: PostgreSQL extension for high-performance real-time analytics on time-series and event data
+  An open-source time-series SQL database optimized for fast ingest and complex queries. Packaged as a PostgreSQL extension.
 
 Package: postgresql-16-timestamp9
 Source: timestamp9
@@ -16471,6 +16722,26 @@ Description: PostgreSQL extension to generate QR code
   model_number integer: 0 to 2.
   scale integer: pixels for each dot.
 
+Package: postgresql-17-pgroonga
+Source: pgroonga
+Version: 3.2.5-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 2646
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libc6 (>= 2.33), libgroonga0 (>= 14.1.2)
+Provides: postgresql-pgroonga
+Homepage: https://pgroonga.github.io/
+Priority: optional
+Section: database
+Filename: pool/main/p/pgroonga/postgresql-17-pgroonga_3.2.5-1PIGSTY~jammy_arm64.deb
+Size: 740112
+SHA256: ba97dd3bd21609472bd4a579835b323b2c70ffeffb8eb4339569120094ad3814
+SHA1: fad004fd0f95cb84e477fcf0ce9806b960be5ec3
+MD5sum: 8336b172ae73ddb65757fe38c35ca67a
+Description: Fast full-text search plugin for PostgreSQL based on Groonga
+ PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
+ It is based on Groonga full-text search engine.
+
 Package: postgresql-17-pgsmcrypto
 Source: pgsmcrypto
 Version: 0.1.0-1PIGSTY~jammy
@@ -16854,6 +17125,25 @@ MD5sum: 61f910f088e86d8ab9aa6272dd0ce61c
 Description: Temporal Tables PostgreSQL Extension
   A temporal table is a table that records the period of time when a row is valid.
   There are two types of periods: the application period (also known as valid-time or business-time) and the system period (also known as transaction-time).
+
+Package: postgresql-17-timescaledb
+Source: timescaledb
+Version: 2.17.2-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 12595
+Depends: postgresql-17, libc6 (>= 2.17)
+Provides: postgresql-timescaledb
+Homepage: https://github.com/timescale/timescaledb
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb/postgresql-17-timescaledb_2.17.2-1PIGSTY~jammy_arm64.deb
+Size: 651060
+SHA256: 251e50c537126bbe99b4c9a116e01b342d6ab3c9694c27b4aaaace901b07d7ad
+SHA1: 1ee2f475515c664824845c73045841ef19ebd5d0
+MD5sum: fe0f3562c8884e03406213ca994a7354
+Description: PostgreSQL extension for high-performance real-time analytics on time-series and event data
+  An open-source time-series SQL database optimized for fast ingest and complex queries. Packaged as a PostgreSQL extension.
 
 Package: postgresql-17-timestamp9
 Source: timestamp9
