@@ -402,6 +402,11 @@ data:
       - pg_analytics_15
       - pg_analytics_16
       - pg_analytics_17
+      - pg_anon_13
+      - pg_anon_14
+      - pg_anon_15
+      - pg_anon_16
+      - pg_anon_17
       - pg_arraymath_12
       - pg_arraymath_12-llvmjit
       - pg_arraymath_13
@@ -1739,6 +1744,11 @@ data:
     - pg_analytics_15
     - pg_analytics_16
     - pg_analytics_17
+    - pg_anon_13
+    - pg_anon_14
+    - pg_anon_15
+    - pg_anon_16
+    - pg_anon_17
     - pg_arraymath_12
     - pg_arraymath_12-llvmjit
     - pg_arraymath_13
@@ -3175,6 +3185,16 @@ data:
       pg_analytics_16:
         rationale: Present in the repository
       pg_analytics_17:
+        rationale: Present in the repository
+      pg_anon_13:
+        rationale: Present in the repository
+      pg_anon_14:
+        rationale: Present in the repository
+      pg_anon_15:
+        rationale: Present in the repository
+      pg_anon_16:
+        rationale: Present in the repository
+      pg_anon_17:
         rationale: Present in the repository
       pg_arraymath_12:
         rationale: Present in the repository
@@ -4712,6 +4732,11 @@ data:
     - pg_analytics_15-0:0.2.4-1.el9.aarch64
     - pg_analytics_16-0:0.2.4-1.el9.aarch64
     - pg_analytics_17-0:0.2.4-1.el9.aarch64
+    - pg_anon_13-0:2.0.0-1PIGSTY.el9.aarch64
+    - pg_anon_14-0:2.0.0-1PIGSTY.el9.aarch64
+    - pg_anon_15-0:2.0.0-1PIGSTY.el9.aarch64
+    - pg_anon_16-0:2.0.0-1PIGSTY.el9.aarch64
+    - pg_anon_17-0:2.0.0-1PIGSTY.el9.aarch64
     - pg_arraymath_12-0:1.1-1PIGSTY.el9.aarch64
     - pg_arraymath_12-llvmjit-0:1.1-1PIGSTY.el9.aarch64
     - pg_arraymath_13-0:1.1-1PIGSTY.el9.aarch64
@@ -4975,10 +5000,15 @@ data:
     - pg_lakehouse_15-0:0.9.0-1.el9.aarch64
     - pg_lakehouse_16-0:0.9.0-1.el9.aarch64
     - pg_later_13-0:0.2.0-1PIGSTY.el9.aarch64
+    - pg_later_13-0:0.3.0-1PIGSTY.el9.aarch64
     - pg_later_14-0:0.2.0-1PIGSTY.el9.aarch64
+    - pg_later_14-0:0.3.0-1PIGSTY.el9.aarch64
     - pg_later_15-0:0.2.0-1PIGSTY.el9.aarch64
+    - pg_later_15-0:0.3.0-1PIGSTY.el9.aarch64
     - pg_later_16-0:0.2.0-1PIGSTY.el9.aarch64
+    - pg_later_16-0:0.3.0-1PIGSTY.el9.aarch64
     - pg_later_17-0:0.2.0-1PIGSTY.el9.aarch64
+    - pg_later_17-0:0.3.0-1PIGSTY.el9.aarch64
     - pg_math_12-0:1.0-1PIGSTY.el9.aarch64
     - pg_math_12-llvmjit-0:1.0-1PIGSTY.el9.aarch64
     - pg_math_13-0:1.0-1PIGSTY.el9.aarch64
@@ -5022,9 +5052,13 @@ data:
     - pg_orphaned_17-0:1.0-1PIGSTY.el9.aarch64
     - pg_orphaned_17-llvmjit-0:1.0-1PIGSTY.el9.aarch64
     - pg_parquet_14-0:0.1.1-1PIGSTY.el9.aarch64
+    - pg_parquet_14-0:0.2.0-1PIGSTY.el9.aarch64
     - pg_parquet_15-0:0.1.1-1PIGSTY.el9.aarch64
+    - pg_parquet_15-0:0.2.0-1PIGSTY.el9.aarch64
     - pg_parquet_16-0:0.1.1-1PIGSTY.el9.aarch64
+    - pg_parquet_16-0:0.2.0-1PIGSTY.el9.aarch64
     - pg_parquet_17-0:0.1.1-1PIGSTY.el9.aarch64
+    - pg_parquet_17-0:0.2.0-1PIGSTY.el9.aarch64
     - pg_plan_filter_12-0:0.0.1-1PIGSTY.el9.aarch64
     - pg_plan_filter_12-llvmjit-0:0.0.1-1PIGSTY.el9.aarch64
     - pg_plan_filter_13-0:0.0.1-1PIGSTY.el9.aarch64
@@ -5656,9 +5690,13 @@ data:
     - vchord_16-0:0.1.0-1PIGSTY.el9.aarch64
     - vchord_17-0:0.1.0-1PIGSTY.el9.aarch64
     - wrappers_14-0:0.4.3-1PIGSTY.el9.aarch64
+    - wrappers_14-0:0.4.4-1PIGSTY.el9.aarch64
     - wrappers_15-0:0.4.3-1PIGSTY.el9.aarch64
+    - wrappers_15-0:0.4.4-1PIGSTY.el9.aarch64
     - wrappers_16-0:0.4.3-1PIGSTY.el9.aarch64
+    - wrappers_16-0:0.4.4-1PIGSTY.el9.aarch64
     - wrappers_17-0:0.4.3-1PIGSTY.el9.aarch64
+    - wrappers_17-0:0.4.4-1PIGSTY.el9.aarch64
     - zhparser_12-0:2.2-1PIGSTY.el9.aarch64
     - zhparser_12-llvmjit-0:2.2-1PIGSTY.el9.aarch64
     - zhparser_13-0:2.2-1PIGSTY.el9.aarch64
