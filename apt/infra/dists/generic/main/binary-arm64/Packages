@@ -580,22 +580,6 @@ SHA1: 9cd5c65748faf4256602ca7fa1d51f6439dc470b
 MD5sum: d510a14a36e28db5d05fc71f5ff135b6
 Description: The financial transactions database designed for mission critical safety and performance
 
-Package: v2ray
-Version: 5.23.0-1
-Architecture: arm64
-License: MIT License
-Maintainer: V2fly Teams
-Installed-Size: 48879
-Homepage: https://github.com/v2fly/v2ray-core
-Priority: optional
-Section: 
-Filename: pool/main/v/v2ray/v2ray_5.23.0-1_arm64.deb
-Size: 15712054
-SHA256: 6ca2205f043b5bed12ee28757eb8288da4612c6d7c1b14baea3608577680f831
-SHA1: 441ae7dbc827f86f2857745aeb56e56b470a10ad
-MD5sum: a9f1e97ea4c19e9b325ec7b4d89f13db
-Description: A platform for building proxies to bypass network restrictions.
-
 Package: vector
 Version: 0.43.1-1
 Architecture: arm64
@@ -711,4 +695,20 @@ SHA256: 2c801d2009b3f990ec5528262862c110781456f9be39e5c807090706f933ecc5
 SHA1: fef4fe83b86d4c7c91bf7be69eb68a8c4204fe6a
 MD5sum: fee2db27292af394e082f491384bd31d
 Description: vlogsqcli is an interactive command-line tool for querying VictoriaLogs.
+
+Package: vray
+Version: 5.23.0-1
+Architecture: arm64
+License: MIT License
+Maintainer: V2fly Teams
+Installed-Size: 48879
+Homepage: https://github.com/v2fly/v2ray-core
+Priority: optional
+Section: 
+Filename: pool/main/v/vray/vray_5.23.0-1_arm64.deb
+Size: 15712064
+SHA256: 5bfef95b766550e5cc7d535969668df098ac125d373403912e148e1153c3ff34
+SHA1: 7b9cd3a701186d651f04a8d87f568d33ef048be5
+MD5sum: 721f697ec1fe6d87e64e2c1fd967af3f
+Description: A platform for building proxies to bypass network restrictions.
 

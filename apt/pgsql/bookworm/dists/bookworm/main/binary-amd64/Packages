@@ -441,6 +441,44 @@ MD5sum: 5b25ba88a41950ca609e4973dc391d98
 Description: PostgreSQL extension implementing Skip32 and XTEA encryption for int and bigint types
   cryptint is a PostgreSQL extension providing SKIP32 encryption for 32-bit integers, and XTEA encryption for 64-bit integers.
 
+Package: postgresql-12-data-historization
+Source: data-historization
+Version: 1.1.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 138
+Depends: postgresql-12
+Provides: postgresql-data-historization
+Homepage: https://github.com/bigsmoke/pg_data_historization
+Priority: optional
+Section: database
+Filename: pool/main/d/data-historization/postgresql-12-data-historization_1.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 6440
+SHA256: ce9188c3b5b869185c12204fdcff2bafffda35ed6d57ba15004d57a7e439e2e3
+SHA1: cf996ba091c45e4eb7f636ebad074558650df1ee
+MD5sum: 5159799f208ec3a9c7d79dfc2d18738c
+Description: PLPGSQL Script to historize data in partitionned table
+  PLPGSQL Script to historize data in partitionned table
+
+Package: postgresql-12-ddl-historization
+Source: ddl-historization
+Version: 0.7.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 19
+Depends: postgresql-12
+Provides: postgresql-ddl-historization
+Homepage: https://github.com/rodo/pg_ddl_historization
+Priority: optional
+Section: database
+Filename: pool/main/d/ddl-historization/postgresql-12-ddl-historization_0.7.0-1PIGSTY~bookworm_amd64.deb
+Size: 3112
+SHA256: 6291d6b6885078aafad0363634c452754cedefbb35de9ea02e5180d5a5302a00
+SHA1: 110b609208aac2b2b930c0067ee888c25664992e
+MD5sum: 91d02c42ad16cd3974466747a3ee6f10
+Description: Historize the ddl changes inside PostgreSQL database
+  PostgreSQL Extension to historize in a table all DDL changes made on a database
+
 Package: postgresql-12-ddlx
 Source: ddlx
 Version: 0.28-1PIGSTY~bookworm
@@ -460,6 +498,25 @@ MD5sum: 916cda0babd991d86c034f57f3e3fd2f
 Description: DDL eXtractor functions for PostgreSQL (ddlx)
   This is an SQL-only extension for PostgreSQL that provides uniform functions for generating SQL Data Definition Language (DDL) scripts for objects created in a database.
   It contains a bunch of SQL functions to convert PostgreSQL system catalogs to nicely formatted snippets of SQL DDL, such as CREATE TABLE.
+
+Package: postgresql-12-ddsketch
+Source: ddsketch
+Version: 1.0.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 168
+Depends: postgresql-12, postgresql-12-jit-llvm (>= 16), libc6 (>= 2.14)
+Provides: postgresql-ddsketch
+Homepage: https://github.com/tvondra/ddsketch
+Priority: optional
+Section: database
+Filename: pool/main/d/ddsketch/postgresql-12-ddsketch_1.0.1-1PIGSTY~bookworm_amd64.deb
+Size: 67536
+SHA256: bc9fd0e2077303d23befc14dc8d4d045cf8afa38a878dd249cb4d14b64c5b322
+SHA1: 9ed307b4c3652962a7bdd76e555e774df80b6a94
+MD5sum: c9df509398130ff9ed6cf61efd6504b0
+Description: Implementing a fast and fully-mergeable quantile sketch with relative-error guarantees
+  This PostgreSQL extension implements ddsketch, a data structure for on-line accumulation of quantiles, as described in a paper
 
 Package: postgresql-12-decoder-raw
 Source: decoder-raw
@@ -542,22 +599,46 @@ Description: A PostgreSQL foreign data wrapper (FDW) for Firebird
   firebird_fdw supports Firebird 2.5 and later. It will probably work with Firebird 2.0 or later, and may work with earlier versions if the disable_pushdowns option is set (see below), but has never been tested with those versions.
   firebird_fdw is developed against the core PostgreSQL community version and may not be compatible with commercial forks.
 
-Package: postgresql-12-floatvec
-Source: floatvec
-Version: 1.0.1-1PIGSTY~bookworm
+Package: postgresql-12-floatfile
+Source: floatfile
+Version: 1.3.1-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 76
+Installed-Size: 121
+Depends: postgresql-12, postgresql-12-jit-llvm (>= 16), libc6 (>= 2.33)
+Provides: postgresql-floatfile
+Homepage: https://github.com/pjungwir/floatfile
+Priority: optional
+Section: database
+Filename: pool/main/f/floatfile/postgresql-12-floatfile_1.3.1-1PIGSTY~bookworm_amd64.deb
+Size: 46480
+SHA256: 10eae145c1524b6a25e2cdbad6132b65301ca2f22e11a6c922c965d0502a5829
+SHA1: cea7f6a3a2ba804f73a5856ff4667e86f092a44d
+MD5sum: e7c18c8d86009714fe69b214b3c0f41e
+Description: Postgres extension for fast select & append of float arrays.
+  A Postgres extension to store float arrays in individual files, providing very fast querying
+  (especially when combined with aggs_for_arrays, aggs_for_vecs, or floatvec) without paying a huge cost to keep updating them.
+  The idea is that if you have 1 million FLOATs, it is much faster if you can load them as a single 8 MB chunk rather than
+  pulling from a million different places on disk. Sometimes you can just store your data as an array in a regular Postgres table,
+  but updating those arrays will be slow and cause painful MVCC churn. Since this extension keeps the data in a separate file,
+  appends are very fast and outside the MVCC system.
+
+Package: postgresql-12-floatvec
+Source: floatvec
+Version: 1.1.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 80
 Depends: postgresql-12, postgresql-12-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-floatvec
 Homepage: https://github.com/pjungwir/floatvec
 Priority: optional
 Section: database
-Filename: pool/main/f/floatvec/postgresql-12-floatvec_1.0.1-1PIGSTY~bookworm_amd64.deb
-Size: 23348
-SHA256: 953d12a8837d950abd89ead3bb34dbe97bca7f41715ac59f590389c1a5abbe44
-SHA1: 29b2eeb77d1dc04f1678688c1b1794ffc080baed
-MD5sum: b1d997a592283a8aaa4524ca9074680b
+Filename: pool/main/f/floatvec/postgresql-12-floatvec_1.1.1-1PIGSTY~bookworm_amd64.deb
+Size: 25040
+SHA256: 3f68e8117630ef9ad12e60ebb4daeda2474811ed8a2eb3e710ae3edaccad4b92
+SHA1: 497cf8fb64bfa785f7ad641c0db584e3809dd6fc
+MD5sum: 96bf51924f85537f137f6fe81d5f9b1c
 Description: Postgres functions for arithmetic on numeric arrays
   This Postgres extension provides basic arithmetic functions for operating on arrays (treated as vectors).
   It supports addition, subtraction, multiplication, division, and raising to a power. Everything (so far) is element-by-element,
@@ -899,20 +980,20 @@ Description: Postgres database extension to mimic a logon trigger
 
 Package: postgresql-12-lower-quantile
 Source: lower-quantile
-Version: 1.0.0-1PIGSTY~bookworm
+Version: 1.0.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 54
+Installed-Size: 56
 Depends: postgresql-12, postgresql-12-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-lower-quantile
 Homepage: https://github.com/tvondra/lower_quantile
 Priority: optional
 Section: database
-Filename: pool/main/l/lower-quantile/postgresql-12-lower-quantile_1.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 16696
-SHA256: 78ca042339326153b7a7c8b964e89fbb03a9f79d4c44365abf3faac853ae6c5c
-SHA1: d299f61a697c818d0beb0309cff2dfd06a2cb8f7
-MD5sum: 07f4b3b18f4a1b6b9a5eac55e469ce92
+Filename: pool/main/l/lower-quantile/postgresql-12-lower-quantile_1.0.3-1PIGSTY~bookworm_amd64.deb
+Size: 17288
+SHA256: 513653c3f96dbced1d20fa1856d3879b2f6b9f2919cfc1db3c7327cd8f75dbe1
+SHA1: 9bd9fb0f5d6572811387e803a418bbeda3d7e1bf
+MD5sum: 7aea33b6aacf9b96b58db040c6d51933
 Description: lower quantile aggregate
   This implements the "lower quantile" aggregate, defined as
   Given a multiset S of size n over R, the q-quantile item xq (in S) is the item x whose rank R(x) in the sorted multiset S is
@@ -1774,6 +1855,28 @@ MD5sum: ee638418b4ddeaca17ede00583b9712d
 Description: Protobuf support for PostgreSQL
   Protobuf support for PostgreSQL.
 
+Package: postgresql-12-pg-readme
+Source: pg-readme
+Version: 0.7.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 779
+Depends: postgresql-12
+Provides: postgresql-pg-readme
+Homepage: https://github.com/bigsmoke/pg_readme
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-readme/postgresql-12-pg-readme_0.7.0-1PIGSTY~bookworm_amd64.deb
+Size: 18792
+SHA256: c48e3198163f965c63a399f51cc44c17a461d3a35cde2aef439f2472e6dbcf9e
+SHA1: 8c31f26e76ef1a8b24ceaaaa566310bcd92b5a82
+MD5sum: 9fefdd31b38414aef6f0cc37f52e6862
+Description: Functions to generate a `README.md` document for a database extension or schema
+  Functions to generate a `README.md` document for a database extension or schema,
+  based on `COMMENT` objects found in the `pg_description` system catalog
+  The pg_readme PostgreSQL extension provides functions to generate a README.md document
+  for a database extension or schema, based on COMMENT objects found in the pg_description system catalog.
+
 Package: postgresql-12-pg-readonly
 Source: pg-readonly
 Version: 1.0.0-1PIGSTY~bookworm
@@ -1831,6 +1934,27 @@ MD5sum: d8194242ea44efb5c72ef454a751d498
 Description: discover and log the relations used in your statements
   pg_relusage is a PostgreSQL extension which allows one to discover and log
   the relations used in SQL statements. Supported PostgreSQL versions: 9.5 to 17
+
+Package: postgresql-12-pg-schedoc
+Source: pg-schedoc
+Version: 0.0.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 25
+Depends: postgresql-12, postgresql-12-ddl-historization
+Provides: postgresql-pg-schedoc
+Homepage: https://github.com/bigsmoke/pg_schedoc
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-schedoc/postgresql-12-pg-schedoc_0.0.1-1PIGSTY~bookworm_amd64.deb
+Size: 4612
+SHA256: 5d8bdc9c7ad8d5ce5b8536665046a4ac65414dee4b68a0504ea4d1fc9719f53d
+SHA1: 3e589797dd03a4e6c3b119c3b1a2441fc5311d71
+MD5sum: 665e0a7d74c830f7a0b0c96ca2da06cc
+Description: Cross documentation between Django and DBT projects
+  schedoc means schema documentation, it's a tool to build an automatic documentation
+  based on COMMENT on PostgresSQL objects. schedoc require the extension (ddl_historization to work）
+  COMMENT are set on columns in a json format with predefined values like status.
 
 Package: postgresql-12-pg-sqlog
 Source: pg-sqlog
@@ -1938,6 +2062,25 @@ Description: Text Summarization using LLMs. Built using pgrx
   that integrates with the OpenAI API. This extension will include a basic "Hello, pg_summarize!"
   function and another function to summarize text using OpenAI's models.
 
+Package: postgresql-12-pg-task
+Source: pg-task
+Version: 1.0.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 496
+Depends: postgresql-12, postgresql-12-jit-llvm (>= 16)
+Provides: postgresql-pg-task
+Homepage: https://github.com/RekGRpth/pg_task
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-task/postgresql-12-pg-task_1.0.0-1PIGSTY~bookworm_amd64.deb
+Size: 217020
+SHA256: 1a932f78ff7421ef0a1c2b87a2128128b589cabffd3c4896f1a831d86f64b093
+SHA1: 1d3e615b781039f1bc04f053d83480fe324dafd1
+MD5sum: 3e3faab25a8fff256a4006cf68e86d1f
+Description: PostgreSQL and Greenplum job scheduler pg_task allows to execute any sql command at any specific time at background asynchronously
+  PostgreSQL and Greenplum job scheduler pg_task allows to execute any sql command at any specific time at background asynchronously
+
 Package: postgresql-12-pg-tiktoken
 Source: pg-tiktoken
 Version: 0.0.1-1PIGSTY~bookworm
@@ -1978,20 +2121,22 @@ Description: PostgreSQL extension that provides high-accuracy timing of SQL expr
 
 Package: postgresql-12-pg-timeseries
 Source: pg-timeseries
-Version: 0.1.6-1PIGSTY~bookworm
+Version: 0.1.6-2PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 55
 Depends: postgresql-12
+Recommends: postgresql-12-pg-ivm, postgresql-12-pg-partman, postgresql-12-pg-cron
+Suggests: postgresql-12-hydra, postgresql-12-citus
 Provides: postgresql-pg-timeseries
 Homepage: https://github.com/tembo-io/pg_timeseries
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-timeseries/postgresql-12-pg-timeseries_0.1.6-1PIGSTY~bookworm_amd64.deb
-Size: 22932
-SHA256: a24e425d6d6ad99957a3978464282cb9c3c5de44c1c72994f51fd72f93a2111e
-SHA1: dc2f9d4307cc7b1df93804594322290bf727d4dc
-MD5sum: 988e6d023c7864449e816d5938adff3f
+Filename: pool/main/p/pg-timeseries/postgresql-12-pg-timeseries_0.1.6-2PIGSTY~bookworm_amd64.deb
+Size: 22968
+SHA256: 30267f94973ad7d6ac8e97a90cba2cfca93a12b89a34e92821b110dd1d1fef58
+SHA1: 38331b841767a5ec85f85894d20cc131ae49c943
+MD5sum: 8ddbde818612073c933bad3744396303
 Description: Simple and focused time-series tables for PostgreSQL
   The purpose of this extension is to provide a cohesive user experience around the creation, maintenance, and use of time-series tables.
 
@@ -2036,6 +2181,30 @@ MD5sum: eef2ffadd4862eaabd846cc87b454d1f
 Description: adds native support for unsigned integers and 128-bit signed/unsigned integer types.
   A PostgreSQL extension that adds native support for unsigned integers and 128-bit signed/unsigned integer types.
 
+Package: postgresql-12-pg-upless
+Source: pg-upless
+Version: 0.0.3-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 35
+Depends: postgresql-12
+Provides: postgresql-pg-upless
+Homepage: https://github.com/rodo/pg_upless
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-upless/postgresql-12-pg-upless_0.0.3-1PIGSTY~bookworm_amd64.deb
+Size: 5264
+SHA256: c1e30bcef63edccdbb1a74e5fb52e89990bb5a5c721d597cd4aba97b6b6ce072
+SHA1: efe021738680661f67dbe5131293f3a4df2a4eed
+MD5sum: e1bfc548abffc65b9c5314f723a8cf3b
+Description: PostgreSQL Extension to Detect Useless UPDATE
+  pg_upless is a set of functions and tables, to build statistics on useless update statements.
+  With modern ORM it can occurs that sometimes an UPDATE is done without changing any values.
+  If it occurs too often that will impact the performance of your system.
+  pg_upless will help to detect them by creating triggers on the tables you want to follow.
+  It's not aimed to be used all the time, it's more a diagnostc tool you activate it a small period of time.
+  Even if it is designed to have the lower imapct as possible it will downgrade by a little your queries performance.
+
 Package: postgresql-12-pg-uri
 Source: pg-uri
 Version: 1.20151224-1PIGSTY~bookworm
@@ -2077,6 +2246,26 @@ MD5sum: 2d6409e7cb87420c33bb3132499ad2fc
 Description: A tiny Postgres extension to create version 7 UUIDs
   A tiny Postgres extension to create valid version 7 UUIDs in Postgres.
   These are regular Postgres UUIDs, so they can be used as primary keys, converted to and from strings, included in indexes, etc:
+
+Package: postgresql-12-pg-xxhash
+Source: pg-xxhash
+Version: 0.0.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 207
+Depends: postgresql-12, postgresql-12-jit-llvm (>= 16)
+Provides: postgresql-pg-xxhash
+Homepage: https://github.com/hatarist/pg_xxhash
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-xxhash/postgresql-12-pg-xxhash_0.0.1-1PIGSTY~bookworm_amd64.deb
+Size: 82620
+SHA256: ae386f2a6fdd44e644f176af6095f83ac9429fd5a40239747476e6c0a6535728
+SHA1: 2fe148b607ccaa8f7a7d67a32e8a820c6c09138a
+MD5sum: 2142eaf5bbf5c7ba67585507afeb42e6
+Description: xxhash functions for PostgreSQL
+  Think twice before even considering to use it in any serious environment.
+  Issues are discouraged, pull requests are greatly appreciated.
 
 Package: postgresql-12-pg-zstd
 Source: pg-zstd
@@ -2255,21 +2444,21 @@ Description: allow to access to memory usage diagnostics
 
 Package: postgresql-12-pgmq
 Source: pgmq
-Version: 1.4.4-1PIGSTY~bookworm
+Version: 1.5.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 152
+Installed-Size: 179
 Depends: postgresql-12
 Provides: postgresql-pgmq
 Homepage: https://github.com/michelp/pgmq
 Priority: optional
 Section: database
-Filename: pool/main/p/pgmq/postgresql-12-pgmq_1.4.4-1PIGSTY~bookworm_amd64.deb
-Size: 17088
-SHA256: 4559074319c62ebb656808c71f297deb8344502ac0f263232ef97789e9a88f29
-SHA1: d5a2a34c96a9c2652658243fc62053eea5bcd693
-MD5sum: 62d8626575345663bdc580bfc41cc395
-Description: PostgreSQL implementation of JSON Web Tokens for 12
+Filename: pool/main/p/pgmq/postgresql-12-pgmq_1.5.0-1PIGSTY~bookworm_amd64.deb
+Size: 18404
+SHA256: 5e645f38f0750b5301ec5294a9b45084191de85f7f4f2aaf98d40dc9d0af8186
+SHA1: 018fb52e8244eb85b721c4805235a6b4e4cfe0fa
+MD5sum: de146167c8c8ff5e55d9928133dde354
+Description: A lightweight message queue. Like AWS SQS and RSMQ but on Postgres.
   pgmq allows you to sign & verify json web token via pure SQL interface.
   It requires the pgcrypto extension, included in most distribution's "postgresql-contrib" package.
   The tests require the pgtap extension to run.
@@ -2482,7 +2671,7 @@ Description: V8 Engine Javascript Procedural Language add-on for PostgreSQL 12
 
 Package: postgresql-12-quantile
 Source: quantile
-Version: 1.1.7-1PIGSTY~bookworm
+Version: 1.1.8-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 74
@@ -2491,11 +2680,11 @@ Provides: postgresql-quantile
 Homepage: https://github.com/tvondra/quantile
 Priority: optional
 Section: database
-Filename: pool/main/q/quantile/postgresql-12-quantile_1.1.7-1PIGSTY~bookworm_amd64.deb
-Size: 22580
-SHA256: 4fbf51e5fafaf07e3915048656c385d76fc71697d6b0607c29bf19aa8105fdcb
-SHA1: 0e670fd79777a7c3c1235cd205dd1035cd3034ed
-MD5sum: 2a42c2466dc3442ac5b60560b9912457
+Filename: pool/main/q/quantile/postgresql-12-quantile_1.1.8-1PIGSTY~bookworm_amd64.deb
+Size: 22724
+SHA256: 1e45ed7c4ea74af9976896be4cd9920452a1b0669b9738a1de821dc36d2ddac7
+SHA1: aead36ce0ad56d67361e329e03f16fc25f4c04b4
+MD5sum: 903ef55f817384ca12e4725b589285ba
 Description: an aggregation function for PostgreSQL
   This extension provides three simple aggregate functions to compute quantiles (http://en.wikipedia.org/wiki/Quantile).
   There are two forms of aggregate functions available
@@ -2543,20 +2732,20 @@ Description: A PostgreSQL foreign data wrapper for Redis
 
 Package: postgresql-12-sequential-uuids
 Source: sequential-uuids
-Version: 1.0.2-1PIGSTY~bookworm
+Version: 1.0.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 45
+Installed-Size: 46
 Depends: postgresql-12, postgresql-12-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-sequential-uuids
 Homepage: https://github.com/tvondra/sequential-uuids
 Priority: optional
 Section: database
-Filename: pool/main/s/sequential-uuids/postgresql-12-sequential-uuids_1.0.2-1PIGSTY~bookworm_amd64.deb
-Size: 12892
-SHA256: 1962a784251234676cda2ff04f7daa7355dcdc9d1d30c1cb6fcde95a6f180b18
-SHA1: 160d1c021f5de1623344aec8fc5c990bd4bb823a
-MD5sum: f35803a842a6bd7e5c41abbbebfeebc8
+Filename: pool/main/s/sequential-uuids/postgresql-12-sequential-uuids_1.0.3-1PIGSTY~bookworm_amd64.deb
+Size: 13384
+SHA256: bdbc293f87af2a3847811e3cf85b1d0b1c7f00256cc8273952745dbac441bca1
+SHA1: b9b9690a44521a26a073012a674806e42274ba2e
+MD5sum: e4a94cd3fed9d51977bdfa28264a355f
 Description: generator of sequential UUIDs
   This PostgreSQL extension implements two UUID generators with sequential patterns, which helps to reduce random I/O patterns associated with regular entirely-random UUID.
   Regular random UUIDs are distributed uniformly over the whole range of possible values. This results in poor locality when inserting data into indexes - all index leaf pages are equally likely to be hit, forcing the whole index into memory. With small indexes that's fine, but once the index size exceeds shared buffers (or RAM), the cache hit ratio quickly deteriorates.
@@ -2776,6 +2965,26 @@ SHA1: 7b4c362d564a69e0ea8f02c6e16beeeb4e161841
 MD5sum: 55e5332038476fe6d808f097ad9db85b
 Description: url_encode, url_decode functions for PostgreSQL
   url_encode, url_decode functions for PostgreSQL
+
+Package: postgresql-12-vasco
+Source: vasco
+Version: 0.1.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 144
+Depends: postgresql-12, postgresql-12-jit-llvm (>= 16), libc6 (>= 2.14)
+Provides: postgresql-vasco
+Homepage: https://github.com/Florents-Tselai/vasco
+Priority: optional
+Section: database
+Filename: pool/main/v/vasco/postgresql-12-vasco_0.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 57748
+SHA256: ac4c6004576163fc477a8cc45d253f30bd6d72e9e8feb46fc742e8daf65a73df
+SHA1: 6683d7d7acbf28e5ecbffa9de1b07973cc9d869c
+MD5sum: 2faf48e22daf120788e55d17b463975e
+Description: Maximal Information Coefficient (MIC) Extension for Postgres
+  vasco is a Postgres extension that helps you discover hidden correlations in your data.
+  It is based on the MIC and the MINE family of statistics.
 
 Package: postgresql-12-vault
 Source: vault
@@ -3050,6 +3259,44 @@ MD5sum: c4e4bde62c9bc149c1373f76bb6734f0
 Description: PostgreSQL extension implementing Skip32 and XTEA encryption for int and bigint types
   cryptint is a PostgreSQL extension providing SKIP32 encryption for 32-bit integers, and XTEA encryption for 64-bit integers.
 
+Package: postgresql-13-data-historization
+Source: data-historization
+Version: 1.1.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 138
+Depends: postgresql-13
+Provides: postgresql-data-historization
+Homepage: https://github.com/bigsmoke/pg_data_historization
+Priority: optional
+Section: database
+Filename: pool/main/d/data-historization/postgresql-13-data-historization_1.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 6440
+SHA256: 731fc24803c32a5f4a4b2501c8d2a17ea525c98bd03b96cc037a692fefc17fb9
+SHA1: 87c080d2b891f87ab6c301fbd6cebd7aad097026
+MD5sum: a3883c3626096be89ee4ebc159e7b265
+Description: PLPGSQL Script to historize data in partitionned table
+  PLPGSQL Script to historize data in partitionned table
+
+Package: postgresql-13-ddl-historization
+Source: ddl-historization
+Version: 0.7.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 19
+Depends: postgresql-13
+Provides: postgresql-ddl-historization
+Homepage: https://github.com/rodo/pg_ddl_historization
+Priority: optional
+Section: database
+Filename: pool/main/d/ddl-historization/postgresql-13-ddl-historization_0.7.0-1PIGSTY~bookworm_amd64.deb
+Size: 3112
+SHA256: 17cb1559d99eb293396a279548db111dfd6bc724ce5d511a167ea19a98f3e324
+SHA1: fb63375b73210e85375588ebb1baeb26dd5d8d51
+MD5sum: 1d153bd8cf944f3824a6d2db74945861
+Description: Historize the ddl changes inside PostgreSQL database
+  PostgreSQL Extension to historize in a table all DDL changes made on a database
+
 Package: postgresql-13-ddlx
 Source: ddlx
 Version: 0.28-1PIGSTY~bookworm
@@ -3069,6 +3316,25 @@ MD5sum: d7eb1f5bd4a1b3cb7fa23f871f1acaf3
 Description: DDL eXtractor functions for PostgreSQL (ddlx)
   This is an SQL-only extension for PostgreSQL that provides uniform functions for generating SQL Data Definition Language (DDL) scripts for objects created in a database.
   It contains a bunch of SQL functions to convert PostgreSQL system catalogs to nicely formatted snippets of SQL DDL, such as CREATE TABLE.
+
+Package: postgresql-13-ddsketch
+Source: ddsketch
+Version: 1.0.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 167
+Depends: postgresql-13, postgresql-13-jit-llvm (>= 16), libc6 (>= 2.14)
+Provides: postgresql-ddsketch
+Homepage: https://github.com/tvondra/ddsketch
+Priority: optional
+Section: database
+Filename: pool/main/d/ddsketch/postgresql-13-ddsketch_1.0.1-1PIGSTY~bookworm_amd64.deb
+Size: 67344
+SHA256: 2478e2972def6ab11fa86880595a6222b2a431a1cbc6889e1226d1f2611e6f8e
+SHA1: 6cc9d5abaa7f8a6ecd0e333933e568a1c98d9148
+MD5sum: 3bbf1849f459628799508c37e8288ba2
+Description: Implementing a fast and fully-mergeable quantile sketch with relative-error guarantees
+  This PostgreSQL extension implements ddsketch, a data structure for on-line accumulation of quantiles, as described in a paper
 
 Package: postgresql-13-decoder-raw
 Source: decoder-raw
@@ -3151,22 +3417,46 @@ Description: A PostgreSQL foreign data wrapper (FDW) for Firebird
   firebird_fdw supports Firebird 2.5 and later. It will probably work with Firebird 2.0 or later, and may work with earlier versions if the disable_pushdowns option is set (see below), but has never been tested with those versions.
   firebird_fdw is developed against the core PostgreSQL community version and may not be compatible with commercial forks.
 
-Package: postgresql-13-floatvec
-Source: floatvec
-Version: 1.0.1-1PIGSTY~bookworm
+Package: postgresql-13-floatfile
+Source: floatfile
+Version: 1.3.1-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 77
+Installed-Size: 126
+Depends: postgresql-13, postgresql-13-jit-llvm (>= 16), libc6 (>= 2.33)
+Provides: postgresql-floatfile
+Homepage: https://github.com/pjungwir/floatfile
+Priority: optional
+Section: database
+Filename: pool/main/f/floatfile/postgresql-13-floatfile_1.3.1-1PIGSTY~bookworm_amd64.deb
+Size: 46672
+SHA256: 54f77314313dd1f640c8c40ea777bc13e85f7b47c2a1f5aeae9573884081eab7
+SHA1: 0dd4bf88e9aae898c6decfb74a73b370f0a952ef
+MD5sum: eeb77e6d867b9d9f6c86a25e090a2b19
+Description: Postgres extension for fast select & append of float arrays.
+  A Postgres extension to store float arrays in individual files, providing very fast querying
+  (especially when combined with aggs_for_arrays, aggs_for_vecs, or floatvec) without paying a huge cost to keep updating them.
+  The idea is that if you have 1 million FLOATs, it is much faster if you can load them as a single 8 MB chunk rather than
+  pulling from a million different places on disk. Sometimes you can just store your data as an array in a regular Postgres table,
+  but updating those arrays will be slow and cause painful MVCC churn. Since this extension keeps the data in a separate file,
+  appends are very fast and outside the MVCC system.
+
+Package: postgresql-13-floatvec
+Source: floatvec
+Version: 1.1.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 80
 Depends: postgresql-13, postgresql-13-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-floatvec
 Homepage: https://github.com/pjungwir/floatvec
 Priority: optional
 Section: database
-Filename: pool/main/f/floatvec/postgresql-13-floatvec_1.0.1-1PIGSTY~bookworm_amd64.deb
-Size: 23320
-SHA256: 531879f8b144c6107b3cb5de77ff880180adf05ab537ab185615345babcba3a3
-SHA1: 0cc026cdacc425b41a310d033a07387125f62c93
-MD5sum: 8cd0d80fcb726e43acf17b12a19ebb1c
+Filename: pool/main/f/floatvec/postgresql-13-floatvec_1.1.1-1PIGSTY~bookworm_amd64.deb
+Size: 25008
+SHA256: 2de46713aae2a3135607b4e0f7353058e518da28608a2b77c9a48d29dacd7049
+SHA1: 3f398716740440af5ede571c2d64ecc642abe84d
+MD5sum: 0701758877095b0ffb97496c11e1aa1b
 Description: Postgres functions for arithmetic on numeric arrays
   This Postgres extension provides basic arithmetic functions for operating on arrays (treated as vectors).
   It supports addition, subtraction, multiplication, division, and raising to a power. Everything (so far) is element-by-element,
@@ -3529,20 +3819,20 @@ Description: Postgres database extension to mimic a logon trigger
 
 Package: postgresql-13-lower-quantile
 Source: lower-quantile
-Version: 1.0.0-1PIGSTY~bookworm
+Version: 1.0.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 54
+Installed-Size: 56
 Depends: postgresql-13, postgresql-13-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-lower-quantile
 Homepage: https://github.com/tvondra/lower_quantile
 Priority: optional
 Section: database
-Filename: pool/main/l/lower-quantile/postgresql-13-lower-quantile_1.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 16852
-SHA256: 7e6e49c526706cf74a81e9f748961e57e23ee85378c835184bd0aa164169d1f4
-SHA1: 82d6e421e046496e3596f251480db1d823d6f9a1
-MD5sum: 85e51c9f819dbc666793b3bb44ba422b
+Filename: pool/main/l/lower-quantile/postgresql-13-lower-quantile_1.0.3-1PIGSTY~bookworm_amd64.deb
+Size: 17456
+SHA256: 3e8b2fb4495b616faf87813509cc595ad025a6c7723577f51267e9b74270322e
+SHA1: af944b8da300e8a433ef26f733a03581e9be5ed2
+MD5sum: feb98d7119a66a7ab378810632a573b3
 Description: lower quantile aggregate
   This implements the "lower quantile" aggregate, defined as
   Given a multiset S of size n over R, the q-quantile item xq (in S) is the item x whose rank R(x) in the sorted multiset S is
@@ -3587,6 +3877,29 @@ SHA1: db718857591ed25dec0f257e2ba059f1228a8091
 MD5sum: 1aff6d75cc252e167f6b11111b8f9457
 Description: Noset is a PostgreSQL Extension that allows blocking specific users to change a set of user-context variables.
   noset is a loadable module via shared_preload_libraries,  to avoid SET/RESET command for change a parameter in session. It is possible to filter one or a group a parameters to block.
+
+Package: postgresql-13-omnisketch
+Source: omnisketch
+Version: 1.0.2-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 70
+Depends: postgresql-13, postgresql-13-jit-llvm (>= 16), libc6 (>= 2.14)
+Provides: postgresql-omnisketch
+Homepage: https://github.com/tvondra/omnisketch
+Priority: optional
+Section: database
+Filename: pool/main/o/omnisketch/postgresql-13-omnisketch_1.0.2-1PIGSTY~bookworm_amd64.deb
+Size: 28300
+SHA256: 2905974e2ab015a8c279f122f74c0e4031f7a61570c5d1e3052ec21ffe7dbb22
+SHA1: 6b6b64facdb12b6ff721380ef6f2132f37320fa2
+MD5sum: 403f1aa39d81dd6a237b87766ae3b84b
+Description: omnisketch implemented as Postgres extension
+  This PostgreSQL extension implements OmniSketch, a data structure for on-line aggregation of data into approximate sketch,
+   and answering queries. The algorithm is also very friendly to parallel programs.
+  The OmniSketch data structure was introduced by this paper:
+  OmniSketch: Efficient Multi-Dimensional High-Velocity Stream Analytics with Arbitrary Predicates;
+   Wieger R. Punter, Odysseas Papapetrou, Minos Garofalakis; Proc. {VLDB} Endow. Volume 17, No. 3, p 319-331, 2023 PDF PVLDB
 
 Package: postgresql-13-pagevis
 Source: pagevis
@@ -4488,6 +4801,28 @@ MD5sum: d812be260a6655190001c606f6b38750
 Description: Protobuf support for PostgreSQL
   Protobuf support for PostgreSQL.
 
+Package: postgresql-13-pg-readme
+Source: pg-readme
+Version: 0.7.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 779
+Depends: postgresql-13
+Provides: postgresql-pg-readme
+Homepage: https://github.com/bigsmoke/pg_readme
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-readme/postgresql-13-pg-readme_0.7.0-1PIGSTY~bookworm_amd64.deb
+Size: 18796
+SHA256: 826bd64b059cd08f63e8b3c026bc6142c02fdd605eaf280115d65bb62a2f1d20
+SHA1: e91b823d3ce2c004033552f5859b59b8f999e911
+MD5sum: 7efe18a6fb8d57751f67a565cdb11cfd
+Description: Functions to generate a `README.md` document for a database extension or schema
+  Functions to generate a `README.md` document for a database extension or schema,
+  based on `COMMENT` objects found in the `pg_description` system catalog
+  The pg_readme PostgreSQL extension provides functions to generate a README.md document
+  for a database extension or schema, based on COMMENT objects found in the pg_description system catalog.
+
 Package: postgresql-13-pg-readonly
 Source: pg-readonly
 Version: 1.0.0-1PIGSTY~bookworm
@@ -4565,6 +4900,27 @@ MD5sum: 59af01d916a6f3fd007faa23a8c9f18d
 Description: A postgres extension to avoid accidental mistakes
   pg_savior is a PostgreSQL extension designed to prevent accidental data loss
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
+
+Package: postgresql-13-pg-schedoc
+Source: pg-schedoc
+Version: 0.0.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 25
+Depends: postgresql-13, postgresql-13-ddl-historization
+Provides: postgresql-pg-schedoc
+Homepage: https://github.com/bigsmoke/pg_schedoc
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-schedoc/postgresql-13-pg-schedoc_0.0.1-1PIGSTY~bookworm_amd64.deb
+Size: 4612
+SHA256: 8505d6ce8b189c7b0cede19558ef2661d461a8cd5307362f9e631f03cd1ebfc1
+SHA1: 4d9bc48723db17dd58d5a98141e67efbfd3268cb
+MD5sum: a36b651b1c26679c0acef556e48636eb
+Description: Cross documentation between Django and DBT projects
+  schedoc means schema documentation, it's a tool to build an automatic documentation
+  based on COMMENT on PostgresSQL objects. schedoc require the extension (ddl_historization to work）
+  COMMENT are set on columns in a json format with predefined values like status.
 
 Package: postgresql-13-pg-sqlog
 Source: pg-sqlog
@@ -4672,6 +5028,25 @@ Description: Text Summarization using LLMs. Built using pgrx
   that integrates with the OpenAI API. This extension will include a basic "Hello, pg_summarize!"
   function and another function to summarize text using OpenAI's models.
 
+Package: postgresql-13-pg-task
+Source: pg-task
+Version: 1.0.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 508
+Depends: postgresql-13, postgresql-13-jit-llvm (>= 16)
+Provides: postgresql-pg-task
+Homepage: https://github.com/RekGRpth/pg_task
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-task/postgresql-13-pg-task_1.0.0-1PIGSTY~bookworm_amd64.deb
+Size: 220280
+SHA256: 69d6ba480de03964c81d017de6f43555bd956cd750badd23048e27f6d630330f
+SHA1: 23606b545bf059f7aaf150035bc152f11b523041
+MD5sum: bd18e11d2737858d8f9534c4f57ab8fe
+Description: PostgreSQL and Greenplum job scheduler pg_task allows to execute any sql command at any specific time at background asynchronously
+  PostgreSQL and Greenplum job scheduler pg_task allows to execute any sql command at any specific time at background asynchronously
+
 Package: postgresql-13-pg-tiktoken
 Source: pg-tiktoken
 Version: 0.0.1-1PIGSTY~bookworm
@@ -4712,20 +5087,22 @@ Description: PostgreSQL extension that provides high-accuracy timing of SQL expr
 
 Package: postgresql-13-pg-timeseries
 Source: pg-timeseries
-Version: 0.1.6-1PIGSTY~bookworm
+Version: 0.1.6-2PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 55
 Depends: postgresql-13
+Recommends: postgresql-13-pg-ivm, postgresql-13-pg-partman, postgresql-13-pg-cron
+Suggests: postgresql-13-hydra, postgresql-13-citus
 Provides: postgresql-pg-timeseries
 Homepage: https://github.com/tembo-io/pg_timeseries
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-timeseries/postgresql-13-pg-timeseries_0.1.6-1PIGSTY~bookworm_amd64.deb
-Size: 22932
-SHA256: 93692a86e7a510e8ea43eb356a62a6ec9a3059457f04f7edc31b741e2a8df423
-SHA1: 5095aa62ad0f824dfbff00d854da601dd89551a7
-MD5sum: 81ec0c7b0dcdc36b23aea74ee637c2e7
+Filename: pool/main/p/pg-timeseries/postgresql-13-pg-timeseries_0.1.6-2PIGSTY~bookworm_amd64.deb
+Size: 22968
+SHA256: 2b50042f0d75ced0bb08a472b6751d3046a826a7b87a218fd83ee6a9e86e3156
+SHA1: e2287ead8a8769e1a23bf931632b269d06ecbad6
+MD5sum: ae381cf1645616d68414b6183e9b1c84
 Description: Simple and focused time-series tables for PostgreSQL
   The purpose of this extension is to provide a cohesive user experience around the creation, maintenance, and use of time-series tables.
 
@@ -4770,6 +5147,30 @@ MD5sum: 6a210fea9b485630a5c7b5ac3a9c6489
 Description: adds native support for unsigned integers and 128-bit signed/unsigned integer types.
   A PostgreSQL extension that adds native support for unsigned integers and 128-bit signed/unsigned integer types.
 
+Package: postgresql-13-pg-upless
+Source: pg-upless
+Version: 0.0.3-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 35
+Depends: postgresql-13
+Provides: postgresql-pg-upless
+Homepage: https://github.com/rodo/pg_upless
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-upless/postgresql-13-pg-upless_0.0.3-1PIGSTY~bookworm_amd64.deb
+Size: 5264
+SHA256: 69eb1f19f9ec44300beef54c3e6d0916b37071732c4b838256a220ba43c3cd8b
+SHA1: 0ac819f13eb0b6596d331d2b210b686c09e6995d
+MD5sum: 228eca1e734dbc1e3482b3c62b6ddbf9
+Description: PostgreSQL Extension to Detect Useless UPDATE
+  pg_upless is a set of functions and tables, to build statistics on useless update statements.
+  With modern ORM it can occurs that sometimes an UPDATE is done without changing any values.
+  If it occurs too often that will impact the performance of your system.
+  pg_upless will help to detect them by creating triggers on the tables you want to follow.
+  It's not aimed to be used all the time, it's more a diagnostc tool you activate it a small period of time.
+  Even if it is designed to have the lower imapct as possible it will downgrade by a little your queries performance.
+
 Package: postgresql-13-pg-uri
 Source: pg-uri
 Version: 1.20151224-1PIGSTY~bookworm
@@ -4811,6 +5212,26 @@ MD5sum: 00f71c5977c63d9c12a2522f0e52edce
 Description: A tiny Postgres extension to create version 7 UUIDs
   A tiny Postgres extension to create valid version 7 UUIDs in Postgres.
   These are regular Postgres UUIDs, so they can be used as primary keys, converted to and from strings, included in indexes, etc:
+
+Package: postgresql-13-pg-xxhash
+Source: pg-xxhash
+Version: 0.0.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 207
+Depends: postgresql-13, postgresql-13-jit-llvm (>= 16)
+Provides: postgresql-pg-xxhash
+Homepage: https://github.com/hatarist/pg_xxhash
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-xxhash/postgresql-13-pg-xxhash_0.0.1-1PIGSTY~bookworm_amd64.deb
+Size: 82688
+SHA256: 0c7d1c5a9ca8f9291e2519d544e7dc40152a56b6dc024400d69868e144413d33
+SHA1: ebef5d451bf74d70188b14a25392ef2277cfe763
+MD5sum: 9dabdfbe5909599ea0dec0a1d133e9ad
+Description: xxhash functions for PostgreSQL
+  Think twice before even considering to use it in any serious environment.
+  Issues are discouraged, pull requests are greatly appreciated.
 
 Package: postgresql-13-pg-zstd
 Source: pg-zstd
@@ -4989,21 +5410,21 @@ Description: allow to access to memory usage diagnostics
 
 Package: postgresql-13-pgmq
 Source: pgmq
-Version: 1.4.4-1PIGSTY~bookworm
+Version: 1.5.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 152
+Installed-Size: 179
 Depends: postgresql-13
 Provides: postgresql-pgmq
 Homepage: https://github.com/michelp/pgmq
 Priority: optional
 Section: database
-Filename: pool/main/p/pgmq/postgresql-13-pgmq_1.4.4-1PIGSTY~bookworm_amd64.deb
-Size: 17080
-SHA256: c7aa063496efba40b94465369c3e66dba964f7b34cad3bbfed54cb8a4d322cfc
-SHA1: c61fbe757d445624445539329d70305f444e2bd7
-MD5sum: 1b63fd5a170ee854e9943a474fa63bdb
-Description: PostgreSQL implementation of JSON Web Tokens for 13
+Filename: pool/main/p/pgmq/postgresql-13-pgmq_1.5.0-1PIGSTY~bookworm_amd64.deb
+Size: 18396
+SHA256: 9122b24da4c1995fc7bf1370c9f98353d0cec9caf2a864b70186517b2d57c93c
+SHA1: 6de51bbafdd5d0a31f5e927d0f4f33fae7415370
+MD5sum: 1c414599b8d1715fb8fc30a36a87f0da
+Description: A lightweight message queue. Like AWS SQS and RSMQ but on Postgres.
   pgmq allows you to sign & verify json web token via pure SQL interface.
   It requires the pgcrypto extension, included in most distribution's "postgresql-contrib" package.
   The tests require the pgtap extension to run.
@@ -5254,7 +5675,7 @@ Description: V8 Engine Javascript Procedural Language add-on for PostgreSQL 13
 
 Package: postgresql-13-quantile
 Source: quantile
-Version: 1.1.7-1PIGSTY~bookworm
+Version: 1.1.8-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 74
@@ -5263,11 +5684,11 @@ Provides: postgresql-quantile
 Homepage: https://github.com/tvondra/quantile
 Priority: optional
 Section: database
-Filename: pool/main/q/quantile/postgresql-13-quantile_1.1.7-1PIGSTY~bookworm_amd64.deb
-Size: 22580
-SHA256: 8466656752b06cc80165c6cbe3e3c82c4a9bac38d4ee5ccc4158eab08431e852
-SHA1: 3a79216c9a6f5d3e09cee0207703be41e221bdc7
-MD5sum: 73a57bee8271c4b20d2e536e1e81db77
+Filename: pool/main/q/quantile/postgresql-13-quantile_1.1.8-1PIGSTY~bookworm_amd64.deb
+Size: 22732
+SHA256: 0a1a2cfc978baba157b6df4a29804473cd92b56c643c396884a32d98512be96b
+SHA1: cf5ed68cbbd55770c98f243adf5e32c1c0517fb3
+MD5sum: 80c0286d1579b56894cfc618dff82216
 Description: an aggregation function for PostgreSQL
   This extension provides three simple aggregate functions to compute quantiles (http://en.wikipedia.org/wiki/Quantile).
   There are two forms of aggregate functions available
@@ -5315,20 +5736,20 @@ Description: A PostgreSQL foreign data wrapper for Redis
 
 Package: postgresql-13-sequential-uuids
 Source: sequential-uuids
-Version: 1.0.2-1PIGSTY~bookworm
+Version: 1.0.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 45
+Installed-Size: 46
 Depends: postgresql-13, postgresql-13-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-sequential-uuids
 Homepage: https://github.com/tvondra/sequential-uuids
 Priority: optional
 Section: database
-Filename: pool/main/s/sequential-uuids/postgresql-13-sequential-uuids_1.0.2-1PIGSTY~bookworm_amd64.deb
-Size: 12732
-SHA256: c8e19ff0ae062434a38fb1d5cf00d4149201c279176240ac7f042cd913df9679
-SHA1: c65417983d07d2b1c5c234f8968954f45e2a6285
-MD5sum: 249862df6bb1469c595b15ff3b32dbeb
+Filename: pool/main/s/sequential-uuids/postgresql-13-sequential-uuids_1.0.3-1PIGSTY~bookworm_amd64.deb
+Size: 13216
+SHA256: 4b4d9c09230defa5d648680dcc22a4dacda5928b51f1266ef438209850f1200b
+SHA1: 8f1a171852b7bbb9c92a60418a0f7898f269d14c
+MD5sum: 936b033dc82f1fdc3d505c18a34ff10b
 Description: generator of sequential UUIDs
   This PostgreSQL extension implements two UUID generators with sequential patterns, which helps to reduce random I/O patterns associated with regular entirely-random UUID.
   Regular random UUIDs are distributed uniformly over the whole range of possible values. This results in poor locality when inserting data into indexes - all index leaf pages are equally likely to be hit, forcing the whole index into memory. With small indexes that's fine, but once the index size exceeds shared buffers (or RAM), the cache hit ratio quickly deteriorates.
@@ -5588,6 +6009,26 @@ SHA1: 701af9cdd5383c26da8f3679629e6aad2e428aa4
 MD5sum: ccb55d995b642d9439d1366520ac82fe
 Description: url_encode, url_decode functions for PostgreSQL
   url_encode, url_decode functions for PostgreSQL
+
+Package: postgresql-13-vasco
+Source: vasco
+Version: 0.1.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 144
+Depends: postgresql-13, postgresql-13-jit-llvm (>= 16), libc6 (>= 2.14)
+Provides: postgresql-vasco
+Homepage: https://github.com/Florents-Tselai/vasco
+Priority: optional
+Section: database
+Filename: pool/main/v/vasco/postgresql-13-vasco_0.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 57724
+SHA256: 5bad22e45163251426eec7e1fe2ba1397ba4a88297eae7fe9107926536ed6d86
+SHA1: c7dbb1e00309b0ae37a7e89f17a9e1a04b0077a8
+MD5sum: 9e53f9c52256c13a23c53d61dd385efb
+Description: Maximal Information Coefficient (MIC) Extension for Postgres
+  vasco is a Postgres extension that helps you discover hidden correlations in your data.
+  It is based on the MIC and the MINE family of statistics.
 
 Package: postgresql-13-vault
 Source: vault
@@ -5911,6 +6352,44 @@ MD5sum: a50090603d6f3e21aa74250c19cd64b3
 Description: PostgreSQL extension implementing Skip32 and XTEA encryption for int and bigint types
   cryptint is a PostgreSQL extension providing SKIP32 encryption for 32-bit integers, and XTEA encryption for 64-bit integers.
 
+Package: postgresql-14-data-historization
+Source: data-historization
+Version: 1.1.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 138
+Depends: postgresql-14
+Provides: postgresql-data-historization
+Homepage: https://github.com/bigsmoke/pg_data_historization
+Priority: optional
+Section: database
+Filename: pool/main/d/data-historization/postgresql-14-data-historization_1.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 6440
+SHA256: ee35115426e257b54760d757e2c2aad3e7592e7d5038e465d8f48ac6ad805e86
+SHA1: 748dd1775aa9730cf30c184b80786b90e009994f
+MD5sum: 1f1745684e3594ad329178ba52a1e5d8
+Description: PLPGSQL Script to historize data in partitionned table
+  PLPGSQL Script to historize data in partitionned table
+
+Package: postgresql-14-ddl-historization
+Source: ddl-historization
+Version: 0.7.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 19
+Depends: postgresql-14
+Provides: postgresql-ddl-historization
+Homepage: https://github.com/rodo/pg_ddl_historization
+Priority: optional
+Section: database
+Filename: pool/main/d/ddl-historization/postgresql-14-ddl-historization_0.7.0-1PIGSTY~bookworm_amd64.deb
+Size: 3116
+SHA256: 4d959f84a51461b8fd6183490a27a8be8b66bc7db8f1953cba5624600c9bfcda
+SHA1: f84cd25ec6e116e804af5e39b987739f31dc49bc
+MD5sum: d1bad7e100e719a6c57058c508dd3535
+Description: Historize the ddl changes inside PostgreSQL database
+  PostgreSQL Extension to historize in a table all DDL changes made on a database
+
 Package: postgresql-14-ddlx
 Source: ddlx
 Version: 0.28-1PIGSTY~bookworm
@@ -5930,6 +6409,25 @@ MD5sum: 503aeb0def84524a6ad580574485e850
 Description: DDL eXtractor functions for PostgreSQL (ddlx)
   This is an SQL-only extension for PostgreSQL that provides uniform functions for generating SQL Data Definition Language (DDL) scripts for objects created in a database.
   It contains a bunch of SQL functions to convert PostgreSQL system catalogs to nicely formatted snippets of SQL DDL, such as CREATE TABLE.
+
+Package: postgresql-14-ddsketch
+Source: ddsketch
+Version: 1.0.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 167
+Depends: postgresql-14, postgresql-14-jit-llvm (>= 16), libc6 (>= 2.14)
+Provides: postgresql-ddsketch
+Homepage: https://github.com/tvondra/ddsketch
+Priority: optional
+Section: database
+Filename: pool/main/d/ddsketch/postgresql-14-ddsketch_1.0.1-1PIGSTY~bookworm_amd64.deb
+Size: 67532
+SHA256: 9f074d04f16a89798bb8a8bcfea8c71c403a165f78d34e1d32fcffc131ff5767
+SHA1: 5d407214a684ce535623a836b17d962a9eb93f00
+MD5sum: 76e4b926a32d6d7cc1724be10c8c297b
+Description: Implementing a fast and fully-mergeable quantile sketch with relative-error guarantees
+  This PostgreSQL extension implements ddsketch, a data structure for on-line accumulation of quantiles, as described in a paper
 
 Package: postgresql-14-decoder-raw
 Source: decoder-raw
@@ -6012,22 +6510,46 @@ Description: A PostgreSQL foreign data wrapper (FDW) for Firebird
   firebird_fdw supports Firebird 2.5 and later. It will probably work with Firebird 2.0 or later, and may work with earlier versions if the disable_pushdowns option is set (see below), but has never been tested with those versions.
   firebird_fdw is developed against the core PostgreSQL community version and may not be compatible with commercial forks.
 
-Package: postgresql-14-floatvec
-Source: floatvec
-Version: 1.0.1-1PIGSTY~bookworm
+Package: postgresql-14-floatfile
+Source: floatfile
+Version: 1.3.1-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 77
+Installed-Size: 126
+Depends: postgresql-14, postgresql-14-jit-llvm (>= 16), libc6 (>= 2.33)
+Provides: postgresql-floatfile
+Homepage: https://github.com/pjungwir/floatfile
+Priority: optional
+Section: database
+Filename: pool/main/f/floatfile/postgresql-14-floatfile_1.3.1-1PIGSTY~bookworm_amd64.deb
+Size: 46788
+SHA256: 1a634ddd57b389ba67e114b40e6af69761f60036f3454075a43070c3ceb6d086
+SHA1: fe4c3d6e46ef4f02a38163c2064a99941c8f54c2
+MD5sum: 27fba152fad6804d01d8cc8f3eb0ef3c
+Description: Postgres extension for fast select & append of float arrays.
+  A Postgres extension to store float arrays in individual files, providing very fast querying
+  (especially when combined with aggs_for_arrays, aggs_for_vecs, or floatvec) without paying a huge cost to keep updating them.
+  The idea is that if you have 1 million FLOATs, it is much faster if you can load them as a single 8 MB chunk rather than
+  pulling from a million different places on disk. Sometimes you can just store your data as an array in a regular Postgres table,
+  but updating those arrays will be slow and cause painful MVCC churn. Since this extension keeps the data in a separate file,
+  appends are very fast and outside the MVCC system.
+
+Package: postgresql-14-floatvec
+Source: floatvec
+Version: 1.1.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 84
 Depends: postgresql-14, postgresql-14-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-floatvec
 Homepage: https://github.com/pjungwir/floatvec
 Priority: optional
 Section: database
-Filename: pool/main/f/floatvec/postgresql-14-floatvec_1.0.1-1PIGSTY~bookworm_amd64.deb
-Size: 23696
-SHA256: 3c5159112d23ede0ac57716e44895a37dc62d6962ab5e78f717b2547dee3574e
-SHA1: d0eed6a0e67990ac54971f905ea23a802840ffba
-MD5sum: 5ff3f4656c9150169d38d502527da96e
+Filename: pool/main/f/floatvec/postgresql-14-floatvec_1.1.1-1PIGSTY~bookworm_amd64.deb
+Size: 25440
+SHA256: 2e35a21c200d3bee70f5eb530f5de3247c3418a2cec8f7b772ca26dab5b97ba7
+SHA1: 58795ceda536d241c1601c2628043e69c5f30c61
+MD5sum: 1357efa18dd1a62f5098c140b82514a0
 Description: Postgres functions for arithmetic on numeric arrays
   This Postgres extension provides basic arithmetic functions for operating on arrays (treated as vectors).
   It supports addition, subtraction, multiplication, division, and raising to a power. Everything (so far) is element-by-element,
@@ -6413,20 +6935,20 @@ Description: Postgres database extension to mimic a logon trigger
 
 Package: postgresql-14-lower-quantile
 Source: lower-quantile
-Version: 1.0.0-1PIGSTY~bookworm
+Version: 1.0.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 55
+Installed-Size: 57
 Depends: postgresql-14, postgresql-14-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-lower-quantile
 Homepage: https://github.com/tvondra/lower_quantile
 Priority: optional
 Section: database
-Filename: pool/main/l/lower-quantile/postgresql-14-lower-quantile_1.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 16904
-SHA256: 5d6efc55eb5f2386c9c1b95848285fea2607aed77cbc167217a56ee12544644c
-SHA1: 8007c484019a0e330d3f7b11a696d8d62e5972c0
-MD5sum: a55fefaca82eec8e35eb3eb3cf059f79
+Filename: pool/main/l/lower-quantile/postgresql-14-lower-quantile_1.0.3-1PIGSTY~bookworm_amd64.deb
+Size: 17488
+SHA256: b6ff375508639251b87a8fe1a3624a8d388f46e08803aea6a59b61021a447b17
+SHA1: d39209a047ee06589fca17461a94e6958ff7e4c2
+MD5sum: 10477288e284e6d84e2b254d6353d1f9
 Description: lower quantile aggregate
   This implements the "lower quantile" aggregate, defined as
   Given a multiset S of size n over R, the q-quantile item xq (in S) is the item x whose rank R(x) in the sorted multiset S is
@@ -6471,6 +6993,29 @@ SHA1: eba72009cd1bc121a224fa073d8f67fc25982a25
 MD5sum: 418a0c29bd710b733887599785db34a1
 Description: Noset is a PostgreSQL Extension that allows blocking specific users to change a set of user-context variables.
   noset is a loadable module via shared_preload_libraries,  to avoid SET/RESET command for change a parameter in session. It is possible to filter one or a group a parameters to block.
+
+Package: postgresql-14-omnisketch
+Source: omnisketch
+Version: 1.0.2-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 70
+Depends: postgresql-14, postgresql-14-jit-llvm (>= 16), libc6 (>= 2.14)
+Provides: postgresql-omnisketch
+Homepage: https://github.com/tvondra/omnisketch
+Priority: optional
+Section: database
+Filename: pool/main/o/omnisketch/postgresql-14-omnisketch_1.0.2-1PIGSTY~bookworm_amd64.deb
+Size: 28220
+SHA256: dc8ea00d3e4142c8207a02b036afab2c797d7ced43c59328488c5fb950c6dcdc
+SHA1: e0e88ab2ddfcbd6426d957afe123cceac0775e24
+MD5sum: 9afed50d87156057091612ba41491b49
+Description: omnisketch implemented as Postgres extension
+  This PostgreSQL extension implements OmniSketch, a data structure for on-line aggregation of data into approximate sketch,
+   and answering queries. The algorithm is also very friendly to parallel programs.
+  The OmniSketch data structure was introduced by this paper:
+  OmniSketch: Efficient Multi-Dimensional High-Velocity Stream Analytics with Arbitrary Predicates;
+   Wieger R. Punter, Odysseas Papapetrou, Minos Garofalakis; Proc. {VLDB} Endow. Volume 17, No. 3, p 319-331, 2023 PDF PVLDB
 
 Package: postgresql-14-pagevis
 Source: pagevis
@@ -7448,6 +7993,28 @@ MD5sum: d60ef8460b5cbafc282e8c64c88a66ca
 Description: Protobuf support for PostgreSQL
   Protobuf support for PostgreSQL.
 
+Package: postgresql-14-pg-readme
+Source: pg-readme
+Version: 0.7.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 779
+Depends: postgresql-14
+Provides: postgresql-pg-readme
+Homepage: https://github.com/bigsmoke/pg_readme
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-readme/postgresql-14-pg-readme_0.7.0-1PIGSTY~bookworm_amd64.deb
+Size: 18792
+SHA256: 9312a206bab71dcabd4b6b2b99dfa841bce19fbc6d59719c57a10f88cd392868
+SHA1: 63e2106af76ac369338697ca92831cb8c928dbaf
+MD5sum: da04ac7c6fa8a0b573862d31057d0698
+Description: Functions to generate a `README.md` document for a database extension or schema
+  Functions to generate a `README.md` document for a database extension or schema,
+  based on `COMMENT` objects found in the `pg_description` system catalog
+  The pg_readme PostgreSQL extension provides functions to generate a README.md document
+  for a database extension or schema, based on COMMENT objects found in the pg_description system catalog.
+
 Package: postgresql-14-pg-readonly
 Source: pg-readonly
 Version: 1.0.0-1PIGSTY~bookworm
@@ -7545,6 +8112,27 @@ MD5sum: f1342cc4b1ec679301bf484da2df4c2d
 Description: A postgres extension to avoid accidental mistakes
   pg_savior is a PostgreSQL extension designed to prevent accidental data loss
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
+
+Package: postgresql-14-pg-schedoc
+Source: pg-schedoc
+Version: 0.0.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 25
+Depends: postgresql-14, postgresql-14-ddl-historization
+Provides: postgresql-pg-schedoc
+Homepage: https://github.com/bigsmoke/pg_schedoc
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-schedoc/postgresql-14-pg-schedoc_0.0.1-1PIGSTY~bookworm_amd64.deb
+Size: 4612
+SHA256: 8e139a8800695ad4220495c72d9cbd340844148dac66d2094edc043561dcb6ea
+SHA1: 82062c99a0e5546cbbdc142e2da4562a30177edf
+MD5sum: b05205a96933748718bfef9cd732634c
+Description: Cross documentation between Django and DBT projects
+  schedoc means schema documentation, it's a tool to build an automatic documentation
+  based on COMMENT on PostgresSQL objects. schedoc require the extension (ddl_historization to work）
+  COMMENT are set on columns in a json format with predefined values like status.
 
 Package: postgresql-14-pg-search
 Version: 0.13.2
@@ -7705,6 +8293,25 @@ Description: Text Summarization using LLMs. Built using pgrx
   that integrates with the OpenAI API. This extension will include a basic "Hello, pg_summarize!"
   function and another function to summarize text using OpenAI's models.
 
+Package: postgresql-14-pg-task
+Source: pg-task
+Version: 1.0.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 513
+Depends: postgresql-14, postgresql-14-jit-llvm (>= 16)
+Provides: postgresql-pg-task
+Homepage: https://github.com/RekGRpth/pg_task
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-task/postgresql-14-pg-task_1.0.0-1PIGSTY~bookworm_amd64.deb
+Size: 223188
+SHA256: 581dc330d3618f422b8b6bfaac56996d68e907115c0275dbfcc08c59370a5e99
+SHA1: 046ffd314a68f7d17f178713c8155cdbff14f631
+MD5sum: 36ad92f5b73ac1ea2884e1a542f8e29b
+Description: PostgreSQL and Greenplum job scheduler pg_task allows to execute any sql command at any specific time at background asynchronously
+  PostgreSQL and Greenplum job scheduler pg_task allows to execute any sql command at any specific time at background asynchronously
+
 Package: postgresql-14-pg-tiktoken
 Source: pg-tiktoken
 Version: 0.0.1-1PIGSTY~bookworm
@@ -7745,20 +8352,22 @@ Description: PostgreSQL extension that provides high-accuracy timing of SQL expr
 
 Package: postgresql-14-pg-timeseries
 Source: pg-timeseries
-Version: 0.1.6-1PIGSTY~bookworm
+Version: 0.1.6-2PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 55
 Depends: postgresql-14
+Recommends: postgresql-14-pg-ivm, postgresql-14-pg-partman, postgresql-14-pg-cron
+Suggests: postgresql-14-hydra, postgresql-14-citus
 Provides: postgresql-pg-timeseries
 Homepage: https://github.com/tembo-io/pg_timeseries
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-timeseries/postgresql-14-pg-timeseries_0.1.6-1PIGSTY~bookworm_amd64.deb
-Size: 22932
-SHA256: a905d67206029342caf3a43a74d47154200fdb0935dc49ea10b358f34ff3befd
-SHA1: 913d7630a7e0a806b0f15af7d9587b64b7eb9206
-MD5sum: 518274e24e32e295e628684afdfe7d31
+Filename: pool/main/p/pg-timeseries/postgresql-14-pg-timeseries_0.1.6-2PIGSTY~bookworm_amd64.deb
+Size: 22968
+SHA256: a32a977dc2932604e87e34086faed295f642d0bdbd08de215c9aeba5740e5b12
+SHA1: 8b856fb5b57419a9fdcedf1b8c976bd8b87d99d6
+MD5sum: 37f2633fa6c58ed1916f559d910164e3
 Description: Simple and focused time-series tables for PostgreSQL
   The purpose of this extension is to provide a cohesive user experience around the creation, maintenance, and use of time-series tables.
 
@@ -7802,6 +8411,30 @@ SHA1: 6e40e06b211964524a29cce156d6ec23fe86e1da
 MD5sum: 8bca3b62e59215529d31ae826a7a1f51
 Description: adds native support for unsigned integers and 128-bit signed/unsigned integer types.
   A PostgreSQL extension that adds native support for unsigned integers and 128-bit signed/unsigned integer types.
+
+Package: postgresql-14-pg-upless
+Source: pg-upless
+Version: 0.0.3-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 35
+Depends: postgresql-14
+Provides: postgresql-pg-upless
+Homepage: https://github.com/rodo/pg_upless
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-upless/postgresql-14-pg-upless_0.0.3-1PIGSTY~bookworm_amd64.deb
+Size: 5264
+SHA256: 99b765ca6a737c8d8e5defffbe813c26d9dea87b8d2761e3042ae9db032ccd56
+SHA1: 828acf2456e8817c4264c819ec820cc63009c63b
+MD5sum: 87d371b2d83baefe33c0901101cc3353
+Description: PostgreSQL Extension to Detect Useless UPDATE
+  pg_upless is a set of functions and tables, to build statistics on useless update statements.
+  With modern ORM it can occurs that sometimes an UPDATE is done without changing any values.
+  If it occurs too often that will impact the performance of your system.
+  pg_upless will help to detect them by creating triggers on the tables you want to follow.
+  It's not aimed to be used all the time, it's more a diagnostc tool you activate it a small period of time.
+  Even if it is designed to have the lower imapct as possible it will downgrade by a little your queries performance.
 
 Package: postgresql-14-pg-uri
 Source: pg-uri
@@ -7864,6 +8497,26 @@ MD5sum: c8b6fc2ca6b70b3fc64a26bdc3d138f9
 Description: reflects a vectorize schema from the existing PostgresSQL 14 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via vectorize with no additional servers, processes, or libraries.
+
+Package: postgresql-14-pg-xxhash
+Source: pg-xxhash
+Version: 0.0.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 207
+Depends: postgresql-14, postgresql-14-jit-llvm (>= 16)
+Provides: postgresql-pg-xxhash
+Homepage: https://github.com/hatarist/pg_xxhash
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-xxhash/postgresql-14-pg-xxhash_0.0.1-1PIGSTY~bookworm_amd64.deb
+Size: 82656
+SHA256: 664b846fb35897c8d879ba937e6a65ec05a63c349272120a5b2029f0580dcaa9
+SHA1: 59b01a6caa742498263acc4ece9c74d0cbb9e954
+MD5sum: dd727c8205376551dd82e83fd05a7193
+Description: xxhash functions for PostgreSQL
+  Think twice before even considering to use it in any serious environment.
+  Issues are discouraged, pull requests are greatly appreciated.
 
 Package: postgresql-14-pg-zstd
 Source: pg-zstd
@@ -8042,21 +8695,21 @@ Description: allow to access to memory usage diagnostics
 
 Package: postgresql-14-pgmq
 Source: pgmq
-Version: 1.4.4-1PIGSTY~bookworm
+Version: 1.5.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 152
+Installed-Size: 179
 Depends: postgresql-14
 Provides: postgresql-pgmq
 Homepage: https://github.com/michelp/pgmq
 Priority: optional
 Section: database
-Filename: pool/main/p/pgmq/postgresql-14-pgmq_1.4.4-1PIGSTY~bookworm_amd64.deb
-Size: 17080
-SHA256: 341f7d424ab88b846b29dfada3c3ed2fafd13e1fa7d1572378e5c180207a1d93
-SHA1: f1dcd5595f6cd40f2bb2727df54f2ed52f651e68
-MD5sum: 4f31d273548c4fee557b9420f1042d73
-Description: PostgreSQL implementation of JSON Web Tokens for 14
+Filename: pool/main/p/pgmq/postgresql-14-pgmq_1.5.0-1PIGSTY~bookworm_amd64.deb
+Size: 18416
+SHA256: e3f1c31af1bad78091f6e2a50c2500528efa2b73cfea3c93daee2f20f43ff35b
+SHA1: 4e463e2be0ca12ca47b6901e0f72ab36856f6b3a
+MD5sum: 4ffa7e15c6d39968402edfec94079c19
+Description: A lightweight message queue. Like AWS SQS and RSMQ but on Postgres.
   pgmq allows you to sign & verify json web token via pure SQL interface.
   It requires the pgcrypto extension, included in most distribution's "postgresql-contrib" package.
   The tests require the pgtap extension to run.
@@ -8307,7 +8960,7 @@ Description: V8 Engine Javascript Procedural Language add-on for PostgreSQL 14
 
 Package: postgresql-14-quantile
 Source: quantile
-Version: 1.1.7-1PIGSTY~bookworm
+Version: 1.1.8-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 78
@@ -8316,11 +8969,11 @@ Provides: postgresql-quantile
 Homepage: https://github.com/tvondra/quantile
 Priority: optional
 Section: database
-Filename: pool/main/q/quantile/postgresql-14-quantile_1.1.7-1PIGSTY~bookworm_amd64.deb
-Size: 22600
-SHA256: c284f5da2bd7c353c7d21ef7e4451a6b885a83cc8194cfb800b2e49ed72c6224
-SHA1: d18325c94777e313e5b64716667499267671e6f6
-MD5sum: a716de0bd52c94d9170b5f08ef589e14
+Filename: pool/main/q/quantile/postgresql-14-quantile_1.1.8-1PIGSTY~bookworm_amd64.deb
+Size: 22768
+SHA256: 9c7aa915df1566c2a8c7539e664b27e2e8184e33eb7b642cfa32264f57e4d20b
+SHA1: 23cd7d77b5365711463166b096a4395acd7e20c4
+MD5sum: 41b632919d94cfc284f1850c6be7a767
 Description: an aggregation function for PostgreSQL
   This extension provides three simple aggregate functions to compute quantiles (http://en.wikipedia.org/wiki/Quantile).
   There are two forms of aggregate functions available
@@ -8368,20 +9021,20 @@ Description: A PostgreSQL foreign data wrapper for Redis
 
 Package: postgresql-14-sequential-uuids
 Source: sequential-uuids
-Version: 1.0.2-1PIGSTY~bookworm
+Version: 1.0.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 45
+Installed-Size: 46
 Depends: postgresql-14, postgresql-14-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-sequential-uuids
 Homepage: https://github.com/tvondra/sequential-uuids
 Priority: optional
 Section: database
-Filename: pool/main/s/sequential-uuids/postgresql-14-sequential-uuids_1.0.2-1PIGSTY~bookworm_amd64.deb
-Size: 12912
-SHA256: a68272b772d4176003ac085edc02639d044f31d27c21b56914810be536df23ac
-SHA1: eddf53549a63ad0c2294fc663b6b9244ebf32a7c
-MD5sum: 8a81f631ce8ee37da9fcd0b512eefd52
+Filename: pool/main/s/sequential-uuids/postgresql-14-sequential-uuids_1.0.3-1PIGSTY~bookworm_amd64.deb
+Size: 13412
+SHA256: 5f9cea652c2beff90fb8d2cf3898f8eb4c326a49b2f2b344a2df6cb152f06492
+SHA1: 215139ad3e1662f44328be26e592c2777c1a9ae0
+MD5sum: b77d6dfcf5910f993b5734084c19d01b
 Description: generator of sequential UUIDs
   This PostgreSQL extension implements two UUID generators with sequential patterns, which helps to reduce random I/O patterns associated with regular entirely-random UUID.
   Regular random UUIDs are distributed uniformly over the whole range of possible values. This results in poor locality when inserting data into indexes - all index leaf pages are equally likely to be hit, forcing the whole index into memory. With small indexes that's fine, but once the index size exceeds shared buffers (or RAM), the cache hit ratio quickly deteriorates.
@@ -8585,6 +9238,25 @@ MD5sum: 2e672b91143ef5c4c6e72e7efe259e3c
 Description: PostgreSQL extension for high-performance real-time analytics on time-series and event data
   An open-source time-series SQL database optimized for fast ingest and complex queries. Packaged as a PostgreSQL extension.
 
+Package: postgresql-14-timescaledb-tsl
+Source: timescaledb-tsl
+Version: 2.17.2-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 12614
+Depends: postgresql-14, libc6 (>= 2.17)
+Provides: postgresql-timescaledb-tsl
+Homepage: https://github.com/timescale/timescaledb
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-tsl/postgresql-14-timescaledb-tsl_2.17.2-1PIGSTY~bookworm_amd64.deb
+Size: 612000
+SHA256: 571499dace5de82b6e59e89f52d7b71b3494553486de89d4f12fbf65aa96712d
+SHA1: ae5f647da134f8cce889e856060d5e7f037d1a10
+MD5sum: 1a5a8484a95b502b67080a489b11cded
+Description: PostgreSQL extension for high-performance real-time analytics on time-series and event data (TSL version)
+  An open-source time-series SQL database optimized for fast ingest and complex queries. Packaged as a PostgreSQL extension.
+
 Package: postgresql-14-timestamp9
 Source: timestamp9
 Version: 1.4.0-1PIGSTY~bookworm
@@ -8660,6 +9332,26 @@ SHA1: 96e8d4eebd6302f3b95bdee9dec0954040fe049c
 MD5sum: 39901f3363a318fbb52b32b16b503c8d
 Description: url_encode, url_decode functions for PostgreSQL
   url_encode, url_decode functions for PostgreSQL
+
+Package: postgresql-14-vasco
+Source: vasco
+Version: 0.1.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 144
+Depends: postgresql-14, postgresql-14-jit-llvm (>= 16), libc6 (>= 2.14)
+Provides: postgresql-vasco
+Homepage: https://github.com/Florents-Tselai/vasco
+Priority: optional
+Section: database
+Filename: pool/main/v/vasco/postgresql-14-vasco_0.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 57908
+SHA256: 383a93f33f9b5efa8701c619c07be38a96c51b23d352f07708a6c43c9f3de9fd
+SHA1: 896b211fac6c02a13c290b8a2c95e1a64fad293f
+MD5sum: 6b3961f2080507f54ebe13e0b5709266
+Description: Maximal Information Coefficient (MIC) Extension for Postgres
+  vasco is a Postgres extension that helps you discover hidden correlations in your data.
+  It is based on the MIC and the MINE family of statistics.
 
 Package: postgresql-14-vault
 Source: vault
@@ -9024,6 +9716,44 @@ MD5sum: e49545714ca79b3fffe033ea75f131d3
 Description: PostgreSQL extension implementing Skip32 and XTEA encryption for int and bigint types
   cryptint is a PostgreSQL extension providing SKIP32 encryption for 32-bit integers, and XTEA encryption for 64-bit integers.
 
+Package: postgresql-15-data-historization
+Source: data-historization
+Version: 1.1.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 138
+Depends: postgresql-15
+Provides: postgresql-data-historization
+Homepage: https://github.com/bigsmoke/pg_data_historization
+Priority: optional
+Section: database
+Filename: pool/main/d/data-historization/postgresql-15-data-historization_1.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 6440
+SHA256: a877285e64559780cb359fd52b4b1a952b0cd86f4e7b174e1e85acb682fb3bb5
+SHA1: 2643b58af52996b910e1526f623cda8e561a192f
+MD5sum: b159e07a5ea69892e038a4db7eb69ace
+Description: PLPGSQL Script to historize data in partitionned table
+  PLPGSQL Script to historize data in partitionned table
+
+Package: postgresql-15-ddl-historization
+Source: ddl-historization
+Version: 0.7.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 19
+Depends: postgresql-15
+Provides: postgresql-ddl-historization
+Homepage: https://github.com/rodo/pg_ddl_historization
+Priority: optional
+Section: database
+Filename: pool/main/d/ddl-historization/postgresql-15-ddl-historization_0.7.0-1PIGSTY~bookworm_amd64.deb
+Size: 3100
+SHA256: d5cc0992d115736e915104e39f2bd7a96beb9bdaa501cde7236e1bc2725ed77d
+SHA1: fbe64a9f1b2d31e5e3ee929532d01f10599d9608
+MD5sum: 785609df89369004a3c005840e23f684
+Description: Historize the ddl changes inside PostgreSQL database
+  PostgreSQL Extension to historize in a table all DDL changes made on a database
+
 Package: postgresql-15-ddlx
 Source: ddlx
 Version: 0.28-1PIGSTY~bookworm
@@ -9043,6 +9773,25 @@ MD5sum: f0335bb87ab8e0b7db52af1717938f1b
 Description: DDL eXtractor functions for PostgreSQL (ddlx)
   This is an SQL-only extension for PostgreSQL that provides uniform functions for generating SQL Data Definition Language (DDL) scripts for objects created in a database.
   It contains a bunch of SQL functions to convert PostgreSQL system catalogs to nicely formatted snippets of SQL DDL, such as CREATE TABLE.
+
+Package: postgresql-15-ddsketch
+Source: ddsketch
+Version: 1.0.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 167
+Depends: postgresql-15, postgresql-15-jit-llvm (>= 16), libc6 (>= 2.14)
+Provides: postgresql-ddsketch
+Homepage: https://github.com/tvondra/ddsketch
+Priority: optional
+Section: database
+Filename: pool/main/d/ddsketch/postgresql-15-ddsketch_1.0.1-1PIGSTY~bookworm_amd64.deb
+Size: 67600
+SHA256: 2fc4e4058858e114d3a0a3db87ae77404fa3d8ff80c955c46813c9fa757defa4
+SHA1: 6826fc1cf691cd02101492a0cc2d066ecf8ae895
+MD5sum: 9010df70448f5facb5ebff479aba53f2
+Description: Implementing a fast and fully-mergeable quantile sketch with relative-error guarantees
+  This PostgreSQL extension implements ddsketch, a data structure for on-line accumulation of quantiles, as described in a paper
 
 Package: postgresql-15-decoder-raw
 Source: decoder-raw
@@ -9125,22 +9874,46 @@ Description: A PostgreSQL foreign data wrapper (FDW) for Firebird
   firebird_fdw supports Firebird 2.5 and later. It will probably work with Firebird 2.0 or later, and may work with earlier versions if the disable_pushdowns option is set (see below), but has never been tested with those versions.
   firebird_fdw is developed against the core PostgreSQL community version and may not be compatible with commercial forks.
 
-Package: postgresql-15-floatvec
-Source: floatvec
-Version: 1.0.1-1PIGSTY~bookworm
+Package: postgresql-15-floatfile
+Source: floatfile
+Version: 1.3.1-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 77
+Installed-Size: 126
+Depends: postgresql-15, postgresql-15-jit-llvm (>= 16), libc6 (>= 2.33)
+Provides: postgresql-floatfile
+Homepage: https://github.com/pjungwir/floatfile
+Priority: optional
+Section: database
+Filename: pool/main/f/floatfile/postgresql-15-floatfile_1.3.1-1PIGSTY~bookworm_amd64.deb
+Size: 46852
+SHA256: bcd66d2b83d7ecbc549b656e4610d4a180f899d3146f68dc61c21b727c4064ae
+SHA1: 0a9c5b79455b0904507073717dca7b5eabfa3d81
+MD5sum: 609e770bac5bdbcfe733caec12652e88
+Description: Postgres extension for fast select & append of float arrays.
+  A Postgres extension to store float arrays in individual files, providing very fast querying
+  (especially when combined with aggs_for_arrays, aggs_for_vecs, or floatvec) without paying a huge cost to keep updating them.
+  The idea is that if you have 1 million FLOATs, it is much faster if you can load them as a single 8 MB chunk rather than
+  pulling from a million different places on disk. Sometimes you can just store your data as an array in a regular Postgres table,
+  but updating those arrays will be slow and cause painful MVCC churn. Since this extension keeps the data in a separate file,
+  appends are very fast and outside the MVCC system.
+
+Package: postgresql-15-floatvec
+Source: floatvec
+Version: 1.1.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 84
 Depends: postgresql-15, postgresql-15-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-floatvec
 Homepage: https://github.com/pjungwir/floatvec
 Priority: optional
 Section: database
-Filename: pool/main/f/floatvec/postgresql-15-floatvec_1.0.1-1PIGSTY~bookworm_amd64.deb
-Size: 23764
-SHA256: 758b27e712a41777a9602f2255a81ab1d2b15d862b16c5e0be151814dd3d623b
-SHA1: 6f5209c3bf449c9df433026a510ff911f318ae5c
-MD5sum: ed9f4e9a045359ada827459689babd28
+Filename: pool/main/f/floatvec/postgresql-15-floatvec_1.1.1-1PIGSTY~bookworm_amd64.deb
+Size: 25452
+SHA256: 9cfd6ccc87dce8c65e70b3544cf7d60089088b85074d8ee71f282071c9d0aae5
+SHA1: 72646089211a6665ef076923782f7b61a7d5c3b6
+MD5sum: f6cea8e4335a096236e10dc368d14ce3
 Description: Postgres functions for arithmetic on numeric arrays
   This Postgres extension provides basic arithmetic functions for operating on arrays (treated as vectors).
   It supports addition, subtraction, multiplication, division, and raising to a power. Everything (so far) is element-by-element,
@@ -9526,20 +10299,20 @@ Description: Postgres database extension to mimic a logon trigger
 
 Package: postgresql-15-lower-quantile
 Source: lower-quantile
-Version: 1.0.0-1PIGSTY~bookworm
+Version: 1.0.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 55
+Installed-Size: 57
 Depends: postgresql-15, postgresql-15-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-lower-quantile
 Homepage: https://github.com/tvondra/lower_quantile
 Priority: optional
 Section: database
-Filename: pool/main/l/lower-quantile/postgresql-15-lower-quantile_1.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 16916
-SHA256: a71f112c7740a647d4df270ad85ea3383e42506bef884f9c948729592a058e9b
-SHA1: 07ba56931ea95642f087a0c3adb3af99832947a1
-MD5sum: ec4ee9393fab61718093b6a638e97d66
+Filename: pool/main/l/lower-quantile/postgresql-15-lower-quantile_1.0.3-1PIGSTY~bookworm_amd64.deb
+Size: 17516
+SHA256: f1484b3cd68285fa1dd6bd77e406858be8bccd3bdfd346e6b98ca7fcfd627f90
+SHA1: 58bb7100762a5d1dee26ebb50a2907d244503ea9
+MD5sum: 7edb89d3bb5c0c9e024c552845e8ee30
 Description: lower quantile aggregate
   This implements the "lower quantile" aggregate, defined as
   Given a multiset S of size n over R, the q-quantile item xq (in S) is the item x whose rank R(x) in the sorted multiset S is
@@ -9584,6 +10357,29 @@ SHA1: d9d58616003d2f15c41dcb482e18f89f21e3b025
 MD5sum: 911f1cdcfdb8e99c03b18b615b23509b
 Description: Noset is a PostgreSQL Extension that allows blocking specific users to change a set of user-context variables.
   noset is a loadable module via shared_preload_libraries,  to avoid SET/RESET command for change a parameter in session. It is possible to filter one or a group a parameters to block.
+
+Package: postgresql-15-omnisketch
+Source: omnisketch
+Version: 1.0.2-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 74
+Depends: postgresql-15, postgresql-15-jit-llvm (>= 16), libc6 (>= 2.14)
+Provides: postgresql-omnisketch
+Homepage: https://github.com/tvondra/omnisketch
+Priority: optional
+Section: database
+Filename: pool/main/o/omnisketch/postgresql-15-omnisketch_1.0.2-1PIGSTY~bookworm_amd64.deb
+Size: 28324
+SHA256: 9137e945045d4a17b0407361dd3c8b012e6b6dce38b82e3200c808d5c1439653
+SHA1: 8b5457cafe8124ced7e46edf5221d848e86ebe5d
+MD5sum: 18af0b9bc4e3a14aa5a67c7f095c9ac4
+Description: omnisketch implemented as Postgres extension
+  This PostgreSQL extension implements OmniSketch, a data structure for on-line aggregation of data into approximate sketch,
+   and answering queries. The algorithm is also very friendly to parallel programs.
+  The OmniSketch data structure was introduced by this paper:
+  OmniSketch: Efficient Multi-Dimensional High-Velocity Stream Analytics with Arbitrary Predicates;
+   Wieger R. Punter, Odysseas Papapetrou, Minos Garofalakis; Proc. {VLDB} Endow. Volume 17, No. 3, p 319-331, 2023 PDF PVLDB
 
 Package: postgresql-15-pagevis
 Source: pagevis
@@ -10561,6 +11357,28 @@ MD5sum: 36e401c26205acf416ae5e21f9d16011
 Description: Protobuf support for PostgreSQL
   Protobuf support for PostgreSQL.
 
+Package: postgresql-15-pg-readme
+Source: pg-readme
+Version: 0.7.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 779
+Depends: postgresql-15
+Provides: postgresql-pg-readme
+Homepage: https://github.com/bigsmoke/pg_readme
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-readme/postgresql-15-pg-readme_0.7.0-1PIGSTY~bookworm_amd64.deb
+Size: 18792
+SHA256: 4c6d8ae71ddb38f360462ff4e6fc8286d34c21ac50c2e4340e2bbb9e2006ffab
+SHA1: 5283421c346b95fdd839cb0612bd8fef7b1cbe68
+MD5sum: 72fff4212e6f00b9e7aff50fa7a64a2b
+Description: Functions to generate a `README.md` document for a database extension or schema
+  Functions to generate a `README.md` document for a database extension or schema,
+  based on `COMMENT` objects found in the `pg_description` system catalog
+  The pg_readme PostgreSQL extension provides functions to generate a README.md document
+  for a database extension or schema, based on COMMENT objects found in the pg_description system catalog.
+
 Package: postgresql-15-pg-readonly
 Source: pg-readonly
 Version: 1.0.0-1PIGSTY~bookworm
@@ -10658,6 +11476,27 @@ MD5sum: 047069780dfeff792a1704b66d4c9c89
 Description: A postgres extension to avoid accidental mistakes
   pg_savior is a PostgreSQL extension designed to prevent accidental data loss
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
+
+Package: postgresql-15-pg-schedoc
+Source: pg-schedoc
+Version: 0.0.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 25
+Depends: postgresql-15, postgresql-15-ddl-historization
+Provides: postgresql-pg-schedoc
+Homepage: https://github.com/bigsmoke/pg_schedoc
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-schedoc/postgresql-15-pg-schedoc_0.0.1-1PIGSTY~bookworm_amd64.deb
+Size: 4612
+SHA256: 7fd08f76fd8c3ad55f6fa3a6544f404033645ac222fc5fb66731dc446d9c685d
+SHA1: 6c73400be730e8e49ed02fafd00a606b8c5254c8
+MD5sum: 1fd8054dc88d37cf5f7eefec3dc92e00
+Description: Cross documentation between Django and DBT projects
+  schedoc means schema documentation, it's a tool to build an automatic documentation
+  based on COMMENT on PostgresSQL objects. schedoc require the extension (ddl_historization to work）
+  COMMENT are set on columns in a json format with predefined values like status.
 
 Package: postgresql-15-pg-search
 Version: 0.13.2
@@ -10818,6 +11657,25 @@ Description: Text Summarization using LLMs. Built using pgrx
   that integrates with the OpenAI API. This extension will include a basic "Hello, pg_summarize!"
   function and another function to summarize text using OpenAI's models.
 
+Package: postgresql-15-pg-task
+Source: pg-task
+Version: 1.0.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 521
+Depends: postgresql-15, postgresql-15-jit-llvm (>= 16)
+Provides: postgresql-pg-task
+Homepage: https://github.com/RekGRpth/pg_task
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-task/postgresql-15-pg-task_1.0.0-1PIGSTY~bookworm_amd64.deb
+Size: 228552
+SHA256: 5d6bf1d945d96676e6de12ea2bcad437fa559f0f1406af7b95fe826f30635dd0
+SHA1: a58787ec1a166f748e1e446def92381eeea3df7f
+MD5sum: e8ffdbb0468b9f6e1b83f6e4e3f587d5
+Description: PostgreSQL and Greenplum job scheduler pg_task allows to execute any sql command at any specific time at background asynchronously
+  PostgreSQL and Greenplum job scheduler pg_task allows to execute any sql command at any specific time at background asynchronously
+
 Package: postgresql-15-pg-tiktoken
 Source: pg-tiktoken
 Version: 0.0.1-1PIGSTY~bookworm
@@ -10858,20 +11716,22 @@ Description: PostgreSQL extension that provides high-accuracy timing of SQL expr
 
 Package: postgresql-15-pg-timeseries
 Source: pg-timeseries
-Version: 0.1.6-1PIGSTY~bookworm
+Version: 0.1.6-2PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 55
 Depends: postgresql-15
+Recommends: postgresql-15-pg-ivm, postgresql-15-pg-partman, postgresql-15-pg-cron
+Suggests: postgresql-15-hydra, postgresql-15-citus
 Provides: postgresql-pg-timeseries
 Homepage: https://github.com/tembo-io/pg_timeseries
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-timeseries/postgresql-15-pg-timeseries_0.1.6-1PIGSTY~bookworm_amd64.deb
-Size: 22932
-SHA256: ba9253b26723bbce06ca683d68791a2eca69e950120b88044b5884a633d863b6
-SHA1: eb057e6b9262b0555c36ccb437eab36590f69c17
-MD5sum: df8be077ef868c0f2aef30af8b05147c
+Filename: pool/main/p/pg-timeseries/postgresql-15-pg-timeseries_0.1.6-2PIGSTY~bookworm_amd64.deb
+Size: 22972
+SHA256: b86599db9af2185c86ba9daa359fcaa084c90eb4e9edbfbecf1083286d589536
+SHA1: 89f886958c97c9f8565a3fb3ef8d22df32cb24bd
+MD5sum: 2d6908355af133c9eb3e1c4691c909ba
 Description: Simple and focused time-series tables for PostgreSQL
   The purpose of this extension is to provide a cohesive user experience around the creation, maintenance, and use of time-series tables.
 
@@ -10915,6 +11775,30 @@ SHA1: eee9cc9d9bde52e1bd3ff268adf29475bbfe2af2
 MD5sum: 3abf8186203c8d32ac9fd112f334521c
 Description: adds native support for unsigned integers and 128-bit signed/unsigned integer types.
   A PostgreSQL extension that adds native support for unsigned integers and 128-bit signed/unsigned integer types.
+
+Package: postgresql-15-pg-upless
+Source: pg-upless
+Version: 0.0.3-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 35
+Depends: postgresql-15
+Provides: postgresql-pg-upless
+Homepage: https://github.com/rodo/pg_upless
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-upless/postgresql-15-pg-upless_0.0.3-1PIGSTY~bookworm_amd64.deb
+Size: 5264
+SHA256: b313a8ea653b3986fe39d88cb8f27a289c6e84e3bbeb44e03abfa5653896797d
+SHA1: b0bb25a6f3a9723872e983c9d9c0a56be110442e
+MD5sum: fdb8fbea24e48bffccd30b7cec6d38ab
+Description: PostgreSQL Extension to Detect Useless UPDATE
+  pg_upless is a set of functions and tables, to build statistics on useless update statements.
+  With modern ORM it can occurs that sometimes an UPDATE is done without changing any values.
+  If it occurs too often that will impact the performance of your system.
+  pg_upless will help to detect them by creating triggers on the tables you want to follow.
+  It's not aimed to be used all the time, it's more a diagnostc tool you activate it a small period of time.
+  Even if it is designed to have the lower imapct as possible it will downgrade by a little your queries performance.
 
 Package: postgresql-15-pg-uri
 Source: pg-uri
@@ -10977,6 +11861,26 @@ MD5sum: 5c592b21bc8e459377a7632f3b40129d
 Description: reflects a vectorize schema from the existing PostgresSQL 15 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via vectorize with no additional servers, processes, or libraries.
+
+Package: postgresql-15-pg-xxhash
+Source: pg-xxhash
+Version: 0.0.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 207
+Depends: postgresql-15, postgresql-15-jit-llvm (>= 16)
+Provides: postgresql-pg-xxhash
+Homepage: https://github.com/hatarist/pg_xxhash
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-xxhash/postgresql-15-pg-xxhash_0.0.1-1PIGSTY~bookworm_amd64.deb
+Size: 82480
+SHA256: eace74922c57c7591cf064283d18428ef7fd2d611ae270412bf18e9099531b94
+SHA1: 01c5b79428a30423596fd8aaa7e4cc7aa83522b0
+MD5sum: 78f921bb0ac7cb770590b982641e1672
+Description: xxhash functions for PostgreSQL
+  Think twice before even considering to use it in any serious environment.
+  Issues are discouraged, pull requests are greatly appreciated.
 
 Package: postgresql-15-pg-zstd
 Source: pg-zstd
@@ -11155,21 +12059,21 @@ Description: allow to access to memory usage diagnostics
 
 Package: postgresql-15-pgmq
 Source: pgmq
-Version: 1.4.4-1PIGSTY~bookworm
+Version: 1.5.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 152
+Installed-Size: 179
 Depends: postgresql-15
 Provides: postgresql-pgmq
 Homepage: https://github.com/michelp/pgmq
 Priority: optional
 Section: database
-Filename: pool/main/p/pgmq/postgresql-15-pgmq_1.4.4-1PIGSTY~bookworm_amd64.deb
-Size: 17076
-SHA256: 9e20e5a91b26c088698921ba7bd02cb86ebd212e0e684cb3fd15c9ad3d4dd625
-SHA1: 2819cd8753c98eaefbda591332f7f6670f8c264e
-MD5sum: 91edc7cfb8aa6bb019c38f66498d24cc
-Description: PostgreSQL implementation of JSON Web Tokens for 15
+Filename: pool/main/p/pgmq/postgresql-15-pgmq_1.5.0-1PIGSTY~bookworm_amd64.deb
+Size: 18404
+SHA256: 81bcea009470b222c316e2fe0427afd0d28cccc78fcf202c92675ac820f72db3
+SHA1: adaf1c26629e4d2dc3a84d8bd75bcbaae618b423
+MD5sum: 875d4f05e484e444f4950ea6b5f911e0
+Description: A lightweight message queue. Like AWS SQS and RSMQ but on Postgres.
   pgmq allows you to sign & verify json web token via pure SQL interface.
   It requires the pgcrypto extension, included in most distribution's "postgresql-contrib" package.
   The tests require the pgtap extension to run.
@@ -11420,7 +12324,7 @@ Description: V8 Engine Javascript Procedural Language add-on for PostgreSQL 15
 
 Package: postgresql-15-quantile
 Source: quantile
-Version: 1.1.7-1PIGSTY~bookworm
+Version: 1.1.8-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 78
@@ -11429,11 +12333,11 @@ Provides: postgresql-quantile
 Homepage: https://github.com/tvondra/quantile
 Priority: optional
 Section: database
-Filename: pool/main/q/quantile/postgresql-15-quantile_1.1.7-1PIGSTY~bookworm_amd64.deb
-Size: 22668
-SHA256: 95d39ca3aa5fdca6b0ae3686b7c409d12a1cb40cc2f32fe0814013118b70f817
-SHA1: 053b2dee2b7a37b010d355f1c46e52bc86a279b1
-MD5sum: 309d896474357831a295c0b0128bfb43
+Filename: pool/main/q/quantile/postgresql-15-quantile_1.1.8-1PIGSTY~bookworm_amd64.deb
+Size: 22796
+SHA256: a9b068f0f9e1e5e8e24572f30afd7b15350d5c0551f05bf0cbd5495b7f4671b6
+SHA1: 9712f73b6f8c3162b7ca5a31a765bb708a311912
+MD5sum: 0ae6875f9bc5179a381ac96fa119ef52
 Description: an aggregation function for PostgreSQL
   This extension provides three simple aggregate functions to compute quantiles (http://en.wikipedia.org/wiki/Quantile).
   There are two forms of aggregate functions available
@@ -11481,20 +12385,20 @@ Description: A PostgreSQL foreign data wrapper for Redis
 
 Package: postgresql-15-sequential-uuids
 Source: sequential-uuids
-Version: 1.0.2-1PIGSTY~bookworm
+Version: 1.0.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 45
+Installed-Size: 46
 Depends: postgresql-15, postgresql-15-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-sequential-uuids
 Homepage: https://github.com/tvondra/sequential-uuids
 Priority: optional
 Section: database
-Filename: pool/main/s/sequential-uuids/postgresql-15-sequential-uuids_1.0.2-1PIGSTY~bookworm_amd64.deb
-Size: 12956
-SHA256: 748b8b165e9002f6e4d812185ac108282006c0c8f4fc13931b1add05af93a018
-SHA1: a0c901a32dda92efafc068ced2606a45f40c8b15
-MD5sum: f608f3d635189e552b572225e7058e03
+Filename: pool/main/s/sequential-uuids/postgresql-15-sequential-uuids_1.0.3-1PIGSTY~bookworm_amd64.deb
+Size: 13448
+SHA256: 1f749424ff744f1fd68bd55a818439e48c7cd5a56026a479c8acda7ceae7d373
+SHA1: 4cc061d73f417ca813a005950f55a65dce6cce8e
+MD5sum: 545526c8e071ae00807a66c9b2f8b267
 Description: generator of sequential UUIDs
   This PostgreSQL extension implements two UUID generators with sequential patterns, which helps to reduce random I/O patterns associated with regular entirely-random UUID.
   Regular random UUIDs are distributed uniformly over the whole range of possible values. This results in poor locality when inserting data into indexes - all index leaf pages are equally likely to be hit, forcing the whole index into memory. With small indexes that's fine, but once the index size exceeds shared buffers (or RAM), the cache hit ratio quickly deteriorates.
@@ -11698,6 +12602,25 @@ MD5sum: d20626f59d3fe8694d322831b15d76df
 Description: PostgreSQL extension for high-performance real-time analytics on time-series and event data
   An open-source time-series SQL database optimized for fast ingest and complex queries. Packaged as a PostgreSQL extension.
 
+Package: postgresql-15-timescaledb-tsl
+Source: timescaledb-tsl
+Version: 2.17.2-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 12617
+Depends: postgresql-15, libc6 (>= 2.17)
+Provides: postgresql-timescaledb-tsl
+Homepage: https://github.com/timescale/timescaledb
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-tsl/postgresql-15-timescaledb-tsl_2.17.2-1PIGSTY~bookworm_amd64.deb
+Size: 617552
+SHA256: e65f9a79aa8ad2b737285301ea0db7f01cc8b9d0be06e0035d9c1210ada7bf17
+SHA1: f1fb630a3e17174d101b7be111cc1900095da696
+MD5sum: 3fdc2dc8408f272a2d7fd1d3ff6d4aa5
+Description: PostgreSQL extension for high-performance real-time analytics on time-series and event data (TSL version)
+  An open-source time-series SQL database optimized for fast ingest and complex queries. Packaged as a PostgreSQL extension.
+
 Package: postgresql-15-timestamp9
 Source: timestamp9
 Version: 1.4.0-1PIGSTY~bookworm
@@ -11773,6 +12696,26 @@ SHA1: 15bf0026027e248bed98e192b6fe4ae827a274af
 MD5sum: 08b5732a98684351fa69ac5232979530
 Description: url_encode, url_decode functions for PostgreSQL
   url_encode, url_decode functions for PostgreSQL
+
+Package: postgresql-15-vasco
+Source: vasco
+Version: 0.1.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 144
+Depends: postgresql-15, postgresql-15-jit-llvm (>= 16), libc6 (>= 2.14)
+Provides: postgresql-vasco
+Homepage: https://github.com/Florents-Tselai/vasco
+Priority: optional
+Section: database
+Filename: pool/main/v/vasco/postgresql-15-vasco_0.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 57948
+SHA256: dea0c5383002e8089270f8d3123b33cbbcfd5446d577c920b51158a07e4cdce0
+SHA1: 3c4afb325212118093b32fd31b8c9793637b7f58
+MD5sum: caaf76ca36260deb12ebf718db77d483
+Description: Maximal Information Coefficient (MIC) Extension for Postgres
+  vasco is a Postgres extension that helps you discover hidden correlations in your data.
+  It is based on the MIC and the MINE family of statistics.
 
 Package: postgresql-15-vault
 Source: vault
@@ -12137,6 +13080,44 @@ MD5sum: 240ae852257462749e5ba725c6247165
 Description: PostgreSQL extension implementing Skip32 and XTEA encryption for int and bigint types
   cryptint is a PostgreSQL extension providing SKIP32 encryption for 32-bit integers, and XTEA encryption for 64-bit integers.
 
+Package: postgresql-16-data-historization
+Source: data-historization
+Version: 1.1.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 138
+Depends: postgresql-16
+Provides: postgresql-data-historization
+Homepage: https://github.com/bigsmoke/pg_data_historization
+Priority: optional
+Section: database
+Filename: pool/main/d/data-historization/postgresql-16-data-historization_1.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 6444
+SHA256: 763b7e0add9874be8a79502f4c1f1a586c7e9d5f59d74cb0f5a4dc4d3855fda5
+SHA1: 8937cbffec341921504c7dcdb7addae626ebed3a
+MD5sum: 28262af2789a1e6dbe583a4a14288e24
+Description: PLPGSQL Script to historize data in partitionned table
+  PLPGSQL Script to historize data in partitionned table
+
+Package: postgresql-16-ddl-historization
+Source: ddl-historization
+Version: 0.7.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 19
+Depends: postgresql-16
+Provides: postgresql-ddl-historization
+Homepage: https://github.com/rodo/pg_ddl_historization
+Priority: optional
+Section: database
+Filename: pool/main/d/ddl-historization/postgresql-16-ddl-historization_0.7.0-1PIGSTY~bookworm_amd64.deb
+Size: 3100
+SHA256: a09853fd2ecaa457eade96f779ed8341a33718c9c878ff2b3cf702ad578ea300
+SHA1: ac3ec527f937d2185115974e01fa598b91da495a
+MD5sum: 123901e273dc3feb0428af6c5b54c225
+Description: Historize the ddl changes inside PostgreSQL database
+  PostgreSQL Extension to historize in a table all DDL changes made on a database
+
 Package: postgresql-16-ddlx
 Source: ddlx
 Version: 0.28-1PIGSTY~bookworm
@@ -12156,6 +13137,25 @@ MD5sum: cb1e6c02a9813aca27bf252f895290ed
 Description: DDL eXtractor functions for PostgreSQL (ddlx)
   This is an SQL-only extension for PostgreSQL that provides uniform functions for generating SQL Data Definition Language (DDL) scripts for objects created in a database.
   It contains a bunch of SQL functions to convert PostgreSQL system catalogs to nicely formatted snippets of SQL DDL, such as CREATE TABLE.
+
+Package: postgresql-16-ddsketch
+Source: ddsketch
+Version: 1.0.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 167
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 16), libc6 (>= 2.14)
+Provides: postgresql-ddsketch
+Homepage: https://github.com/tvondra/ddsketch
+Priority: optional
+Section: database
+Filename: pool/main/d/ddsketch/postgresql-16-ddsketch_1.0.1-1PIGSTY~bookworm_amd64.deb
+Size: 67556
+SHA256: 955861f44a7683c5d382ca1aacbeb21e711d41b8a8bbd98192323310a2bca16f
+SHA1: 9486aaadc20ed68ef23aaa99563e984069323a08
+MD5sum: 68f8aa334eebfa4cef140d5e95e6a9a2
+Description: Implementing a fast and fully-mergeable quantile sketch with relative-error guarantees
+  This PostgreSQL extension implements ddsketch, a data structure for on-line accumulation of quantiles, as described in a paper
 
 Package: postgresql-16-decoder-raw
 Source: decoder-raw
@@ -12238,22 +13238,46 @@ Description: A PostgreSQL foreign data wrapper (FDW) for Firebird
   firebird_fdw supports Firebird 2.5 and later. It will probably work with Firebird 2.0 or later, and may work with earlier versions if the disable_pushdowns option is set (see below), but has never been tested with those versions.
   firebird_fdw is developed against the core PostgreSQL community version and may not be compatible with commercial forks.
 
-Package: postgresql-16-floatvec
-Source: floatvec
-Version: 1.0.1-1PIGSTY~bookworm
+Package: postgresql-16-floatfile
+Source: floatfile
+Version: 1.3.1-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 77
+Installed-Size: 126
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 16), libc6 (>= 2.33)
+Provides: postgresql-floatfile
+Homepage: https://github.com/pjungwir/floatfile
+Priority: optional
+Section: database
+Filename: pool/main/f/floatfile/postgresql-16-floatfile_1.3.1-1PIGSTY~bookworm_amd64.deb
+Size: 46752
+SHA256: b0d5a57e768736af0ced0169d8a952f9a9387340c4c233407802e0bfddc08199
+SHA1: d9f5a6c981e033dae1d64070b6a637595adeead2
+MD5sum: 88463baf79f05ee91b68fa7f6c398783
+Description: Postgres extension for fast select & append of float arrays.
+  A Postgres extension to store float arrays in individual files, providing very fast querying
+  (especially when combined with aggs_for_arrays, aggs_for_vecs, or floatvec) without paying a huge cost to keep updating them.
+  The idea is that if you have 1 million FLOATs, it is much faster if you can load them as a single 8 MB chunk rather than
+  pulling from a million different places on disk. Sometimes you can just store your data as an array in a regular Postgres table,
+  but updating those arrays will be slow and cause painful MVCC churn. Since this extension keeps the data in a separate file,
+  appends are very fast and outside the MVCC system.
+
+Package: postgresql-16-floatvec
+Source: floatvec
+Version: 1.1.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 84
 Depends: postgresql-16, postgresql-16-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-floatvec
 Homepage: https://github.com/pjungwir/floatvec
 Priority: optional
 Section: database
-Filename: pool/main/f/floatvec/postgresql-16-floatvec_1.0.1-1PIGSTY~bookworm_amd64.deb
-Size: 23756
-SHA256: 96abd09c527e32cfa83a9a1e3813fad7582e6b42fa6b00ea168c3a0c65d06e55
-SHA1: 377dc2434c3cbcbbfd170b5ac5fd5ae972ab9758
-MD5sum: edddf453ab5e7305dcaa482e97d99223
+Filename: pool/main/f/floatvec/postgresql-16-floatvec_1.1.1-1PIGSTY~bookworm_amd64.deb
+Size: 25364
+SHA256: 4d722a0b7e9b42675a45f32fb95ea81603a41ecea4ea911bf6cfc415f1106053
+SHA1: ce8faab3928624fcf913676964f544331d4e6ac7
+MD5sum: b303ff7bad87bf7431c7bc7e4727afba
 Description: Postgres functions for arithmetic on numeric arrays
   This Postgres extension provides basic arithmetic functions for operating on arrays (treated as vectors).
   It supports addition, subtraction, multiplication, division, and raising to a power. Everything (so far) is element-by-element,
@@ -12639,20 +13663,20 @@ Description: Postgres database extension to mimic a logon trigger
 
 Package: postgresql-16-lower-quantile
 Source: lower-quantile
-Version: 1.0.0-1PIGSTY~bookworm
+Version: 1.0.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 55
+Installed-Size: 57
 Depends: postgresql-16, postgresql-16-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-lower-quantile
 Homepage: https://github.com/tvondra/lower_quantile
 Priority: optional
 Section: database
-Filename: pool/main/l/lower-quantile/postgresql-16-lower-quantile_1.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 17008
-SHA256: b7e21c0705e1e1d6856b19e8a741d232c6b6bda43b20751785777888247e3b01
-SHA1: 22002090fe5127eb9f73ffce3f565a3a66225326
-MD5sum: 3f59acd528de5f3123ac5fa9e1ce8e75
+Filename: pool/main/l/lower-quantile/postgresql-16-lower-quantile_1.0.3-1PIGSTY~bookworm_amd64.deb
+Size: 17588
+SHA256: 265b5fd4363c0aac06c52a4f8b670390ea93450d43ae9b0d52dd31b6e7aabd72
+SHA1: e39f830a127535adbf5436d209586a1592cc0d11
+MD5sum: c23ad8c151ea4809bd8ae0681e4aa423
 Description: lower quantile aggregate
   This implements the "lower quantile" aggregate, defined as
   Given a multiset S of size n over R, the q-quantile item xq (in S) is the item x whose rank R(x) in the sorted multiset S is
@@ -12697,6 +13721,29 @@ SHA1: 2864dc74dbfc092a82824d8cacc2873398caa5c9
 MD5sum: 752ae0764c1fd97e50f2a61218bbcc84
 Description: Noset is a PostgreSQL Extension that allows blocking specific users to change a set of user-context variables.
   noset is a loadable module via shared_preload_libraries,  to avoid SET/RESET command for change a parameter in session. It is possible to filter one or a group a parameters to block.
+
+Package: postgresql-16-omnisketch
+Source: omnisketch
+Version: 1.0.2-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 74
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 16), libc6 (>= 2.14)
+Provides: postgresql-omnisketch
+Homepage: https://github.com/tvondra/omnisketch
+Priority: optional
+Section: database
+Filename: pool/main/o/omnisketch/postgresql-16-omnisketch_1.0.2-1PIGSTY~bookworm_amd64.deb
+Size: 28296
+SHA256: 5d14fc8e12c34c6be3f41d3788668764c3f7034029750dbf0c9c844eb9147365
+SHA1: ee2cb5b98497b87277df4d42d9795bd70872c656
+MD5sum: 163126ad1d94b0d2ffe177b29f4ef352
+Description: omnisketch implemented as Postgres extension
+  This PostgreSQL extension implements OmniSketch, a data structure for on-line aggregation of data into approximate sketch,
+   and answering queries. The algorithm is also very friendly to parallel programs.
+  The OmniSketch data structure was introduced by this paper:
+  OmniSketch: Efficient Multi-Dimensional High-Velocity Stream Analytics with Arbitrary Predicates;
+   Wieger R. Punter, Odysseas Papapetrou, Minos Garofalakis; Proc. {VLDB} Endow. Volume 17, No. 3, p 319-331, 2023 PDF PVLDB
 
 Package: postgresql-16-pagevis
 Source: pagevis
@@ -13674,6 +14721,28 @@ MD5sum: e6306718e26cdfae25807c271292407a
 Description: Protobuf support for PostgreSQL
   Protobuf support for PostgreSQL.
 
+Package: postgresql-16-pg-readme
+Source: pg-readme
+Version: 0.7.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 779
+Depends: postgresql-16
+Provides: postgresql-pg-readme
+Homepage: https://github.com/bigsmoke/pg_readme
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-readme/postgresql-16-pg-readme_0.7.0-1PIGSTY~bookworm_amd64.deb
+Size: 18784
+SHA256: e62b6d7ad206b4e419c204dc8f6da7edc8660e59474ed70078e9fd281488fb21
+SHA1: f10042f5333fc24becb4af016dab45cf2d8a42e2
+MD5sum: dbfa9c0d0a436c8b0b3ba384ea5cf69c
+Description: Functions to generate a `README.md` document for a database extension or schema
+  Functions to generate a `README.md` document for a database extension or schema,
+  based on `COMMENT` objects found in the `pg_description` system catalog
+  The pg_readme PostgreSQL extension provides functions to generate a README.md document
+  for a database extension or schema, based on COMMENT objects found in the pg_description system catalog.
+
 Package: postgresql-16-pg-readonly
 Source: pg-readonly
 Version: 1.0.0-1PIGSTY~bookworm
@@ -13771,6 +14840,27 @@ MD5sum: c0011d2ae8f528d8905716f2a1fec37f
 Description: A postgres extension to avoid accidental mistakes
   pg_savior is a PostgreSQL extension designed to prevent accidental data loss
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
+
+Package: postgresql-16-pg-schedoc
+Source: pg-schedoc
+Version: 0.0.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 25
+Depends: postgresql-16, postgresql-16-ddl-historization
+Provides: postgresql-pg-schedoc
+Homepage: https://github.com/bigsmoke/pg_schedoc
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-schedoc/postgresql-16-pg-schedoc_0.0.1-1PIGSTY~bookworm_amd64.deb
+Size: 4608
+SHA256: 09e2f3cbc95abe5bdb20106f80f5f76041dc0e3e9500ddca39883a6fa3e1c8c3
+SHA1: 8c45bd9975b1f2e5415686d8bb474d98874d7980
+MD5sum: fcdfbbc40ee0d1348290b5665c3396dd
+Description: Cross documentation between Django and DBT projects
+  schedoc means schema documentation, it's a tool to build an automatic documentation
+  based on COMMENT on PostgresSQL objects. schedoc require the extension (ddl_historization to work）
+  COMMENT are set on columns in a json format with predefined values like status.
 
 Package: postgresql-16-pg-search
 Version: 0.13.2
@@ -13931,6 +15021,25 @@ Description: Text Summarization using LLMs. Built using pgrx
   that integrates with the OpenAI API. This extension will include a basic "Hello, pg_summarize!"
   function and another function to summarize text using OpenAI's models.
 
+Package: postgresql-16-pg-task
+Source: pg-task
+Version: 1.0.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 518
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 16)
+Provides: postgresql-pg-task
+Homepage: https://github.com/RekGRpth/pg_task
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-task/postgresql-16-pg-task_1.0.0-1PIGSTY~bookworm_amd64.deb
+Size: 227284
+SHA256: 28fa8ae7c6b52afe8c728a05c172cfaa145d40590658e0f34b9bfb67be193784
+SHA1: e948e340d9f79e40be50f1553d7136c253211bc9
+MD5sum: 832cf8ea232351504d29dfa4d44f5e5c
+Description: PostgreSQL and Greenplum job scheduler pg_task allows to execute any sql command at any specific time at background asynchronously
+  PostgreSQL and Greenplum job scheduler pg_task allows to execute any sql command at any specific time at background asynchronously
+
 Package: postgresql-16-pg-tde
 Source: pg-tde
 Version: 1.0.0-1bPIGSTY~bookworm
@@ -13990,20 +15099,22 @@ Description: PostgreSQL extension that provides high-accuracy timing of SQL expr
 
 Package: postgresql-16-pg-timeseries
 Source: pg-timeseries
-Version: 0.1.6-1PIGSTY~bookworm
+Version: 0.1.6-2PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 55
 Depends: postgresql-16
+Recommends: postgresql-16-pg-ivm, postgresql-16-pg-partman, postgresql-16-pg-cron
+Suggests: postgresql-16-hydra, postgresql-16-citus
 Provides: postgresql-pg-timeseries
 Homepage: https://github.com/tembo-io/pg_timeseries
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-timeseries/postgresql-16-pg-timeseries_0.1.6-1PIGSTY~bookworm_amd64.deb
-Size: 22928
-SHA256: d35826e407821eeaa941e4214a8a5decb9aa3c3b9428ebbf4a26054c1a8d3a56
-SHA1: 99c07707e762915101b8844ad168f7c72c012b08
-MD5sum: 428c89b9af6a033c8cd06dfaf1899b51
+Filename: pool/main/p/pg-timeseries/postgresql-16-pg-timeseries_0.1.6-2PIGSTY~bookworm_amd64.deb
+Size: 22964
+SHA256: d760d9f98d88c47628c7e3f71bf59aea21e54da4f86e052aa3f2172fac260463
+SHA1: a38d1933f4e65f74b4d6af3a1f4d2cd1391d920c
+MD5sum: 2577a5eb10cb1126b3b2af8087e6b94d
 Description: Simple and focused time-series tables for PostgreSQL
   The purpose of this extension is to provide a cohesive user experience around the creation, maintenance, and use of time-series tables.
 
@@ -14047,6 +15158,30 @@ SHA1: fa2b6f1dbd02634c8c16a50c99f40df59497cda8
 MD5sum: c58bcf80eb22d604375d8e45cf27af8f
 Description: adds native support for unsigned integers and 128-bit signed/unsigned integer types.
   A PostgreSQL extension that adds native support for unsigned integers and 128-bit signed/unsigned integer types.
+
+Package: postgresql-16-pg-upless
+Source: pg-upless
+Version: 0.0.3-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 35
+Depends: postgresql-16
+Provides: postgresql-pg-upless
+Homepage: https://github.com/rodo/pg_upless
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-upless/postgresql-16-pg-upless_0.0.3-1PIGSTY~bookworm_amd64.deb
+Size: 5264
+SHA256: 9d46d535538a5b1e42894235aea7ec680d641041ae204dcfde69ab0c06338968
+SHA1: 383bced70fea698adff299c2c22db9f6ef617eb6
+MD5sum: 5be131f4f25fe6567553517915f753cb
+Description: PostgreSQL Extension to Detect Useless UPDATE
+  pg_upless is a set of functions and tables, to build statistics on useless update statements.
+  With modern ORM it can occurs that sometimes an UPDATE is done without changing any values.
+  If it occurs too often that will impact the performance of your system.
+  pg_upless will help to detect them by creating triggers on the tables you want to follow.
+  It's not aimed to be used all the time, it's more a diagnostc tool you activate it a small period of time.
+  Even if it is designed to have the lower imapct as possible it will downgrade by a little your queries performance.
 
 Package: postgresql-16-pg-uri
 Source: pg-uri
@@ -14109,6 +15244,26 @@ MD5sum: 4207834bdd2a7d3a775d69e735657a6c
 Description: reflects a vectorize schema from the existing PostgresSQL 16 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via vectorize with no additional servers, processes, or libraries.
+
+Package: postgresql-16-pg-xxhash
+Source: pg-xxhash
+Version: 0.0.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 203
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 16)
+Provides: postgresql-pg-xxhash
+Homepage: https://github.com/hatarist/pg_xxhash
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-xxhash/postgresql-16-pg-xxhash_0.0.1-1PIGSTY~bookworm_amd64.deb
+Size: 81708
+SHA256: cb4b973d33d612358492134015c075f07cfc735823210e539ec62421322aa668
+SHA1: 2cdbffd2231f54c79422cbb9b54cbf63a29ba92b
+MD5sum: 05c00d6a0e14914260da52a86a726457
+Description: xxhash functions for PostgreSQL
+  Think twice before even considering to use it in any serious environment.
+  Issues are discouraged, pull requests are greatly appreciated.
 
 Package: postgresql-16-pg-zstd
 Source: pg-zstd
@@ -14287,21 +15442,21 @@ Description: allow to access to memory usage diagnostics
 
 Package: postgresql-16-pgmq
 Source: pgmq
-Version: 1.4.4-1PIGSTY~bookworm
+Version: 1.5.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 152
+Installed-Size: 179
 Depends: postgresql-16
 Provides: postgresql-pgmq
 Homepage: https://github.com/michelp/pgmq
 Priority: optional
 Section: database
-Filename: pool/main/p/pgmq/postgresql-16-pgmq_1.4.4-1PIGSTY~bookworm_amd64.deb
-Size: 17080
-SHA256: cde46362562ceca6be41197b53e1df14c540a7155e97c2e3ffda360a78f3e631
-SHA1: 38716f9b6fd062a80cf4c0f4f5786b8329c9e0df
-MD5sum: 08d60e69fe95906aee0f8b2c389a488f
-Description: PostgreSQL implementation of JSON Web Tokens for 16
+Filename: pool/main/p/pgmq/postgresql-16-pgmq_1.5.0-1PIGSTY~bookworm_amd64.deb
+Size: 18408
+SHA256: 1c14ff1070d22fed0c808327f1fe4813a9dba1f1cb1c1c904de4ebdf75abdec5
+SHA1: 11252fd28036fcd9480bf55d968c63f62af5f8ac
+MD5sum: 4a7ca1fab44ec6df40dd3a7807e7c5b5
+Description: A lightweight message queue. Like AWS SQS and RSMQ but on Postgres.
   pgmq allows you to sign & verify json web token via pure SQL interface.
   It requires the pgcrypto extension, included in most distribution's "postgresql-contrib" package.
   The tests require the pgtap extension to run.
@@ -14552,7 +15707,7 @@ Description: V8 Engine Javascript Procedural Language add-on for PostgreSQL 16
 
 Package: postgresql-16-quantile
 Source: quantile
-Version: 1.1.7-1PIGSTY~bookworm
+Version: 1.1.8-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 78
@@ -14561,11 +15716,11 @@ Provides: postgresql-quantile
 Homepage: https://github.com/tvondra/quantile
 Priority: optional
 Section: database
-Filename: pool/main/q/quantile/postgresql-16-quantile_1.1.7-1PIGSTY~bookworm_amd64.deb
-Size: 22932
-SHA256: 9fe68921cf3c038fc62d6b9d49d6382b4db05333077ab981caf17000651df547
-SHA1: 1841e380a1003bad456bfa49b135d551dafe73bc
-MD5sum: bf967efcf5d6e9931317100b1b4da92f
+Filename: pool/main/q/quantile/postgresql-16-quantile_1.1.8-1PIGSTY~bookworm_amd64.deb
+Size: 23064
+SHA256: f8d757f5c58224ddac1988a15e1cacbb3ce9db8487508cff471a114c9e03d960
+SHA1: 1dfbdf155ec44f3cfba50205f52113139b4826b0
+MD5sum: 90a0576b2a49346be737f2242edfbf9f
 Description: an aggregation function for PostgreSQL
   This extension provides three simple aggregate functions to compute quantiles (http://en.wikipedia.org/wiki/Quantile).
   There are two forms of aggregate functions available
@@ -14613,20 +15768,20 @@ Description: A PostgreSQL foreign data wrapper for Redis
 
 Package: postgresql-16-sequential-uuids
 Source: sequential-uuids
-Version: 1.0.2-1PIGSTY~bookworm
+Version: 1.0.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 45
+Installed-Size: 46
 Depends: postgresql-16, postgresql-16-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-sequential-uuids
 Homepage: https://github.com/tvondra/sequential-uuids
 Priority: optional
 Section: database
-Filename: pool/main/s/sequential-uuids/postgresql-16-sequential-uuids_1.0.2-1PIGSTY~bookworm_amd64.deb
-Size: 12952
-SHA256: 511a02bae437beddf3febfa109c9ed913492f3c51482e573830d64e6b32c3aed
-SHA1: c2c80aca2740a0b826572ae115f83202d4a35d65
-MD5sum: c6c79d3d322c4acac4d21fd405f5bcb4
+Filename: pool/main/s/sequential-uuids/postgresql-16-sequential-uuids_1.0.3-1PIGSTY~bookworm_amd64.deb
+Size: 13444
+SHA256: e5b25a97d78c1adbccd14a3824ce1d56e1ddae98b1d7d69f577308eb8544aa33
+SHA1: 3b8241859246d56f3375be69364c985cdf6d8fb3
+MD5sum: 9e027b977ff64fdf564c073f0de9270e
 Description: generator of sequential UUIDs
   This PostgreSQL extension implements two UUID generators with sequential patterns, which helps to reduce random I/O patterns associated with regular entirely-random UUID.
   Regular random UUIDs are distributed uniformly over the whole range of possible values. This results in poor locality when inserting data into indexes - all index leaf pages are equally likely to be hit, forcing the whole index into memory. With small indexes that's fine, but once the index size exceeds shared buffers (or RAM), the cache hit ratio quickly deteriorates.
@@ -14830,6 +15985,25 @@ MD5sum: 12ab847f76f7aa863c548087a0d9c951
 Description: PostgreSQL extension for high-performance real-time analytics on time-series and event data
   An open-source time-series SQL database optimized for fast ingest and complex queries. Packaged as a PostgreSQL extension.
 
+Package: postgresql-16-timescaledb-tsl
+Source: timescaledb-tsl
+Version: 2.17.2-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 12624
+Depends: postgresql-16, libc6 (>= 2.17)
+Provides: postgresql-timescaledb-tsl
+Homepage: https://github.com/timescale/timescaledb
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-tsl/postgresql-16-timescaledb-tsl_2.17.2-1PIGSTY~bookworm_amd64.deb
+Size: 621044
+SHA256: 8a6061d2d9f84fe4ca9b136bc19d620434c1f11e3e74758a881bf2a6c5816d49
+SHA1: 0171faf61c2f85366a734e78c8063fe886bbc617
+MD5sum: 260e457143a81621bd1959e7ef3c5aee
+Description: PostgreSQL extension for high-performance real-time analytics on time-series and event data (TSL version)
+  An open-source time-series SQL database optimized for fast ingest and complex queries. Packaged as a PostgreSQL extension.
+
 Package: postgresql-16-timestamp9
 Source: timestamp9
 Version: 1.4.0-1PIGSTY~bookworm
@@ -14905,6 +16079,26 @@ SHA1: f1951c600d514d6b7dd77a93f76f1ea0df802b6a
 MD5sum: d320f0a39a5c03b1e6341f614c7af37b
 Description: url_encode, url_decode functions for PostgreSQL
   url_encode, url_decode functions for PostgreSQL
+
+Package: postgresql-16-vasco
+Source: vasco
+Version: 0.1.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 140
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 16), libc6 (>= 2.14)
+Provides: postgresql-vasco
+Homepage: https://github.com/Florents-Tselai/vasco
+Priority: optional
+Section: database
+Filename: pool/main/v/vasco/postgresql-16-vasco_0.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 57240
+SHA256: 067414f173c78beb49455d21f040fb1ed34d78e88cc837f04b5ac6bdcac4d233
+SHA1: 12cd6ff8ee61026381729e3b04b061c51ca8bde9
+MD5sum: 1f3538313f7addfc7d1f1da655ba1cad
+Description: Maximal Information Coefficient (MIC) Extension for Postgres
+  vasco is a Postgres extension that helps you discover hidden correlations in your data.
+  It is based on the MIC and the MINE family of statistics.
 
 Package: postgresql-16-vault
 Source: vault
@@ -15215,6 +16409,44 @@ MD5sum: 6d2557628cb8908dad3e687aae9c5a2a
 Description: PostgreSQL extension implementing Skip32 and XTEA encryption for int and bigint types
   cryptint is a PostgreSQL extension providing SKIP32 encryption for 32-bit integers, and XTEA encryption for 64-bit integers.
 
+Package: postgresql-17-data-historization
+Source: data-historization
+Version: 1.1.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 138
+Depends: postgresql-17
+Provides: postgresql-data-historization
+Homepage: https://github.com/bigsmoke/pg_data_historization
+Priority: optional
+Section: database
+Filename: pool/main/d/data-historization/postgresql-17-data-historization_1.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 6440
+SHA256: b94a0d73917c2f4bebec7737ff38f7dde3016ea9b8a03badc82b2d0a75b2098e
+SHA1: ec04effd1d39074767c38ebb1b36c789040b9c36
+MD5sum: e4deffbe52a56fc04a0d5e80a583d874
+Description: PLPGSQL Script to historize data in partitionned table
+  PLPGSQL Script to historize data in partitionned table
+
+Package: postgresql-17-ddl-historization
+Source: ddl-historization
+Version: 0.7.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 19
+Depends: postgresql-17
+Provides: postgresql-ddl-historization
+Homepage: https://github.com/rodo/pg_ddl_historization
+Priority: optional
+Section: database
+Filename: pool/main/d/ddl-historization/postgresql-17-ddl-historization_0.7.0-1PIGSTY~bookworm_amd64.deb
+Size: 3104
+SHA256: a48851dae6cfcfda0206b40b4bbc5b02ac0e03df8a41fb170bbecf4aac30ce75
+SHA1: 116c6ad2753fd05c32be02c3def0d96da59b3bbf
+MD5sum: 4fa481715416722d56d5308e713c223f
+Description: Historize the ddl changes inside PostgreSQL database
+  PostgreSQL Extension to historize in a table all DDL changes made on a database
+
 Package: postgresql-17-ddlx
 Source: ddlx
 Version: 0.28-1PIGSTY~bookworm
@@ -15234,6 +16466,25 @@ MD5sum: 3e0bef98531fcb272082ad16d5f57d42
 Description: DDL eXtractor functions for PostgreSQL (ddlx)
   This is an SQL-only extension for PostgreSQL that provides uniform functions for generating SQL Data Definition Language (DDL) scripts for objects created in a database.
   It contains a bunch of SQL functions to convert PostgreSQL system catalogs to nicely formatted snippets of SQL DDL, such as CREATE TABLE.
+
+Package: postgresql-17-ddsketch
+Source: ddsketch
+Version: 1.0.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 168
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.14)
+Provides: postgresql-ddsketch
+Homepage: https://github.com/tvondra/ddsketch
+Priority: optional
+Section: database
+Filename: pool/main/d/ddsketch/postgresql-17-ddsketch_1.0.1-1PIGSTY~bookworm_amd64.deb
+Size: 67628
+SHA256: 25d99e59858a48701030a6408d7599a8510d2028ca124686db0d4487e14459e2
+SHA1: a40b88d2e55557df96f07b828012fdd348dd732b
+MD5sum: 181011e226bc9da530b4965f2716e9ce
+Description: Implementing a fast and fully-mergeable quantile sketch with relative-error guarantees
+  This PostgreSQL extension implements ddsketch, a data structure for on-line accumulation of quantiles, as described in a paper
 
 Package: postgresql-17-decoder-raw
 Source: decoder-raw
@@ -15316,22 +16567,46 @@ Description: A PostgreSQL foreign data wrapper (FDW) for Firebird
   firebird_fdw supports Firebird 2.5 and later. It will probably work with Firebird 2.0 or later, and may work with earlier versions if the disable_pushdowns option is set (see below), but has never been tested with those versions.
   firebird_fdw is developed against the core PostgreSQL community version and may not be compatible with commercial forks.
 
-Package: postgresql-17-floatvec
-Source: floatvec
-Version: 1.0.1-1PIGSTY~bookworm
+Package: postgresql-17-floatfile
+Source: floatfile
+Version: 1.3.1-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 77
+Installed-Size: 126
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.33)
+Provides: postgresql-floatfile
+Homepage: https://github.com/pjungwir/floatfile
+Priority: optional
+Section: database
+Filename: pool/main/f/floatfile/postgresql-17-floatfile_1.3.1-1PIGSTY~bookworm_amd64.deb
+Size: 46756
+SHA256: a2f2c30d1a947316359bfa3bb1e2d4db955bb9408a8f8c4fad3b76e2bfc0965b
+SHA1: 898e7f66a24d3bad989152619fc9ffe0719c6f24
+MD5sum: 8a8f5db7ea37a0c421e26524ad2de307
+Description: Postgres extension for fast select & append of float arrays.
+  A Postgres extension to store float arrays in individual files, providing very fast querying
+  (especially when combined with aggs_for_arrays, aggs_for_vecs, or floatvec) without paying a huge cost to keep updating them.
+  The idea is that if you have 1 million FLOATs, it is much faster if you can load them as a single 8 MB chunk rather than
+  pulling from a million different places on disk. Sometimes you can just store your data as an array in a regular Postgres table,
+  but updating those arrays will be slow and cause painful MVCC churn. Since this extension keeps the data in a separate file,
+  appends are very fast and outside the MVCC system.
+
+Package: postgresql-17-floatvec
+Source: floatvec
+Version: 1.1.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 84
 Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-floatvec
 Homepage: https://github.com/pjungwir/floatvec
 Priority: optional
 Section: database
-Filename: pool/main/f/floatvec/postgresql-17-floatvec_1.0.1-1PIGSTY~bookworm_amd64.deb
-Size: 23728
-SHA256: d9006976031040af1fb8ea7f191535ad36ceb411a258edaf5bb45658dc2a7df0
-SHA1: dcebc3fa4a05643950cf28b92bc6b9e6355649c9
-MD5sum: 042383e7bd120fe9230b9170e151653a
+Filename: pool/main/f/floatvec/postgresql-17-floatvec_1.1.1-1PIGSTY~bookworm_amd64.deb
+Size: 25368
+SHA256: 13809dc987647231b2f5e16a594c4ee8e11e6cd4fb2203fe169a8601eee9ba80
+SHA1: ca08ea6480e17763ddfefa46d27cb2507d00c693
+MD5sum: 46a4d725673569050e9cc9d16762ae3d
 Description: Postgres functions for arithmetic on numeric arrays
   This Postgres extension provides basic arithmetic functions for operating on arrays (treated as vectors).
   It supports addition, subtraction, multiplication, division, and raising to a power. Everything (so far) is element-by-element,
@@ -15675,20 +16950,20 @@ Description: Postgres database extension to mimic a logon trigger
 
 Package: postgresql-17-lower-quantile
 Source: lower-quantile
-Version: 1.0.0-1PIGSTY~bookworm
+Version: 1.0.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 55
+Installed-Size: 57
 Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-lower-quantile
 Homepage: https://github.com/tvondra/lower_quantile
 Priority: optional
 Section: database
-Filename: pool/main/l/lower-quantile/postgresql-17-lower-quantile_1.0.0-1PIGSTY~bookworm_amd64.deb
-Size: 17200
-SHA256: e391ab9598e879a1301774bda0d40e9f1b630027a6ab1d6e89cccb6932ba8e34
-SHA1: 3288c0477166ce8a9b44d6487a14c8701fb8d8a6
-MD5sum: 6ae2b7d204de27b0b34477b6c879d65a
+Filename: pool/main/l/lower-quantile/postgresql-17-lower-quantile_1.0.3-1PIGSTY~bookworm_amd64.deb
+Size: 17800
+SHA256: 1f849921eb975c0736a4162b1cb98b797157a19cc27e32fbf23b25fe724b6d3f
+SHA1: ef3600b6503bea49459a50d1bf090470ed16cb00
+MD5sum: 424bb69b6b95575153520353531d6c8d
 Description: lower quantile aggregate
   This implements the "lower quantile" aggregate, defined as
   Given a multiset S of size n over R, the q-quantile item xq (in S) is the item x whose rank R(x) in the sorted multiset S is
@@ -15733,6 +17008,29 @@ SHA1: bc81b6414f8dd6620bbff721ba295422840118d1
 MD5sum: f9c71121c838558653c6ec23ccc9467c
 Description: Noset is a PostgreSQL Extension that allows blocking specific users to change a set of user-context variables.
   noset is a loadable module via shared_preload_libraries,  to avoid SET/RESET command for change a parameter in session. It is possible to filter one or a group a parameters to block.
+
+Package: postgresql-17-omnisketch
+Source: omnisketch
+Version: 1.0.2-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 74
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.14)
+Provides: postgresql-omnisketch
+Homepage: https://github.com/tvondra/omnisketch
+Priority: optional
+Section: database
+Filename: pool/main/o/omnisketch/postgresql-17-omnisketch_1.0.2-1PIGSTY~bookworm_amd64.deb
+Size: 28276
+SHA256: 960d6b44cc7a4a109355923e9fc7b4cbe9f8b0cdc482a26bb013d6ad98272078
+SHA1: c7a26da72b6ea7c02e8429ad8f33d2ac6e36c71f
+MD5sum: 228b64797f7efc9db5823d5062b6804f
+Description: omnisketch implemented as Postgres extension
+  This PostgreSQL extension implements OmniSketch, a data structure for on-line aggregation of data into approximate sketch,
+   and answering queries. The algorithm is also very friendly to parallel programs.
+  The OmniSketch data structure was introduced by this paper:
+  OmniSketch: Efficient Multi-Dimensional High-Velocity Stream Analytics with Arbitrary Predicates;
+   Wieger R. Punter, Odysseas Papapetrou, Minos Garofalakis; Proc. {VLDB} Endow. Volume 17, No. 3, p 319-331, 2023 PDF PVLDB
 
 Package: postgresql-17-pagevis
 Source: pagevis
@@ -16099,6 +17397,27 @@ Description: DuckDB-powered Postgres for high performance apps & analytics for P
   pg_duckdb is a Postgres extension that embeds DuckDB's columnar-vectorized analytics engine and features into Postgres.
   We recommend using pg_duckdb to build high performance analytics and data-intensive applications.
   pg_duckdb was developed in collaboration with our partners, Hydra and MotherDuck.
+
+Package: postgresql-17-pg-duration
+Source: pg-duration
+Version: 1.0.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 96
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 16)
+Provides: postgresql-pg-duration
+Homepage: https://github.com/jkosh44/pg_duration/
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-duration/postgresql-17-pg-duration_1.0.1-1PIGSTY~bookworm_amd64.deb
+Size: 31076
+SHA256: d014fa95ec97cb863ba9869507df3ca0991fcfb229e6f37bf2516173a7bffc51
+SHA1: e364e34166f56b5ad7b38858158c17f950f954ff
+MD5sum: d5813156805e4c55b844039333757e00
+Description: A PostgreSQL extension for a time based duration type.
+  pg_duration is a PostgreSQL extension that adds a duration data type to PostgreSQL.
+  duration allows users to store the total time of some event in their databases.
+  duration is very similar to the builtin interval type, except duration does not have a months or days component, only a microsecond component.
 
 Package: postgresql-17-pg-ecdsa
 Source: pg-ecdsa
@@ -16689,6 +18008,28 @@ MD5sum: 45991e223f90535ad7ee105afdbf8b9a
 Description: Protobuf support for PostgreSQL
   Protobuf support for PostgreSQL.
 
+Package: postgresql-17-pg-readme
+Source: pg-readme
+Version: 0.7.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 779
+Depends: postgresql-17
+Provides: postgresql-pg-readme
+Homepage: https://github.com/bigsmoke/pg_readme
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-readme/postgresql-17-pg-readme_0.7.0-1PIGSTY~bookworm_amd64.deb
+Size: 18784
+SHA256: d797f944dec77f1a9249355214866b4e450ab94b92366969a50573e229d6d00e
+SHA1: 7a746f88766333e4c3f01b53d9c94fb5b10cfb67
+MD5sum: 1a54af62f2466cb465b637a030823ca4
+Description: Functions to generate a `README.md` document for a database extension or schema
+  Functions to generate a `README.md` document for a database extension or schema,
+  based on `COMMENT` objects found in the `pg_description` system catalog
+  The pg_readme PostgreSQL extension provides functions to generate a README.md document
+  for a database extension or schema, based on COMMENT objects found in the pg_description system catalog.
+
 Package: postgresql-17-pg-readonly
 Source: pg-readonly
 Version: 1.0.0-1PIGSTY~bookworm
@@ -16786,6 +18127,27 @@ MD5sum: 7c0666a14119bba53f271c2a27e7428d
 Description: A postgres extension to avoid accidental mistakes
   pg_savior is a PostgreSQL extension designed to prevent accidental data loss
   due to non-parameterized DELETE queries without a WHERE clause. It hooks into the query execution path.
+
+Package: postgresql-17-pg-schedoc
+Source: pg-schedoc
+Version: 0.0.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 25
+Depends: postgresql-17, postgresql-17-ddl-historization
+Provides: postgresql-pg-schedoc
+Homepage: https://github.com/bigsmoke/pg_schedoc
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-schedoc/postgresql-17-pg-schedoc_0.0.1-1PIGSTY~bookworm_amd64.deb
+Size: 4612
+SHA256: 11b73aeb52682896afd6a04d3c13105bca3911237d9b4dc44cb053b5abdadf52
+SHA1: 9a66a51e0ed155d5c811843ffe35b78b05fa03ac
+MD5sum: a5485015a5beefcda428ac6543b29a34
+Description: Cross documentation between Django and DBT projects
+  schedoc means schema documentation, it's a tool to build an automatic documentation
+  based on COMMENT on PostgresSQL objects. schedoc require the extension (ddl_historization to work）
+  COMMENT are set on columns in a json format with predefined values like status.
 
 Package: postgresql-17-pg-search
 Version: 0.13.2
@@ -16926,6 +18288,25 @@ Description: Text Summarization using LLMs. Built using pgrx
   that integrates with the OpenAI API. This extension will include a basic "Hello, pg_summarize!"
   function and another function to summarize text using OpenAI's models.
 
+Package: postgresql-17-pg-task
+Source: pg-task
+Version: 1.0.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 524
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 16)
+Provides: postgresql-pg-task
+Homepage: https://github.com/RekGRpth/pg_task
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-task/postgresql-17-pg-task_1.0.0-1PIGSTY~bookworm_amd64.deb
+Size: 230140
+SHA256: f6d888e702d2ffc0dac385ce7a4c218501901d6462afa29a31f99f15ca4093d3
+SHA1: 9fc29d1a23841a724476b7d46dc693b77b43a017
+MD5sum: 9a27f840d61c87e3e017f47101d626b8
+Description: PostgreSQL and Greenplum job scheduler pg_task allows to execute any sql command at any specific time at background asynchronously
+  PostgreSQL and Greenplum job scheduler pg_task allows to execute any sql command at any specific time at background asynchronously
+
 Package: postgresql-17-pg-tiktoken
 Source: pg-tiktoken
 Version: 0.0.1-1PIGSTY~bookworm
@@ -16966,20 +18347,22 @@ Description: PostgreSQL extension that provides high-accuracy timing of SQL expr
 
 Package: postgresql-17-pg-timeseries
 Source: pg-timeseries
-Version: 0.1.6-1PIGSTY~bookworm
+Version: 0.1.6-2PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 55
 Depends: postgresql-17
+Recommends: postgresql-17-pg-ivm, postgresql-17-pg-partman, postgresql-17-pg-cron
+Suggests: postgresql-17-hydra, postgresql-17-citus
 Provides: postgresql-pg-timeseries
 Homepage: https://github.com/tembo-io/pg_timeseries
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-timeseries/postgresql-17-pg-timeseries_0.1.6-1PIGSTY~bookworm_amd64.deb
-Size: 22928
-SHA256: 303fa9c245781713e6070d35c930150c0065a40f4965decaf92c66d0ea4b2d1f
-SHA1: 155978da2490d42bb37a41bc778ee738f26dc8e9
-MD5sum: e691a7018e7c0487fbec365e61f8e4fa
+Filename: pool/main/p/pg-timeseries/postgresql-17-pg-timeseries_0.1.6-2PIGSTY~bookworm_amd64.deb
+Size: 22964
+SHA256: 636deee6e7040e15692b28d0ffc8dec5ea51b6fd70e82e697012e04ba1163ee5
+SHA1: aebd1876b1cd058ea8ff128d582dd1ba23c832f3
+MD5sum: ca099aa58de58c517f163722dad33a59
 Description: Simple and focused time-series tables for PostgreSQL
   The purpose of this extension is to provide a cohesive user experience around the creation, maintenance, and use of time-series tables.
 
@@ -17023,6 +18406,30 @@ SHA1: 2cd2ee8a1c34b44e381e02b5d7ef25b83891599c
 MD5sum: b208e29e430cd5b80ab564058849afed
 Description: adds native support for unsigned integers and 128-bit signed/unsigned integer types.
   A PostgreSQL extension that adds native support for unsigned integers and 128-bit signed/unsigned integer types.
+
+Package: postgresql-17-pg-upless
+Source: pg-upless
+Version: 0.0.3-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 35
+Depends: postgresql-17
+Provides: postgresql-pg-upless
+Homepage: https://github.com/rodo/pg_upless
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-upless/postgresql-17-pg-upless_0.0.3-1PIGSTY~bookworm_amd64.deb
+Size: 5264
+SHA256: 9d58f0da5cd800023e3d5ee947da6cc8f468bba2ca85ae69133414bc298916c9
+SHA1: 5fcb7d04ad36537342fcec51e53da15b1a898c84
+MD5sum: fdedc6a52419c014d6e18834c689872d
+Description: PostgreSQL Extension to Detect Useless UPDATE
+  pg_upless is a set of functions and tables, to build statistics on useless update statements.
+  With modern ORM it can occurs that sometimes an UPDATE is done without changing any values.
+  If it occurs too often that will impact the performance of your system.
+  pg_upless will help to detect them by creating triggers on the tables you want to follow.
+  It's not aimed to be used all the time, it's more a diagnostc tool you activate it a small period of time.
+  Even if it is designed to have the lower imapct as possible it will downgrade by a little your queries performance.
 
 Package: postgresql-17-pg-uri
 Source: pg-uri
@@ -17085,6 +18492,26 @@ MD5sum: 86577ac1bb4ed8ebcf217958166b4b16
 Description: reflects a vectorize schema from the existing PostgresSQL 17 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via vectorize with no additional servers, processes, or libraries.
+
+Package: postgresql-17-pg-xxhash
+Source: pg-xxhash
+Version: 0.0.1-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 203
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 16)
+Provides: postgresql-pg-xxhash
+Homepage: https://github.com/hatarist/pg_xxhash
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-xxhash/postgresql-17-pg-xxhash_0.0.1-1PIGSTY~bookworm_amd64.deb
+Size: 81756
+SHA256: 0f16e80d74b544c732dacf468e359d085fbb3ea06c17721c3e7ebcc78d17d04e
+SHA1: a5fd85236a40bb904996868c0086c18f4f2457c8
+MD5sum: a32fd4b941579f3c0101d8b62d44e102
+Description: xxhash functions for PostgreSQL
+  Think twice before even considering to use it in any serious environment.
+  Issues are discouraged, pull requests are greatly appreciated.
 
 Package: postgresql-17-pg-zstd
 Source: pg-zstd
@@ -17243,21 +18670,21 @@ Description: allow to access to memory usage diagnostics
 
 Package: postgresql-17-pgmq
 Source: pgmq
-Version: 1.4.4-1PIGSTY~bookworm
+Version: 1.5.0-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 152
+Installed-Size: 179
 Depends: postgresql-17
 Provides: postgresql-pgmq
 Homepage: https://github.com/michelp/pgmq
 Priority: optional
 Section: database
-Filename: pool/main/p/pgmq/postgresql-17-pgmq_1.4.4-1PIGSTY~bookworm_amd64.deb
-Size: 17076
-SHA256: 1c2d82a9a4af34fd6cee0e40fe31abf9f7b96e094644dfd0a4012061be8d3cef
-SHA1: c1d4a0cf8c49a508550ff4a625a98acf4f60dd97
-MD5sum: a01b8221acc8eb75bc3745023c11055a
-Description: PostgreSQL implementation of JSON Web Tokens for 17
+Filename: pool/main/p/pgmq/postgresql-17-pgmq_1.5.0-1PIGSTY~bookworm_amd64.deb
+Size: 18412
+SHA256: e3adb6c22fb9da4dd227f54fb15f80a4dc639ab9697b4312046052a4b8f3befc
+SHA1: b70ad4f96c7d91c4dfe5b1f795ad24e3b9f0b7e2
+MD5sum: 3c949b4fe26f2e6e1ac6e64889212e9a
+Description: A lightweight message queue. Like AWS SQS and RSMQ but on Postgres.
   pgmq allows you to sign & verify json web token via pure SQL interface.
   It requires the pgcrypto extension, included in most distribution's "postgresql-contrib" package.
   The tests require the pgtap extension to run.
@@ -17488,7 +18915,7 @@ Description: V8 Engine Javascript Procedural Language add-on for PostgreSQL 17
 
 Package: postgresql-17-quantile
 Source: quantile
-Version: 1.1.7-1PIGSTY~bookworm
+Version: 1.1.8-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 78
@@ -17497,11 +18924,11 @@ Provides: postgresql-quantile
 Homepage: https://github.com/tvondra/quantile
 Priority: optional
 Section: database
-Filename: pool/main/q/quantile/postgresql-17-quantile_1.1.7-1PIGSTY~bookworm_amd64.deb
-Size: 22976
-SHA256: d3ce919edf90bf14ef1251828c836cf1f53d6efda78e9f530c7be724f59570a4
-SHA1: 800f777677a386b6adec8debfd07774ee2924a2f
-MD5sum: 5daa908bf8ce2b61900e22193a1b18a4
+Filename: pool/main/q/quantile/postgresql-17-quantile_1.1.8-1PIGSTY~bookworm_amd64.deb
+Size: 23112
+SHA256: b4d807df9029ff1d7f27139c9200d255dde0ecae9275591956e82fdaff575eff
+SHA1: 5f320ce8b1adace068d7854a9d56fb568db31755
+MD5sum: add581312d535dc39729e2dd23d3521a
 Description: an aggregation function for PostgreSQL
   This extension provides three simple aggregate functions to compute quantiles (http://en.wikipedia.org/wiki/Quantile).
   There are two forms of aggregate functions available
@@ -17549,20 +18976,20 @@ Description: A PostgreSQL foreign data wrapper for Redis
 
 Package: postgresql-17-sequential-uuids
 Source: sequential-uuids
-Version: 1.0.2-1PIGSTY~bookworm
+Version: 1.0.3-1PIGSTY~bookworm
 Architecture: amd64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 45
+Installed-Size: 46
 Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.4)
 Provides: postgresql-sequential-uuids
 Homepage: https://github.com/tvondra/sequential-uuids
 Priority: optional
 Section: database
-Filename: pool/main/s/sequential-uuids/postgresql-17-sequential-uuids_1.0.2-1PIGSTY~bookworm_amd64.deb
-Size: 12960
-SHA256: e312363e2482d2c5e463dac29583c961d16adfd74b7327c7b3c4bea78f10732c
-SHA1: 0d994ee244386922cc5a26e945a5ebc831c9d410
-MD5sum: d2603f7a0ba328c3aa5b3e47860b2b28
+Filename: pool/main/s/sequential-uuids/postgresql-17-sequential-uuids_1.0.3-1PIGSTY~bookworm_amd64.deb
+Size: 13452
+SHA256: e6b1f3b58d2929cba88ff223977101530bf82693691218faa094dcd69a0b92ba
+SHA1: 52386fdd28b951a423fa3917677507eac9184508
+MD5sum: 666c3c08e1b0468cf05db3bb7b0f3944
 Description: generator of sequential UUIDs
   This PostgreSQL extension implements two UUID generators with sequential patterns, which helps to reduce random I/O patterns associated with regular entirely-random UUID.
   Regular random UUIDs are distributed uniformly over the whole range of possible values. This results in poor locality when inserting data into indexes - all index leaf pages are equally likely to be hit, forcing the whole index into memory. With small indexes that's fine, but once the index size exceeds shared buffers (or RAM), the cache hit ratio quickly deteriorates.
@@ -17747,6 +19174,25 @@ MD5sum: 19669fe95fc37a1c9676c5923fb81db6
 Description: PostgreSQL extension for high-performance real-time analytics on time-series and event data
   An open-source time-series SQL database optimized for fast ingest and complex queries. Packaged as a PostgreSQL extension.
 
+Package: postgresql-17-timescaledb-tsl
+Source: timescaledb-tsl
+Version: 2.17.2-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 12626
+Depends: postgresql-17, libc6 (>= 2.17)
+Provides: postgresql-timescaledb-tsl
+Homepage: https://github.com/timescale/timescaledb
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-tsl/postgresql-17-timescaledb-tsl_2.17.2-1PIGSTY~bookworm_amd64.deb
+Size: 627192
+SHA256: 28347fead7495a64828b193c7ab47674f83340bbcc84159f48ce170df057aedf
+SHA1: a6603e0b8a51fed44bca49103473332b2255e7ad
+MD5sum: 1e268b65aca46b185a3f84889c5367a3
+Description: PostgreSQL extension for high-performance real-time analytics on time-series and event data (TSL version)
+  An open-source time-series SQL database optimized for fast ingest and complex queries. Packaged as a PostgreSQL extension.
+
 Package: postgresql-17-timestamp9
 Source: timestamp9
 Version: 1.4.0-1PIGSTY~bookworm
@@ -17822,6 +19268,26 @@ SHA1: c554c2e8746c28cf497fcf0317138fb0cda6c25a
 MD5sum: d0029775f2e6383ea8dfbe0978affe9c
 Description: url_encode, url_decode functions for PostgreSQL
   url_encode, url_decode functions for PostgreSQL
+
+Package: postgresql-17-vasco
+Source: vasco
+Version: 0.1.0-1PIGSTY~bookworm
+Architecture: amd64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 140
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.14)
+Provides: postgresql-vasco
+Homepage: https://github.com/Florents-Tselai/vasco
+Priority: optional
+Section: database
+Filename: pool/main/v/vasco/postgresql-17-vasco_0.1.0-1PIGSTY~bookworm_amd64.deb
+Size: 57296
+SHA256: 5f44c05a1fb251617816e1db203cccb76ac6969f75471080e541c947702b2244
+SHA1: 05d0b5f6ef567b8caa474a557c55fe4bda7895e3
+MD5sum: d4cae1c7ab61edb8892a5a715d090640
+Description: Maximal Information Coefficient (MIC) Extension for Postgres
+  vasco is a Postgres extension that helps you discover hidden correlations in your data.
+  It is based on the MIC and the MINE family of statistics.
 
 Package: postgresql-17-vault
 Source: vault
