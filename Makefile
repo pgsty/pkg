@@ -43,6 +43,13 @@ upload-pig-get:
 	@echo "https://repo.pigsty.cc/pig" @ "https://console.cloud.tencent.com/cdn/refresh?tab=url"
 	@echo "https://repo.pigsty.io/pig" @ "https://dash.cloudflare.com/72cdbd1b54f7add44ecbd3d986399481/pigsty.io/caching/configuration"
 
+ur:
+	rclone copyto ray $(CF_PATH)/ray
+	rclone copyto ray $(COS_PATH)/ray
+	rclone copyto rays $(CF_PATH)/rays
+	rclone copyto rays $(COS_PATH)/rays
+
+
 up: upload-pkg
 upload-pkg:
 	rclone sync -P --transfers=8 ./pkg/ $(CF_PATH)/pkg/

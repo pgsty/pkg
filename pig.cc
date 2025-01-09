@@ -3,12 +3,12 @@ set -o pipefail
 #==============================================================#
 # File      :   pig
 # Desc      :   download & install pig cli
-# Mtime     :   2024-12-29
+# Mtime     :   2025-01-09
 # Path      :   https://repo.pigsty.cc/pig (china region)
-# Usage     :   curl -fsSL https://repo.pigsty.cc/pig/get | bash
+# Usage     :   curl -fsSL https://repo.pigsty.cc/pig | bash
 # Deps      :   curl
 # License   :   Apache-2.0
-# Copyright :   2018-2024  Ruohang Feng / Vonng (rh@vonng.com)
+# Copyright :   2018-2025  Ruohang Feng / Vonng (rh@vonng.com)
 #==============================================================#
 DEFAULT_VERSION=0.1.0
 BASEURL="https://repo.pigsty.cc"
@@ -17,7 +17,7 @@ BASEURL="https://repo.pigsty.cc"
 # curl -fsSL https://repo.pigsty.cc/pig | bash
 
 # To install a specific version of pig
-# curl -fsSL https://repo.pigsty.cc/pig | bash -s 0.0.2
+# curl -fsSL https://repo.pigsty.cc/pig | bash -s 0.1.0
 
 #--------------------------------------------------------------#
 # Log Util
@@ -190,3 +190,5 @@ case "${OS_PACKAGE}" in
 esac
 
 log_info "pig v${VERSION} installed"
+log_hint "check https://ext.pigsty.io/#/pig"
+echo ""
