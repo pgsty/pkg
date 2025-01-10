@@ -1359,6 +1359,16 @@ data:
       - url_encode_16-llvmjit
       - url_encode_17
       - url_encode_17-llvmjit
+      - vasco_13
+      - vasco_13-llvmjit
+      - vasco_14
+      - vasco_14-llvmjit
+      - vasco_15
+      - vasco_15-llvmjit
+      - vasco_16
+      - vasco_16-llvmjit
+      - vasco_17
+      - vasco_17-llvmjit
       - vault_12
       - vault_13
       - vault_14
@@ -2720,6 +2730,16 @@ data:
     - url_encode_16-llvmjit
     - url_encode_17
     - url_encode_17-llvmjit
+    - vasco_13
+    - vasco_13-llvmjit
+    - vasco_14
+    - vasco_14-llvmjit
+    - vasco_15
+    - vasco_15-llvmjit
+    - vasco_16
+    - vasco_16-llvmjit
+    - vasco_17
+    - vasco_17-llvmjit
     - vault_12
     - vault_13
     - vault_14
@@ -4384,6 +4404,16 @@ data:
         rationale: Present in the repository
       url_encode_17:
         rationale: Present in the repository
+      vasco_13:
+        rationale: Present in the repository
+      vasco_14:
+        rationale: Present in the repository
+      vasco_15:
+        rationale: Present in the repository
+      vasco_16:
+        rationale: Present in the repository
+      vasco_17:
+        rationale: Present in the repository
       vault_12:
         rationale: Present in the repository
       vault_13:
@@ -5819,6 +5849,16 @@ data:
     - url_encode_16-llvmjit-0:1.2.5-1PIGSTY.el8.aarch64
     - url_encode_17-0:1.2.5-1PIGSTY.el8.aarch64
     - url_encode_17-llvmjit-0:1.2.5-1PIGSTY.el8.aarch64
+    - vasco_13-0:0.1.0-1PIGSTY.el8.aarch64
+    - vasco_13-llvmjit-0:0.1.0-1PIGSTY.el8.aarch64
+    - vasco_14-0:0.1.0-1PIGSTY.el8.aarch64
+    - vasco_14-llvmjit-0:0.1.0-1PIGSTY.el8.aarch64
+    - vasco_15-0:0.1.0-1PIGSTY.el8.aarch64
+    - vasco_15-llvmjit-0:0.1.0-1PIGSTY.el8.aarch64
+    - vasco_16-0:0.1.0-1PIGSTY.el8.aarch64
+    - vasco_16-llvmjit-0:0.1.0-1PIGSTY.el8.aarch64
+    - vasco_17-0:0.1.0-1PIGSTY.el8.aarch64
+    - vasco_17-llvmjit-0:0.1.0-1PIGSTY.el8.aarch64
     - vault_12-0:0.2.9-1PIGSTY.el8.aarch64
     - vault_13-0:0.2.9-1PIGSTY.el8.aarch64
     - vault_14-0:0.2.9-1PIGSTY.el8.aarch64
