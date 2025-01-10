@@ -868,6 +868,11 @@ data:
       - pg_savior_16-llvmjit
       - pg_savior_17
       - pg_savior_17-llvmjit
+      - pg_schedoc_13
+      - pg_schedoc_14
+      - pg_schedoc_15
+      - pg_schedoc_16
+      - pg_schedoc_17
       - pg_search_14
       - pg_search_15
       - pg_search_16
@@ -2309,6 +2314,11 @@ data:
     - pg_savior_16-llvmjit
     - pg_savior_17
     - pg_savior_17-llvmjit
+    - pg_schedoc_13
+    - pg_schedoc_14
+    - pg_schedoc_15
+    - pg_schedoc_16
+    - pg_schedoc_17
     - pg_search_14
     - pg_search_15
     - pg_search_16
@@ -3964,6 +3974,16 @@ data:
         rationale: Present in the repository
       pg_savior_17:
         rationale: Present in the repository
+      pg_schedoc_13:
+        rationale: Present in the repository
+      pg_schedoc_14:
+        rationale: Present in the repository
+      pg_schedoc_15:
+        rationale: Present in the repository
+      pg_schedoc_16:
+        rationale: Present in the repository
+      pg_schedoc_17:
+        rationale: Present in the repository
       pg_search_14:
         rationale: Present in the repository
       pg_search_15:
@@ -5580,6 +5600,11 @@ data:
     - pg_savior_16-llvmjit-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_savior_17-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_savior_17-llvmjit-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_schedoc_13-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_schedoc_14-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_schedoc_15-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_schedoc_16-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_schedoc_17-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_search_14-0:0.13.2-1.el8.x86_64
     - pg_search_15-0:0.13.2-1.el8.x86_64
     - pg_search_16-0:0.13.2-1.el8.x86_64

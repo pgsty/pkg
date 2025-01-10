@@ -553,6 +553,8 @@ data:
       - pg_duckdb_16-llvmjit
       - pg_duckdb_17
       - pg_duckdb_17-llvmjit
+      - pg_duration_17
+      - pg_duration_17-llvmjit
       - pg_ecdsa_12
       - pg_ecdsa_12-llvmjit
       - pg_ecdsa_13
@@ -850,6 +852,11 @@ data:
       - pg_savior_16-llvmjit
       - pg_savior_17
       - pg_savior_17-llvmjit
+      - pg_schedoc_13
+      - pg_schedoc_14
+      - pg_schedoc_15
+      - pg_schedoc_16
+      - pg_schedoc_17
       - pg_search_14
       - pg_search_15
       - pg_search_16
@@ -959,6 +966,16 @@ data:
       - pg_vectorize_15
       - pg_vectorize_16
       - pg_vectorize_17
+      - pg_xxhash_13
+      - pg_xxhash_13-llvmjit
+      - pg_xxhash_14
+      - pg_xxhash_14-llvmjit
+      - pg_xxhash_15
+      - pg_xxhash_15-llvmjit
+      - pg_xxhash_16
+      - pg_xxhash_16-llvmjit
+      - pg_xxhash_17
+      - pg_xxhash_17-llvmjit
       - pg_zstd_12
       - pg_zstd_12-llvmjit
       - pg_zstd_13
@@ -1944,6 +1961,8 @@ data:
     - pg_duckdb_16-llvmjit
     - pg_duckdb_17
     - pg_duckdb_17-llvmjit
+    - pg_duration_17
+    - pg_duration_17-llvmjit
     - pg_ecdsa_12
     - pg_ecdsa_12-llvmjit
     - pg_ecdsa_13
@@ -2241,6 +2260,11 @@ data:
     - pg_savior_16-llvmjit
     - pg_savior_17
     - pg_savior_17-llvmjit
+    - pg_schedoc_13
+    - pg_schedoc_14
+    - pg_schedoc_15
+    - pg_schedoc_16
+    - pg_schedoc_17
     - pg_search_14
     - pg_search_15
     - pg_search_16
@@ -2350,6 +2374,16 @@ data:
     - pg_vectorize_15
     - pg_vectorize_16
     - pg_vectorize_17
+    - pg_xxhash_13
+    - pg_xxhash_13-llvmjit
+    - pg_xxhash_14
+    - pg_xxhash_14-llvmjit
+    - pg_xxhash_15
+    - pg_xxhash_15-llvmjit
+    - pg_xxhash_16
+    - pg_xxhash_16-llvmjit
+    - pg_xxhash_17
+    - pg_xxhash_17-llvmjit
     - pg_zstd_12
     - pg_zstd_12-llvmjit
     - pg_zstd_13
@@ -3464,6 +3498,8 @@ data:
         rationale: Present in the repository
       pg_duckdb_17:
         rationale: Present in the repository
+      pg_duration_17:
+        rationale: Present in the repository
       pg_ecdsa_12:
         rationale: Present in the repository
       pg_ecdsa_13:
@@ -3820,6 +3856,16 @@ data:
         rationale: Present in the repository
       pg_savior_17:
         rationale: Present in the repository
+      pg_schedoc_13:
+        rationale: Present in the repository
+      pg_schedoc_14:
+        rationale: Present in the repository
+      pg_schedoc_15:
+        rationale: Present in the repository
+      pg_schedoc_16:
+        rationale: Present in the repository
+      pg_schedoc_17:
+        rationale: Present in the repository
       pg_search_14:
         rationale: Present in the repository
       pg_search_15:
@@ -3977,6 +4023,16 @@ data:
       pg_vectorize_16:
         rationale: Present in the repository
       pg_vectorize_17:
+        rationale: Present in the repository
+      pg_xxhash_13:
+        rationale: Present in the repository
+      pg_xxhash_14:
+        rationale: Present in the repository
+      pg_xxhash_15:
+        rationale: Present in the repository
+      pg_xxhash_16:
+        rationale: Present in the repository
+      pg_xxhash_17:
         rationale: Present in the repository
       pg_zstd_12:
         rationale: Present in the repository
@@ -5059,6 +5115,8 @@ data:
     - pg_duckdb_16-llvmjit-0:0.2.0-2PIGSTY.el9.aarch64
     - pg_duckdb_17-0:0.2.0-2PIGSTY.el9.aarch64
     - pg_duckdb_17-llvmjit-0:0.2.0-2PIGSTY.el9.aarch64
+    - pg_duration_17-0:1.0.1-1PIGSTY.el9.aarch64
+    - pg_duration_17-llvmjit-0:1.0.1-1PIGSTY.el9.aarch64
     - pg_ecdsa_12-0:1.0-1PIGSTY.el9.aarch64
     - pg_ecdsa_12-llvmjit-0:1.0-1PIGSTY.el9.aarch64
     - pg_ecdsa_13-0:1.0-1PIGSTY.el9.aarch64
@@ -5365,6 +5423,11 @@ data:
     - pg_savior_16-llvmjit-0:0.0.1-1PIGSTY.el9.aarch64
     - pg_savior_17-0:0.0.1-1PIGSTY.el9.aarch64
     - pg_savior_17-llvmjit-0:0.0.1-1PIGSTY.el9.aarch64
+    - pg_schedoc_13-0:0.0.1-1PIGSTY.el9.aarch64
+    - pg_schedoc_14-0:0.0.1-1PIGSTY.el9.aarch64
+    - pg_schedoc_15-0:0.0.1-1PIGSTY.el9.aarch64
+    - pg_schedoc_16-0:0.0.1-1PIGSTY.el9.aarch64
+    - pg_schedoc_17-0:0.0.1-1PIGSTY.el9.aarch64
     - pg_search_14-0:0.13.2-1.el9.aarch64
     - pg_search_15-0:0.13.2-1.el9.aarch64
     - pg_search_16-0:0.13.2-1.el9.aarch64
@@ -5479,6 +5542,16 @@ data:
     - pg_vectorize_15-0:0.20.0-1PIGSTY.el9.aarch64
     - pg_vectorize_16-0:0.20.0-1PIGSTY.el9.aarch64
     - pg_vectorize_17-0:0.20.0-1PIGSTY.el9.aarch64
+    - pg_xxhash_13-0:0.0.1-1PIGSTY.el9.aarch64
+    - pg_xxhash_13-llvmjit-0:0.0.1-1PIGSTY.el9.aarch64
+    - pg_xxhash_14-0:0.0.1-1PIGSTY.el9.aarch64
+    - pg_xxhash_14-llvmjit-0:0.0.1-1PIGSTY.el9.aarch64
+    - pg_xxhash_15-0:0.0.1-1PIGSTY.el9.aarch64
+    - pg_xxhash_15-llvmjit-0:0.0.1-1PIGSTY.el9.aarch64
+    - pg_xxhash_16-0:0.0.1-1PIGSTY.el9.aarch64
+    - pg_xxhash_16-llvmjit-0:0.0.1-1PIGSTY.el9.aarch64
+    - pg_xxhash_17-0:0.0.1-1PIGSTY.el9.aarch64
+    - pg_xxhash_17-llvmjit-0:0.0.1-1PIGSTY.el9.aarch64
     - pg_zstd_12-0:1.1.2-1PIGSTY.el9.aarch64
     - pg_zstd_12-llvmjit-0:1.1.2-1PIGSTY.el9.aarch64
     - pg_zstd_13-0:1.1.2-1PIGSTY.el9.aarch64
