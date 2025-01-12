@@ -4,20 +4,20 @@
 # File      :   get
 # Desc      :   download & install pigsty src
 # Ctime     :   2022-10-30
-# Mtime     :   2025-01-10
+# Mtime     :   2025-01-12
 # Path      :   https://repo.pigsty.cc/get (global, default)
 # Usage     :   curl -fsSL https://repo.pigsty.cc/get | bash
 # Deps      :   curl
 # Author    :   Ruohang Feng (rh@vonng.com)
 # License   :   AGPLv3
 #==============================================================#
-DEFAULT_VERSION=v3.2.0
+DEFAULT_VERSION=v3.2.1
 
-# To install the latest version of pigsty (v3.2.0):
+# To install the latest version of pigsty (v3.2.1):
 # curl -fsSL https://repo.pigsty.cc/get | bash
 
-# To install a specific version of pigsty (e.g. v3.2.0)
-# curl -fsSL https://repo.pigsty.cc/get | bash -s v3.2.0
+# To install a specific version of pigsty (e.g. v3.2.1)
+# curl -fsSL https://repo.pigsty.cc/get | bash -s v3.2.1
 
 
 #--------------------------------------------------------------#

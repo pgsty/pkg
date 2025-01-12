@@ -131,6 +131,16 @@ data:
       - cryptint_16-llvmjit
       - cryptint_17
       - cryptint_17-llvmjit
+      - data_historization_13
+      - data_historization_14
+      - data_historization_15
+      - data_historization_16
+      - data_historization_17
+      - ddl_historization_13
+      - ddl_historization_14
+      - ddl_historization_15
+      - ddl_historization_16
+      - ddl_historization_17
       - ddlx_12
       - ddlx_13
       - ddlx_14
@@ -1539,6 +1549,16 @@ data:
     - cryptint_16-llvmjit
     - cryptint_17
     - cryptint_17-llvmjit
+    - data_historization_13
+    - data_historization_14
+    - data_historization_15
+    - data_historization_16
+    - data_historization_17
+    - ddl_historization_13
+    - ddl_historization_14
+    - ddl_historization_15
+    - ddl_historization_16
+    - ddl_historization_17
     - ddlx_12
     - ddlx_13
     - ddlx_14
@@ -2949,6 +2969,26 @@ data:
       cryptint_16:
         rationale: Present in the repository
       cryptint_17:
+        rationale: Present in the repository
+      data_historization_13:
+        rationale: Present in the repository
+      data_historization_14:
+        rationale: Present in the repository
+      data_historization_15:
+        rationale: Present in the repository
+      data_historization_16:
+        rationale: Present in the repository
+      data_historization_17:
+        rationale: Present in the repository
+      ddl_historization_13:
+        rationale: Present in the repository
+      ddl_historization_14:
+        rationale: Present in the repository
+      ddl_historization_15:
+        rationale: Present in the repository
+      ddl_historization_16:
+        rationale: Present in the repository
+      ddl_historization_17:
         rationale: Present in the repository
       ddlx_12:
         rationale: Present in the repository
@@ -4673,6 +4713,16 @@ data:
     - cryptint_16-llvmjit-0:1.0.0-1PIGSTY.el9.aarch64
     - cryptint_17-0:1.0.0-1PIGSTY.el9.aarch64
     - cryptint_17-llvmjit-0:1.0.0-1PIGSTY.el9.aarch64
+    - data_historization_13-0:1.1.0-1PIGSTY.el9.aarch64
+    - data_historization_14-0:1.1.0-1PIGSTY.el9.aarch64
+    - data_historization_15-0:1.1.0-1PIGSTY.el9.aarch64
+    - data_historization_16-0:1.1.0-1PIGSTY.el9.aarch64
+    - data_historization_17-0:1.1.0-1PIGSTY.el9.aarch64
+    - ddl_historization_13-0:0.0.7-1PIGSTY.el9.aarch64
+    - ddl_historization_14-0:0.0.7-1PIGSTY.el9.aarch64
+    - ddl_historization_15-0:0.0.7-1PIGSTY.el9.aarch64
+    - ddl_historization_16-0:0.0.7-1PIGSTY.el9.aarch64
+    - ddl_historization_17-0:0.0.7-1PIGSTY.el9.aarch64
     - ddlx_12-0:0.28-1PIGSTY.el9.aarch64
     - ddlx_13-0:0.28-1PIGSTY.el9.aarch64
     - ddlx_14-0:0.28-1PIGSTY.el9.aarch64
