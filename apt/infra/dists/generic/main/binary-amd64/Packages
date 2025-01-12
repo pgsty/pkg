@@ -401,19 +401,19 @@ MD5sum: 3a1a32b72f94c500927b32ac67a82a22
 Description: Prometheus exporter for pgBackRest
 
 Package: pig
-Version: 0.1.1
+Version: 0.1.2
 Architecture: amd64
 License: Apache-2.0 License
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 15560
+Installed-Size: 15576
 Homepage: https://github.com/pgsty/pig
 Priority: optional
 Section: 
-Filename: pool/main/p/pig/pig_0.1.1_amd64.deb
-Size: 9387606
-SHA256: fd637aa8b87f0f9e9ff9eef6baf7ae88218011e0cb5adfb6897c7265c23c8ea1
-SHA1: 66db80400155ed7abd11c1858143c089c2fc8d5e
-MD5sum: eed3d4f8f7443811068c555a51bce30c
+Filename: pool/main/p/pig/pig_0.1.2_amd64.deb
+Size: 9407188
+SHA256: 0a68824d54bfc9a42ce9e0217f9a3be95613b9ce1e80f19c689386fb2c738302
+SHA1: 4ddef82a8d6defaf2ad249d6c9e5cce9d06e5f3e
+MD5sum: fa4a29d4584b893da3728538e45497e0
 Description: CLI Tools for Pigsty and PostgreSQL
 
 Package: prometheus

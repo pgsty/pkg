@@ -3,7 +3,7 @@ set -o pipefail
 #==============================================================#
 # File      :   pig
 # Desc      :   download & install pig cli
-# Mtime     :   2025-01-10
+# Mtime     :   2025-01-12
 # Path      :   https://repo.pigsty.io/pig (global, default)
 # Usage     :   curl -fsSL https://repo.pigsty.io/pig | bash
 # Deps      :   curl
@@ -11,13 +11,13 @@ set -o pipefail
 # Copyright :   2018-2025  Ruohang Feng / Vonng (rh@vonng.com)
 #==============================================================#
 DEFAULT_VERSION=0.1.1
-BASEURL="https://repo.pigsty.io"
+BASEURL="https://repo.2.io"
 
 # To install the latest version of pig
 # curl -fsSL https://repo.pigsty.io/pig | bash
 
 # To install a specific version of pig
-# curl -fsSL https://repo.pigsty.io/pig | bash -s 0.1.1
+# curl -fsSL https://repo.pigsty.io/pig | bash -s 0.1.2
 
 #--------------------------------------------------------------#
 # Log Util
@@ -142,6 +142,8 @@ download_file() {
     local data_file=$2
 
     log_hint "curl -fSL ${data_url} -o ${data_file}"
+    echo ""
+
     # if file exists and have the exact same size, just use it and skip downloading
     if [[ -f ${data_file} ]]; then
         local size curl_size
