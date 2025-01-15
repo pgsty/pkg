@@ -10,8 +10,8 @@ set -o pipefail
 # License   :   Apache-2.0
 # Copyright :   2018-2025  Ruohang Feng / Vonng (rh@vonng.com)
 #==============================================================#
-DEFAULT_VERSION=0.1.1
-BASEURL="https://repo.2.io"
+DEFAULT_VERSION=0.1.2
+BASEURL="https://repo.pigsty.io"
 
 # To install the latest version of pig
 # curl -fsSL https://repo.pigsty.io/pig | bash
