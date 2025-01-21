@@ -3735,6 +3735,26 @@ MD5sum: e0106e45c729f3718773210dfe588625
 Description: Noset is a PostgreSQL Extension that allows blocking specific users to change a set of user-context variables.
   noset is a loadable module via shared_preload_libraries,  to avoid SET/RESET command for change a parameter in session. It is possible to filter one or a group a parameters to block.
 
+Package: postgresql-13-omnigres
+Source: omnigres
+Version: 20250120-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 5297
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 5.2)
+Provides: postgresql-omnigres
+Homepage: https://github.com/omnigres/omnigres
+Priority: optional
+Section: database
+Filename: pool/main/o/omnigres/postgresql-13-omnigres_20250120-1PIGSTY~jammy_arm64.deb
+Size: 1793962
+SHA256: 39728ec8171f070f76f81f23628c0115c0964f9ccb4e130aa4c937a0276fe792
+SHA1: 56d2d9bc2800df86b0ab6ff4de4ef07456837979
+MD5sum: 77af872d6fd30554fabab66535716606
+Description: Postgres as a Platform, 30+ extensions to run app inside database
+  Omnigres makes Postgres a developer-first application platform.
+  You can deploy a single database instance and it can host your entire application, scaling as needed.
+
 Package: postgresql-13-omnisketch
 Source: omnisketch
 Version: 1.0.2-1PIGSTY~jammy
@@ -6789,6 +6809,26 @@ MD5sum: 6da608d5e99326637eb0a50b39492466
 Description: Noset is a PostgreSQL Extension that allows blocking specific users to change a set of user-context variables.
   noset is a loadable module via shared_preload_libraries,  to avoid SET/RESET command for change a parameter in session. It is possible to filter one or a group a parameters to block.
 
+Package: postgresql-14-omnigres
+Source: omnigres
+Version: 20250120-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 5313
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 5.2)
+Provides: postgresql-omnigres
+Homepage: https://github.com/omnigres/omnigres
+Priority: optional
+Section: database
+Filename: pool/main/o/omnigres/postgresql-14-omnigres_20250120-1PIGSTY~jammy_arm64.deb
+Size: 1796628
+SHA256: 99d686080c7d45ecec7796fa4d9da8f3eec0c3cfd3e4ab51e4425af7c546a983
+SHA1: cebb5d30b7b05391d19d06f45f50f19cd47f179c
+MD5sum: 4938ae33f903752f5ac5bc7a5749a271
+Description: Postgres as a Platform, 30+ extensions to run app inside database
+  Omnigres makes Postgres a developer-first application platform.
+  You can deploy a single database instance and it can host your entire application, scaling as needed.
+
 Package: postgresql-14-omnisketch
 Source: omnisketch
 Version: 1.0.2-1PIGSTY~jammy
@@ -7625,6 +7665,26 @@ Description: PostgreSQL Extension: More friendly system catalog for PostgreSQL
   and is filled with many views and columns that don't match PostgreSQL's terminology or features.
   The goals with meta is to provide an "above the hood" system catalog for PostgreSQL
   that is normalized and uses common names for views and columns.
+
+Package: postgresql-14-pg-mooncake
+Source: pg-mooncake
+Version: 0.1.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 91139
+Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.5), libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
+Provides: postgresql-pg-mooncake
+Homepage: https://github.com/Mooncake-Labs/pg_mooncake
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-mooncake/postgresql-14-pg-mooncake_0.1.0-1PIGSTY~jammy_arm64.deb
+Size: 24161782
+SHA256: 64ed41f69bf04540a5f03c62cb65d8c301ab6e71745fa57363ad32693f5d601c
+SHA1: 560176cf5551f81e103879dcdd3e8f24d1be1b8c
+MD5sum: d4969aa88b11617a6962b53f7a3e50f0
+Description: Columnstore Table in Postgres
+  pg_mooncake is a PostgreSQL extension that adds native columnstore tables with DuckDB execution.
+  Columnstore tables are stored as Iceberg or Delta Lake tables in object storage.
 
 Package: postgresql-14-pg-net
 Source: pg-net
@@ -10091,6 +10151,26 @@ MD5sum: d4434dc6a55ade40870da0e44ac825c3
 Description: Noset is a PostgreSQL Extension that allows blocking specific users to change a set of user-context variables.
   noset is a loadable module via shared_preload_libraries,  to avoid SET/RESET command for change a parameter in session. It is possible to filter one or a group a parameters to block.
 
+Package: postgresql-15-omnigres
+Source: omnigres
+Version: 20250120-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 5297
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 5.2)
+Provides: postgresql-omnigres
+Homepage: https://github.com/omnigres/omnigres
+Priority: optional
+Section: database
+Filename: pool/main/o/omnigres/postgresql-15-omnigres_20250120-1PIGSTY~jammy_arm64.deb
+Size: 1797200
+SHA256: 768d65e56cdc81bad1ab74309e788043a6c1e3836eb21cbfc54231dbd67b3601
+SHA1: 60495805c903f1364ecedc815e2452f788c3d89d
+MD5sum: bbebd5fccefe9de4addfbc4c45a9cd06
+Description: Postgres as a Platform, 30+ extensions to run app inside database
+  Omnigres makes Postgres a developer-first application platform.
+  You can deploy a single database instance and it can host your entire application, scaling as needed.
+
 Package: postgresql-15-omnisketch
 Source: omnisketch
 Version: 1.0.2-1PIGSTY~jammy
@@ -10927,6 +11007,26 @@ Description: PostgreSQL Extension: More friendly system catalog for PostgreSQL
   and is filled with many views and columns that don't match PostgreSQL's terminology or features.
   The goals with meta is to provide an "above the hood" system catalog for PostgreSQL
   that is normalized and uses common names for views and columns.
+
+Package: postgresql-15-pg-mooncake
+Source: pg-mooncake
+Version: 0.1.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 91167
+Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.5), libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
+Provides: postgresql-pg-mooncake
+Homepage: https://github.com/Mooncake-Labs/pg_mooncake
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-mooncake/postgresql-15-pg-mooncake_0.1.0-1PIGSTY~jammy_arm64.deb
+Size: 24156324
+SHA256: 6dde9229b0b95643feb482837ff75395e1bf5042c9e15d658a2c925647c8c720
+SHA1: 5b22947bcaf7080fe61ba764b5addea0046361ef
+MD5sum: aaf01ad4da3f3943b900d5decba15812
+Description: Columnstore Table in Postgres
+  pg_mooncake is a PostgreSQL extension that adds native columnstore tables with DuckDB execution.
+  Columnstore tables are stored as Iceberg or Delta Lake tables in object storage.
 
 Package: postgresql-15-pg-net
 Source: pg-net
@@ -13393,6 +13493,26 @@ MD5sum: 6521f2d4f0a4cbe5409efac9be532488
 Description: Noset is a PostgreSQL Extension that allows blocking specific users to change a set of user-context variables.
   noset is a loadable module via shared_preload_libraries,  to avoid SET/RESET command for change a parameter in session. It is possible to filter one or a group a parameters to block.
 
+Package: postgresql-16-omnigres
+Source: omnigres
+Version: 20250120-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 5325
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 5.2)
+Provides: postgresql-omnigres
+Homepage: https://github.com/omnigres/omnigres
+Priority: optional
+Section: database
+Filename: pool/main/o/omnigres/postgresql-16-omnigres_20250120-1PIGSTY~jammy_arm64.deb
+Size: 1801368
+SHA256: 631da8129c5b4ece54b8c74f0381041b44b96d3823731c1b3f2be74014941ba1
+SHA1: 5cdb3c60903aed750dfff3c1cffd5d2e66986f7c
+MD5sum: d63aa40a25719e9fb59c393f443adedc
+Description: Postgres as a Platform, 30+ extensions to run app inside database
+  Omnigres makes Postgres a developer-first application platform.
+  You can deploy a single database instance and it can host your entire application, scaling as needed.
+
 Package: postgresql-16-omnisketch
 Source: omnisketch
 Version: 1.0.2-1PIGSTY~jammy
@@ -14229,6 +14349,26 @@ Description: PostgreSQL Extension: More friendly system catalog for PostgreSQL
   and is filled with many views and columns that don't match PostgreSQL's terminology or features.
   The goals with meta is to provide an "above the hood" system catalog for PostgreSQL
   that is normalized and uses common names for views and columns.
+
+Package: postgresql-16-pg-mooncake
+Source: pg-mooncake
+Version: 0.1.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 91003
+Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.5), libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
+Provides: postgresql-pg-mooncake
+Homepage: https://github.com/Mooncake-Labs/pg_mooncake
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-mooncake/postgresql-16-pg-mooncake_0.1.0-1PIGSTY~jammy_arm64.deb
+Size: 24120194
+SHA256: 4a4fbb20539b8f1a7bb1e82004703c59d712138efaad4f742b51749cae867c4e
+SHA1: 5f1c332a40de1f95d279829fb309d919e2bf8ae4
+MD5sum: 5a19dbde75474297a0db0614e6e21c03
+Description: Columnstore Table in Postgres
+  pg_mooncake is a PostgreSQL extension that adds native columnstore tables with DuckDB execution.
+  Columnstore tables are stored as Iceberg or Delta Lake tables in object storage.
 
 Package: postgresql-16-pg-net
 Source: pg-net
@@ -16642,6 +16782,26 @@ MD5sum: fcd615806a46b06fc0f83799ab139b58
 Description: Noset is a PostgreSQL Extension that allows blocking specific users to change a set of user-context variables.
   noset is a loadable module via shared_preload_libraries,  to avoid SET/RESET command for change a parameter in session. It is possible to filter one or a group a parameters to block.
 
+Package: postgresql-17-omnigres
+Source: omnigres
+Version: 20250120-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 5317
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 5.2)
+Provides: postgresql-omnigres
+Homepage: https://github.com/omnigres/omnigres
+Priority: optional
+Section: database
+Filename: pool/main/o/omnigres/postgresql-17-omnigres_20250120-1PIGSTY~jammy_arm64.deb
+Size: 1801250
+SHA256: 48a3c6938557f1b97c0e1ddb806da7a49a118e144f17af3e015f051dbc9b25b4
+SHA1: 479c13942fdc7d563bb35afc08e3b841d620e51e
+MD5sum: e61a5db69aae0839dfad0777654352e2
+Description: Postgres as a Platform, 30+ extensions to run app inside database
+  Omnigres makes Postgres a developer-first application platform.
+  You can deploy a single database instance and it can host your entire application, scaling as needed.
+
 Package: postgresql-17-omnisketch
 Source: omnisketch
 Version: 1.0.2-1PIGSTY~jammy
@@ -17478,6 +17638,26 @@ Description: PostgreSQL Extension: More friendly system catalog for PostgreSQL
   and is filled with many views and columns that don't match PostgreSQL's terminology or features.
   The goals with meta is to provide an "above the hood" system catalog for PostgreSQL
   that is normalized and uses common names for views and columns.
+
+Package: postgresql-17-pg-mooncake
+Source: pg-mooncake
+Version: 0.1.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 91047
+Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.5), libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
+Provides: postgresql-pg-mooncake
+Homepage: https://github.com/Mooncake-Labs/pg_mooncake
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-mooncake/postgresql-17-pg-mooncake_0.1.0-1PIGSTY~jammy_arm64.deb
+Size: 24127126
+SHA256: cb44fefa19c6bc3ab239e378429f3994e0469dfbbe1e322f3e19668bd2154ec2
+SHA1: c3cd7dbbfb9e0f184e075907415f6b89f7c2e19c
+MD5sum: eab6d3f57a1e8130e848477976f4eb5b
+Description: Columnstore Table in Postgres
+  pg_mooncake is a PostgreSQL extension that adds native columnstore tables with DuckDB execution.
+  Columnstore tables are stored as Iceberg or Delta Lake tables in object storage.
 
 Package: postgresql-17-pg-net
 Source: pg-net

@@ -11,7 +11,7 @@
 CF_PATH = cf:/repo
 COS_PATH = cos://repo-1304744452
 DEVEL_PATH = sv:/data/pkg
-VERSION=v3.2.0
+VERSION=v3.2.1
 
 all:
 	@echo "pgsty repo"
@@ -38,7 +38,7 @@ upload-get:
 
 upg: upload-pig-get
 upload-pig-get:
-	rclone copyto pig.io $(CF_PATH)/pig
+	rclone copyto pig.io $(CF_PATH)/pig+
 	rclone copyto pig.cc $(COS_PATH)/pig
 	@echo "https://repo.pigsty.cc/pig" @ "https://console.cloud.tencent.com/cdn/refresh?tab=url"
 	@echo "https://repo.pigsty.io/pig" @ "https://dash.cloudflare.com/72cdbd1b54f7add44ecbd3d986399481/pigsty.io/caching/configuration"
@@ -48,6 +48,8 @@ ur:
 	rclone copyto ray $(COS_PATH)/ray
 	rclone copyto rays $(CF_PATH)/rays
 	rclone copyto rays $(COS_PATH)/rays
+	rclone copyto build $(CF_PATH)/build
+	rclone copyto build $(COS_PATH)/build
 
 
 up: upload-pkg
