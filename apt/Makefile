@@ -61,7 +61,7 @@ ls-bullseye:
 	reprepro -b pgsql/bullseye list bullseye
 
 # how to remove (e.g.)
-# reprepro -b infra remove generic ferretdb
+# reprepro -b infra remove generic pig
 # reprepro -b pgsql/bookworm remove bookworm xxxx
 # reprepro -b pgsql/jammy remove jammy xxxx
 # reprepro -b pgsql/noble remove noble postgresql-17-pg-search
