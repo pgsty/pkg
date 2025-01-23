@@ -8,20 +8,23 @@
 # reprepro -b pgsql/bullseye remove bullseye
 
 
-reprepro -b pgsql/noble remove noble postgresql-13-pg-smtp-client
-reprepro -b pgsql/noble remove noble postgresql-14-pg-smtp-client
-reprepro -b pgsql/noble remove noble postgresql-15-pg-smtp-client
-reprepro -b pgsql/noble remove noble postgresql-16-pg-smtp-client
+reprepro -b pgsql/noble remove noble postgresql-17-pg-vectorize
+reprepro -b pgsql/noble remove noble postgresql-16-pg-vectorize
+reprepro -b pgsql/noble remove noble postgresql-15-pg-vectorize
+reprepro -b pgsql/noble remove noble postgresql-14-pg-vectorize
+reprepro -b pgsql/noble remove noble postgresql-13-pg-vectorize
 
-reprepro -b pgsql/jammy remove jammy postgresql-13-pg-smtp-client
-reprepro -b pgsql/jammy remove jammy postgresql-14-pg-smtp-client
-reprepro -b pgsql/jammy remove jammy postgresql-15-pg-smtp-client
-reprepro -b pgsql/jammy remove jammy postgresql-16-pg-smtp-client
+reprepro -b pgsql/jammy remove jammy postgresql-17-pg-vectorize
+reprepro -b pgsql/jammy remove jammy postgresql-16-pg-vectorize
+reprepro -b pgsql/jammy remove jammy postgresql-15-pg-vectorize
+reprepro -b pgsql/jammy remove jammy postgresql-14-pg-vectorize
+reprepro -b pgsql/jammy remove jammy postgresql-13-pg-vectorize
 
-reprepro -b pgsql/bookworm remove bookworm postgresql-13-pg-smtp-client
-reprepro -b pgsql/bookworm remove bookworm postgresql-14-pg-smtp-client
-reprepro -b pgsql/bookworm remove bookworm postgresql-15-pg-smtp-client
-reprepro -b pgsql/bookworm remove bookworm postgresql-16-pg-smtp-client
+reprepro -b pgsql/bookworm remove bookworm postgresql-17-pg-vectorize
+reprepro -b pgsql/bookworm remove bookworm postgresql-16-pg-vectorize
+reprepro -b pgsql/bookworm remove bookworm postgresql-15-pg-vectorize
+reprepro -b pgsql/bookworm remove bookworm postgresql-14-pg-vectorize
+reprepro -b pgsql/bookworm remove bookworm postgresql-13-pg-vectorize
 
 
 

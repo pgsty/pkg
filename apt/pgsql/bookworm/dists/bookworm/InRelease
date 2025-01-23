@@ -4,44 +4,44 @@ Hash: SHA256
 Origin: Pigsty
 Label: Pigsty PGSQL
 Codename: bookworm
-Date: Thu, 23 Jan 2025 01:36:00 UTC
+Date: Thu, 23 Jan 2025 11:00:48 UTC
 Architectures: amd64 arm64
 Components: main
 Description: pigsty apt repository for debian 12
 MD5Sum:
- c1eef425385a39a86cf488e8f36d5cc1 913865 main/binary-amd64/Packages
- b2f4c66a679576fcda19b5d69c82016f 259300 main/binary-amd64/Packages.gz
+ a270524800a082938be867d1e3d73a52 935249 main/binary-amd64/Packages
+ 153d424b50fd1787d35c6589269b1669 265767 main/binary-amd64/Packages.gz
  05ff0d27e80014f75d65fcd4773761b8 120 main/binary-amd64/Release
- 31a494308d77536e69929d826c6473be 899672 main/binary-arm64/Packages
- fadc654da0ea3c2be0872a53c8dc3e71 254840 main/binary-arm64/Packages.gz
+ 4305b96440547fd841f3c0ba5f32957e 921103 main/binary-arm64/Packages
+ 12758509f4ecf286fc64588c9d6ac08e 261369 main/binary-arm64/Packages.gz
  4ba97c199ff1bf556636dca2fa102fd7 120 main/binary-arm64/Release
 SHA1:
- fdc7437cd12b26606cc25f5281518ff20f811aaf 913865 main/binary-amd64/Packages
- dc71b6788c57d5a719ef6393f1208b2fad5cbb33 259300 main/binary-amd64/Packages.gz
+ b7a233f47951fcd3ede323868eb0cc21f564e74e 935249 main/binary-amd64/Packages
+ 1ea54a841777ebfca4ab2d0bd4c5e7287d9f2557 265767 main/binary-amd64/Packages.gz
  38c45f87567a9074e476a2920aa5d594f00e4ffd 120 main/binary-amd64/Release
- fc5db96176b85ab5999a1a7e77c25891cd0f64d2 899672 main/binary-arm64/Packages
- bb4d6563131b9785ea819b8b0b3526392f935ffe 254840 main/binary-arm64/Packages.gz
+ 19b3363e025f584c237543b18773840bfffeb77a 921103 main/binary-arm64/Packages
+ a4323e0b45597c7d73fdf4007732e219df44c708 261369 main/binary-arm64/Packages.gz
  789a0d87520489e371f388175d30fa52a8643a58 120 main/binary-arm64/Release
 SHA256:
- a67717092d58c24aa1c3c5bf20d97be5c4c75b32024b8728a7ff53310b315af1 913865 main/binary-amd64/Packages
- 468ca5f9197e472ce32fa3dd3916e5468829765f9e255cc52571f98cd45b5aee 259300 main/binary-amd64/Packages.gz
+ 87bd1b2c03786dcd9eeee014c1758d15c662061113920e96ab3d42d2d40c3de2 935249 main/binary-amd64/Packages
+ 6282d4167551ff3c15d3b6fe705acddfe761b9907b4804368ad317f93cb2cef4 265767 main/binary-amd64/Packages.gz
  5f2931fd66418a72660c45f9de6b7117635244edb08681bdac30d79de4b74b83 120 main/binary-amd64/Release
- 7047f07a13d46c325b7c19d4a775f83cb5e2903498e82dd3ec226610ea9ea23e 899672 main/binary-arm64/Packages
- f27ab600381fb9eb934f8ee32c1b53aaf4f9cf91c492bf739998ebf643875db7 254840 main/binary-arm64/Packages.gz
+ af61b74e74ff3f5e9f9ac899bb4d0cd3dab3bdf6a3d9e9111a42b530eb70dcf0 921103 main/binary-arm64/Packages
+ 8021d19ef40692bdf762be67afc20d988d6dbe7ccbd45de5c139a864fdef8690 261369 main/binary-arm64/Packages.gz
  ec0250476e050c9b46c69624a17f67fb20f9545cb54d7a83977a6fbfa5a5b3fc 120 main/binary-arm64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEElZKnvHpoLnMzN24J55Ndjbm9iyAFAmeRnQAACgkQ55Ndjbm9
-iyBglw/7BcWQ+SifcQ/zaLA7aeoUU5gK3KQMenSYMzt8n1OlzZIGKo6LqUZpf2Ck
-oqP2idaFiF1LEM3nJwCQHH0k/phWVrt5nX/dg+Wkj02qJ6ExEnp8YGzuUkpIwop8
-VWqMa8IvWB3hnruOhvN7+BNJIlavcQcyXr+1UKnOWG3IngyQVRNDoB4mOZAEbUPp
-QVdbPv1k5VAtqsJCff1TwcEBkdhLxEdNd91IlKi0ID/FPvhunWrdJrtHb5P0G3Oe
-4WDmjgJF1w3LaLKRAG3i7e5JtFk65qkBlXbvZSK7F+Yj3ndmW2ZiJgojPMTsirIN
-mhUeZb+gvHnOlAMVXgBy5tNsaD4B7QsqVs98KZexSCsEi/JngJIjPP99+zdqPFWt
-zQPN8Dt0I+ue4BEGeHF1ZTOZLqdufcGunFs834CCFMCqi1enFJGgC1L/1yjiIS6Y
-Ud0q6oCs0gkwbyFmNvi1HVXEAg62m3dQv2c0UuAO99VqOYcVUdDIW0gHtn+Kpr1a
-u5RH1oqeYm1ZEFrZ+n+ibsTmhqk2JLQRbivyQOIBGyjWKn2vl797GwXdsjuMSgOr
-ktPfWN5Wx0xP354zuFVZemWuFE67P6QY2OUiI2DeOSGbY0IGXrIX0vRLx7enVvi6
-d1YNVuW2KYg/qB3sUwxjgf0AFI53mRRhAHUj+hgeFSMlBQ0vke0=
-=zF9H
+iQIzBAEBCAAdFiEElZKnvHpoLnMzN24J55Ndjbm9iyAFAmeSIWEACgkQ55Ndjbm9
+iyBWQA//b2pbzhmWRdWPHgwyC+MqhE9q1Wf5cU42Gc3+gj6akbtrqINNvUVfmvpL
+u4GDDaCYJzSbJ12OQHy11HJUMgJZUPWcrMWCB4ujKpETLh2CtPQvYXA98qv5ZO1b
+8h16XlsXuoUe9FkSuNq7JTCzt1DmRLBknxPsAiDmXsXey0aAtQKgruHCz5+4st9K
+w65R8oHyaWejduz1+0akOuhl5UQwWfOTYkh88CRkoDmXEyLawqnbG8vYPTO6jgoe
+RcytG/gcpmdRY0477gs9zPWP0KPLMS6LjDVU0dfqAl41ESwge+OjeZSBGYOdWkE6
+X51Rg9oCkXaAIUf3uzHoDRVhN3XpGE0oAP46ygMskSS/F/eOQNbaIkraj1+cEHX3
+T4cCl+kuPBlJb0XK8mT9V/dhY3ulMIrrtMm5PSmAtKcymkv+XzolpyIuV5xUFLxI
+1XqK+oxyyQqi54l3621e3QR9BbVOBlVHdnvU+1YJyioXO1eLpHLz0HMTYfU7haJl
+te7t9JS5E7Zw3Bsh9e5yCoktY43wWahA2C2QpMzGCviB6vkskH5AcdfPk0G+QrZO
+ckr6ESdfMCciJZPrrJ572g48c/MVCNdqdfhMM3t8V0oJn+114rHhmtGGTgEbv4XB
+clMz/Mnqc8adOhHiF1scD+IKmKSYtWWYTsXNTXbHVuQScH8CeFc=
+=oXHi
 -----END PGP SIGNATURE-----

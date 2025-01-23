@@ -4193,6 +4193,26 @@ MD5sum: e812ace19ed193fe91d9fc0b13aa4747
 Description: 1 Byte Currency ISO type for PostgreSQL
   A 1-byte ISO 4217 Currency Code data-type for PostgreSQL.
 
+Package: postgresql-13-pg-drop-events
+Source: pg-drop-events
+Version: 0.1.0-1PIGSTY~bookworm
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 29
+Depends: postgresql-13
+Provides: postgresql-pg-drop-events
+Homepage: https://github.com/bolajiwahab/pg_drop_events
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-drop-events/postgresql-13-pg-drop-events_0.1.0-1PIGSTY~bookworm_arm64.deb
+Size: 7968
+SHA256: dde1fb6802545dc54fbe2a3d2ca1b9ccdd643f0901f2b1672076648a143ab50e
+SHA1: 645e5ddca80e1f807af272a8497bb3244b3bb58d
+MD5sum: f4fc5a9cc0908ad8d89d953a03d1d766
+Description: logs transaction ids of drop table, drop column, drop materialized view statements to aid point in time recovery
+  pg_drop_events is a PostgreSQL extension that logs transaction ids of drop table, drop column, drop materialized view statements to aid point in time recovery.
+  To perform point in time recovery in case of a disaster whereby a table or a table column was mistakenly dropped, you simply specify the xact_id you get from the pg_drop_events table as the recovery_target_xid. For more information, see user guide.
+
 Package: postgresql-13-pg-ecdsa
 Source: pg-ecdsa
 Version: 1.0-1PIGSTY~bookworm
@@ -4275,20 +4295,20 @@ Description: A Postgres extension that allows you to easily jump into a visual p
 
 Package: postgresql-13-pg-extra-time
 Source: pg-extra-time
-Version: 1.1.3-1PIGSTY~bookworm
+Version: 2.0.0-1PIGSTY~bookworm
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 220
+Installed-Size: 383
 Depends: postgresql-13
 Provides: postgresql-pg-extra-time
 Homepage: https://github.com/bigsmoke/pg_extra_time
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-extra-time/postgresql-13-pg-extra-time_1.1.3-1PIGSTY~bookworm_arm64.deb
-Size: 14108
-SHA256: 4d8d67ff18c1aa51b3fd5b17d667cfada131f5bf203fef2c3ea6ced6805f8fad
-SHA1: fcfbaedf6409187f6066e0ee5f9ae39e2cd57e61
-MD5sum: 641ed9dc5b43ae3e58ff24f50dcf06c9
+Filename: pool/main/p/pg-extra-time/postgresql-13-pg-extra-time_2.0.0-1PIGSTY~bookworm_arm64.deb
+Size: 40892
+SHA256: 4928248fa95c5673aae8bae35eb4e819a8cfd5769b1df3eb8ae752e762dcb635
+SHA1: ab3d39ede35362bc8a072ee82dcf2f4dc8c60d99
+MD5sum: b2e3ee445de7032f2bdbf3f7546eab5d
 Description: Extra time functions for PostgreSQL 13
   Some date time functions and operators that, in the opinion of the extension author, ought to be part of the PostgreSQL standard distribution.
 
@@ -5133,6 +5153,27 @@ Description: A tiny Postgres extension to create version 7 UUIDs
   A tiny Postgres extension to create valid version 7 UUIDs in Postgres.
   These are regular Postgres UUIDs, so they can be used as primary keys, converted to and from strings, included in indexes, etc:
 
+Package: postgresql-13-pg-xenophile
+Source: pg-xenophile
+Version: 0.8.3-1PIGSTY~bookworm
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 1358
+Depends: postgresql-13
+Provides: postgresql-pg-xenophile
+Homepage: More than the bare necessities for PostgreSQL i18n and l10n.
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-xenophile/postgresql-13-pg-xenophile_0.8.3-1PIGSTY~bookworm_arm64.deb
+Size: 47052
+SHA256: 287d3885bda15285a6a05d7210feb7dce4cf415a206ed066c56202c7d7ac2645
+SHA1: 131b1548a358615a4406792759da21e0fd06e807
+MD5sum: c3389940bf8ef736cd43f62bacece14b
+Description: More than the bare necessities for PostgreSQL i18n and l10n.
+  The pg_xenophile PostgreSQL extension bundles a bunch of data,
+  data structures and routines that you often end up needing
+  when working on an international project
+
 Package: postgresql-13-pg-xxhash
 Source: pg-xxhash
 Version: 0.0.1-1PIGSTY~bookworm
@@ -5327,6 +5368,27 @@ SHA256: 5937473309983eed2aec7eb21e2ca1610bea9d7ab5ceb5e4f41ade6b4dc80882
 SHA1: a970f3d073b7364ca53905f3b5ebf678c2b86a37
 MD5sum: 2a94d45427a93aae3a0762ea1d5d164c
 Description: allow to access to memory usage diagnostics
+
+Package: postgresql-13-pgml
+Source: pgml
+Version: 2.10.0-1PIGSTY~bookworm
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 14617
+Depends: postgresql-13, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libgomp1 (>= 6), libopenblas0, libpython3.11 (>= 3.11.0), libstdc++6 (>= 12)
+Provides: postgresql-pgml
+Homepage: https://github.com/postgresml/postgresml
+Priority: optional
+Section: database
+Filename: pool/main/p/pgml/postgresql-13-pgml_2.10.0-1PIGSTY~bookworm_arm64.deb
+Size: 4175352
+SHA256: 4f47dbecbd4b74072127487e53e27fae1748a90d46055f6275538a6c8c6e268b
+SHA1: 04dffd2fced27fd283bd69fc934251bc08bc2564
+MD5sum: 6bff58d914b1f9284c21ee8c222f140c
+Description: Postgres with GPUs for ML/AI apps.
+  Data for ML & AI systems is inherently larger and more dynamic than the models.
+  It's more efficient, manageable and reliable to move models to the database,
+  rather than constantly moving data to the models.
 
 Package: postgresql-13-pgmq
 Source: pgmq
@@ -6182,20 +6244,20 @@ Description: Foreign-Data Wrapper facility to enable reading log files via SQL
 
 Package: postgresql-14-citus
 Source: citus
-Version: 12.1.6-1PIGSTY~bookworm
+Version: 13.0.0-1PIGSTY~bookworm
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 9314
+Installed-Size: 9327
 Depends: postgresql-14, postgresql-14-jit-llvm (>= 16), libc6 (>= 2.33), libcurl4 (>= 7.16.2), liblz4-1 (>= 0.0~r130), libpq5 (>= 9.2~beta3), libssl3 (>= 3.0.0), libzstd1 (>= 1.5.2)
 Provides: postgresql-citus
 Homepage: https://github.com/citusdatabase/citus
 Priority: optional
 Section: database
-Filename: pool/main/c/citus/postgresql-14-citus_12.1.6-1PIGSTY~bookworm_arm64.deb
-Size: 3058376
-SHA256: 998c8cb0df240416623cf1ed4956ad29822bcb2194c5bdcc741f9e2c09dc0aa9
-SHA1: d9e9438a966f58038538fccd58353f9e59810a2c
-MD5sum: 73451611f077f1840fb18abdff23877b
+Filename: pool/main/c/citus/postgresql-14-citus_13.0.0-1PIGSTY~bookworm_arm64.deb
+Size: 3060160
+SHA256: c22ede90f4658d03cee6e08fbb0d4a02a3559e94bd38637b6ba3cbe3ac1eb532
+SHA1: 815c7e815e4fec3db6c71af5f3ce0b0769bd22f9
+MD5sum: 03a93cc2088ce14c549d274dce508e4e
 Description: PostgreSQL extension that transforms Postgres into a distributed database
  Citus horizontally scales PostgreSQL across commodity servers
  using sharding and replication. Its query engine parallelizes
@@ -7299,6 +7361,26 @@ MD5sum: 853f952191b9b7cd26cda1cf1f532dd9
 Description: 1 Byte Currency ISO type for PostgreSQL
   A 1-byte ISO 4217 Currency Code data-type for PostgreSQL.
 
+Package: postgresql-14-pg-drop-events
+Source: pg-drop-events
+Version: 0.1.0-1PIGSTY~bookworm
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 29
+Depends: postgresql-14
+Provides: postgresql-pg-drop-events
+Homepage: https://github.com/bolajiwahab/pg_drop_events
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-drop-events/postgresql-14-pg-drop-events_0.1.0-1PIGSTY~bookworm_arm64.deb
+Size: 7964
+SHA256: 7589b256c7672dbecbd0e81810eb284fb8fd1529de9a3a8aba550ca0d03bd6aa
+SHA1: c8e46b6959a6a70d3ea6abc1b255dd6036e4ec5e
+MD5sum: e8efcc5dbe084daeb1ac92df3a8fdd28
+Description: logs transaction ids of drop table, drop column, drop materialized view statements to aid point in time recovery
+  pg_drop_events is a PostgreSQL extension that logs transaction ids of drop table, drop column, drop materialized view statements to aid point in time recovery.
+  To perform point in time recovery in case of a disaster whereby a table or a table column was mistakenly dropped, you simply specify the xact_id you get from the pg_drop_events table as the recovery_target_xid. For more information, see user guide.
+
 Package: postgresql-14-pg-duckdb
 Source: pg-duckdb
 Version: 0.2.0-1PIGSTY~bookworm
@@ -7402,20 +7484,20 @@ Description: A Postgres extension that allows you to easily jump into a visual p
 
 Package: postgresql-14-pg-extra-time
 Source: pg-extra-time
-Version: 1.1.3-1PIGSTY~bookworm
+Version: 2.0.0-1PIGSTY~bookworm
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 220
+Installed-Size: 383
 Depends: postgresql-14
 Provides: postgresql-pg-extra-time
 Homepage: https://github.com/bigsmoke/pg_extra_time
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-extra-time/postgresql-14-pg-extra-time_1.1.3-1PIGSTY~bookworm_arm64.deb
-Size: 14112
-SHA256: 2a719d0706c474bcba8c2db1d2496c0c77a2b76778dfc07ebc57315b21815751
-SHA1: 1894e4636685c3d62ef89f14721a84a4680e0683
-MD5sum: 6119677494c3d54fe6f9569146c0fc47
+Filename: pool/main/p/pg-extra-time/postgresql-14-pg-extra-time_2.0.0-1PIGSTY~bookworm_arm64.deb
+Size: 40904
+SHA256: ea743356d0d6c03ea9dd60a96a0a9bf74348e80765ebc5bacc2dd87dbfb5a597
+SHA1: 4f793d88fd2e3b67598efe37643d67d3c3e108e2
+MD5sum: e17a276a9d48a708d4bede8e5c4acd5a
 Description: Extra time functions for PostgreSQL 14
   Some date time functions and operators that, in the opinion of the extension author, ought to be part of the PostgreSQL standard distribution.
 
@@ -8399,20 +8481,41 @@ Source: pg-vectorize
 Version: 0.20.0-1PIGSTY~bookworm
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 14220
+Installed-Size: 14221
 Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0), postgresql-14-pgmq, postgresql-14-pgvector, postgresql-14-cron
 Provides: postgresql-pg-vectorize
 Homepage: https://github.com/tembo-io/pg_vectorize
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-vectorize/postgresql-14-pg-vectorize_0.20.0-1PIGSTY~bookworm_arm64.deb
-Size: 3919404
-SHA256: 21a03a5c690c234b5a198db2199fd09ba5e047c82352b95f63a9786709a78c79
-SHA1: 4b62da8c39fc8ff59cb6d9b8202a1ca4e02fa678
-MD5sum: b29a3dd5389314b1be74899b0ddcf22f
+Size: 3923384
+SHA256: 3acad56fc17be46d925432f744f9aea4dbc1ebf5428edfa26b01453dbfbc0445
+SHA1: d73ef17e4f92c7220552054c8bafa2c7d17cf38a
+MD5sum: f7b9e22d145d234bb3944b0f8ef81466
 Description: reflects a vectorize schema from the existing PostgresSQL 14 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via vectorize with no additional servers, processes, or libraries.
+
+Package: postgresql-14-pg-xenophile
+Source: pg-xenophile
+Version: 0.8.3-1PIGSTY~bookworm
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 1358
+Depends: postgresql-14
+Provides: postgresql-pg-xenophile
+Homepage: More than the bare necessities for PostgreSQL i18n and l10n.
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-xenophile/postgresql-14-pg-xenophile_0.8.3-1PIGSTY~bookworm_arm64.deb
+Size: 47064
+SHA256: 7b2283fd15b7ab1d286b48cb7b6fc765b711014d74ba451eea45d1d222aa1d45
+SHA1: 2bfb79d1a61d8055d275b8ffcef8561afa6952e3
+MD5sum: 49b60ea4192f8dc6da818ec7c13fab5e
+Description: More than the bare necessities for PostgreSQL i18n and l10n.
+  The pg_xenophile PostgreSQL extension bundles a bunch of data,
+  data structures and routines that you often end up needing
+  when working on an international project
 
 Package: postgresql-14-pg-xxhash
 Source: pg-xxhash
@@ -8608,6 +8711,27 @@ SHA256: cd02fe4ae997365216dc3b730c2386236143f37b7e832255abdcd45308d19ef1
 SHA1: 62452cdaa710e1a03dd59807c7688f8a8ec6bf1d
 MD5sum: edf206399bbc6b916b6ef1e69f877318
 Description: allow to access to memory usage diagnostics
+
+Package: postgresql-14-pgml
+Source: pgml
+Version: 2.10.0-1PIGSTY~bookworm
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 14618
+Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libgomp1 (>= 6), libopenblas0, libpython3.11 (>= 3.11.0), libstdc++6 (>= 12)
+Provides: postgresql-pgml
+Homepage: https://github.com/postgresml/postgresml
+Priority: optional
+Section: database
+Filename: pool/main/p/pgml/postgresql-14-pgml_2.10.0-1PIGSTY~bookworm_arm64.deb
+Size: 4173736
+SHA256: d7d47e82d59a4d47055c273ce7478929fdc84c94ae3aa358690f224e08e607b7
+SHA1: 4cce856bfd7f51f62f112055b8854c3145fe0ab5
+MD5sum: 688275267177bb3a36639ef801efbd27
+Description: Postgres with GPUs for ML/AI apps.
+  Data for ML & AI systems is inherently larger and more dynamic than the models.
+  It's more efficient, manageable and reliable to move models to the database,
+  rather than constantly moving data to the models.
 
 Package: postgresql-14-pgmq
 Source: pgmq
@@ -9154,6 +9278,25 @@ MD5sum: edf45a0e832b8b783b5fe2e3c15401b1
 Description: PostgreSQL extension for high-performance real-time analytics on time-series and event data
   An open-source time-series SQL database optimized for fast ingest and complex queries. Packaged as a PostgreSQL extension.
 
+Package: postgresql-14-timescaledb-toolkit
+Source: timescaledb-toolkit
+Version: 1.19.0-1PIGSTY~bookworm
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 12578
+Depends: postgresql-14, libc6 (>= 2.35), libgcc-s1 (>= 4.2)
+Provides: postgresql-timescaledb-toolkit
+Homepage: https://github.com/timescale/timescaledb-toolkit
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-toolkit/postgresql-14-timescaledb-toolkit_1.19.0-1PIGSTY~bookworm_arm64.deb
+Size: 2390236
+SHA256: d0a04a08192e90a220d8eb78c482ebcfd255c035fa9af8480e4a1e048e31a763
+SHA1: 5443ad3bd3eacd993d53a5bb55b056eff11e1169
+MD5sum: ef092802a7f70574bb9a873524a1ec72
+Description: Extension for more hyperfunctions, fully compatible with TimescaleDB and PostgreSQL
+  This repository is the home of the TimescaleDB Toolkit team. Our mission is to ease all things analytics when using TimescaleDB, with a particular focus on developer ergonomics and performance
+
 Package: postgresql-14-timescaledb-tsl
 Source: timescaledb-tsl
 Version: 2.17.2-1PIGSTY~bookworm
@@ -9542,20 +9685,20 @@ Description: Foreign-Data Wrapper facility to enable reading log files via SQL
 
 Package: postgresql-15-citus
 Source: citus
-Version: 12.1.6-1PIGSTY~bookworm
+Version: 13.0.0-1PIGSTY~bookworm
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 9366
+Installed-Size: 9378
 Depends: postgresql-15, postgresql-15-jit-llvm (>= 16), libc6 (>= 2.33), libcurl4 (>= 7.16.2), liblz4-1 (>= 0.0~r130), libpq5 (>= 9.2~beta3), libssl3 (>= 3.0.0), libzstd1 (>= 1.5.2)
 Provides: postgresql-citus
 Homepage: https://github.com/citusdatabase/citus
 Priority: optional
 Section: database
-Filename: pool/main/c/citus/postgresql-15-citus_12.1.6-1PIGSTY~bookworm_arm64.deb
-Size: 3082744
-SHA256: cb79dc6b9db48ea859907dbbb00656aa1d79d1e85dfd84827b5688ea18108a79
-SHA1: 874b911408de69a424e13756fbf17ee581d42501
-MD5sum: 76f5e1726030ce882a2e8a40413acd7e
+Filename: pool/main/c/citus/postgresql-15-citus_13.0.0-1PIGSTY~bookworm_arm64.deb
+Size: 3083940
+SHA256: fef7e42979a6909761cedaf08952869114a00a2cc97135af4dff2b8d9884820d
+SHA1: 35cb99874ecceaf609cb1d8341f2013870f24608
+MD5sum: d69fa144b2b8ee285f26c7fca07c76dd
 Description: PostgreSQL extension that transforms Postgres into a distributed database
  Citus horizontally scales PostgreSQL across commodity servers
  using sharding and replication. Its query engine parallelizes
@@ -10659,6 +10802,26 @@ MD5sum: a9e3ea92c65c0f25f94ff691b3dc42a3
 Description: 1 Byte Currency ISO type for PostgreSQL
   A 1-byte ISO 4217 Currency Code data-type for PostgreSQL.
 
+Package: postgresql-15-pg-drop-events
+Source: pg-drop-events
+Version: 0.1.0-1PIGSTY~bookworm
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 29
+Depends: postgresql-15
+Provides: postgresql-pg-drop-events
+Homepage: https://github.com/bolajiwahab/pg_drop_events
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-drop-events/postgresql-15-pg-drop-events_0.1.0-1PIGSTY~bookworm_arm64.deb
+Size: 7968
+SHA256: 9ec7ca4d7ab2b219b6efda0fd6c76169704ab46627b1d042225ee8059c21bcea
+SHA1: f18f6e2599b3244ed39e30c1c224a95a1d2710f9
+MD5sum: f1bce61c73ba70dd6121f13f7553157c
+Description: logs transaction ids of drop table, drop column, drop materialized view statements to aid point in time recovery
+  pg_drop_events is a PostgreSQL extension that logs transaction ids of drop table, drop column, drop materialized view statements to aid point in time recovery.
+  To perform point in time recovery in case of a disaster whereby a table or a table column was mistakenly dropped, you simply specify the xact_id you get from the pg_drop_events table as the recovery_target_xid. For more information, see user guide.
+
 Package: postgresql-15-pg-duckdb
 Source: pg-duckdb
 Version: 0.2.0-1PIGSTY~bookworm
@@ -10762,20 +10925,20 @@ Description: A Postgres extension that allows you to easily jump into a visual p
 
 Package: postgresql-15-pg-extra-time
 Source: pg-extra-time
-Version: 1.1.3-1PIGSTY~bookworm
+Version: 2.0.0-1PIGSTY~bookworm
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 220
+Installed-Size: 383
 Depends: postgresql-15
 Provides: postgresql-pg-extra-time
 Homepage: https://github.com/bigsmoke/pg_extra_time
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-extra-time/postgresql-15-pg-extra-time_1.1.3-1PIGSTY~bookworm_arm64.deb
-Size: 14108
-SHA256: c8d1c4c911948aaf4f15ebb42b509d1f6064a1fef99da20bc9caca426e80f2cb
-SHA1: f7cb3122f96dbfa2d7a61ae1a40c2e6f1692a85d
-MD5sum: 3118eccd19bf19c480e61ff3116ced85
+Filename: pool/main/p/pg-extra-time/postgresql-15-pg-extra-time_2.0.0-1PIGSTY~bookworm_arm64.deb
+Size: 40892
+SHA256: 56dfa57f1030d1926fbe19eae358dddc10c93faa47cc8ce018a1ecbabff51e15
+SHA1: f07d716b08d197abaa5d8922be9536aee0025e16
+MD5sum: b49e335283e5e43d27814a2e931cd601
 Description: Extra time functions for PostgreSQL 15
   Some date time functions and operators that, in the opinion of the extension author, ought to be part of the PostgreSQL standard distribution.
 
@@ -11759,20 +11922,41 @@ Source: pg-vectorize
 Version: 0.20.0-1PIGSTY~bookworm
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 14220
+Installed-Size: 14221
 Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0), postgresql-15-pgmq, postgresql-15-pgvector, postgresql-15-cron
 Provides: postgresql-pg-vectorize
 Homepage: https://github.com/tembo-io/pg_vectorize
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-vectorize/postgresql-15-pg-vectorize_0.20.0-1PIGSTY~bookworm_arm64.deb
-Size: 3897724
-SHA256: 1e0c0baec83afc6270c48871df2b8c758c77e4ed91e59967caef650015866118
-SHA1: 567364de5ed0b1e18caceeeec428e31aaffa9691
-MD5sum: 2a83bf1978ee51d425090ffbeace7455
+Size: 3917848
+SHA256: df8edecd51abf1bfee07368c3d5450fb1b41fda743403958644ad41f679eb861
+SHA1: 045023cea01a937ae8af91f34a7fab86a3a38a3c
+MD5sum: 66f9906e3829c4c9ff5f793accb2102c
 Description: reflects a vectorize schema from the existing PostgresSQL 15 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via vectorize with no additional servers, processes, or libraries.
+
+Package: postgresql-15-pg-xenophile
+Source: pg-xenophile
+Version: 0.8.3-1PIGSTY~bookworm
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 1358
+Depends: postgresql-15
+Provides: postgresql-pg-xenophile
+Homepage: More than the bare necessities for PostgreSQL i18n and l10n.
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-xenophile/postgresql-15-pg-xenophile_0.8.3-1PIGSTY~bookworm_arm64.deb
+Size: 47072
+SHA256: f451aef2a135b12628ecb8e9d6a1ffd940762816fc1723e9374ccdf3bc826728
+SHA1: d670bf31df855f8b91c48e43c6a93351bfd6d421
+MD5sum: d832ab964667f94c7f7b454882b00232
+Description: More than the bare necessities for PostgreSQL i18n and l10n.
+  The pg_xenophile PostgreSQL extension bundles a bunch of data,
+  data structures and routines that you often end up needing
+  when working on an international project
 
 Package: postgresql-15-pg-xxhash
 Source: pg-xxhash
@@ -11968,6 +12152,27 @@ SHA256: 73e84b58aa824074c5fc7384ad86e60a0e2bf0e8fcd9c092bc355fe1cce89765
 SHA1: 85dbaafa265a96432750b9bad3d03b32c4f4ac26
 MD5sum: 9d56e0dc24e07673592d7291683be65c
 Description: allow to access to memory usage diagnostics
+
+Package: postgresql-15-pgml
+Source: pgml
+Version: 2.10.0-1PIGSTY~bookworm
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 14619
+Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libgomp1 (>= 6), libopenblas0, libpython3.11 (>= 3.11.0), libstdc++6 (>= 12)
+Provides: postgresql-pgml
+Homepage: https://github.com/postgresml/postgresml
+Priority: optional
+Section: database
+Filename: pool/main/p/pgml/postgresql-15-pgml_2.10.0-1PIGSTY~bookworm_arm64.deb
+Size: 4174588
+SHA256: 853f5052ac48942c62665cf1fa0fc301306c5e1d04ea29044c3ecd749ad3712f
+SHA1: a1159f6768e43784fb6c6962ae06b132461e99d8
+MD5sum: 87ed047b8a1e7223fba2ba1849c835a4
+Description: Postgres with GPUs for ML/AI apps.
+  Data for ML & AI systems is inherently larger and more dynamic than the models.
+  It's more efficient, manageable and reliable to move models to the database,
+  rather than constantly moving data to the models.
 
 Package: postgresql-15-pgmq
 Source: pgmq
@@ -12514,6 +12719,25 @@ MD5sum: ef0efb02a7a013f256deaf5272290087
 Description: PostgreSQL extension for high-performance real-time analytics on time-series and event data
   An open-source time-series SQL database optimized for fast ingest and complex queries. Packaged as a PostgreSQL extension.
 
+Package: postgresql-15-timescaledb-toolkit
+Source: timescaledb-toolkit
+Version: 1.19.0-1PIGSTY~bookworm
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 12578
+Depends: postgresql-15, libc6 (>= 2.35), libgcc-s1 (>= 4.2)
+Provides: postgresql-timescaledb-toolkit
+Homepage: https://github.com/timescale/timescaledb-toolkit
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-toolkit/postgresql-15-timescaledb-toolkit_1.19.0-1PIGSTY~bookworm_arm64.deb
+Size: 2391208
+SHA256: 55fa013ba3982ccc0840fb8785f32815db60ceca92dff066f677f8cee3c0cf0a
+SHA1: 300e44bccc7bbca30d6769d8e6f25ee9bc8d157c
+MD5sum: 05fe6e6eeb8238b7bef54409b6f857e3
+Description: Extension for more hyperfunctions, fully compatible with TimescaleDB and PostgreSQL
+  This repository is the home of the TimescaleDB Toolkit team. Our mission is to ease all things analytics when using TimescaleDB, with a particular focus on developer ergonomics and performance
+
 Package: postgresql-15-timescaledb-tsl
 Source: timescaledb-tsl
 Version: 2.17.2-1PIGSTY~bookworm
@@ -12902,20 +13126,20 @@ Description: Foreign-Data Wrapper facility to enable reading log files via SQL
 
 Package: postgresql-16-citus
 Source: citus
-Version: 12.1.6-1PIGSTY~bookworm
+Version: 13.0.0-1PIGSTY~bookworm
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 9200
+Installed-Size: 9213
 Depends: postgresql-16, postgresql-16-jit-llvm (>= 16), libc6 (>= 2.33), libcurl4 (>= 7.16.2), liblz4-1 (>= 0.0~r130), libpq5 (>= 9.2~beta3), libssl3 (>= 3.0.0), libzstd1 (>= 1.5.2)
 Provides: postgresql-citus
 Homepage: https://github.com/citusdatabase/citus
 Priority: optional
 Section: database
-Filename: pool/main/c/citus/postgresql-16-citus_12.1.6-1PIGSTY~bookworm_arm64.deb
-Size: 3069664
-SHA256: 955b105e2063260073751a6379d2cf2374a13cfb1f329a06da07940235e68d6d
-SHA1: 35700255cce8449ebdd3eca32d8ca4e2e5070a16
-MD5sum: ef7fff0138c58e363cbd80407d6a0b7f
+Filename: pool/main/c/citus/postgresql-16-citus_13.0.0-1PIGSTY~bookworm_arm64.deb
+Size: 3073340
+SHA256: 20ea94b0a87af5b734e123170df6292d650399c4a35628646b7404b0faaddee3
+SHA1: dcd498c51125d851471d2bb324fc5fc1c1e3c496
+MD5sum: 6c04666b9267265d7fdac1b63907894e
 Description: PostgreSQL extension that transforms Postgres into a distributed database
  Citus horizontally scales PostgreSQL across commodity servers
  using sharding and replication. Its query engine parallelizes
@@ -14019,6 +14243,26 @@ MD5sum: 0f73f5debb932bf26f08b49024659fd7
 Description: 1 Byte Currency ISO type for PostgreSQL
   A 1-byte ISO 4217 Currency Code data-type for PostgreSQL.
 
+Package: postgresql-16-pg-drop-events
+Source: pg-drop-events
+Version: 0.1.0-1PIGSTY~bookworm
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 29
+Depends: postgresql-16
+Provides: postgresql-pg-drop-events
+Homepage: https://github.com/bolajiwahab/pg_drop_events
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-drop-events/postgresql-16-pg-drop-events_0.1.0-1PIGSTY~bookworm_arm64.deb
+Size: 7964
+SHA256: 5d2520fd25b3b26ea90a762c827f41ae2ca852c424e7c8752ba620420fa21c8d
+SHA1: 87e35463b2437e2e7563a53ab25c9c16bd4757b1
+MD5sum: 36e2150b10947580b7b01e28bf14c1f5
+Description: logs transaction ids of drop table, drop column, drop materialized view statements to aid point in time recovery
+  pg_drop_events is a PostgreSQL extension that logs transaction ids of drop table, drop column, drop materialized view statements to aid point in time recovery.
+  To perform point in time recovery in case of a disaster whereby a table or a table column was mistakenly dropped, you simply specify the xact_id you get from the pg_drop_events table as the recovery_target_xid. For more information, see user guide.
+
 Package: postgresql-16-pg-duckdb
 Source: pg-duckdb
 Version: 0.2.0-1PIGSTY~bookworm
@@ -14122,20 +14366,20 @@ Description: A Postgres extension that allows you to easily jump into a visual p
 
 Package: postgresql-16-pg-extra-time
 Source: pg-extra-time
-Version: 1.1.3-1PIGSTY~bookworm
+Version: 2.0.0-1PIGSTY~bookworm
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 220
+Installed-Size: 383
 Depends: postgresql-16
 Provides: postgresql-pg-extra-time
 Homepage: https://github.com/bigsmoke/pg_extra_time
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-extra-time/postgresql-16-pg-extra-time_1.1.3-1PIGSTY~bookworm_arm64.deb
-Size: 14108
-SHA256: eb4c84d0d66525b70f38cc00499bc2f1fd4a473143c3c2889f96443d1b9f9dd4
-SHA1: e4a95c15c2d3fd9fcc3e81b56a8abe4a856e6f29
-MD5sum: ed624f01ec8570524e1a36d95b14f68d
+Filename: pool/main/p/pg-extra-time/postgresql-16-pg-extra-time_2.0.0-1PIGSTY~bookworm_arm64.deb
+Size: 40912
+SHA256: 319689dff174dab4e5983fb89d19827b77753dad2911d2dc157930fcd1df5a4b
+SHA1: e78dc2b76f40242677e49de6f0164478edd4730b
+MD5sum: 886ab1b5005414ad0906a3df1e31186f
 Description: Extra time functions for PostgreSQL 16
   Some date time functions and operators that, in the opinion of the extension author, ought to be part of the PostgreSQL standard distribution.
 
@@ -14340,6 +14584,25 @@ MD5sum: 36ad101951b1f987bced39ad250ee5cb
 Description: PG extension that generating many popular types of identifiers
   pg_idkit is a Postgres extension for generating many popular types of identifiers:
   uuidv6, uuidv7, nanoid, ksuid, ulid, timeflake, pushid, xid, cuid, cuid2
+
+Package: postgresql-16-pg-incremental
+Source: pg-incremental
+Version: 1.1.1-1PIGSTY~bookworm
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 177
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 16), libc6 (>= 2.17)
+Provides: postgresql-pg-incremental
+Homepage: https://github.com/CrunchyData/pg_incremental
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-incremental/postgresql-16-pg-incremental_1.1.1-1PIGSTY~bookworm_arm64.deb
+Size: 54920
+SHA256: 5a689a4a13e543afdd1f08e1dedd56a4f29608150144fce66aeff6f92d8e47a2
+SHA1: b4418206df30dd000b7aa3865510d4f4db0ed1ff
+MD5sum: 24d2685fca35261a7d93a41d2d74ae62
+Description: Incremental Data Processing in PostgreSQL
+  pg_incremental is a simple extension that helps you do fast, reliable, incremental batch processing in PostgreSQL.
 
 Package: postgresql-16-pg-ivm
 Source: pg-ivm
@@ -15138,20 +15401,41 @@ Source: pg-vectorize
 Version: 0.20.0-1PIGSTY~bookworm
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 14220
+Installed-Size: 14221
 Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0), postgresql-16-pgmq, postgresql-16-pgvector, postgresql-16-cron
 Provides: postgresql-pg-vectorize
 Homepage: https://github.com/tembo-io/pg_vectorize
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-vectorize/postgresql-16-pg-vectorize_0.20.0-1PIGSTY~bookworm_arm64.deb
-Size: 3903808
-SHA256: a184cb2b286aa371c6a1b7db3aff809ae94804ebc58b2d1f7dd72267bd45cfbe
-SHA1: 4da45f074c7dea3aa7b4a8c64fb55d689d0192cc
-MD5sum: dd5bfc4c25e9c827b0f568ed28cc71b4
+Size: 3929068
+SHA256: 0d687dab4e7f33db6afa523cb0c22354922d7873e15e6dc3a8adffe3ad99b346
+SHA1: 697de35d11001ce59b03da728f5ffb10bfa75163
+MD5sum: 084ca15514e7ca381689284c214431b0
 Description: reflects a vectorize schema from the existing PostgresSQL 16 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via vectorize with no additional servers, processes, or libraries.
+
+Package: postgresql-16-pg-xenophile
+Source: pg-xenophile
+Version: 0.8.3-1PIGSTY~bookworm
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 1358
+Depends: postgresql-16
+Provides: postgresql-pg-xenophile
+Homepage: More than the bare necessities for PostgreSQL i18n and l10n.
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-xenophile/postgresql-16-pg-xenophile_0.8.3-1PIGSTY~bookworm_arm64.deb
+Size: 47032
+SHA256: 12d385fcb27f1b9209c7fb624b6ecbd0c9e49934f7bd6b0bc50796aae4efe6ad
+SHA1: a6ce0354688e766df6592831cedadba0dfc6d917
+MD5sum: 75774f8ef6cd56e054590dc5844d2f12
+Description: More than the bare necessities for PostgreSQL i18n and l10n.
+  The pg_xenophile PostgreSQL extension bundles a bunch of data,
+  data structures and routines that you often end up needing
+  when working on an international project
 
 Package: postgresql-16-pg-xxhash
 Source: pg-xxhash
@@ -15347,6 +15631,27 @@ SHA256: eea099aa1089601740c6e85c08a54cbd83b8a0896f93e4143e53a8e2bbc5a7f2
 SHA1: 3affab8d18b503759da526601aca85d5c6af0ff6
 MD5sum: b4f21c0f2e815499afa1ff46a380cf33
 Description: allow to access to memory usage diagnostics
+
+Package: postgresql-16-pgml
+Source: pgml
+Version: 2.10.0-1PIGSTY~bookworm
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 14619
+Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libgomp1 (>= 6), libopenblas0, libpython3.11 (>= 3.11.0), libstdc++6 (>= 12)
+Provides: postgresql-pgml
+Homepage: https://github.com/postgresml/postgresml
+Priority: optional
+Section: database
+Filename: pool/main/p/pgml/postgresql-16-pgml_2.10.0-1PIGSTY~bookworm_arm64.deb
+Size: 4175228
+SHA256: 0ed1120762016e9804a1bcb520c32ab9e8172666c7e4eff1331e2f7568cbcebb
+SHA1: bea4c64ad9133da1f56d9e609cecb9dd8354265a
+MD5sum: ad3aaf605bb8b789e4f6728466361f49
+Description: Postgres with GPUs for ML/AI apps.
+  Data for ML & AI systems is inherently larger and more dynamic than the models.
+  It's more efficient, manageable and reliable to move models to the database,
+  rather than constantly moving data to the models.
 
 Package: postgresql-16-pgmq
 Source: pgmq
@@ -15893,6 +16198,25 @@ MD5sum: 46acce7da9e44e6818192efdceb9ab8d
 Description: PostgreSQL extension for high-performance real-time analytics on time-series and event data
   An open-source time-series SQL database optimized for fast ingest and complex queries. Packaged as a PostgreSQL extension.
 
+Package: postgresql-16-timescaledb-toolkit
+Source: timescaledb-toolkit
+Version: 1.19.0-1PIGSTY~bookworm
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 12578
+Depends: postgresql-16, libc6 (>= 2.35), libgcc-s1 (>= 4.2)
+Provides: postgresql-timescaledb-toolkit
+Homepage: https://github.com/timescale/timescaledb-toolkit
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-toolkit/postgresql-16-timescaledb-toolkit_1.19.0-1PIGSTY~bookworm_arm64.deb
+Size: 2388496
+SHA256: c99874bba194b6b058c35fa938618fa819ea8ecaf1f794fca18effc587467edd
+SHA1: 63073283e464a6a9a9f8df5b196cd3044270817a
+MD5sum: 7f7230418fca3a93b8fb3094cd8bd989
+Description: Extension for more hyperfunctions, fully compatible with TimescaleDB and PostgreSQL
+  This repository is the home of the TimescaleDB Toolkit team. Our mission is to ease all things analytics when using TimescaleDB, with a particular focus on developer ergonomics and performance
+
 Package: postgresql-16-timescaledb-tsl
 Source: timescaledb-tsl
 Version: 2.17.2-1PIGSTY~bookworm
@@ -16278,6 +16602,36 @@ Description: Foreign-Data Wrapper facility to enable reading log files via SQL
   PostgreSQL versions lower than 11 come bundled with chkpass extension for storing encrypted passwords.
   This was removed from Postgres 11 and later. This is a stand alone version for use with those.
   See documentaion for chkpass: https://www.postgresql.org/docs/10/chkpass.html
+
+Package: postgresql-17-citus
+Source: citus
+Version: 13.0.0-1PIGSTY~bookworm
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 9424
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.33), libcurl4 (>= 7.16.2), liblz4-1 (>= 0.0~r130), libpq5 (>= 9.2~beta3), libssl3 (>= 3.0.0), libzstd1 (>= 1.5.2)
+Provides: postgresql-citus
+Homepage: https://github.com/citusdatabase/citus
+Priority: optional
+Section: database
+Filename: pool/main/c/citus/postgresql-17-citus_13.0.0-1PIGSTY~bookworm_arm64.deb
+Size: 3139292
+SHA256: a9c2a88f9e692f60b3a5038cdbbf6f129216d68b752581f014451978aee151dd
+SHA1: 1759ef612e84e0debce8595993d2d154e087be53
+MD5sum: 23d04a62a8d1a23b7dd5102c8003bb36
+Description: PostgreSQL extension that transforms Postgres into a distributed database
+ Citus horizontally scales PostgreSQL across commodity servers
+ using sharding and replication. Its query engine parallelizes
+ incoming SQL queries across these servers to enable real-time
+ responses on large datasets.
+ .
+ Citus extends the underlying database rather than forking it,
+ which gives developers and enterprises the power and familiarity
+ of a traditional relational database. As an extension, Citus
+ supports new PostgreSQL releases, allowing users to benefit from
+ new features while maintaining compatibility with existing
+ PostgreSQL tools. Note that Citus supports many (but not all) SQL
+ commands.
 
 Package: postgresql-17-count-distinct
 Source: count-distinct
@@ -17305,6 +17659,26 @@ MD5sum: f2fad310e1899aefac4fb8152e6ba80e
 Description: 1 Byte Currency ISO type for PostgreSQL
   A 1-byte ISO 4217 Currency Code data-type for PostgreSQL.
 
+Package: postgresql-17-pg-drop-events
+Source: pg-drop-events
+Version: 0.1.0-1PIGSTY~bookworm
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 29
+Depends: postgresql-17
+Provides: postgresql-pg-drop-events
+Homepage: https://github.com/bolajiwahab/pg_drop_events
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-drop-events/postgresql-17-pg-drop-events_0.1.0-1PIGSTY~bookworm_arm64.deb
+Size: 7964
+SHA256: c52d6dc2541d1ccc07acea1ba71f4852c209954cdc3063c98da2d7fb3acc9ff5
+SHA1: 6daeb70d6504dfd2ea7723a51d5579688fc64399
+MD5sum: 08b353f4b3dce18e75c0cadcf7f43744
+Description: logs transaction ids of drop table, drop column, drop materialized view statements to aid point in time recovery
+  pg_drop_events is a PostgreSQL extension that logs transaction ids of drop table, drop column, drop materialized view statements to aid point in time recovery.
+  To perform point in time recovery in case of a disaster whereby a table or a table column was mistakenly dropped, you simply specify the xact_id you get from the pg_drop_events table as the recovery_target_xid. For more information, see user guide.
+
 Package: postgresql-17-pg-duckdb
 Source: pg-duckdb
 Version: 0.2.0-1PIGSTY~bookworm
@@ -17429,20 +17803,20 @@ Description: A Postgres extension that allows you to easily jump into a visual p
 
 Package: postgresql-17-pg-extra-time
 Source: pg-extra-time
-Version: 1.1.3-1PIGSTY~bookworm
+Version: 2.0.0-1PIGSTY~bookworm
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 220
+Installed-Size: 383
 Depends: postgresql-17
 Provides: postgresql-pg-extra-time
 Homepage: https://github.com/bigsmoke/pg_extra_time
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-extra-time/postgresql-17-pg-extra-time_1.1.3-1PIGSTY~bookworm_arm64.deb
-Size: 14112
-SHA256: 22b5209fca099e8a563614c33cfde70064a56f14811affcdaa9b38427547d8dd
-SHA1: e620a4428022f1dea4a6ca52c06267060102bc7b
-MD5sum: 0734d0c3cd0791a0d65eb468b03fe800
+Filename: pool/main/p/pg-extra-time/postgresql-17-pg-extra-time_2.0.0-1PIGSTY~bookworm_arm64.deb
+Size: 40900
+SHA256: 2116a4966849d63eec439a626f576a037a0c3c1c72cb78680b130181d28a45b5
+SHA1: 5d56885c08b970efd9e75f13db55b18d87cc3c36
+MD5sum: 548e068cb9e6a546b8266060e5c26c69
 Description: Extra time functions for PostgreSQL 17
   Some date time functions and operators that, in the opinion of the extension author, ought to be part of the PostgreSQL standard distribution.
 
@@ -17647,6 +18021,25 @@ MD5sum: f9adfc1c0421fd6bd19635e3aac28f2d
 Description: PG extension that generating many popular types of identifiers
   pg_idkit is a Postgres extension for generating many popular types of identifiers:
   uuidv6, uuidv7, nanoid, ksuid, ulid, timeflake, pushid, xid, cuid, cuid2
+
+Package: postgresql-17-pg-incremental
+Source: pg-incremental
+Version: 1.1.1-1PIGSTY~bookworm
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 177
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 16), libc6 (>= 2.17)
+Provides: postgresql-pg-incremental
+Homepage: https://github.com/CrunchyData/pg_incremental
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-incremental/postgresql-17-pg-incremental_1.1.1-1PIGSTY~bookworm_arm64.deb
+Size: 54792
+SHA256: cf39c110d64e06cdc4a60e8a9a66dee1e7d5fe1f32d28ccf6be536584406fb33
+SHA1: e40abffbe813b3ee0e8d686602ced8ccf57a3fd7
+MD5sum: 0af92aacf98c3162d4fd9c92877b1c63
+Description: Incremental Data Processing in PostgreSQL
+  pg_incremental is a simple extension that helps you do fast, reliable, incremental batch processing in PostgreSQL.
 
 Package: postgresql-17-pg-ivm
 Source: pg-ivm
@@ -18406,20 +18799,41 @@ Source: pg-vectorize
 Version: 0.20.0-1PIGSTY~bookworm
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 14220
+Installed-Size: 14221
 Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0), postgresql-17-pgmq, postgresql-17-pgvector, postgresql-17-cron
 Provides: postgresql-pg-vectorize
 Homepage: https://github.com/tembo-io/pg_vectorize
 Priority: optional
 Section: database
 Filename: pool/main/p/pg-vectorize/postgresql-17-pg-vectorize_0.20.0-1PIGSTY~bookworm_arm64.deb
-Size: 3915796
-SHA256: 547262ba528ef9d92449c246f5c5ca5ad03494ef43bbb80a505da1eb586a177d
-SHA1: 5ec2b3709cd62348a55f4d56763d79b4e23c6619
-MD5sum: 9aa245fecfbc7c8f9f55e569a5b88bf9
+Size: 3909168
+SHA256: b912fc92e2c5fe294f9a950ed46b33a836029a9ee28a3537ea35d2a72a647e20
+SHA1: 3f2d77cfff09d4433bef6ed747918eaf164ac4c7
+MD5sum: 975e26eeab47ee9c8e6c1b9e4685f4e4
 Description: reflects a vectorize schema from the existing PostgresSQL 17 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via vectorize with no additional servers, processes, or libraries.
+
+Package: postgresql-17-pg-xenophile
+Source: pg-xenophile
+Version: 0.8.3-1PIGSTY~bookworm
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 1358
+Depends: postgresql-17
+Provides: postgresql-pg-xenophile
+Homepage: More than the bare necessities for PostgreSQL i18n and l10n.
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-xenophile/postgresql-17-pg-xenophile_0.8.3-1PIGSTY~bookworm_arm64.deb
+Size: 47048
+SHA256: 07ea0ead6b0ef0f1183b4edab1cdddfc324050c6427832f514707340fe347960
+SHA1: 52678f7b4678bc59b7a24f988f2466ee7d6c08ce
+MD5sum: 71a7f150364cab75dd554f984617d510
+Description: More than the bare necessities for PostgreSQL i18n and l10n.
+  The pg_xenophile PostgreSQL extension bundles a bunch of data,
+  data structures and routines that you often end up needing
+  when working on an international project
 
 Package: postgresql-17-pg-xxhash
 Source: pg-xxhash
@@ -18595,6 +19009,27 @@ SHA256: b534e25123e766d5da1efc01307310692e8b3df9751dfc1547def9064ab3f6aa
 SHA1: 264ddb5edc4ccb4d57ab4954f8fb4c0946df9539
 MD5sum: bb97b2512bc66fd44acf65b7527feba0
 Description: allow to access to memory usage diagnostics
+
+Package: postgresql-17-pgml
+Source: pgml
+Version: 2.10.0-1PIGSTY~bookworm
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 14619
+Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libgomp1 (>= 6), libopenblas0, libpython3.11 (>= 3.11.0), libstdc++6 (>= 12)
+Provides: postgresql-pgml
+Homepage: https://github.com/postgresml/postgresml
+Priority: optional
+Section: database
+Filename: pool/main/p/pgml/postgresql-17-pgml_2.10.0-1PIGSTY~bookworm_arm64.deb
+Size: 4175540
+SHA256: 80e59a15fc894182f38e73de2f3b6640038f43eb1ee1144bab4c2dc32ac0cfd6
+SHA1: 4be2d9a82ce9f49ab7c9fd86da38369f9b4d7eb1
+MD5sum: 2fa7af4d35c86d337e55d42957cb1468
+Description: Postgres with GPUs for ML/AI apps.
+  Data for ML & AI systems is inherently larger and more dynamic than the models.
+  It's more efficient, manageable and reliable to move models to the database,
+  rather than constantly moving data to the models.
 
 Package: postgresql-17-pgmq
 Source: pgmq
@@ -19101,6 +19536,25 @@ SHA1: 3ca6d9f53df61e13fefcc68fd57546b4f07d3273
 MD5sum: 8c45510a8ecd72589d51c61e6e80ef39
 Description: PostgreSQL extension for high-performance real-time analytics on time-series and event data
   An open-source time-series SQL database optimized for fast ingest and complex queries. Packaged as a PostgreSQL extension.
+
+Package: postgresql-17-timescaledb-toolkit
+Source: timescaledb-toolkit
+Version: 1.19.0-1PIGSTY~bookworm
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 12578
+Depends: postgresql-17, libc6 (>= 2.35), libgcc-s1 (>= 4.2)
+Provides: postgresql-timescaledb-toolkit
+Homepage: https://github.com/timescale/timescaledb-toolkit
+Priority: optional
+Section: database
+Filename: pool/main/t/timescaledb-toolkit/postgresql-17-timescaledb-toolkit_1.19.0-1PIGSTY~bookworm_arm64.deb
+Size: 2390576
+SHA256: 88a23234e5595d1bceab6dd037bdc95678fb8a0dd4a8950e7f90d0ebee57a3eb
+SHA1: 7145ca80a4b7833c93a6d97e6490220744710eaa
+MD5sum: 6be7790a16bd67fe231effb1cbe98cde
+Description: Extension for more hyperfunctions, fully compatible with TimescaleDB and PostgreSQL
+  This repository is the home of the TimescaleDB Toolkit team. Our mission is to ease all things analytics when using TimescaleDB, with a particular focus on developer ergonomics and performance
 
 Package: postgresql-17-timescaledb-tsl
 Source: timescaledb-tsl
