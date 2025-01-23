@@ -99,6 +99,18 @@ data:
       - chkpass_16-llvmjit
       - chkpass_17
       - chkpass_17-llvmjit
+      - citus_14
+      - citus_14-devel
+      - citus_14-llvmjit
+      - citus_15
+      - citus_15-devel
+      - citus_15-llvmjit
+      - citus_16
+      - citus_16-devel
+      - citus_16-llvmjit
+      - citus_17
+      - citus_17-devel
+      - citus_17-llvmjit
       - count_distinct_12
       - count_distinct_12-llvmjit
       - count_distinct_13
@@ -563,6 +575,11 @@ data:
       - pg_currency_16-llvmjit
       - pg_currency_17
       - pg_currency_17-llvmjit
+      - pg_drop_events_13
+      - pg_drop_events_14
+      - pg_drop_events_15
+      - pg_drop_events_16
+      - pg_drop_events_17
       - pg_duckdb_14
       - pg_duckdb_14-llvmjit
       - pg_duckdb_15
@@ -1001,6 +1018,11 @@ data:
       - pg_vectorize_15
       - pg_vectorize_16
       - pg_vectorize_17
+      - pg_xenophile_13
+      - pg_xenophile_14
+      - pg_xenophile_15
+      - pg_xenophile_16
+      - pg_xenophile_17
       - pg_xxhash_13
       - pg_xxhash_13-llvmjit
       - pg_xxhash_14
@@ -1103,6 +1125,7 @@ data:
       - pgml_14
       - pgml_15
       - pgml_16
+      - pgml_17
       - pgmq_12
       - pgmq_13
       - pgmq_14
@@ -1411,6 +1434,10 @@ data:
       - timescaledb-2-postgresql-15
       - timescaledb-2-postgresql-16
       - timescaledb-2-postgresql-17
+      - timescaledb-toolkit_14
+      - timescaledb-toolkit_15
+      - timescaledb-toolkit_16
+      - timescaledb-toolkit_17
       - timescaledb-tools
       - timescaledb-tsl_14
       - timescaledb-tsl_15
@@ -1551,6 +1578,18 @@ data:
     - chkpass_16-llvmjit
     - chkpass_17
     - chkpass_17-llvmjit
+    - citus_14
+    - citus_14-devel
+    - citus_14-llvmjit
+    - citus_15
+    - citus_15-devel
+    - citus_15-llvmjit
+    - citus_16
+    - citus_16-devel
+    - citus_16-llvmjit
+    - citus_17
+    - citus_17-devel
+    - citus_17-llvmjit
     - count_distinct_12
     - count_distinct_12-llvmjit
     - count_distinct_13
@@ -2015,6 +2054,11 @@ data:
     - pg_currency_16-llvmjit
     - pg_currency_17
     - pg_currency_17-llvmjit
+    - pg_drop_events_13
+    - pg_drop_events_14
+    - pg_drop_events_15
+    - pg_drop_events_16
+    - pg_drop_events_17
     - pg_duckdb_14
     - pg_duckdb_14-llvmjit
     - pg_duckdb_15
@@ -2453,6 +2497,11 @@ data:
     - pg_vectorize_15
     - pg_vectorize_16
     - pg_vectorize_17
+    - pg_xenophile_13
+    - pg_xenophile_14
+    - pg_xenophile_15
+    - pg_xenophile_16
+    - pg_xenophile_17
     - pg_xxhash_13
     - pg_xxhash_13-llvmjit
     - pg_xxhash_14
@@ -2555,6 +2604,7 @@ data:
     - pgml_14
     - pgml_15
     - pgml_16
+    - pgml_17
     - pgmq_12
     - pgmq_13
     - pgmq_14
@@ -2863,6 +2913,10 @@ data:
     - timescaledb-2-postgresql-15
     - timescaledb-2-postgresql-16
     - timescaledb-2-postgresql-17
+    - timescaledb-toolkit_14
+    - timescaledb-toolkit_15
+    - timescaledb-toolkit_16
+    - timescaledb-toolkit_17
     - timescaledb-tools
     - timescaledb-tsl_14
     - timescaledb-tsl_15
@@ -3009,6 +3063,14 @@ data:
       chkpass_16:
         rationale: Present in the repository
       chkpass_17:
+        rationale: Present in the repository
+      citus_14:
+        rationale: Present in the repository
+      citus_15:
+        rationale: Present in the repository
+      citus_16:
+        rationale: Present in the repository
+      citus_17:
         rationale: Present in the repository
       count_distinct_12:
         rationale: Present in the repository
@@ -3624,6 +3686,16 @@ data:
         rationale: Present in the repository
       pg_currency_17:
         rationale: Present in the repository
+      pg_drop_events_13:
+        rationale: Present in the repository
+      pg_drop_events_14:
+        rationale: Present in the repository
+      pg_drop_events_15:
+        rationale: Present in the repository
+      pg_drop_events_16:
+        rationale: Present in the repository
+      pg_drop_events_17:
+        rationale: Present in the repository
       pg_duckdb_14:
         rationale: Present in the repository
       pg_duckdb_15:
@@ -4180,6 +4252,16 @@ data:
         rationale: Present in the repository
       pg_vectorize_17:
         rationale: Present in the repository
+      pg_xenophile_13:
+        rationale: Present in the repository
+      pg_xenophile_14:
+        rationale: Present in the repository
+      pg_xenophile_15:
+        rationale: Present in the repository
+      pg_xenophile_16:
+        rationale: Present in the repository
+      pg_xenophile_17:
+        rationale: Present in the repository
       pg_xxhash_13:
         rationale: Present in the repository
       pg_xxhash_14:
@@ -4313,6 +4395,8 @@ data:
       pgml_15:
         rationale: Present in the repository
       pgml_16:
+        rationale: Present in the repository
+      pgml_17:
         rationale: Present in the repository
       pgmq_12:
         rationale: Present in the repository
@@ -4666,6 +4750,14 @@ data:
         rationale: Present in the repository
       timescaledb-2-postgresql-17:
         rationale: Present in the repository
+      timescaledb-toolkit_14:
+        rationale: Present in the repository
+      timescaledb-toolkit_15:
+        rationale: Present in the repository
+      timescaledb-toolkit_16:
+        rationale: Present in the repository
+      timescaledb-toolkit_17:
+        rationale: Present in the repository
       timescaledb-tools:
         rationale: Present in the repository
       timescaledb-tsl_14:
@@ -4825,6 +4917,18 @@ data:
     - chkpass_16-llvmjit-0:1.0-1PIGSTY.el8.x86_64
     - chkpass_17-0:1.0-1PIGSTY.el8.x86_64
     - chkpass_17-llvmjit-0:1.0-1PIGSTY.el8.x86_64
+    - citus_14-0:13.0.0-1PIGSTY.el8.x86_64
+    - citus_14-devel-0:13.0.0-1PIGSTY.el8.x86_64
+    - citus_14-llvmjit-0:13.0.0-1PIGSTY.el8.x86_64
+    - citus_15-0:13.0.0-1PIGSTY.el8.x86_64
+    - citus_15-devel-0:13.0.0-1PIGSTY.el8.x86_64
+    - citus_15-llvmjit-0:13.0.0-1PIGSTY.el8.x86_64
+    - citus_16-0:13.0.0-1PIGSTY.el8.x86_64
+    - citus_16-devel-0:13.0.0-1PIGSTY.el8.x86_64
+    - citus_16-llvmjit-0:13.0.0-1PIGSTY.el8.x86_64
+    - citus_17-0:13.0.0-1PIGSTY.el8.x86_64
+    - citus_17-devel-0:13.0.0-1PIGSTY.el8.x86_64
+    - citus_17-llvmjit-0:13.0.0-1PIGSTY.el8.x86_64
     - count_distinct_12-0:3.0.2-1PIGSTY.el8.x86_64
     - count_distinct_12-llvmjit-0:3.0.2-1PIGSTY.el8.x86_64
     - count_distinct_13-0:3.0.2-1PIGSTY.el8.x86_64
@@ -5314,6 +5418,11 @@ data:
     - pg_currency_16-llvmjit-0:0.0.3-1PIGSTY.el8.x86_64
     - pg_currency_17-0:0.0.3-1PIGSTY.el8.x86_64
     - pg_currency_17-llvmjit-0:0.0.3-1PIGSTY.el8.x86_64
+    - pg_drop_events_13-0:0.1.0-1PIGSTY.el8.x86_64
+    - pg_drop_events_14-0:0.1.0-1PIGSTY.el8.x86_64
+    - pg_drop_events_15-0:0.1.0-1PIGSTY.el8.x86_64
+    - pg_drop_events_16-0:0.1.0-1PIGSTY.el8.x86_64
+    - pg_drop_events_17-0:0.1.0-1PIGSTY.el8.x86_64
     - pg_duckdb_14-0:0.2.0-1PIGSTY.el8.x86_64
     - pg_duckdb_14-llvmjit-0:0.2.0-1PIGSTY.el8.x86_64
     - pg_duckdb_15-0:0.2.0-1PIGSTY.el8.x86_64
@@ -5770,6 +5879,11 @@ data:
     - pg_vectorize_15-0:0.20.0-1PIGSTY.el8.x86_64
     - pg_vectorize_16-0:0.20.0-1PIGSTY.el8.x86_64
     - pg_vectorize_17-0:0.20.0-1PIGSTY.el8.x86_64
+    - pg_xenophile_13-0:0.8.3-1PIGSTY.el8.x86_64
+    - pg_xenophile_14-0:0.8.3-1PIGSTY.el8.x86_64
+    - pg_xenophile_15-0:0.8.3-1PIGSTY.el8.x86_64
+    - pg_xenophile_16-0:0.8.3-1PIGSTY.el8.x86_64
+    - pg_xenophile_17-0:0.8.3-1PIGSTY.el8.x86_64
     - pg_xxhash_13-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_xxhash_13-llvmjit-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_xxhash_14-0:0.0.1-1PIGSTY.el8.x86_64
@@ -5869,9 +5983,13 @@ data:
     - pgmeminfo_16-llvmjit-0:1.0.0-1PIGSTY.el8.x86_64
     - pgmeminfo_17-0:1.0.0-1PIGSTY.el8.x86_64
     - pgmeminfo_17-llvmjit-0:1.0.0-1PIGSTY.el8.x86_64
+    - pgml_14-0:2.10.0-1PIGSTY.el8.x86_64
     - pgml_14-0:2.9.3-1PIGSTY.el8.x86_64
+    - pgml_15-0:2.10.0-1PIGSTY.el8.x86_64
     - pgml_15-0:2.9.3-1PIGSTY.el8.x86_64
+    - pgml_16-0:2.10.0-1PIGSTY.el8.x86_64
     - pgml_16-0:2.9.3-1PIGSTY.el8.x86_64
+    - pgml_17-0:2.10.0-1PIGSTY.el8.x86_64
     - pgmq_12-0:1.4.4-1PIGSTY.el8.x86_64
     - pgmq_13-0:1.4.4-1PIGSTY.el8.x86_64
     - pgmq_13-0:1.5.0-1PIGSTY.el8.x86_64
@@ -6221,6 +6339,10 @@ data:
     - timescaledb-2-postgresql-16-0:2.17.2-1.el8.x86_64
     - timescaledb-2-postgresql-17-0:2.17.2-0.el8.x86_64
     - timescaledb-2-postgresql-17-0:2.17.2-1.el8.x86_64
+    - timescaledb-toolkit_14-0:1.19.0-1PIGSTY.el8.x86_64
+    - timescaledb-toolkit_15-0:1.19.0-1PIGSTY.el8.x86_64
+    - timescaledb-toolkit_16-0:1.19.0-1PIGSTY.el8.x86_64
+    - timescaledb-toolkit_17-0:1.19.0-1PIGSTY.el8.x86_64
     - timescaledb-tools-0:0.18.0-0.el8.x86_64
     - timescaledb-tsl_14-0:2.17.2-1PIGSTY.el8.x86_64
     - timescaledb-tsl_15-0:2.17.2-1PIGSTY.el8.x86_64
