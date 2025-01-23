@@ -160,11 +160,11 @@ Depends: libicu66 | libicu70 | libicu74, libkrb5-3, libldap-2.4-2 | libldap-2.5-
 Homepage: https://github.com/ApsaraDB/PolarDB-for-PostgreSQL
 Priority: optional
 Section: database
-Filename: pool/main/p/polardb-for-postgresql/polardb-for-postgresql_15.10.2.0-35199b32_amd64.deb
-Size: 96551360
-SHA256: a12163d62ac5cf4b6ca609cdbba7736fc73ca2d0909c3a2fd81541d69ace84ad
-SHA1: 6984aca013d49ffae151dcead7e5c51c9df1dbef
-MD5sum: 3f4e57ac8180eb0a950ecc774039c3c7
+Filename: pool/main/p/polardb-for-postgresql/polardb-for-postgresql_15.10.3.0-bbc102d8_amd64.deb
+Size: 96597184
+SHA256: 50aa97ad7da5caffbe75251c3bbafeb25987827e0fbe9c6fef42fcdd39589e7c
+SHA1: 2634369d2cf7a97a156c6138a365b66edc86f0fb
+MD5sum: a87af48ddfe37b7c15503452792bce20
 Description: PolarDB is an advanced Object-Relational database management system
  (DBMS) that supports almost all SQL constructs (including
  transactions, subselects and user-defined types and functions). The
@@ -176,7 +176,7 @@ Description: PolarDB is an advanced Object-Relational database management system
  server, or may be on a remote machine which accesses a PolarDB
  server over a network connection. This package contains the command-line
  utilities for managing PolarDB databases on a PolarDB server.
-Version: 15.10.2.0-35199b32
+Version: 15.10.3.0-bbc102d8
 Architecture: amd64
 
 Package: postgresql-12-acl
@@ -6981,17 +6981,17 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 14
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
 Package: postgresql-14-pg-analytics
-Version: 0.2.4
+Version: 0.3.0
 Architecture: amd64
 Depends: postgresql-14
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-14-pg-analytics/postgresql-14-pg-analytics_0.2.4_amd64.deb
-Size: 10988964
-SHA256: 2ab1a91ec6d971051f84162f6a55846b977ccd24b823f707fdd377f0cacfb5a9
-SHA1: 8d94a1b2cc580fb338f35941b3ad54395634e2bb
-MD5sum: 0ddc64af4b7e1ff57df45314834473e8
+Filename: pool/main/p/postgresql-14-pg-analytics/postgresql-14-pg-analytics_0.3.0_amd64.deb
+Size: 11036188
+SHA256: 3596fbd11857431bf20ea9a4ba69b63cb99c293ac353f605f2411a95e1c42aaf
+SHA1: 82308d560f0e76d981845014826cfa5152167865
+MD5sum: 935e40224891b4bd27421750b7976333
 Description: DuckDB-powered analytics for Postgres
 
 Package: postgresql-14-pg-anon
@@ -8055,17 +8055,17 @@ Description: Cross documentation between Django and DBT projects
   COMMENT are set on columns in a json format with predefined values like status.
 
 Package: postgresql-14-pg-search
-Version: 0.13.2
+Version: 0.14.1
 Architecture: amd64
 Depends: postgresql-14
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.13.2_amd64.deb
-Size: 45863544
-SHA256: 478dbfd1322849f716d82b12b9e24a55374d6c7f0fe9b11c5b0c4db410f16345
-SHA1: 6f5a0ba1d8bb5db44510c66fe31ce4420ae73ca2
-MD5sum: e13900e696c6fab198ab4ebdcbb83bac
+Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.14.1_amd64.deb
+Size: 46627392
+SHA256: 6f7061b018671f7089bc332031a2858c45fb5a7b2bc490f95d67d05157ceab44
+SHA1: bec4e510f007868069640f0d2e3b7d7114d70546
+MD5sum: 41ed03a4c5f9f9f98fc58e519959c220
 Description: Postgres for Search and Analytics
 
 Package: postgresql-14-pg-session-jwt
@@ -10343,17 +10343,17 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 15
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
 Package: postgresql-15-pg-analytics
-Version: 0.2.4
+Version: 0.3.0
 Architecture: amd64
 Depends: postgresql-15
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-15-pg-analytics/postgresql-15-pg-analytics_0.2.4_amd64.deb
-Size: 11021316
-SHA256: ceee6568831fb78ab8cff8e419604645af8cdc5e5597e6bc1e297d5ebd556940
-SHA1: 9c4e45d83efce72bf12b34b14310cd40e8ca32ee
-MD5sum: 4759e13dd00ee5c9ca45faf8c71cdaea
+Filename: pool/main/p/postgresql-15-pg-analytics/postgresql-15-pg-analytics_0.3.0_amd64.deb
+Size: 11051720
+SHA256: 763ec2dd568b7e099d6e57bfcec18880d6e55afd926557116fea652fb6bf742e
+SHA1: 8dc97eac1f1da2a6891ff5e3f167114105f3388a
+MD5sum: aa8bc69d9ab881a94d81db7361aa8a20
 Description: DuckDB-powered analytics for Postgres
 
 Package: postgresql-15-pg-anon
@@ -11417,17 +11417,17 @@ Description: Cross documentation between Django and DBT projects
   COMMENT are set on columns in a json format with predefined values like status.
 
 Package: postgresql-15-pg-search
-Version: 0.13.2
+Version: 0.14.1
 Architecture: amd64
 Depends: postgresql-15
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.13.2_amd64.deb
-Size: 45861880
-SHA256: f537238e0da5157a0108b74be9fb3fdaecd86fe854c600a5490b5859ba9ff08f
-SHA1: 5e10c7a567fea50431bf6a1991862790ec1e6484
-MD5sum: bea37717b7eb65690d7661a903e15a99
+Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.14.1_amd64.deb
+Size: 46624476
+SHA256: 824ab82f812a7e8b1c8a8468fda2043fa623f27430bb0a975ab2e1c27867196f
+SHA1: 30e44f0c6487fef8fb128bb0cc729d129b978762
+MD5sum: 7e87c6c909860ce68f67b9f2a3edd18e
 Description: Postgres for Search and Analytics
 
 Package: postgresql-15-pg-session-jwt
@@ -13705,17 +13705,17 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 16
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
 Package: postgresql-16-pg-analytics
-Version: 0.2.4
+Version: 0.3.0
 Architecture: amd64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-analytics/postgresql-16-pg-analytics_0.2.4_amd64.deb
-Size: 11041520
-SHA256: 2983c830691f2149df7c14e75e6e7e604ed7ae7c0b33470b12b070c52648c5c0
-SHA1: 46093db5dbdc6f3d1027f6dffb6ba65271fff020
-MD5sum: 0717b929d51a042265097779dd77526d
+Filename: pool/main/p/postgresql-16-pg-analytics/postgresql-16-pg-analytics_0.3.0_amd64.deb
+Size: 11026320
+SHA256: 59d16ae1f346cb15c9213872d47740616f29ba676f7250bf568325bc955bef3f
+SHA1: 98cb8e0d1f9ecce30f1bdbc10f58921e7ca05632
+MD5sum: b97f3d381ff2790f8b12537a2c38d0a5
 Description: DuckDB-powered analytics for Postgres
 
 Package: postgresql-16-pg-anon
@@ -14779,17 +14779,17 @@ Description: Cross documentation between Django and DBT projects
   COMMENT are set on columns in a json format with predefined values like status.
 
 Package: postgresql-16-pg-search
-Version: 0.13.2
+Version: 0.14.1
 Architecture: amd64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.13.2_amd64.deb
-Size: 45862060
-SHA256: ad870e73a3188fa26691fcc0a2b981c1b78d507cd50edf85ead0731c2278c02a
-SHA1: 86af9ecbde963d0d79b56827619fdcc5202eca50
-MD5sum: 9ba3ba25739089c7ca56b6f822ce8b86
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.14.1_amd64.deb
+Size: 46633236
+SHA256: d247413b4a8cf632ff6fba9baa2d1369279d0b964f6f0e0a915359344088bca0
+SHA1: 756c467a8b394c82a13b2506e6127968c8687c92
+MD5sum: a7627e446321334b2b3b957f654cd1bb
 Description: Postgres for Search and Analytics
 
 Package: postgresql-16-pg-session-jwt
@@ -17014,17 +17014,17 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 17
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
 Package: postgresql-17-pg-analytics
-Version: 0.2.4
+Version: 0.3.0
 Architecture: amd64
 Depends: postgresql-17
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-17-pg-analytics/postgresql-17-pg-analytics_0.2.4_amd64.deb
-Size: 10988508
-SHA256: c0250b524900ee6ec73b7ac7fdeb7ebcfb02fd751c97fb467efae943680282a2
-SHA1: a8b46ba57647ba732449ee5dbec32057bee0daff
-MD5sum: 4ec86d449532dc375f48aeb064a4ebb1
+Filename: pool/main/p/postgresql-17-pg-analytics/postgresql-17-pg-analytics_0.3.0_amd64.deb
+Size: 11036416
+SHA256: e6b74adcc3583018532ffc31b5a231eb2f8c9bbfe6de600a29e04f593c13c2b8
+SHA1: ed5ca3f39019ee29cb533806336605ae09ea8265
+MD5sum: c362f7abeabb5f40b1123b7619e5cbac
 Description: DuckDB-powered analytics for Postgres
 
 Package: postgresql-17-pg-anon
@@ -18088,17 +18088,17 @@ Description: Cross documentation between Django and DBT projects
   COMMENT are set on columns in a json format with predefined values like status.
 
 Package: postgresql-17-pg-search
-Version: 0.13.2
+Version: 0.14.1
 Architecture: amd64
 Depends: postgresql-17
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.13.2_amd64.deb
-Size: 45862816
-SHA256: 90529cfc9bf25c1ff0c9a40867f4d80292a2625a6bbf81156ef93cf9bec72eaa
-SHA1: 7879f98b486d7beb775361f3b9c2dd3d0d174824
-MD5sum: 18b662a8d4a867d632f6136e627607cd
+Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.14.1_amd64.deb
+Size: 46627764
+SHA256: 6581e7bf3ef2a1129b7aa34f6c4c93fe81b9ddcf0dcd6f394c5507027eb075ed
+SHA1: 467a4b9deaf0c2c96e31058b9f7177e8eaba65d5
+MD5sum: 5f0e70898df2eb665ba7f5f26ef9c261
 Description: Postgres for Search and Analytics
 
 Package: postgresql-17-pg-session-jwt

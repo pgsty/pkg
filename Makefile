@@ -38,7 +38,7 @@ upload-get:
 
 upg: upload-pig-get
 upload-pig-get:
-	rclone copyto pig.io $(CF_PATH)/pig+
+	rclone copyto pig.io $(CF_PATH)/pig
 	rclone copyto pig.cc $(COS_PATH)/pig
 	@echo "https://repo.pigsty.cc/pig" @ "https://console.cloud.tencent.com/cdn/refresh?tab=url"
 	@echo "https://repo.pigsty.io/pig" @ "https://dash.cloudflare.com/72cdbd1b54f7add44ecbd3d986399481/pigsty.io/caching/configuration"

@@ -4,44 +4,44 @@ Hash: SHA256
 Origin: Pigsty
 Label: Pigsty INFRA
 Codename: generic
-Date: Sun, 12 Jan 2025 14:45:07 UTC
+Date: Thu, 23 Jan 2025 02:22:17 UTC
 Architectures: amd64 arm64
 Components: main
 Description: pigsty apt repository for infra components
 MD5Sum:
- 2a71dfbd42d49c280d3cfb6a7b650709 24180 main/binary-amd64/Packages
- b559d2f7e90e95ec305aa5639f1c12bd 8156 main/binary-amd64/Packages.gz
+ b6ea7e400a6844019d72380434b3341d 24180 main/binary-amd64/Packages
+ 0cc6c2e8d287e610e63e0fc403129e10 8156 main/binary-amd64/Packages.gz
  2b6e1163aff5a5a2ab6ab1108ce22b40 127 main/binary-amd64/Release
- 4ffb9d63bb13a8e1f92048c62d543674 24149 main/binary-arm64/Packages
- fe20fad6bf9f75c10452853c02fcb29e 8167 main/binary-arm64/Packages.gz
+ 42fa32d526c6107e48656de40d4b06e3 24149 main/binary-arm64/Packages
+ c1b29839f57a5d8e3693dbe679d5c332 8166 main/binary-arm64/Packages.gz
  bb506a20b5922391afdc9fc2bbe3ae95 127 main/binary-arm64/Release
 SHA1:
- a08ee99d19b9d7b0e4a43284902cbf2047eec27a 24180 main/binary-amd64/Packages
- 1b38653cacdcb6f28b619cc3ad184af832e5bbf6 8156 main/binary-amd64/Packages.gz
+ 4871853ac1d79a8de1e01fd95e0e553bddadf046 24180 main/binary-amd64/Packages
+ 3c073c1b16e38ac6b381e8522613e36fd967183a 8156 main/binary-amd64/Packages.gz
  fdf51b995a1cd98a0d8bd600e8ba384735be1d6b 127 main/binary-amd64/Release
- d6785820ac646b2608608686c1d2fc1a62d2244f 24149 main/binary-arm64/Packages
- 21d356a982f54adf232ef26a0c1c11ddc830abe4 8167 main/binary-arm64/Packages.gz
+ cc0edbde5607b7af5a18c24627e9b681c42c3a9d 24149 main/binary-arm64/Packages
+ be3f6962abad04dc17e25a5a0373cc38ce2cc241 8166 main/binary-arm64/Packages.gz
  0d1572919fe3f99604581926d7e2ec7f6e59593f 127 main/binary-arm64/Release
 SHA256:
- bba3169c3cbe2f5b48e6362ac396c25338a053ae32b42984660fbc329358c7d9 24180 main/binary-amd64/Packages
- 7e7761d308699334ea648d9c5294fae38cd3e413bf11dc9251993de9404d5361 8156 main/binary-amd64/Packages.gz
+ e7a838be0442d66586fa90455c3b5202dc97da1a9a2737f2ca54d59e3e490e2f 24180 main/binary-amd64/Packages
+ c1f3329c07e76a5c6205df9741a732285caac80aea505402796f442feb2298b6 8156 main/binary-amd64/Packages.gz
  f7458da741f18a1c31b46c9a07c3b165de7115ea04e260c3c0b5db65a290bc9c 127 main/binary-amd64/Release
- a6926091c444a9a33f063858faf21876c02a39f8771337bd7793d691df44ad78 24149 main/binary-arm64/Packages
- ad9556fd0bd5ae8ab0971323c78039c5675bf8b3fa4d55a9bf5fc4e62813168c 8167 main/binary-arm64/Packages.gz
+ b65f70036c0c5a15e2ac3efd11ffce776ab47c9e237ba888c6730df01323bbb5 24149 main/binary-arm64/Packages
+ e4e203f5f1a391b8438177458bfa4d08ac0a8d69a7c5945852066fcda1db1dbc 8166 main/binary-arm64/Packages.gz
  74f4019fb93d41a306f490a52655c9adc9a5d7fb68dfdf56c2d8e55e0a97aed1 127 main/binary-arm64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEElZKnvHpoLnMzN24J55Ndjbm9iyAFAmeD1XMACgkQ55Ndjbm9
-iyA6DQ/9EAAOE/p4+MeTguemspImxVi4D0hlG5SuvnwoFV4hqMsF3Zl/5pdkH5Ve
-JiPNPPcb38s64lKgv9+li/sFD6WdDn8eQULg1JeAdYV+tuJTNRSlSVTSPgrLmJG4
-46dUacvVvraian47FlU413GYvL++EbAgQzgyo+ZP3Ec//EAsZ2dwTElGBDbSWUW5
-RLPBD2LjzMShmJ3Gn818V9Rvg30idUER/G8cq8Vd7ja15FwkGs/AFgHKb89/lSX6
-wBJhVqE8jnGPvDikTuHdTOXIuh+mpiuEJ5ztAf54Ra3J9fMVypY/VXYv2Ms565Bl
-TpKBk9gh//gmr6Rqoo0kL2epAwVAn2oVRVdKYyd8Ofjk3Bv6ckgyM5dsQmtkd5UO
-9WKtoNOYzAGovvRTvJNH+iTM1d+yQ8a2vY5xICyb+WOqlm1jTOn35F3uozmCHpr1
-GzLXNotGxsFlCTOtw6Cb/cBhqeTgJhv44eJyEndm6p7iGJdyCf4Tm2X3TypQxIZ1
-cYX0+vqbbMYICCw+f8R5W5FJSLZXkJChkbF1hzuGNJE3iflMk0u7CDrXNfQ8v5yL
-Yuoe/tDJZsjFqcHmZeUbNKMirBNKZnb/cMZOM7bvmsY1WwdxdLV1ZaeXrVDUjI5v
-FkT5iVjwLAQ40kBmpMUg+cwSjIhB3szxesrgiu/QytrosmZ6/0c=
-=s7oX
+iQIzBAEBCAAdFiEElZKnvHpoLnMzN24J55Ndjbm9iyAFAmeRp9oACgkQ55Ndjbm9
+iyAdPg/+Nu0kUO/EhSStEzpCcqSvsY9FD8dX4VbtMXnbjyUt5l1nfa29l6h6fJPy
+/H2nfL3yr5kj7Qq/cIIuCyAS6dCQQywJW8kgArsQG4WEJ5X1a2osirTnVw7n340z
+I1E1lt2CBHwapdfjyjTORaPGG7mauBLAZJbdW3oZmQaxPatOskQtAOeugQ04y+fb
+gSICYT6Y4C7ejAky+UQ2/PTCoiNB9KQ4wCRuYei0+BpmNuH8e5FAQdyjXaakKDfo
+iK2yR6PW5e6sFP1SibJ9IPpWiRGc+7HlIwv83YXqXxOLlqXXfm9Ox6tnwJQPfXCV
+0qz27VHMu7GJK3gQd4bdzlQeK2MsDTyyK1DlzID+8zRF6eWm8eLv8TsT8C38KPtw
+dmqZO8GUNNQDZV8Mci1eFGGItSB1jAd+9+v9JffnASuw96PphXEHjj2wVMqei+Pt
+J1f/OhW2RVHKkL//koeZxPlJoVgYqSBI28rD5kzCYbR0xeeC0ORCPodiaWpEQhbQ
++aqwhdvhq2ek4DnWuNfNnNwwf+XhHXeU0ZmYgTFx9FnNvXGgaObSetT9PEZbkV5t
+VOFDBIVpFt328T1NFDKVcj4rBll+16cP4Lsw2Nxni+n87Fhef5zj5ixAXPiaMYXV
+LnmF47eXpiRKil6ukGPqi8ZuyU4rQNZblD6l9UccrVrmVrHY0yU=
+=d91i
 -----END PGP SIGNATURE-----

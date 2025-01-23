@@ -6,7 +6,7 @@ jammy|main|amd64: libfq 0.6.1-1PIGSTY~jammy
 jammy|main|amd64: libgroonga-dev 14.1.2-1
 jammy|main|amd64: libgroonga0 14.1.2-1
 jammy|main|amd64: pgcopydb 0.16-1PIGSTY~jammy
-jammy|main|amd64: polardb-for-postgresql 15.10.2.0-35199b32
+jammy|main|amd64: polardb-for-postgresql 15.10.3.0-bbc102d8
 jammy|main|amd64: postgresql-11-topn 2.6.0.citus-1
 jammy|main|amd64: postgresql-12-acl 1.0.4-1PIGSTY~jammy
 jammy|main|amd64: postgresql-12-aggs-for-arrays 1.3.3-1PIGSTY~jammy
@@ -188,6 +188,7 @@ jammy|main|amd64: postgresql-13-login-hook 1.6-1PIGSTY~jammy
 jammy|main|amd64: postgresql-13-lower-quantile 1.0.3-1PIGSTY~jammy
 jammy|main|amd64: postgresql-13-md5hash 1.0.1-1PIGSTY~jammy
 jammy|main|amd64: postgresql-13-noset 0.3.0-1PIGSTY~jammy
+jammy|main|amd64: postgresql-13-omnigres 20250120-1PIGSTY~jammy
 jammy|main|amd64: postgresql-13-omnisketch 1.0.2-1PIGSTY~jammy
 jammy|main|amd64: postgresql-13-pagevis 0.1-1PIGSTY~jammy
 jammy|main|amd64: postgresql-13-passwordcheck-cracklib 3.1.0-1PIGSTY~jammy
@@ -340,11 +341,12 @@ jammy|main|amd64: postgresql-14-login-hook 1.6-1PIGSTY~jammy
 jammy|main|amd64: postgresql-14-lower-quantile 1.0.3-1PIGSTY~jammy
 jammy|main|amd64: postgresql-14-md5hash 1.0.1-1PIGSTY~jammy
 jammy|main|amd64: postgresql-14-noset 0.3.0-1PIGSTY~jammy
+jammy|main|amd64: postgresql-14-omnigres 20250120-1PIGSTY~jammy
 jammy|main|amd64: postgresql-14-omnisketch 1.0.2-1PIGSTY~jammy
 jammy|main|amd64: postgresql-14-pagevis 0.1-1PIGSTY~jammy
 jammy|main|amd64: postgresql-14-passwordcheck-cracklib 3.1.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-14-permuteseq 1.2.2-1PIGSTY~jammy
-jammy|main|amd64: postgresql-14-pg-analytics 0.2.4
+jammy|main|amd64: postgresql-14-pg-analytics 0.3.0
 jammy|main|amd64: postgresql-14-pg-anon 2.0.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-14-pg-arraymath 1.1-1PIGSTY~jammy
 jammy|main|amd64: postgresql-14-pg-auditor 0.2-1PIGSTY~jammy
@@ -381,6 +383,7 @@ jammy|main|amd64: postgresql-14-pg-jsonschema 0.3.2-1PIGSTY~jammy
 jammy|main|amd64: postgresql-14-pg-later 0.3.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-14-pg-math 1.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-14-pg-meta 0.4.0-1PIGSTY~jammy
+jammy|main|amd64: postgresql-14-pg-mooncake 0.1.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-14-pg-net 0.9.2-1PIGSTY~jammy
 jammy|main|amd64: postgresql-14-pg-orphaned 1.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-14-pg-parquet 0.2.0-1PIGSTY~jammy
@@ -396,7 +399,7 @@ jammy|main|amd64: postgresql-14-pg-relusage 0.0.1-1PIGSTY~jammy
 jammy|main|amd64: postgresql-14-pg-safeupdate 1.5-1PIGSTY~jammy
 jammy|main|amd64: postgresql-14-pg-savior 0.0.1-1PIGSTY~jammy
 jammy|main|amd64: postgresql-14-pg-schedoc 0.0.1-1PIGSTY~jammy
-jammy|main|amd64: postgresql-14-pg-search 0.13.2
+jammy|main|amd64: postgresql-14-pg-search 0.14.1
 jammy|main|amd64: postgresql-14-pg-session-jwt 0.1.2-1PIGSTY~jammy
 jammy|main|amd64: postgresql-14-pg-smtp-client 0.2.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-14-pg-sqlog 3.1.9-1PIGSTY~jammy
@@ -505,11 +508,12 @@ jammy|main|amd64: postgresql-15-login-hook 1.6-1PIGSTY~jammy
 jammy|main|amd64: postgresql-15-lower-quantile 1.0.3-1PIGSTY~jammy
 jammy|main|amd64: postgresql-15-md5hash 1.0.1-1PIGSTY~jammy
 jammy|main|amd64: postgresql-15-noset 0.3.0-1PIGSTY~jammy
+jammy|main|amd64: postgresql-15-omnigres 20250120-1PIGSTY~jammy
 jammy|main|amd64: postgresql-15-omnisketch 1.0.2-1PIGSTY~jammy
 jammy|main|amd64: postgresql-15-pagevis 0.1-1PIGSTY~jammy
 jammy|main|amd64: postgresql-15-passwordcheck-cracklib 3.1.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-15-permuteseq 1.2.2-1PIGSTY~jammy
-jammy|main|amd64: postgresql-15-pg-analytics 0.2.4
+jammy|main|amd64: postgresql-15-pg-analytics 0.3.0
 jammy|main|amd64: postgresql-15-pg-anon 2.0.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-15-pg-arraymath 1.1-1PIGSTY~jammy
 jammy|main|amd64: postgresql-15-pg-auditor 0.2-1PIGSTY~jammy
@@ -546,6 +550,7 @@ jammy|main|amd64: postgresql-15-pg-jsonschema 0.3.2-1PIGSTY~jammy
 jammy|main|amd64: postgresql-15-pg-later 0.3.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-15-pg-math 1.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-15-pg-meta 0.4.0-1PIGSTY~jammy
+jammy|main|amd64: postgresql-15-pg-mooncake 0.1.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-15-pg-net 0.9.2-1PIGSTY~jammy
 jammy|main|amd64: postgresql-15-pg-orphaned 1.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-15-pg-parquet 0.2.0-1PIGSTY~jammy
@@ -561,7 +566,7 @@ jammy|main|amd64: postgresql-15-pg-relusage 0.0.1-1PIGSTY~jammy
 jammy|main|amd64: postgresql-15-pg-safeupdate 1.5-1PIGSTY~jammy
 jammy|main|amd64: postgresql-15-pg-savior 0.0.1-1PIGSTY~jammy
 jammy|main|amd64: postgresql-15-pg-schedoc 0.0.1-1PIGSTY~jammy
-jammy|main|amd64: postgresql-15-pg-search 0.13.2
+jammy|main|amd64: postgresql-15-pg-search 0.14.1
 jammy|main|amd64: postgresql-15-pg-session-jwt 0.1.2-1PIGSTY~jammy
 jammy|main|amd64: postgresql-15-pg-smtp-client 0.2.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-15-pg-sqlog 3.1.9-1PIGSTY~jammy
@@ -670,11 +675,12 @@ jammy|main|amd64: postgresql-16-login-hook 1.6-1PIGSTY~jammy
 jammy|main|amd64: postgresql-16-lower-quantile 1.0.3-1PIGSTY~jammy
 jammy|main|amd64: postgresql-16-md5hash 1.0.1-1PIGSTY~jammy
 jammy|main|amd64: postgresql-16-noset 0.3.0-1PIGSTY~jammy
+jammy|main|amd64: postgresql-16-omnigres 20250120-1PIGSTY~jammy
 jammy|main|amd64: postgresql-16-omnisketch 1.0.2-1PIGSTY~jammy
 jammy|main|amd64: postgresql-16-pagevis 0.1-1PIGSTY~jammy
 jammy|main|amd64: postgresql-16-passwordcheck-cracklib 3.1.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-16-permuteseq 1.2.2-1PIGSTY~jammy
-jammy|main|amd64: postgresql-16-pg-analytics 0.2.4
+jammy|main|amd64: postgresql-16-pg-analytics 0.3.0
 jammy|main|amd64: postgresql-16-pg-anon 2.0.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-16-pg-arraymath 1.1-1PIGSTY~jammy
 jammy|main|amd64: postgresql-16-pg-auditor 0.2-1PIGSTY~jammy
@@ -711,6 +717,7 @@ jammy|main|amd64: postgresql-16-pg-jsonschema 0.3.2-1PIGSTY~jammy
 jammy|main|amd64: postgresql-16-pg-later 0.3.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-16-pg-math 1.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-16-pg-meta 0.4.0-1PIGSTY~jammy
+jammy|main|amd64: postgresql-16-pg-mooncake 0.1.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-16-pg-net 0.9.2-1PIGSTY~jammy
 jammy|main|amd64: postgresql-16-pg-orphaned 1.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-16-pg-parquet 0.2.0-1PIGSTY~jammy
@@ -726,7 +733,7 @@ jammy|main|amd64: postgresql-16-pg-relusage 0.0.1-1PIGSTY~jammy
 jammy|main|amd64: postgresql-16-pg-safeupdate 1.5-1PIGSTY~jammy
 jammy|main|amd64: postgresql-16-pg-savior 0.0.1-1PIGSTY~jammy
 jammy|main|amd64: postgresql-16-pg-schedoc 0.0.1-1PIGSTY~jammy
-jammy|main|amd64: postgresql-16-pg-search 0.13.2
+jammy|main|amd64: postgresql-16-pg-search 0.14.1
 jammy|main|amd64: postgresql-16-pg-session-jwt 0.1.2-1PIGSTY~jammy
 jammy|main|amd64: postgresql-16-pg-smtp-client 0.2.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-16-pg-sqlog 3.1.9-1PIGSTY~jammy
@@ -832,11 +839,12 @@ jammy|main|amd64: postgresql-17-login-hook 1.6-1PIGSTY~jammy
 jammy|main|amd64: postgresql-17-lower-quantile 1.0.3-1PIGSTY~jammy
 jammy|main|amd64: postgresql-17-md5hash 1.0.1-1PIGSTY~jammy
 jammy|main|amd64: postgresql-17-noset 0.3.0-1PIGSTY~jammy
+jammy|main|amd64: postgresql-17-omnigres 20250120-1PIGSTY~jammy
 jammy|main|amd64: postgresql-17-omnisketch 1.0.2-1PIGSTY~jammy
 jammy|main|amd64: postgresql-17-pagevis 0.1-1PIGSTY~jammy
 jammy|main|amd64: postgresql-17-passwordcheck-cracklib 3.1.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-17-permuteseq 1.2.2-1PIGSTY~jammy
-jammy|main|amd64: postgresql-17-pg-analytics 0.2.4
+jammy|main|amd64: postgresql-17-pg-analytics 0.3.0
 jammy|main|amd64: postgresql-17-pg-anon 2.0.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-17-pg-arraymath 1.1-1PIGSTY~jammy
 jammy|main|amd64: postgresql-17-pg-auditor 0.2-1PIGSTY~jammy
@@ -873,6 +881,7 @@ jammy|main|amd64: postgresql-17-pg-jsonschema 0.3.2-1PIGSTY~jammy
 jammy|main|amd64: postgresql-17-pg-later 0.3.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-17-pg-math 1.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-17-pg-meta 0.4.0-1PIGSTY~jammy
+jammy|main|amd64: postgresql-17-pg-mooncake 0.1.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-17-pg-net 0.9.2-1PIGSTY~jammy
 jammy|main|amd64: postgresql-17-pg-orphaned 1.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-17-pg-parquet 0.2.0-1PIGSTY~jammy
@@ -888,7 +897,7 @@ jammy|main|amd64: postgresql-17-pg-relusage 0.0.1-1PIGSTY~jammy
 jammy|main|amd64: postgresql-17-pg-safeupdate 1.5-1PIGSTY~jammy
 jammy|main|amd64: postgresql-17-pg-savior 0.0.1-1PIGSTY~jammy
 jammy|main|amd64: postgresql-17-pg-schedoc 0.0.1-1PIGSTY~jammy
-jammy|main|amd64: postgresql-17-pg-search 0.13.2
+jammy|main|amd64: postgresql-17-pg-search 0.14.1
 jammy|main|amd64: postgresql-17-pg-session-jwt 0.1.2-1PIGSTY~jammy
 jammy|main|amd64: postgresql-17-pg-smtp-client 0.2.0-1PIGSTY~jammy
 jammy|main|amd64: postgresql-17-pg-sqlog 3.1.9-1PIGSTY~jammy
@@ -979,6 +988,7 @@ jammy|main|arm64: libfq 0.6.1-1PIGSTY~jammy
 jammy|main|arm64: libgroonga-dev 14.1.2-1
 jammy|main|arm64: libgroonga0 14.1.2-1
 jammy|main|arm64: pgcopydb 0.16-1PIGSTY~jammy
+jammy|main|arm64: polardb-for-postgresql 15.10.3.0-bbc102d8
 jammy|main|arm64: postgresql-12-acl 1.0.4-1PIGSTY~jammy
 jammy|main|arm64: postgresql-12-aggs-for-arrays 1.3.3-1PIGSTY~jammy
 jammy|main|arm64: postgresql-12-aggs-for-vecs 1.3.2-1PIGSTY~jammy
@@ -1156,6 +1166,7 @@ jammy|main|arm64: postgresql-13-login-hook 1.6-1PIGSTY~jammy
 jammy|main|arm64: postgresql-13-lower-quantile 1.0.3-1PIGSTY~jammy
 jammy|main|arm64: postgresql-13-md5hash 1.0.1-1PIGSTY~jammy
 jammy|main|arm64: postgresql-13-noset 0.3.0-1PIGSTY~jammy
+jammy|main|arm64: postgresql-13-omnigres 20250120-1PIGSTY~jammy
 jammy|main|arm64: postgresql-13-omnisketch 1.0.2-1PIGSTY~jammy
 jammy|main|arm64: postgresql-13-pagevis 0.1-1PIGSTY~jammy
 jammy|main|arm64: postgresql-13-passwordcheck-cracklib 3.1.0-1PIGSTY~jammy
@@ -1306,11 +1317,12 @@ jammy|main|arm64: postgresql-14-login-hook 1.6-1PIGSTY~jammy
 jammy|main|arm64: postgresql-14-lower-quantile 1.0.3-1PIGSTY~jammy
 jammy|main|arm64: postgresql-14-md5hash 1.0.1-1PIGSTY~jammy
 jammy|main|arm64: postgresql-14-noset 0.3.0-1PIGSTY~jammy
+jammy|main|arm64: postgresql-14-omnigres 20250120-1PIGSTY~jammy
 jammy|main|arm64: postgresql-14-omnisketch 1.0.2-1PIGSTY~jammy
 jammy|main|arm64: postgresql-14-pagevis 0.1-1PIGSTY~jammy
 jammy|main|arm64: postgresql-14-passwordcheck-cracklib 3.1.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-14-permuteseq 1.2.2-1PIGSTY~jammy
-jammy|main|arm64: postgresql-14-pg-analytics 0.2.4
+jammy|main|arm64: postgresql-14-pg-analytics 0.3.0
 jammy|main|arm64: postgresql-14-pg-anon 2.0.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-14-pg-arraymath 1.1-1PIGSTY~jammy
 jammy|main|arm64: postgresql-14-pg-auditor 0.2-1PIGSTY~jammy
@@ -1347,6 +1359,7 @@ jammy|main|arm64: postgresql-14-pg-jsonschema 0.3.2-1PIGSTY~jammy
 jammy|main|arm64: postgresql-14-pg-later 0.3.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-14-pg-math 1.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-14-pg-meta 0.4.0-1PIGSTY~jammy
+jammy|main|arm64: postgresql-14-pg-mooncake 0.1.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-14-pg-net 0.9.2-1PIGSTY~jammy
 jammy|main|arm64: postgresql-14-pg-orphaned 1.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-14-pg-parquet 0.2.0-1PIGSTY~jammy
@@ -1362,7 +1375,7 @@ jammy|main|arm64: postgresql-14-pg-relusage 0.0.1-1PIGSTY~jammy
 jammy|main|arm64: postgresql-14-pg-safeupdate 1.5-1PIGSTY~jammy
 jammy|main|arm64: postgresql-14-pg-savior 0.0.1-1PIGSTY~jammy
 jammy|main|arm64: postgresql-14-pg-schedoc 0.0.1-1PIGSTY~jammy
-jammy|main|arm64: postgresql-14-pg-search 0.13.2
+jammy|main|arm64: postgresql-14-pg-search 0.14.1
 jammy|main|arm64: postgresql-14-pg-session-jwt 0.1.2-1PIGSTY~jammy
 jammy|main|arm64: postgresql-14-pg-smtp-client 0.2.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-14-pg-sqlog 3.1.9-1PIGSTY~jammy
@@ -1469,11 +1482,12 @@ jammy|main|arm64: postgresql-15-login-hook 1.6-1PIGSTY~jammy
 jammy|main|arm64: postgresql-15-lower-quantile 1.0.3-1PIGSTY~jammy
 jammy|main|arm64: postgresql-15-md5hash 1.0.1-1PIGSTY~jammy
 jammy|main|arm64: postgresql-15-noset 0.3.0-1PIGSTY~jammy
+jammy|main|arm64: postgresql-15-omnigres 20250120-1PIGSTY~jammy
 jammy|main|arm64: postgresql-15-omnisketch 1.0.2-1PIGSTY~jammy
 jammy|main|arm64: postgresql-15-pagevis 0.1-1PIGSTY~jammy
 jammy|main|arm64: postgresql-15-passwordcheck-cracklib 3.1.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-15-permuteseq 1.2.2-1PIGSTY~jammy
-jammy|main|arm64: postgresql-15-pg-analytics 0.2.4
+jammy|main|arm64: postgresql-15-pg-analytics 0.3.0
 jammy|main|arm64: postgresql-15-pg-anon 2.0.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-15-pg-arraymath 1.1-1PIGSTY~jammy
 jammy|main|arm64: postgresql-15-pg-auditor 0.2-1PIGSTY~jammy
@@ -1510,6 +1524,7 @@ jammy|main|arm64: postgresql-15-pg-jsonschema 0.3.2-1PIGSTY~jammy
 jammy|main|arm64: postgresql-15-pg-later 0.3.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-15-pg-math 1.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-15-pg-meta 0.4.0-1PIGSTY~jammy
+jammy|main|arm64: postgresql-15-pg-mooncake 0.1.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-15-pg-net 0.9.2-1PIGSTY~jammy
 jammy|main|arm64: postgresql-15-pg-orphaned 1.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-15-pg-parquet 0.2.0-1PIGSTY~jammy
@@ -1525,7 +1540,7 @@ jammy|main|arm64: postgresql-15-pg-relusage 0.0.1-1PIGSTY~jammy
 jammy|main|arm64: postgresql-15-pg-safeupdate 1.5-1PIGSTY~jammy
 jammy|main|arm64: postgresql-15-pg-savior 0.0.1-1PIGSTY~jammy
 jammy|main|arm64: postgresql-15-pg-schedoc 0.0.1-1PIGSTY~jammy
-jammy|main|arm64: postgresql-15-pg-search 0.13.2
+jammy|main|arm64: postgresql-15-pg-search 0.14.1
 jammy|main|arm64: postgresql-15-pg-session-jwt 0.1.2-1PIGSTY~jammy
 jammy|main|arm64: postgresql-15-pg-smtp-client 0.2.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-15-pg-sqlog 3.1.9-1PIGSTY~jammy
@@ -1632,11 +1647,12 @@ jammy|main|arm64: postgresql-16-login-hook 1.6-1PIGSTY~jammy
 jammy|main|arm64: postgresql-16-lower-quantile 1.0.3-1PIGSTY~jammy
 jammy|main|arm64: postgresql-16-md5hash 1.0.1-1PIGSTY~jammy
 jammy|main|arm64: postgresql-16-noset 0.3.0-1PIGSTY~jammy
+jammy|main|arm64: postgresql-16-omnigres 20250120-1PIGSTY~jammy
 jammy|main|arm64: postgresql-16-omnisketch 1.0.2-1PIGSTY~jammy
 jammy|main|arm64: postgresql-16-pagevis 0.1-1PIGSTY~jammy
 jammy|main|arm64: postgresql-16-passwordcheck-cracklib 3.1.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-16-permuteseq 1.2.2-1PIGSTY~jammy
-jammy|main|arm64: postgresql-16-pg-analytics 0.2.4
+jammy|main|arm64: postgresql-16-pg-analytics 0.3.0
 jammy|main|arm64: postgresql-16-pg-anon 2.0.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-16-pg-arraymath 1.1-1PIGSTY~jammy
 jammy|main|arm64: postgresql-16-pg-auditor 0.2-1PIGSTY~jammy
@@ -1673,6 +1689,7 @@ jammy|main|arm64: postgresql-16-pg-jsonschema 0.3.2-1PIGSTY~jammy
 jammy|main|arm64: postgresql-16-pg-later 0.3.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-16-pg-math 1.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-16-pg-meta 0.4.0-1PIGSTY~jammy
+jammy|main|arm64: postgresql-16-pg-mooncake 0.1.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-16-pg-net 0.9.2-1PIGSTY~jammy
 jammy|main|arm64: postgresql-16-pg-orphaned 1.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-16-pg-parquet 0.2.0-1PIGSTY~jammy
@@ -1688,7 +1705,7 @@ jammy|main|arm64: postgresql-16-pg-relusage 0.0.1-1PIGSTY~jammy
 jammy|main|arm64: postgresql-16-pg-safeupdate 1.5-1PIGSTY~jammy
 jammy|main|arm64: postgresql-16-pg-savior 0.0.1-1PIGSTY~jammy
 jammy|main|arm64: postgresql-16-pg-schedoc 0.0.1-1PIGSTY~jammy
-jammy|main|arm64: postgresql-16-pg-search 0.13.2
+jammy|main|arm64: postgresql-16-pg-search 0.14.1
 jammy|main|arm64: postgresql-16-pg-session-jwt 0.1.2-1PIGSTY~jammy
 jammy|main|arm64: postgresql-16-pg-smtp-client 0.2.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-16-pg-sqlog 3.1.9-1PIGSTY~jammy
@@ -1793,11 +1810,12 @@ jammy|main|arm64: postgresql-17-login-hook 1.6-1PIGSTY~jammy
 jammy|main|arm64: postgresql-17-lower-quantile 1.0.3-1PIGSTY~jammy
 jammy|main|arm64: postgresql-17-md5hash 1.0.1-1PIGSTY~jammy
 jammy|main|arm64: postgresql-17-noset 0.3.0-1PIGSTY~jammy
+jammy|main|arm64: postgresql-17-omnigres 20250120-1PIGSTY~jammy
 jammy|main|arm64: postgresql-17-omnisketch 1.0.2-1PIGSTY~jammy
 jammy|main|arm64: postgresql-17-pagevis 0.1-1PIGSTY~jammy
 jammy|main|arm64: postgresql-17-passwordcheck-cracklib 3.1.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-17-permuteseq 1.2.2-1PIGSTY~jammy
-jammy|main|arm64: postgresql-17-pg-analytics 0.2.4
+jammy|main|arm64: postgresql-17-pg-analytics 0.3.0
 jammy|main|arm64: postgresql-17-pg-anon 2.0.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-17-pg-arraymath 1.1-1PIGSTY~jammy
 jammy|main|arm64: postgresql-17-pg-auditor 0.2-1PIGSTY~jammy
@@ -1834,6 +1852,7 @@ jammy|main|arm64: postgresql-17-pg-jsonschema 0.3.2-1PIGSTY~jammy
 jammy|main|arm64: postgresql-17-pg-later 0.3.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-17-pg-math 1.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-17-pg-meta 0.4.0-1PIGSTY~jammy
+jammy|main|arm64: postgresql-17-pg-mooncake 0.1.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-17-pg-net 0.9.2-1PIGSTY~jammy
 jammy|main|arm64: postgresql-17-pg-orphaned 1.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-17-pg-parquet 0.2.0-1PIGSTY~jammy
@@ -1849,7 +1868,7 @@ jammy|main|arm64: postgresql-17-pg-relusage 0.0.1-1PIGSTY~jammy
 jammy|main|arm64: postgresql-17-pg-safeupdate 1.5-1PIGSTY~jammy
 jammy|main|arm64: postgresql-17-pg-savior 0.0.1-1PIGSTY~jammy
 jammy|main|arm64: postgresql-17-pg-schedoc 0.0.1-1PIGSTY~jammy
-jammy|main|arm64: postgresql-17-pg-search 0.13.2
+jammy|main|arm64: postgresql-17-pg-search 0.14.1
 jammy|main|arm64: postgresql-17-pg-session-jwt 0.1.2-1PIGSTY~jammy
 jammy|main|arm64: postgresql-17-pg-smtp-client 0.2.0-1PIGSTY~jammy
 jammy|main|arm64: postgresql-17-pg-sqlog 3.1.9-1PIGSTY~jammy

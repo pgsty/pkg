@@ -21,60 +21,85 @@ Description: fast and reliable load balancing reverse proxy
  has request blocking capabilities and provides interface to display server
  status.
 
+Package: polardb-for-postgresql
+Maintainer: mrdrivingduck <mrdrivingduck@gmail.com>
+Depends: libicu66 | libicu70 | libicu74, libkrb5-3, libldap-2.4-2 | libldap-2.5-0 | libldap2
+Homepage: https://github.com/ApsaraDB/PolarDB-for-PostgreSQL
+Priority: optional
+Section: database
+Filename: pool/main/p/polardb-for-postgresql/polardb-for-postgresql_15.10.3.0-bbc102d8_arm64.deb
+Size: 80746496
+SHA256: 7ba3baf0f7e5f6cbea0b6cc242c6ccc7e045a3a27cadf34fe1092c0b28736ba9
+SHA1: 565729a7443e0ef57aef15ba2d9af08b852813c8
+MD5sum: aff2139370191147996fdd1692bc5387
+Description: PolarDB is an advanced Object-Relational database management system
+ (DBMS) that supports almost all SQL constructs (including
+ transactions, subselects and user-defined types and functions). The
+ PolarDB package includes the client programs and libraries that
+ you'll need to access a PolarDB DBMS server.  These PolarDB
+ client programs are programs that directly manipulate the internal
+ structure of PolarDB databases on a PolarDB server. These client
+ programs can be located on the same machine with the PolarDB
+ server, or may be on a remote machine which accesses a PolarDB
+ server over a network connection. This package contains the command-line
+ utilities for managing PolarDB databases on a PolarDB server.
+Version: 15.10.3.0-bbc102d8
+Architecture: arm64
+
 Package: postgresql-14-pg-search
-Version: 0.13.2
+Version: 0.14.1
 Architecture: arm64
 Depends: postgresql-14
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.13.2_arm64.deb
-Size: 45516520
-SHA256: f27328d45d18b897d3abe3f18bf6cd23a8731c00edb2c6dbd71946531a82150e
-SHA1: c511858a53f4789cbc993b0236807da4cc891667
-MD5sum: 7a0b69bc5b57604c38692a01e8482650
+Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.14.1_arm64.deb
+Size: 46191692
+SHA256: 51c0000072ba06afa7ce2ea3d8aa76f1f1d63491e99f4730e3d3e598b2607313
+SHA1: 59d52bbc8f4d943656943d6fbc82f97bd1e2c18b
+MD5sum: d76a7786a3d8c263f6c723a01c4abdc1
 Description: Postgres for Search and Analytics
 
 Package: postgresql-15-pg-search
-Version: 0.13.2
+Version: 0.14.1
 Architecture: arm64
 Depends: postgresql-15
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.13.2_arm64.deb
-Size: 45510968
-SHA256: aaae684922a95d4cc84d460e50fa3ef5f0d41e29fc700b4811e964996f74e4fa
-SHA1: d9c482e5cabfd0a08302041c279c47c81230f4f2
-MD5sum: 4e3779ce3ece4266fb3ab7d20457544f
+Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.14.1_arm64.deb
+Size: 46195040
+SHA256: 2ddcb111c52d056440c145a93d5c6a2677b9d568ae1a976a89b2d8c077e607d1
+SHA1: 867e326c093ba0af3167b54f4ab7283cd0599919
+MD5sum: 344e49b0d0d4a0f5ce089651a7b6e35c
 Description: Postgres for Search and Analytics
 
 Package: postgresql-16-pg-search
-Version: 0.13.2
+Version: 0.14.1
 Architecture: arm64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.13.2_arm64.deb
-Size: 45512548
-SHA256: d1ed8c60a2682afab93cab065f65662b6155ac278b8631351f608c6d1a7a3b60
-SHA1: 90205237f092f26cb9432439a176d2342aacea84
-MD5sum: 235374872662fc66d311fb6eb5e7b52d
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.14.1_arm64.deb
+Size: 46197108
+SHA256: c0771d303cc1d4f9486e2214be6d76d4d7b448a517a0707b2b87209f2d17ae4e
+SHA1: 9d567aec4a99252e66d1fe86b97443e10e3f9705
+MD5sum: 0ed303759d5f80fe24d59c12fe7d3e03
 Description: Postgres for Search and Analytics
 
 Package: postgresql-17-pg-search
-Version: 0.13.2
+Version: 0.14.1
 Architecture: arm64
 Depends: postgresql-17
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.13.2_arm64.deb
-Size: 45512100
-SHA256: 967239f04aedd6a95fddb0fde9a086403feb938d316d144437cfa37e7efe5abf
-SHA1: f18c9383a8b46321a31f38c03d6626cda194f050
-MD5sum: 4d1b80f1724373c1752d1dcf1803eccf
+Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.14.1_arm64.deb
+Size: 46195012
+SHA256: fada43fcac6c4728bf34150f456b39016c90ef5f2eee25b7eb94227fe65ff125
+SHA1: c07f7039794e388012c5653f239f9dc276b81be1
+MD5sum: b853ee1471980048463234b591042c5b
 Description: Postgres for Search and Analytics
 
 Package: redis

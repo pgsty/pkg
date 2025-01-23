@@ -4788,7 +4788,7 @@ data:
         rationale: Present in the repository
   artifacts:
     rpms:
-    - PolarDB-0:15.10.2.0-35199b32.el9.x86_64
+    - PolarDB-0:15.10.3.0-bbc102d8.el9.x86_64
     - acl_12-0:1.0.4-1PIGSTY.el9.x86_64
     - acl_12-llvmjit-0:1.0.4-1PIGSTY.el9.x86_64
     - acl_13-0:1.0.4-1PIGSTY.el9.x86_64
@@ -5238,9 +5238,13 @@ data:
     - pg4ml_17-0:2.0-1PIGSTY.el9.x86_64
     - pg_analytics_13-0:0.2.1-1.el9.x86_64
     - pg_analytics_14-0:0.2.4-1.el9.x86_64
+    - pg_analytics_14-0:0.3.0-1.el9.x86_64
     - pg_analytics_15-0:0.2.4-1.el9.x86_64
+    - pg_analytics_15-0:0.3.0-1.el9.x86_64
     - pg_analytics_16-0:0.2.4-1.el9.x86_64
+    - pg_analytics_16-0:0.3.0-1.el9.x86_64
     - pg_analytics_17-0:0.2.4-1.el9.x86_64
+    - pg_analytics_17-0:0.3.0-1.el9.x86_64
     - pg_anon_13-0:2.0.0-1PIGSTY.el9.x86_64
     - pg_anon_14-0:2.0.0-1PIGSTY.el9.x86_64
     - pg_anon_15-0:2.0.0-1PIGSTY.el9.x86_64
@@ -5677,9 +5681,13 @@ data:
     - pg_schedoc_16-0:0.0.1-1PIGSTY.el9.x86_64
     - pg_schedoc_17-0:0.0.1-1PIGSTY.el9.x86_64
     - pg_search_14-0:0.13.2-1.el9.x86_64
+    - pg_search_14-0:0.14.1-1.el9.x86_64
     - pg_search_15-0:0.13.2-1.el9.x86_64
+    - pg_search_15-0:0.14.1-1.el9.x86_64
     - pg_search_16-0:0.13.2-1.el9.x86_64
+    - pg_search_16-0:0.14.1-1.el9.x86_64
     - pg_search_17-0:0.13.2-1.el9.x86_64
+    - pg_search_17-0:0.14.1-1.el9.x86_64
     - pg_session_jwt_14-0:0.1.2-1PIGSTY.el9.x86_64
     - pg_session_jwt_15-0:0.1.2-1PIGSTY.el9.x86_64
     - pg_session_jwt_16-0:0.1.2-1PIGSTY.el9.x86_64

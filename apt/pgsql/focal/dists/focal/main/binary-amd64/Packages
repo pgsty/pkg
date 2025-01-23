@@ -44,11 +44,11 @@ Depends: libicu66 | libicu70 | libicu74, libkrb5-3, libldap-2.4-2 | libldap-2.5-
 Homepage: https://github.com/ApsaraDB/PolarDB-for-PostgreSQL
 Priority: optional
 Section: database
-Filename: pool/main/p/polardb-for-postgresql/polardb-for-postgresql_15.10.2.0-35199b32_amd64.deb
-Size: 85321108
-SHA256: 3298b1a1853964f39162112d9221b21544d7ea76254084e2996c43e54832239d
-SHA1: d4b53614977cb43bc361c8a30bbdd377f59b072e
-MD5sum: 5e3dfa538c12afd7c72aeed89125e604
+Filename: pool/main/p/polardb-for-postgresql/polardb-for-postgresql_15.10.3.0-bbc102d8_amd64.deb
+Size: 85451696
+SHA256: 6aec70cd2c18f335d1f3404298d43305db1c0aebd6e407d8ac98aee2fc2d6ade
+SHA1: c9c4403726b4cd96b64a9047c57313be8c6100ea
+MD5sum: de6cff310ec334c5683d76d78e1693f5
 Description: PolarDB is an advanced Object-Relational database management system
  (DBMS) that supports almost all SQL constructs (including
  transactions, subselects and user-defined types and functions). The
@@ -60,7 +60,7 @@ Description: PolarDB is an advanced Object-Relational database management system
  server, or may be on a remote machine which accesses a PolarDB
  server over a network connection. This package contains the command-line
  utilities for managing PolarDB databases on a PolarDB server.
-Version: 15.10.2.0-35199b32
+Version: 15.10.3.0-bbc102d8
 Architecture: amd64
 
 Package: postgresql-11-topn
@@ -196,17 +196,17 @@ Description: sharding and distributed joins for PostgreSQL
  is included which handles queries and modifications against sharded tables.
 
 Package: postgresql-14-pg-search
-Version: 0.13.2
+Version: 0.14.1
 Architecture: amd64
 Depends: postgresql-14
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.13.2_amd64.deb
-Size: 45847844
-SHA256: 235d619eca9ab7128cccd22233e890b8e3d6f3b8b037dfbba53b136d18901e55
-SHA1: b980560dda5a942ae9f449a596f0ebf7155ef71d
-MD5sum: ac2c9b52089b43bcedee534cce15f6c5
+Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.14.1_amd64.deb
+Size: 46608456
+SHA256: df99094f3561fcf27cd94b26609175c4a318b4b1fba1318b5e3a5fd71b331826
+SHA1: c1dac11f2fcfce13e2f615ef0469c8fa8f4492ff
+MD5sum: be0b52f618aab24489669837e7f472f0
 Description: Postgres for Search and Analytics
 
 Package: postgresql-14-topn
@@ -254,17 +254,17 @@ Description: sharding and distributed joins for PostgreSQL
  is included which handles queries and modifications against sharded tables.
 
 Package: postgresql-15-pg-search
-Version: 0.13.2
+Version: 0.14.1
 Architecture: amd64
 Depends: postgresql-15
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.13.2_amd64.deb
-Size: 45848484
-SHA256: 2d9c086a5ce118d769068169fd259d06d6d952115abff84f738c87017cf0a0e7
-SHA1: ceedc085ae9b81e883c4f56f07c1cb12aae41ced
-MD5sum: 44e2961ce3ccfeba0f2aeb210a558cd4
+Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.14.1_amd64.deb
+Size: 46606000
+SHA256: cd321e1d90dc2220f9594fc70ed5ab7f9d823947a499641da80abba77ca1af7a
+SHA1: 6411bb01451e9bde2d114d569a3e3c2d14a37a12
+MD5sum: f60e53202521ae18cac9e68a14b84917
 Description: Postgres for Search and Analytics
 
 Package: postgresql-15-topn
@@ -312,17 +312,17 @@ Description: sharding and distributed joins for PostgreSQL
  is included which handles queries and modifications against sharded tables.
 
 Package: postgresql-16-pg-search
-Version: 0.13.2
+Version: 0.14.1
 Architecture: amd64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.13.2_amd64.deb
-Size: 45847612
-SHA256: f545556905738802f191a4985a2d838433c68538cb600b81ced580e07021fa30
-SHA1: e71a0fa38b220bc7aab98241e0d80ba968d33d5f
-MD5sum: c5a854a5fb23c950c3236f11e9293435
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.14.1_amd64.deb
+Size: 46614048
+SHA256: 37d20907b9bc15b751a54f7ac63685c485487053e584e2af28b9859f413d4e1b
+SHA1: 3b80209c3865204a07907effc8a60e99d553b272
+MD5sum: 44381a891d02f3a897ec1f656b0164e2
 Description: Postgres for Search and Analytics
 
 Package: postgresql-16-topn
@@ -346,17 +346,17 @@ Description: Counter Based Implementation for top-n Approximation
  run real-time top-n queries on aggregated data.
 
 Package: postgresql-17-pg-search
-Version: 0.13.2
+Version: 0.14.1
 Architecture: amd64
 Depends: postgresql-17
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.13.2_amd64.deb
-Size: 45848672
-SHA256: bf2757050f111c03976682473d47e7a365e43f35812fd0731b6abcd7c43f8a29
-SHA1: 72df14a253a32f5a018f6c1f1d1580b0d1224d17
-MD5sum: 602abdb2381413ffab2ba06ab706108e
+Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.14.1_amd64.deb
+Size: 46610896
+SHA256: 6aba54e9888d9f7efb352e42806c0ba177042deb99259d1bffc30e698310f137
+SHA1: 40a6b6b134f3e32129751c501d03be42bcb2ba6b
+MD5sum: 7af498d4d6790148df44e355b3b77273
 Description: Postgres for Search and Analytics
 
 Package: redis

@@ -38,6 +38,31 @@ Description: fast and reliable load balancing reverse proxy
  has request blocking capabilities and provides interface to display server
  status.
 
+Package: polardb-for-postgresql
+Maintainer: mrdrivingduck <mrdrivingduck@gmail.com>
+Depends: libicu66 | libicu70 | libicu74, libkrb5-3, libldap-2.4-2 | libldap-2.5-0 | libldap2
+Homepage: https://github.com/ApsaraDB/PolarDB-for-PostgreSQL
+Priority: optional
+Section: database
+Filename: pool/main/p/polardb-for-postgresql/polardb-for-postgresql_15.10.3.0-bbc102d8_amd64.deb
+Size: 92433748
+SHA256: 8c4aa7a57324cc8b36072c484e79211e519ad72ed3f96690075b067dab3365fa
+SHA1: 9f5b5865d08958b415de78d264c86f18e9646b32
+MD5sum: 681b57b5becd0d7768a4279a08d76e85
+Description: PolarDB is an advanced Object-Relational database management system
+ (DBMS) that supports almost all SQL constructs (including
+ transactions, subselects and user-defined types and functions). The
+ PolarDB package includes the client programs and libraries that
+ you'll need to access a PolarDB DBMS server.  These PolarDB
+ client programs are programs that directly manipulate the internal
+ structure of PolarDB databases on a PolarDB server. These client
+ programs can be located on the same machine with the PolarDB
+ server, or may be on a remote machine which accesses a PolarDB
+ server over a network connection. This package contains the command-line
+ utilities for managing PolarDB databases on a PolarDB server.
+Version: 15.10.3.0-bbc102d8
+Architecture: amd64
+
 Package: postgresql-11-topn
 Source: topn
 Version: 2.6.0.citus-1
@@ -170,6 +195,20 @@ Description: sharding and distributed joins for PostgreSQL
  schemas, and keep track of shard health. An advanced distributed planner
  is included which handles queries and modifications against sharded tables.
 
+Package: postgresql-14-pg-search
+Version: 0.14.1
+Architecture: amd64
+Depends: postgresql-14
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.14.1_amd64.deb
+Size: 46612412
+SHA256: fb1ce0f861f3c4f8663fc222e997a48d304ef408d218df3dc87c53673a724874
+SHA1: 56f9cc5846129a410dd2293e3a42c2c6436454cc
+MD5sum: 865c92a5f357dde8013b65e45f5db2f9
+Description: Postgres for Search and Analytics
+
 Package: postgresql-14-topn
 Source: topn
 Version: 2.6.0.citus-1
@@ -213,6 +252,20 @@ Description: sharding and distributed joins for PostgreSQL
  placed on remote worker nodes. Citus can replicate shards, update their
  schemas, and keep track of shard health. An advanced distributed planner
  is included which handles queries and modifications against sharded tables.
+
+Package: postgresql-15-pg-search
+Version: 0.14.1
+Architecture: amd64
+Depends: postgresql-15
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.14.1_amd64.deb
+Size: 46612340
+SHA256: 28e49890ad3bd91109e7ccf3e561d2c8bc10fad8920c213a112be24aa3a5c709
+SHA1: aa4cd61e73b876990e4b0a5f0d18a4771da8a952
+MD5sum: 5698b9a53be7b4a6ac25be210c895608
+Description: Postgres for Search and Analytics
 
 Package: postgresql-15-topn
 Source: topn
@@ -258,6 +311,20 @@ Description: sharding and distributed joins for PostgreSQL
  schemas, and keep track of shard health. An advanced distributed planner
  is included which handles queries and modifications against sharded tables.
 
+Package: postgresql-16-pg-search
+Version: 0.14.1
+Architecture: amd64
+Depends: postgresql-16
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.14.1_amd64.deb
+Size: 46617836
+SHA256: a27fab2ef7310700ebe28477cbbb5ae6307492836e6bf1c2a86f3f45b8ac57b5
+SHA1: ba5b6d8955438dfd224add76be1ddc853d01af04
+MD5sum: bff0b2a3fb2f2742efe96575cb59f11c
+Description: Postgres for Search and Analytics
+
 Package: postgresql-16-topn
 Source: topn
 Version: 2.6.0.citus-1
@@ -277,6 +344,20 @@ Description: Counter Based Implementation for top-n Approximation
  This extension is used to make approximations on top-n. It uses JSONB
  objects to store and read the data frequency and provides a chance to
  run real-time top-n queries on aggregated data.
+
+Package: postgresql-17-pg-search
+Version: 0.14.1
+Architecture: amd64
+Depends: postgresql-17
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.14.1_amd64.deb
+Size: 46611948
+SHA256: c97e815c2a857b02fbf3f5bef463eb6c6f7a5ef3bad5e8201ba37e3f20f66ff6
+SHA1: 26217d5c6076dcad5c805f7f01125edaa5e0aa84
+MD5sum: d3f081444a255eedc9b184f9f09efafb
+Description: Postgres for Search and Analytics
 
 Package: redis
 Version: 6:7.2.6-1rl1~bullseye1
