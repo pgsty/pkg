@@ -17,21 +17,21 @@ Description: cri-dockerd is a lightweight implementation of the CRI specificatio
 
 Package: groonga-tokenizer-mecab
 Source: groonga
-Version: 14.1.2-1
+Version: 15.0.0-1.ubuntu22.04.1
 Architecture: amd64
 Maintainer: Groonga Project <packages@groonga.org>
 Installed-Size: 55
-Depends: libc6 (>= 2.4), libgroonga0 (= 14.1.2-1), libmecab2 (>= 0.996), mecab-naist-jdic | mecab-jumandic-utf8
+Depends: libc6 (>= 2.4), libgroonga0 (= 15.0.0-1.ubuntu22.04.1), libmecab2 (>= 0.996), mecab-naist-jdic | mecab-jumandic-utf8
 Breaks: libgroonga-tokenizer-mecab (<< 1.2.0-1)
 Replaces: libgroonga-tokenizer-mecab (<< 1.2.0-1)
 Homepage: https://groonga.org/
 Priority: optional
 Section: libs
-Filename: pool/main/g/groonga/groonga-tokenizer-mecab_14.1.2-1_amd64.deb
-Size: 17776
-SHA256: a322e5dc4314cc5f89b151515ecce790f20d2f0c714e39ba75e831403bcc48b2
-SHA1: 173bae1b63955cc6b01a96196e40393c32bcfd5f
-MD5sum: 6c6dae5290790be6e96d1db80fe930b8
+Filename: pool/main/g/groonga/groonga-tokenizer-mecab_15.0.0-1.ubuntu22.04.1_amd64.deb
+Size: 17884
+SHA256: e433b89a7721d4f622516cd7e164fd6f32fa34c3bf7b847cf8e583d4348d60bd
+SHA1: 3041aaa3427c7ce4d5532f3f38009376293f98fd
+MD5sum: ca155d03ef97aeef81f6501f587e3ef9
 Description: MeCab tokenizer for Groonga
  Groonga is an open-source fulltext search engine and column store.
  It lets you write high-performance applications that requires fulltext search.
@@ -105,22 +105,22 @@ Description: A wrapper library for Firebird's C API, loosely based on PostgreSQL
 
 Package: libgroonga-dev
 Source: groonga
-Version: 14.1.2-1
+Version: 15.0.0-1.ubuntu22.04.1
 Architecture: amd64
 Maintainer: Groonga Project <packages@groonga.org>
-Installed-Size: 513
-Depends: libgroonga0 (= 14.1.2-1), libmsgpack-dev, pkg-config
+Installed-Size: 522
+Depends: libgroonga0 (= 15.0.0-1.ubuntu22.04.1), libmsgpack-dev, pkg-config
 Breaks: libgroonga (<< 1.2.0-1)
 Replaces: libgroonga (<< 1.2.0-1)
 Multi-Arch: same
 Homepage: https://groonga.org/
 Priority: optional
 Section: libdevel
-Filename: pool/main/g/groonga/libgroonga-dev_14.1.2-1_amd64.deb
-Size: 67656
-SHA256: 4e1c0d226c0b60bf8f5b824ad206febd7f405ccad4f5dbf39bd454597d4d818c
-SHA1: 521dcd3470e7af67839d9c901d8c08e04bad4382
-MD5sum: ec29214e028e08f3822c4375e9ceb1f2
+Filename: pool/main/g/groonga/libgroonga-dev_15.0.0-1.ubuntu22.04.1_amd64.deb
+Size: 68650
+SHA256: 571828a5b26f443f4557acb2043267aa13b0c569579156501351309675b31dd0
+SHA1: b67952cab73343a93c66d4df5ad6da419b3d9d39
+MD5sum: aa09a5039d4a659802a93d41174e18b3
 Description: Development files to use Groonga as a library
  Groonga is an open-source fulltext search engine and column store.
  It lets you write high-performance applications that requires fulltext search.
@@ -129,10 +129,10 @@ Description: Development files to use Groonga as a library
 
 Package: libgroonga0
 Source: groonga
-Version: 14.1.2-1
+Version: 15.0.0-1.ubuntu22.04.1
 Architecture: amd64
 Maintainer: Groonga Project <packages@groonga.org>
-Installed-Size: 10301
+Installed-Size: 10954
 Depends: libc6 (>= 2.35), libgcc-s1 (>= 3.3.1), libgomp1 (>= 4.9), liblz4-1 (>= 0.0~r130), libmsgpackc2 (>= 2.1.0), libsimdjson9 (>= 1.0.2), libstdc++6 (>= 11), libxxhash0 (>= 0.8.0), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.2.0)
 Breaks: libgroonga (<< 1.2.0-1)
 Replaces: libgroonga (<< 1.2.0-1)
@@ -140,11 +140,11 @@ Multi-Arch: same
 Homepage: https://groonga.org/
 Priority: optional
 Section: libs
-Filename: pool/main/g/groonga/libgroonga0_14.1.2-1_amd64.deb
-Size: 2671438
-SHA256: 0f644e45ccf734d688dd43ebabf5cc4dfb0ff5aa36f9b4a6c0224ab9bc53aa1a
-SHA1: 4bd9a5e7053bfaa7aa8cbc166d9eebece3187c5f
-MD5sum: 76f1de4d5d677a22925fb74dfb3cf2b4
+Filename: pool/main/g/groonga/libgroonga0_15.0.0-1.ubuntu22.04.1_amd64.deb
+Size: 2823472
+SHA256: 0e3f3ce639a8771f407ac80fd0f7035b72ecf557b66bf3379526a06be95a446b
+SHA1: 6be40ab187a00c1ac91caaf3d195f5d554e3a3f4
+MD5sum: 86d3b44612dc6707f41725cf675b748c
 Description: Library files for Groonga
  Groonga is an open-source fulltext search engine and column store.
  It lets you write high-performance applications that requires fulltext search.

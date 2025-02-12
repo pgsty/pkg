@@ -15,6 +15,29 @@ SHA1: ed953542f294299847a3fa4bde66f999f1fcf469
 MD5sum: 5047a9ce1d5929d675188b470d5ee5d7
 Description: cri-dockerd is a lightweight implementation of the CRI specification which talks to docker.
 
+Package: groonga-tokenizer-mecab
+Source: groonga
+Version: 15.0.0-1.ubuntu20.04.1
+Architecture: amd64
+Maintainer: Groonga Project <packages@groonga.org>
+Installed-Size: 55
+Depends: libc6 (>= 2.4), libgroonga0 (= 15.0.0-1.ubuntu20.04.1), libmecab2 (>= 0.996), mecab-naist-jdic | mecab-jumandic-utf8
+Breaks: libgroonga-tokenizer-mecab (<< 1.2.0-1)
+Replaces: libgroonga-tokenizer-mecab (<< 1.2.0-1)
+Homepage: https://groonga.org/
+Priority: optional
+Section: libs
+Filename: pool/main/g/groonga/groonga-tokenizer-mecab_15.0.0-1.ubuntu20.04.1_amd64.deb
+Size: 16984
+SHA256: 3a12bee4487f6d128938ddddc0e3fff41af45c34de30b324408a591b58fe99a1
+SHA1: e407d7deb9fc66b701ca9d8c946077f871d5ac62
+MD5sum: 3e17f0de3db4bb297f765853a214857b
+Description: MeCab tokenizer for Groonga
+ Groonga is an open-source fulltext search engine and column store.
+ It lets you write high-performance applications that requires fulltext search.
+ .
+ This package provides MeCab tokenizer.
+
 Package: haproxy
 Version: 3.0.6-3ppa1~focal
 Architecture: amd64
@@ -37,6 +60,54 @@ Description: fast and reliable load balancing reverse proxy
  cookies, load balancing, header addition, modification, deletion both ways. It
  has request blocking capabilities and provides interface to display server
  status.
+
+Package: libgroonga-dev
+Source: groonga
+Version: 15.0.0-1.ubuntu20.04.1
+Architecture: amd64
+Maintainer: Groonga Project <packages@groonga.org>
+Installed-Size: 530
+Depends: libgroonga0 (= 15.0.0-1.ubuntu20.04.1), libmsgpack-dev, pkg-config
+Breaks: libgroonga (<< 1.2.0-1)
+Replaces: libgroonga (<< 1.2.0-1)
+Multi-Arch: same
+Homepage: https://groonga.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/g/groonga/libgroonga-dev_15.0.0-1.ubuntu20.04.1_amd64.deb
+Size: 68048
+SHA256: a5518cbe9b0d648b94ae88d212487342eecffd0333e5e6e5740c34653487e615
+SHA1: 78645f8fe3c1e6cc1f6e5e679084116392f9ce96
+MD5sum: 0d636c8710b5c6d512f6a935e027361d
+Description: Development files to use Groonga as a library
+ Groonga is an open-source fulltext search engine and column store.
+ It lets you write high-performance applications that requires fulltext search.
+ .
+ This package provides header files to use Groonga as a library.
+
+Package: libgroonga0
+Source: groonga
+Version: 15.0.0-1.ubuntu20.04.1
+Architecture: amd64
+Maintainer: Groonga Project <packages@groonga.org>
+Installed-Size: 19982
+Depends: libc6 (>= 2.29), libgcc-s1 (>= 3.0), liblz4-1 (>= 0.0~r130), libmsgpackc2 (>= 2.1.0), libstdc++6 (>= 5.2), libzstd1 (>= 1.3.2), zlib1g (>= 1:1.2.0)
+Breaks: libgroonga (<< 1.2.0-1)
+Replaces: libgroonga (<< 1.2.0-1)
+Multi-Arch: same
+Homepage: https://groonga.org/
+Priority: optional
+Section: libs
+Filename: pool/main/g/groonga/libgroonga0_15.0.0-1.ubuntu20.04.1_amd64.deb
+Size: 2112816
+SHA256: 251d9b8b71abf857bb4ff42bc274c71c044688d892966b61a1b53878e59c7b94
+SHA1: 3296fc456a511a6af167f908e433880babca908e
+MD5sum: 6760c10a1d77b579af5c458dd80a9166
+Description: Library files for Groonga
+ Groonga is an open-source fulltext search engine and column store.
+ It lets you write high-performance applications that requires fulltext search.
+ .
+ This package provides library files.
 
 Package: polardb-for-postgresql
 Maintainer: mrdrivingduck <mrdrivingduck@gmail.com>
@@ -195,18 +266,32 @@ Description: sharding and distributed joins for PostgreSQL
  schemas, and keep track of shard health. An advanced distributed planner
  is included which handles queries and modifications against sharded tables.
 
-Package: postgresql-14-pg-search
-Version: 0.14.1
+Package: postgresql-14-pg-analytics
+Version: 0.3.3
 Architecture: amd64
 Depends: postgresql-14
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.14.1_amd64.deb
-Size: 46608456
-SHA256: df99094f3561fcf27cd94b26609175c4a318b4b1fba1318b5e3a5fd71b331826
-SHA1: c1dac11f2fcfce13e2f615ef0469c8fa8f4492ff
-MD5sum: be0b52f618aab24489669837e7f472f0
+Filename: pool/main/p/postgresql-14-pg-analytics/postgresql-14-pg-analytics_0.3.3_amd64.deb
+Size: 10811840
+SHA256: ec39ead98770bfa661fdbed555710209ca3f29451e2eeb6251babbb3ce0f5906
+SHA1: 3027b49f3d0e00648dd73701d69e82d0b9b3d6ba
+MD5sum: c80c6e7054f21f1c69d155b897fc4c68
+Description: DuckDB-powered data lake analytics from PostgreSQL
+
+Package: postgresql-14-pg-search
+Version: 0.15.1
+Architecture: amd64
+Depends: postgresql-14
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.15.1_amd64.deb
+Size: 46634900
+SHA256: 865758a3470240aed7722582713bb5542fa6b1bd85791296088019528f4fe2eb
+SHA1: ac524a9246335ca0a5aa10e916f94df3f3b964d8
+MD5sum: 9b11d356805e6c62be50ba8a60d07715
 Description: Postgres for Search and Analytics
 
 Package: postgresql-14-topn
@@ -253,18 +338,32 @@ Description: sharding and distributed joins for PostgreSQL
  schemas, and keep track of shard health. An advanced distributed planner
  is included which handles queries and modifications against sharded tables.
 
-Package: postgresql-15-pg-search
-Version: 0.14.1
+Package: postgresql-15-pg-analytics
+Version: 0.3.3
 Architecture: amd64
 Depends: postgresql-15
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.14.1_amd64.deb
-Size: 46606000
-SHA256: cd321e1d90dc2220f9594fc70ed5ab7f9d823947a499641da80abba77ca1af7a
-SHA1: 6411bb01451e9bde2d114d569a3e3c2d14a37a12
-MD5sum: f60e53202521ae18cac9e68a14b84917
+Filename: pool/main/p/postgresql-15-pg-analytics/postgresql-15-pg-analytics_0.3.3_amd64.deb
+Size: 10806212
+SHA256: 6dd2cb1e446a1427595264ce740f15f79db9b5bdeb55e95e3d99cadaa47e7a2c
+SHA1: 45fdbc231d36bf70888c1b127931abcef73c6073
+MD5sum: 2e7e11df9335e66f95d0d6078368d70f
+Description: DuckDB-powered data lake analytics from PostgreSQL
+
+Package: postgresql-15-pg-search
+Version: 0.15.1
+Architecture: amd64
+Depends: postgresql-15
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.15.1_amd64.deb
+Size: 46634444
+SHA256: fbdbda95c63280fce1c087efa38ca8949a0b55faa40a53186a34b848a900d5bc
+SHA1: 280870ffafe5f41a3fd4ec39a247479b75c05aa3
+MD5sum: baa83ffaaee260b7220c814a09a5b205
 Description: Postgres for Search and Analytics
 
 Package: postgresql-15-topn
@@ -311,18 +410,32 @@ Description: sharding and distributed joins for PostgreSQL
  schemas, and keep track of shard health. An advanced distributed planner
  is included which handles queries and modifications against sharded tables.
 
-Package: postgresql-16-pg-search
-Version: 0.14.1
+Package: postgresql-16-pg-analytics
+Version: 0.3.3
 Architecture: amd64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.14.1_amd64.deb
-Size: 46614048
-SHA256: 37d20907b9bc15b751a54f7ac63685c485487053e584e2af28b9859f413d4e1b
-SHA1: 3b80209c3865204a07907effc8a60e99d553b272
-MD5sum: 44381a891d02f3a897ec1f656b0164e2
+Filename: pool/main/p/postgresql-16-pg-analytics/postgresql-16-pg-analytics_0.3.3_amd64.deb
+Size: 10804576
+SHA256: b455c74486565ce6458a0f979fb70a915678dd9af18a483794d98825c661b84b
+SHA1: 2c5fb3a31d6c5b70a508d948acfb4f2d0b748742
+MD5sum: f582d62e593a48d925aaa9168024dc1a
+Description: DuckDB-powered data lake analytics from PostgreSQL
+
+Package: postgresql-16-pg-search
+Version: 0.15.1
+Architecture: amd64
+Depends: postgresql-16
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.15.1_amd64.deb
+Size: 46639464
+SHA256: 15521de161ed90939d17ce468d68fdf51b3d04104147589daae270c62e39d3ff
+SHA1: d7721ced759d90e9eb999354df1aa4a1a5017779
+MD5sum: 99efc7303973a2a8412b8197202eefe8
 Description: Postgres for Search and Analytics
 
 Package: postgresql-16-topn
@@ -345,18 +458,32 @@ Description: Counter Based Implementation for top-n Approximation
  objects to store and read the data frequency and provides a chance to
  run real-time top-n queries on aggregated data.
 
-Package: postgresql-17-pg-search
-Version: 0.14.1
+Package: postgresql-17-pg-analytics
+Version: 0.3.3
 Architecture: amd64
 Depends: postgresql-17
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.14.1_amd64.deb
-Size: 46610896
-SHA256: 6aba54e9888d9f7efb352e42806c0ba177042deb99259d1bffc30e698310f137
-SHA1: 40a6b6b134f3e32129751c501d03be42bcb2ba6b
-MD5sum: 7af498d4d6790148df44e355b3b77273
+Filename: pool/main/p/postgresql-17-pg-analytics/postgresql-17-pg-analytics_0.3.3_amd64.deb
+Size: 10819996
+SHA256: c876b5aebaecbeec2da1934a429f4aba678dc0dba26f2b75b750513fd88aa281
+SHA1: f5075aa0cff1408bae90cf942d5523a7f75b92f0
+MD5sum: e0bd0e49105f4f4898c97e462b5f9f4a
+Description: DuckDB-powered data lake analytics from PostgreSQL
+
+Package: postgresql-17-pg-search
+Version: 0.15.1
+Architecture: amd64
+Depends: postgresql-17
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.15.1_amd64.deb
+Size: 46636392
+SHA256: 8974ab0d69cb8b55f012808adedf545f760a5c671865c7d9e4cbbdf9abbf55cb
+SHA1: 10cc16cc65d09f333347cc19db7d41f9fc6f75da
+MD5sum: 51f9338ce3b74522e51419961bcfb401
 Description: Postgres for Search and Analytics
 
 Package: redis

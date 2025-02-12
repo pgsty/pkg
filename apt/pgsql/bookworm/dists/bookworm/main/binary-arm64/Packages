@@ -1,20 +1,20 @@
 Package: groonga-tokenizer-mecab
 Source: groonga
-Version: 14.1.2-1
+Version: 15.0.0-1
 Architecture: arm64
 Maintainer: Groonga Project <packages@groonga.org>
 Installed-Size: 93
-Depends: libc6 (>= 2.17), libgroonga0 (= 14.1.2-1), libmecab2 (>= 0.996), mecab-naist-jdic | mecab-jumandic-utf8
+Depends: libc6 (>= 2.17), libgroonga0 (= 15.0.0-1), libmecab2 (>= 0.996), mecab-naist-jdic | mecab-jumandic-utf8
 Breaks: libgroonga-tokenizer-mecab (<< 1.2.0-1)
 Replaces: libgroonga-tokenizer-mecab (<< 1.2.0-1)
 Homepage: https://groonga.org/
 Priority: optional
 Section: libs
-Filename: pool/main/g/groonga/groonga-tokenizer-mecab_14.1.2-1_arm64.deb
-Size: 13944
-SHA256: 8ea4bf2ca5c155b00c5c96065a991dd9072726a18070685a265a1f135d0480da
-SHA1: f14b2129746614dba0ec652615b1ed7633f7b584
-MD5sum: 1baf966301d62c6149e16325dc6f16fc
+Filename: pool/main/g/groonga/groonga-tokenizer-mecab_15.0.0-1_arm64.deb
+Size: 13972
+SHA256: 07068c8ca7ad23e29e69b7345c83dba0b853543f1b4d11f999aacc8ee9563063
+SHA1: 6b2f454adb8b9417e761a7998ec4f93c4c6ba14c
+MD5sum: 83232da5c25fcb3cdef16f0d7f7d2728
 Description: MeCab tokenizer for Groonga
  Groonga is an open-source fulltext search engine and column store.
  It lets you write high-performance applications that requires fulltext search.
@@ -64,6 +64,26 @@ Description: Apache Arrow is a data processing library for analysis
  .
  This package provides C++ library files.
 
+Package: libarrow1900
+Source: apache-arrow
+Version: 19.0.0-1
+Architecture: arm64
+Maintainer: Apache Arrow Developers <dev@arrow.apache.org>
+Installed-Size: 35665
+Depends: libabsl20220623 (>= 0~20220623.0-1), libbrotli1 (>= 0.6.0), libbz2-1.0, libc6 (>= 2.34), libcurl4 (>= 7.66.0), libgcc-s1 (>= 3.0), liblz4-1 (>= 1.8.0), libprotobuf32 (>= 3.21.12), libre2-9 (>= 20201101+dfsg), libsnappy1v5 (>= 1.1.9), libssl3 (>= 3.0.0), libstdc++6 (>= 12), libutf8proc2 (>= 1.3), libxml2 (>= 2.7.4), libzstd1 (>= 1.5.2), zlib1g (>= 1:1.2.0)
+Multi-Arch: same
+Homepage: https://arrow.apache.org/
+Priority: optional
+Section: libs
+Filename: pool/main/a/apache-arrow/libarrow1900_19.0.0-1_arm64.deb
+Size: 8142020
+SHA256: 923b8a957c18719fb36c65d1627da59ea3c68106115e2a4d70034a9482458027
+SHA1: bbbbc1accbe14f9452307e6cb38619b720a24c83
+MD5sum: a84a18af416a30e57ab37017a032e610
+Description: Apache Arrow is a data processing library for analysis
+ .
+ This package provides C++ library files.
+
 Package: libduckdb
 Version: 1.1.2-1PIGSTY~bookworm
 Architecture: arm64
@@ -108,22 +128,22 @@ Description: A wrapper library for Firebird's C API, loosely based on PostgreSQL
 
 Package: libgroonga-dev
 Source: groonga
-Version: 14.1.2-1
+Version: 15.0.0-1
 Architecture: arm64
 Maintainer: Groonga Project <packages@groonga.org>
-Installed-Size: 512
-Depends: libgroonga0 (= 14.1.2-1), libmsgpack-dev, pkg-config
+Installed-Size: 521
+Depends: libgroonga0 (= 15.0.0-1), libmsgpack-dev, pkg-config
 Breaks: libgroonga (<< 1.2.0-1)
 Replaces: libgroonga (<< 1.2.0-1)
 Multi-Arch: same
 Homepage: https://groonga.org/
 Priority: optional
 Section: libdevel
-Filename: pool/main/g/groonga/libgroonga-dev_14.1.2-1_arm64.deb
-Size: 63780
-SHA256: e1a34214012163aaca3c5d6ef7e5169d8e0c74152fc6710232da2f370ae5a8d8
-SHA1: aaa838be6e8718bdd474ec16b0413aab28f2c044
-MD5sum: 515a6468c5a6de068efe8bc8944c4cc0
+Filename: pool/main/g/groonga/libgroonga-dev_15.0.0-1_arm64.deb
+Size: 64804
+SHA256: 208ffe591d44f0498ed832dcd8c9da3fefefb254adc7bae33d119bf4292392c6
+SHA1: c04ac0e13294fe484d73e552f3fe1517310c10bc
+MD5sum: 8d6f154387c6f76ba962603d8ba7d849
 Description: Development files to use Groonga as a library
  Groonga is an open-source fulltext search engine and column store.
  It lets you write high-performance applications that requires fulltext search.
@@ -132,22 +152,22 @@ Description: Development files to use Groonga as a library
 
 Package: libgroonga0
 Source: groonga
-Version: 14.1.2-1
+Version: 15.0.0-1
 Architecture: arm64
 Maintainer: Groonga Project <packages@groonga.org>
-Installed-Size: 19682
-Depends: libarrow1801 (>= 18.1.0), libc6 (>= 2.35), libgcc-s1 (>= 3.0), libgomp1 (>= 4.9), liblz4-1 (>= 0.0~r130), libmsgpackc2 (>= 2.1.0), libsimdjson14 (>= 3.0.1), libstdc++6 (>= 11), libxxhash0 (>= 0.8.0), libzstd1 (>= 1.5.2), zlib1g (>= 1:1.2.0)
+Installed-Size: 22718
+Depends: libarrow1900 (>= 19.0.0), libc6 (>= 2.35), libgcc-s1 (>= 3.0), libgomp1 (>= 4.9), liblz4-1 (>= 0.0~r130), libmsgpackc2 (>= 2.1.0), libsimdjson14 (>= 3.0.1), libstdc++6 (>= 12), libxxhash0 (>= 0.8.0), libzstd1 (>= 1.5.2), zlib1g (>= 1:1.2.0)
 Breaks: libgroonga (<< 1.2.0-1)
 Replaces: libgroonga (<< 1.2.0-1)
 Multi-Arch: same
 Homepage: https://groonga.org/
 Priority: optional
 Section: libs
-Filename: pool/main/g/groonga/libgroonga0_14.1.2-1_arm64.deb
-Size: 2428952
-SHA256: 6b4d94bdf16020d6d20e9f5e026f1115494323d38129c52e35c2b84fc6b6d2d9
-SHA1: d664d3691b302199fc9644e2e3529b8d27254aeb
-MD5sum: 70a7d11dbeec5e1fc714cb6fe7d4affd
+Filename: pool/main/g/groonga/libgroonga0_15.0.0-1_arm64.deb
+Size: 2611216
+SHA256: ae9c8298fc1c452d115bbc6b3b4902079ec69e5979ab6f5c17b2f195ec9bdeac
+SHA1: c76ff6ef8c7eded15a358feee3a295c325020008
+MD5sum: 106bb43d4f14209c61c3b5b52c3cfbdb
 Description: Library files for Groonga
  Groonga is an open-source fulltext search engine and column store.
  It lets you write high-performance applications that requires fulltext search.
@@ -5559,6 +5579,24 @@ Description: Fast full-text search plugin for PostgreSQL based on Groonga
  PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
  It is based on Groonga full-text search engine.
 
+Package: postgresql-13-pgroonga-dbgsym
+Source: pgroonga
+Version: 4.0.0-1PIGSTY~bookworm
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 695
+Depends: postgresql-13-pgroonga (= 4.0.0-1PIGSTY~bookworm)
+Priority: optional
+Section: debug
+Filename: pool/main/p/pgroonga/postgresql-13-pgroonga-dbgsym_4.0.0-1PIGSTY~bookworm_arm64.deb
+Size: 581504
+SHA256: f181630d25b945e1267b08faefb92c394c05cd268441a79ab61d629df87a0d95
+SHA1: abdb1c7a8e734742558500efdff63cbcaa1662cd
+MD5sum: 715f7040903697dc2112e6abece44d98
+Description: debug symbols for postgresql-13-pgroonga
+Build-Ids: 53a3c990614931d5b86f550b37c6a939660eafc9 664b0ee7d38bf21a498b0a600e2a6c95145e4f27 6c725ae11c6897dcc759e25edb311f8919670a55 a7881bf422bc970f9d8aa6a9ad311263d4466d4f b3b093d7ceefff303ecdef4a00d55d1b3fc041bd cf21a07e6da8a2381e550a2605cfe2ed3fd2343c eb5e4754bc2926a87e227c167d7233108e1e897e
+
 Package: postgresql-13-pgsmcrypto
 Source: pgsmcrypto
 Version: 0.1.0-1PIGSTY~bookworm
@@ -9029,6 +9067,24 @@ MD5sum: 0beecc151d4887db5999245554a7a078
 Description: Fast full-text search plugin for PostgreSQL based on Groonga
  PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
  It is based on Groonga full-text search engine.
+
+Package: postgresql-14-pgroonga-dbgsym
+Source: pgroonga
+Version: 4.0.0-1PIGSTY~bookworm
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 684
+Depends: postgresql-14-pgroonga (= 4.0.0-1PIGSTY~bookworm)
+Priority: optional
+Section: debug
+Filename: pool/main/p/pgroonga/postgresql-14-pgroonga-dbgsym_4.0.0-1PIGSTY~bookworm_arm64.deb
+Size: 576080
+SHA256: 0137e41724ed0a584fcdd793639d385cf0bc4341749f694990fd7622542050e7
+SHA1: 024a8570bfb003b5a9370b0ae90d6703387c5528
+MD5sum: 7668fd8e35cf9c5b673fe43d0431a613
+Description: debug symbols for postgresql-14-pgroonga
+Build-Ids: 18b54f950ce6916378411318db821e45cf1b194b 1bd6e0e7856a806a410ae64c661fc1850ca1069c 23fe6c76cc215f574515f0fda3205fd818e983e1 4c53a01b54b66781bb5efeedac323cc88b27a6e7 a0aa64559ee2c1a6c207c99c4d316aa3c577a61e b2a6cdafb5af8bc27aabe3170e3cbb9a4b0e43be def0d525844edc1e0773261cf64821055f76dc8d
 
 Package: postgresql-14-pgsmcrypto
 Source: pgsmcrypto
@@ -12638,6 +12694,24 @@ MD5sum: 8bcf2ff540d9d07ef2b28bf593c00338
 Description: Fast full-text search plugin for PostgreSQL based on Groonga
  PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
  It is based on Groonga full-text search engine.
+
+Package: postgresql-15-pgroonga-dbgsym
+Source: pgroonga
+Version: 4.0.0-1PIGSTY~bookworm
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 743
+Depends: postgresql-15-pgroonga (= 4.0.0-1PIGSTY~bookworm)
+Priority: optional
+Section: debug
+Filename: pool/main/p/pgroonga/postgresql-15-pgroonga-dbgsym_4.0.0-1PIGSTY~bookworm_arm64.deb
+Size: 629880
+SHA256: a208504eab66257295980af11dd79a6c923627bec4d01df9d4af75e0e94c71eb
+SHA1: 504428e769f7349efcdf3224cd73ac78daa22e40
+MD5sum: d5ceb115072c36841a7f7f867bd54795
+Description: debug symbols for postgresql-15-pgroonga
+Build-Ids: 1a6b3d9a92ef2f9e4b24dacf5350dc126ce1bba0 2a20a9381ad93c03b49c42ce01ae0fe7c22301bf 31861774f64d70786ccb39f8f75ccb1362cd3c92 972f31aae8d4e1b985a1574076a50c055f845174 adb438e7636297faa0883699fc79d956b9cb2992 bbc95049769b82ea4b1cb471be8f085441542437 ecef97e317cc3688d0ea82e15bfb21e60543d687
 
 Package: postgresql-15-pgsmcrypto
 Source: pgsmcrypto
@@ -16286,6 +16360,24 @@ Description: Fast full-text search plugin for PostgreSQL based on Groonga
  PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
  It is based on Groonga full-text search engine.
 
+Package: postgresql-16-pgroonga-dbgsym
+Source: pgroonga
+Version: 4.0.0-1PIGSTY~bookworm
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 764
+Depends: postgresql-16-pgroonga (= 4.0.0-1PIGSTY~bookworm)
+Priority: optional
+Section: debug
+Filename: pool/main/p/pgroonga/postgresql-16-pgroonga-dbgsym_4.0.0-1PIGSTY~bookworm_arm64.deb
+Size: 652076
+SHA256: 52eb067494a846405fc960ca87c93aaf1a103cc9be67b1da5d0e6dc6f8515492
+SHA1: 8a2ab83971f8fad000c3717080da8bd61f982bee
+MD5sum: 0fca5022244d26f84b861baa1e93f98c
+Description: debug symbols for postgresql-16-pgroonga
+Build-Ids: 37563ed85e8b5c022a8fd0bb3c43f487e004cad5 4f2e2373c8fdcb938aa5f0cbb86f61c700f52a56 53c387e13273b26ca4998174c190d235646837fe 622af4f5ba95b44b47bb7a2fa767fce214a4b596 c5963a73330caeaf2caabf93cdcb97e77330a7d1 d384f39312a3edc3a9524c0621039adfd4cf9dca f82ccbb2888b8fc36013358d9ff44e420057852b
+
 Package: postgresql-16-pgsmcrypto
 Source: pgsmcrypto
 Version: 0.1.0-1PIGSTY~bookworm
@@ -19872,6 +19964,24 @@ MD5sum: 87aa6c56896c6dff523cc172ff21fc02
 Description: Fast full-text search plugin for PostgreSQL based on Groonga
  PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
  It is based on Groonga full-text search engine.
+
+Package: postgresql-17-pgroonga-dbgsym
+Source: pgroonga
+Version: 4.0.0-1PIGSTY~bookworm
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 774
+Depends: postgresql-17-pgroonga (= 4.0.0-1PIGSTY~bookworm)
+Priority: optional
+Section: debug
+Filename: pool/main/p/pgroonga/postgresql-17-pgroonga-dbgsym_4.0.0-1PIGSTY~bookworm_arm64.deb
+Size: 662040
+SHA256: 530ab1f0cc174c9228b058a6a54f66369f68b32b824a1490cb67b449c61e6257
+SHA1: e2b664d76f5c92be078155009829de7dc2d48989
+MD5sum: b827abdf4b99754ea5679ae19c82a0f4
+Description: debug symbols for postgresql-17-pgroonga
+Build-Ids: 5ee9e2f56d5f1e951c58ac23c3b4360e3099c082 7ad6ec676540e64624e6c4092e72a248fe613004 8a7e376ac500c68c1309a5d250d007997fece285 cb55b961eae71b28bb6aa65998fc76098083757d e92cfac26f3a98f8970b66a9044924617c2d0279 ef287f97d6c60a29f28e7326c2b27db890c2b9ae fe63d1942a5721eb3b75982de7e30da18df9381e
 
 Package: postgresql-17-pgsmcrypto
 Source: pgsmcrypto

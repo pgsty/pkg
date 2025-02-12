@@ -1,3 +1,26 @@
+Package: groonga-tokenizer-mecab
+Source: groonga
+Version: 15.0.0-1.ubuntu20.04.1
+Architecture: arm64
+Maintainer: Groonga Project <packages@groonga.org>
+Installed-Size: 51
+Depends: libc6 (>= 2.17), libgroonga0 (= 15.0.0-1.ubuntu20.04.1), libmecab2 (>= 0.996), mecab-naist-jdic | mecab-jumandic-utf8
+Breaks: libgroonga-tokenizer-mecab (<< 1.2.0-1)
+Replaces: libgroonga-tokenizer-mecab (<< 1.2.0-1)
+Homepage: https://groonga.org/
+Priority: optional
+Section: libs
+Filename: pool/main/g/groonga/groonga-tokenizer-mecab_15.0.0-1.ubuntu20.04.1_arm64.deb
+Size: 16452
+SHA256: ccff0e10867501a0c4ce9940a75778aeb014a361897796291942944b95c38939
+SHA1: b4b9241363cfe37d5ba3f56a6013afa59a597902
+MD5sum: 78700d2b0f56fcbfc524eeb7bf018fa8
+Description: MeCab tokenizer for Groonga
+ Groonga is an open-source fulltext search engine and column store.
+ It lets you write high-performance applications that requires fulltext search.
+ .
+ This package provides MeCab tokenizer.
+
 Package: haproxy
 Version: 3.0.6-3ppa1~focal
 Architecture: arm64
@@ -20,6 +43,54 @@ Description: fast and reliable load balancing reverse proxy
  cookies, load balancing, header addition, modification, deletion both ways. It
  has request blocking capabilities and provides interface to display server
  status.
+
+Package: libgroonga-dev
+Source: groonga
+Version: 15.0.0-1.ubuntu20.04.1
+Architecture: arm64
+Maintainer: Groonga Project <packages@groonga.org>
+Installed-Size: 530
+Depends: libgroonga0 (= 15.0.0-1.ubuntu20.04.1), libmsgpack-dev, pkg-config
+Breaks: libgroonga (<< 1.2.0-1)
+Replaces: libgroonga (<< 1.2.0-1)
+Multi-Arch: same
+Homepage: https://groonga.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/g/groonga/libgroonga-dev_15.0.0-1.ubuntu20.04.1_arm64.deb
+Size: 68044
+SHA256: 929f31b11661df9581d923afe01314c98225d73b3ff3e1b2e28515a9dda82d77
+SHA1: 5fedc5336553b30243acb1a57d526fd9d75697c1
+MD5sum: 6b077d265c42654169d94edf8df46697
+Description: Development files to use Groonga as a library
+ Groonga is an open-source fulltext search engine and column store.
+ It lets you write high-performance applications that requires fulltext search.
+ .
+ This package provides header files to use Groonga as a library.
+
+Package: libgroonga0
+Source: groonga
+Version: 15.0.0-1.ubuntu20.04.1
+Architecture: arm64
+Maintainer: Groonga Project <packages@groonga.org>
+Installed-Size: 19170
+Depends: libc6 (>= 2.29), libgcc-s1 (>= 3.0), liblz4-1 (>= 0.0~r130), libmsgpackc2 (>= 2.1.0), libstdc++6 (>= 5.2), libzstd1 (>= 1.3.2), zlib1g (>= 1:1.2.0)
+Breaks: libgroonga (<< 1.2.0-1)
+Replaces: libgroonga (<< 1.2.0-1)
+Multi-Arch: same
+Homepage: https://groonga.org/
+Priority: optional
+Section: libs
+Filename: pool/main/g/groonga/libgroonga0_15.0.0-1.ubuntu20.04.1_arm64.deb
+Size: 1882120
+SHA256: 458b4776ed598d85e0c1e2b502720d3bcc5517fb565458df5f957ced1d415830
+SHA1: c6b7e9211d1e4f86b8ae556730f1228bd8eaaf33
+MD5sum: 9437706f4c6206929749eb04084b70b8
+Description: Library files for Groonga
+ Groonga is an open-source fulltext search engine and column store.
+ It lets you write high-performance applications that requires fulltext search.
+ .
+ This package provides library files.
 
 Package: polardb-for-postgresql
 Maintainer: mrdrivingduck <mrdrivingduck@gmail.com>
@@ -46,60 +117,116 @@ Description: PolarDB is an advanced Object-Relational database management system
 Version: 15.10.3.0-bbc102d8
 Architecture: arm64
 
-Package: postgresql-14-pg-search
-Version: 0.14.1
+Package: postgresql-14-pg-analytics
+Version: 0.3.3
 Architecture: arm64
 Depends: postgresql-14
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.14.1_arm64.deb
-Size: 46191692
-SHA256: 51c0000072ba06afa7ce2ea3d8aa76f1f1d63491e99f4730e3d3e598b2607313
-SHA1: 59d52bbc8f4d943656943d6fbc82f97bd1e2c18b
-MD5sum: d76a7786a3d8c263f6c723a01c4abdc1
+Filename: pool/main/p/postgresql-14-pg-analytics/postgresql-14-pg-analytics_0.3.3_arm64.deb
+Size: 9470768
+SHA256: d45302c31ffd67485bb3fbaadcf3faea8bba532ce2f1a3a2b30daa5e50e4fb02
+SHA1: d6a82684468212f425d7d3909a36521cfa6070bf
+MD5sum: 25e158b668edc65bf0a59d44fcbce314
+Description: DuckDB-powered data lake analytics from PostgreSQL
+
+Package: postgresql-14-pg-search
+Version: 0.15.1
+Architecture: arm64
+Depends: postgresql-14
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.15.1_arm64.deb
+Size: 46222556
+SHA256: c3c94eca9ea56a1225b351aa5da78e83c95afb4c423df80f675eeb39fc4534dd
+SHA1: d7023e9d969a7f5db1b8f3b49158105e956cf08c
+MD5sum: cf9005c56e731d3fb690e3c68ec8bc42
 Description: Postgres for Search and Analytics
 
-Package: postgresql-15-pg-search
-Version: 0.14.1
+Package: postgresql-15-pg-analytics
+Version: 0.3.3
 Architecture: arm64
 Depends: postgresql-15
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.14.1_arm64.deb
-Size: 46195040
-SHA256: 2ddcb111c52d056440c145a93d5c6a2677b9d568ae1a976a89b2d8c077e607d1
-SHA1: 867e326c093ba0af3167b54f4ab7283cd0599919
-MD5sum: 344e49b0d0d4a0f5ce089651a7b6e35c
+Filename: pool/main/p/postgresql-15-pg-analytics/postgresql-15-pg-analytics_0.3.3_arm64.deb
+Size: 9503340
+SHA256: b1fbef22c6f7651dd0215c5f20568929414660fb442d37f8929112332dba1bca
+SHA1: cf69abd156a65fa187b716335e7d0fb407020b0a
+MD5sum: a1ecde6bb6f36aead6905230f2d785c0
+Description: DuckDB-powered data lake analytics from PostgreSQL
+
+Package: postgresql-15-pg-search
+Version: 0.15.1
+Architecture: arm64
+Depends: postgresql-15
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.15.1_arm64.deb
+Size: 46217212
+SHA256: 4407266d74a661cddcdd035180826c3f17be260eb65e4479036f1f4ff8b5ec14
+SHA1: 1292423f0ce697f36a292fd97fb97d60ebe78b41
+MD5sum: f1ac956cb879c2b19d1242221183ea1d
 Description: Postgres for Search and Analytics
 
-Package: postgresql-16-pg-search
-Version: 0.14.1
+Package: postgresql-16-pg-analytics
+Version: 0.3.3
 Architecture: arm64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.14.1_arm64.deb
-Size: 46197108
-SHA256: c0771d303cc1d4f9486e2214be6d76d4d7b448a517a0707b2b87209f2d17ae4e
-SHA1: 9d567aec4a99252e66d1fe86b97443e10e3f9705
-MD5sum: 0ed303759d5f80fe24d59c12fe7d3e03
+Filename: pool/main/p/postgresql-16-pg-analytics/postgresql-16-pg-analytics_0.3.3_arm64.deb
+Size: 9479480
+SHA256: 1c1af2e0c29e70d613bf2ac225bdd50497db9facb5f69c89d41f083a2a715856
+SHA1: aacd51465609e38aee032808d9f0ba459abaf132
+MD5sum: a3154bea9a67779d42a4bac709430eda
+Description: DuckDB-powered data lake analytics from PostgreSQL
+
+Package: postgresql-16-pg-search
+Version: 0.15.1
+Architecture: arm64
+Depends: postgresql-16
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.15.1_arm64.deb
+Size: 46228152
+SHA256: c0d6fbc1d1ce427002ee243cfee83b0b8eefaf290fbe385afb23e83e41f6f9ac
+SHA1: 7a7cfe5bdcba7ad0318cd8b92f9ef77e225a068b
+MD5sum: 9b63be8a51065a2aebe8ee3096ae60de
 Description: Postgres for Search and Analytics
 
-Package: postgresql-17-pg-search
-Version: 0.14.1
+Package: postgresql-17-pg-analytics
+Version: 0.3.3
 Architecture: arm64
 Depends: postgresql-17
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.14.1_arm64.deb
-Size: 46195012
-SHA256: fada43fcac6c4728bf34150f456b39016c90ef5f2eee25b7eb94227fe65ff125
-SHA1: c07f7039794e388012c5653f239f9dc276b81be1
-MD5sum: b853ee1471980048463234b591042c5b
+Filename: pool/main/p/postgresql-17-pg-analytics/postgresql-17-pg-analytics_0.3.3_arm64.deb
+Size: 9487192
+SHA256: 4a2bae21bb323b10f3b6e49cb33d3d2e929be98bd0912b242293074fc443452e
+SHA1: 6e630d201f89b8c6265a0a4ff5237ec330edaeec
+MD5sum: e30503022addc66fe45b56189cd1fd93
+Description: DuckDB-powered data lake analytics from PostgreSQL
+
+Package: postgresql-17-pg-search
+Version: 0.15.1
+Architecture: arm64
+Depends: postgresql-17
+Maintainer: ParadeDB <support@paradedb.com>
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.15.1_arm64.deb
+Size: 46220728
+SHA256: 5a81bb8d42d36aafdffa2de074997ddf2c340ac0a3ca518f7234c617bf8a19d1
+SHA1: 385d18d3d60100b0abc327bf330e7df94e81a22b
+MD5sum: 2a478d49113b9b9e403e93ea2dab3b01
 Description: Postgres for Search and Analytics
 
 Package: redis
