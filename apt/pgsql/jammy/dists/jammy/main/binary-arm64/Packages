@@ -2008,20 +2008,20 @@ Description: Text Summarization using LLMs. Built using pgrx
 
 Package: postgresql-12-pg-task
 Source: pg-task
-Version: 1.0.0-1PIGSTY~jammy
+Version: 1.0.0-2PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 477
+Installed-Size: 484
 Depends: postgresql-12, postgresql-12-jit-llvm (>= 15)
 Provides: postgresql-pg-task
 Homepage: https://github.com/RekGRpth/pg_task
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-task/postgresql-12-pg-task_1.0.0-1PIGSTY~jammy_arm64.deb
-Size: 223252
-SHA256: 5a432c05ea74f418fb5911a5067f3e7178c8e277b20334869f311eb6010791a0
-SHA1: 6933b550547575b91eaef2cff1432b1d70f2d72c
-MD5sum: f38751afdead86f1010b45fe8db3538a
+Filename: pool/main/p/pg-task/postgresql-12-pg-task_1.0.0-2PIGSTY~jammy_arm64.deb
+Size: 223982
+SHA256: bdd366a7dcc92d241218459eb22862f64b35be4d21427e55c9dffba46c119e82
+SHA1: c48e1bf35377312902a1207397dbc36b65f3e168
+MD5sum: b5d8dbc87cc808a71cecf9e4af1828d8
 Description: PostgreSQL and Greenplum job scheduler pg_task allows to execute any sql command at any specific time at background asynchronously
   PostgreSQL and Greenplum job scheduler pg_task allows to execute any sql command at any specific time at background asynchronously
 
@@ -3160,6 +3160,28 @@ MD5sum: 3bcb5ff3a7367b0af124e9553d34199e
 Description: PLPGSQL Script to historize data in partitionned table
   PLPGSQL Script to historize data in partitionned table
 
+Package: postgresql-13-db-migrator
+Source: db-migrator
+Version: 1.0.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 120
+Depends: postgresql-13
+Provides: postgresql-db-migrator
+Homepage: https://github.com/cybertec-postgresql/db_migrator
+Priority: optional
+Section: database
+Filename: pool/main/d/db-migrator/postgresql-13-db-migrator_1.0.0-1PIGSTY~jammy_arm64.deb
+Size: 21854
+SHA256: 1727743e5fda241823b2f8a4c8ad7f305e4caf7d24f810a4cd689ae59a851e31
+SHA1: 54023c029ec10c1c8cfae8cab5046271d688b886
+MD5sum: ae40a99a4224d89e89e33a269baca544
+Description: Functions for migrating databases from other data sources to PostgreSQL
+  db_migrator is a PostgreSQL extension that provides functions for migrating databases from other data sources to PostgreSQL.
+  This requires a foreign data wrapper for the data source you want to migrate.
+  You also need a plugin for db_migrator that contains the code specific to the targeted data source. Currently, plugins exist for the following data sources:
+  oracle, mysql, mariadb, microsoft sql server
+
 Package: postgresql-13-ddl-historization
 Source: ddl-historization
 Version: 0.7.0-1PIGSTY~jammy
@@ -3385,6 +3407,27 @@ Description: GZIP implementation in PostgreSQL 13
   Sometimes you just need to compress your bytea object before you return it to the client.
   Sometimes you receive a compressed bytea from the client, and you have to uncompress it before you can work with it.
   This extension is for that.
+
+Package: postgresql-13-hashtypes
+Source: hashtypes
+Version: 0.1.5-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 265
+Depends: postgresql-13, postgresql-13-jit-llvm (>= 15), libc6 (>= 2.17)
+Provides: postgresql-hashtypes
+Homepage: https://github.com/adjust/hashtypes/
+Priority: optional
+Section: database
+Filename: pool/main/h/hashtypes/postgresql-13-hashtypes_0.1.5-1PIGSTY~jammy_arm64.deb
+Size: 36930
+SHA256: 27fd8c71bc4cacb8b733d0b883c62fb48c13eb452ee82af012b40d4f862748ab
+SHA1: c85323cceaf40a133f16108fd74b2387b5a677bb
+MD5sum: 130670cb1ea02a278799cb9215c52b44
+Description: Custom data types to store SHA-1, SHA-2, MD5, CRC32, etc in PostgreSQL
+  This extension provides custom data types to store various hash values (SHA-1,
+  SHA-2, MD5, CRC32, etc) in PostgreSQL without the storage and computation
+  overhead of bytea. It offers efficient storage and operations for hash values.
 
 Package: postgresql-13-hunspell-cs-cz
 Source: hunspell-cs-cz
@@ -4033,7 +4076,7 @@ Description: The pg_bigm module provides full text search capability in PostgreS
 
 Package: postgresql-13-pg-bulkload
 Source: pg-bulkload
-Version: 3.1.21-1PIGSTY~jammy
+Version: 3.1.22-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 616
@@ -4042,11 +4085,11 @@ Provides: postgresql-pg-bulkload
 Homepage: https://github.com/ossc-db/pg_bulkload
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-bulkload/postgresql-13-pg-bulkload_3.1.21-1PIGSTY~jammy_arm64.deb
-Size: 290846
-SHA256: c2fdd28bc656de0231254c066cc34d810ebaac0ecc3a6ac82f03f0b7b5bc4321
-SHA1: b3bda74bf23ef80e3b0880aa4e8d59bd99080134
-MD5sum: e97a4c14b3183944a090666593f4a3ee
+Filename: pool/main/p/pg-bulkload/postgresql-13-pg-bulkload_3.1.22-1PIGSTY~jammy_arm64.deb
+Size: 290876
+SHA256: 2eeb15230bf653366f2c6dc7242aef10c6fc89694761a466170c8eba62e88b21
+SHA1: 5a4c9f97d42d46187205e145c657bb8e6eda3fcf
+MD5sum: 9c533e7788342cb877ca4a18354f7530
 Description: High speed data loading utility for PostgreSQL
   pg_bulkload is a high speed data loading tool for PostgreSQL.
   pg_bulkload is designed to load huge amount of data to a database. You can load data to table bypassing PostgreSQL shared buffers.
@@ -4093,6 +4136,26 @@ Description: This extension provides cheat (but useful) functions on PostgreSQL.
   This extension provides cheat (but useful) functions on PostgreSQL.
   pg_cheat_funcs is released under the PostgreSQL License, a liberal Open Source license, similar to the BSD or MIT licenses.
 
+Package: postgresql-13-pg-cooldown
+Source: pg-cooldown
+Version: 0.1-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 48
+Depends: postgresql-13, postgresql-13-jit-llvm (>= 15), libc6 (>= 2.17)
+Provides: postgresql-pg-cooldown
+Homepage: https://github.com/rbergm/pg_cooldown
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-cooldown/postgresql-13-pg-cooldown_0.1-1PIGSTY~jammy_arm64.deb
+Size: 13422
+SHA256: 22fe37c71977d67a45282b36e73762a3ac70875fb0e8c31f38829d73f20bd431
+SHA1: 4c52dcf6e75406b57ac7ad056f9bdef41682ca5b
+MD5sum: 8dedb9fbe2bb6248fa5e523c1d59349b
+Description: PostgreSQL extension to remove all pages of specific relations from the shared buffer.
+  The extension was heavily inspired by pg_prewarm and functions as a complementary tool: Whereas pg_prewarm adds pages from a relation to the shared buffer, pg_cooldown removes them again.
+  The main purpose of this tool is to easily simulate cold-start scenarios in research.
+
 Package: postgresql-13-pg-country
 Source: pg-country
 Version: 0.0.3-1PIGSTY~jammy
@@ -4135,6 +4198,27 @@ Description: Periodically or randomly crash your database
   If your database is too reliable - pg_crash can kill it for you.
   pg_crash is an extension to PostgreSQL, which allows you to periodically or randomly crash your database
   infrastructure by sending kill (or other) signals to your DB processes and make them fail. It is ideal for HA and failover testing.
+
+Package: postgresql-13-pg-curl
+Source: pg-curl
+Version: 2.4-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 793
+Depends: postgresql-13, postgresql-13-jit-llvm (>= 15), libc6 (>= 2.17), libcurl4 (>= 7.56.1)
+Provides: postgresql-pg-curl
+Homepage: https://github.com/RekGRpth/pg_curl
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-curl/postgresql-13-pg-curl_2.4-1PIGSTY~jammy_arm64.deb
+Size: 118970
+SHA256: 317d4aa8b3a2157b5f4531b4d808f4655f0d22fd47d9f4585b201509192216de
+SHA1: 02f80250ed2266802668351ce21f4940ca649a58
+MD5sum: 4db8978e9e5a67e99643dbb4add91813
+Description: PostgreSQL cURL allows most curl actions to transfer data with URL syntax
+  PostgreSQL tool for transferring data with URL syntax,
+  supporting DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT,
+   POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS.
 
 Package: postgresql-13-pg-currency
 Source: pg-currency
@@ -4908,20 +4992,20 @@ Description: Server side rollback at statement level for PostgreSQL like Oracle 
 
 Package: postgresql-13-pg-store-plan
 Source: pg-store-plan
-Version: 1.8-1PIGSTY~jammy
+Version: 1.8-2PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 299
+Installed-Size: 300
 Depends: postgresql-13, postgresql-13-jit-llvm (>= 15), libc6 (>= 2.33)
 Provides: postgresql-pg-store-plan
 Homepage: https://github.com/ossc-db/pg_store_plans
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-store-plan/postgresql-13-pg-store-plan_1.8-1PIGSTY~jammy_arm64.deb
-Size: 130400
-SHA256: 84acf7e85f6644bd3df23f073dc63e79963e3823ca5adca5f795cf1eff9b6301
-SHA1: 246a0b9f8ceb84709165921a76e5109fe7699c0d
-MD5sum: e71075527933cccdc2dae86ca8ea6555
+Filename: pool/main/p/pg-store-plan/postgresql-13-pg-store-plan_1.8-2PIGSTY~jammy_arm64.deb
+Size: 130882
+SHA256: a7967759e2bd5f348b2eb3c136260ba6fda28bd28c72b844ca9ed3ee62d78145
+SHA1: bd2b0bc3037bea6f83df2947588d0b720522eef4
+MD5sum: 1cf44387c1600b7477c956eb4a19156b
 Description: Store execution plans like pg_stat_statements does for queries.
   The pg_store_plans module provides a means for tracking execution plan statistics of all SQL statements executed by a server.
   The module must be loaded by adding pg_store_plans to shared_preload_libraries in postgresql.conf, because it requires additional shared memory. This means that a server restart is required to add or remove the module. pg_store_plans requires the GUC variable compute_query_id to be "on" or "auto". If it is set to "no", pg_store_plans is silently disabled.
@@ -4952,20 +5036,20 @@ Description: Text Summarization using LLMs. Built using pgrx
 
 Package: postgresql-13-pg-task
 Source: pg-task
-Version: 1.0.0-1PIGSTY~jammy
+Version: 1.0.0-2PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 486
+Installed-Size: 492
 Depends: postgresql-13, postgresql-13-jit-llvm (>= 15)
 Provides: postgresql-pg-task
 Homepage: https://github.com/RekGRpth/pg_task
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-task/postgresql-13-pg-task_1.0.0-1PIGSTY~jammy_arm64.deb
-Size: 227434
-SHA256: 4b263d63d46a3452b93f3f4efeb26f0882b7752699fac59eae78f5baa1f2144d
-SHA1: 2298017c573586a6c4a3476020f14636d4ab3719
-MD5sum: 8e5c221f6c140d5ba5c60f577c98982f
+Filename: pool/main/p/pg-task/postgresql-13-pg-task_1.0.0-2PIGSTY~jammy_arm64.deb
+Size: 228316
+SHA256: 41b79d9b275d3b760a489401a01e5cb8ce04a5c229720a0598170d439b5dc221
+SHA1: ecb7a36b6a474425afa1ad2256a94af520e87a40
+MD5sum: c705dfe8192d8d3256f272dde0f1f74e
 Description: PostgreSQL and Greenplum job scheduler pg_task allows to execute any sql command at any specific time at background asynchronously
   PostgreSQL and Greenplum job scheduler pg_task allows to execute any sql command at any specific time at background asynchronously
 
@@ -5437,20 +5521,20 @@ Description: PostgreSQL extension to generate QR code
 
 Package: postgresql-13-pgroonga
 Source: pgroonga
-Version: 3.2.5-1PIGSTY~jammy
+Version: 4.0.0-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 2745
-Depends: postgresql-13, postgresql-13-jit-llvm (>= 15), libc6 (>= 2.33), libgroonga0 (>= 14.1.2), libmsgpackc2 (>= 2.1.0)
+Installed-Size: 2789
+Depends: postgresql-13, postgresql-13-jit-llvm (>= 15), libc6 (>= 2.33), libgroonga0 (>= 15.0.0), libmsgpackc2 (>= 2.1.0), libxxhash0 (>= 0.7.1)
 Provides: postgresql-pgroonga
 Homepage: https://pgroonga.github.io/
 Priority: optional
 Section: database
-Filename: pool/main/p/pgroonga/postgresql-13-pgroonga_3.2.5-1PIGSTY~jammy_arm64.deb
-Size: 795854
-SHA256: a25b338ed4afd4b9d32d58ff47da57146d0a12914bab1185fd936aaaebd176dc
-SHA1: fba1c92732504dd4712b4c519f67a4202156ef3e
-MD5sum: 322f7fa28ef09f0f0e78be53afc60b51
+Filename: pool/main/p/pgroonga/postgresql-13-pgroonga_4.0.0-1PIGSTY~jammy_arm64.deb
+Size: 805408
+SHA256: 3dd0bb2c6d9fdfe851583c1649b217426c8d1409dcc0eb8af4a1b075d4d4f32e
+SHA1: bb952d8402a51711a4b34c243b7e1caffbaa6220
+MD5sum: d6119b3a559dc6f8e127e21fa19b99b8
 Description: Fast full-text search plugin for PostgreSQL based on Groonga
  PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
  It is based on Groonga full-text search engine.
@@ -5493,6 +5577,26 @@ Description: Modern cryptography for PostgreSQL using libsodium.
   pgsodium is an encryption library extension for PostgreSQL using the libsodium library for high level cryptographic algorithms.
   pgsodium can be used a straight interface to libsodium, but it can also use a powerful feature called Server Key Management where pgsodium loads an external secret key into memory that is never accessible to SQL. This inaccessible root key can then be used to derive sub-keys and keypairs by key id. This id (type bigint) can then be stored instead of the derived key.
   Another advanced feature of pgsodium is Transparent Column Encryption which can automatically encrypt and decrypt one or more columns of data in a table.
+
+Package: postgresql-13-pgsparql
+Source: pgsparql
+Version: 1.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 84
+Depends: postgresql-13
+Provides: postgresql-pgsparql
+Homepage: https://github.com/lacanoid/pgsparql
+Priority: optional
+Section: database
+Filename: pool/main/p/pgsparql/postgresql-13-pgsparql_1.0-1PIGSTY~jammy_arm64.deb
+Size: 10784
+SHA256: 71ad18b811157ddd4e5b7131d32ad08a12b66dc14937dca4ca8c1f5bcd6b904c
+SHA1: 6e94f20c922da864d2af990a39a149cd104650b5
+MD5sum: 524a0d6da0854647705791e7496941bb
+Description: SPARQL utilities extension for PostgreSQL
+  It helps one query SPARQL datasources. SPARQL queries are compiled into Postgres views, so you can use them nicely in SQL.
+  It is currently used with Virtuoso, so it is useful with sources like dbpedia. It might or might not work with other RDF backends.
 
 Package: postgresql-13-pgsql-tweaks
 Source: pgsql-tweaks
@@ -5577,6 +5681,27 @@ SHA1: a27d61c2b0497ad95ab3405203e64395148ab28d
 MD5sum: 0ceeb59305ecfbd1c90c289ad01db556
 Description: A complement to pgvector for high performance, cost efficient vector search on large workloads.
   pgvectorscale builds on pgvector with higher performance embedding search and cost-efficient storage for AI applications.
+
+Package: postgresql-13-pgxicor
+Source: pgxicor
+Version: 0.1.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 78
+Depends: postgresql-13, postgresql-13-jit-llvm (>= 15), libc6 (>= 2.17)
+Provides: postgresql-pgxicor
+Homepage: https://github.com/Florents-Tselai/pgxicor
+Priority: optional
+Section: database
+Filename: pool/main/p/pgxicor/postgresql-13-pgxicor_0.1.0-1PIGSTY~jammy_arm64.deb
+Size: 27280
+SHA256: 1029c664126375018cc54646e42c2c5c8b52f95bd522c0ff745828b20b0b22cf
+SHA1: 0b50d5e77dcd54e926c7993e0fb7abffa2c7aef1
+MD5sum: f73e18e27b38db1a261d2e4189f79dfb
+Description: XI Correlation Coefficient in Postgres
+  pgxicor is a Postgres extension that exposes a SELECT xicor(X, Y) aggregate function.
+  XI can detect functional relationships between X and Y.
+  You can use it as a more powerful alternative to standard corr(X, Y) which works best on linear relationships only.
 
 Package: postgresql-13-plprql
 Source: plprql
@@ -6000,20 +6125,20 @@ Description: PostgreSQL logical decoding output plugin for MongoDB
 
 Package: postgresql-13-zhparser
 Source: zhparser
-Version: 2.2-1PIGSTY~jammy
+Version: 2.3-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 14056
+Installed-Size: 14060
 Depends: postgresql-13, postgresql-13-jit-llvm (>= 15), libc6 (>= 2.17), scws (>= 1.2.3)
 Provides: postgresql-zhparser
 Homepage: https://github.com/supabase/zhparser
 Priority: optional
 Section: database
-Filename: pool/main/z/zhparser/postgresql-13-zhparser_2.2-1PIGSTY~jammy_arm64.deb
-Size: 4466890
-SHA256: 6916b6af1d20a1e46945cba78682aa3be03114274490cd6709fa5cd6a366b463
-SHA1: 0897f7759d69425e96a4f066803c18277999d858
-MD5sum: 95d529d8c4f867b299d1c1d98ec6d895
+Filename: pool/main/z/zhparser/postgresql-13-zhparser_2.3-1PIGSTY~jammy_arm64.deb
+Size: 4467906
+SHA256: 5e120f6a26dfbf79f0af144eeb8e0b4fc9c69f9ec04df00dd80204550647e403
+SHA1: 134b4974af6f25243f2992b0aa8059aed80acda0
+MD5sum: 4b19f07c4871598500bb64220212efd4
 Description: Open-source full-text search of Chinese language
   zhparser is a PostgreSQL extension for full-text search of Chinese language (Mandarin Chinese).
   It implements a Chinese language parser base on the Simple Chinese Word Segmentation(SCWS).
@@ -6273,6 +6398,28 @@ MD5sum: efc9ebb3a599236898bdf75424f1648a
 Description: PLPGSQL Script to historize data in partitionned table
   PLPGSQL Script to historize data in partitionned table
 
+Package: postgresql-14-db-migrator
+Source: db-migrator
+Version: 1.0.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 120
+Depends: postgresql-14
+Provides: postgresql-db-migrator
+Homepage: https://github.com/cybertec-postgresql/db_migrator
+Priority: optional
+Section: database
+Filename: pool/main/d/db-migrator/postgresql-14-db-migrator_1.0.0-1PIGSTY~jammy_arm64.deb
+Size: 21846
+SHA256: af9e465be2d6ae6878fd41126fb8ecd189330888ebae8fd1e71e63f4453c2aa2
+SHA1: 2dc548c6a9050256defb487f3518b4b07e1a801b
+MD5sum: f18bad34745643489799383f31642add
+Description: Functions for migrating databases from other data sources to PostgreSQL
+  db_migrator is a PostgreSQL extension that provides functions for migrating databases from other data sources to PostgreSQL.
+  This requires a foreign data wrapper for the data source you want to migrate.
+  You also need a plugin for db_migrator that contains the code specific to the targeted data source. Currently, plugins exist for the following data sources:
+  oracle, mysql, mariadb, microsoft sql server
+
 Package: postgresql-14-ddl-historization
 Source: ddl-historization
 Version: 0.7.0-1PIGSTY~jammy
@@ -6498,6 +6645,27 @@ Description: GZIP implementation in PostgreSQL 14
   Sometimes you just need to compress your bytea object before you return it to the client.
   Sometimes you receive a compressed bytea from the client, and you have to uncompress it before you can work with it.
   This extension is for that.
+
+Package: postgresql-14-hashtypes
+Source: hashtypes
+Version: 0.1.5-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 266
+Depends: postgresql-14, postgresql-14-jit-llvm (>= 15), libc6 (>= 2.17)
+Provides: postgresql-hashtypes
+Homepage: https://github.com/adjust/hashtypes/
+Priority: optional
+Section: database
+Filename: pool/main/h/hashtypes/postgresql-14-hashtypes_0.1.5-1PIGSTY~jammy_arm64.deb
+Size: 36898
+SHA256: 4aa968628c4027bad9eb14b2c7f8557ef79f5f0df6efc14b7e3af14673f67e9d
+SHA1: a78751a737e821d29f19052a85b84ce7ce8bcbe7
+MD5sum: 9560329c4ba5e10fae7305a23b3feab6
+Description: Custom data types to store SHA-1, SHA-2, MD5, CRC32, etc in PostgreSQL
+  This extension provides custom data types to store various hash values (SHA-1,
+  SHA-2, MD5, CRC32, etc) in PostgreSQL without the storage and computation
+  overhead of bytea. It offers efficient storage and operations for hash values.
 
 Package: postgresql-14-hunspell-cs-cz
 Source: hunspell-cs-cz
@@ -7003,18 +7171,18 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 14
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
 Package: postgresql-14-pg-analytics
-Version: 0.3.0
+Version: 0.3.3
 Architecture: arm64
 Depends: postgresql-14
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-14-pg-analytics/postgresql-14-pg-analytics_0.3.0_arm64.deb
-Size: 9360848
-SHA256: 0a3e58fd00b5c9c48c8969b87c1550295d927cd73e83132183ba829155645940
-SHA1: 07168af79f8660881a43ca6166012caee69ac609
-MD5sum: 4439b34809745082e043951b8e23afc0
-Description: DuckDB-powered analytics for Postgres
+Filename: pool/main/p/postgresql-14-pg-analytics/postgresql-14-pg-analytics_0.3.3_arm64.deb
+Size: 9423128
+SHA256: 8afbb4a7b4425f0107fef1372ada5eb16b4afd489928714a12fd2ce7d837b038
+SHA1: 083b41ab2e36f14d6bd702ed0798fdede70de244
+MD5sum: 3e3c4574b8c9de7b81654b4c45602cb1
+Description: DuckDB-powered data lake analytics from PostgreSQL
 
 Package: postgresql-14-pg-anon
 Source: pg-anon
@@ -7183,7 +7351,7 @@ Description: The pg_bigm module provides full text search capability in PostgreS
 
 Package: postgresql-14-pg-bulkload
 Source: pg-bulkload
-Version: 3.1.21-1PIGSTY~jammy
+Version: 3.1.22-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 633
@@ -7192,11 +7360,11 @@ Provides: postgresql-pg-bulkload
 Homepage: https://github.com/ossc-db/pg_bulkload
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-bulkload/postgresql-14-pg-bulkload_3.1.21-1PIGSTY~jammy_arm64.deb
-Size: 296624
-SHA256: cc9a63f95ada210203d31031bd26c8d146f572b87d7c319e9a21f1ace916a673
-SHA1: 1f601840ad3d26aaa1ce062ca1114d077a99551e
-MD5sum: 04c7fa042b32bdebb753ae7ab445ca80
+Filename: pool/main/p/pg-bulkload/postgresql-14-pg-bulkload_3.1.22-1PIGSTY~jammy_arm64.deb
+Size: 296680
+SHA256: 4d4cd6c4dac75fc066c88db82b4679f554885c9f867f773bb02f4da5cd2e9e7a
+SHA1: 804b5caab31bf642ea070a83075f1085793f735c
+MD5sum: 0f823f5118b2868c6a4b077b2ef7d20f
 Description: High speed data loading utility for PostgreSQL
   pg_bulkload is a high speed data loading tool for PostgreSQL.
   pg_bulkload is designed to load huge amount of data to a database. You can load data to table bypassing PostgreSQL shared buffers.
@@ -7243,6 +7411,26 @@ Description: This extension provides cheat (but useful) functions on PostgreSQL.
   This extension provides cheat (but useful) functions on PostgreSQL.
   pg_cheat_funcs is released under the PostgreSQL License, a liberal Open Source license, similar to the BSD or MIT licenses.
 
+Package: postgresql-14-pg-cooldown
+Source: pg-cooldown
+Version: 0.1-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 49
+Depends: postgresql-14, postgresql-14-jit-llvm (>= 15), libc6 (>= 2.17)
+Provides: postgresql-pg-cooldown
+Homepage: https://github.com/rbergm/pg_cooldown
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-cooldown/postgresql-14-pg-cooldown_0.1-1PIGSTY~jammy_arm64.deb
+Size: 13456
+SHA256: 07028573c948e57a9b82357fc74889b1d1e0fad8d90bf3797eedd6172a1ad962
+SHA1: 7073349638a9c98d2a969f15d73957ba12853d22
+MD5sum: 2e380706899ea4cbf52a304ae539214c
+Description: PostgreSQL extension to remove all pages of specific relations from the shared buffer.
+  The extension was heavily inspired by pg_prewarm and functions as a complementary tool: Whereas pg_prewarm adds pages from a relation to the shared buffer, pg_cooldown removes them again.
+  The main purpose of this tool is to easily simulate cold-start scenarios in research.
+
 Package: postgresql-14-pg-country
 Source: pg-country
 Version: 0.0.3-1PIGSTY~jammy
@@ -7285,6 +7473,27 @@ Description: Periodically or randomly crash your database
   If your database is too reliable - pg_crash can kill it for you.
   pg_crash is an extension to PostgreSQL, which allows you to periodically or randomly crash your database
   infrastructure by sending kill (or other) signals to your DB processes and make them fail. It is ideal for HA and failover testing.
+
+Package: postgresql-14-pg-curl
+Source: pg-curl
+Version: 2.4-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 793
+Depends: postgresql-14, postgresql-14-jit-llvm (>= 15), libc6 (>= 2.17), libcurl4 (>= 7.56.1)
+Provides: postgresql-pg-curl
+Homepage: https://github.com/RekGRpth/pg_curl
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-curl/postgresql-14-pg-curl_2.4-1PIGSTY~jammy_arm64.deb
+Size: 119374
+SHA256: 1a8611d7eb04de08200da5e94752c51722c802770992b5ef15742e9e10464c9e
+SHA1: ad46c9a8838da2731c7c9dbc4dfbe9536bd23536
+MD5sum: 50caefaea39c00728eb389a2274e5ecc
+Description: PostgreSQL cURL allows most curl actions to transfer data with URL syntax
+  PostgreSQL tool for transferring data with URL syntax,
+  supporting DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT,
+   POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS.
 
 Package: postgresql-14-pg-currency
 Source: pg-currency
@@ -8097,17 +8306,17 @@ Description: Cross documentation between Django and DBT projects
   COMMENT are set on columns in a json format with predefined values like status.
 
 Package: postgresql-14-pg-search
-Version: 0.14.1
+Version: 0.15.1
 Architecture: arm64
 Depends: postgresql-14
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.14.1_arm64.deb
-Size: 46191500
-SHA256: 1bab174158545622d4b198f347c30c4b8491dc7fa37681201719cd615d5d9f38
-SHA1: 35eb944abb448199c041c9553b3048574ecb9132
-MD5sum: 697978fd909acce5709f35f12c3bc436
+Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.15.1_arm64.deb
+Size: 46211096
+SHA256: 1d9e6a1a437149a23c36aaab6ad9b7dae1e537d7fcdd2f8720884af5b17b5914
+SHA1: 7ab3c3d7ad22665441126b033bbc9e70847f8b86
+MD5sum: a454a2285d6cf151335083b654e1c61e
 Description: Postgres for Search and Analytics
 
 Package: postgresql-14-pg-session-jwt
@@ -8213,20 +8422,20 @@ Description: Server side rollback at statement level for PostgreSQL like Oracle 
 
 Package: postgresql-14-pg-store-plan
 Source: pg-store-plan
-Version: 1.8-1PIGSTY~jammy
+Version: 1.8-2PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 304
+Installed-Size: 305
 Depends: postgresql-14, postgresql-14-jit-llvm (>= 15), libc6 (>= 2.33)
 Provides: postgresql-pg-store-plan
 Homepage: https://github.com/ossc-db/pg_store_plans
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-store-plan/postgresql-14-pg-store-plan_1.8-1PIGSTY~jammy_arm64.deb
-Size: 131008
-SHA256: 4829fd99879857191b85fe9883f0af27829b2467b321442115a85b9df1602a93
-SHA1: 2d54d5d992241976b5813cc447de20806a8a7726
-MD5sum: 37bf49aac7e5d38d965bd98f69b8227d
+Filename: pool/main/p/pg-store-plan/postgresql-14-pg-store-plan_1.8-2PIGSTY~jammy_arm64.deb
+Size: 131320
+SHA256: ada0bd2532ad80020178e5b1e3f2abae143c1a8f739c80e1e8476c5006dedef2
+SHA1: 282dda2995d725d3cb77d093164ee82f2070c2ec
+MD5sum: feecfe5b63fc3df61af6516192e95f48
 Description: Store execution plans like pg_stat_statements does for queries.
   The pg_store_plans module provides a means for tracking execution plan statistics of all SQL statements executed by a server.
   The module must be loaded by adding pg_store_plans to shared_preload_libraries in postgresql.conf, because it requires additional shared memory. This means that a server restart is required to add or remove the module. pg_store_plans requires the GUC variable compute_query_id to be "on" or "auto". If it is set to "no", pg_store_plans is silently disabled.
@@ -8257,20 +8466,20 @@ Description: Text Summarization using LLMs. Built using pgrx
 
 Package: postgresql-14-pg-task
 Source: pg-task
-Version: 1.0.0-1PIGSTY~jammy
+Version: 1.0.0-2PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 496
+Installed-Size: 499
 Depends: postgresql-14, postgresql-14-jit-llvm (>= 15)
 Provides: postgresql-pg-task
 Homepage: https://github.com/RekGRpth/pg_task
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-task/postgresql-14-pg-task_1.0.0-1PIGSTY~jammy_arm64.deb
-Size: 230660
-SHA256: d939885b31f3f26a135c5c342edb04e9d459006831ee674b5d5695f3f77d3671
-SHA1: 9e6f32c0222d71d2504ecfff41322da247d11cca
-MD5sum: 94772bac4112f366121a33cf1bd4a54d
+Filename: pool/main/p/pg-task/postgresql-14-pg-task_1.0.0-2PIGSTY~jammy_arm64.deb
+Size: 231390
+SHA256: 27497b1cdef15841b68d39d5518546fb04ada66c18ab003c1aa4d53c09f79a54
+SHA1: 6a899c97210d25d96df5f41ac4364da7af29f623
+MD5sum: 0444bf0de42851aa81b6303ad91bef65
 Description: PostgreSQL and Greenplum job scheduler pg_task allows to execute any sql command at any specific time at background asynchronously
   PostgreSQL and Greenplum job scheduler pg_task allows to execute any sql command at any specific time at background asynchronously
 
@@ -8422,20 +8631,20 @@ Description: A tiny Postgres extension to create version 7 UUIDs
 
 Package: postgresql-14-pg-vectorize
 Source: pg-vectorize
-Version: 0.20.0-1PIGSTY~jammy
+Version: 0.21.1-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 14225
+Installed-Size: 18061
 Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1), postgresql-14-pgmq, postgresql-14-pgvector, postgresql-14-cron
 Provides: postgresql-pg-vectorize
 Homepage: https://github.com/tembo-io/pg_vectorize
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-vectorize/postgresql-14-pg-vectorize_0.20.0-1PIGSTY~jammy_arm64.deb
-Size: 4623602
-SHA256: d895b8160171ffa47780d3157a1a0e28a2c26624889f66f237af890416b3308e
-SHA1: b23d32add2f3141f2379b7da80656079cbf86ffd
-MD5sum: e6eaf9da0ace9f2ba5fc2a94cb0fe750
+Filename: pool/main/p/pg-vectorize/postgresql-14-pg-vectorize_0.21.1-1PIGSTY~jammy_arm64.deb
+Size: 6932268
+SHA256: cef7958b6450dfe1ac67b887a46a0b20b6234ceba7cecd150231c8eb238e89d9
+SHA1: 9bbb0079e87c4f95aba6fec4298adceb98f4213f
+MD5sum: 9c458d5b354365ed8ee873dc9383ea12
 Description: reflects a vectorize schema from the existing PostgresSQL 14 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via vectorize with no additional servers, processes, or libraries.
@@ -8597,6 +8806,27 @@ MD5sum: 96ac71cbceb15683a40c6c5e47d0b585
 Description: Fast full-text search plugin for PostgreSQL based on Groonga
  PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
  It is based on Groonga full-text search engine.
+
+Package: postgresql-14-pgjq
+Source: pgjq
+Version: 0.1.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 57
+Depends: postgresql-14, postgresql-14-jit-llvm (>= 15), libc6 (>= 2.22), libjq1 (>= 1.6)
+Provides: postgresql-pgjq
+Homepage: https://github.com/Florents-Tselai/pgJQ
+Priority: optional
+Section: database
+Filename: pool/main/p/pgjq/postgresql-14-pgjq_0.1.0-1PIGSTY~jammy_arm64.deb
+Size: 20244
+SHA256: c84c03824ded19b75d5c984ff83388359954f7e77b46624da24814a5744fe49d
+SHA1: 21e5f66359e3f7b622ecb13aed6800d06c63bccf
+MD5sum: 0b7c7b05076ddf9bedccbba866b311cc
+Description: jq extension for Postgres
+  The pgJQ extension embeds the standard jq compiler and brings the much loved jq lang to Postgres.
+  It adds a jqprog data type to express jq programs and a jq(jsonb, jqprog) function to execute them on jsonb objects.
+  It works seamlessly with standard jsonb functions, operators, and jsonpath.
 
 Package: postgresql-14-pgjwt
 Source: pgjwt
@@ -8762,20 +8992,20 @@ Description: PostgreSQL extension to generate QR code
 
 Package: postgresql-14-pgroonga
 Source: pgroonga
-Version: 3.2.5-1PIGSTY~jammy
+Version: 4.0.0-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 2560
-Depends: postgresql-14, postgresql-14-jit-llvm (>= 15), libc6 (>= 2.33), libgroonga0 (>= 14.1.2)
+Installed-Size: 2585
+Depends: postgresql-14, postgresql-14-jit-llvm (>= 15), libc6 (>= 2.33), libgroonga0 (>= 15.0.0)
 Provides: postgresql-pgroonga
 Homepage: https://pgroonga.github.io/
 Priority: optional
 Section: database
-Filename: pool/main/p/pgroonga/postgresql-14-pgroonga_3.2.5-1PIGSTY~jammy_arm64.deb
-Size: 685484
-SHA256: fea56d507130e8de33a8b6fdfc8a95a8d50f8a767e83b3b4af89d8e45ddfac69
-SHA1: c628fcdad0846f9ae38779534400ef56cf306b79
-MD5sum: ea3856e9854770b0b8a43d9e4c6850ac
+Filename: pool/main/p/pgroonga/postgresql-14-pgroonga_4.0.0-1PIGSTY~jammy_arm64.deb
+Size: 694958
+SHA256: 029b46df7237105b736fcb996c812ebc2fa9beab257f4849fcde9898cbd0bc4e
+SHA1: 55328ac7492c98aa260e58fa3e0f4ad1db3070cf
+MD5sum: ea26abe32e6c60ec8ea0d2b2681c55e8
 Description: Fast full-text search plugin for PostgreSQL based on Groonga
  PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
  It is based on Groonga full-text search engine.
@@ -8818,6 +9048,26 @@ Description: Modern cryptography for PostgreSQL using libsodium.
   pgsodium is an encryption library extension for PostgreSQL using the libsodium library for high level cryptographic algorithms.
   pgsodium can be used a straight interface to libsodium, but it can also use a powerful feature called Server Key Management where pgsodium loads an external secret key into memory that is never accessible to SQL. This inaccessible root key can then be used to derive sub-keys and keypairs by key id. This id (type bigint) can then be stored instead of the derived key.
   Another advanced feature of pgsodium is Transparent Column Encryption which can automatically encrypt and decrypt one or more columns of data in a table.
+
+Package: postgresql-14-pgsparql
+Source: pgsparql
+Version: 1.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 84
+Depends: postgresql-14
+Provides: postgresql-pgsparql
+Homepage: https://github.com/lacanoid/pgsparql
+Priority: optional
+Section: database
+Filename: pool/main/p/pgsparql/postgresql-14-pgsparql_1.0-1PIGSTY~jammy_arm64.deb
+Size: 10784
+SHA256: 6f72c23294a699a9e7b3524de506919c15cd508502c7e9a5a20d758acc3d7f48
+SHA1: e8cc1e2d64c418c60d8464a169948a52ec180659
+MD5sum: c7415eb073233ce7e9e4810294b86ea3
+Description: SPARQL utilities extension for PostgreSQL
+  It helps one query SPARQL datasources. SPARQL queries are compiled into Postgres views, so you can use them nicely in SQL.
+  It is currently used with Virtuoso, so it is useful with sources like dbpedia. It might or might not work with other RDF backends.
 
 Package: postgresql-14-pgsql-tweaks
 Source: pgsql-tweaks
@@ -8902,6 +9152,27 @@ SHA1: 9885adedc012ff4005d49bd910da643618ddc642
 MD5sum: 374ed25b382c5505fbb5dc661e74fc10
 Description: A complement to pgvector for high performance, cost efficient vector search on large workloads.
   pgvectorscale builds on pgvector with higher performance embedding search and cost-efficient storage for AI applications.
+
+Package: postgresql-14-pgxicor
+Source: pgxicor
+Version: 0.1.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 78
+Depends: postgresql-14, postgresql-14-jit-llvm (>= 15), libc6 (>= 2.17)
+Provides: postgresql-pgxicor
+Homepage: https://github.com/Florents-Tselai/pgxicor
+Priority: optional
+Section: database
+Filename: pool/main/p/pgxicor/postgresql-14-pgxicor_0.1.0-1PIGSTY~jammy_arm64.deb
+Size: 27276
+SHA256: eead4b1795779a2893b1ea567d00e58255180083d27d14e2c9cba8e8734cf98c
+SHA1: 3b2b1cecc4f93431869387c93d038e176e5a49c9
+MD5sum: ed2c2d6c1783484577ae80236df26a15
+Description: XI Correlation Coefficient in Postgres
+  pgxicor is a Postgres extension that exposes a SELECT xicor(X, Y) aggregate function.
+  XI can detect functional relationships between X and Y.
+  You can use it as a more powerful alternative to standard corr(X, Y) which works best on linear relationships only.
 
 Package: postgresql-14-plprql
 Source: plprql
@@ -9243,20 +9514,20 @@ Description: Extension for more hyperfunctions, fully compatible with TimescaleD
 
 Package: postgresql-14-timescaledb-tsl
 Source: timescaledb-tsl
-Version: 2.17.2-1PIGSTY~jammy
+Version: 2.18.1-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 12570
+Installed-Size: 13585
 Depends: postgresql-14, libc6 (>= 2.17)
 Provides: postgresql-timescaledb-tsl
 Homepage: https://github.com/timescale/timescaledb
 Priority: optional
 Section: database
-Filename: pool/main/t/timescaledb-tsl/postgresql-14-timescaledb-tsl_2.17.2-1PIGSTY~jammy_arm64.deb
-Size: 635252
-SHA256: b35667c1b17a8461d78d890cadbca439cd555e87e87baf5fb1b5afdb46ad1f98
-SHA1: ad619ae1ec882825f9d920cd6cbd34adff02814f
-MD5sum: 64173a454242541d6c2559d75ecd901d
+Filename: pool/main/t/timescaledb-tsl/postgresql-14-timescaledb-tsl_2.18.1-1PIGSTY~jammy_arm64.deb
+Size: 684216
+SHA256: 043e735c5830a77497379a2c259644e029e96ed32fb8c06e5e9ffad736a5fd44
+SHA1: dff2195fa65d6c4dc102e21c5f733ac2f9b7fe35
+MD5sum: f652feb14f2030b6a7935bbc25b60390
 Description: PostgreSQL extension for high-performance real-time analytics on time-series and event data (TSL version)
   An open-source time-series SQL database optimized for fast ingest and complex queries. Packaged as a PostgreSQL extension.
 
@@ -9381,6 +9652,26 @@ Description: Scalable, fast, and disk-friendly vector search in Postgres, the su
   VectorChord (vchord) is a PostgreSQL extension designed for scalable, high-performance, and disk-efficient vector similarity search, and serves as the successor to pgvecto.rs.
   With VectorChord, you can store 400,000 vectors for just $1, enabling significant savings: 6x more vectors compared to Pinecone's optimized storage and 26x more than pgvector/pgvecto.rs for the same price1. For further insights, check out our launch blog post.
 
+Package: postgresql-14-vchord-bm25
+Source: vchord-bm25
+Version: 0.1.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 6810
+Depends: postgresql-14, libc6 (>= 2.34), libgcc-s1 (>= 4.2), postgresql-14-pgvector
+Provides: postgresql-vchord-bm25
+Homepage: https://github.com/tensorchord/VectorChord
+Priority: optional
+Section: database
+Filename: pool/main/v/vchord-bm25/postgresql-14-vchord-bm25_0.1.0-1PIGSTY~jammy_arm64.deb
+Size: 2429240
+SHA256: 08c7ae8782181318984fb3351c745071dbc7b71669885b8a1f21166ade7a5784
+SHA1: 4ae8fe6c18c3ecda6be61df69c48d7de2d7e8b22
+MD5sum: 22ffc6ae1c089046aa76c621ff3aae62
+Description: Scalable, fast, and disk-friendly vector search in Postgres, the successor of pgvecto.rs.
+  VectorChord (vchord-bm25) is a PostgreSQL extension designed for scalable, high-performance, and disk-efficient vector similarity search, and serves as the successor to pgvecto.rs.
+  With VectorChord, you can store 400,000 vectors for just $1, enabling significant savings: 6x more vectors compared to Pinecone's optimized storage and 26x more than pgvector/pgvecto.rs for the same price1. For further insights, check out our launch blog post.
+
 Package: postgresql-14-wal2mongo
 Source: wal2mongo
 Version: 1.0.7-1PIGSTY~jammy
@@ -9423,20 +9714,20 @@ Description: Postgres Foreign Data Wrappers by Supabase
 
 Package: postgresql-14-zhparser
 Source: zhparser
-Version: 2.2-1PIGSTY~jammy
+Version: 2.3-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 14056
+Installed-Size: 14060
 Depends: postgresql-14, postgresql-14-jit-llvm (>= 15), libc6 (>= 2.17), scws (>= 1.2.3)
 Provides: postgresql-zhparser
 Homepage: https://github.com/supabase/zhparser
 Priority: optional
 Section: database
-Filename: pool/main/z/zhparser/postgresql-14-zhparser_2.2-1PIGSTY~jammy_arm64.deb
-Size: 4469418
-SHA256: 6ca973b05f35cceeced53da9a164ca20a029891cf6c0bd1a0ca8be112d7225d0
-SHA1: 7a7b4ee728d0adc22d95cddbd0e040154d834fe0
-MD5sum: 7afb82d3dd1e273cd4cd20b9af73f26d
+Filename: pool/main/z/zhparser/postgresql-14-zhparser_2.3-1PIGSTY~jammy_arm64.deb
+Size: 4468610
+SHA256: 70feb02fabc5c3cc495cc98d8750bae0cc2432d9d6c46d0b69badf47e05ca968
+SHA1: 23619db25dce3e9f208e389010cef12f4a54e41b
+MD5sum: 8c08540534c90ea0ea1901e0f1c561a8
 Description: Open-source full-text search of Chinese language
   zhparser is a PostgreSQL extension for full-text search of Chinese language (Mandarin Chinese).
   It implements a Chinese language parser base on the Simple Chinese Word Segmentation(SCWS).
@@ -9611,20 +9902,20 @@ Description: Foreign-Data Wrapper facility to enable reading log files via SQL
 
 Package: postgresql-15-citus
 Source: citus
-Version: 13.0.0-1PIGSTY~jammy
+Version: 13.0.1-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 8962
+Installed-Size: 8958
 Depends: postgresql-15, postgresql-15-jit-llvm (>= 15), libc6 (>= 2.33), libcurl4 (>= 7.16.2), liblz4-1 (>= 0.0~r130), libpq5 (>= 9.2~beta3), libssl3 (>= 3.0.0~~alpha1), libzstd1 (>= 1.4.0)
 Provides: postgresql-citus
 Homepage: https://github.com/citusdatabase/citus
 Priority: optional
 Section: database
-Filename: pool/main/c/citus/postgresql-15-citus_13.0.0-1PIGSTY~jammy_arm64.deb
-Size: 3283310
-SHA256: fc8f0b413a1345a50e7086f9ea63ab3efa7a2534cd65ea216924044b13146a6e
-SHA1: 6fb4121f0e5ecf9e2293173c1e6fde76894e46e4
-MD5sum: 5b793e8b4b4db3cc9970970f67b7c33a
+Filename: pool/main/c/citus/postgresql-15-citus_13.0.1-1PIGSTY~jammy_arm64.deb
+Size: 3288564
+SHA256: bef1dc6cf3ee850bba9222527e69159b6b3f3a4589aed19b06d4ccdb55f9ba15
+SHA1: bf29da8ad7e34c9cb52d301a1d7de8e96e535cce
+MD5sum: e64f1e7c274a846b9979ab6ee7b628fc
 Description: PostgreSQL extension that transforms Postgres into a distributed database
  Citus horizontally scales PostgreSQL across commodity servers
  using sharding and replication. Its query engine parallelizes
@@ -9695,6 +9986,28 @@ SHA1: 6f85f6339963002d2ded569805eea4f4cc4e6ae4
 MD5sum: ab1149e6e79a4683a0dc0111add58be7
 Description: PLPGSQL Script to historize data in partitionned table
   PLPGSQL Script to historize data in partitionned table
+
+Package: postgresql-15-db-migrator
+Source: db-migrator
+Version: 1.0.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 120
+Depends: postgresql-15
+Provides: postgresql-db-migrator
+Homepage: https://github.com/cybertec-postgresql/db_migrator
+Priority: optional
+Section: database
+Filename: pool/main/d/db-migrator/postgresql-15-db-migrator_1.0.0-1PIGSTY~jammy_arm64.deb
+Size: 21840
+SHA256: 9ea67ef9a12f1744cac7f79097edea8f23584e54c6bfaf3607d8b1699eca11f0
+SHA1: c2fac884f4ef3f0a67cd86cf22f53d205c7f52c5
+MD5sum: 53917576acf46ab333d818c5f07dcc94
+Description: Functions for migrating databases from other data sources to PostgreSQL
+  db_migrator is a PostgreSQL extension that provides functions for migrating databases from other data sources to PostgreSQL.
+  This requires a foreign data wrapper for the data source you want to migrate.
+  You also need a plugin for db_migrator that contains the code specific to the targeted data source. Currently, plugins exist for the following data sources:
+  oracle, mysql, mariadb, microsoft sql server
 
 Package: postgresql-15-ddl-historization
 Source: ddl-historization
@@ -9921,6 +10234,27 @@ Description: GZIP implementation in PostgreSQL 15
   Sometimes you just need to compress your bytea object before you return it to the client.
   Sometimes you receive a compressed bytea from the client, and you have to uncompress it before you can work with it.
   This extension is for that.
+
+Package: postgresql-15-hashtypes
+Source: hashtypes
+Version: 0.1.5-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 266
+Depends: postgresql-15, postgresql-15-jit-llvm (>= 15), libc6 (>= 2.17)
+Provides: postgresql-hashtypes
+Homepage: https://github.com/adjust/hashtypes/
+Priority: optional
+Section: database
+Filename: pool/main/h/hashtypes/postgresql-15-hashtypes_0.1.5-1PIGSTY~jammy_arm64.deb
+Size: 36954
+SHA256: d6f71895da9c73991409966cef1fd77c8667415509c5a0916715cd845fcdf62d
+SHA1: 3a523a72f57673419b736ea2f4552e77b34d7afb
+MD5sum: 68edcabc86a5282b2334c43d049f7d91
+Description: Custom data types to store SHA-1, SHA-2, MD5, CRC32, etc in PostgreSQL
+  This extension provides custom data types to store various hash values (SHA-1,
+  SHA-2, MD5, CRC32, etc) in PostgreSQL without the storage and computation
+  overhead of bytea. It offers efficient storage and operations for hash values.
 
 Package: postgresql-15-hunspell-cs-cz
 Source: hunspell-cs-cz
@@ -10426,18 +10760,18 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 15
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
 Package: postgresql-15-pg-analytics
-Version: 0.3.0
+Version: 0.3.3
 Architecture: arm64
 Depends: postgresql-15
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-15-pg-analytics/postgresql-15-pg-analytics_0.3.0_arm64.deb
-Size: 9369564
-SHA256: 0aa716a212c9072eb3acd74a0b56f1586ecffc2e288ddeeee7049266103718cc
-SHA1: f5019ad7455f3bd7a43bed3d4bccef9d5b961836
-MD5sum: 4bf01783c6a5397577fe0760d65f6fb5
-Description: DuckDB-powered analytics for Postgres
+Filename: pool/main/p/postgresql-15-pg-analytics/postgresql-15-pg-analytics_0.3.3_arm64.deb
+Size: 9365936
+SHA256: 0593b7e7ba5c2973c648d0c7e5b0b4bbcc647d06c7bf0646e9f91bebdbe8f1b5
+SHA1: 5d8938d898ccdc485b57a1a85a1c82ed23268413
+MD5sum: 08f5d9f95a90de9f3e948ff809fd5be2
+Description: DuckDB-powered data lake analytics from PostgreSQL
 
 Package: postgresql-15-pg-anon
 Source: pg-anon
@@ -10606,7 +10940,7 @@ Description: The pg_bigm module provides full text search capability in PostgreS
 
 Package: postgresql-15-pg-bulkload
 Source: pg-bulkload
-Version: 3.1.21-1PIGSTY~jammy
+Version: 3.1.22-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 633
@@ -10615,11 +10949,11 @@ Provides: postgresql-pg-bulkload
 Homepage: https://github.com/ossc-db/pg_bulkload
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-bulkload/postgresql-15-pg-bulkload_3.1.21-1PIGSTY~jammy_arm64.deb
-Size: 297416
-SHA256: a0c8e04ecf88b3be6018e915014c4e436afb93cf77167cf5781c5e8943a58ad9
-SHA1: 85403afff11602172f6349b6811c701aed432eb9
-MD5sum: 89f8c844ac6ddfd66bebdfec1e3e50b2
+Filename: pool/main/p/pg-bulkload/postgresql-15-pg-bulkload_3.1.22-1PIGSTY~jammy_arm64.deb
+Size: 297462
+SHA256: 9f56ba8c935c5750c2d9e0f71fcbf7e75d9b3d6099206a7d789dac50d6541857
+SHA1: f55d71da0932bbf63c71310fd10547bf119f7502
+MD5sum: 7e43ed237634c3ca077b27071462004a
 Description: High speed data loading utility for PostgreSQL
   pg_bulkload is a high speed data loading tool for PostgreSQL.
   pg_bulkload is designed to load huge amount of data to a database. You can load data to table bypassing PostgreSQL shared buffers.
@@ -10666,6 +11000,26 @@ Description: This extension provides cheat (but useful) functions on PostgreSQL.
   This extension provides cheat (but useful) functions on PostgreSQL.
   pg_cheat_funcs is released under the PostgreSQL License, a liberal Open Source license, similar to the BSD or MIT licenses.
 
+Package: postgresql-15-pg-cooldown
+Source: pg-cooldown
+Version: 0.1-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 49
+Depends: postgresql-15, postgresql-15-jit-llvm (>= 15), libc6 (>= 2.17)
+Provides: postgresql-pg-cooldown
+Homepage: https://github.com/rbergm/pg_cooldown
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-cooldown/postgresql-15-pg-cooldown_0.1-1PIGSTY~jammy_arm64.deb
+Size: 13486
+SHA256: e75ea0c61263912db6db56580b427aa3b533452cb6bd6067e0cb8f2ee94afa49
+SHA1: 84b3254846ce0a36a1b721e2967bd034110fdeca
+MD5sum: a5da470702b1e1daf79398e3cd62f5dd
+Description: PostgreSQL extension to remove all pages of specific relations from the shared buffer.
+  The extension was heavily inspired by pg_prewarm and functions as a complementary tool: Whereas pg_prewarm adds pages from a relation to the shared buffer, pg_cooldown removes them again.
+  The main purpose of this tool is to easily simulate cold-start scenarios in research.
+
 Package: postgresql-15-pg-country
 Source: pg-country
 Version: 0.0.3-1PIGSTY~jammy
@@ -10708,6 +11062,27 @@ Description: Periodically or randomly crash your database
   If your database is too reliable - pg_crash can kill it for you.
   pg_crash is an extension to PostgreSQL, which allows you to periodically or randomly crash your database
   infrastructure by sending kill (or other) signals to your DB processes and make them fail. It is ideal for HA and failover testing.
+
+Package: postgresql-15-pg-curl
+Source: pg-curl
+Version: 2.4-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 793
+Depends: postgresql-15, postgresql-15-jit-llvm (>= 15), libc6 (>= 2.17), libcurl4 (>= 7.56.1)
+Provides: postgresql-pg-curl
+Homepage: https://github.com/RekGRpth/pg_curl
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-curl/postgresql-15-pg-curl_2.4-1PIGSTY~jammy_arm64.deb
+Size: 119320
+SHA256: ddb684af30d19ec543e4c18f5bc5513e253a3c12105f763f3d0e19d2c292038a
+SHA1: 26414e3cfcf278c52003ba663745bd7212e0066c
+MD5sum: 0b2e03416ed585983372318602b23ed8
+Description: PostgreSQL cURL allows most curl actions to transfer data with URL syntax
+  PostgreSQL tool for transferring data with URL syntax,
+  supporting DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT,
+   POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS.
 
 Package: postgresql-15-pg-currency
 Source: pg-currency
@@ -11198,20 +11573,20 @@ Description: PostgreSQL Extension: More friendly system catalog for PostgreSQL
 
 Package: postgresql-15-pg-mooncake
 Source: pg-mooncake
-Version: 0.1.0-1PIGSTY~jammy
+Version: 0.1.1-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 91167
+Installed-Size: 91180
 Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.5), libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
 Provides: postgresql-pg-mooncake
 Homepage: https://github.com/Mooncake-Labs/pg_mooncake
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-mooncake/postgresql-15-pg-mooncake_0.1.0-1PIGSTY~jammy_arm64.deb
-Size: 24156324
-SHA256: 6dde9229b0b95643feb482837ff75395e1bf5042c9e15d658a2c925647c8c720
-SHA1: 5b22947bcaf7080fe61ba764b5addea0046361ef
-MD5sum: aaf01ad4da3f3943b900d5decba15812
+Filename: pool/main/p/pg-mooncake/postgresql-15-pg-mooncake_0.1.1-1PIGSTY~jammy_arm64.deb
+Size: 24145332
+SHA256: 2a187015b3c96eeda06b4ac4ed1ccfc7899d1e663a17df11163e2237a7d8fa20
+SHA1: 7d54f87adeb64ee2938117997eab81067431a7ac
+MD5sum: f836e678570ad5ff76aa42e20be48a04
 Description: Columnstore Table in Postgres
   pg_mooncake is a PostgreSQL extension that adds native columnstore tables with DuckDB execution.
   Columnstore tables are stored as Iceberg or Delta Lake tables in object storage.
@@ -11520,17 +11895,17 @@ Description: Cross documentation between Django and DBT projects
   COMMENT are set on columns in a json format with predefined values like status.
 
 Package: postgresql-15-pg-search
-Version: 0.14.1
+Version: 0.15.1
 Architecture: arm64
 Depends: postgresql-15
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.14.1_arm64.deb
-Size: 46189496
-SHA256: 91cef346616df167177bd9f6e834afbb41ef7354681dd3b08b7d184494febe4f
-SHA1: d34d5a3d84c66eb436975c678f5ec2b468b8e9a9
-MD5sum: f5f5795ce74342aebd9f20af755cc383
+Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.15.1_arm64.deb
+Size: 46217220
+SHA256: a60897a062b5e2725259bc57eb22d097414d33892e6ad6def3f0cfcacbb7dfa3
+SHA1: 5d2ee265992f3ede8bad124bb9e69616a42b03e1
+MD5sum: 41bde52ebf66f924f370103fa7c1f81f
 Description: Postgres for Search and Analytics
 
 Package: postgresql-15-pg-session-jwt
@@ -11636,7 +12011,7 @@ Description: Server side rollback at statement level for PostgreSQL like Oracle 
 
 Package: postgresql-15-pg-store-plan
 Source: pg-store-plan
-Version: 1.8-1PIGSTY~jammy
+Version: 1.8-2PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 301
@@ -11645,11 +12020,11 @@ Provides: postgresql-pg-store-plan
 Homepage: https://github.com/ossc-db/pg_store_plans
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-store-plan/postgresql-15-pg-store-plan_1.8-1PIGSTY~jammy_arm64.deb
-Size: 131466
-SHA256: 1074df97452dce12930dde100860a04e244346353acfd5a3ee2a3210054d11a8
-SHA1: 5e933365f4ea824c3aef1ddc1d03461bb2ed5527
-MD5sum: 9685de97938c2b21e67f29481ced28fc
+Filename: pool/main/p/pg-store-plan/postgresql-15-pg-store-plan_1.8-2PIGSTY~jammy_arm64.deb
+Size: 131894
+SHA256: aee3f8a93dfb49397e4ec58c3fcdd08ee0ee20caf6b0c0e0576eba4630a61649
+SHA1: 11648b7e8607e9c992233452664769cb0daaa179
+MD5sum: e26bee34709817c71e8072182200bf90
 Description: Store execution plans like pg_stat_statements does for queries.
   The pg_store_plans module provides a means for tracking execution plan statistics of all SQL statements executed by a server.
   The module must be loaded by adding pg_store_plans to shared_preload_libraries in postgresql.conf, because it requires additional shared memory. This means that a server restart is required to add or remove the module. pg_store_plans requires the GUC variable compute_query_id to be "on" or "auto". If it is set to "no", pg_store_plans is silently disabled.
@@ -11680,20 +12055,20 @@ Description: Text Summarization using LLMs. Built using pgrx
 
 Package: postgresql-15-pg-task
 Source: pg-task
-Version: 1.0.0-1PIGSTY~jammy
+Version: 1.0.0-2PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 503
+Installed-Size: 504
 Depends: postgresql-15, postgresql-15-jit-llvm (>= 15)
 Provides: postgresql-pg-task
 Homepage: https://github.com/RekGRpth/pg_task
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-task/postgresql-15-pg-task_1.0.0-1PIGSTY~jammy_arm64.deb
-Size: 235468
-SHA256: a25f26acf134237fe4e19440fd35aaf933e76b05a04992f84d69ea4333017533
-SHA1: 830566cf60890e6ad6ee6616c88e6b4a5f4cb5b3
-MD5sum: d63460e1b2bfdd30837e803e0d5be32f
+Filename: pool/main/p/pg-task/postgresql-15-pg-task_1.0.0-2PIGSTY~jammy_arm64.deb
+Size: 235998
+SHA256: fb65b22850cecb98f96275c8ff6bd52d10d482e615c1198fd39b6ccf4d486cc3
+SHA1: c639f18054af1d41c96ea5f28446d5d43b87a467
+MD5sum: 048ec76c1db9a1f98d9c370c38096be2
 Description: PostgreSQL and Greenplum job scheduler pg_task allows to execute any sql command at any specific time at background asynchronously
   PostgreSQL and Greenplum job scheduler pg_task allows to execute any sql command at any specific time at background asynchronously
 
@@ -11757,6 +12132,26 @@ Description: Trusted Language Extensions for PostgreSQL
   extend and deploy new PostgreSQL functionality with lower administrative and technical overhead.
   Developers can use Trusted Language Extensions for PostgreSQL to create and install extensions on restricted filesystems
   and work with PostgreSQL internals through a SQL API.
+
+Package: postgresql-15-pg-tracing
+Source: pg-tracing
+Version: 0.1.2-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 288
+Depends: postgresql-15, postgresql-15-jit-llvm (>= 15), libc6 (>= 2.17), libcurl4 (>= 7.16.2)
+Provides: postgresql-pg-tracing
+Homepage: https://github.com/DataDog/pg_tracing
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-tracing/postgresql-15-pg-tracing_0.1.2-1PIGSTY~jammy_arm64.deb
+Size: 133398
+SHA256: 1f46b8da66d0d07ecbc748ce4902014032e9f76e148da8870fea00498643ee55
+SHA1: 742e9944b3b683949364ea58652c306529d0fd7e
+MD5sum: 6f2a60a0c02b5ca242f4db803e684a8a
+Description: Distributed Tracing for PostgreSQL
+  pg_tracing is a PostgreSQL extension that generates server-side spans for distributed tracing.
+  When pg_tracing is active, it generates spans on sampled queries
 
 Package: postgresql-15-pg-uint128
 Source: pg-uint128
@@ -11845,20 +12240,20 @@ Description: A tiny Postgres extension to create version 7 UUIDs
 
 Package: postgresql-15-pg-vectorize
 Source: pg-vectorize
-Version: 0.20.0-1PIGSTY~jammy
+Version: 0.21.1-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 14225
+Installed-Size: 18057
 Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1), postgresql-15-pgmq, postgresql-15-pgvector, postgresql-15-cron
 Provides: postgresql-pg-vectorize
 Homepage: https://github.com/tembo-io/pg_vectorize
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-vectorize/postgresql-15-pg-vectorize_0.20.0-1PIGSTY~jammy_arm64.deb
-Size: 4620152
-SHA256: 903a29ff48f197b09c9cc13d9449fe3cc4448886c9e2183654c89db2f818b1df
-SHA1: 8281d9d9aaf164ca5dbed1a1aaf7172a11509605
-MD5sum: 2e61a38bd43c6840f1c276c07b287376
+Filename: pool/main/p/pg-vectorize/postgresql-15-pg-vectorize_0.21.1-1PIGSTY~jammy_arm64.deb
+Size: 6919606
+SHA256: f0e9949f5196c251ed67d56352e515780b31582ce621a10843df51c8c318b7bc
+SHA1: dd7606de2a7541b2e7fa2d0f009ad5f76ded1803
+MD5sum: 1cbafd0d07b559f5bc06f782fb35a5cd
 Description: reflects a vectorize schema from the existing PostgresSQL 15 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via vectorize with no additional servers, processes, or libraries.
@@ -12020,6 +12415,27 @@ MD5sum: f13dbbc553b0fabdc9f7f4768ecbbcd5
 Description: Fast full-text search plugin for PostgreSQL based on Groonga
  PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
  It is based on Groonga full-text search engine.
+
+Package: postgresql-15-pgjq
+Source: pgjq
+Version: 0.1.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 57
+Depends: postgresql-15, postgresql-15-jit-llvm (>= 15), libc6 (>= 2.22), libjq1 (>= 1.6)
+Provides: postgresql-pgjq
+Homepage: https://github.com/Florents-Tselai/pgJQ
+Priority: optional
+Section: database
+Filename: pool/main/p/pgjq/postgresql-15-pgjq_0.1.0-1PIGSTY~jammy_arm64.deb
+Size: 20268
+SHA256: 41aa3e0850998691f04d29835f02fb0c17fbd46b1a2070e53406a2cfd3eccd75
+SHA1: 02c7e378f8bb8d97b91d93866afcbe4d5c6d37dc
+MD5sum: 8bb7f3cd82e6a4979bc684e1ada5a371
+Description: jq extension for Postgres
+  The pgJQ extension embeds the standard jq compiler and brings the much loved jq lang to Postgres.
+  It adds a jqprog data type to express jq programs and a jq(jsonb, jqprog) function to execute them on jsonb objects.
+  It works seamlessly with standard jsonb functions, operators, and jsonpath.
 
 Package: postgresql-15-pgjwt
 Source: pgjwt
@@ -12185,20 +12601,20 @@ Description: PostgreSQL extension to generate QR code
 
 Package: postgresql-15-pgroonga
 Source: pgroonga
-Version: 3.2.5-1PIGSTY~jammy
+Version: 4.0.0-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 2677
-Depends: postgresql-15, postgresql-15-jit-llvm (>= 15), libc6 (>= 2.33), libgroonga0 (>= 14.1.2)
+Installed-Size: 2706
+Depends: postgresql-15, postgresql-15-jit-llvm (>= 15), libc6 (>= 2.33), libgroonga0 (>= 15.0.0)
 Provides: postgresql-pgroonga
 Homepage: https://pgroonga.github.io/
 Priority: optional
 Section: database
-Filename: pool/main/p/pgroonga/postgresql-15-pgroonga_3.2.5-1PIGSTY~jammy_arm64.deb
-Size: 746552
-SHA256: a7ac39f330e3a3051825324c8989b0ae3ac36c9375b8be43e3d5e4c03257cecf
-SHA1: 74fd141385395a16a47ac3aff54e8719741797ab
-MD5sum: 44dde03424e7cb91b16eab710a4f354f
+Filename: pool/main/p/pgroonga/postgresql-15-pgroonga_4.0.0-1PIGSTY~jammy_arm64.deb
+Size: 755796
+SHA256: 0245ddd0c217671f06432e2a91393a94cc552df9fc642593c7ccceba39167203
+SHA1: bbd4fc507842a78997d47ad3d2dd1e5e77cc1d5c
+MD5sum: e8842c3634709b4eaa1cd3cdb592a571
 Description: Fast full-text search plugin for PostgreSQL based on Groonga
  PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
  It is based on Groonga full-text search engine.
@@ -12241,6 +12657,26 @@ Description: Modern cryptography for PostgreSQL using libsodium.
   pgsodium is an encryption library extension for PostgreSQL using the libsodium library for high level cryptographic algorithms.
   pgsodium can be used a straight interface to libsodium, but it can also use a powerful feature called Server Key Management where pgsodium loads an external secret key into memory that is never accessible to SQL. This inaccessible root key can then be used to derive sub-keys and keypairs by key id. This id (type bigint) can then be stored instead of the derived key.
   Another advanced feature of pgsodium is Transparent Column Encryption which can automatically encrypt and decrypt one or more columns of data in a table.
+
+Package: postgresql-15-pgsparql
+Source: pgsparql
+Version: 1.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 84
+Depends: postgresql-15
+Provides: postgresql-pgsparql
+Homepage: https://github.com/lacanoid/pgsparql
+Priority: optional
+Section: database
+Filename: pool/main/p/pgsparql/postgresql-15-pgsparql_1.0-1PIGSTY~jammy_arm64.deb
+Size: 10780
+SHA256: abf0f6a1857d0f62f1d1b9c74077c107065118d51b7b3217bf3d55bf10506f5a
+SHA1: 435a30025b958f7656d92fc21f8790ea12017651
+MD5sum: e0985e51c0e4ed48148c4d611608d64d
+Description: SPARQL utilities extension for PostgreSQL
+  It helps one query SPARQL datasources. SPARQL queries are compiled into Postgres views, so you can use them nicely in SQL.
+  It is currently used with Virtuoso, so it is useful with sources like dbpedia. It might or might not work with other RDF backends.
 
 Package: postgresql-15-pgsql-tweaks
 Source: pgsql-tweaks
@@ -12325,6 +12761,27 @@ SHA1: ff841fdfc6ccf7fb45694aec6cd35c4ebe239431
 MD5sum: 31918cf9faca7f4187d65d2db31da8a3
 Description: A complement to pgvector for high performance, cost efficient vector search on large workloads.
   pgvectorscale builds on pgvector with higher performance embedding search and cost-efficient storage for AI applications.
+
+Package: postgresql-15-pgxicor
+Source: pgxicor
+Version: 0.1.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 78
+Depends: postgresql-15, postgresql-15-jit-llvm (>= 15), libc6 (>= 2.17)
+Provides: postgresql-pgxicor
+Homepage: https://github.com/Florents-Tselai/pgxicor
+Priority: optional
+Section: database
+Filename: pool/main/p/pgxicor/postgresql-15-pgxicor_0.1.0-1PIGSTY~jammy_arm64.deb
+Size: 27336
+SHA256: 47be6c7a44f78737126719a39edd2a93f1f5281285fe702c625c6aaf69b0eb51
+SHA1: a60fb496f16ef5f8f67690fedab66b6e40609336
+MD5sum: 5b71e7d910d6d7c889dd277f3699aa66
+Description: XI Correlation Coefficient in Postgres
+  pgxicor is a Postgres extension that exposes a SELECT xicor(X, Y) aggregate function.
+  XI can detect functional relationships between X and Y.
+  You can use it as a more powerful alternative to standard corr(X, Y) which works best on linear relationships only.
 
 Package: postgresql-15-plprql
 Source: plprql
@@ -12666,20 +13123,20 @@ Description: Extension for more hyperfunctions, fully compatible with TimescaleD
 
 Package: postgresql-15-timescaledb-tsl
 Source: timescaledb-tsl
-Version: 2.17.2-1PIGSTY~jammy
+Version: 2.18.1-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 12570
+Installed-Size: 13598
 Depends: postgresql-15, libc6 (>= 2.17)
 Provides: postgresql-timescaledb-tsl
 Homepage: https://github.com/timescale/timescaledb
 Priority: optional
 Section: database
-Filename: pool/main/t/timescaledb-tsl/postgresql-15-timescaledb-tsl_2.17.2-1PIGSTY~jammy_arm64.deb
-Size: 639710
-SHA256: 7e13f5af44f163ab8e6d6d8b655bd04a7ca4954e124afb74e13d9efc88d6cb3c
-SHA1: c359ba6cd9f16766fb92d96eef1d8d5669c708ad
-MD5sum: 3e0155629746c4cde4b7cbbb5ba5cd55
+Filename: pool/main/t/timescaledb-tsl/postgresql-15-timescaledb-tsl_2.18.1-1PIGSTY~jammy_arm64.deb
+Size: 690490
+SHA256: b07ebecbdc06ee1e032c7c19c2e574e7310b1ca5a0ac7f7e853bc30d811aa181
+SHA1: 737d0553603c3c1e692e97d4a5de87328a370b9a
+MD5sum: a54dff5604a1af97a6f219399fd044df
 Description: PostgreSQL extension for high-performance real-time analytics on time-series and event data (TSL version)
   An open-source time-series SQL database optimized for fast ingest and complex queries. Packaged as a PostgreSQL extension.
 
@@ -12804,6 +13261,26 @@ Description: Scalable, fast, and disk-friendly vector search in Postgres, the su
   VectorChord (vchord) is a PostgreSQL extension designed for scalable, high-performance, and disk-efficient vector similarity search, and serves as the successor to pgvecto.rs.
   With VectorChord, you can store 400,000 vectors for just $1, enabling significant savings: 6x more vectors compared to Pinecone's optimized storage and 26x more than pgvector/pgvecto.rs for the same price1. For further insights, check out our launch blog post.
 
+Package: postgresql-15-vchord-bm25
+Source: vchord-bm25
+Version: 0.1.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 6810
+Depends: postgresql-15, libc6 (>= 2.34), libgcc-s1 (>= 4.2), postgresql-15-pgvector
+Provides: postgresql-vchord-bm25
+Homepage: https://github.com/tensorchord/VectorChord
+Priority: optional
+Section: database
+Filename: pool/main/v/vchord-bm25/postgresql-15-vchord-bm25_0.1.0-1PIGSTY~jammy_arm64.deb
+Size: 2435518
+SHA256: 80db583c0e052fa74b78cd0fb8a4d826d9f41fc0936f7fc009d08399ae3e5f2c
+SHA1: a2af715845478cab9c29cc70e970d98cd17c4368
+MD5sum: f9d7efc8f5c5e92e342d92bc6d84ec06
+Description: Scalable, fast, and disk-friendly vector search in Postgres, the successor of pgvecto.rs.
+  VectorChord (vchord-bm25) is a PostgreSQL extension designed for scalable, high-performance, and disk-efficient vector similarity search, and serves as the successor to pgvecto.rs.
+  With VectorChord, you can store 400,000 vectors for just $1, enabling significant savings: 6x more vectors compared to Pinecone's optimized storage and 26x more than pgvector/pgvecto.rs for the same price1. For further insights, check out our launch blog post.
+
 Package: postgresql-15-wal2mongo
 Source: wal2mongo
 Version: 1.0.7-1PIGSTY~jammy
@@ -12846,20 +13323,20 @@ Description: Postgres Foreign Data Wrappers by Supabase
 
 Package: postgresql-15-zhparser
 Source: zhparser
-Version: 2.2-1PIGSTY~jammy
+Version: 2.3-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 14056
+Installed-Size: 14060
 Depends: postgresql-15, postgresql-15-jit-llvm (>= 15), libc6 (>= 2.17), scws (>= 1.2.3)
 Provides: postgresql-zhparser
 Homepage: https://github.com/supabase/zhparser
 Priority: optional
 Section: database
-Filename: pool/main/z/zhparser/postgresql-15-zhparser_2.2-1PIGSTY~jammy_arm64.deb
-Size: 4469466
-SHA256: bf81e2a14ab3341574613983cc7ad595c204f146a463a4373776d239f680e01a
-SHA1: 451f60c24ed98a81f3630b2102666b37b8777c4c
-MD5sum: 107f4c8a41f2e3416a9f2d9b3fcb2b4f
+Filename: pool/main/z/zhparser/postgresql-15-zhparser_2.3-1PIGSTY~jammy_arm64.deb
+Size: 4468120
+SHA256: f52ae1eaec542f105f1c79288f9ca24fe290017e1faff88604089fe5d2c8e0a0
+SHA1: ed2e580b001a2109dc9e4e9758dd49a181e84188
+MD5sum: 558ae5576e3e38c6f2ce3c768e963761
 Description: Open-source full-text search of Chinese language
   zhparser is a PostgreSQL extension for full-text search of Chinese language (Mandarin Chinese).
   It implements a Chinese language parser base on the Simple Chinese Word Segmentation(SCWS).
@@ -13034,20 +13511,20 @@ Description: Foreign-Data Wrapper facility to enable reading log files via SQL
 
 Package: postgresql-16-citus
 Source: citus
-Version: 13.0.0-1PIGSTY~jammy
+Version: 13.0.1-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 8738
+Installed-Size: 8730
 Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.33), libcurl4 (>= 7.16.2), liblz4-1 (>= 0.0~r130), libpq5 (>= 9.2~beta3), libssl3 (>= 3.0.0~~alpha1), libzstd1 (>= 1.4.0)
 Provides: postgresql-citus
 Homepage: https://github.com/citusdatabase/citus
 Priority: optional
 Section: database
-Filename: pool/main/c/citus/postgresql-16-citus_13.0.0-1PIGSTY~jammy_arm64.deb
-Size: 3259716
-SHA256: 15ab20c25b3f87bb70f5d6739a212a8035ecf47c3fca7ebfbc42c60fae15f1f9
-SHA1: 11db4cc697c2b3757f5831e8b0b266c23847d8a3
-MD5sum: 687e31f5d35d1ca764afb02f2454c70a
+Filename: pool/main/c/citus/postgresql-16-citus_13.0.1-1PIGSTY~jammy_arm64.deb
+Size: 3259330
+SHA256: fc8a4b493d522cb7bc6bd2fbca1c5c26d4cb3c9c170248b03ba89bfc4f8ea8ae
+SHA1: ca63f74735ad91d322f9fbf018313afef3116796
+MD5sum: 27cb8833eaaf7f75b16f64c56cd2db55
 Description: PostgreSQL extension that transforms Postgres into a distributed database
  Citus horizontally scales PostgreSQL across commodity servers
  using sharding and replication. Its query engine parallelizes
@@ -13118,6 +13595,28 @@ SHA1: cc5d414899a1bb695675e933c2c8d491c15b0718
 MD5sum: 085be9f56fd484f91cf4b051d9f7c634
 Description: PLPGSQL Script to historize data in partitionned table
   PLPGSQL Script to historize data in partitionned table
+
+Package: postgresql-16-db-migrator
+Source: db-migrator
+Version: 1.0.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 120
+Depends: postgresql-16
+Provides: postgresql-db-migrator
+Homepage: https://github.com/cybertec-postgresql/db_migrator
+Priority: optional
+Section: database
+Filename: pool/main/d/db-migrator/postgresql-16-db-migrator_1.0.0-1PIGSTY~jammy_arm64.deb
+Size: 21854
+SHA256: dcab68fc87fa0f8e5c8eb042848ba45b541d413d4d83a55a5311763e45aaa3a8
+SHA1: e70134a71ed66b1053df496da570ceb798b2fb57
+MD5sum: c2330deb032a5dc08ae435f76922fc1c
+Description: Functions for migrating databases from other data sources to PostgreSQL
+  db_migrator is a PostgreSQL extension that provides functions for migrating databases from other data sources to PostgreSQL.
+  This requires a foreign data wrapper for the data source you want to migrate.
+  You also need a plugin for db_migrator that contains the code specific to the targeted data source. Currently, plugins exist for the following data sources:
+  oracle, mysql, mariadb, microsoft sql server
 
 Package: postgresql-16-ddl-historization
 Source: ddl-historization
@@ -13344,6 +13843,27 @@ Description: GZIP implementation in PostgreSQL 16
   Sometimes you just need to compress your bytea object before you return it to the client.
   Sometimes you receive a compressed bytea from the client, and you have to uncompress it before you can work with it.
   This extension is for that.
+
+Package: postgresql-16-hashtypes
+Source: hashtypes
+Version: 0.1.5-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 265
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.17)
+Provides: postgresql-hashtypes
+Homepage: https://github.com/adjust/hashtypes/
+Priority: optional
+Section: database
+Filename: pool/main/h/hashtypes/postgresql-16-hashtypes_0.1.5-1PIGSTY~jammy_arm64.deb
+Size: 36688
+SHA256: 27b942c9d6c44665f87b78d92dc1a735861f165c9bd158b94e84c013e97891be
+SHA1: 4d3f3de0ced54fa56760ba45d8ad3d333e6daaac
+MD5sum: 55a47ecb1ca2b49173639df98b98adc8
+Description: Custom data types to store SHA-1, SHA-2, MD5, CRC32, etc in PostgreSQL
+  This extension provides custom data types to store various hash values (SHA-1,
+  SHA-2, MD5, CRC32, etc) in PostgreSQL without the storage and computation
+  overhead of bytea. It offers efficient storage and operations for hash values.
 
 Package: postgresql-16-hunspell-cs-cz
 Source: hunspell-cs-cz
@@ -13849,18 +14369,18 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 16
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
 Package: postgresql-16-pg-analytics
-Version: 0.3.0
+Version: 0.3.3
 Architecture: arm64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-analytics/postgresql-16-pg-analytics_0.3.0_arm64.deb
-Size: 9362148
-SHA256: 5243f700ca68fb5081a508902d54d819af70928ceb79823328a9ec44a277f98a
-SHA1: f2a5eb3737407365f5e3180e72b0a65cc55e8ae9
-MD5sum: 899796d1387ab0295508be727feb93cd
-Description: DuckDB-powered analytics for Postgres
+Filename: pool/main/p/postgresql-16-pg-analytics/postgresql-16-pg-analytics_0.3.3_arm64.deb
+Size: 9379540
+SHA256: 9498820832b4574658e390a326322c87906bf07bb38337890e48571f5ffefa80
+SHA1: ac9e54fecf2032f6efa222bed558a6fd5a5c0d21
+MD5sum: f26957ece581a31e9345fc23fcb86e1d
+Description: DuckDB-powered data lake analytics from PostgreSQL
 
 Package: postgresql-16-pg-anon
 Source: pg-anon
@@ -14029,7 +14549,7 @@ Description: The pg_bigm module provides full text search capability in PostgreS
 
 Package: postgresql-16-pg-bulkload
 Source: pg-bulkload
-Version: 3.1.21-1PIGSTY~jammy
+Version: 3.1.22-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
 Installed-Size: 632
@@ -14038,11 +14558,11 @@ Provides: postgresql-pg-bulkload
 Homepage: https://github.com/ossc-db/pg_bulkload
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-bulkload/postgresql-16-pg-bulkload_3.1.21-1PIGSTY~jammy_arm64.deb
-Size: 296296
-SHA256: 17407cd593ff527d4b57c4fd81db980474e1f43c7a79ac7d70f3f8e54db7ad25
-SHA1: e6b6a6862e068388c347f60c995510c6fdfdcf35
-MD5sum: a02597ca6e318c89d3639f19c12b3092
+Filename: pool/main/p/pg-bulkload/postgresql-16-pg-bulkload_3.1.22-1PIGSTY~jammy_arm64.deb
+Size: 296340
+SHA256: c20044769ce690e539f7e78c554c4ecdc6da40c13ad26a99d534df632f8203d8
+SHA1: e69841831685d69417894630e6e11ea808d8d64c
+MD5sum: e5f01a4b9c937a65374d6c56421ed008
 Description: High speed data loading utility for PostgreSQL
   pg_bulkload is a high speed data loading tool for PostgreSQL.
   pg_bulkload is designed to load huge amount of data to a database. You can load data to table bypassing PostgreSQL shared buffers.
@@ -14089,6 +14609,26 @@ Description: This extension provides cheat (but useful) functions on PostgreSQL.
   This extension provides cheat (but useful) functions on PostgreSQL.
   pg_cheat_funcs is released under the PostgreSQL License, a liberal Open Source license, similar to the BSD or MIT licenses.
 
+Package: postgresql-16-pg-cooldown
+Source: pg-cooldown
+Version: 0.1-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 49
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.17)
+Provides: postgresql-pg-cooldown
+Homepage: https://github.com/rbergm/pg_cooldown
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-cooldown/postgresql-16-pg-cooldown_0.1-1PIGSTY~jammy_arm64.deb
+Size: 13502
+SHA256: 51315a28a13a5abf3d815b002133ba899f881701824ba8cba531b178bd19ef3f
+SHA1: d1d491a06cf41bd86370514881f7eaddc3afc222
+MD5sum: 827f9c1933ba373b1f153786ce9c889a
+Description: PostgreSQL extension to remove all pages of specific relations from the shared buffer.
+  The extension was heavily inspired by pg_prewarm and functions as a complementary tool: Whereas pg_prewarm adds pages from a relation to the shared buffer, pg_cooldown removes them again.
+  The main purpose of this tool is to easily simulate cold-start scenarios in research.
+
 Package: postgresql-16-pg-country
 Source: pg-country
 Version: 0.0.3-1PIGSTY~jammy
@@ -14131,6 +14671,27 @@ Description: Periodically or randomly crash your database
   If your database is too reliable - pg_crash can kill it for you.
   pg_crash is an extension to PostgreSQL, which allows you to periodically or randomly crash your database
   infrastructure by sending kill (or other) signals to your DB processes and make them fail. It is ideal for HA and failover testing.
+
+Package: postgresql-16-pg-curl
+Source: pg-curl
+Version: 2.4-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 793
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.17), libcurl4 (>= 7.56.1)
+Provides: postgresql-pg-curl
+Homepage: https://github.com/RekGRpth/pg_curl
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-curl/postgresql-16-pg-curl_2.4-1PIGSTY~jammy_arm64.deb
+Size: 119240
+SHA256: f395b7e690fa966b99ce27e04dabd9551c56dbf403791b975e03cd39de09b6a3
+SHA1: 64f7ff06feb196a4beb8938bd1d7b7162d1ecbb3
+MD5sum: f1de956adc0b83e26479aadd97676345
+Description: PostgreSQL cURL allows most curl actions to transfer data with URL syntax
+  PostgreSQL tool for transferring data with URL syntax,
+  supporting DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT,
+   POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS.
 
 Package: postgresql-16-pg-currency
 Source: pg-currency
@@ -14640,20 +15201,20 @@ Description: PostgreSQL Extension: More friendly system catalog for PostgreSQL
 
 Package: postgresql-16-pg-mooncake
 Source: pg-mooncake
-Version: 0.1.0-1PIGSTY~jammy
+Version: 0.1.1-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 91003
+Installed-Size: 91052
 Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.5), libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
 Provides: postgresql-pg-mooncake
 Homepage: https://github.com/Mooncake-Labs/pg_mooncake
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-mooncake/postgresql-16-pg-mooncake_0.1.0-1PIGSTY~jammy_arm64.deb
-Size: 24120194
-SHA256: 4a4fbb20539b8f1a7bb1e82004703c59d712138efaad4f742b51749cae867c4e
-SHA1: 5f1c332a40de1f95d279829fb309d919e2bf8ae4
-MD5sum: 5a19dbde75474297a0db0614e6e21c03
+Filename: pool/main/p/pg-mooncake/postgresql-16-pg-mooncake_0.1.1-1PIGSTY~jammy_arm64.deb
+Size: 24115458
+SHA256: 7cb4d66c54cb4f8f26184c05ec4f3132ef8c52d8df16745ed1d7c6bdad001d9c
+SHA1: fac2a75232aba8a5508b80da645418f0e4094747
+MD5sum: f4df4c4a31aa6e35f5898733d6d60093
 Description: Columnstore Table in Postgres
   pg_mooncake is a PostgreSQL extension that adds native columnstore tables with DuckDB execution.
   Columnstore tables are stored as Iceberg or Delta Lake tables in object storage.
@@ -14962,17 +15523,17 @@ Description: Cross documentation between Django and DBT projects
   COMMENT are set on columns in a json format with predefined values like status.
 
 Package: postgresql-16-pg-search
-Version: 0.14.1
+Version: 0.15.1
 Architecture: arm64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.14.1_arm64.deb
-Size: 46195276
-SHA256: e17b4d6f3d10c2851e4ebe06434db3164b7cfdbb2f08ac7e23dfe434f7f4f521
-SHA1: 28ddbb519343604420a604d430f48494da68a760
-MD5sum: 1bbb4e2881ae7ed9f933cd930a81c66b
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.15.1_arm64.deb
+Size: 46218464
+SHA256: e2145c1b066e1105cf0484e146f4840deb522c9c9e460a1d3891e13bd2231489
+SHA1: 76ec72d567bd612bdc017a51be12df45799af37c
+MD5sum: 72bf4c4e9e40ad1e4a1d2d0f894620e9
 Description: Postgres for Search and Analytics
 
 Package: postgresql-16-pg-session-jwt
@@ -15078,20 +15639,20 @@ Description: Server side rollback at statement level for PostgreSQL like Oracle 
 
 Package: postgresql-16-pg-store-plan
 Source: pg-store-plan
-Version: 1.8-1PIGSTY~jammy
+Version: 1.8-2PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 293
+Installed-Size: 294
 Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.33)
 Provides: postgresql-pg-store-plan
 Homepage: https://github.com/ossc-db/pg_store_plans
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-store-plan/postgresql-16-pg-store-plan_1.8-1PIGSTY~jammy_arm64.deb
-Size: 129792
-SHA256: 52a599a73483f1722798696e20c5b16dd91eb20063096db4b66e0a4ed48565af
-SHA1: 16fc37f1b815507d040f0af7ce917710705fffce
-MD5sum: 6f6c0403a83987fbeefe043b5d02565f
+Filename: pool/main/p/pg-store-plan/postgresql-16-pg-store-plan_1.8-2PIGSTY~jammy_arm64.deb
+Size: 130070
+SHA256: d5462ec55317523c19b881e7f7e31ac669addfa94fc6f40a55517ed2ddaac43e
+SHA1: 055fdcf52537f0efbb0b8c77f38a08e0f7fb49c5
+MD5sum: 55d523da7b6c90c41a167d14371ec43a
 Description: Store execution plans like pg_stat_statements does for queries.
   The pg_store_plans module provides a means for tracking execution plan statistics of all SQL statements executed by a server.
   The module must be loaded by adding pg_store_plans to shared_preload_libraries in postgresql.conf, because it requires additional shared memory. This means that a server restart is required to add or remove the module. pg_store_plans requires the GUC variable compute_query_id to be "on" or "auto". If it is set to "no", pg_store_plans is silently disabled.
@@ -15122,20 +15683,20 @@ Description: Text Summarization using LLMs. Built using pgrx
 
 Package: postgresql-16-pg-task
 Source: pg-task
-Version: 1.0.0-1PIGSTY~jammy
+Version: 1.0.0-2PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 465
+Installed-Size: 467
 Depends: postgresql-16, postgresql-16-jit-llvm (>= 15)
 Provides: postgresql-pg-task
 Homepage: https://github.com/RekGRpth/pg_task
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-task/postgresql-16-pg-task_1.0.0-1PIGSTY~jammy_arm64.deb
-Size: 222650
-SHA256: d29d4c84a69850698c3f3cbc97f3b9197a705299682d9783dca43ce3f0a60ab4
-SHA1: 15ff213143146686141db7c3a5115912b2c51540
-MD5sum: 469ed5ee8cdd93ab3af38f748e12576c
+Filename: pool/main/p/pg-task/postgresql-16-pg-task_1.0.0-2PIGSTY~jammy_arm64.deb
+Size: 223164
+SHA256: 5cae6151e9671f2130aec3434a6768d5e0ef966b3b3b6cc5902d5d7852f83562
+SHA1: 511077f33029fd772afbb835dcc06c5c5ee3e54e
+MD5sum: acdbfcb51e98b5dbd77d160be79b92f5
 Description: PostgreSQL and Greenplum job scheduler pg_task allows to execute any sql command at any specific time at background asynchronously
   PostgreSQL and Greenplum job scheduler pg_task allows to execute any sql command at any specific time at background asynchronously
 
@@ -15218,6 +15779,26 @@ Description: Trusted Language Extensions for PostgreSQL
   extend and deploy new PostgreSQL functionality with lower administrative and technical overhead.
   Developers can use Trusted Language Extensions for PostgreSQL to create and install extensions on restricted filesystems
   and work with PostgreSQL internals through a SQL API.
+
+Package: postgresql-16-pg-tracing
+Source: pg-tracing
+Version: 0.1.2-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 281
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.17), libcurl4 (>= 7.16.2)
+Provides: postgresql-pg-tracing
+Homepage: https://github.com/DataDog/pg_tracing
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-tracing/postgresql-16-pg-tracing_0.1.2-1PIGSTY~jammy_arm64.deb
+Size: 130282
+SHA256: 59c2c0dff34b4663c08243f487c350ae963b72914a5ebddb6a380735d6649408
+SHA1: b4c453cbb4816fb5bf2391b6be8e3a0cedfee8e3
+MD5sum: 8c83034e570f428123fda73b0fa585f0
+Description: Distributed Tracing for PostgreSQL
+  pg_tracing is a PostgreSQL extension that generates server-side spans for distributed tracing.
+  When pg_tracing is active, it generates spans on sampled queries
 
 Package: postgresql-16-pg-uint128
 Source: pg-uint128
@@ -15306,20 +15887,20 @@ Description: A tiny Postgres extension to create version 7 UUIDs
 
 Package: postgresql-16-pg-vectorize
 Source: pg-vectorize
-Version: 0.20.0-1PIGSTY~jammy
+Version: 0.21.1-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 14225
+Installed-Size: 18061
 Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1), postgresql-16-pgmq, postgresql-16-pgvector, postgresql-16-cron
 Provides: postgresql-pg-vectorize
 Homepage: https://github.com/tembo-io/pg_vectorize
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-vectorize/postgresql-16-pg-vectorize_0.20.0-1PIGSTY~jammy_arm64.deb
-Size: 4620972
-SHA256: 171274513ccdcd0b96b187e0ce05f0b8ce842b47949e812f539f7b2794236ab5
-SHA1: cdb937fb297d95904478ecb056e20c7879cee1b0
-MD5sum: ca088cc5c010f3e3fa5d0ad73539fe73
+Filename: pool/main/p/pg-vectorize/postgresql-16-pg-vectorize_0.21.1-1PIGSTY~jammy_arm64.deb
+Size: 6932188
+SHA256: 26ae5bd15ae6073f37d4ce65b7fffadb19f9d3b496ca565235e8fc4d3e23c5a9
+SHA1: c08af8eefd907b63f9c91f953187073efe0652b0
+MD5sum: cc8630bbee6833cbd596e36a50d4f9f9
 Description: reflects a vectorize schema from the existing PostgresSQL 16 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via vectorize with no additional servers, processes, or libraries.
@@ -15481,6 +16062,27 @@ MD5sum: 47cb370fcfb484275d5b660131289136
 Description: Fast full-text search plugin for PostgreSQL based on Groonga
  PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
  It is based on Groonga full-text search engine.
+
+Package: postgresql-16-pgjq
+Source: pgjq
+Version: 0.1.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 57
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.22), libjq1 (>= 1.6)
+Provides: postgresql-pgjq
+Homepage: https://github.com/Florents-Tselai/pgJQ
+Priority: optional
+Section: database
+Filename: pool/main/p/pgjq/postgresql-16-pgjq_0.1.0-1PIGSTY~jammy_arm64.deb
+Size: 20268
+SHA256: 983f3fa4d3fd1fb4e8f03939ee7e9a9998a96f7cbd2e81d107f6adfa78777501
+SHA1: 338a722b5306dc80bd0eed701cd88983f75b8cf0
+MD5sum: 197e3cff7e0102de3d37838a18e0ee71
+Description: jq extension for Postgres
+  The pgJQ extension embeds the standard jq compiler and brings the much loved jq lang to Postgres.
+  It adds a jqprog data type to express jq programs and a jq(jsonb, jqprog) function to execute them on jsonb objects.
+  It works seamlessly with standard jsonb functions, operators, and jsonpath.
 
 Package: postgresql-16-pgjwt
 Source: pgjwt
@@ -15646,20 +16248,20 @@ Description: PostgreSQL extension to generate QR code
 
 Package: postgresql-16-pgroonga
 Source: pgroonga
-Version: 3.2.5-1PIGSTY~jammy
+Version: 4.0.0-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 2646
-Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.33), libgroonga0 (>= 14.1.2)
+Installed-Size: 2674
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.33), libgroonga0 (>= 15.0.0)
 Provides: postgresql-pgroonga
 Homepage: https://pgroonga.github.io/
 Priority: optional
 Section: database
-Filename: pool/main/p/pgroonga/postgresql-16-pgroonga_3.2.5-1PIGSTY~jammy_arm64.deb
-Size: 736094
-SHA256: ea3ae2c269dd8408c0c86dd03d2d1d7f6fbed0f644765b79c31e97f823775278
-SHA1: 8821512212eb2c0ac94613eeed79fc031e323b87
-MD5sum: 3b7f3e42aa4b0c2f6dbb43785c1b6183
+Filename: pool/main/p/pgroonga/postgresql-16-pgroonga_4.0.0-1PIGSTY~jammy_arm64.deb
+Size: 745004
+SHA256: b3825653e289f811307978fbfbae0ef5e8fe7fd6d18b11d7b621d0fa444b4b3b
+SHA1: f5fb8d9b3140d9dca8b4e3a261145afe4ee8436f
+MD5sum: 753d80e54cb0e0d0278739d90d46adee
 Description: Fast full-text search plugin for PostgreSQL based on Groonga
  PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
  It is based on Groonga full-text search engine.
@@ -15702,6 +16304,26 @@ Description: Modern cryptography for PostgreSQL using libsodium.
   pgsodium is an encryption library extension for PostgreSQL using the libsodium library for high level cryptographic algorithms.
   pgsodium can be used a straight interface to libsodium, but it can also use a powerful feature called Server Key Management where pgsodium loads an external secret key into memory that is never accessible to SQL. This inaccessible root key can then be used to derive sub-keys and keypairs by key id. This id (type bigint) can then be stored instead of the derived key.
   Another advanced feature of pgsodium is Transparent Column Encryption which can automatically encrypt and decrypt one or more columns of data in a table.
+
+Package: postgresql-16-pgsparql
+Source: pgsparql
+Version: 1.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 84
+Depends: postgresql-16
+Provides: postgresql-pgsparql
+Homepage: https://github.com/lacanoid/pgsparql
+Priority: optional
+Section: database
+Filename: pool/main/p/pgsparql/postgresql-16-pgsparql_1.0-1PIGSTY~jammy_arm64.deb
+Size: 10778
+SHA256: 0b461e2bf6c8c366152aa1a7a0a29639be4801cb6bae6970b8231d1c02a7a5f1
+SHA1: bdfe5d4a4dd3c482df3d3c82e7ddce56c31de741
+MD5sum: df5e6d80e08adc31092303bd8b329287
+Description: SPARQL utilities extension for PostgreSQL
+  It helps one query SPARQL datasources. SPARQL queries are compiled into Postgres views, so you can use them nicely in SQL.
+  It is currently used with Virtuoso, so it is useful with sources like dbpedia. It might or might not work with other RDF backends.
 
 Package: postgresql-16-pgsql-tweaks
 Source: pgsql-tweaks
@@ -15786,6 +16408,27 @@ SHA1: 4a06dfe89c98ff2ebfbcbc24dafc3abfbb629d5c
 MD5sum: 30af53b119b9c4c7d44833fe60d9cb8f
 Description: A complement to pgvector for high performance, cost efficient vector search on large workloads.
   pgvectorscale builds on pgvector with higher performance embedding search and cost-efficient storage for AI applications.
+
+Package: postgresql-16-pgxicor
+Source: pgxicor
+Version: 0.1.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 78
+Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.17)
+Provides: postgresql-pgxicor
+Homepage: https://github.com/Florents-Tselai/pgxicor
+Priority: optional
+Section: database
+Filename: pool/main/p/pgxicor/postgresql-16-pgxicor_0.1.0-1PIGSTY~jammy_arm64.deb
+Size: 26968
+SHA256: cdbc8f207bcde392d5164610bcaaa2696c3abe9213841f39a349288b33db98b8
+SHA1: 50b8b8d900272fccc4d09f0deb42fc2155719886
+MD5sum: da35d4a9ed594cdc3e3283a924eaef21
+Description: XI Correlation Coefficient in Postgres
+  pgxicor is a Postgres extension that exposes a SELECT xicor(X, Y) aggregate function.
+  XI can detect functional relationships between X and Y.
+  You can use it as a more powerful alternative to standard corr(X, Y) which works best on linear relationships only.
 
 Package: postgresql-16-plprql
 Source: plprql
@@ -16127,20 +16770,20 @@ Description: Extension for more hyperfunctions, fully compatible with TimescaleD
 
 Package: postgresql-16-timescaledb-tsl
 Source: timescaledb-tsl
-Version: 2.17.2-1PIGSTY~jammy
+Version: 2.18.1-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 12580
+Installed-Size: 13604
 Depends: postgresql-16, libc6 (>= 2.17)
 Provides: postgresql-timescaledb-tsl
 Homepage: https://github.com/timescale/timescaledb
 Priority: optional
 Section: database
-Filename: pool/main/t/timescaledb-tsl/postgresql-16-timescaledb-tsl_2.17.2-1PIGSTY~jammy_arm64.deb
-Size: 642726
-SHA256: 0e07022b281aac60bee8e9a3a29a81d9ecf5d8cbbc4009fcfe6088c037b8b1a7
-SHA1: 0d35741bfc4b412e96ad33ef566ea1da2f502d0a
-MD5sum: eab03b33171d8509e208f7c407c8d5ee
+Filename: pool/main/t/timescaledb-tsl/postgresql-16-timescaledb-tsl_2.18.1-1PIGSTY~jammy_arm64.deb
+Size: 694090
+SHA256: 4a936d254bd4eeabbf6fe03a5c74abcb349f123cce938f9a30cc6634a426703d
+SHA1: 59e5f8a479fc84d312c131618e4fe5d9cd63816b
+MD5sum: 6fcb1cb07a5f302b5ece7ca4430c39e4
 Description: PostgreSQL extension for high-performance real-time analytics on time-series and event data (TSL version)
   An open-source time-series SQL database optimized for fast ingest and complex queries. Packaged as a PostgreSQL extension.
 
@@ -16265,6 +16908,26 @@ Description: Scalable, fast, and disk-friendly vector search in Postgres, the su
   VectorChord (vchord) is a PostgreSQL extension designed for scalable, high-performance, and disk-efficient vector similarity search, and serves as the successor to pgvecto.rs.
   With VectorChord, you can store 400,000 vectors for just $1, enabling significant savings: 6x more vectors compared to Pinecone's optimized storage and 26x more than pgvector/pgvecto.rs for the same price1. For further insights, check out our launch blog post.
 
+Package: postgresql-16-vchord-bm25
+Source: vchord-bm25
+Version: 0.1.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 6806
+Depends: postgresql-16, libc6 (>= 2.34), libgcc-s1 (>= 4.2), postgresql-16-pgvector
+Provides: postgresql-vchord-bm25
+Homepage: https://github.com/tensorchord/VectorChord
+Priority: optional
+Section: database
+Filename: pool/main/v/vchord-bm25/postgresql-16-vchord-bm25_0.1.0-1PIGSTY~jammy_arm64.deb
+Size: 2428112
+SHA256: 4bc1b8d188988ff85bcb2e6901c7ef317cefdeff4b57dbbb718effaa79a60aaf
+SHA1: 59159b91cf6c15746a84e7cef5d0ac709b936657
+MD5sum: 65f6743c8af676837294bf1f23387b71
+Description: Scalable, fast, and disk-friendly vector search in Postgres, the successor of pgvecto.rs.
+  VectorChord (vchord-bm25) is a PostgreSQL extension designed for scalable, high-performance, and disk-efficient vector similarity search, and serves as the successor to pgvecto.rs.
+  With VectorChord, you can store 400,000 vectors for just $1, enabling significant savings: 6x more vectors compared to Pinecone's optimized storage and 26x more than pgvector/pgvecto.rs for the same price1. For further insights, check out our launch blog post.
+
 Package: postgresql-16-wal2mongo
 Source: wal2mongo
 Version: 1.0.7-1PIGSTY~jammy
@@ -16307,20 +16970,20 @@ Description: Postgres Foreign Data Wrappers by Supabase
 
 Package: postgresql-16-zhparser
 Source: zhparser
-Version: 2.2-1PIGSTY~jammy
+Version: 2.3-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 14056
+Installed-Size: 14060
 Depends: postgresql-16, postgresql-16-jit-llvm (>= 15), libc6 (>= 2.17), scws (>= 1.2.3)
 Provides: postgresql-zhparser
 Homepage: https://github.com/supabase/zhparser
 Priority: optional
 Section: database
-Filename: pool/main/z/zhparser/postgresql-16-zhparser_2.2-1PIGSTY~jammy_arm64.deb
-Size: 4469446
-SHA256: 2cd9d0eaf1e8c746ff62e3c3c8ea0f031c670bb95384c51c0032210ba76ff416
-SHA1: 1ad008fe0f3b9691b519db6e5c8e0ec99ae203cd
-MD5sum: 331d4087dba262049a2379f54d745869
+Filename: pool/main/z/zhparser/postgresql-16-zhparser_2.3-1PIGSTY~jammy_arm64.deb
+Size: 4468126
+SHA256: b24ee73c4c057c3cb789a7346ffa2e5fdadf7759d30e7c6176937488b44b0407
+SHA1: 746fd893c16f7ca6255a2e91a7576b8bcaf3daf7
+MD5sum: 4a2fecf03779f097373cafddce0b879f
 Description: Open-source full-text search of Chinese language
   zhparser is a PostgreSQL extension for full-text search of Chinese language (Mandarin Chinese).
   It implements a Chinese language parser base on the Simple Chinese Word Segmentation(SCWS).
@@ -16495,20 +17158,20 @@ Description: Foreign-Data Wrapper facility to enable reading log files via SQL
 
 Package: postgresql-17-citus
 Source: citus
-Version: 13.0.0-1PIGSTY~jammy
+Version: 13.0.1-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 8893
+Installed-Size: 8889
 Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libc6 (>= 2.33), libcurl4 (>= 7.16.2), liblz4-1 (>= 0.0~r130), libpq5 (>= 9.2~beta3), libssl3 (>= 3.0.0~~alpha1), libzstd1 (>= 1.4.0)
 Provides: postgresql-citus
 Homepage: https://github.com/citusdatabase/citus
 Priority: optional
 Section: database
-Filename: pool/main/c/citus/postgresql-17-citus_13.0.0-1PIGSTY~jammy_arm64.deb
-Size: 3332324
-SHA256: 8213ecac424f8fb5f92561b25b6b6713222911afc06ff7a4a776b84e227cb6f0
-SHA1: a7bbaed6109a06f873ff1f8f149cd8c90222ff56
-MD5sum: 2efaaaaefcebc61dd532bfb8c654961a
+Filename: pool/main/c/citus/postgresql-17-citus_13.0.1-1PIGSTY~jammy_arm64.deb
+Size: 3332448
+SHA256: 94d2860e5088b177e83eb98a4454600cbcd9cc81682e6c201aa6f93ac945fec7
+SHA1: 45aef8ce6b46af03854c3ccb3818156df2344970
+MD5sum: ddfc6afdb38cd678390a154e7549b32d
 Description: PostgreSQL extension that transforms Postgres into a distributed database
  Citus horizontally scales PostgreSQL across commodity servers
  using sharding and replication. Its query engine parallelizes
@@ -16579,6 +17242,28 @@ SHA1: 496e83ca29dfd46155e3501b73b140753342b821
 MD5sum: 30ae7571754cf0694674f5c6a81acdaf
 Description: PLPGSQL Script to historize data in partitionned table
   PLPGSQL Script to historize data in partitionned table
+
+Package: postgresql-17-db-migrator
+Source: db-migrator
+Version: 1.0.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 120
+Depends: postgresql-17
+Provides: postgresql-db-migrator
+Homepage: https://github.com/cybertec-postgresql/db_migrator
+Priority: optional
+Section: database
+Filename: pool/main/d/db-migrator/postgresql-17-db-migrator_1.0.0-1PIGSTY~jammy_arm64.deb
+Size: 21852
+SHA256: fcdb89f8ba6892c8d213c37b57ab6adeb15f857b9c937fbe24848d394348e3df
+SHA1: ecb368f908ddedfce3b55def8e08d7eced40b619
+MD5sum: 914891d864104a6ccdbb16c6db3f7ce2
+Description: Functions for migrating databases from other data sources to PostgreSQL
+  db_migrator is a PostgreSQL extension that provides functions for migrating databases from other data sources to PostgreSQL.
+  This requires a foreign data wrapper for the data source you want to migrate.
+  You also need a plugin for db_migrator that contains the code specific to the targeted data source. Currently, plugins exist for the following data sources:
+  oracle, mysql, mariadb, microsoft sql server
 
 Package: postgresql-17-ddl-historization
 Source: ddl-historization
@@ -16805,6 +17490,27 @@ Description: GZIP implementation in PostgreSQL 17
   Sometimes you just need to compress your bytea object before you return it to the client.
   Sometimes you receive a compressed bytea from the client, and you have to uncompress it before you can work with it.
   This extension is for that.
+
+Package: postgresql-17-hashtypes
+Source: hashtypes
+Version: 0.1.5-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 265
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libc6 (>= 2.17)
+Provides: postgresql-hashtypes
+Homepage: https://github.com/adjust/hashtypes/
+Priority: optional
+Section: database
+Filename: pool/main/h/hashtypes/postgresql-17-hashtypes_0.1.5-1PIGSTY~jammy_arm64.deb
+Size: 36684
+SHA256: ab345850bf21084f1230b58e384026e875140c41df5afc9d2ae9c9741f261983
+SHA1: 8b4702f4874f621f01ed3e143980007fc95b2a53
+MD5sum: 0a2f6eaa0f1d2cbd08cdf79d20853b98
+Description: Custom data types to store SHA-1, SHA-2, MD5, CRC32, etc in PostgreSQL
+  This extension provides custom data types to store various hash values (SHA-1,
+  SHA-2, MD5, CRC32, etc) in PostgreSQL without the storage and computation
+  overhead of bytea. It offers efficient storage and operations for hash values.
 
 Package: postgresql-17-hunspell-cs-cz
 Source: hunspell-cs-cz
@@ -17268,18 +17974,18 @@ Description: Scalable pseudo-random permutations of sequences for PostgreSQL 17
   The series of numbers are made unique with a secret key and reproducible with the same key.
 
 Package: postgresql-17-pg-analytics
-Version: 0.3.0
+Version: 0.3.3
 Architecture: arm64
 Depends: postgresql-17
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-17-pg-analytics/postgresql-17-pg-analytics_0.3.0_arm64.deb
-Size: 9371540
-SHA256: 162815ce877074e6520323ae48719abef62d8343fd2102d4336c289c49ce9ebb
-SHA1: 90a97dcb97561a28b011c11bb2f9e380c2c31751
-MD5sum: bb51beae1e1d96b1c64649cad4a3e05f
-Description: DuckDB-powered analytics for Postgres
+Filename: pool/main/p/postgresql-17-pg-analytics/postgresql-17-pg-analytics_0.3.3_arm64.deb
+Size: 9392488
+SHA256: 56f5a8a9e77f5143cb52c386a22213bbf3004aa6355a9b857fd973a0b4830ae5
+SHA1: c124734df5a48c1e351c7b84f89944565b609913
+MD5sum: ec813a106961187b1dfff5469a1ac2c1
+Description: DuckDB-powered data lake analytics from PostgreSQL
 
 Package: postgresql-17-pg-anon
 Source: pg-anon
@@ -17446,6 +18152,27 @@ Description: The pg_bigm module provides full text search capability in PostgreS
   The pg_bigm module provides full text search capability in PostgreSQL. This module allows a user to create 2-gram (bigram) index for faster full text search.
   pg_bigm is released under the PostgreSQL License, a liberal Open Source license, similar to the BSD or MIT licenses.
 
+Package: postgresql-17-pg-bulkload
+Source: pg-bulkload
+Version: 3.1.22-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 635
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libc6 (>= 2.34), libpq5 (>= 8.3~rc1-1~)
+Provides: postgresql-pg-bulkload
+Homepage: https://github.com/ossc-db/pg_bulkload
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-bulkload/postgresql-17-pg-bulkload_3.1.22-1PIGSTY~jammy_arm64.deb
+Size: 298672
+SHA256: ada04d1b3f3e9038e44987e68868009b88a42910f1bca578bb5aee07fca5b4e2
+SHA1: eb7cf253c3f837e9592ddfb7a04783db88742afd
+MD5sum: 2b833d80d8a843ec0d0b9089995080e9
+Description: High speed data loading utility for PostgreSQL
+  pg_bulkload is a high speed data loading tool for PostgreSQL.
+  pg_bulkload is designed to load huge amount of data to a database. You can load data to table bypassing PostgreSQL shared buffers.
+  pg_bulkload also has some ETL features; input data validation and data transformation. to as many pg_restore jobs.
+
 Package: postgresql-17-pg-cardano
 Source: pg-cardano
 Version: 1.0.3-1PIGSTY~jammy
@@ -17486,6 +18213,26 @@ MD5sum: 81f9dc98ccf28d93f654b641882fb0db
 Description: This extension provides cheat (but useful) functions on PostgreSQL.
   This extension provides cheat (but useful) functions on PostgreSQL.
   pg_cheat_funcs is released under the PostgreSQL License, a liberal Open Source license, similar to the BSD or MIT licenses.
+
+Package: postgresql-17-pg-cooldown
+Source: pg-cooldown
+Version: 0.1-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 49
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libc6 (>= 2.17)
+Provides: postgresql-pg-cooldown
+Homepage: https://github.com/rbergm/pg_cooldown
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-cooldown/postgresql-17-pg-cooldown_0.1-1PIGSTY~jammy_arm64.deb
+Size: 13496
+SHA256: 632d2e728c97e9e9febd7bc22b5a2f438747fcda766035d708d5afaee9ffa376
+SHA1: 2a9a9c4b979f1480eb0f0aebafc266224ee72999
+MD5sum: 7a8d51e3dc30bb7401d5cc4927eea42c
+Description: PostgreSQL extension to remove all pages of specific relations from the shared buffer.
+  The extension was heavily inspired by pg_prewarm and functions as a complementary tool: Whereas pg_prewarm adds pages from a relation to the shared buffer, pg_cooldown removes them again.
+  The main purpose of this tool is to easily simulate cold-start scenarios in research.
 
 Package: postgresql-17-pg-country
 Source: pg-country
@@ -17529,6 +18276,27 @@ Description: Periodically or randomly crash your database
   If your database is too reliable - pg_crash can kill it for you.
   pg_crash is an extension to PostgreSQL, which allows you to periodically or randomly crash your database
   infrastructure by sending kill (or other) signals to your DB processes and make them fail. It is ideal for HA and failover testing.
+
+Package: postgresql-17-pg-curl
+Source: pg-curl
+Version: 2.4-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 793
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libc6 (>= 2.17), libcurl4 (>= 7.56.1)
+Provides: postgresql-pg-curl
+Homepage: https://github.com/RekGRpth/pg_curl
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-curl/postgresql-17-pg-curl_2.4-1PIGSTY~jammy_arm64.deb
+Size: 119252
+SHA256: 231a1cb694acdaecc274ae4f613cadac0854b3b5ba0bf852f18163b972f50c03
+SHA1: 84747aa71265163acc6bd9bceb09749749169456
+MD5sum: d66843a1f9d12400267dcd5c795845b5
+Description: PostgreSQL cURL allows most curl actions to transfer data with URL syntax
+  PostgreSQL tool for transferring data with URL syntax,
+  supporting DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT,
+   POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS.
 
 Package: postgresql-17-pg-currency
 Source: pg-currency
@@ -18059,20 +18827,20 @@ Description: PostgreSQL Extension: More friendly system catalog for PostgreSQL
 
 Package: postgresql-17-pg-mooncake
 Source: pg-mooncake
-Version: 0.1.0-1PIGSTY~jammy
+Version: 0.1.1-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 91047
+Installed-Size: 91084
 Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.5), libssl3 (>= 3.0.0~~alpha1), libstdc++6 (>= 12)
 Provides: postgresql-pg-mooncake
 Homepage: https://github.com/Mooncake-Labs/pg_mooncake
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-mooncake/postgresql-17-pg-mooncake_0.1.0-1PIGSTY~jammy_arm64.deb
-Size: 24127126
-SHA256: cb44fefa19c6bc3ab239e378429f3994e0469dfbbe1e322f3e19668bd2154ec2
-SHA1: c3cd7dbbfb9e0f184e075907415f6b89f7c2e19c
-MD5sum: eab6d3f57a1e8130e848477976f4eb5b
+Filename: pool/main/p/pg-mooncake/postgresql-17-pg-mooncake_0.1.1-1PIGSTY~jammy_arm64.deb
+Size: 24116238
+SHA256: 9c31a3876d119cd216f70d3639b3fea5f45eaa9dd1b33c84330cd32be62ce954
+SHA1: 2f66ea83cc3414555443a1112995343f90dddc37
+MD5sum: ecb1628adac224d509e2a56b2688d6c1
 Description: Columnstore Table in Postgres
   pg_mooncake is a PostgreSQL extension that adds native columnstore tables with DuckDB execution.
   Columnstore tables are stored as Iceberg or Delta Lake tables in object storage.
@@ -18381,17 +19149,17 @@ Description: Cross documentation between Django and DBT projects
   COMMENT are set on columns in a json format with predefined values like status.
 
 Package: postgresql-17-pg-search
-Version: 0.14.1
+Version: 0.15.1
 Architecture: arm64
 Depends: postgresql-17
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.14.1_arm64.deb
-Size: 46191740
-SHA256: e36f0eaaeb63d2f9ce1bae92401f63ada86088831f4de5baae587b796ddc90f0
-SHA1: 75c1837314015ef49b70986bb50c728233de06b0
-MD5sum: a115235c3ec08b3bfff37eab7bd7f649
+Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.15.1_arm64.deb
+Size: 46215128
+SHA256: 7477cdf8c444647dd82bece0065e98113930e788e89eec4a090d0b7906cb3b68
+SHA1: fe679e994f8c4f09459cd0ab802e4426a392dd98
+MD5sum: e2c3722a7e6d44eafdd1f56cd3d59f4d
 Description: Postgres for Search and Analytics
 
 Package: postgresql-17-pg-session-jwt
@@ -18495,6 +19263,26 @@ Description: Server side rollback at statement level for PostgreSQL like Oracle 
   The effect of the rollback is as if that statement had never been run.
   This operation is called statement-level rollback and has the following characteristics:
 
+Package: postgresql-17-pg-store-plan
+Source: pg-store-plan
+Version: 1.8-2PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 293
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libc6 (>= 2.33)
+Provides: postgresql-pg-store-plan
+Homepage: https://github.com/ossc-db/pg_store_plans
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-store-plan/postgresql-17-pg-store-plan_1.8-2PIGSTY~jammy_arm64.deb
+Size: 130324
+SHA256: 013ea4ab4f5dfc6c549a780841fde6eabd279dfeb5bf75f51386662b6cdea56a
+SHA1: d74c8938dbec35ae8b5d03b3d7144c649500fab2
+MD5sum: 248f063e4be42d88524c45570b683730
+Description: Store execution plans like pg_stat_statements does for queries.
+  The pg_store_plans module provides a means for tracking execution plan statistics of all SQL statements executed by a server.
+  The module must be loaded by adding pg_store_plans to shared_preload_libraries in postgresql.conf, because it requires additional shared memory. This means that a server restart is required to add or remove the module. pg_store_plans requires the GUC variable compute_query_id to be "on" or "auto". If it is set to "no", pg_store_plans is silently disabled.
+
 Package: postgresql-17-pg-summarize
 Source: pg-summarize
 Version: 0.0.1-1PIGSTY~jammy
@@ -18521,20 +19309,20 @@ Description: Text Summarization using LLMs. Built using pgrx
 
 Package: postgresql-17-pg-task
 Source: pg-task
-Version: 1.0.0-1PIGSTY~jammy
+Version: 1.0.0-2PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 472
+Installed-Size: 479
 Depends: postgresql-17, postgresql-17-jit-llvm (>= 15)
 Provides: postgresql-pg-task
 Homepage: https://github.com/RekGRpth/pg_task
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-task/postgresql-17-pg-task_1.0.0-1PIGSTY~jammy_arm64.deb
-Size: 226184
-SHA256: dbbeb32415aec27112b02a0c13cddf422f6d790a11b89ae440aa2a3e4379974f
-SHA1: 40f612bbd963852ecb7606e3c47d30fc48863325
-MD5sum: a9d3491ba67309cdefc92eefb084f4ec
+Filename: pool/main/p/pg-task/postgresql-17-pg-task_1.0.0-2PIGSTY~jammy_arm64.deb
+Size: 226698
+SHA256: ae1e12685f47a867423cb74a3f3778d4019776a62f7165ece0d3974f84b41f77
+SHA1: b0c3acf9916da820f96e89051b1186394fd9203e
+MD5sum: d8077305f5e3da76a911fe7f8e632f5a
 Description: PostgreSQL and Greenplum job scheduler pg_task allows to execute any sql command at any specific time at background asynchronously
   PostgreSQL and Greenplum job scheduler pg_task allows to execute any sql command at any specific time at background asynchronously
 
@@ -18598,6 +19386,26 @@ Description: Trusted Language Extensions for PostgreSQL
   extend and deploy new PostgreSQL functionality with lower administrative and technical overhead.
   Developers can use Trusted Language Extensions for PostgreSQL to create and install extensions on restricted filesystems
   and work with PostgreSQL internals through a SQL API.
+
+Package: postgresql-17-pg-tracing
+Source: pg-tracing
+Version: 0.1.2-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 282
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libc6 (>= 2.17), libcurl4 (>= 7.16.2)
+Provides: postgresql-pg-tracing
+Homepage: https://github.com/DataDog/pg_tracing
+Priority: optional
+Section: database
+Filename: pool/main/p/pg-tracing/postgresql-17-pg-tracing_0.1.2-1PIGSTY~jammy_arm64.deb
+Size: 130778
+SHA256: 6c292c5e6d01ff822328367b9956b546cbf2c8efd03e76f60a6ec4d0f012edc8
+SHA1: 0e0eb42d2a5a79ae78ec7b9d18614d5eb92c63cf
+MD5sum: 373ed8fe2af4e1ac1fe0e7ca9d8c9c3e
+Description: Distributed Tracing for PostgreSQL
+  pg_tracing is a PostgreSQL extension that generates server-side spans for distributed tracing.
+  When pg_tracing is active, it generates spans on sampled queries
 
 Package: postgresql-17-pg-uint128
 Source: pg-uint128
@@ -18686,20 +19494,20 @@ Description: A tiny Postgres extension to create version 7 UUIDs
 
 Package: postgresql-17-pg-vectorize
 Source: pg-vectorize
-Version: 0.20.0-1PIGSTY~jammy
+Version: 0.21.1-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 14229
+Installed-Size: 18057
 Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0~~alpha1), postgresql-17-pgmq, postgresql-17-pgvector, postgresql-17-cron
 Provides: postgresql-pg-vectorize
 Homepage: https://github.com/tembo-io/pg_vectorize
 Priority: optional
 Section: database
-Filename: pool/main/p/pg-vectorize/postgresql-17-pg-vectorize_0.20.0-1PIGSTY~jammy_arm64.deb
-Size: 4622682
-SHA256: 75bb5f92e322a82cda15698f2ee7872195d9c5a7b31f19b0088f6603b6f4eb6d
-SHA1: 0574293f1e10d81bd65fbc5ae74241d5e363c5a5
-MD5sum: 3e2298bb8ac9bc738a10033268bb6efc
+Filename: pool/main/p/pg-vectorize/postgresql-17-pg-vectorize_0.21.1-1PIGSTY~jammy_arm64.deb
+Size: 6928022
+SHA256: f90d202ed02b1bb706b2606e6f61d1e9d0ee584e303e13ad3710d30216965ddd
+SHA1: 3e7025b2e5a20f6042f5c946c9f5b59d9f38a6c4
+MD5sum: 42b1fe38f96d4a48f87549ade860eee9
 Description: reflects a vectorize schema from the existing PostgresSQL 17 schema
   The extension keeps schema translation and query resolution neatly contained on your database server.
   This enables any programming language that can connect to PostgreSQL to query the database via vectorize with no additional servers, processes, or libraries.
@@ -18841,6 +19649,27 @@ MD5sum: fa8b0035aeebe642c9541ca381ee2973
 Description: Fast full-text search plugin for PostgreSQL based on Groonga
  PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
  It is based on Groonga full-text search engine.
+
+Package: postgresql-17-pgjq
+Source: pgjq
+Version: 0.1.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 57
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libc6 (>= 2.22), libjq1 (>= 1.6)
+Provides: postgresql-pgjq
+Homepage: https://github.com/Florents-Tselai/pgJQ
+Priority: optional
+Section: database
+Filename: pool/main/p/pgjq/postgresql-17-pgjq_0.1.0-1PIGSTY~jammy_arm64.deb
+Size: 20256
+SHA256: fad9a262a2327c149967b3ec44e4d35afa1860e6fd1d8da01108c2893ff54a69
+SHA1: e8ae42a2836123a94918c477524ee05816eda831
+MD5sum: a6921e4e0db7a79ed401f9d0998d8ece
+Description: jq extension for Postgres
+  The pgJQ extension embeds the standard jq compiler and brings the much loved jq lang to Postgres.
+  It adds a jqprog data type to express jq programs and a jq(jsonb, jqprog) function to execute them on jsonb objects.
+  It works seamlessly with standard jsonb functions, operators, and jsonpath.
 
 Package: postgresql-17-pgjwt
 Source: pgjwt
@@ -19006,20 +19835,20 @@ Description: PostgreSQL extension to generate QR code
 
 Package: postgresql-17-pgroonga
 Source: pgroonga
-Version: 3.2.5-1PIGSTY~jammy
+Version: 4.0.0-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 2646
-Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libc6 (>= 2.33), libgroonga0 (>= 14.1.2)
+Installed-Size: 2699
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libc6 (>= 2.33), libgroonga0 (>= 15.0.0)
 Provides: postgresql-pgroonga
 Homepage: https://pgroonga.github.io/
 Priority: optional
 Section: database
-Filename: pool/main/p/pgroonga/postgresql-17-pgroonga_3.2.5-1PIGSTY~jammy_arm64.deb
-Size: 740112
-SHA256: ba97dd3bd21609472bd4a579835b323b2c70ffeffb8eb4339569120094ad3814
-SHA1: fad004fd0f95cb84e477fcf0ce9806b960be5ec3
-MD5sum: 8336b172ae73ddb65757fe38c35ca67a
+Filename: pool/main/p/pgroonga/postgresql-17-pgroonga_4.0.0-1PIGSTY~jammy_arm64.deb
+Size: 757608
+SHA256: c0e55b075075e471bd9009ae7c56f14f7d3ba748fc860999ba2c8b3d0770c80f
+SHA1: 35d15e02b67d1a9e91ef2bb6d096e2de9f84d6eb
+MD5sum: f1050e60224972a6444e106e9a020e2e
 Description: Fast full-text search plugin for PostgreSQL based on Groonga
  PGroonga is a PostgreSQL plugin. It provides fast full-text search feature.
  It is based on Groonga full-text search engine.
@@ -19062,6 +19891,26 @@ Description: Modern cryptography for PostgreSQL using libsodium.
   pgsodium is an encryption library extension for PostgreSQL using the libsodium library for high level cryptographic algorithms.
   pgsodium can be used a straight interface to libsodium, but it can also use a powerful feature called Server Key Management where pgsodium loads an external secret key into memory that is never accessible to SQL. This inaccessible root key can then be used to derive sub-keys and keypairs by key id. This id (type bigint) can then be stored instead of the derived key.
   Another advanced feature of pgsodium is Transparent Column Encryption which can automatically encrypt and decrypt one or more columns of data in a table.
+
+Package: postgresql-17-pgsparql
+Source: pgsparql
+Version: 1.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 84
+Depends: postgresql-17
+Provides: postgresql-pgsparql
+Homepage: https://github.com/lacanoid/pgsparql
+Priority: optional
+Section: database
+Filename: pool/main/p/pgsparql/postgresql-17-pgsparql_1.0-1PIGSTY~jammy_arm64.deb
+Size: 10780
+SHA256: aae8bb22a2edf1ff1f9537c67ea56813b1b0776ff12f56ab7952a859f41705e9
+SHA1: 1c914fa8e5c4eb7178c15c514c6b1ba1616d4bc7
+MD5sum: dd068fbe6a72ffd586446e3d7aa0d06f
+Description: SPARQL utilities extension for PostgreSQL
+  It helps one query SPARQL datasources. SPARQL queries are compiled into Postgres views, so you can use them nicely in SQL.
+  It is currently used with Virtuoso, so it is useful with sources like dbpedia. It might or might not work with other RDF backends.
 
 Package: postgresql-17-pgsql-tweaks
 Source: pgsql-tweaks
@@ -19146,6 +19995,27 @@ SHA1: 9696e31c8e3517cfc7c382fd1ee45ac54fbae99b
 MD5sum: c821d2e72ff654979f86fd9b2806f022
 Description: A complement to pgvector for high performance, cost efficient vector search on large workloads.
   pgvectorscale builds on pgvector with higher performance embedding search and cost-efficient storage for AI applications.
+
+Package: postgresql-17-pgxicor
+Source: pgxicor
+Version: 0.1.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 78
+Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libc6 (>= 2.17)
+Provides: postgresql-pgxicor
+Homepage: https://github.com/Florents-Tselai/pgxicor
+Priority: optional
+Section: database
+Filename: pool/main/p/pgxicor/postgresql-17-pgxicor_0.1.0-1PIGSTY~jammy_arm64.deb
+Size: 26976
+SHA256: a4d85235f90b4ef4aa85ba19ae5ecdf245a08999f3071d6428595c3296e9982d
+SHA1: 9fbe00e930ea180e50a3fbc9c9496bb926af69a1
+MD5sum: b2c33036e2c486b1cdad7b77f0095142
+Description: XI Correlation Coefficient in Postgres
+  pgxicor is a Postgres extension that exposes a SELECT xicor(X, Y) aggregate function.
+  XI can detect functional relationships between X and Y.
+  You can use it as a more powerful alternative to standard corr(X, Y) which works best on linear relationships only.
 
 Package: postgresql-17-plv8
 Source: plv8
@@ -19448,20 +20318,20 @@ Description: Extension for more hyperfunctions, fully compatible with TimescaleD
 
 Package: postgresql-17-timescaledb-tsl
 Source: timescaledb-tsl
-Version: 2.17.2-1PIGSTY~jammy
+Version: 2.18.1-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 12595
+Installed-Size: 13606
 Depends: postgresql-17, libc6 (>= 2.17)
 Provides: postgresql-timescaledb-tsl
 Homepage: https://github.com/timescale/timescaledb
 Priority: optional
 Section: database
-Filename: pool/main/t/timescaledb-tsl/postgresql-17-timescaledb-tsl_2.17.2-1PIGSTY~jammy_arm64.deb
-Size: 651070
-SHA256: 42b9f30f04b4597fd8cf5bd435136cfd63870be393108f21c0b39b161a5dc187
-SHA1: e3ebd64e096a0c7b4a171867df3367673383fa87
-MD5sum: 1edc61a9971665cdaba9a5c2a7ce35c0
+Filename: pool/main/t/timescaledb-tsl/postgresql-17-timescaledb-tsl_2.18.1-1PIGSTY~jammy_arm64.deb
+Size: 696926
+SHA256: 1c05b3b1aea8a788ccc4bf11c489ffa04e3c0e490101995e65af8838db02e564
+SHA1: cf9be80340f039047c210ac2e71a1e9ed0b8a9a0
+MD5sum: 5bacf932b26f0038d7d3becd2920c0d2
 Description: PostgreSQL extension for high-performance real-time analytics on time-series and event data (TSL version)
   An open-source time-series SQL database optimized for fast ingest and complex queries. Packaged as a PostgreSQL extension.
 
@@ -19586,6 +20456,26 @@ Description: Scalable, fast, and disk-friendly vector search in Postgres, the su
   VectorChord (vchord) is a PostgreSQL extension designed for scalable, high-performance, and disk-efficient vector similarity search, and serves as the successor to pgvecto.rs.
   With VectorChord, you can store 400,000 vectors for just $1, enabling significant savings: 6x more vectors compared to Pinecone's optimized storage and 26x more than pgvector/pgvecto.rs for the same price1. For further insights, check out our launch blog post.
 
+Package: postgresql-17-vchord-bm25
+Source: vchord-bm25
+Version: 0.1.0-1PIGSTY~jammy
+Architecture: arm64
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 6810
+Depends: postgresql-17, libc6 (>= 2.34), libgcc-s1 (>= 4.2), postgresql-17-pgvector
+Provides: postgresql-vchord-bm25
+Homepage: https://github.com/tensorchord/VectorChord
+Priority: optional
+Section: database
+Filename: pool/main/v/vchord-bm25/postgresql-17-vchord-bm25_0.1.0-1PIGSTY~jammy_arm64.deb
+Size: 2435374
+SHA256: e77e473a54992aedc50398c013f0d077cce378bda410eabd6fa3ca492b0f58e1
+SHA1: 9362f950e831f6162bddb575f2cdc9143ff60922
+MD5sum: 5cd16e046f9322cb64c8c526b00cce4c
+Description: Scalable, fast, and disk-friendly vector search in Postgres, the successor of pgvecto.rs.
+  VectorChord (vchord-bm25) is a PostgreSQL extension designed for scalable, high-performance, and disk-efficient vector similarity search, and serves as the successor to pgvecto.rs.
+  With VectorChord, you can store 400,000 vectors for just $1, enabling significant savings: 6x more vectors compared to Pinecone's optimized storage and 26x more than pgvector/pgvecto.rs for the same price1. For further insights, check out our launch blog post.
+
 Package: postgresql-17-wrappers
 Source: wrappers
 Version: 0.4.3-1PIGSTY~jammy
@@ -19609,20 +20499,20 @@ Description: Postgres Foreign Data Wrappers by Supabase
 
 Package: postgresql-17-zhparser
 Source: zhparser
-Version: 2.2-1PIGSTY~jammy
+Version: 2.3-1PIGSTY~jammy
 Architecture: arm64
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 14056
+Installed-Size: 14060
 Depends: postgresql-17, postgresql-17-jit-llvm (>= 15), libc6 (>= 2.17), scws (>= 1.2.3)
 Provides: postgresql-zhparser
 Homepage: https://github.com/supabase/zhparser
 Priority: optional
 Section: database
-Filename: pool/main/z/zhparser/postgresql-17-zhparser_2.2-1PIGSTY~jammy_arm64.deb
-Size: 4469454
-SHA256: 5aa016c0784fcf8405227062d8798dc9b4c3379a4ddb73862151e401031b2338
-SHA1: 5c1de91f94019d2057722fdcd27e49840a32e2be
-MD5sum: 3aface23720c7ea54ea51da77ab22a8a
+Filename: pool/main/z/zhparser/postgresql-17-zhparser_2.3-1PIGSTY~jammy_arm64.deb
+Size: 4468120
+SHA256: de62a6b51e7c9e608dc269b651045b13ad78cb7fbf4d197c45a0e8f50910a8ae
+SHA1: 41fbbba7dc58a4ff57836be678beb6bf676232fe
+MD5sum: 93fc80162350d0c60213696c837b5f55
 Description: Open-source full-text search of Chinese language
   zhparser is a PostgreSQL extension for full-text search of Chinese language (Mandarin Chinese).
   It implements a Chinese language parser base on the Simple Chinese Word Segmentation(SCWS).

@@ -196,17 +196,17 @@ Description: sharding and distributed joins for PostgreSQL
  is included which handles queries and modifications against sharded tables.
 
 Package: postgresql-14-pg-search
-Version: 0.14.1
+Version: 0.15.1
 Architecture: amd64
 Depends: postgresql-14
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.14.1_amd64.deb
-Size: 46612412
-SHA256: fb1ce0f861f3c4f8663fc222e997a48d304ef408d218df3dc87c53673a724874
-SHA1: 56f9cc5846129a410dd2293e3a42c2c6436454cc
-MD5sum: 865c92a5f357dde8013b65e45f5db2f9
+Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.15.1_amd64.deb
+Size: 46631664
+SHA256: e8a2a625cdef2054d4bd5ba1b6260d208eb8561c13170a253685eea5c6b1d4d7
+SHA1: af4e65e07fe9ba01683056ef87089e09310adf84
+MD5sum: f6f8a13f8386f3ca0c7c77b46880f515
 Description: Postgres for Search and Analytics
 
 Package: postgresql-14-topn
@@ -254,17 +254,17 @@ Description: sharding and distributed joins for PostgreSQL
  is included which handles queries and modifications against sharded tables.
 
 Package: postgresql-15-pg-search
-Version: 0.14.1
+Version: 0.15.1
 Architecture: amd64
 Depends: postgresql-15
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.14.1_amd64.deb
-Size: 46612340
-SHA256: 28e49890ad3bd91109e7ccf3e561d2c8bc10fad8920c213a112be24aa3a5c709
-SHA1: aa4cd61e73b876990e4b0a5f0d18a4771da8a952
-MD5sum: 5698b9a53be7b4a6ac25be210c895608
+Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.15.1_amd64.deb
+Size: 46636620
+SHA256: 20990eb7ecaa111bb57bab9bbffad702b75a40d85b2e62c6762c0e455075419e
+SHA1: d2d9bca52a9facc812c74938a8069671e8eb83be
+MD5sum: f3682d86e8fe604e8c997a787ac214d7
 Description: Postgres for Search and Analytics
 
 Package: postgresql-15-topn
@@ -312,17 +312,17 @@ Description: sharding and distributed joins for PostgreSQL
  is included which handles queries and modifications against sharded tables.
 
 Package: postgresql-16-pg-search
-Version: 0.14.1
+Version: 0.15.1
 Architecture: amd64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.14.1_amd64.deb
-Size: 46617836
-SHA256: a27fab2ef7310700ebe28477cbbb5ae6307492836e6bf1c2a86f3f45b8ac57b5
-SHA1: ba5b6d8955438dfd224add76be1ddc853d01af04
-MD5sum: bff0b2a3fb2f2742efe96575cb59f11c
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.15.1_amd64.deb
+Size: 46639420
+SHA256: c4bc8be29e8bea90db28c14891952f680fa23d7e5e4ba89c30d1adc8306a52c5
+SHA1: aac573201e26f7509ca43a7a508ec0d9c5abf5d4
+MD5sum: 6ab9b490064cf61b395be69f6f549ee4
 Description: Postgres for Search and Analytics
 
 Package: postgresql-16-topn
@@ -346,17 +346,17 @@ Description: Counter Based Implementation for top-n Approximation
  run real-time top-n queries on aggregated data.
 
 Package: postgresql-17-pg-search
-Version: 0.14.1
+Version: 0.15.1
 Architecture: amd64
 Depends: postgresql-17
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.14.1_amd64.deb
-Size: 46611948
-SHA256: c97e815c2a857b02fbf3f5bef463eb6c6f7a5ef3bad5e8201ba37e3f20f66ff6
-SHA1: 26217d5c6076dcad5c805f7f01125edaa5e0aa84
-MD5sum: d3f081444a255eedc9b184f9f09efafb
+Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.15.1_amd64.deb
+Size: 46635152
+SHA256: b780436a19fe462aaff5dc776003d3ddd15c5ba4405bf6db1e61eef15211676b
+SHA1: 9a0eb9827f4c02d279f1099c91108524b517743c
+MD5sum: 08b6ae7513f50323cfb248b95e7e5310
 Description: Postgres for Search and Analytics
 
 Package: redis
@@ -450,24 +450,6 @@ Description: Persistent key-value database with network interface (client)
  manipulating and querying data structures such as lists and sets.
  .
  This package contains the command line client and other tools.
-
-Package: redis-tools-dbgsym
-Source: redis
-Version: 6:7.2.6-1rl1~bullseye1
-Auto-Built-Package: debug-symbols
-Architecture: amd64
-Maintainer: Redis Core Team <redis@redis.io>
-Installed-Size: 10217
-Depends: redis-tools (= 6:7.2.6-1rl1~bullseye1)
-Priority: optional
-Section: debug
-Filename: pool/main/r/redis/redis-tools-dbgsym_7.2.6-1rl1~bullseye1_amd64.deb
-Size: 9503452
-SHA256: b51bbf0b3dbe5391a581475bdf6d2c150e688ffc50e40f5d3bdacc5b1bd528fe
-SHA1: 6b051ace2011f3b1da7bed6da8e3e43fd51873a5
-MD5sum: 20a6812136dc158808f4e15d535a6e17
-Description: debug symbols for redis-tools
-Build-Ids: 54de450fe39dbb1e96edf05651bc4955b5079477 d39845897325eaf5b3e9715cd14e16b1ab715c2d d81b03d401e35c1a211d1111637b038deeae826d
 
 Package: timescaledb-2-loader-postgresql-12
 Source: timescaledb-2-2.11.2-postgresql-12

@@ -47,59 +47,59 @@ Version: 15.10.3.0-bbc102d8
 Architecture: arm64
 
 Package: postgresql-14-pg-search
-Version: 0.14.1
+Version: 0.15.1
 Architecture: arm64
 Depends: postgresql-14
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.14.1_arm64.deb
-Size: 46191668
-SHA256: f01a6d78f9475a4808f7150c0f62fd1e4d35c8445c28989bf88044b1ef2eb76f
-SHA1: 04bb5d8c6bdf221bbc36b5abb76559af572b33b3
-MD5sum: 84520b39eac13450b8fee32afc99bb33
+Filename: pool/main/p/postgresql-14-pg-search/postgresql-14-pg-search_0.15.1_arm64.deb
+Size: 46216184
+SHA256: 17f0960f54be697efcbfe282e7bb61928f8df75d6ef7eb47bad23285b55b396b
+SHA1: 6a8e5f5fe0de36ca35daf72e8f4a8917fe58765e
+MD5sum: ddf0d23be2eb49ac4defb7e01463d439
 Description: Postgres for Search and Analytics
 
 Package: postgresql-15-pg-search
-Version: 0.14.1
+Version: 0.15.1
 Architecture: arm64
 Depends: postgresql-15
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.14.1_arm64.deb
-Size: 46191000
-SHA256: 4ceed01035a3a7dede76a7b68b0c91160fbcaf30a913fd84df9048ca2f31e197
-SHA1: 0a388cae4b7652440377e45e6fbc25313073e3b1
-MD5sum: 77e7dd768195663ed6d6f37602ae4b0c
+Filename: pool/main/p/postgresql-15-pg-search/postgresql-15-pg-search_0.15.1_arm64.deb
+Size: 46213040
+SHA256: f0f45ae4615a8bb160bc0b0291c433cdfcf53874b11e2c427c5b152aa949c224
+SHA1: d21f2b5ec424ea3c175d1dc4418e4031243d89dc
+MD5sum: b71a8e8a3043801f11fd5be998c058fb
 Description: Postgres for Search and Analytics
 
 Package: postgresql-16-pg-search
-Version: 0.14.1
+Version: 0.15.1
 Architecture: arm64
 Depends: postgresql-16
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.14.1_arm64.deb
-Size: 46200568
-SHA256: d329d9441f3944843d8be7e8aad70e5956d908e5c1d47f9edf593d6aff5a0b0c
-SHA1: 1823d120f2aec676474fca7436ae1abc11963b31
-MD5sum: 3711f4e9544ff8aa9915df28ca313878
+Filename: pool/main/p/postgresql-16-pg-search/postgresql-16-pg-search_0.15.1_arm64.deb
+Size: 46223780
+SHA256: dccf5f0b958b4ce6f18dc159f0e25be6ad324a66d5882de7d91a05aa38b4c5ca
+SHA1: 03cce1029e06fea9b0beea5719c1589bc1f1da8c
+MD5sum: 605c558d74d4ca0f17e525e1173017c5
 Description: Postgres for Search and Analytics
 
 Package: postgresql-17-pg-search
-Version: 0.14.1
+Version: 0.15.1
 Architecture: arm64
 Depends: postgresql-17
 Maintainer: ParadeDB <support@paradedb.com>
 Priority: optional
 Section: database
-Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.14.1_arm64.deb
-Size: 46194152
-SHA256: 41a794e92bd118528455e99c35f69516788a08d480a2eb552b6a0ba2895b74a9
-SHA1: f32a949a92a329dc882e13436f05e5d907c0f075
-MD5sum: 95d7413def8d012e02a0e3681fdb1120
+Filename: pool/main/p/postgresql-17-pg-search/postgresql-17-pg-search_0.15.1_arm64.deb
+Size: 46217948
+SHA256: f68f035fadd25cfbc0b75545f94f671b64bb23b26b1f5a8db84357b0722ff60f
+SHA1: 48fce3cf18ae2ec70843e3f5c15676957c4405d3
+MD5sum: bf6ffe7b3257740fc024a4cca3101967
 Description: Postgres for Search and Analytics
 
 Package: redis
@@ -193,24 +193,6 @@ Description: Persistent key-value database with network interface (client)
  manipulating and querying data structures such as lists and sets.
  .
  This package contains the command line client and other tools.
-
-Package: redis-tools-dbgsym
-Source: redis
-Version: 6:7.2.6-1rl1~bullseye1
-Auto-Built-Package: debug-symbols
-Architecture: arm64
-Maintainer: Redis Core Team <redis@redis.io>
-Installed-Size: 10133
-Depends: redis-tools (= 6:7.2.6-1rl1~bullseye1)
-Priority: optional
-Section: debug
-Filename: pool/main/r/redis/redis-tools-dbgsym_7.2.6-1rl1~bullseye1_arm64.deb
-Size: 9401380
-SHA256: 59dae820d72cd192bfa047a52d280c1ebde244d16b3f0284061477564d66ae9a
-SHA1: 1b5cd00792322a93d505f16b7faa53c99b2a3be5
-MD5sum: d5b70e0f482f6310ffe42be57ddf2f17
-Description: debug symbols for redis-tools
-Build-Ids: 1cd064f4496141313e2a2c546a83aac70058b0f7 547a507a81a62f277b4b235096b42e1771d35da4 62158647701a6d19a00544c4c5ebab4658feb3d1
 
 Package: timescaledb-2-loader-postgresql-12
 Source: timescaledb-2-2.11.2-postgresql-12
