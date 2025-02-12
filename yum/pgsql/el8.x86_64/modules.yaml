@@ -141,6 +141,11 @@ data:
       - data_historization_15
       - data_historization_16
       - data_historization_17
+      - db_migrator_13
+      - db_migrator_14
+      - db_migrator_15
+      - db_migrator_16
+      - db_migrator_17
       - ddl_historization_13
       - ddl_historization_14
       - ddl_historization_15
@@ -242,6 +247,14 @@ data:
       - groonga-libs
       - groonga-tokenizer-mecab
       - haproxy
+      - hashtypes_14
+      - hashtypes_14-llvmjit
+      - hashtypes_15
+      - hashtypes_15-llvmjit
+      - hashtypes_16
+      - hashtypes_16-llvmjit
+      - hashtypes_17
+      - hashtypes_17-llvmjit
       - hunspell_cs_cz_12
       - hunspell_cs_cz_13
       - hunspell_cs_cz_14
@@ -521,6 +534,21 @@ data:
       - pg_bestmatch_15
       - pg_bestmatch_16
       - pg_bestmatch_17
+      - pg_bulkload_13
+      - pg_bulkload_13-client
+      - pg_bulkload_13-llvmjit
+      - pg_bulkload_14
+      - pg_bulkload_14-client
+      - pg_bulkload_14-llvmjit
+      - pg_bulkload_15
+      - pg_bulkload_15-client
+      - pg_bulkload_15-llvmjit
+      - pg_bulkload_16
+      - pg_bulkload_16-client
+      - pg_bulkload_16-llvmjit
+      - pg_bulkload_17
+      - pg_bulkload_17-client
+      - pg_bulkload_17-llvmjit
       - pg_cardano_12
       - pg_cardano_13
       - pg_cardano_14
@@ -539,6 +567,16 @@ data:
       - pg_cheat_funcs_16-llvmjit
       - pg_cheat_funcs_17
       - pg_cheat_funcs_17-llvmjit
+      - pg_cooldown_13
+      - pg_cooldown_13-llvmjit
+      - pg_cooldown_14
+      - pg_cooldown_14-llvmjit
+      - pg_cooldown_15
+      - pg_cooldown_15-llvmjit
+      - pg_cooldown_16
+      - pg_cooldown_16-llvmjit
+      - pg_cooldown_17
+      - pg_cooldown_17-llvmjit
       - pg_country_12
       - pg_country_12-llvmjit
       - pg_country_13
@@ -563,6 +601,16 @@ data:
       - pg_crash_16-llvmjit
       - pg_crash_17
       - pg_crash_17-llvmjit
+      - pg_curl_13
+      - pg_curl_13-llvmjit
+      - pg_curl_14
+      - pg_curl_14-llvmjit
+      - pg_curl_15
+      - pg_curl_15-llvmjit
+      - pg_curl_16
+      - pg_curl_16-llvmjit
+      - pg_curl_17
+      - pg_curl_17-llvmjit
       - pg_currency_12
       - pg_currency_12-llvmjit
       - pg_currency_13
@@ -575,6 +623,12 @@ data:
       - pg_currency_16-llvmjit
       - pg_currency_17
       - pg_currency_17-llvmjit
+      - pg_documentdb_core_15
+      - pg_documentdb_core_15-llvmjit
+      - pg_documentdb_core_16
+      - pg_documentdb_core_16-llvmjit
+      - pg_documentdb_core_17
+      - pg_documentdb_core_17-llvmjit
       - pg_drop_events_13
       - pg_drop_events_14
       - pg_drop_events_15
@@ -948,6 +1002,8 @@ data:
       - pg_store_plans_15-llvmjit
       - pg_store_plans_16
       - pg_store_plans_16-llvmjit
+      - pg_store_plans_17
+      - pg_store_plans_17-llvmjit
       - pg_summarize_12
       - pg_summarize_13
       - pg_summarize_14
@@ -985,6 +1041,12 @@ data:
       - pg_timeseries_15
       - pg_timeseries_16
       - pg_timeseries_17
+      - pg_tracing_15
+      - pg_tracing_15-llvmjit
+      - pg_tracing_16
+      - pg_tracing_16-llvmjit
+      - pg_tracing_17
+      - pg_tracing_17-llvmjit
       - pg_uint128_12
       - pg_uint128_12-llvmjit
       - pg_uint128_13
@@ -1086,6 +1148,14 @@ data:
       - pgfaceting_15
       - pgfaceting_16
       - pgfaceting_17
+      - pgjq_14
+      - pgjq_14-llvmjit
+      - pgjq_15
+      - pgjq_15-llvmjit
+      - pgjq_16
+      - pgjq_16-llvmjit
+      - pgjq_17
+      - pgjq_17-llvmjit
       - pgjwt_12
       - pgjwt_13
       - pgjwt_14
@@ -1198,6 +1268,11 @@ data:
       - pgsmcrypto_17
       - pgsodium_17
       - pgsodium_17-llvmjit
+      - pgsparql_13
+      - pgsparql_14
+      - pgsparql_15
+      - pgsparql_16
+      - pgsparql_17
       - pgsphere_12
       - pgsphere_12-llvmjit
       - pgsphere_13
@@ -1225,6 +1300,16 @@ data:
       - pgvectorscale_15
       - pgvectorscale_16
       - pgvectorscale_17
+      - pgxicor_13
+      - pgxicor_13-llvmjit
+      - pgxicor_14
+      - pgxicor_14-llvmjit
+      - pgxicor_15
+      - pgxicor_15-llvmjit
+      - pgxicor_16
+      - pgxicor_16-llvmjit
+      - pgxicor_17
+      - pgxicor_17-llvmjit
       - plproxy_12
       - plproxy_12-llvmjit
       - plproxy_13
@@ -1487,6 +1572,10 @@ data:
       - vchord_15
       - vchord_16
       - vchord_17
+      - vchord_bm25_14
+      - vchord_bm25_15
+      - vchord_bm25_16
+      - vchord_bm25_17
       - wrappers_14
       - wrappers_15
       - wrappers_16
@@ -1620,6 +1709,11 @@ data:
     - data_historization_15
     - data_historization_16
     - data_historization_17
+    - db_migrator_13
+    - db_migrator_14
+    - db_migrator_15
+    - db_migrator_16
+    - db_migrator_17
     - ddl_historization_13
     - ddl_historization_14
     - ddl_historization_15
@@ -1721,6 +1815,14 @@ data:
     - groonga-libs
     - groonga-tokenizer-mecab
     - haproxy
+    - hashtypes_14
+    - hashtypes_14-llvmjit
+    - hashtypes_15
+    - hashtypes_15-llvmjit
+    - hashtypes_16
+    - hashtypes_16-llvmjit
+    - hashtypes_17
+    - hashtypes_17-llvmjit
     - hunspell_cs_cz_12
     - hunspell_cs_cz_13
     - hunspell_cs_cz_14
@@ -2000,6 +2102,21 @@ data:
     - pg_bestmatch_15
     - pg_bestmatch_16
     - pg_bestmatch_17
+    - pg_bulkload_13
+    - pg_bulkload_13-client
+    - pg_bulkload_13-llvmjit
+    - pg_bulkload_14
+    - pg_bulkload_14-client
+    - pg_bulkload_14-llvmjit
+    - pg_bulkload_15
+    - pg_bulkload_15-client
+    - pg_bulkload_15-llvmjit
+    - pg_bulkload_16
+    - pg_bulkload_16-client
+    - pg_bulkload_16-llvmjit
+    - pg_bulkload_17
+    - pg_bulkload_17-client
+    - pg_bulkload_17-llvmjit
     - pg_cardano_12
     - pg_cardano_13
     - pg_cardano_14
@@ -2018,6 +2135,16 @@ data:
     - pg_cheat_funcs_16-llvmjit
     - pg_cheat_funcs_17
     - pg_cheat_funcs_17-llvmjit
+    - pg_cooldown_13
+    - pg_cooldown_13-llvmjit
+    - pg_cooldown_14
+    - pg_cooldown_14-llvmjit
+    - pg_cooldown_15
+    - pg_cooldown_15-llvmjit
+    - pg_cooldown_16
+    - pg_cooldown_16-llvmjit
+    - pg_cooldown_17
+    - pg_cooldown_17-llvmjit
     - pg_country_12
     - pg_country_12-llvmjit
     - pg_country_13
@@ -2042,6 +2169,16 @@ data:
     - pg_crash_16-llvmjit
     - pg_crash_17
     - pg_crash_17-llvmjit
+    - pg_curl_13
+    - pg_curl_13-llvmjit
+    - pg_curl_14
+    - pg_curl_14-llvmjit
+    - pg_curl_15
+    - pg_curl_15-llvmjit
+    - pg_curl_16
+    - pg_curl_16-llvmjit
+    - pg_curl_17
+    - pg_curl_17-llvmjit
     - pg_currency_12
     - pg_currency_12-llvmjit
     - pg_currency_13
@@ -2054,6 +2191,12 @@ data:
     - pg_currency_16-llvmjit
     - pg_currency_17
     - pg_currency_17-llvmjit
+    - pg_documentdb_core_15
+    - pg_documentdb_core_15-llvmjit
+    - pg_documentdb_core_16
+    - pg_documentdb_core_16-llvmjit
+    - pg_documentdb_core_17
+    - pg_documentdb_core_17-llvmjit
     - pg_drop_events_13
     - pg_drop_events_14
     - pg_drop_events_15
@@ -2427,6 +2570,8 @@ data:
     - pg_store_plans_15-llvmjit
     - pg_store_plans_16
     - pg_store_plans_16-llvmjit
+    - pg_store_plans_17
+    - pg_store_plans_17-llvmjit
     - pg_summarize_12
     - pg_summarize_13
     - pg_summarize_14
@@ -2464,6 +2609,12 @@ data:
     - pg_timeseries_15
     - pg_timeseries_16
     - pg_timeseries_17
+    - pg_tracing_15
+    - pg_tracing_15-llvmjit
+    - pg_tracing_16
+    - pg_tracing_16-llvmjit
+    - pg_tracing_17
+    - pg_tracing_17-llvmjit
     - pg_uint128_12
     - pg_uint128_12-llvmjit
     - pg_uint128_13
@@ -2565,6 +2716,14 @@ data:
     - pgfaceting_15
     - pgfaceting_16
     - pgfaceting_17
+    - pgjq_14
+    - pgjq_14-llvmjit
+    - pgjq_15
+    - pgjq_15-llvmjit
+    - pgjq_16
+    - pgjq_16-llvmjit
+    - pgjq_17
+    - pgjq_17-llvmjit
     - pgjwt_12
     - pgjwt_13
     - pgjwt_14
@@ -2677,6 +2836,11 @@ data:
     - pgsmcrypto_17
     - pgsodium_17
     - pgsodium_17-llvmjit
+    - pgsparql_13
+    - pgsparql_14
+    - pgsparql_15
+    - pgsparql_16
+    - pgsparql_17
     - pgsphere_12
     - pgsphere_12-llvmjit
     - pgsphere_13
@@ -2704,6 +2868,16 @@ data:
     - pgvectorscale_15
     - pgvectorscale_16
     - pgvectorscale_17
+    - pgxicor_13
+    - pgxicor_13-llvmjit
+    - pgxicor_14
+    - pgxicor_14-llvmjit
+    - pgxicor_15
+    - pgxicor_15-llvmjit
+    - pgxicor_16
+    - pgxicor_16-llvmjit
+    - pgxicor_17
+    - pgxicor_17-llvmjit
     - plproxy_12
     - plproxy_12-llvmjit
     - plproxy_13
@@ -2966,6 +3140,10 @@ data:
     - vchord_15
     - vchord_16
     - vchord_17
+    - vchord_bm25_14
+    - vchord_bm25_15
+    - vchord_bm25_16
+    - vchord_bm25_17
     - wrappers_14
     - wrappers_15
     - wrappers_16
@@ -3108,6 +3286,16 @@ data:
         rationale: Present in the repository
       data_historization_17:
         rationale: Present in the repository
+      db_migrator_13:
+        rationale: Present in the repository
+      db_migrator_14:
+        rationale: Present in the repository
+      db_migrator_15:
+        rationale: Present in the repository
+      db_migrator_16:
+        rationale: Present in the repository
+      db_migrator_17:
+        rationale: Present in the repository
       ddl_historization_13:
         rationale: Present in the repository
       ddl_historization_14:
@@ -3225,6 +3413,14 @@ data:
       groonga:
         rationale: Present in the repository
       haproxy:
+        rationale: Present in the repository
+      hashtypes_14:
+        rationale: Present in the repository
+      hashtypes_15:
+        rationale: Present in the repository
+      hashtypes_16:
+        rationale: Present in the repository
+      hashtypes_17:
         rationale: Present in the repository
       hunspell_cs_cz_12:
         rationale: Present in the repository
@@ -3626,6 +3822,16 @@ data:
         rationale: Present in the repository
       pg_bestmatch_17:
         rationale: Present in the repository
+      pg_bulkload_13:
+        rationale: Present in the repository
+      pg_bulkload_14:
+        rationale: Present in the repository
+      pg_bulkload_15:
+        rationale: Present in the repository
+      pg_bulkload_16:
+        rationale: Present in the repository
+      pg_bulkload_17:
+        rationale: Present in the repository
       pg_cardano_12:
         rationale: Present in the repository
       pg_cardano_13:
@@ -3649,6 +3855,16 @@ data:
       pg_cheat_funcs_16:
         rationale: Present in the repository
       pg_cheat_funcs_17:
+        rationale: Present in the repository
+      pg_cooldown_13:
+        rationale: Present in the repository
+      pg_cooldown_14:
+        rationale: Present in the repository
+      pg_cooldown_15:
+        rationale: Present in the repository
+      pg_cooldown_16:
+        rationale: Present in the repository
+      pg_cooldown_17:
         rationale: Present in the repository
       pg_country_12:
         rationale: Present in the repository
@@ -3674,6 +3890,16 @@ data:
         rationale: Present in the repository
       pg_crash_17:
         rationale: Present in the repository
+      pg_curl_13:
+        rationale: Present in the repository
+      pg_curl_14:
+        rationale: Present in the repository
+      pg_curl_15:
+        rationale: Present in the repository
+      pg_curl_16:
+        rationale: Present in the repository
+      pg_curl_17:
+        rationale: Present in the repository
       pg_currency_12:
         rationale: Present in the repository
       pg_currency_13:
@@ -3685,6 +3911,12 @@ data:
       pg_currency_16:
         rationale: Present in the repository
       pg_currency_17:
+        rationale: Present in the repository
+      pg_documentdb_core_15:
+        rationale: Present in the repository
+      pg_documentdb_core_16:
+        rationale: Present in the repository
+      pg_documentdb_core_17:
         rationale: Present in the repository
       pg_drop_events_13:
         rationale: Present in the repository
@@ -4150,6 +4382,8 @@ data:
         rationale: Present in the repository
       pg_store_plans_16:
         rationale: Present in the repository
+      pg_store_plans_17:
+        rationale: Present in the repository
       pg_summarize_12:
         rationale: Present in the repository
       pg_summarize_13:
@@ -4209,6 +4443,12 @@ data:
       pg_timeseries_16:
         rationale: Present in the repository
       pg_timeseries_17:
+        rationale: Present in the repository
+      pg_tracing_15:
+        rationale: Present in the repository
+      pg_tracing_16:
+        rationale: Present in the repository
+      pg_tracing_17:
         rationale: Present in the repository
       pg_uint128_12:
         rationale: Present in the repository
@@ -4341,6 +4581,14 @@ data:
       pgfaceting_16:
         rationale: Present in the repository
       pgfaceting_17:
+        rationale: Present in the repository
+      pgjq_14:
+        rationale: Present in the repository
+      pgjq_15:
+        rationale: Present in the repository
+      pgjq_16:
+        rationale: Present in the repository
+      pgjq_17:
         rationale: Present in the repository
       pgjwt_12:
         rationale: Present in the repository
@@ -4482,6 +4730,16 @@ data:
         rationale: Present in the repository
       pgsodium_17:
         rationale: Present in the repository
+      pgsparql_13:
+        rationale: Present in the repository
+      pgsparql_14:
+        rationale: Present in the repository
+      pgsparql_15:
+        rationale: Present in the repository
+      pgsparql_16:
+        rationale: Present in the repository
+      pgsparql_17:
+        rationale: Present in the repository
       pgsphere_12:
         rationale: Present in the repository
       pgsphere_13:
@@ -4513,6 +4771,16 @@ data:
       pgvectorscale_16:
         rationale: Present in the repository
       pgvectorscale_17:
+        rationale: Present in the repository
+      pgxicor_13:
+        rationale: Present in the repository
+      pgxicor_14:
+        rationale: Present in the repository
+      pgxicor_15:
+        rationale: Present in the repository
+      pgxicor_16:
+        rationale: Present in the repository
+      pgxicor_17:
         rationale: Present in the repository
       plproxy_12:
         rationale: Present in the repository
@@ -4822,6 +5090,14 @@ data:
         rationale: Present in the repository
       vchord_17:
         rationale: Present in the repository
+      vchord_bm25_14:
+        rationale: Present in the repository
+      vchord_bm25_15:
+        rationale: Present in the repository
+      vchord_bm25_16:
+        rationale: Present in the repository
+      vchord_bm25_17:
+        rationale: Present in the repository
       wrappers_14:
         rationale: Present in the repository
       wrappers_15:
@@ -4921,14 +5197,23 @@ data:
     - citus_14-devel-0:13.0.0-1PIGSTY.el8.x86_64
     - citus_14-llvmjit-0:13.0.0-1PIGSTY.el8.x86_64
     - citus_15-0:13.0.0-1PIGSTY.el8.x86_64
+    - citus_15-0:13.0.1-2PIGSTY.el8.x86_64
     - citus_15-devel-0:13.0.0-1PIGSTY.el8.x86_64
+    - citus_15-devel-0:13.0.1-2PIGSTY.el8.x86_64
     - citus_15-llvmjit-0:13.0.0-1PIGSTY.el8.x86_64
+    - citus_15-llvmjit-0:13.0.1-2PIGSTY.el8.x86_64
     - citus_16-0:13.0.0-1PIGSTY.el8.x86_64
+    - citus_16-0:13.0.1-2PIGSTY.el8.x86_64
     - citus_16-devel-0:13.0.0-1PIGSTY.el8.x86_64
+    - citus_16-devel-0:13.0.1-2PIGSTY.el8.x86_64
     - citus_16-llvmjit-0:13.0.0-1PIGSTY.el8.x86_64
+    - citus_16-llvmjit-0:13.0.1-2PIGSTY.el8.x86_64
     - citus_17-0:13.0.0-1PIGSTY.el8.x86_64
+    - citus_17-0:13.0.1-2PIGSTY.el8.x86_64
     - citus_17-devel-0:13.0.0-1PIGSTY.el8.x86_64
+    - citus_17-devel-0:13.0.1-2PIGSTY.el8.x86_64
     - citus_17-llvmjit-0:13.0.0-1PIGSTY.el8.x86_64
+    - citus_17-llvmjit-0:13.0.1-2PIGSTY.el8.x86_64
     - count_distinct_12-0:3.0.2-1PIGSTY.el8.x86_64
     - count_distinct_12-llvmjit-0:3.0.2-1PIGSTY.el8.x86_64
     - count_distinct_13-0:3.0.2-1PIGSTY.el8.x86_64
@@ -4959,6 +5244,11 @@ data:
     - data_historization_15-0:1.1.0-1PIGSTY.el8.x86_64
     - data_historization_16-0:1.1.0-1PIGSTY.el8.x86_64
     - data_historization_17-0:1.1.0-1PIGSTY.el8.x86_64
+    - db_migrator_13-0:1.0.0-1PIGSTY.el8.x86_64
+    - db_migrator_14-0:1.0.0-1PIGSTY.el8.x86_64
+    - db_migrator_15-0:1.0.0-1PIGSTY.el8.x86_64
+    - db_migrator_16-0:1.0.0-1PIGSTY.el8.x86_64
+    - db_migrator_17-0:1.0.0-1PIGSTY.el8.x86_64
     - ddl_historization_13-0:0.0.7-1PIGSTY.el8.x86_64
     - ddl_historization_14-0:0.0.7-1PIGSTY.el8.x86_64
     - ddl_historization_15-0:0.0.7-1PIGSTY.el8.x86_64
@@ -5070,6 +5360,14 @@ data:
     - groonga-libs-0:14.1.1-1.el8.x86_64
     - groonga-tokenizer-mecab-0:14.1.1-1.el8.x86_64
     - haproxy-0:3.0.6-1PGDG.rhel8.x86_64
+    - hashtypes_14-0:0.1.5-1PIGSTY.el8.x86_64
+    - hashtypes_14-llvmjit-0:0.1.5-1PIGSTY.el8.x86_64
+    - hashtypes_15-0:0.1.5-1PIGSTY.el8.x86_64
+    - hashtypes_15-llvmjit-0:0.1.5-1PIGSTY.el8.x86_64
+    - hashtypes_16-0:0.1.5-1PIGSTY.el8.x86_64
+    - hashtypes_16-llvmjit-0:0.1.5-1PIGSTY.el8.x86_64
+    - hashtypes_17-0:0.1.5-1PIGSTY.el8.x86_64
+    - hashtypes_17-llvmjit-0:0.1.5-1PIGSTY.el8.x86_64
     - hunspell_cs_cz_12-0:1.0-1PIGSTY.el8.x86_64
     - hunspell_cs_cz_13-0:1.0-1PIGSTY.el8.x86_64
     - hunspell_cs_cz_14-0:1.0-1PIGSTY.el8.x86_64
@@ -5297,14 +5595,10 @@ data:
     - pg4ml_16-0:2.0-1PIGSTY.el8.x86_64
     - pg4ml_17-0:2.0-1PIGSTY.el8.x86_64
     - pg_analytics_13-0:0.2.1-1.el8.x86_64
-    - pg_analytics_14-0:0.2.4-1.el8.x86_64
-    - pg_analytics_14-0:0.3.0-1.el8.x86_64
-    - pg_analytics_15-0:0.2.4-1.el8.x86_64
-    - pg_analytics_15-0:0.3.0-1.el8.x86_64
-    - pg_analytics_16-0:0.2.4-1.el8.x86_64
-    - pg_analytics_16-0:0.3.0-1.el8.x86_64
-    - pg_analytics_17-0:0.2.4-1.el8.x86_64
-    - pg_analytics_17-0:0.3.0-1.el8.x86_64
+    - pg_analytics_14-0:0.3.3-1.el8.x86_64
+    - pg_analytics_15-0:0.3.3-1.el8.x86_64
+    - pg_analytics_16-0:0.3.3-1.el8.x86_64
+    - pg_analytics_17-0:0.3.3-1.el8.x86_64
     - pg_anon_13-0:2.0.0-1PIGSTY.el8.x86_64
     - pg_anon_14-0:2.0.0-1PIGSTY.el8.x86_64
     - pg_anon_15-0:2.0.0-1PIGSTY.el8.x86_64
@@ -5364,6 +5658,21 @@ data:
     - pg_bestmatch_15-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_bestmatch_16-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_bestmatch_17-0:0.0.1-1PIGSTY.el8.x86_64
+    - pg_bulkload_13-0:3.1.22-1PIGSTY.el8.x86_64
+    - pg_bulkload_13-client-0:3.1.22-1PIGSTY.el8.x86_64
+    - pg_bulkload_13-llvmjit-0:3.1.22-1PIGSTY.el8.x86_64
+    - pg_bulkload_14-0:3.1.22-1PIGSTY.el8.x86_64
+    - pg_bulkload_14-client-0:3.1.22-1PIGSTY.el8.x86_64
+    - pg_bulkload_14-llvmjit-0:3.1.22-1PIGSTY.el8.x86_64
+    - pg_bulkload_15-0:3.1.22-1PIGSTY.el8.x86_64
+    - pg_bulkload_15-client-0:3.1.22-1PIGSTY.el8.x86_64
+    - pg_bulkload_15-llvmjit-0:3.1.22-1PIGSTY.el8.x86_64
+    - pg_bulkload_16-0:3.1.22-1PIGSTY.el8.x86_64
+    - pg_bulkload_16-client-0:3.1.22-1PIGSTY.el8.x86_64
+    - pg_bulkload_16-llvmjit-0:3.1.22-1PIGSTY.el8.x86_64
+    - pg_bulkload_17-0:3.1.22-1PIGSTY.el8.x86_64
+    - pg_bulkload_17-client-0:3.1.22-1PIGSTY.el8.x86_64
+    - pg_bulkload_17-llvmjit-0:3.1.22-1PIGSTY.el8.x86_64
     - pg_cardano_12-0:1.0.3-1PIGSTY.el8.x86_64
     - pg_cardano_13-0:1.0.3-1PIGSTY.el8.x86_64
     - pg_cardano_14-0:1.0.3-1PIGSTY.el8.x86_64
@@ -5382,6 +5691,16 @@ data:
     - pg_cheat_funcs_16-llvmjit-0:1.0-1PIGSTY.el8.x86_64
     - pg_cheat_funcs_17-0:1.0-1PIGSTY.el8.x86_64
     - pg_cheat_funcs_17-llvmjit-0:1.0-1PIGSTY.el8.x86_64
+    - pg_cooldown_13-0:0.1-1PIGSTY.el8.x86_64
+    - pg_cooldown_13-llvmjit-0:0.1-1PIGSTY.el8.x86_64
+    - pg_cooldown_14-0:0.1-1PIGSTY.el8.x86_64
+    - pg_cooldown_14-llvmjit-0:0.1-1PIGSTY.el8.x86_64
+    - pg_cooldown_15-0:0.1-1PIGSTY.el8.x86_64
+    - pg_cooldown_15-llvmjit-0:0.1-1PIGSTY.el8.x86_64
+    - pg_cooldown_16-0:0.1-1PIGSTY.el8.x86_64
+    - pg_cooldown_16-llvmjit-0:0.1-1PIGSTY.el8.x86_64
+    - pg_cooldown_17-0:0.1-1PIGSTY.el8.x86_64
+    - pg_cooldown_17-llvmjit-0:0.1-1PIGSTY.el8.x86_64
     - pg_country_12-0:0.0.3-1PIGSTY.el8.x86_64
     - pg_country_12-llvmjit-0:0.0.3-1PIGSTY.el8.x86_64
     - pg_country_13-0:0.0.3-1PIGSTY.el8.x86_64
@@ -5406,6 +5725,16 @@ data:
     - pg_crash_16-llvmjit-0:1.0-1PIGSTY.el8.x86_64
     - pg_crash_17-0:1.0-1PIGSTY.el8.x86_64
     - pg_crash_17-llvmjit-0:1.0-1PIGSTY.el8.x86_64
+    - pg_curl_13-0:2.4-1PIGSTY.el8.x86_64
+    - pg_curl_13-llvmjit-0:2.4-1PIGSTY.el8.x86_64
+    - pg_curl_14-0:2.4-1PIGSTY.el8.x86_64
+    - pg_curl_14-llvmjit-0:2.4-1PIGSTY.el8.x86_64
+    - pg_curl_15-0:2.4-1PIGSTY.el8.x86_64
+    - pg_curl_15-llvmjit-0:2.4-1PIGSTY.el8.x86_64
+    - pg_curl_16-0:2.4-1PIGSTY.el8.x86_64
+    - pg_curl_16-llvmjit-0:2.4-1PIGSTY.el8.x86_64
+    - pg_curl_17-0:2.4-1PIGSTY.el8.x86_64
+    - pg_curl_17-llvmjit-0:2.4-1PIGSTY.el8.x86_64
     - pg_currency_12-0:0.0.3-1PIGSTY.el8.x86_64
     - pg_currency_12-llvmjit-0:0.0.3-1PIGSTY.el8.x86_64
     - pg_currency_13-0:0.0.3-1PIGSTY.el8.x86_64
@@ -5418,6 +5747,12 @@ data:
     - pg_currency_16-llvmjit-0:0.0.3-1PIGSTY.el8.x86_64
     - pg_currency_17-0:0.0.3-1PIGSTY.el8.x86_64
     - pg_currency_17-llvmjit-0:0.0.3-1PIGSTY.el8.x86_64
+    - pg_documentdb_core_15-0:0.100-0PIGSTY.el8.x86_64
+    - pg_documentdb_core_15-llvmjit-0:0.100-0PIGSTY.el8.x86_64
+    - pg_documentdb_core_16-0:0.100-0PIGSTY.el8.x86_64
+    - pg_documentdb_core_16-llvmjit-0:0.100-0PIGSTY.el8.x86_64
+    - pg_documentdb_core_17-0:0.100-0PIGSTY.el8.x86_64
+    - pg_documentdb_core_17-llvmjit-0:0.100-0PIGSTY.el8.x86_64
     - pg_drop_events_13-0:0.1.0-1PIGSTY.el8.x86_64
     - pg_drop_events_14-0:0.1.0-1PIGSTY.el8.x86_64
     - pg_drop_events_15-0:0.1.0-1PIGSTY.el8.x86_64
@@ -5748,14 +6083,10 @@ data:
     - pg_schedoc_15-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_schedoc_16-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_schedoc_17-0:0.0.1-1PIGSTY.el8.x86_64
-    - pg_search_14-0:0.13.2-1.el8.x86_64
-    - pg_search_14-0:0.14.1-1.el8.x86_64
-    - pg_search_15-0:0.13.2-1.el8.x86_64
-    - pg_search_15-0:0.14.1-1.el8.x86_64
-    - pg_search_16-0:0.13.2-1.el8.x86_64
-    - pg_search_16-0:0.14.1-1.el8.x86_64
-    - pg_search_17-0:0.13.2-1.el8.x86_64
-    - pg_search_17-0:0.14.1-1.el8.x86_64
+    - pg_search_14-0:0.15.1-1.el8.x86_64
+    - pg_search_15-0:0.15.1-1.el8.x86_64
+    - pg_search_16-0:0.15.1-1.el8.x86_64
+    - pg_search_17-0:0.15.1-1.el8.x86_64
     - pg_session_jwt_14-0:0.1.2-1PIGSTY.el8.x86_64
     - pg_session_jwt_15-0:0.1.2-1PIGSTY.el8.x86_64
     - pg_session_jwt_16-0:0.1.2-1PIGSTY.el8.x86_64
@@ -5797,13 +6128,23 @@ data:
     - pg_store_plans_12-0:1.8-1PIGSTY.el8.x86_64
     - pg_store_plans_12-llvmjit-0:1.8-1PIGSTY.el8.x86_64
     - pg_store_plans_13-0:1.8-1PIGSTY.el8.x86_64
+    - pg_store_plans_13-0:1.8-2PIGSTY.el8.x86_64
     - pg_store_plans_13-llvmjit-0:1.8-1PIGSTY.el8.x86_64
+    - pg_store_plans_13-llvmjit-0:1.8-2PIGSTY.el8.x86_64
     - pg_store_plans_14-0:1.8-1PIGSTY.el8.x86_64
+    - pg_store_plans_14-0:1.8-2PIGSTY.el8.x86_64
     - pg_store_plans_14-llvmjit-0:1.8-1PIGSTY.el8.x86_64
+    - pg_store_plans_14-llvmjit-0:1.8-2PIGSTY.el8.x86_64
     - pg_store_plans_15-0:1.8-1PIGSTY.el8.x86_64
+    - pg_store_plans_15-0:1.8-2PIGSTY.el8.x86_64
     - pg_store_plans_15-llvmjit-0:1.8-1PIGSTY.el8.x86_64
+    - pg_store_plans_15-llvmjit-0:1.8-2PIGSTY.el8.x86_64
     - pg_store_plans_16-0:1.8-1PIGSTY.el8.x86_64
+    - pg_store_plans_16-0:1.8-2PIGSTY.el8.x86_64
     - pg_store_plans_16-llvmjit-0:1.8-1PIGSTY.el8.x86_64
+    - pg_store_plans_16-llvmjit-0:1.8-2PIGSTY.el8.x86_64
+    - pg_store_plans_17-0:1.8-2PIGSTY.el8.x86_64
+    - pg_store_plans_17-llvmjit-0:1.8-2PIGSTY.el8.x86_64
     - pg_summarize_12-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_summarize_13-0:0.0.1-1PIGSTY.el8.x86_64
     - pg_summarize_14-0:0.0.1-1PIGSTY.el8.x86_64
@@ -5846,6 +6187,12 @@ data:
     - pg_timeseries_16-0:0.1.6-2PIGSTY.el8.x86_64
     - pg_timeseries_17-0:0.1.6-1PIGSTY.el8.x86_64
     - pg_timeseries_17-0:0.1.6-2PIGSTY.el8.x86_64
+    - pg_tracing_15-0:0.1.2-1PIGSTY.el8.x86_64
+    - pg_tracing_15-llvmjit-0:0.1.2-1PIGSTY.el8.x86_64
+    - pg_tracing_16-0:0.1.2-1PIGSTY.el8.x86_64
+    - pg_tracing_16-llvmjit-0:0.1.2-1PIGSTY.el8.x86_64
+    - pg_tracing_17-0:0.1.2-1PIGSTY.el8.x86_64
+    - pg_tracing_17-llvmjit-0:0.1.2-1PIGSTY.el8.x86_64
     - pg_uint128_12-0:1.0.0-1PIGSTY.el8.x86_64
     - pg_uint128_12-llvmjit-0:1.0.0-1PIGSTY.el8.x86_64
     - pg_uint128_13-0:1.0.0-1PIGSTY.el8.x86_64
@@ -5876,9 +6223,13 @@ data:
     - pg_uri_17-0:1.20151224-1PIGSTY.el8.x86_64
     - pg_uri_17-llvmjit-0:1.20151224-1PIGSTY.el8.x86_64
     - pg_vectorize_14-0:0.20.0-1PIGSTY.el8.x86_64
+    - pg_vectorize_14-0:0.21.1-1PIGSTY.el8.x86_64
     - pg_vectorize_15-0:0.20.0-1PIGSTY.el8.x86_64
+    - pg_vectorize_15-0:0.21.1-1PIGSTY.el8.x86_64
     - pg_vectorize_16-0:0.20.0-1PIGSTY.el8.x86_64
+    - pg_vectorize_16-0:0.21.1-1PIGSTY.el8.x86_64
     - pg_vectorize_17-0:0.20.0-1PIGSTY.el8.x86_64
+    - pg_vectorize_17-0:0.21.1-1PIGSTY.el8.x86_64
     - pg_xenophile_13-0:0.8.3-1PIGSTY.el8.x86_64
     - pg_xenophile_14-0:0.8.3-1PIGSTY.el8.x86_64
     - pg_xenophile_15-0:0.8.3-1PIGSTY.el8.x86_64
@@ -5947,6 +6298,14 @@ data:
     - pgfaceting_15-0:0.2.0-1PIGSTY.el8.x86_64
     - pgfaceting_16-0:0.2.0-1PIGSTY.el8.x86_64
     - pgfaceting_17-0:0.2.0-1PIGSTY.el8.x86_64
+    - pgjq_14-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgjq_14-llvmjit-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgjq_15-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgjq_15-llvmjit-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgjq_16-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgjq_16-llvmjit-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgjq_17-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgjq_17-llvmjit-0:0.1.0-1PIGSTY.el8.x86_64
     - pgjwt_12-0:0.2.0-1PIGSTY.el8.x86_64
     - pgjwt_13-0:0.2.0-1PIGSTY.el8.x86_64
     - pgjwt_14-0:0.2.0-1PIGSTY.el8.x86_64
@@ -6050,15 +6409,25 @@ data:
     - pgqr_17-0:1.0-1PIGSTY.el8.x86_64
     - pgqr_17-llvmjit-0:1.0-1PIGSTY.el8.x86_64
     - pgroonga_13-0:3.2.5-1.el8.x86_64
+    - pgroonga_13-0:4.0.0-1.el8.x86_64
     - pgroonga_13-llvmjit-0:3.2.5-1.el8.x86_64
+    - pgroonga_13-llvmjit-0:4.0.0-1.el8.x86_64
     - pgroonga_14-0:3.2.5-1.el8.x86_64
+    - pgroonga_14-0:4.0.0-1.el8.x86_64
     - pgroonga_14-llvmjit-0:3.2.5-1.el8.x86_64
+    - pgroonga_14-llvmjit-0:4.0.0-1.el8.x86_64
     - pgroonga_15-0:3.2.5-1.el8.x86_64
+    - pgroonga_15-0:4.0.0-1.el8.x86_64
     - pgroonga_15-llvmjit-0:3.2.5-1.el8.x86_64
+    - pgroonga_15-llvmjit-0:4.0.0-1.el8.x86_64
     - pgroonga_16-0:3.2.5-1.el8.x86_64
+    - pgroonga_16-0:4.0.0-1.el8.x86_64
     - pgroonga_16-llvmjit-0:3.2.5-1.el8.x86_64
+    - pgroonga_16-llvmjit-0:4.0.0-1.el8.x86_64
     - pgroonga_17-0:3.2.5-1.el8.x86_64
+    - pgroonga_17-0:4.0.0-1.el8.x86_64
     - pgroonga_17-llvmjit-0:3.2.5-1.el8.x86_64
+    - pgroonga_17-llvmjit-0:4.0.0-1.el8.x86_64
     - pgsmcrypto_12-0:0.1.0-1PIGSTY.el8.x86_64
     - pgsmcrypto_13-0:0.1.0-1PIGSTY.el8.x86_64
     - pgsmcrypto_14-0:0.1.0-1PIGSTY.el8.x86_64
@@ -6067,6 +6436,11 @@ data:
     - pgsmcrypto_17-0:0.1.0-1PIGSTY.el8.x86_64
     - pgsodium_17-0:3.1.9-1PIGSTY.el8.x86_64
     - pgsodium_17-llvmjit-0:3.1.9-1PIGSTY.el8.x86_64
+    - pgsparql_13-0:1.0-1PIGSTY.el8.x86_64
+    - pgsparql_14-0:1.0-1PIGSTY.el8.x86_64
+    - pgsparql_15-0:1.0-1PIGSTY.el8.x86_64
+    - pgsparql_16-0:1.0-1PIGSTY.el8.x86_64
+    - pgsparql_17-0:1.0-1PIGSTY.el8.x86_64
     - pgsphere_12-0:1.5.1-1PIGSTY.el8.x86_64
     - pgsphere_12-llvmjit-0:1.5.1-1PIGSTY.el8.x86_64
     - pgsphere_13-0:1.5.1-1PIGSTY.el8.x86_64
@@ -6099,6 +6473,16 @@ data:
     - pgvectorscale_16-0:0.5.1-1PIGSTY.el8.x86_64
     - pgvectorscale_17-0:0.4.0-1PIGSTY.el8.x86_64
     - pgvectorscale_17-0:0.5.1-1PIGSTY.el8.x86_64
+    - pgxicor_13-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgxicor_13-llvmjit-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgxicor_14-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgxicor_14-llvmjit-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgxicor_15-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgxicor_15-llvmjit-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgxicor_16-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgxicor_16-llvmjit-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgxicor_17-0:0.1.0-1PIGSTY.el8.x86_64
+    - pgxicor_17-llvmjit-0:0.1.0-1PIGSTY.el8.x86_64
     - plproxy_12-0:2.11.0-1PIGSTY.el8.x86_64
     - plproxy_12-llvmjit-0:2.11.0-1PIGSTY.el8.x86_64
     - plproxy_13-0:2.11.0-1PIGSTY.el8.x86_64
@@ -6280,15 +6664,25 @@ data:
     - sslutils_17-0:1.4-1PIGSTY.el8.x86_64
     - sslutils_17-llvmjit-0:1.4-1PIGSTY.el8.x86_64
     - supautils_13-0:2.5.0-1PIGSTY.el8.x86_64
+    - supautils_13-0:2.6.0-1PIGSTY.el8.x86_64
     - supautils_13-llvmjit-0:2.5.0-1PIGSTY.el8.x86_64
+    - supautils_13-llvmjit-0:2.6.0-1PIGSTY.el8.x86_64
     - supautils_14-0:2.5.0-1PIGSTY.el8.x86_64
+    - supautils_14-0:2.6.0-1PIGSTY.el8.x86_64
     - supautils_14-llvmjit-0:2.5.0-1PIGSTY.el8.x86_64
+    - supautils_14-llvmjit-0:2.6.0-1PIGSTY.el8.x86_64
     - supautils_15-0:2.5.0-1PIGSTY.el8.x86_64
+    - supautils_15-0:2.6.0-1PIGSTY.el8.x86_64
     - supautils_15-llvmjit-0:2.5.0-1PIGSTY.el8.x86_64
+    - supautils_15-llvmjit-0:2.6.0-1PIGSTY.el8.x86_64
     - supautils_16-0:2.5.0-1PIGSTY.el8.x86_64
+    - supautils_16-0:2.6.0-1PIGSTY.el8.x86_64
     - supautils_16-llvmjit-0:2.5.0-1PIGSTY.el8.x86_64
+    - supautils_16-llvmjit-0:2.6.0-1PIGSTY.el8.x86_64
     - supautils_17-0:2.5.0-1PIGSTY.el8.x86_64
+    - supautils_17-0:2.6.0-1PIGSTY.el8.x86_64
     - supautils_17-llvmjit-0:2.5.0-1PIGSTY.el8.x86_64
+    - supautils_17-llvmjit-0:2.6.0-1PIGSTY.el8.x86_64
     - table_log_12-0:0.6.1-1PIGSTY.el8.x86_64
     - table_log_12-llvmjit-0:0.6.1-1PIGSTY.el8.x86_64
     - table_log_13-0:0.6.1-1PIGSTY.el8.x86_64
@@ -6345,9 +6739,13 @@ data:
     - timescaledb-toolkit_17-0:1.19.0-1PIGSTY.el8.x86_64
     - timescaledb-tools-0:0.18.0-0.el8.x86_64
     - timescaledb-tsl_14-0:2.17.2-1PIGSTY.el8.x86_64
+    - timescaledb-tsl_14-0:2.18.1-1PIGSTY.el8.x86_64
     - timescaledb-tsl_15-0:2.17.2-1PIGSTY.el8.x86_64
+    - timescaledb-tsl_15-0:2.18.1-1PIGSTY.el8.x86_64
     - timescaledb-tsl_16-0:2.17.2-1PIGSTY.el8.x86_64
+    - timescaledb-tsl_16-0:2.18.1-1PIGSTY.el8.x86_64
     - timescaledb-tsl_17-0:2.17.2-1PIGSTY.el8.x86_64
+    - timescaledb-tsl_17-0:2.18.1-1PIGSTY.el8.x86_64
     - toastinfo_12-0:1.4-1PIGSTY.el8.x86_64
     - toastinfo_12-llvmjit-0:1.4-1PIGSTY.el8.x86_64
     - toastinfo_13-0:1.4-1PIGSTY.el8.x86_64
@@ -6389,9 +6787,17 @@ data:
     - vault_16-0:0.2.9-1PIGSTY.el8.x86_64
     - vault_17-0:0.2.9-1PIGSTY.el8.x86_64
     - vchord_14-0:0.1.0-1PIGSTY.el8.x86_64
+    - vchord_14-0:0.2.0-1PIGSTY.el8.x86_64
     - vchord_15-0:0.1.0-1PIGSTY.el8.x86_64
+    - vchord_15-0:0.2.0-1PIGSTY.el8.x86_64
     - vchord_16-0:0.1.0-1PIGSTY.el8.x86_64
+    - vchord_16-0:0.2.0-1PIGSTY.el8.x86_64
     - vchord_17-0:0.1.0-1PIGSTY.el8.x86_64
+    - vchord_17-0:0.2.0-1PIGSTY.el8.x86_64
+    - vchord_bm25_14-0:0.1.0-1PIGSTY.el8.x86_64
+    - vchord_bm25_15-0:0.1.0-1PIGSTY.el8.x86_64
+    - vchord_bm25_16-0:0.1.0-1PIGSTY.el8.x86_64
+    - vchord_bm25_17-0:0.1.0-1PIGSTY.el8.x86_64
     - wrappers_14-0:0.4.3-1PIGSTY.el8.x86_64
     - wrappers_14-0:0.4.4-1PIGSTY.el8.x86_64
     - wrappers_15-0:0.4.3-1PIGSTY.el8.x86_64
@@ -6403,13 +6809,23 @@ data:
     - zhparser_12-0:2.2-1PIGSTY.el8.x86_64
     - zhparser_12-llvmjit-0:2.2-1PIGSTY.el8.x86_64
     - zhparser_13-0:2.2-1PIGSTY.el8.x86_64
+    - zhparser_13-0:2.3-1PIGSTY.el8.x86_64
     - zhparser_13-llvmjit-0:2.2-1PIGSTY.el8.x86_64
+    - zhparser_13-llvmjit-0:2.3-1PIGSTY.el8.x86_64
     - zhparser_14-0:2.2-1PIGSTY.el8.x86_64
+    - zhparser_14-0:2.3-1PIGSTY.el8.x86_64
     - zhparser_14-llvmjit-0:2.2-1PIGSTY.el8.x86_64
+    - zhparser_14-llvmjit-0:2.3-1PIGSTY.el8.x86_64
     - zhparser_15-0:2.2-1PIGSTY.el8.x86_64
+    - zhparser_15-0:2.3-1PIGSTY.el8.x86_64
     - zhparser_15-llvmjit-0:2.2-1PIGSTY.el8.x86_64
+    - zhparser_15-llvmjit-0:2.3-1PIGSTY.el8.x86_64
     - zhparser_16-0:2.2-1PIGSTY.el8.x86_64
+    - zhparser_16-0:2.3-1PIGSTY.el8.x86_64
     - zhparser_16-llvmjit-0:2.2-1PIGSTY.el8.x86_64
+    - zhparser_16-llvmjit-0:2.3-1PIGSTY.el8.x86_64
     - zhparser_17-0:2.2-1PIGSTY.el8.x86_64
+    - zhparser_17-0:2.3-1PIGSTY.el8.x86_64
     - zhparser_17-llvmjit-0:2.2-1PIGSTY.el8.x86_64
+    - zhparser_17-llvmjit-0:2.3-1PIGSTY.el8.x86_64
 ...

@@ -11,6 +11,9 @@ pkg.iml
 tmp/
 .gitignore
 
+# ext src
+ext/*
+
 # yum rpm
 yum/infra/x86_64/*.rpm
 yum/infra/aarch64/*.rpm

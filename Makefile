@@ -62,6 +62,11 @@ upload-etc:
 	rclone sync -P --transfers=8 ./etc/ $(CF_PATH)/etc/
 	rclone sync -P --transfers=8 ./etc/ $(COS_PATH)/etc/
 
+ux: upload-ext
+upload-ext:
+	#rclone sync -P --transfers=8 ./ext/ $(CF_PATH)/ext/
+	rclone sync -P --transfers=8 ./ext/ $(COS_PATH)/ext/
+
 us: upload-src
 upload-src:
 	cd src && md5sum *.tgz > checksums
