@@ -31,6 +31,7 @@ data:
       - duckdb
       - etcd
       - ferretdb
+      - ferretdb2
       - grafana
       - grafana-infinity-ds
       - grafana-plugins
@@ -79,6 +80,7 @@ data:
     - duckdb
     - etcd
     - ferretdb
+    - ferretdb2
     - grafana
     - grafana-infinity-ds
     - grafana-plugins
@@ -131,6 +133,8 @@ data:
       etcd:
         rationale: Present in the repository
       ferretdb:
+        rationale: Present in the repository
+      ferretdb2:
         rationale: Present in the repository
       grafana:
         rationale: Present in the repository
@@ -217,11 +221,16 @@ data:
   artifacts:
     rpms:
     - alertmanager-0:0.27.0-1.x86_64
+    - alertmanager-0:0.28.0-1.x86_64
     - blackbox_exporter-0:0.25.0-1.x86_64
     - duckdb-0:1.1.3-1.x86_64
+    - duckdb-0:1.2.0-1.x86_64
     - etcd-0:3.5.17-1.x86_64
+    - etcd-0:3.5.18-1.x86_64
     - ferretdb-0:1.24.0-1.x86_64
+    - ferretdb2-0:2.0.0~rc1-1.x86_64
     - grafana-0:11.4.0-1.x86_64
+    - grafana-0:11.5.1-1.x86_64
     - grafana-infinity-ds-0:2.11.4-1.x86_64
     - grafana-plugins-0:11.4.0-1.noarch
     - grafana-victorialogs-ds-0:0.12.0-1.x86_64
@@ -232,35 +241,52 @@ data:
     - logcli-0:3.1.1-1.x86_64
     - loki-0:3.1.1-1.x86_64
     - mcli-0:20241121172154.0.0-1.x86_64
+    - mcli-0:20250208191421.0.0-1.x86_64
     - minio-0:20241218131544.0.0-1.x86_64
+    - minio-0:20250207232109.0.0-1.x86_64
     - mongodb_exporter-0:0.43.0-1.x86_64
+    - mongodb_exporter-0:0.43.1-1.x86_64
     - mysqld_exporter-0:0.16.0-1.x86_64
     - nginx_exporter-0:1.4.0-1.x86_64
+    - nginx_exporter-0:1.4.1-1.x86_64
     - node_exporter-0:1.8.2-1.x86_64
     - pev2-0:1.12.1-1.noarch
     - pg_exporter-0:0.7.0-1.x86_64
     - pg_exporter-0:0.7.1-1.x86_64
     - pg_timetable-0:5.10.0-1.x86_64
+    - pg_timetable-0:5.11.0-1.x86_64
     - pgbackrest_exporter-0:0.18.0-1.x86_64
+    - pgbackrest_exporter-0:0.19.0-1.x86_64
     - pig-0:0.1.3-1.x86_64
+    - pig-0:0.1.4-1.x86_64
     - prometheus-0:3.1.0-1.x86_64
     - prometheus2-0:2.55.1-1.x86_64
     - promscale-0:0.17.0-1.x86_64
     - promtail-0:3.0.0-1.x86_64
     - pushgateway-0:1.10.0-1.x86_64
+    - pushgateway-0:1.11.0-1.x86_64
     - rclone-0:1.68.2-1.x86_64
+    - rclone-0:1.69.0-1.x86_64
     - redis_exporter-0:1.66.0-1.x86_64
+    - redis_exporter-0:1.67.0-1.x86_64
     - sealos-0:5.0.1-1.x86_64
     - sqlcmd-0:1.8.0-1.x86_64
     - tigerbeetle-0:0.16.13-1.x86_64
+    - tigerbeetle-0:0.16.27-1.x86_64
     - vector-0:0.43.1-1.x86_64
+    - vector-0:0.44.0-1.x86_64
     - victoria-logs-0:1.3.2-1.x86_64
+    - victoria-logs-0:1.9.1-1.x86_64
     - victoria-metrics-0:1.107.0-1.x86_64
+    - victoria-metrics-0:1.111.0-1.x86_64
     - victoria-metrics-cluster-0:1.107.0-1.x86_64
+    - victoria-metrics-cluster-0:1.111.0-1.x86_64
     - victoria-metrics-utils-0:1.107.0-1.x86_64
+    - victoria-metrics-utils-0:1.111.0-1.x86_64
     - victorialogs-datasource-0:0.12.0-1.noarch
     - victoriametrics-datasource-0:0.10.3-1.noarch
     - vip-manager-0:3.0.0-1.x86_64
     - vlogscli-0:1.3.2-1.x86_64
+    - vlogscli-0:1.9.1-1.x86_64
     - vray-0:5.23.0-1.x86_64
 ...
