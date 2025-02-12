@@ -1,16 +1,17 @@
 Package: alertmanager
-Version: 0.27.0
+Version: 0.28.0
 Architecture: amd64
+License: Apache-2.0 license
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 65895
+Installed-Size: 67898
 Homepage: https://github.com/prometheus/alertmanager
 Priority: optional
 Section: 
-Filename: pool/main/a/alertmanager/alertmanager_0.27.0_amd64.deb
-Size: 31141548
-SHA256: 0203f201ac0786f62db5968d6d8a22657410f79df986b2c6cc28cc05ab115eeb
-SHA1: 0355eb78ae277e6c62d6214704aa1fa1425f056c
-MD5sum: dbf8f0ac1086235a9c922f3276566f49
+Filename: pool/main/a/alertmanager/alertmanager_0.28.0_amd64.deb
+Size: 33739846
+SHA256: 00df881e89b53978a11b9f91c7301a8c0c85820fc9c6d831c249bf7641feb5a4
+SHA1: 9a9f865a75aa9a1b6ac9af3c431d47c6b6ab2b12
+MD5sum: 02dc9197928f8ff783eadbce013b756b
 Description: Prometheus Alertmanager
 
 Package: blackbox-exporter
@@ -29,35 +30,35 @@ MD5sum: 404e918f012790415d29c89dd030234a
 Description: Prometheus Blackbox prober exporter,  allows blackbox probing of endpoints over HTTP, HTTPS, DNS, TCP, ICMP and gRPC.
 
 Package: duckdb
-Version: 1.1.3-1
+Version: 1.2.0-1
 Architecture: amd64
 License: MIT License
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 48468
+Installed-Size: 48850
 Homepage: https://github.com/duckdb/duckdb
 Priority: optional
 Section: 
-Filename: pool/main/d/duckdb/duckdb_1.1.3-1_amd64.deb
-Size: 17237524
-SHA256: cad3d3db7ec80eda48927cd504ebba55931278fb2205d4e814935c4f03a15064
-SHA1: 80b77a4ed6d49bc593feae32021fc13b02afa143
-MD5sum: b6d6ba2acefe2dedf5bfc18283c22023
+Filename: pool/main/d/duckdb/duckdb_1.2.0-1_amd64.deb
+Size: 17659538
+SHA256: cf2e4ca2559724373aac2ab79f00f28a11cb1893225e70f34a36d8802b5cc807
+SHA1: 4f9b8ddc0a42490f66455e0c7a068f9b5bcac561
+MD5sum: 34237f2ef03e2110f61b3c3a751b5928
 Description: In-process SQL OLAP Database Management System
 
 Package: etcd
-Version: 3.5.17
+Version: 3.5.18
 Architecture: amd64
 License: Apache-2.0 license
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 55096
+Installed-Size: 55124
 Homepage: https://github.com/etcd-io/etcd
 Priority: optional
 Section: 
-Filename: pool/main/e/etcd/etcd_3.5.17_amd64.deb
-Size: 20822346
-SHA256: a629ae156ba13550ae10f25db19fbd5ee86f892e68cfe51f4fe08258c3b88bd7
-SHA1: 015318cc20abacd25377b82844b75e401dc631e3
-MD5sum: 49d27b50ec23ab6eebab282b5baa2af5
+Filename: pool/main/e/etcd/etcd_3.5.18_amd64.deb
+Size: 20837010
+SHA256: 9f7876ab44882363b799009cdb347f970c325a0d5cf4d470883f18771d4f6abc
+SHA1: f614898ceb051c6cc4690fdf0dc2ba760c370cec
+MD5sum: dcf7583ba1dd4105986e5fac0dfb1f4b
 Description: Distributed reliable key-value store for the most critical data of a distributed system
 
 Package: ferretdb
@@ -76,22 +77,38 @@ SHA1: 46a0be7ae0db04b01985a3a7ab7c2e728c3a7326
 MD5sum: 181a6e727f392d026fed80a760cd4361
 Description: A truly Open Source MongoDB alternative
 
+Package: ferretdb2
+Version: 2.0.0~rc1
+Architecture: amd64
+License: Apache 2.0
+Maintainer: Ruohang Feng <rh@vonng.com>
+Installed-Size: 38191
+Homepage: https://github.com/FerretDB/FerretDB
+Priority: optional
+Section: 
+Filename: pool/main/f/ferretdb2/ferretdb2_2.0.0~rc1_amd64.deb
+Size: 18650822
+SHA256: 4d582f879eeddb7b2abecd69aada8cf25f8d7b5f4f222afba6ef13c504cec934
+SHA1: f666f5792ae6980abd7e4a186832616968de97c5
+MD5sum: 35bacd5b127bc4f44a4711f0b745571c
+Description: A truly Open Source MongoDB alternative
+
 Package: grafana
-Version: 11.4.0
+Version: 11.5.1
 License: AGPLv3
 Vendor: "Grafana Labs"
 Architecture: amd64
 Maintainer: contact@grafana.com
-Installed-Size: 459249
+Installed-Size: 519208
 Depends: adduser, musl
 Homepage: https://grafana.com
 Priority: optional
 Section: default
-Filename: pool/main/g/grafana/grafana_11.4.0_amd64.deb
-Size: 126500184
-SHA256: 4cff89724f4a06f53fc1187c6c2011206084baf13da6d443c2fb14b4ba272bb0
-SHA1: 467c796c58bade342569bff263ef5f4f1fc5baed
-MD5sum: 00e4c094f38e4e254e5c2338179fe2dc
+Filename: pool/main/g/grafana/grafana_11.5.1_amd64.deb
+Size: 138745442
+SHA256: 8f336fc56d92ff8cd14392fa2a4ec34b2235cf3be44d6082e44f283edd708675
+SHA1: de68a4498ca65c045bb68b2530f7308e9a36d719
+MD5sum: 97dc1aaeb4db7a290033a50c06638613
 Description: Grafana
 
 Package: grafana-infinity-ds
@@ -239,52 +256,54 @@ MD5sum: 8a4b995b554cb61dfe1c5f30a923784e
 Description: Loki Logging Service
 
 Package: mcli
-Version: 20241121172154.0.0
+Version: 20250208191421.0.0
 Architecture: amd64
+License: AGPLv3
 Maintainer: MinIO Development <dev@minio.io>
-Installed-Size: 27340
+Installed-Size: 28428
 Homepage: https://min.io
 Priority: optional
 Section: 
-Filename: pool/main/m/mcli/mcli_20241121172154.0.0_amd64.deb
-Size: 10322546
-SHA256: 88d5aa14c611557b56514b9469d15cff58eef7a3773cf9d359d848397e5043bf
-SHA1: 426f1c920e2be5b3ddc1f66b0cb37082c71c22d6
-MD5sum: b4fb52809cf6f13d6a9d21082d3d296f
+Filename: pool/main/m/mcli/mcli_20250208191421.0.0_amd64.deb
+Size: 10731006
+SHA256: 6018038d0b2c35297e801e367ebc01ded3a6900b54a74c1e6691839d2896c9e9
+SHA1: 1ab593f5a00b7f7172ed53f9240d344fd67cb8b5
+MD5sum: 6a59618a5a72ff24c22942af5c127835
 Description: MinIO Client for cloud storage and filesystems
 
 Package: minio
-Version: 20241218131544.0.0
+Version: 20250207232109.0.0
 Architecture: amd64
+License: AGPLv3
 Maintainer: MinIO Development <dev@minio.io>
-Installed-Size: 113937
+Installed-Size: 114361
 Homepage: https://min.io
 Priority: optional
 Section: 
-Filename: pool/main/m/minio/minio_20241218131544.0.0_amd64.deb
-Size: 40683464
-SHA256: a62a97a1a131eb3a9c390da1d32bdb82d9e7d82f8db5ef8cf2c3d08b569900a0
-SHA1: 48299295153ec771eabf44ffeb58f2ebdda289f3
-MD5sum: b74972320ead4cfd66ee7a74513607e0
+Filename: pool/main/m/minio/minio_20250207232109.0.0_amd64.deb
+Size: 40827696
+SHA256: c02c3f34fab32a12cb7f067b91538ced8f95616627ad7b4c508678ee63700229
+SHA1: b9e28d56562bbf31ff13654173a7bfc77580eba7
+MD5sum: 56999bcda4056a510bbf2c45e72dbdde
 Description: MinIO is a High Performance Object Storage released under AGPLv3.
  It is API compatible with Amazon S3 cloud storage service. Use MinIO to build
  high performance infrastructure for machine learning, analytics and application
  data workloads.
 
 Package: mongodb-exporter
-Version: 0.43.0
+Version: 0.43.1
 Architecture: amd64
 License: Apache-2.0 license
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 19956
+Installed-Size: 19988
 Homepage: https://github.com/prometheus/mongodb_exporter
 Priority: optional
 Section: 
-Filename: pool/main/m/mongodb-exporter/mongodb-exporter_0.43.0_amd64.deb
-Size: 7037774
-SHA256: 9ddf2d1498635e6401fc76976fbaeac94c0599b4cb056e4a98e0621de329ad54
-SHA1: 94d004f26897b57950288e2c49aa80108c12dade
-MD5sum: 6d045ec55057b051dd113eb53f5a4924
+Filename: pool/main/m/mongodb-exporter/mongodb-exporter_0.43.1_amd64.deb
+Size: 7052228
+SHA256: 0f6c74d745049f6b4120e4ecd42e0c1168a690205546615ee796bafc742a7eff
+SHA1: 7fbf26049bdfd9c9934684107465fb54cd03953e
+MD5sum: de9c818a8d0be212204ab69f8d658986
 Description: A Prometheus exporter for MongoDB including sharding, replication and storage engines
 
 Package: mysqld-exporter
@@ -304,19 +323,19 @@ MD5sum: f9c4284c87a8665ee52247f110f6c157
 Description: Prometheus exporter for MySQL server metrics.
 
 Package: nginx-exporter
-Version: 1.4.0
+Version: 1.4.1
 Architecture: amd64
 License: Apache-2.0 license
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 13124
+Installed-Size: 13144
 Homepage: https://github.com/nginxinc/nginx-prometheus-exporter
 Priority: optional
 Section: 
-Filename: pool/main/n/nginx-exporter/nginx-exporter_1.4.0_amd64.deb
-Size: 4808284
-SHA256: ceb82c25acd79f09c7a6caad431f792dda31cb6c7dc518fbed661b50092431d6
-SHA1: caba1e812f73c19d5a1f5eb81c29e2a8328685e3
-MD5sum: d5c1fafa1df081c010c10224aea438d0
+Filename: pool/main/n/nginx-exporter/nginx-exporter_1.4.1_amd64.deb
+Size: 4818680
+SHA256: 44a02f50cbe20f6752d5bc83a19176ad2d709869dfa577321c8b913fafa4e30b
+SHA1: 72e230968b8f2d4d719eeda920d948abc5109122
+MD5sum: 778b2699c92832543db215828819a392
 Description: NGINX Prometheus Exporter for NGINX and NGINX Plus.
 
 Package: node-exporter
@@ -370,50 +389,51 @@ Description: Prometheus exporter for PostgreSQL / Pgbouncer server metrics.
  with ultimate observability support: https://pigsty.cc
 
 Package: pg-timetable
-Version: 5.10.0
+Version: 5.11.0
 Architecture: amd64
 License: PostgreSQL
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 11492
+Installed-Size: 11520
 Homepage: https://github.com/cybertec-postgresql/pg_timetable
 Priority: optional
 Section: 
-Filename: pool/main/p/pg-timetable/pg-timetable_5.10.0_amd64.deb
-Size: 4359124
-SHA256: 7f5495833d2c655a0c61dcf5a127a7f95948ab4281acaec4a7e67d72561dcd8d
-SHA1: 4a38430e6920b0134c659ef27a541b5b62f99620
-MD5sum: d636046fb6cd14bcac76f25563c4c056
+Filename: pool/main/p/pg-timetable/pg-timetable_5.11.0_amd64.deb
+Size: 4364500
+SHA256: aa94b278af093a63d527c5043da7f484b35e7065634e7d49f25a849200cfe153
+SHA1: 2462c391283b328b85f49e3b055fb5dd267fb12a
+MD5sum: 21f7b69aaa7b5cc23ffceb97385a2791
 Description: Advanced scheduling for PostgreSQL
 
 Package: pgbackrest-exporter
-Version: 0.18.0
+Version: 0.19.0
 Architecture: amd64
+License: MIT
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 9882
+Installed-Size: 10590
 Homepage: https://github.com/woblerr/pgbackrest_exporter
 Priority: optional
 Section: 
-Filename: pool/main/p/pgbackrest-exporter/pgbackrest-exporter_0.18.0_amd64.deb
-Size: 4047004
-SHA256: 1ac114a87fa11541b143c75d89cc4c5f136f43ab089e6483b36b23ac8220a47c
-SHA1: 56b0a03407a1ee10d9331a0a5b438b6d30ae8cae
-MD5sum: 3a1a32b72f94c500927b32ac67a82a22
+Filename: pool/main/p/pgbackrest-exporter/pgbackrest-exporter_0.19.0_amd64.deb
+Size: 4317178
+SHA256: 5d17c6315cc59010e7d1bc46c2830bed3132783d5f6cbdc93560040d29b2c636
+SHA1: 359f40bd075843ab9aa1d47a12fcdfd416da229e
+MD5sum: 76081c83c951b8e8f646e1ed2b5ce243
 Description: Prometheus exporter for pgBackRest
 
 Package: pig
-Version: 0.1.3
+Version: 0.1.4
 Architecture: amd64
 License: Apache-2.0 License
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 15612
+Installed-Size: 15616
 Homepage: https://github.com/pgsty/pig
 Priority: optional
 Section: 
-Filename: pool/main/p/pig/pig_0.1.3_amd64.deb
-Size: 9429474
-SHA256: a48db7ea3350089ab8586d31dbe47829899758289c4650d97d241eb4c2f1c411
-SHA1: 2b04e62a7d804860a5156c0c9f87217081712cb0
-MD5sum: cb376ef2c3512ad35ff43132942c0052
+Filename: pool/main/p/pig/pig_0.1.4_amd64.deb
+Size: 9430480
+SHA256: 96328116b2fa69143df32e9117eabbbd47abbb2cfa6a2231bc3e878777c72660
+SHA1: 58a2df97f500c7ef2c6efd06d24fbdef4279b831
+MD5sum: 83ae89b58bff003da5c3022eeac1786e
 Description: CLI Tools for Pigsty and PostgreSQL
 
 Package: prometheus
@@ -483,55 +503,55 @@ MD5sum: 28328ef7f28322ee6412f3faed640670
 Description: Promtail Logging Agent
 
 Package: pushgateway
-Version: 1.10.0
+Version: 1.11.0
 Architecture: amd64
 License: Apache-2.0 license
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 19794
+Installed-Size: 20172
 Homepage: https://github.com/prometheus/pushgateway
 Priority: optional
 Section: 
-Filename: pool/main/p/pushgateway/pushgateway_1.10.0_amd64.deb
-Size: 11437590
-SHA256: 7816c0e0460e9212f46c4c4467a8e5558ce7f6d217edb40ddb2b93f00e825164
-SHA1: 1d6ebce21dabc79a47e6b3f7d7f98e6580c1d1c0
-MD5sum: 638d38aff661f9cbb6194b83f1e50ea7
+Filename: pool/main/p/pushgateway/pushgateway_1.11.0_amd64.deb
+Size: 11646744
+SHA256: 0bf946cbe12497b3cde2418479b4f9277010c4e7c04048bebcd26f84981a1cb8
+SHA1: c4a9586ffcbd59d30a6820111de3e11f39d4c1d7
+MD5sum: fae1f85e0f36b43c8d727182949b127d
 Description: Prometheus pushgateway
 
 Package: rclone
-Version: 1.68.2
+Version: 1.69.0
 Architecture: amd64
 License: MIT
 Maintainer: Nick Craig-Wood <nick@craig-wood.com>
-Installed-Size: 67135
+Installed-Size: 69375
 Provides: rclone
 Homepage: https://rclone.org
 Priority: extra
 Section: default
-Filename: pool/main/r/rclone/rclone_1.68.2_amd64.deb
-Size: 22990096
-SHA256: ee138bbc507deb8d2a854aec1a5128e5de0a4069102f2a4a17e62d80e45b0eb2
-SHA1: fb9717532959e5aa81464f4e506cf2fc13c11b33
-MD5sum: 69f2c36529ce04ddcfef53d0d4a9964e
+Filename: pool/main/r/rclone/rclone_1.69.0_amd64.deb
+Size: 23665802
+SHA256: 5de54f24c74ece8592051b37067055ea155cc60aa3a20ed2a7a301c1f965a9d2
+SHA1: 7d6172daf7cbe5af5cc3eacd6159a83afb0aa304
+MD5sum: 7ab5dcc4688979da75aa11fac70de52f
 Description: Rclone - "rsync for cloud storage"
  is a command-line program to sync files and directories to and
  from most cloud providers. It can also mount, tree, ncdu and lots
  of other useful things.
 
 Package: redis-exporter
-Version: 1.66.0
+Version: 1.67.0
 Architecture: amd64
 License: Apache-2.0 license
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 8816
+Installed-Size: 8824
 Homepage: https://github.com/oliver006/redis_exporter
 Priority: optional
 Section: 
-Filename: pool/main/r/redis-exporter/redis-exporter_1.66.0_amd64.deb
-Size: 3629634
-SHA256: 3238dc66e53210114eb246eb0963471e877f6545328ae8cf88e2f7dff343f1fd
-SHA1: eb5f35de2a3d41dc0b9d0a055978a2dd20cb4f22
-MD5sum: 846be7c40614276ced68c8608896f8e6
+Filename: pool/main/r/redis-exporter/redis-exporter_1.67.0_amd64.deb
+Size: 3633306
+SHA256: 7cd9d92e5ae43a3557dd370ff65278154826d3eb2a3807cacb650ffe2b350769
+SHA1: ad3a53df9f4e21e66b831428dd34dbd4acbb5d52
+MD5sum: afa8075d401952328ac17b1ad87b0d41
 Description: Prometheus Exporter for Redis Metrics. Supports Redis 2.x, 3.x, 4.x, 5.x, 6.x, and 7.x
 
 Package: sealos
@@ -566,19 +586,19 @@ MD5sum: 8f7bb437073d4afc436492ffd42c512a
 Description: The new sqlcmd, CLI for SQL Server and Azure SQL (winget install sqlcmd / sqlcmd create mssql / sqlcmd open ads)
 
 Package: tigerbeetle
-Version: 0.16.13-1
+Version: 0.16.27-1
 Architecture: amd64
 License: Apache-2.0 License
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 12795
+Installed-Size: 18736
 Homepage: https://github.com/tigerbeetle/tigerbeetle
 Priority: optional
 Section: 
-Filename: pool/main/t/tigerbeetle/tigerbeetle_0.16.13-1_amd64.deb
-Size: 4905272
-SHA256: 7de03da716142ff4525e81ea749eb2cf7e4a0ebcf9e74200954ba3b27e207da8
-SHA1: ab92354162b6a1cd01e6cabf3f0fabb552e0a684
-MD5sum: 7cd2b43b83415c44ff901fd328991774
+Filename: pool/main/t/tigerbeetle/tigerbeetle_0.16.27-1_amd64.deb
+Size: 6205996
+SHA256: 257e246776b2a741326f4d46eeb422736e2b7e3fe8029c7ef717b3fb2d4c8674
+SHA1: 6191a849d4c00eba879ce768c70455f517ca8e47
+MD5sum: 0f35670e686a7a7bc52eaf75543073f7
 Description: The financial transactions database designed for mission critical safety and performance
 
 Package: vector
@@ -601,67 +621,67 @@ Description: A lightweight and ultra-fast tool for building observability pipeli
  .
 
 Package: victoria-logs
-Version: 1.3.2
+Version: 1.9.1
 Architecture: amd64
 License: Apache-2.0 license
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 17800
+Installed-Size: 18444
 Homepage: https://github.com/VictoriaMetrics/VictoriaMetrics
 Priority: optional
 Section: 
-Filename: pool/main/v/victoria-logs/victoria-logs_1.3.2_amd64.deb
-Size: 9976224
-SHA256: 5db27faba282bba4a5962bb50da15919e695fbd03cc7fbd4aeadf8ed3d4d44e2
-SHA1: 0893ff5e372b4f2b882172a6a25ade2c3837b7dc
-MD5sum: 52098281082ed2c2617e4b0171508eca
+Filename: pool/main/v/victoria-logs/victoria-logs_1.9.1_amd64.deb
+Size: 10253650
+SHA256: a5d980e44e5728ce61ee861665ee6210ed89eee0dc014aa8f2f3453a54ec3f46
+SHA1: a4b6957f8d45359f9cf8ed494b1ef502c5af0e3c
+MD5sum: 4d6c67e187bbeec9bca1bdd323961568
 Description: VictoriaLogs is open source user-friendly database for logs from VictoriaMetrics.
 
 Package: victoria-metrics
-Version: 1.107.0
+Version: 1.111.0
 Architecture: amd64
 License: Apache-2.0 license
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 23507
+Installed-Size: 23725
 Homepage: https://github.com/VictoriaMetrics/VictoriaMetrics
 Priority: optional
 Section: 
-Filename: pool/main/v/victoria-metrics/victoria-metrics_1.107.0_amd64.deb
-Size: 12753550
-SHA256: 9101820a675ccd8d509929775215b79c8d0480613217d5e0468bfd75b592d72d
-SHA1: a68a2da24f5a7a260691a9c31b7888c0ed0cb6f4
-MD5sum: 7ac1b9c38c710f45d72372e7b9749e8d
+Filename: pool/main/v/victoria-metrics/victoria-metrics_1.111.0_amd64.deb
+Size: 12873262
+SHA256: 67cdd773e5d8d0b7fc1298e7fd0af5a5a31c891f060fdaa69fb902147fb7a19f
+SHA1: d7ab0cb4fddcb9adbe39234f16cc5f849dcf1d20
+MD5sum: cff3a66351ead5ee2a2e12ab757c0d88
 Description: fast, cost-effective monitoring solution and time series database
 
 Package: victoria-metrics-cluster
-Version: 1.107.0
+Version: 1.111.0
 Architecture: amd64
 License: Apache-2.0 license
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 106104
+Installed-Size: 87500
 Homepage: https://github.com/VictoriaMetrics/VictoriaMetrics
 Priority: optional
 Section: 
-Filename: pool/main/v/victoria-metrics-cluster/victoria-metrics-cluster_1.107.0_amd64.deb
-Size: 52011822
-SHA256: 90760e077a545881d05814707eda7ad5d1a4c63cc6f19b1ade6ad61512fe0ee3
-SHA1: af4b2a0bd8a01aee400067af946998a2d7bf9aca
-MD5sum: 4c184b547ff752b1f3807377b5e0008d
+Filename: pool/main/v/victoria-metrics-cluster/victoria-metrics-cluster_1.111.0_amd64.deb
+Size: 45969874
+SHA256: 2ae2c9568b37780c627ced7761bb2e81c5de74686280a762d6d4dc77618f81a6
+SHA1: 423b71bc0160e4e2d31af646b1190432296ca2ec
+MD5sum: 92e423fcf5e21e07d2efbc75eb0afd22
 Description: fast, cost-effective monitoring solution and time series database, cluster version
 
 Package: victoria-metrics-utils
-Version: 1.107.0
+Version: 1.111.0
 Architecture: amd64
 License: Apache-2.0 license
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 144204
+Installed-Size: 126839
 Homepage: https://github.com/VictoriaMetrics/VictoriaMetrics
 Priority: optional
 Section: 
-Filename: pool/main/v/victoria-metrics-utils/victoria-metrics-utils_1.107.0_amd64.deb
-Size: 69655888
-SHA256: b9d8edf69e6d683c7c6160e5eb8a8cc3a7ef51da6fea78e27e37b9b8cc483ef6
-SHA1: 19b003f3d2378509a730172569cb9d4fd69c64f2
-MD5sum: 0dd341242775188b8da503ff0f9ce699
+Filename: pool/main/v/victoria-metrics-utils/victoria-metrics-utils_1.111.0_amd64.deb
+Size: 64468038
+SHA256: e72915e09a08efaca029a008d375b2e3ebf7cee762e08bb3eb1a1fee5d22e1d4
+SHA1: 6b481774cf00e0d0919fdbd69330f38c95afef72
+MD5sum: 780ae8e5e9c14986a90f19fb56cbc180
 Description: fast, cost-effective monitoring solution and time series database, agent,alert,auth,backup,ctl
 
 Package: vip-manager
@@ -682,19 +702,19 @@ MD5sum: a0afec07782177846fe262fa5f909ca0
 Description: Manages a virtual IP based on state kept in etcd/consul
 
 Package: vlogscli
-Version: 1.3.2
+Version: 1.9.1
 Architecture: amd64
 License: Apache-2.0 license
 Maintainer: Ruohang Feng <rh@vonng.com>
-Installed-Size: 11666
+Installed-Size: 11771
 Homepage: https://docs.victoriametrics.com/victorialogs/querying/vlogscli/
 Priority: optional
 Section: 
-Filename: pool/main/v/vlogscli/vlogscli_1.3.2_amd64.deb
-Size: 6794584
-SHA256: 779bc46a964f8d518811b845b81f2abeb7d38b16284a0d0efcfc66e2107e3e01
-SHA1: b726119d0da982832626a8341986c08fe8da0570
-MD5sum: c4d1bd58e660e727733bc41c52d2d1e4
+Filename: pool/main/v/vlogscli/vlogscli_1.9.1_amd64.deb
+Size: 6839218
+SHA256: 20f66f68f501a1158e12d59a42138a0268678d2ff38540e52115760917fc8921
+SHA1: ea355c02a5693d753bd83592ff6ec937bacaa47d
+MD5sum: 34c24071d5e323a97d2c972e3e4532cc
 Description: vlogsqcli is an interactive command-line tool for querying VictoriaLogs.
 
 Package: vray

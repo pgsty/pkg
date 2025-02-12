@@ -69,6 +69,7 @@ data:
       - apache-age_16-llvmjit
       - arrow-devel
       - arrow1800-libs
+      - arrow1900-libs
       - asn1oid_12
       - asn1oid_12-llvmjit
       - asn1oid_13
@@ -1585,6 +1586,7 @@ data:
     - apache-age_16-llvmjit
     - arrow-devel
     - arrow1800-libs
+    - arrow1900-libs
     - asn1oid_12
     - asn1oid_12-llvmjit
     - asn1oid_13
@@ -4976,7 +4978,9 @@ data:
     - apache-age_16-0:1.5.0-1PIGSTY.el8.aarch64
     - apache-age_16-llvmjit-0:1.5.0-1PIGSTY.el8.aarch64
     - arrow-devel-0:18.0.0-1.el8.aarch64
+    - arrow-devel-0:19.0.0-1.el8.aarch64
     - arrow1800-libs-0:18.0.0-1.el8.aarch64
+    - arrow1900-libs-0:19.0.0-1.el8.aarch64
     - asn1oid_12-0:1.5-1PIGSTY.el8.aarch64
     - asn1oid_12-llvmjit-0:1.5-1PIGSTY.el8.aarch64
     - asn1oid_13-0:1.5-1PIGSTY.el8.aarch64
@@ -5170,8 +5174,11 @@ data:
     - geoip_16-0:0.3.0-1PIGSTY.el8.aarch64
     - geoip_17-0:0.3.0-1PIGSTY.el8.aarch64
     - groonga-devel-0:14.1.1-1.el8.aarch64
+    - groonga-devel-0:15.0.0-1.el8.aarch64
     - groonga-libs-0:14.1.1-1.el8.aarch64
+    - groonga-libs-0:15.0.0-1.el8.aarch64
     - groonga-tokenizer-mecab-0:14.1.1-1.el8.aarch64
+    - groonga-tokenizer-mecab-0:15.0.0-1.el8.aarch64
     - haproxy-0:3.0.5-1PGDG.rhel8.aarch64
     - haproxy-0:3.0.6-1PGDG.rhel8.aarch64
     - hashtypes_14-0:0.1.5-1PIGSTY.el8.aarch64
